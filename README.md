@@ -13,5 +13,5 @@ BCore is based on the following ontologies and therefore reuses various classes 
 - Bridge Element Design Rule Ontology (BEDRO): https://w3id.org/bedro#
 
 **Contacts**
-- Tim Noack <tim.noack@tu-dresden.de> (GitHub: NoackTim>
+- Tim Noack <tim.noack@tu-dresden.de> (GitHub: NoackTim)
 - Xiaoli Song <xiaoli.song@tu-dresden.de> 
