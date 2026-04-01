@@ -14,4 +14,6 @@ BCore is based on the following ontologies and therefore reuses various classes 
 
 **Contacts**
 - Tim Noack <tim.noack@tu-dresden.de> (GitHub: NoackTim)
-- Xiaoli Song <xiaoli.song@tu-dresden.de> 
+- Xiaoli Song <xiaoli.song@tu-dresden.de> (GitHub: XiaoliSong1126)
+- Morris Florek <morris_benedikt.florek@tu-dresden.de> (GitHub: morrisfl)
+- Johannes Reimer <johannes.reimer@tu-dresden.de> (GitHub: JohannesReimer)
