@@ -4,6 +4,8 @@ The Bridge Core Ontology (BCore) enables the represetation of a bridge structure
 
 Recommended namespace for BCore: https://w3id.org/bcore#
 
+RDF-File of BCore: [bcore.rdf](https://github.com/TUD-IMB/BCore/blob/main/bcore.rdf)
+
 BCore is based on the following ontologies and therefore reuses various classes and properties from them:
 - Building Topology Ontology (BOT): https://w3id.org/bot#
 - Bridge Topology Ontology (BROT): https://w3id.org/brot#
