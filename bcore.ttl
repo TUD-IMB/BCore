@@ -7,20 +7,26 @@
 @base <https://w3id.org/BCore#> .
 
 <https://w3id.org/BCore> rdf:type owl:Ontology ;
-                          <http://purl.org/dc/elements/1.1/title> "Bridge Core Ontology" ;
-                          <http://purl.org/dc/terms/contributor> "Jakob Vogt" ,
-                                                                 "Johannes Reimer" ,
-                                                                 "Morris Florek" ,
-                                                                 "Xiaoli Song" ;
+                          <http://purl.org/dc/elements/1.1/abstract> "The Bridge Core Ontology (BCore) enables the represetation of a bridge structure, its components and material, as well as the infrastructure and media files connected to it and the environment and location of the bridge. BCore is created by the Institute of Concrete Structures (IMB) at the Dresden University of Technology (TUD)."@en ;
+                          <http://purl.org/dc/elements/1.1/title> "Bridge Core Ontology for Institute of Concrete Structures, Dresden University of Technology"@en ;
+                          <http://purl.org/dc/terms/contributor> "Jakob Vogt" ;
                           <http://purl.org/dc/terms/created> "2025-11-06T11:00:00"^^xsd:dateTime ;
-                          <http://purl.org/dc/terms/creator> "Tim Noack" ;
-                          <http://purl.org/dc/terms/hasVersion> "0.0.1" ;
-                          rdfs:label "Technische Unversität Dresden, Institute of Concrete Structures' Bridge Core Ontology" ;
-                          owl:versionInfo 2.0 .
+                          <http://purl.org/dc/terms/creator> "Johannes Reimer" ,
+                                                             "Morris Florek" ,
+                                                             "Tim Noack" ,
+                                                             "Xiaoli Song" ;
+                          rdfs:label "Bridge Core Ontology"@en ;
+                          owl:versionInfo "0.0.1" ;
+                          :dct:description "Core ontology for the representation of bridges."@en ;
+                          :vann:preferredNamespacePrefix "bcore" .
 
 #################################################################
 #    Annotation properties
 #################################################################
+
+###  http://purl.org/dc/elements/1.1/abstract
+<http://purl.org/dc/elements/1.1/abstract> rdf:type owl:AnnotationProperty .
+
 
 ###  http://purl.org/dc/elements/1.1/title
 <http://purl.org/dc/elements/1.1/title> rdf:type owl:AnnotationProperty .
@@ -38,169 +44,185 @@
 <http://purl.org/dc/terms/creator> rdf:type owl:AnnotationProperty .
 
 
-###  http://purl.org/dc/terms/hasVersion
-<http://purl.org/dc/terms/hasVersion> rdf:type owl:AnnotationProperty .
+###  http://www.w3.org/2002/07/owl#versionIRI
+owl:versionIRI rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/BCore#dct:description
+:dct:description rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/BCore#vann:preferredNamespacePrefix
+:vann:preferredNamespacePrefix rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Datatypes
+#################################################################
+
+###  http://www.w3.org/2001/XMLSchema#date
+xsd:date rdf:type rdfs:Datatype .
 
 
 #################################################################
 #    Object Properties
 #################################################################
 
-###  https://w3id.org/BCore/bridgesRoute
-<https://w3id.org/BCore/bridgesRoute> rdf:type owl:ObjectProperty ;
-                                      rdfs:subPropertyOf owl:topObjectProperty ;
-                                      rdfs:domain <https://w3id.org/brot#Bridge> ;
-                                      rdfs:range <https://w3id.org/BCore/InfrastructureRoute> ;
-                                      rdfs:comment "Brücke überquert Trasse"@de .
+###  https://w3id.org/BCore#bridgesRoute
+:bridgesRoute rdf:type owl:ObjectProperty ;
+              rdfs:subPropertyOf owl:topObjectProperty ;
+              rdfs:domain <https://w3id.org/brot#Bridge> ;
+              rdfs:range :InfrastructureRoute ;
+              rdfs:comment "Brücke überquert Trasse"@de .
 
 
-###  https://w3id.org/BCore/bridgesZone
-<https://w3id.org/BCore/bridgesZone> rdf:type owl:ObjectProperty ;
-                                     rdfs:subPropertyOf owl:topObjectProperty ;
-                                     rdfs:domain <https://w3id.org/brot#Bridge> ;
-                                     rdfs:range <https://w3id.org/bot#Zone> ;
-                                     rdfs:comment "Brücke überquert Zone"@de .
+###  https://w3id.org/BCore#bridgesZone
+:bridgesZone rdf:type owl:ObjectProperty ;
+             rdfs:subPropertyOf owl:topObjectProperty ;
+             rdfs:domain <https://w3id.org/brot#Bridge> ;
+             rdfs:range <https://w3id.org/bot#Zone> ;
+             rdfs:comment "Brücke überquert Zone"@de .
 
 
-###  https://w3id.org/BCore/carriesRoute
-<https://w3id.org/BCore/carriesRoute> rdf:type owl:ObjectProperty ;
-                                      rdfs:subPropertyOf owl:topObjectProperty ;
-                                      owl:inverseOf <https://w3id.org/BCore/traversesBridge> ;
-                                      rdfs:domain <https://w3id.org/brot#Bridge> ;
-                                      rdfs:range <https://w3id.org/BCore/InfrastructureRoute> ;
-                                      rdfs:comment "Brücke folgt Trasse"@de .
+###  https://w3id.org/BCore#carriesRoute
+:carriesRoute rdf:type owl:ObjectProperty ;
+              rdfs:subPropertyOf owl:topObjectProperty ;
+              owl:inverseOf :traversesBridge ;
+              rdfs:domain <https://w3id.org/brot#Bridge> ;
+              rdfs:range :InfrastructureRoute ;
+              rdfs:comment "Brücke folgt Trasse"@de .
 
 
-###  https://w3id.org/BCore/compositeOf
-<https://w3id.org/BCore/compositeOf> rdf:type owl:ObjectProperty ;
-                                     rdfs:subPropertyOf owl:topObjectProperty ;
-                                     rdfs:domain <https://w3id.org/BCore/CompositeMaterial> ;
-                                     rdfs:range <https://w3id.org/bmat#BuildingMaterial> ;
-                                     rdfs:comment "Verbundmaterial ist Verbund aus anderem Material"@de .
+###  https://w3id.org/BCore#compositeOf
+:compositeOf rdf:type owl:ObjectProperty ;
+             rdfs:subPropertyOf owl:topObjectProperty ;
+             rdfs:domain :CompositeMaterial ;
+             rdfs:range <https://w3id.org/bmat#BuildingMaterial> ;
+             rdfs:comment "Verbundmaterial ist Verbund aus anderem Material"@de .
 
 
-###  https://w3id.org/BCore/crossesRoute
-<https://w3id.org/BCore/crossesRoute> rdf:type owl:ObjectProperty ;
-                                      rdfs:subPropertyOf owl:topObjectProperty ;
-                                      rdf:type owl:SymmetricProperty ;
-                                      rdfs:domain <https://w3id.org/BCore/InfrastructureRoute> ;
-                                      rdfs:range <https://w3id.org/BCore/InfrastructureRoute> ;
-                                      rdfs:comment "Trasse kreuzt Trasse"@de .
+###  https://w3id.org/BCore#crossesRoute
+:crossesRoute rdf:type owl:ObjectProperty ;
+              rdfs:subPropertyOf owl:topObjectProperty ;
+              rdf:type owl:SymmetricProperty ;
+              rdfs:domain :InfrastructureRoute ;
+              rdfs:range :InfrastructureRoute ;
+              rdfs:comment "Trasse kreuzt Trasse"@de .
 
 
-###  https://w3id.org/BCore/crossesZone
-<https://w3id.org/BCore/crossesZone> rdf:type owl:ObjectProperty ;
-                                     rdfs:subPropertyOf owl:topObjectProperty ;
-                                     rdfs:domain <https://w3id.org/BCore/InfrastructureRoute> ;
-                                     rdfs:range <https://w3id.org/bot#Zone> ;
-                                     rdfs:comment "Trasse durchquert Zone"@de .
+###  https://w3id.org/BCore#crossesZone
+:crossesZone rdf:type owl:ObjectProperty ;
+             rdfs:subPropertyOf owl:topObjectProperty ;
+             rdfs:domain :InfrastructureRoute ;
+             rdfs:range <https://w3id.org/bot#Zone> ;
+             rdfs:comment "Trasse durchquert Zone"@de .
 
 
-###  https://w3id.org/BCore/describes
-<https://w3id.org/BCore/describes> rdf:type owl:ObjectProperty ;
-                                   rdfs:subPropertyOf owl:topObjectProperty ;
-                                   rdfs:domain <https://w3id.org/BCore/MediaFile> ;
-                                   rdfs:range <https://w3id.org/brot#Bridge> ;
-                                   rdfs:comment "Medium stellt Brücke dar"@de .
+###  https://w3id.org/BCore#describes
+:describes rdf:type owl:ObjectProperty ;
+           rdfs:subPropertyOf owl:topObjectProperty ;
+           rdfs:domain :MediaFile ;
+           rdfs:range <https://w3id.org/brot#Bridge> ;
+           rdfs:comment "Medium stellt Brücke dar"@de .
 
 
-###  https://w3id.org/BCore/hasPartialStructure
-<https://w3id.org/BCore/hasPartialStructure> rdf:type owl:ObjectProperty ;
-                                             rdfs:subPropertyOf owl:topObjectProperty ;
-                                             owl:inverseOf <https://w3id.org/BCore/partialStructureOf> ;
-                                             rdfs:domain <https://w3id.org/brot#Bridge> ;
-                                             rdfs:range <https://w3id.org/brot#Bridge> ;
-                                             rdfs:comment "Brücke besitzt Brückenzug"@de .
+###  https://w3id.org/BCore#hasPartialStructure
+:hasPartialStructure rdf:type owl:ObjectProperty ;
+                     rdfs:subPropertyOf owl:topObjectProperty ;
+                     owl:inverseOf :partialStructureOf ;
+                     rdfs:domain <https://w3id.org/brot#Bridge> ;
+                     rdfs:range <https://w3id.org/brot#Bridge> ;
+                     rdfs:comment "Brücke besitzt Brückenzug"@de .
 
 
-###  https://w3id.org/BCore/includesPoint
-<https://w3id.org/BCore/includesPoint> rdf:type owl:ObjectProperty ;
-                                       rdfs:subPropertyOf owl:topObjectProperty ;
-                                       owl:inverseOf <https://w3id.org/BCore/partOfRoute> ;
-                                       rdfs:domain <https://w3id.org/BCore/InfrastructureRoute> ;
-                                       rdfs:range <https://w3id.org/BCore/RoutePoint> ;
-                                       rdfs:comment "Trasse enthält Trassenpunkt"@de .
+###  https://w3id.org/BCore#includesPoint
+:includesPoint rdf:type owl:ObjectProperty ;
+               rdfs:subPropertyOf owl:topObjectProperty ;
+               owl:inverseOf :partOfRoute ;
+               rdfs:domain :InfrastructureRoute ;
+               rdfs:range :RoutePoint ;
+               rdfs:comment "Trasse enthält Trassenpunkt"@de .
 
 
-###  https://w3id.org/BCore/liesWithin
-<https://w3id.org/BCore/liesWithin> rdf:type owl:ObjectProperty ;
-                                    rdfs:subPropertyOf owl:topObjectProperty ;
-                                    owl:inverseOf <https://w3id.org/bot#containsZone> ;
-                                    rdf:type owl:TransitiveProperty ;
-                                    rdfs:domain <https://w3id.org/bot#Zone> ;
-                                    rdfs:range <https://w3id.org/bot#Zone> ;
-                                    rdfs:comment "Zone liegt in Zone"@de .
+###  https://w3id.org/BCore#liesWithin
+:liesWithin rdf:type owl:ObjectProperty ;
+            rdfs:subPropertyOf owl:topObjectProperty ;
+            owl:inverseOf <https://w3id.org/bot#containsZone> ;
+            rdf:type owl:TransitiveProperty ;
+            rdfs:domain <https://w3id.org/bot#Zone> ;
+            rdfs:range <https://w3id.org/bot#Zone> ;
+            rdfs:comment "Zone liegt in Zone"@de .
 
 
-###  https://w3id.org/BCore/locatedAt
-<https://w3id.org/BCore/locatedAt> rdf:type owl:ObjectProperty ;
-                                   rdfs:subPropertyOf owl:topObjectProperty ;
-                                   rdf:type owl:FunctionalProperty ;
-                                   rdfs:domain <https://w3id.org/bot#Zone> ;
-                                   rdfs:range <https://w3id.org/BCore/LocationPoint> ;
-                                   rdfs:comment "Zone befindet sich an Ort"@de .
+###  https://w3id.org/BCore#locatedAt
+:locatedAt rdf:type owl:ObjectProperty ;
+           rdfs:subPropertyOf owl:topObjectProperty ;
+           rdf:type owl:FunctionalProperty ;
+           rdfs:domain <https://w3id.org/bot#Zone> ;
+           rdfs:range :LocationPoint ;
+           rdfs:comment "Zone befindet sich an Ort"@de .
 
 
-###  https://w3id.org/BCore/locatedInZone
-<https://w3id.org/BCore/locatedInZone> rdf:type owl:ObjectProperty ;
-                                       rdfs:subPropertyOf owl:topObjectProperty ;
-                                       rdfs:domain <https://w3id.org/BCore/LocationPoint> ;
-                                       rdfs:range <https://w3id.org/bot#Zone> ;
-                                       rdfs:comment "Örtlicher Punkt befindet sich in Zone"@de .
+###  https://w3id.org/BCore#locatedInZone
+:locatedInZone rdf:type owl:ObjectProperty ;
+               rdfs:subPropertyOf owl:topObjectProperty ;
+               rdfs:domain :LocationPoint ;
+               rdfs:range <https://w3id.org/bot#Zone> ;
+               rdfs:comment "Örtlicher Punkt befindet sich in Zone"@de .
 
 
-###  https://w3id.org/BCore/madeOfMaterial
-<https://w3id.org/BCore/madeOfMaterial> rdf:type owl:ObjectProperty ;
-                                        rdfs:subPropertyOf owl:topObjectProperty ;
-                                        rdfs:domain <https://w3id.org/brot#Component> ;
-                                        rdfs:range <https://w3id.org/bmat#BuildingMaterial> ;
-                                        rdfs:comment "Bauteil besteht aus Material"@de .
+###  https://w3id.org/BCore#madeOfMaterial
+:madeOfMaterial rdf:type owl:ObjectProperty ;
+                rdfs:subPropertyOf owl:topObjectProperty ;
+                rdfs:domain <https://w3id.org/brot#Component> ;
+                rdfs:range <https://w3id.org/bmat#BuildingMaterial> ;
+                rdfs:comment "Bauteil besteht aus Material"@de .
 
 
-###  https://w3id.org/BCore/partOfComponent
-<https://w3id.org/BCore/partOfComponent> rdf:type owl:ObjectProperty ;
-                                         rdfs:subPropertyOf owl:topObjectProperty ;
-                                         owl:inverseOf <https://w3id.org/brot#aggregates> ;
-                                         rdf:type owl:TransitiveProperty ;
-                                         rdfs:domain <https://w3id.org/brot#Component> ;
-                                         rdfs:range <https://w3id.org/brot#Component> ;
-                                         rdfs:comment "Bauteil ist Teil von Bauteil"@de .
+###  https://w3id.org/BCore#partOfComponent
+:partOfComponent rdf:type owl:ObjectProperty ;
+                 rdfs:subPropertyOf owl:topObjectProperty ;
+                 owl:inverseOf <https://w3id.org/brot#aggregates> ;
+                 rdf:type owl:TransitiveProperty ;
+                 rdfs:domain <https://w3id.org/brot#Component> ;
+                 rdfs:range <https://w3id.org/brot#Component> ;
+                 rdfs:comment "Bauteil ist Teil von Bauteil"@de .
 
 
-###  https://w3id.org/BCore/partOfRoute
-<https://w3id.org/BCore/partOfRoute> rdf:type owl:ObjectProperty ;
-                                     rdfs:subPropertyOf owl:topObjectProperty ;
-                                     rdf:type owl:FunctionalProperty ;
-                                     rdfs:domain <https://w3id.org/BCore/RoutePoint> ;
-                                     rdfs:range <https://w3id.org/BCore/InfrastructureRoute> ;
-                                     rdfs:comment "Trassenpunkt ist Teil von Trasse"@de .
+###  https://w3id.org/BCore#partOfRoute
+:partOfRoute rdf:type owl:ObjectProperty ;
+             rdfs:subPropertyOf owl:topObjectProperty ;
+             rdf:type owl:FunctionalProperty ;
+             rdfs:domain :RoutePoint ;
+             rdfs:range :InfrastructureRoute ;
+             rdfs:comment "Trassenpunkt ist Teil von Trasse"@de .
 
 
-###  https://w3id.org/BCore/partOfZone
-<https://w3id.org/BCore/partOfZone> rdf:type owl:ObjectProperty ;
-                                    rdfs:subPropertyOf owl:topObjectProperty ;
-                                    owl:inverseOf <https://w3id.org/brot#containsComponent> ;
-                                    rdf:type owl:FunctionalProperty ;
-                                    rdfs:domain <https://w3id.org/brot#Component> ;
-                                    rdfs:range <https://w3id.org/brot#SpatialZone> ;
-                                    rdfs:comment "Bauteil ist Teil genau einer Brücke"@de .
+###  https://w3id.org/BCore#partOfZone
+:partOfZone rdf:type owl:ObjectProperty ;
+            rdfs:subPropertyOf owl:topObjectProperty ;
+            owl:inverseOf <https://w3id.org/brot#containsComponent> ;
+            rdf:type owl:FunctionalProperty ;
+            rdfs:domain <https://w3id.org/brot#Component> ;
+            rdfs:range <https://w3id.org/brot#SpatialZone> ;
+            rdfs:comment "Bauteil ist Teil genau einer Brücke"@de .
 
 
-###  https://w3id.org/BCore/partialStructureOf
-<https://w3id.org/BCore/partialStructureOf> rdf:type owl:ObjectProperty ;
-                                            rdfs:subPropertyOf owl:topObjectProperty ;
-                                            rdf:type owl:FunctionalProperty ;
-                                            rdfs:domain <https://w3id.org/brot#Bridge> ;
-                                            rdfs:range <https://w3id.org/brot#Bridge> ;
-                                            rdfs:comment "Brückenzug ist Teil genau einer Brücke"@de .
+###  https://w3id.org/BCore#partialStructureOf
+:partialStructureOf rdf:type owl:ObjectProperty ;
+                    rdfs:subPropertyOf owl:topObjectProperty ;
+                    rdf:type owl:FunctionalProperty ;
+                    rdfs:domain <https://w3id.org/brot#Bridge> ;
+                    rdfs:range <https://w3id.org/brot#Bridge> ;
+                    rdfs:comment "Brückenzug ist Teil genau einer Brücke"@de .
 
 
-###  https://w3id.org/BCore/traversesBridge
-<https://w3id.org/BCore/traversesBridge> rdf:type owl:ObjectProperty ;
-                                         rdfs:subPropertyOf owl:topObjectProperty ;
-                                         rdfs:domain <https://w3id.org/BCore/InfrastructureRoute> ;
-                                         rdfs:range <https://w3id.org/brot#Bridge> ;
-                                         rdfs:comment "Trasse überquert Brücke"@de .
+###  https://w3id.org/BCore#traversesBridge
+:traversesBridge rdf:type owl:ObjectProperty ;
+                 rdfs:subPropertyOf owl:topObjectProperty ;
+                 rdfs:domain :InfrastructureRoute ;
+                 rdfs:range <https://w3id.org/brot#Bridge> ;
+                 rdfs:comment "Trasse überquert Brücke"@de .
 
 
 ###  https://w3id.org/bot#containsZone
@@ -275,245 +297,245 @@
 #    Data properties
 #################################################################
 
-###  https://w3id.org/BCore/Altitude
-<https://w3id.org/BCore/Altitude> rdf:type owl:DatatypeProperty ,
-                                           owl:FunctionalProperty ;
-                                  rdfs:domain <https://w3id.org/BCore/LocationPoint> ;
-                                  rdfs:range xsd:decimal ;
-                                  rdfs:comment "Höhe über NN"@de ,
-                                               "[m]" .
+###  https://w3id.org/BCore#Altitude
+:Altitude rdf:type owl:DatatypeProperty ,
+                   owl:FunctionalProperty ;
+          rdfs:domain :LocationPoint ;
+          rdfs:range xsd:decimal ;
+          rdfs:comment "Höhe über NN"@de ,
+                       "[m]" .
 
 
-###  https://w3id.org/BCore/ArchShape
-<https://w3id.org/BCore/ArchShape> rdf:type owl:DatatypeProperty ;
-                                   rdfs:domain <https://w3id.org/brcomp#Arch> ;
-                                   rdfs:range xsd:string ;
-                                   rdfs:comment "Form des Bogens" .
+###  https://w3id.org/BCore#ArchShape
+:ArchShape rdf:type owl:DatatypeProperty ;
+           rdfs:domain <https://w3id.org/brcomp#Arch> ;
+           rdfs:range xsd:string ;
+           rdfs:comment "Form des Bogens" .
 
 
-###  https://w3id.org/BCore/BridgeConstructionEndDate
-<https://w3id.org/BCore/BridgeConstructionEndDate> rdf:type owl:DatatypeProperty ,
-                                                            owl:FunctionalProperty ;
-                                                   rdfs:domain <https://w3id.org/brot#Bridge> ;
-                                                   rdfs:range xsd:string ;
-                                                   rdfs:comment "Datum der Brückenfertigstellung"@de ,
-                                                                "[ISO Date Format]" .
+###  https://w3id.org/BCore#BridgeConstructionEndDate
+:BridgeConstructionEndDate rdf:type owl:DatatypeProperty ,
+                                    owl:FunctionalProperty ;
+                           rdfs:domain <https://w3id.org/brot#Bridge> ;
+                           rdfs:range xsd:string ;
+                           rdfs:comment "Datum der Brückenfertigstellung"@de ,
+                                        "[ISO Date Format]" .
 
 
-###  https://w3id.org/BCore/BridgeID
-<https://w3id.org/BCore/BridgeID> rdf:type owl:DatatypeProperty ,
-                                           owl:FunctionalProperty ;
-                                  rdfs:domain <https://w3id.org/brot#Bridge> ;
-                                  rdfs:range xsd:int ;
-                                  rdfs:comment "Identifikationsnummer der Brücke"@de .
+###  https://w3id.org/BCore#BridgeID
+:BridgeID rdf:type owl:DatatypeProperty ,
+                   owl:FunctionalProperty ;
+          rdfs:domain <https://w3id.org/brot#Bridge> ;
+          rdfs:range xsd:int ;
+          rdfs:comment "Identifikationsnummer der Brücke"@de .
 
 
-###  https://w3id.org/BCore/BridgeName
-<https://w3id.org/BCore/BridgeName> rdf:type owl:DatatypeProperty ,
-                                             owl:FunctionalProperty ;
-                                    rdfs:domain <https://w3id.org/brot#Bridge> ;
-                                    rdfs:range xsd:string ;
-                                    rdfs:comment "Name der Brücke"@de .
+###  https://w3id.org/BCore#BridgeName
+:BridgeName rdf:type owl:DatatypeProperty ,
+                     owl:FunctionalProperty ;
+            rdfs:domain <https://w3id.org/brot#Bridge> ;
+            rdfs:range xsd:string ;
+            rdfs:comment "Name der Brücke"@de .
 
 
-###  https://w3id.org/BCore/BridgeStatus
-<https://w3id.org/BCore/BridgeStatus> rdf:type owl:DatatypeProperty ;
-                                      rdfs:domain <https://w3id.org/brot#Bridge> ;
-                                      rdfs:range xsd:string ;
-                                      rdfs:comment "Status der Brücke"@de .
+###  https://w3id.org/BCore#BridgeStatus
+:BridgeStatus rdf:type owl:DatatypeProperty ;
+              rdfs:domain <https://w3id.org/brot#Bridge> ;
+              rdfs:range xsd:string ;
+              rdfs:comment "Status der Brücke"@de .
 
 
-###  https://w3id.org/BCore/ComponentVolume
-<https://w3id.org/BCore/ComponentVolume> rdf:type owl:DatatypeProperty ;
-                                         rdfs:subPropertyOf owl:topDataProperty ;
-                                         rdf:type owl:FunctionalProperty ;
-                                         rdfs:domain <https://w3id.org/brot#Component> ;
-                                         rdfs:range xsd:decimal ;
-                                         rdfs:comment "Volumen"@de ,
-                                                      "[m³]" .
+###  https://w3id.org/BCore#ComponentVolume
+:ComponentVolume rdf:type owl:DatatypeProperty ;
+                 rdfs:subPropertyOf owl:topDataProperty ;
+                 rdf:type owl:FunctionalProperty ;
+                 rdfs:domain <https://w3id.org/brot#Component> ;
+                 rdfs:range xsd:decimal ;
+                 rdfs:comment "Volumen"@de ,
+                              "[m³]" .
 
 
-###  https://w3id.org/BCore/Density
-<https://w3id.org/BCore/Density> rdf:type owl:DatatypeProperty ;
-                                 rdfs:subPropertyOf owl:topDataProperty ;
-                                 rdf:type owl:FunctionalProperty ;
-                                 rdfs:domain <https://w3id.org/bmat#BuildingMaterial> ;
-                                 rdfs:range xsd:decimal ;
-                                 rdfs:comment "Dichte"@de ,
-                                              "[kg/m³]" .
+###  https://w3id.org/BCore#Density
+:Density rdf:type owl:DatatypeProperty ;
+         rdfs:subPropertyOf owl:topDataProperty ;
+         rdf:type owl:FunctionalProperty ;
+         rdfs:domain <https://w3id.org/bmat#BuildingMaterial> ;
+         rdfs:range xsd:decimal ;
+         rdfs:comment "Dichte"@de ,
+                      "[kg/m³]" .
 
 
-###  https://w3id.org/BCore/Ductility
-<https://w3id.org/BCore/Ductility> rdf:type owl:DatatypeProperty ,
-                                            owl:FunctionalProperty ;
-                                   rdfs:domain <https://w3id.org/BCore/Steel> ;
-                                   rdfs:range xsd:string ;
-                                   rdfs:comment "Duktilität"@de .
+###  https://w3id.org/BCore#Ductility
+:Ductility rdf:type owl:DatatypeProperty ,
+                    owl:FunctionalProperty ;
+           rdfs:domain :Steel ;
+           rdfs:range xsd:string ;
+           rdfs:comment "Duktilität"@de .
 
 
-###  https://w3id.org/BCore/Ec
-<https://w3id.org/BCore/Ec> rdf:type owl:DatatypeProperty ,
-                                     owl:FunctionalProperty ;
-                            rdfs:domain <https://w3id.org/bmat#Concrete> ;
-                            rdfs:range xsd:decimal ;
-                            rdfs:comment "Elastizitätsmodul des Betons"@de ,
-                                         "[N/m²]" .
+###  https://w3id.org/BCore#Ec
+:Ec rdf:type owl:DatatypeProperty ,
+             owl:FunctionalProperty ;
+    rdfs:domain <https://w3id.org/bmat#Concrete> ;
+    rdfs:range xsd:decimal ;
+    rdfs:comment "Elastizitätsmodul des Betons"@de ,
+                 "[N/m²]" .
 
 
-###  https://w3id.org/BCore/Ep
-<https://w3id.org/BCore/Ep> rdf:type owl:DatatypeProperty ;
-                            rdfs:subPropertyOf owl:topDataProperty ;
-                            rdf:type owl:FunctionalProperty ;
-                            rdfs:domain <https://w3id.org/BCore/PrestressingSteel> ;
-                            rdfs:range xsd:decimal ;
-                            rdfs:comment "Elastizitätsmodul des Spannstahls"@de ,
-                                         "[N/m²]" .
+###  https://w3id.org/BCore#Ep
+:Ep rdf:type owl:DatatypeProperty ;
+    rdfs:subPropertyOf owl:topDataProperty ;
+    rdf:type owl:FunctionalProperty ;
+    rdfs:domain :PrestressingSteel ;
+    rdfs:range xsd:decimal ;
+    rdfs:comment "Elastizitätsmodul des Spannstahls"@de ,
+                 "[N/m²]" .
 
 
-###  https://w3id.org/BCore/ExpositionClass
-<https://w3id.org/BCore/ExpositionClass> rdf:type owl:DatatypeProperty ;
-                                         rdfs:subPropertyOf owl:topDataProperty ;
-                                         rdfs:domain <https://w3id.org/bmat#Concrete> ;
-                                         rdfs:range xsd:string ;
-                                         rdfs:comment "Expositionsklasse"@de ;
-                                         rdfs:seeAlso "https://w3id.org/bmat#expositionClassConcrete" .
+###  https://w3id.org/BCore#ExpositionClass
+:ExpositionClass rdf:type owl:DatatypeProperty ;
+                 rdfs:subPropertyOf owl:topDataProperty ;
+                 rdfs:domain <https://w3id.org/bmat#Concrete> ;
+                 rdfs:range xsd:string ;
+                 rdfs:comment "Expositionsklasse"@de ;
+                 rdfs:seeAlso "https://w3id.org/bmat#expositionClassConcrete" .
 
 
-###  https://w3id.org/BCore/Ey
-<https://w3id.org/BCore/Ey> rdf:type owl:DatatypeProperty ;
-                            rdfs:subPropertyOf owl:topDataProperty ;
-                            rdf:type owl:FunctionalProperty ;
-                            rdfs:domain <https://w3id.org/BCore/ConstructionSteel> ,
-                                        <https://w3id.org/bmat#ReinforcementSteel> ;
-                            rdfs:range xsd:decimal ;
-                            rdfs:comment "Elastizitätsmodul des Stahls"@de ,
-                                         "[N/m²]" .
+###  https://w3id.org/BCore#Ey
+:Ey rdf:type owl:DatatypeProperty ;
+    rdfs:subPropertyOf owl:topDataProperty ;
+    rdf:type owl:FunctionalProperty ;
+    rdfs:domain :ConstructionSteel ,
+                <https://w3id.org/bmat#ReinforcementSteel> ;
+    rdfs:range xsd:decimal ;
+    rdfs:comment "Elastizitätsmodul des Stahls"@de ,
+                 "[N/m²]" .
 
 
-###  https://w3id.org/BCore/GirderShape
-<https://w3id.org/BCore/GirderShape> rdf:type owl:DatatypeProperty ;
-                                     rdfs:domain <https://w3id.org/brcomp#Girder> ;
-                                     rdfs:range xsd:string ;
-                                     rdfs:comment "Form des Trägers"@de .
+###  https://w3id.org/BCore#GirderShape
+:GirderShape rdf:type owl:DatatypeProperty ;
+             rdfs:domain <https://w3id.org/brcomp#Girder> ;
+             rdfs:range xsd:string ;
+             rdfs:comment "Form des Trägers"@de .
 
 
-###  https://w3id.org/BCore/InfrastructureRouteName
-<https://w3id.org/BCore/InfrastructureRouteName> rdf:type owl:DatatypeProperty ;
-                                                 rdfs:subPropertyOf owl:topDataProperty ;
-                                                 rdfs:domain <https://w3id.org/BCore/InfrastructureRoute> ;
-                                                 rdfs:range xsd:string ;
-                                                 rdfs:comment "Name/ Bezeichnung der Infrastruktur"@de .
+###  https://w3id.org/BCore#InfrastructureRouteName
+:InfrastructureRouteName rdf:type owl:DatatypeProperty ;
+                         rdfs:subPropertyOf owl:topDataProperty ;
+                         rdfs:domain :InfrastructureRoute ;
+                         rdfs:range xsd:string ;
+                         rdfs:comment "Name/ Bezeichnung der Infrastruktur"@de .
 
 
-###  https://w3id.org/BCore/InfrastructureRouteWidth
-<https://w3id.org/BCore/InfrastructureRouteWidth> rdf:type owl:DatatypeProperty ;
-                                                  rdfs:subPropertyOf owl:topDataProperty ;
-                                                  rdf:type owl:FunctionalProperty ;
-                                                  rdfs:domain <https://w3id.org/BCore/InfrastructureRoute> ;
-                                                  rdfs:range xsd:decimal ;
-                                                  rdfs:comment "Querschnittsbreite der Infrastruktur"@de ,
-                                                               "[m]" .
+###  https://w3id.org/BCore#InfrastructureRouteWidth
+:InfrastructureRouteWidth rdf:type owl:DatatypeProperty ;
+                          rdfs:subPropertyOf owl:topDataProperty ;
+                          rdf:type owl:FunctionalProperty ;
+                          rdfs:domain :InfrastructureRoute ;
+                          rdfs:range xsd:decimal ;
+                          rdfs:comment "Querschnittsbreite der Infrastruktur"@de ,
+                                       "[m]" .
 
 
-###  https://w3id.org/BCore/Latitude
-<https://w3id.org/BCore/Latitude> rdf:type owl:DatatypeProperty ;
-                                  rdfs:subPropertyOf owl:topDataProperty ;
-                                  rdf:type owl:FunctionalProperty ;
-                                  rdfs:domain <https://w3id.org/BCore/LocationPoint> ;
-                                  rdfs:range xsd:decimal ;
-                                  rdfs:comment "Breitengrad"@de .
+###  https://w3id.org/BCore#Latitude
+:Latitude rdf:type owl:DatatypeProperty ;
+          rdfs:subPropertyOf owl:topDataProperty ;
+          rdf:type owl:FunctionalProperty ;
+          rdfs:domain :LocationPoint ;
+          rdfs:range xsd:decimal ;
+          rdfs:comment "Breitengrad"@de .
 
 
-###  https://w3id.org/BCore/LocalX
-<https://w3id.org/BCore/LocalX> rdf:type owl:DatatypeProperty ;
-                                rdfs:subPropertyOf owl:topDataProperty ;
-                                rdf:type owl:FunctionalProperty ;
-                                rdfs:domain <https://w3id.org/BCore/LocationPoint> ;
-                                rdfs:range xsd:decimal ;
-                                rdfs:comment "Lokale X-Koordinate"@de ,
-                                             "[m]" .
+###  https://w3id.org/BCore#LocalX
+:LocalX rdf:type owl:DatatypeProperty ;
+        rdfs:subPropertyOf owl:topDataProperty ;
+        rdf:type owl:FunctionalProperty ;
+        rdfs:domain :LocationPoint ;
+        rdfs:range xsd:decimal ;
+        rdfs:comment "Lokale X-Koordinate"@de ,
+                     "[m]" .
 
 
-###  https://w3id.org/BCore/LocalY
-<https://w3id.org/BCore/LocalY> rdf:type owl:DatatypeProperty ;
-                                rdfs:subPropertyOf owl:topDataProperty ;
-                                rdf:type owl:FunctionalProperty ;
-                                rdfs:domain <https://w3id.org/BCore/LocationPoint> ;
-                                rdfs:range xsd:decimal ;
-                                rdfs:comment "Lokale Y-Koordinate"@de ,
-                                             "[m]" .
+###  https://w3id.org/BCore#LocalY
+:LocalY rdf:type owl:DatatypeProperty ;
+        rdfs:subPropertyOf owl:topDataProperty ;
+        rdf:type owl:FunctionalProperty ;
+        rdfs:domain :LocationPoint ;
+        rdfs:range xsd:decimal ;
+        rdfs:comment "Lokale Y-Koordinate"@de ,
+                     "[m]" .
 
 
-###  https://w3id.org/BCore/LocalZ
-<https://w3id.org/BCore/LocalZ> rdf:type owl:DatatypeProperty ;
-                                rdfs:subPropertyOf owl:topDataProperty ;
-                                rdf:type owl:FunctionalProperty ;
-                                rdfs:domain <https://w3id.org/BCore/LocationPoint> ;
-                                rdfs:range xsd:decimal ;
-                                rdfs:comment "Lokale Z-Koordinate"@de ,
-                                             "[m]" .
+###  https://w3id.org/BCore#LocalZ
+:LocalZ rdf:type owl:DatatypeProperty ;
+        rdfs:subPropertyOf owl:topDataProperty ;
+        rdf:type owl:FunctionalProperty ;
+        rdfs:domain :LocationPoint ;
+        rdfs:range xsd:decimal ;
+        rdfs:comment "Lokale Z-Koordinate"@de ,
+                     "[m]" .
 
 
-###  https://w3id.org/BCore/Longitude
-<https://w3id.org/BCore/Longitude> rdf:type owl:DatatypeProperty ;
-                                   rdfs:subPropertyOf owl:topDataProperty ;
-                                   rdf:type owl:FunctionalProperty ;
-                                   rdfs:domain <https://w3id.org/BCore/LocationPoint> ;
-                                   rdfs:range xsd:decimal ;
-                                   rdfs:comment "Längengrad"@de .
+###  https://w3id.org/BCore#Longitude
+:Longitude rdf:type owl:DatatypeProperty ;
+           rdfs:subPropertyOf owl:topDataProperty ;
+           rdf:type owl:FunctionalProperty ;
+           rdfs:domain :LocationPoint ;
+           rdfs:range xsd:decimal ;
+           rdfs:comment "Längengrad"@de .
 
 
-###  https://w3id.org/BCore/MaterialName
-<https://w3id.org/BCore/MaterialName> rdf:type owl:DatatypeProperty ;
-                                      rdfs:subPropertyOf owl:topDataProperty ;
-                                      rdfs:domain <https://w3id.org/bmat#BuildingMaterial> ;
-                                      rdfs:range xsd:string .
+###  https://w3id.org/BCore#MaterialName
+:MaterialName rdf:type owl:DatatypeProperty ;
+              rdfs:subPropertyOf owl:topDataProperty ;
+              rdfs:domain <https://w3id.org/bmat#BuildingMaterial> ;
+              rdfs:range xsd:string .
 
 
-###  https://w3id.org/BCore/PylonShape
-<https://w3id.org/BCore/PylonShape> rdf:type owl:DatatypeProperty ;
-                                    rdfs:domain <https://w3id.org/brcomp#Pylon> ;
-                                    rdfs:range xsd:string ;
-                                    rdfs:comment "Form des Pylonen"@de .
+###  https://w3id.org/BCore#PylonShape
+:PylonShape rdf:type owl:DatatypeProperty ;
+            rdfs:domain <https://w3id.org/brcomp#Pylon> ;
+            rdfs:range xsd:string ;
+            rdfs:comment "Form des Pylonen"@de .
 
 
-###  https://w3id.org/BCore/ZoneName
-<https://w3id.org/BCore/ZoneName> rdf:type owl:DatatypeProperty ,
-                                           owl:FunctionalProperty ;
-                                  rdfs:domain <https://w3id.org/bot#Zone> ;
-                                  rdfs:range xsd:string ;
-                                  rdfs:comment "Name der Zone"@de .
+###  https://w3id.org/BCore#ZoneName
+:ZoneName rdf:type owl:DatatypeProperty ,
+                   owl:FunctionalProperty ;
+          rdfs:domain <https://w3id.org/bot#Zone> ;
+          rdfs:range xsd:string ;
+          rdfs:comment "Name der Zone"@de .
 
 
-###  https://w3id.org/BCore/fck
-<https://w3id.org/BCore/fck> rdf:type owl:DatatypeProperty ;
-                             rdfs:subPropertyOf owl:topDataProperty ;
-                             rdf:type owl:FunctionalProperty ;
-                             rdfs:domain <https://w3id.org/bmat#Concrete> ;
-                             rdfs:range xsd:decimal ;
-                             rdfs:comment "Charakteristische Druckfestigkeit des Betons"@de ,
-                                          "[N/m²]" .
+###  https://w3id.org/BCore#fck
+:fck rdf:type owl:DatatypeProperty ;
+     rdfs:subPropertyOf owl:topDataProperty ;
+     rdf:type owl:FunctionalProperty ;
+     rdfs:domain <https://w3id.org/bmat#Concrete> ;
+     rdfs:range xsd:decimal ;
+     rdfs:comment "Charakteristische Druckfestigkeit des Betons"@de ,
+                  "[N/m²]" .
 
 
-###  https://w3id.org/BCore/fpk
-<https://w3id.org/BCore/fpk> rdf:type owl:DatatypeProperty ;
-                             rdfs:subPropertyOf owl:topDataProperty ;
-                             rdf:type owl:FunctionalProperty ;
-                             rdfs:domain <https://w3id.org/BCore/PrestressingSteel> ;
-                             rdfs:range xsd:decimal ;
-                             rdfs:comment "Charakteristische Zugfestigkeit des Spannstahls"@de ,
-                                          "[N/m²]" .
+###  https://w3id.org/BCore#fpk
+:fpk rdf:type owl:DatatypeProperty ;
+     rdfs:subPropertyOf owl:topDataProperty ;
+     rdf:type owl:FunctionalProperty ;
+     rdfs:domain :PrestressingSteel ;
+     rdfs:range xsd:decimal ;
+     rdfs:comment "Charakteristische Zugfestigkeit des Spannstahls"@de ,
+                  "[N/m²]" .
 
 
-###  https://w3id.org/BCore/fyk
-<https://w3id.org/BCore/fyk> rdf:type owl:DatatypeProperty ;
-                             rdfs:subPropertyOf owl:topDataProperty ;
-                             rdf:type owl:FunctionalProperty ;
-                             rdfs:domain <https://w3id.org/BCore/ConstructionSteel> ,
-                                         <https://w3id.org/bmat#ReinforcementSteel> ;
-                             rdfs:range xsd:decimal ;
-                             rdfs:comment "Charakteristische Festigkeit des Stahls"@de ,
-                                          "[N/m²]" .
+###  https://w3id.org/BCore#fyk
+:fyk rdf:type owl:DatatypeProperty ;
+     rdfs:subPropertyOf owl:topDataProperty ;
+     rdf:type owl:FunctionalProperty ;
+     rdfs:domain :ConstructionSteel ,
+                 <https://w3id.org/bmat#ReinforcementSteel> ;
+     rdfs:range xsd:decimal ;
+     rdfs:comment "Charakteristische Festigkeit des Stahls"@de ,
+                  "[N/m²]" .
 
 
 ###  https://w3id.org/brcomp#height
@@ -550,167 +572,167 @@
 #    Classes
 #################################################################
 
-###  https://w3id.org/BCore/Abutment
-<https://w3id.org/BCore/Abutment> rdf:type owl:Class ;
-                                  rdfs:subClassOf <https://w3id.org/brcomp#SubStructureComponent> ;
-                                  rdfs:comment "Widerlager"@de .
+###  https://w3id.org/BCore#Abutment
+:Abutment rdf:type owl:Class ;
+          rdfs:subClassOf <https://w3id.org/brcomp#SubStructureComponent> ;
+          rdfs:comment "Widerlager"@de .
 
 
-###  https://w3id.org/BCore/BoxGirder
-<https://w3id.org/BCore/BoxGirder> rdf:type owl:Class ;
-                                   rdfs:subClassOf <https://w3id.org/brcomp#GirderMainGirder> ;
-                                   rdfs:comment "Hohlkastenträger"@de .
+###  https://w3id.org/BCore#BoxGirder
+:BoxGirder rdf:type owl:Class ;
+           rdfs:subClassOf <https://w3id.org/brcomp#GirderMainGirder> ;
+           rdfs:comment "Hohlkastenträger"@de .
 
 
-###  https://w3id.org/BCore/City
-<https://w3id.org/BCore/City> rdf:type owl:Class ;
-                              rdfs:subClassOf <https://w3id.org/bot#Zone> ;
-                              rdfs:comment "Stadt"@de .
+###  https://w3id.org/BCore#City
+:City rdf:type owl:Class ;
+      rdfs:subClassOf <https://w3id.org/bot#Zone> ;
+      rdfs:comment "Stadt"@de .
 
 
-###  https://w3id.org/BCore/CompositeMaterial
-<https://w3id.org/BCore/CompositeMaterial> rdf:type owl:Class ;
-                                           rdfs:subClassOf <https://w3id.org/bmat#BuildingMaterial> ;
-                                           rdfs:comment "Materialverbund"@de .
+###  https://w3id.org/BCore#CompositeMaterial
+:CompositeMaterial rdf:type owl:Class ;
+                   rdfs:subClassOf <https://w3id.org/bmat#BuildingMaterial> ;
+                   rdfs:comment "Materialverbund"@de .
 
 
-###  https://w3id.org/BCore/ConstructionSteel
-<https://w3id.org/BCore/ConstructionSteel> rdf:type owl:Class ;
-                                           rdfs:subClassOf <https://w3id.org/BCore/Steel> ;
-                                           rdfs:comment "Baustahl"@de .
+###  https://w3id.org/BCore#ConstructionSteel
+:ConstructionSteel rdf:type owl:Class ;
+                   rdfs:subClassOf :Steel ;
+                   rdfs:comment "Baustahl"@de .
 
 
-###  https://w3id.org/BCore/Country
-<https://w3id.org/BCore/Country> rdf:type owl:Class ;
-                                 rdfs:subClassOf <https://w3id.org/bot#Zone> ;
-                                 rdfs:comment "Land"@de .
+###  https://w3id.org/BCore#Country
+:Country rdf:type owl:Class ;
+         rdfs:subClassOf <https://w3id.org/bot#Zone> ;
+         rdfs:comment "Land"@de .
 
 
-###  https://w3id.org/BCore/EquipmentComponent
-<https://w3id.org/BCore/EquipmentComponent> rdf:type owl:Class ;
-                                            rdfs:subClassOf <https://w3id.org/brot#Component> ;
-                                            owl:disjointWith <https://w3id.org/brcomp#SubStructureComponent> ,
-                                                             <https://w3id.org/brcomp#SuperStructureComponent> ;
-                                            rdfs:comment "Bauteil der Brückenausstattung"@de ;
-                                            rdfs:seeAlso "https://w3id.org/brcomp/#FinishingComponent" .
+###  https://w3id.org/BCore#EquipmentComponent
+:EquipmentComponent rdf:type owl:Class ;
+                    rdfs:subClassOf <https://w3id.org/brot#Component> ;
+                    owl:disjointWith <https://w3id.org/brcomp#SubStructureComponent> ,
+                                     <https://w3id.org/brcomp#SuperStructureComponent> ;
+                    rdfs:comment "Bauteil der Brückenausstattung"@de ;
+                    rdfs:seeAlso "https://w3id.org/brcomp/#FinishingComponent" .
 
 
-###  https://w3id.org/BCore/FootCycleRoute
-<https://w3id.org/BCore/FootCycleRoute> rdf:type owl:Class ;
-                                        rdfs:subClassOf <https://w3id.org/BCore/InfrastructureRoute> ;
-                                        rdfs:comment "Geh- und/oder Radweg"@de .
+###  https://w3id.org/BCore#FootCycleRoute
+:FootCycleRoute rdf:type owl:Class ;
+                rdfs:subClassOf :InfrastructureRoute ;
+                rdfs:comment "Geh- und/oder Radweg"@de .
 
 
-###  https://w3id.org/BCore/IBeam
-<https://w3id.org/BCore/IBeam> rdf:type owl:Class ;
-                               rdfs:subClassOf <https://w3id.org/brcomp#GirderMainGirder> ;
-                               rdfs:comment "I-Träger"@de .
+###  https://w3id.org/BCore#IBeam
+:IBeam rdf:type owl:Class ;
+       rdfs:subClassOf <https://w3id.org/brcomp#GirderMainGirder> ;
+       rdfs:comment "I-Träger"@de .
 
 
-###  https://w3id.org/BCore/Image
-<https://w3id.org/BCore/Image> rdf:type owl:Class ;
-                               rdfs:subClassOf <https://w3id.org/BCore/MediaFile> ;
-                               owl:disjointWith <https://w3id.org/BCore/TechnicalDocument> ;
-                               rdfs:comment "Bild"@de .
+###  https://w3id.org/BCore#Image
+:Image rdf:type owl:Class ;
+       rdfs:subClassOf :MediaFile ;
+       owl:disjointWith :TechnicalDocument ;
+       rdfs:comment "Bild"@de .
 
 
-###  https://w3id.org/BCore/InfrastructureRoute
-<https://w3id.org/BCore/InfrastructureRoute> rdf:type owl:Class ;
-                                             rdfs:comment "Infrastrukturtrasse"@de .
+###  https://w3id.org/BCore#InfrastructureRoute
+:InfrastructureRoute rdf:type owl:Class ;
+                     rdfs:comment "Infrastrukturtrasse"@de .
 
 
-###  https://w3id.org/BCore/LocationPoint
-<https://w3id.org/BCore/LocationPoint> rdf:type owl:Class ;
-                                       rdfs:comment "Örtlicher Punkt"@de .
+###  https://w3id.org/BCore#LocationPoint
+:LocationPoint rdf:type owl:Class ;
+               rdfs:comment "Örtlicher Punkt"@de .
 
 
-###  https://w3id.org/BCore/MediaFile
-<https://w3id.org/BCore/MediaFile> rdf:type owl:Class ;
-                                   rdfs:comment "Datei"@de .
+###  https://w3id.org/BCore#MediaFile
+:MediaFile rdf:type owl:Class ;
+           rdfs:comment "Datei"@de .
 
 
-###  https://w3id.org/BCore/Metal
-<https://w3id.org/BCore/Metal> rdf:type owl:Class ;
-                               rdfs:subClassOf <https://w3id.org/bmat#BuildingMaterial> ;
-                               rdfs:comment "Metall"@de .
+###  https://w3id.org/BCore#Metal
+:Metal rdf:type owl:Class ;
+       rdfs:subClassOf <https://w3id.org/bmat#BuildingMaterial> ;
+       rdfs:comment "Metall"@de .
 
 
-###  https://w3id.org/BCore/PlateGirder
-<https://w3id.org/BCore/PlateGirder> rdf:type owl:Class ;
-                                     rdfs:subClassOf <https://w3id.org/brcomp#GirderMainGirder> ;
-                                     rdfs:comment "Vollwandträger (Stahl)"@de .
+###  https://w3id.org/BCore#PlateGirder
+:PlateGirder rdf:type owl:Class ;
+             rdfs:subClassOf <https://w3id.org/brcomp#GirderMainGirder> ;
+             rdfs:comment "Vollwandträger (Stahl)"@de .
 
 
-###  https://w3id.org/BCore/PrestressedConcrete
-<https://w3id.org/BCore/PrestressedConcrete> rdf:type owl:Class ;
-                                             rdfs:subClassOf <https://w3id.org/BCore/CompositeMaterial> ;
-                                             rdfs:comment "Spannbeton"@de .
+###  https://w3id.org/BCore#PrestressedConcrete
+:PrestressedConcrete rdf:type owl:Class ;
+                     rdfs:subClassOf :CompositeMaterial ;
+                     rdfs:comment "Spannbeton"@de .
 
 
-###  https://w3id.org/BCore/PrestressingSteel
-<https://w3id.org/BCore/PrestressingSteel> rdf:type owl:Class ;
-                                           rdfs:subClassOf <https://w3id.org/BCore/Steel> ;
-                                           rdfs:comment "Spannstahl"@de .
+###  https://w3id.org/BCore#PrestressingSteel
+:PrestressingSteel rdf:type owl:Class ;
+                   rdfs:subClassOf :Steel ;
+                   rdfs:comment "Spannstahl"@de .
 
 
-###  https://w3id.org/BCore/RailwayRoute
-<https://w3id.org/BCore/RailwayRoute> rdf:type owl:Class ;
-                                      rdfs:subClassOf <https://w3id.org/BCore/InfrastructureRoute> ;
-                                      rdfs:comment "Schienenweg"@de .
+###  https://w3id.org/BCore#RailwayRoute
+:RailwayRoute rdf:type owl:Class ;
+              rdfs:subClassOf :InfrastructureRoute ;
+              rdfs:comment "Schienenweg"@de .
 
 
-###  https://w3id.org/BCore/Region
-<https://w3id.org/BCore/Region> rdf:type owl:Class ;
-                                rdfs:subClassOf <https://w3id.org/bot#Zone> ;
-                                rdfs:comment "Region/ Bundesland"@de .
+###  https://w3id.org/BCore#Region
+:Region rdf:type owl:Class ;
+        rdfs:subClassOf <https://w3id.org/bot#Zone> ;
+        rdfs:comment "Region/ Bundesland"@de .
 
 
-###  https://w3id.org/BCore/RoadRoute
-<https://w3id.org/BCore/RoadRoute> rdf:type owl:Class ;
-                                   rdfs:subClassOf <https://w3id.org/BCore/InfrastructureRoute> ;
-                                   rdfs:comment "Straße"@de .
+###  https://w3id.org/BCore#RoadRoute
+:RoadRoute rdf:type owl:Class ;
+           rdfs:subClassOf :InfrastructureRoute ;
+           rdfs:comment "Straße"@de .
 
 
-###  https://w3id.org/BCore/RoutePoint
-<https://w3id.org/BCore/RoutePoint> rdf:type owl:Class ;
-                                    rdfs:subClassOf <https://w3id.org/BCore/LocationPoint> ;
-                                    rdfs:comment "Trassenpunkt"@de .
+###  https://w3id.org/BCore#RoutePoint
+:RoutePoint rdf:type owl:Class ;
+            rdfs:subClassOf :LocationPoint ;
+            rdfs:comment "Trassenpunkt"@de .
 
 
-###  https://w3id.org/BCore/Steel
-<https://w3id.org/BCore/Steel> rdf:type owl:Class ;
-                               rdfs:subClassOf <https://w3id.org/BCore/Metal> ;
-                               rdfs:comment "Stahl"@de .
+###  https://w3id.org/BCore#Steel
+:Steel rdf:type owl:Class ;
+       rdfs:subClassOf :Metal ;
+       rdfs:comment "Stahl"@de .
 
 
-###  https://w3id.org/BCore/SteelConcreteComposite
-<https://w3id.org/BCore/SteelConcreteComposite> rdf:type owl:Class ;
-                                                rdfs:subClassOf <https://w3id.org/BCore/CompositeMaterial> ;
-                                                rdfs:comment "Stahl-Beton-Verbund"@de .
+###  https://w3id.org/BCore#SteelConcreteComposite
+:SteelConcreteComposite rdf:type owl:Class ;
+                        rdfs:subClassOf :CompositeMaterial ;
+                        rdfs:comment "Stahl-Beton-Verbund"@de .
 
 
-###  https://w3id.org/BCore/TBeam
-<https://w3id.org/BCore/TBeam> rdf:type owl:Class ;
-                               rdfs:subClassOf <https://w3id.org/brcomp#GirderMainGirder> ;
-                               rdfs:comment "Plattenbalken (Beton)"@de .
+###  https://w3id.org/BCore#TBeam
+:TBeam rdf:type owl:Class ;
+       rdfs:subClassOf <https://w3id.org/brcomp#GirderMainGirder> ;
+       rdfs:comment "Plattenbalken (Beton)"@de .
 
 
-###  https://w3id.org/BCore/TechnicalDocument
-<https://w3id.org/BCore/TechnicalDocument> rdf:type owl:Class ;
-                                           rdfs:subClassOf <https://w3id.org/BCore/MediaFile> ;
-                                           rdfs:comment "Technisches Dokument"@de .
+###  https://w3id.org/BCore#TechnicalDocument
+:TechnicalDocument rdf:type owl:Class ;
+                   rdfs:subClassOf :MediaFile ;
+                   rdfs:comment "Technisches Dokument"@de .
 
 
-###  https://w3id.org/BCore/TrussGirder
-<https://w3id.org/BCore/TrussGirder> rdf:type owl:Class ;
-                                     rdfs:subClassOf <https://w3id.org/brcomp#GirderMainGirder> ;
-                                     rdfs:comment "Fachwerkträger"@de .
+###  https://w3id.org/BCore#TrussGirder
+:TrussGirder rdf:type owl:Class ;
+             rdfs:subClassOf <https://w3id.org/brcomp#GirderMainGirder> ;
+             rdfs:comment "Fachwerkträger"@de .
 
 
-###  https://w3id.org/BCore/WaterWayRoute
-<https://w3id.org/BCore/WaterWayRoute> rdf:type owl:Class ;
-                                       rdfs:subClassOf <https://w3id.org/BCore/InfrastructureRoute> ;
-                                       rdfs:comment "Wasserstraße"@de .
+###  https://w3id.org/BCore#WaterWayRoute
+:WaterWayRoute rdf:type owl:Class ;
+               rdfs:subClassOf :InfrastructureRoute ;
+               rdfs:comment "Wasserstraße"@de .
 
 
 ###  https://w3id.org/bmat#BuildingMaterial
@@ -726,13 +748,13 @@
 
 ###  https://w3id.org/bmat#ReinforcedConcrete
 <https://w3id.org/bmat#ReinforcedConcrete> rdf:type owl:Class ;
-                                           rdfs:subClassOf <https://w3id.org/BCore/CompositeMaterial> ;
+                                           rdfs:subClassOf :CompositeMaterial ;
                                            rdfs:comment "Stahlbeton"@de .
 
 
 ###  https://w3id.org/bmat#ReinforcementSteel
 <https://w3id.org/bmat#ReinforcementSteel> rdf:type owl:Class ;
-                                           rdfs:subClassOf <https://w3id.org/BCore/Steel> ;
+                                           rdfs:subClassOf :Steel ;
                                            rdfs:comment "Betonstahl"@de .
 
 
@@ -908,7 +930,7 @@
 #################################################################
 
 [ rdf:type owl:AllDisjointClasses ;
-  owl:members ( <https://w3id.org/BCore/Abutment>
+  owl:members ( :Abutment
                 <https://w3id.org/brcomp#Arch>
                 <https://w3id.org/brcomp#Bearing>
                 <https://w3id.org/brcomp#Foundation>
@@ -920,34 +942,34 @@
 
 
 [ rdf:type owl:AllDisjointClasses ;
-  owl:members ( <https://w3id.org/BCore/BoxGirder>
-                <https://w3id.org/BCore/IBeam>
-                <https://w3id.org/BCore/PlateGirder>
-                <https://w3id.org/BCore/TBeam>
+  owl:members ( :BoxGirder
+                :IBeam
+                :PlateGirder
+                :TBeam
               )
 ] .
 
 
 [ rdf:type owl:AllDisjointClasses ;
-  owl:members ( <https://w3id.org/BCore/CompositeMaterial>
-                <https://w3id.org/BCore/Metal>
+  owl:members ( :CompositeMaterial
+                :Metal
                 <https://w3id.org/bmat#Concrete>
               )
 ] .
 
 
 [ rdf:type owl:AllDisjointClasses ;
-  owl:members ( <https://w3id.org/BCore/FootCycleRoute>
-                <https://w3id.org/BCore/RailwayRoute>
-                <https://w3id.org/BCore/RoadRoute>
-                <https://w3id.org/BCore/WaterWayRoute>
+  owl:members ( :FootCycleRoute
+                :RailwayRoute
+                :RoadRoute
+                :WaterWayRoute
               )
 ] .
 
 
 [ rdf:type owl:AllDisjointClasses ;
-  owl:members ( <https://w3id.org/BCore/PrestressedConcrete>
-                <https://w3id.org/BCore/SteelConcreteComposite>
+  owl:members ( :PrestressedConcrete
+                :SteelConcreteComposite
                 <https://w3id.org/bmat#ReinforcedConcrete>
               )
 ] .
