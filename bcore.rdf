@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="https://w3id.org/bcore#"
+<rdf:RDF xmlns:bcore="https://w3id.org/bcore#"
      xml:base="https://w3id.org/bcore"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:dct="https://w3id.org/bcore#dct:"

@@ -55,16 +55,16 @@
         "value" : "bcore",
         "type" : "label"
       } ],
-      "abstract" : [ {
-        "identifier" : "abstract",
-        "language" : "en",
-        "value" : "The Bridge Core Ontology (BCore) enables the represetation of a bridge structure, its components and material, as well as the infrastructure and media files connected to it and the environment and location of the bridge. BCore is created by the Institute of Concrete Structures (IMB) at the Dresden University of Technology (TUD).",
-        "type" : "label"
-      } ],
       "versionInfo" : [ {
         "identifier" : "versionInfo",
         "language" : "undefined",
         "value" : "0.0.1",
+        "type" : "label"
+      } ],
+      "abstract" : [ {
+        "identifier" : "abstract",
+        "language" : "en",
+        "value" : "The Bridge Core Ontology (BCore) enables the represetation of a bridge structure, its components and material, as well as the infrastructure and media files connected to it and the environment and location of the bridge. BCore is created by the Institute of Concrete Structures (IMB) at the Dresden University of Technology (TUD).",
         "type" : "label"
       } ],
       "title" : [ {
@@ -131,10 +131,10 @@
     "id" : "120",
     "type" : "owl:Class"
   }, {
-    "id" : "49",
+    "id" : "135",
     "type" : "owl:Class"
   }, {
-    "id" : "135",
+    "id" : "49",
     "type" : "owl:Class"
   }, {
     "id" : "76",
@@ -170,10 +170,10 @@
     "id" : "18",
     "type" : "owl:Class"
   }, {
-    "id" : "4",
+    "id" : "137",
     "type" : "owl:Class"
   }, {
-    "id" : "137",
+    "id" : "4",
     "type" : "owl:Class"
   }, {
     "id" : "8",
@@ -194,10 +194,10 @@
     "id" : "150",
     "type" : "owl:Class"
   }, {
-    "id" : "75",
+    "id" : "6",
     "type" : "owl:Class"
   }, {
-    "id" : "6",
+    "id" : "75",
     "type" : "owl:Class"
   }, {
     "id" : "10",
@@ -594,6 +594,18 @@
     "id" : "120",
     "superClasses" : [ "106" ]
   }, {
+    "iri" : "https://w3id.org/bcore#PlateGirder",
+    "baseIri" : "https://w3id.org/bcore",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "PlateGirder"
+    },
+    "comment" : {
+      "de" : "Vollwandträger (Stahl)"
+    },
+    "id" : "135",
+    "superClasses" : [ "61" ]
+  }, {
     "iri" : "https://w3id.org/brcomp#TensionComponent",
     "baseIri" : "https://w3id.org/brcomp",
     "instances" : 0,
@@ -607,18 +619,6 @@
     "attributes" : [ "external" ],
     "id" : "49",
     "superClasses" : [ "10", "15" ]
-  }, {
-    "iri" : "https://w3id.org/bcore#PlateGirder",
-    "baseIri" : "https://w3id.org/bcore",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "PlateGirder"
-    },
-    "comment" : {
-      "de" : "Vollwandträger (Stahl)"
-    },
-    "id" : "135",
-    "superClasses" : [ "61" ]
   }, {
     "iri" : "https://w3id.org/bmat#BuildingMaterial",
     "baseIri" : "https://w3id.org/bmat",
@@ -715,7 +715,7 @@
       "IRI-based" : "Zone"
     },
     "subClasses" : [ "59", "1", "4", "6", "8" ],
-    "attributes" : [ "equivalent", "external" ],
+    "attributes" : [ "external", "equivalent" ],
     "id" : "2"
   }, {
     "iri" : "https://w3id.org/brot#SuperStructure",
@@ -757,18 +757,6 @@
     "id" : "18",
     "superClasses" : [ "76" ]
   }, {
-    "iri" : "https://w3id.org/bcore#Country",
-    "baseIri" : "https://w3id.org/bcore",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "Country"
-    },
-    "comment" : {
-      "de" : "Land"
-    },
-    "id" : "4",
-    "superClasses" : [ "2" ]
-  }, {
     "iri" : "https://w3id.org/brcomp#AbutmentWingWall",
     "baseIri" : "https://w3id.org/brcomp",
     "instances" : 0,
@@ -781,6 +769,18 @@
     "attributes" : [ "external" ],
     "id" : "137",
     "superClasses" : [ "106" ]
+  }, {
+    "iri" : "https://w3id.org/bcore#Country",
+    "baseIri" : "https://w3id.org/bcore",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Country"
+    },
+    "comment" : {
+      "de" : "Land"
+    },
+    "id" : "4",
+    "superClasses" : [ "2" ]
   }, {
     "iri" : "https://w3id.org/bot#Site",
     "baseIri" : "https://w3id.org/bot",
@@ -855,6 +855,18 @@
     "id" : "150",
     "superClasses" : [ "61" ]
   }, {
+    "iri" : "https://w3id.org/bcore#Region",
+    "baseIri" : "https://w3id.org/bcore",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Region"
+    },
+    "comment" : {
+      "de" : "Region/ Bundesland"
+    },
+    "id" : "6",
+    "superClasses" : [ "2" ]
+  }, {
     "iri" : "https://w3id.org/bmat#Concrete",
     "baseIri" : "https://w3id.org/bmat",
     "instances" : 0,
@@ -867,18 +879,6 @@
     "attributes" : [ "external" ],
     "id" : "75",
     "superClasses" : [ "76" ]
-  }, {
-    "iri" : "https://w3id.org/bcore#Region",
-    "baseIri" : "https://w3id.org/bcore",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "Region"
-    },
-    "comment" : {
-      "de" : "Region/ Bundesland"
-    },
-    "id" : "6",
-    "superClasses" : [ "2" ]
   }, {
     "iri" : "https://w3id.org/brcomp#SubStructureComponent",
     "baseIri" : "https://w3id.org/brcomp",
@@ -1016,7 +1016,7 @@
       "IRI-based" : "SpatialZone"
     },
     "subClasses" : [ "122", "79", "46" ],
-    "attributes" : [ "equivalent", "external" ],
+    "attributes" : [ "external", "equivalent" ],
     "id" : "80"
   }, {
     "iri" : "https://w3id.org/bcore#TechnicalDocument",
@@ -1127,7 +1127,7 @@
   }, {
     "instances" : 0,
     "union" : [ "104", "89" ],
-    "attributes" : [ "anonymous", "union" ],
+    "attributes" : [ "union", "anonymous" ],
     "id" : "206"
   }, {
     "iri" : "http://www.w3.org/2002/07/owl#Thing",
@@ -1139,7 +1139,7 @@
   }, {
     "instances" : 0,
     "union" : [ "104", "89" ],
-    "attributes" : [ "anonymous", "union" ],
+    "attributes" : [ "union", "anonymous" ],
     "id" : "87"
   }, {
     "iri" : "https://w3id.org/brcomp#Cable",
@@ -1430,11 +1430,11 @@
     "id" : "86",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "90",
-    "type" : "owl:datatypeProperty"
-  }, {
     "id" : "24",
     "type" : "owl:objectProperty"
+  }, {
+    "id" : "90",
+    "type" : "owl:datatypeProperty"
   }, {
     "id" : "92",
     "type" : "owl:datatypeProperty"
@@ -1562,11 +1562,11 @@
     "id" : "160",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "161",
-    "type" : "owl:datatypeProperty"
-  }, {
     "id" : "37",
     "type" : "owl:objectProperty"
+  }, {
+    "id" : "161",
+    "type" : "owl:datatypeProperty"
   }, {
     "id" : "43",
     "type" : "owl:objectProperty"
@@ -1914,7 +1914,7 @@
     },
     "domain" : "20",
     "subproperty" : [ "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31", "32", "33", "34", "35", "36", "37", "38", "39", "40", "41", "42", "43", "44", "45" ],
-    "attributes" : [ "object", "external" ],
+    "attributes" : [ "external", "object" ],
     "id" : "19"
   }, {
     "iri" : "https://w3id.org/bcore#carriesRoute",
@@ -1943,7 +1943,7 @@
       "de" : "Breite",
       "undefined" : "[m]"
     },
-    "attributes" : [ "functional", "datatype", "external" ],
+    "attributes" : [ "external", "datatype", "functional" ],
     "id" : "53"
   }, {
     "range" : "57",
@@ -2061,21 +2061,8 @@
       "de" : "Charakteristische Festigkeit des Stahls",
       "undefined" : "[N/m²]"
     },
-    "attributes" : [ "functional", "datatype" ],
+    "attributes" : [ "datatype", "functional" ],
     "id" : "86"
-  }, {
-    "iri" : "https://w3id.org/bcore#ArchShape",
-    "baseIri" : "https://w3id.org/bcore",
-    "range" : "91",
-    "label" : {
-      "IRI-based" : "ArchShape"
-    },
-    "domain" : "52",
-    "comment" : {
-      "undefined" : "Form des Bogens"
-    },
-    "attributes" : [ "datatype" ],
-    "id" : "90"
   }, {
     "iri" : "https://w3id.org/bcore#crossesZone",
     "baseIri" : "https://w3id.org/bcore",
@@ -2091,6 +2078,19 @@
     "attributes" : [ "object" ],
     "id" : "24"
   }, {
+    "iri" : "https://w3id.org/bcore#ArchShape",
+    "baseIri" : "https://w3id.org/bcore",
+    "range" : "91",
+    "label" : {
+      "IRI-based" : "ArchShape"
+    },
+    "domain" : "52",
+    "comment" : {
+      "undefined" : "Form des Bogens"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "90"
+  }, {
     "iri" : "https://w3id.org/bcore#Ductility",
     "baseIri" : "https://w3id.org/bcore",
     "range" : "93",
@@ -2101,7 +2101,7 @@
     "comment" : {
       "de" : "Duktilität"
     },
-    "attributes" : [ "functional", "datatype" ],
+    "attributes" : [ "datatype", "functional" ],
     "id" : "92"
   }, {
     "iri" : "https://w3id.org/brot#containsComponent",
@@ -2115,7 +2115,7 @@
     "comment" : {
       "de" : "Brücke besteht aus Bauteil"
     },
-    "attributes" : [ "object", "external" ],
+    "attributes" : [ "external", "object" ],
     "id" : "29"
   }, {
     "iri" : "https://w3id.org/bcore#locatedAt",
@@ -2129,7 +2129,7 @@
     "comment" : {
       "de" : "Zone befindet sich an Ort"
     },
-    "attributes" : [ "functional", "object" ],
+    "attributes" : [ "object", "functional" ],
     "id" : "32"
   }, {
     "iri" : "https://w3id.org/bcore#ZoneName",
@@ -2142,7 +2142,7 @@
     "comment" : {
       "de" : "Name der Zone"
     },
-    "attributes" : [ "functional", "datatype" ],
+    "attributes" : [ "datatype", "functional" ],
     "id" : "96"
   }, {
     "iri" : "https://w3id.org/bcore#partialStructureOf",
@@ -2156,7 +2156,7 @@
     "comment" : {
       "de" : "Brückenzug ist Teil genau einer Brücke"
     },
-    "attributes" : [ "functional", "object" ],
+    "attributes" : [ "object", "functional" ],
     "id" : "35"
   }, {
     "iri" : "https://w3id.org/bcore#ExpositionClass",
@@ -2191,7 +2191,7 @@
       "de" : "Querschnittsbreite der Infrastruktur",
       "undefined" : "[m]"
     },
-    "attributes" : [ "functional", "datatype" ],
+    "attributes" : [ "datatype", "functional" ],
     "id" : "100"
   }, {
     "iri" : "http://www.w3.org/2002/07/owl#topDataProperty",
@@ -2201,7 +2201,7 @@
       "IRI-based" : "topDataProperty"
     },
     "domain" : "20",
-    "attributes" : [ "datatype", "external" ],
+    "attributes" : [ "external", "datatype" ],
     "id" : "102"
   }, {
     "iri" : "https://w3id.org/bcore#traversesBridge",
@@ -2230,7 +2230,7 @@
     "comment" : {
       "de" : "Bauteil ist Teil genau einer Brücke"
     },
-    "attributes" : [ "functional", "object" ],
+    "attributes" : [ "object", "functional" ],
     "id" : "23"
   }, {
     "range" : "56",
@@ -2303,7 +2303,7 @@
     "comment" : {
       "de" : "Längengrad"
     },
-    "attributes" : [ "functional", "datatype" ],
+    "attributes" : [ "datatype", "functional" ],
     "id" : "130"
   }, {
     "range" : "61",
@@ -2350,7 +2350,7 @@
       "de" : "Volumen",
       "undefined" : "[m³]"
     },
-    "attributes" : [ "functional", "datatype" ],
+    "attributes" : [ "datatype", "functional" ],
     "id" : "143"
   }, {
     "range" : "10",
@@ -2409,7 +2409,7 @@
     "comment" : {
       "de" : "Bauteil liegt direkt über anderem Bauteil"
     },
-    "attributes" : [ "object", "external" ],
+    "attributes" : [ "external", "object" ],
     "id" : "34"
   }, {
     "range" : "10",
@@ -2428,27 +2428,13 @@
       "de" : "Charakteristische Druckfestigkeit des Betons",
       "undefined" : "[N/m²]"
     },
-    "attributes" : [ "functional", "datatype" ],
+    "attributes" : [ "datatype", "functional" ],
     "id" : "158"
   }, {
     "range" : "10",
     "domain" : "51",
     "attributes" : [ "object", "anonymous" ],
     "id" : "160"
-  }, {
-    "iri" : "https://w3id.org/brcomp#length",
-    "baseIri" : "https://w3id.org/brcomp",
-    "range" : "162",
-    "label" : {
-      "IRI-based" : "length"
-    },
-    "domain" : "11",
-    "comment" : {
-      "de" : "Länge",
-      "undefined" : "[m]"
-    },
-    "attributes" : [ "functional", "datatype", "external" ],
-    "id" : "161"
   }, {
     "iri" : "https://w3id.org/bcore#partOfRoute",
     "baseIri" : "https://w3id.org/bcore",
@@ -2461,8 +2447,22 @@
     "comment" : {
       "de" : "Trassenpunkt ist Teil von Trasse"
     },
-    "attributes" : [ "functional", "object" ],
+    "attributes" : [ "object", "functional" ],
     "id" : "37"
+  }, {
+    "iri" : "https://w3id.org/brcomp#length",
+    "baseIri" : "https://w3id.org/brcomp",
+    "range" : "162",
+    "label" : {
+      "IRI-based" : "length"
+    },
+    "domain" : "11",
+    "comment" : {
+      "de" : "Länge",
+      "undefined" : "[m]"
+    },
+    "attributes" : [ "external", "datatype", "functional" ],
+    "id" : "161"
   }, {
     "iri" : "https://w3id.org/bcore#madeOfMaterial",
     "baseIri" : "https://w3id.org/bcore",
@@ -2493,7 +2493,7 @@
     "attributes" : [ "object", "anonymous" ],
     "id" : "165"
   }, {
-    "range" : "10",
+    "range" : "15",
     "domain" : "13",
     "attributes" : [ "object", "anonymous" ],
     "id" : "166"
@@ -2508,7 +2508,7 @@
     "comment" : {
       "de" : "Zone schneidet Zone"
     },
-    "attributes" : [ "object", "symmetric", "external" ],
+    "attributes" : [ "external", "object", "symmetric" ],
     "id" : "167"
   }, {
     "iri" : "https://w3id.org/brot#aggregates",
@@ -2522,7 +2522,7 @@
     "comment" : {
       "de" : "Bauteil besteht aus Bauteil"
     },
-    "attributes" : [ "object", "transitive", "external" ],
+    "attributes" : [ "external", "object", "transitive" ],
     "id" : "25"
   }, {
     "iri" : "https://w3id.org/bcore#locatedInZone",
@@ -2556,7 +2556,7 @@
     "comment" : {
       "de" : "Bauteil liegt links angrenzend zu anderem Bauteil"
     },
-    "attributes" : [ "object", "external" ],
+    "attributes" : [ "external", "object" ],
     "id" : "28"
   }, {
     "range" : "75",
@@ -2709,7 +2709,7 @@
       "de" : "Höhe über NN",
       "undefined" : "[m]"
     },
-    "attributes" : [ "functional", "datatype" ],
+    "attributes" : [ "datatype", "functional" ],
     "id" : "191"
   }, {
     "range" : "137",
@@ -2773,7 +2773,7 @@
       "de" : "Elastizitätsmodul des Spannstahls",
       "undefined" : "[N/m²]"
     },
-    "attributes" : [ "functional", "datatype" ],
+    "attributes" : [ "datatype", "functional" ],
     "id" : "203"
   }, {
     "iri" : "https://w3id.org/bcore#Ey",
@@ -2787,7 +2787,7 @@
       "de" : "Elastizitätsmodul des Stahls",
       "undefined" : "[N/m²]"
     },
-    "attributes" : [ "functional", "datatype" ],
+    "attributes" : [ "datatype", "functional" ],
     "id" : "205"
   }, {
     "iri" : "https://w3id.org/bcore#BridgeID",
@@ -2800,7 +2800,7 @@
     "comment" : {
       "de" : "Identifikationsnummer der Brücke"
     },
-    "attributes" : [ "functional", "datatype" ],
+    "attributes" : [ "datatype", "functional" ],
     "id" : "208"
   }, {
     "iri" : "https://w3id.org/bcore#fpk",
@@ -2814,7 +2814,7 @@
       "de" : "Charakteristische Zugfestigkeit des Spannstahls",
       "undefined" : "[N/m²]"
     },
-    "attributes" : [ "functional", "datatype" ],
+    "attributes" : [ "datatype", "functional" ],
     "id" : "210"
   }, {
     "iri" : "https://w3id.org/bcore#GirderShape",
@@ -2881,7 +2881,7 @@
       "de" : "Höhe",
       "undefined" : "[m]"
     },
-    "attributes" : [ "functional", "datatype", "external" ],
+    "attributes" : [ "external", "datatype", "functional" ],
     "id" : "219"
   }, {
     "range" : "67",
@@ -2904,7 +2904,7 @@
     "attributes" : [ "object" ],
     "id" : "45"
   }, {
-    "range" : "15",
+    "range" : "10",
     "domain" : "13",
     "attributes" : [ "object", "anonymous" ],
     "id" : "222"
@@ -2929,7 +2929,7 @@
     "comment" : {
       "de" : "Name der Brücke"
     },
-    "attributes" : [ "functional", "datatype" ],
+    "attributes" : [ "datatype", "functional" ],
     "id" : "225"
   }, {
     "iri" : "https://w3id.org/bcore#PylonShape",
@@ -2970,7 +2970,7 @@
       "de" : "Elastizitätsmodul des Betons",
       "undefined" : "[N/m²]"
     },
-    "attributes" : [ "functional", "datatype" ],
+    "attributes" : [ "datatype", "functional" ],
     "id" : "229"
   }, {
     "iri" : "https://w3id.org/bcore#Latitude",
@@ -2983,7 +2983,7 @@
     "comment" : {
       "de" : "Breitengrad"
     },
-    "attributes" : [ "functional", "datatype" ],
+    "attributes" : [ "datatype", "functional" ],
     "id" : "234"
   }, {
     "iri" : "https://w3id.org/bcore#BridgeStatus",
@@ -3110,7 +3110,7 @@
       "de" : "Datum der Brückenfertigstellung",
       "undefined" : "[ISO Date Format]"
     },
-    "attributes" : [ "functional", "datatype" ],
+    "attributes" : [ "datatype", "functional" ],
     "id" : "257"
   }, {
     "iri" : "https://w3id.org/bcore#Density",
@@ -3124,7 +3124,7 @@
       "de" : "Dichte",
       "undefined" : "[kg/m³]"
     },
-    "attributes" : [ "functional", "datatype" ],
+    "attributes" : [ "datatype", "functional" ],
     "id" : "258"
   }, {
     "range" : "52",
@@ -3148,7 +3148,7 @@
     "comment" : {
       "de" : "Zone enthält Zone"
     },
-    "attributes" : [ "object", "transitive", "external" ],
+    "attributes" : [ "external", "object", "transitive" ],
     "id" : "31"
   }, {
     "iri" : "https://w3id.org/reloc#meetRight",
@@ -3162,7 +3162,7 @@
     "comment" : {
       "de" : "Bauteil liegt rechts angrenzend zu anderem Bauteil"
     },
-    "attributes" : [ "object", "external" ],
+    "attributes" : [ "external", "object" ],
     "id" : "33"
   }, {
     "iri" : "https://w3id.org/bcore#bridgesRoute",
@@ -3191,7 +3191,7 @@
     "comment" : {
       "de" : "Bauteil liegt direkt unter anderem Bauteil"
     },
-    "attributes" : [ "object", "external" ],
+    "attributes" : [ "external", "object" ],
     "id" : "40"
   }, {
     "iri" : "https://w3id.org/bcore#describes",
@@ -3219,7 +3219,7 @@
       "de" : "Lokale Z-Koordinate",
       "undefined" : "[m]"
     },
-    "attributes" : [ "functional", "datatype" ],
+    "attributes" : [ "datatype", "functional" ],
     "id" : "262"
   }, {
     "iri" : "https://w3id.org/bcore#LocalY",
@@ -3233,7 +3233,7 @@
       "de" : "Lokale Y-Koordinate",
       "undefined" : "[m]"
     },
-    "attributes" : [ "functional", "datatype" ],
+    "attributes" : [ "datatype", "functional" ],
     "id" : "263"
   }, {
     "iri" : "https://w3id.org/bcore#LocalX",
@@ -3247,7 +3247,7 @@
       "de" : "Lokale X-Koordinate",
       "undefined" : "[m]"
     },
-    "attributes" : [ "functional", "datatype" ],
+    "attributes" : [ "datatype", "functional" ],
     "id" : "265"
   } ]
 }
