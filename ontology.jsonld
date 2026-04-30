@@ -3,7 +3,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
   "http://www.w3.org/2002/07/owl#members" : [ {
     "@list" : [ {
-      "@id" : "https://w3id.org/BCore#Abutment"
+      "@id" : "https://w3id.org/bcore#Abutment"
     }, {
       "@id" : "https://w3id.org/brcomp#Arch"
     }, {
@@ -23,9 +23,9 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
   "http://www.w3.org/2002/07/owl#members" : [ {
     "@list" : [ {
-      "@id" : "https://w3id.org/BCore#CompositeMaterial"
+      "@id" : "https://w3id.org/bcore#CompositeMaterial"
     }, {
-      "@id" : "https://w3id.org/BCore#Metal"
+      "@id" : "https://w3id.org/bcore#Metal"
     }, {
       "@id" : "https://w3id.org/bmat#Concrete"
     } ]
@@ -35,13 +35,13 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
   "http://www.w3.org/2002/07/owl#members" : [ {
     "@list" : [ {
-      "@id" : "https://w3id.org/BCore#FootCycleRoute"
+      "@id" : "https://w3id.org/bcore#FootCycleRoute"
     }, {
-      "@id" : "https://w3id.org/BCore#RailwayRoute"
+      "@id" : "https://w3id.org/bcore#RailwayRoute"
     }, {
-      "@id" : "https://w3id.org/BCore#RoadRoute"
+      "@id" : "https://w3id.org/bcore#RoadRoute"
     }, {
-      "@id" : "https://w3id.org/BCore#WaterWayRoute"
+      "@id" : "https://w3id.org/bcore#WaterWayRoute"
     } ]
   } ]
 }, {
@@ -49,9 +49,9 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
   "http://www.w3.org/2002/07/owl#members" : [ {
     "@list" : [ {
-      "@id" : "https://w3id.org/BCore#PrestressedConcrete"
+      "@id" : "https://w3id.org/bcore#PrestressedConcrete"
     }, {
-      "@id" : "https://w3id.org/BCore#SteelConcreteComposite"
+      "@id" : "https://w3id.org/bcore#SteelConcreteComposite"
     }, {
       "@id" : "https://w3id.org/bmat#ReinforcedConcrete"
     } ]
@@ -103,13 +103,13 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
   "http://www.w3.org/2002/07/owl#members" : [ {
     "@list" : [ {
-      "@id" : "https://w3id.org/BCore#BoxGirder"
+      "@id" : "https://w3id.org/bcore#BoxGirder"
     }, {
-      "@id" : "https://w3id.org/BCore#IBeam"
+      "@id" : "https://w3id.org/bcore#IBeam"
     }, {
-      "@id" : "https://w3id.org/BCore#PlateGirder"
+      "@id" : "https://w3id.org/bcore#PlateGirder"
     }, {
-      "@id" : "https://w3id.org/BCore#TBeam"
+      "@id" : "https://w3id.org/bcore#TBeam"
     } ]
   } ]
 }, {
@@ -134,7 +134,7 @@
   "@id" : "http://www.w3.org/2002/07/owl#versionIRI",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
-  "@id" : "https://w3id.org/BCore",
+  "@id" : "https://w3id.org/bcore",
   "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
   "http://purl.org/dc/elements/1.1/abstract" : [ {
     "@language" : "en",
@@ -148,8 +148,8 @@
     "@value" : "Jakob Vogt"
   } ],
   "http://purl.org/dc/terms/created" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
-    "@value" : "2025-11-06T11:00:00"
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2025-11-06"
   } ],
   "http://purl.org/dc/terms/creator" : [ {
     "@value" : "Johannes Reimer"
@@ -167,15 +167,15 @@
   "http://www.w3.org/2002/07/owl#versionInfo" : [ {
     "@value" : "0.0.1"
   } ],
-  "https://w3id.org/BCore#dct:description" : [ {
+  "https://w3id.org/bcore#dct:description" : [ {
     "@language" : "en",
     "@value" : "Core ontology for the representation of bridges."
   } ],
-  "https://w3id.org/BCore#vann:preferredNamespacePrefix" : [ {
+  "https://w3id.org/bcore#vann:preferredNamespacePrefix" : [ {
     "@value" : "bcore"
   } ]
 }, {
-  "@id" : "https://w3id.org/BCore#Abutment",
+  "@id" : "https://w3id.org/bcore#Abutment",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "de",
@@ -185,7 +185,7 @@
     "@id" : "https://w3id.org/brcomp#SubStructureComponent"
   } ]
 }, {
-  "@id" : "https://w3id.org/BCore#Altitude",
+  "@id" : "https://w3id.org/bcore#Altitude",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "de",
@@ -194,13 +194,13 @@
     "@value" : "[m]"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/BCore#LocationPoint"
+    "@id" : "https://w3id.org/bcore#LocationPoint"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#decimal"
   } ]
 }, {
-  "@id" : "https://w3id.org/BCore#ArchShape",
+  "@id" : "https://w3id.org/bcore#ArchShape",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Form des Bogens"
@@ -212,7 +212,7 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
-  "@id" : "https://w3id.org/BCore#BoxGirder",
+  "@id" : "https://w3id.org/bcore#BoxGirder",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "de",
@@ -222,7 +222,7 @@
     "@id" : "https://w3id.org/brcomp#GirderMainGirder"
   } ]
 }, {
-  "@id" : "https://w3id.org/BCore#BridgeConstructionEndDate",
+  "@id" : "https://w3id.org/bcore#BridgeConstructionEndDate",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "de",
@@ -237,7 +237,7 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
-  "@id" : "https://w3id.org/BCore#BridgeID",
+  "@id" : "https://w3id.org/bcore#BridgeID",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "de",
@@ -250,7 +250,7 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#int"
   } ]
 }, {
-  "@id" : "https://w3id.org/BCore#BridgeName",
+  "@id" : "https://w3id.org/bcore#BridgeName",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "de",
@@ -263,7 +263,7 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
-  "@id" : "https://w3id.org/BCore#BridgeStatus",
+  "@id" : "https://w3id.org/bcore#BridgeStatus",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "de",
@@ -276,7 +276,7 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
-  "@id" : "https://w3id.org/BCore#City",
+  "@id" : "https://w3id.org/bcore#City",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "de",
@@ -286,7 +286,7 @@
     "@id" : "https://w3id.org/bot#Zone"
   } ]
 }, {
-  "@id" : "https://w3id.org/BCore#ComponentVolume",
+  "@id" : "https://w3id.org/bcore#ComponentVolume",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "de",
@@ -304,7 +304,7 @@
     "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
   } ]
 }, {
-  "@id" : "https://w3id.org/BCore#CompositeMaterial",
+  "@id" : "https://w3id.org/bcore#CompositeMaterial",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "de",
@@ -314,17 +314,17 @@
     "@id" : "https://w3id.org/bmat#BuildingMaterial"
   } ]
 }, {
-  "@id" : "https://w3id.org/BCore#ConstructionSteel",
+  "@id" : "https://w3id.org/bcore#ConstructionSteel",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "de",
     "@value" : "Baustahl"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/BCore#Steel"
+    "@id" : "https://w3id.org/bcore#Steel"
   } ]
 }, {
-  "@id" : "https://w3id.org/BCore#Country",
+  "@id" : "https://w3id.org/bcore#Country",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "de",
@@ -334,7 +334,7 @@
     "@id" : "https://w3id.org/bot#Zone"
   } ]
 }, {
-  "@id" : "https://w3id.org/BCore#Density",
+  "@id" : "https://w3id.org/bcore#Density",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "de",
@@ -352,20 +352,20 @@
     "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
   } ]
 }, {
-  "@id" : "https://w3id.org/BCore#Ductility",
+  "@id" : "https://w3id.org/bcore#Ductility",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "de",
     "@value" : "Duktilität"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/BCore#Steel"
+    "@id" : "https://w3id.org/bcore#Steel"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
-  "@id" : "https://w3id.org/BCore#Ec",
+  "@id" : "https://w3id.org/bcore#Ec",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "de",
@@ -380,7 +380,7 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#decimal"
   } ]
 }, {
-  "@id" : "https://w3id.org/BCore#Ep",
+  "@id" : "https://w3id.org/bcore#Ep",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "de",
@@ -389,7 +389,7 @@
     "@value" : "[N/m²]"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/BCore#PrestressingSteel"
+    "@id" : "https://w3id.org/bcore#PrestressingSteel"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#decimal"
@@ -398,7 +398,7 @@
     "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
   } ]
 }, {
-  "@id" : "https://w3id.org/BCore#EquipmentComponent",
+  "@id" : "https://w3id.org/bcore#EquipmentComponent",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "de",
@@ -416,7 +416,7 @@
     "@id" : "https://w3id.org/brcomp#SuperStructureComponent"
   } ]
 }, {
-  "@id" : "https://w3id.org/BCore#ExpositionClass",
+  "@id" : "https://w3id.org/bcore#ExpositionClass",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "de",
@@ -435,7 +435,7 @@
     "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
   } ]
 }, {
-  "@id" : "https://w3id.org/BCore#Ey",
+  "@id" : "https://w3id.org/bcore#Ey",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "de",
@@ -444,7 +444,7 @@
     "@value" : "[N/m²]"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/BCore#ConstructionSteel"
+    "@id" : "https://w3id.org/bcore#ConstructionSteel"
   }, {
     "@id" : "https://w3id.org/bmat#ReinforcementSteel"
   } ],
@@ -455,17 +455,17 @@
     "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
   } ]
 }, {
-  "@id" : "https://w3id.org/BCore#FootCycleRoute",
+  "@id" : "https://w3id.org/bcore#FootCycleRoute",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "de",
     "@value" : "Geh- und/oder Radweg"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/BCore#InfrastructureRoute"
+    "@id" : "https://w3id.org/bcore#InfrastructureRoute"
   } ]
 }, {
-  "@id" : "https://w3id.org/BCore#GirderShape",
+  "@id" : "https://w3id.org/bcore#GirderShape",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "de",
@@ -478,7 +478,7 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
-  "@id" : "https://w3id.org/BCore#IBeam",
+  "@id" : "https://w3id.org/bcore#IBeam",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "de",
@@ -488,34 +488,34 @@
     "@id" : "https://w3id.org/brcomp#GirderMainGirder"
   } ]
 }, {
-  "@id" : "https://w3id.org/BCore#Image",
+  "@id" : "https://w3id.org/bcore#Image",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "de",
     "@value" : "Bild"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/BCore#MediaFile"
+    "@id" : "https://w3id.org/bcore#MediaFile"
   } ],
   "http://www.w3.org/2002/07/owl#disjointWith" : [ {
-    "@id" : "https://w3id.org/BCore#TechnicalDocument"
+    "@id" : "https://w3id.org/bcore#TechnicalDocument"
   } ]
 }, {
-  "@id" : "https://w3id.org/BCore#InfrastructureRoute",
+  "@id" : "https://w3id.org/bcore#InfrastructureRoute",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "de",
     "@value" : "Infrastrukturtrasse"
   } ]
 }, {
-  "@id" : "https://w3id.org/BCore#InfrastructureRouteName",
+  "@id" : "https://w3id.org/bcore#InfrastructureRouteName",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "de",
     "@value" : "Name/ Bezeichnung der Infrastruktur"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/BCore#InfrastructureRoute"
+    "@id" : "https://w3id.org/bcore#InfrastructureRoute"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
@@ -524,7 +524,7 @@
     "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
   } ]
 }, {
-  "@id" : "https://w3id.org/BCore#InfrastructureRouteWidth",
+  "@id" : "https://w3id.org/bcore#InfrastructureRouteWidth",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "de",
@@ -533,7 +533,7 @@
     "@value" : "[m]"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/BCore#InfrastructureRoute"
+    "@id" : "https://w3id.org/bcore#InfrastructureRoute"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#decimal"
@@ -542,14 +542,14 @@
     "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
   } ]
 }, {
-  "@id" : "https://w3id.org/BCore#Latitude",
+  "@id" : "https://w3id.org/bcore#Latitude",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "de",
     "@value" : "Breitengrad"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/BCore#LocationPoint"
+    "@id" : "https://w3id.org/bcore#LocationPoint"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#decimal"
@@ -558,7 +558,7 @@
     "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
   } ]
 }, {
-  "@id" : "https://w3id.org/BCore#LocalX",
+  "@id" : "https://w3id.org/bcore#LocalX",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "de",
@@ -567,7 +567,7 @@
     "@value" : "[m]"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/BCore#LocationPoint"
+    "@id" : "https://w3id.org/bcore#LocationPoint"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#decimal"
@@ -576,7 +576,7 @@
     "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
   } ]
 }, {
-  "@id" : "https://w3id.org/BCore#LocalY",
+  "@id" : "https://w3id.org/bcore#LocalY",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "de",
@@ -585,7 +585,7 @@
     "@value" : "[m]"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/BCore#LocationPoint"
+    "@id" : "https://w3id.org/bcore#LocationPoint"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#decimal"
@@ -594,7 +594,7 @@
     "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
   } ]
 }, {
-  "@id" : "https://w3id.org/BCore#LocalZ",
+  "@id" : "https://w3id.org/bcore#LocalZ",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "de",
@@ -603,7 +603,7 @@
     "@value" : "[m]"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/BCore#LocationPoint"
+    "@id" : "https://w3id.org/bcore#LocationPoint"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#decimal"
@@ -612,21 +612,21 @@
     "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
   } ]
 }, {
-  "@id" : "https://w3id.org/BCore#LocationPoint",
+  "@id" : "https://w3id.org/bcore#LocationPoint",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "de",
     "@value" : "Örtlicher Punkt"
   } ]
 }, {
-  "@id" : "https://w3id.org/BCore#Longitude",
+  "@id" : "https://w3id.org/bcore#Longitude",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "de",
     "@value" : "Längengrad"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/BCore#LocationPoint"
+    "@id" : "https://w3id.org/bcore#LocationPoint"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#decimal"
@@ -635,7 +635,7 @@
     "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
   } ]
 }, {
-  "@id" : "https://w3id.org/BCore#MaterialName",
+  "@id" : "https://w3id.org/bcore#MaterialName",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/bmat#BuildingMaterial"
@@ -647,14 +647,14 @@
     "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
   } ]
 }, {
-  "@id" : "https://w3id.org/BCore#MediaFile",
+  "@id" : "https://w3id.org/bcore#MediaFile",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "de",
     "@value" : "Datei"
   } ]
 }, {
-  "@id" : "https://w3id.org/BCore#Metal",
+  "@id" : "https://w3id.org/bcore#Metal",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "de",
@@ -664,7 +664,7 @@
     "@id" : "https://w3id.org/bmat#BuildingMaterial"
   } ]
 }, {
-  "@id" : "https://w3id.org/BCore#PlateGirder",
+  "@id" : "https://w3id.org/bcore#PlateGirder",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "de",
@@ -674,27 +674,27 @@
     "@id" : "https://w3id.org/brcomp#GirderMainGirder"
   } ]
 }, {
-  "@id" : "https://w3id.org/BCore#PrestressedConcrete",
+  "@id" : "https://w3id.org/bcore#PrestressedConcrete",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "de",
     "@value" : "Spannbeton"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/BCore#CompositeMaterial"
+    "@id" : "https://w3id.org/bcore#CompositeMaterial"
   } ]
 }, {
-  "@id" : "https://w3id.org/BCore#PrestressingSteel",
+  "@id" : "https://w3id.org/bcore#PrestressingSteel",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "de",
     "@value" : "Spannstahl"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/BCore#Steel"
+    "@id" : "https://w3id.org/bcore#Steel"
   } ]
 }, {
-  "@id" : "https://w3id.org/BCore#PylonShape",
+  "@id" : "https://w3id.org/bcore#PylonShape",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "de",
@@ -707,17 +707,17 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
-  "@id" : "https://w3id.org/BCore#RailwayRoute",
+  "@id" : "https://w3id.org/bcore#RailwayRoute",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "de",
     "@value" : "Schienenweg"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/BCore#InfrastructureRoute"
+    "@id" : "https://w3id.org/bcore#InfrastructureRoute"
   } ]
 }, {
-  "@id" : "https://w3id.org/BCore#Region",
+  "@id" : "https://w3id.org/bcore#Region",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "de",
@@ -727,47 +727,47 @@
     "@id" : "https://w3id.org/bot#Zone"
   } ]
 }, {
-  "@id" : "https://w3id.org/BCore#RoadRoute",
+  "@id" : "https://w3id.org/bcore#RoadRoute",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "de",
     "@value" : "Straße"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/BCore#InfrastructureRoute"
+    "@id" : "https://w3id.org/bcore#InfrastructureRoute"
   } ]
 }, {
-  "@id" : "https://w3id.org/BCore#RoutePoint",
+  "@id" : "https://w3id.org/bcore#RoutePoint",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "de",
     "@value" : "Trassenpunkt"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/BCore#LocationPoint"
+    "@id" : "https://w3id.org/bcore#LocationPoint"
   } ]
 }, {
-  "@id" : "https://w3id.org/BCore#Steel",
+  "@id" : "https://w3id.org/bcore#Steel",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "de",
     "@value" : "Stahl"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/BCore#Metal"
+    "@id" : "https://w3id.org/bcore#Metal"
   } ]
 }, {
-  "@id" : "https://w3id.org/BCore#SteelConcreteComposite",
+  "@id" : "https://w3id.org/bcore#SteelConcreteComposite",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "de",
     "@value" : "Stahl-Beton-Verbund"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/BCore#CompositeMaterial"
+    "@id" : "https://w3id.org/bcore#CompositeMaterial"
   } ]
 }, {
-  "@id" : "https://w3id.org/BCore#TBeam",
+  "@id" : "https://w3id.org/bcore#TBeam",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "de",
@@ -777,17 +777,17 @@
     "@id" : "https://w3id.org/brcomp#GirderMainGirder"
   } ]
 }, {
-  "@id" : "https://w3id.org/BCore#TechnicalDocument",
+  "@id" : "https://w3id.org/bcore#TechnicalDocument",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "de",
     "@value" : "Technisches Dokument"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/BCore#MediaFile"
+    "@id" : "https://w3id.org/bcore#MediaFile"
   } ]
 }, {
-  "@id" : "https://w3id.org/BCore#TrussGirder",
+  "@id" : "https://w3id.org/bcore#TrussGirder",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "de",
@@ -797,17 +797,17 @@
     "@id" : "https://w3id.org/brcomp#GirderMainGirder"
   } ]
 }, {
-  "@id" : "https://w3id.org/BCore#WaterWayRoute",
+  "@id" : "https://w3id.org/bcore#WaterWayRoute",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "de",
     "@value" : "Wasserstraße"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/BCore#InfrastructureRoute"
+    "@id" : "https://w3id.org/bcore#InfrastructureRoute"
   } ]
 }, {
-  "@id" : "https://w3id.org/BCore#ZoneName",
+  "@id" : "https://w3id.org/bcore#ZoneName",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "de",
@@ -820,7 +820,7 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
-  "@id" : "https://w3id.org/BCore#bridgesRoute",
+  "@id" : "https://w3id.org/bcore#bridgesRoute",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "de",
@@ -830,13 +830,13 @@
     "@id" : "https://w3id.org/brot#Bridge"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://w3id.org/BCore#InfrastructureRoute"
+    "@id" : "https://w3id.org/bcore#InfrastructureRoute"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
   } ]
 }, {
-  "@id" : "https://w3id.org/BCore#bridgesZone",
+  "@id" : "https://w3id.org/bcore#bridgesZone",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "de",
@@ -852,7 +852,7 @@
     "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
   } ]
 }, {
-  "@id" : "https://w3id.org/BCore#carriesRoute",
+  "@id" : "https://w3id.org/bcore#carriesRoute",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "de",
@@ -862,23 +862,23 @@
     "@id" : "https://w3id.org/brot#Bridge"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://w3id.org/BCore#InfrastructureRoute"
+    "@id" : "https://w3id.org/bcore#InfrastructureRoute"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
   } ],
   "http://www.w3.org/2002/07/owl#inverseOf" : [ {
-    "@id" : "https://w3id.org/BCore#traversesBridge"
+    "@id" : "https://w3id.org/bcore#traversesBridge"
   } ]
 }, {
-  "@id" : "https://w3id.org/BCore#compositeOf",
+  "@id" : "https://w3id.org/bcore#compositeOf",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "de",
     "@value" : "Verbundmaterial ist Verbund aus anderem Material"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/BCore#CompositeMaterial"
+    "@id" : "https://w3id.org/bcore#CompositeMaterial"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "https://w3id.org/bmat#BuildingMaterial"
@@ -887,30 +887,30 @@
     "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
   } ]
 }, {
-  "@id" : "https://w3id.org/BCore#crossesRoute",
+  "@id" : "https://w3id.org/bcore#crossesRoute",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#SymmetricProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "de",
     "@value" : "Trasse kreuzt Trasse"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/BCore#InfrastructureRoute"
+    "@id" : "https://w3id.org/bcore#InfrastructureRoute"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://w3id.org/BCore#InfrastructureRoute"
+    "@id" : "https://w3id.org/bcore#InfrastructureRoute"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
   } ]
 }, {
-  "@id" : "https://w3id.org/BCore#crossesZone",
+  "@id" : "https://w3id.org/bcore#crossesZone",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "de",
     "@value" : "Trasse durchquert Zone"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/BCore#InfrastructureRoute"
+    "@id" : "https://w3id.org/bcore#InfrastructureRoute"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "https://w3id.org/bot#Zone"
@@ -919,17 +919,17 @@
     "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
   } ]
 }, {
-  "@id" : "https://w3id.org/BCore#dct:description",
+  "@id" : "https://w3id.org/bcore#dct:description",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
-  "@id" : "https://w3id.org/BCore#describes",
+  "@id" : "https://w3id.org/bcore#describes",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "de",
     "@value" : "Medium stellt Brücke dar"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/BCore#MediaFile"
+    "@id" : "https://w3id.org/bcore#MediaFile"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "https://w3id.org/brot#Bridge"
@@ -938,7 +938,7 @@
     "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
   } ]
 }, {
-  "@id" : "https://w3id.org/BCore#fck",
+  "@id" : "https://w3id.org/bcore#fck",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "de",
@@ -956,7 +956,7 @@
     "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
   } ]
 }, {
-  "@id" : "https://w3id.org/BCore#fpk",
+  "@id" : "https://w3id.org/bcore#fpk",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "de",
@@ -965,7 +965,7 @@
     "@value" : "[N/m²]"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/BCore#PrestressingSteel"
+    "@id" : "https://w3id.org/bcore#PrestressingSteel"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#decimal"
@@ -974,7 +974,7 @@
     "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
   } ]
 }, {
-  "@id" : "https://w3id.org/BCore#fyk",
+  "@id" : "https://w3id.org/bcore#fyk",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "de",
@@ -983,7 +983,7 @@
     "@value" : "[N/m²]"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/BCore#ConstructionSteel"
+    "@id" : "https://w3id.org/bcore#ConstructionSteel"
   }, {
     "@id" : "https://w3id.org/bmat#ReinforcementSteel"
   } ],
@@ -994,7 +994,7 @@
     "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
   } ]
 }, {
-  "@id" : "https://w3id.org/BCore#hasPartialStructure",
+  "@id" : "https://w3id.org/bcore#hasPartialStructure",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "de",
@@ -1010,29 +1010,29 @@
     "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
   } ],
   "http://www.w3.org/2002/07/owl#inverseOf" : [ {
-    "@id" : "https://w3id.org/BCore#partialStructureOf"
+    "@id" : "https://w3id.org/bcore#partialStructureOf"
   } ]
 }, {
-  "@id" : "https://w3id.org/BCore#includesPoint",
+  "@id" : "https://w3id.org/bcore#includesPoint",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "de",
     "@value" : "Trasse enthält Trassenpunkt"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/BCore#InfrastructureRoute"
+    "@id" : "https://w3id.org/bcore#InfrastructureRoute"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://w3id.org/BCore#RoutePoint"
+    "@id" : "https://w3id.org/bcore#RoutePoint"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
   } ],
   "http://www.w3.org/2002/07/owl#inverseOf" : [ {
-    "@id" : "https://w3id.org/BCore#partOfRoute"
+    "@id" : "https://w3id.org/bcore#partOfRoute"
   } ]
 }, {
-  "@id" : "https://w3id.org/BCore#liesWithin",
+  "@id" : "https://w3id.org/bcore#liesWithin",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#TransitiveProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "de",
@@ -1051,7 +1051,7 @@
     "@id" : "https://w3id.org/bot#containsZone"
   } ]
 }, {
-  "@id" : "https://w3id.org/BCore#locatedAt",
+  "@id" : "https://w3id.org/bcore#locatedAt",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "de",
@@ -1061,20 +1061,20 @@
     "@id" : "https://w3id.org/bot#Zone"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://w3id.org/BCore#LocationPoint"
+    "@id" : "https://w3id.org/bcore#LocationPoint"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
   } ]
 }, {
-  "@id" : "https://w3id.org/BCore#locatedInZone",
+  "@id" : "https://w3id.org/bcore#locatedInZone",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "de",
     "@value" : "Örtlicher Punkt befindet sich in Zone"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/BCore#LocationPoint"
+    "@id" : "https://w3id.org/bcore#LocationPoint"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "https://w3id.org/bot#Zone"
@@ -1083,7 +1083,7 @@
     "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
   } ]
 }, {
-  "@id" : "https://w3id.org/BCore#madeOfMaterial",
+  "@id" : "https://w3id.org/bcore#madeOfMaterial",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "de",
@@ -1099,7 +1099,7 @@
     "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
   } ]
 }, {
-  "@id" : "https://w3id.org/BCore#partOfComponent",
+  "@id" : "https://w3id.org/bcore#partOfComponent",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#TransitiveProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "de",
@@ -1118,23 +1118,23 @@
     "@id" : "https://w3id.org/brot#aggregates"
   } ]
 }, {
-  "@id" : "https://w3id.org/BCore#partOfRoute",
+  "@id" : "https://w3id.org/bcore#partOfRoute",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "de",
     "@value" : "Trassenpunkt ist Teil von Trasse"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/BCore#RoutePoint"
+    "@id" : "https://w3id.org/bcore#RoutePoint"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://w3id.org/BCore#InfrastructureRoute"
+    "@id" : "https://w3id.org/bcore#InfrastructureRoute"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
   } ]
 }, {
-  "@id" : "https://w3id.org/BCore#partOfZone",
+  "@id" : "https://w3id.org/bcore#partOfZone",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "de",
@@ -1153,7 +1153,7 @@
     "@id" : "https://w3id.org/brot#containsComponent"
   } ]
 }, {
-  "@id" : "https://w3id.org/BCore#partialStructureOf",
+  "@id" : "https://w3id.org/bcore#partialStructureOf",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "de",
@@ -1169,14 +1169,14 @@
     "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
   } ]
 }, {
-  "@id" : "https://w3id.org/BCore#traversesBridge",
+  "@id" : "https://w3id.org/bcore#traversesBridge",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "de",
     "@value" : "Trasse überquert Brücke"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/BCore#InfrastructureRoute"
+    "@id" : "https://w3id.org/bcore#InfrastructureRoute"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "https://w3id.org/brot#Bridge"
@@ -1185,7 +1185,7 @@
     "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
   } ]
 }, {
-  "@id" : "https://w3id.org/BCore#vann:preferredNamespacePrefix",
+  "@id" : "https://w3id.org/bcore#vann:preferredNamespacePrefix",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
   "@id" : "https://w3id.org/bmat#BuildingMaterial",
@@ -1212,7 +1212,7 @@
     "@value" : "Stahlbeton"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/BCore#CompositeMaterial"
+    "@id" : "https://w3id.org/bcore#CompositeMaterial"
   } ]
 }, {
   "@id" : "https://w3id.org/bmat#ReinforcementSteel",
@@ -1222,7 +1222,7 @@
     "@value" : "Betonstahl"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/BCore#Steel"
+    "@id" : "https://w3id.org/bcore#Steel"
   } ]
 }, {
   "@id" : "https://w3id.org/bot#Building",

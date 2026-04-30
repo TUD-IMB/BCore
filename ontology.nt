@@ -1,0 +1,952 @@
+<https://w3id.org/bcore> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<https://w3id.org/bcore> <http://purl.org/dc/elements/1.1/abstract> "The Bridge Core Ontology (BCore) enables the represetation of a bridge structure, its components and material, as well as the infrastructure and media files connected to it and the environment and location of the bridge. BCore is created by the Institute of Concrete Structures (IMB) at the Dresden University of Technology (TUD)."@en .
+<https://w3id.org/bcore> <http://purl.org/dc/elements/1.1/title> "Bridge Core Ontology for Institute of Concrete Structures, Dresden University of Technology"@en .
+<https://w3id.org/bcore> <http://purl.org/dc/terms/contributor> "Jakob Vogt" .
+<https://w3id.org/bcore> <http://purl.org/dc/terms/created> "2025-11-06"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://w3id.org/bcore> <http://purl.org/dc/terms/creator> "Johannes Reimer" .
+<https://w3id.org/bcore> <http://purl.org/dc/terms/creator> "Morris Florek" .
+<https://w3id.org/bcore> <http://purl.org/dc/terms/creator> "Tim Noack" .
+<https://w3id.org/bcore> <http://purl.org/dc/terms/creator> "Xiaoli Song" .
+<https://w3id.org/bcore> <http://www.w3.org/2000/01/rdf-schema#label> "Bridge Core Ontology"@en .
+<https://w3id.org/bcore> <http://www.w3.org/2002/07/owl#versionInfo> "0.0.1" .
+<https://w3id.org/bcore> <https://w3id.org/bcore#dct:description> "Core ontology for the representation of bridges."@en .
+<https://w3id.org/bcore> <https://w3id.org/bcore#vann:preferredNamespacePrefix> "bcore" .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/elements/1.1/abstract
+<http://purl.org/dc/elements/1.1/abstract> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/title
+<http://purl.org/dc/elements/1.1/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/contributor
+<http://purl.org/dc/terms/contributor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/created
+<http://purl.org/dc/terms/created> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2002/07/owl#versionIRI
+<http://www.w3.org/2002/07/owl#versionIRI> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# https://w3id.org/bcore#dct:description
+<https://w3id.org/bcore#dct:description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# https://w3id.org/bcore#vann:preferredNamespacePrefix
+<https://w3id.org/bcore#vann:preferredNamespacePrefix> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Datatypes
+# #
+# #################################################################
+# 
+# 
+# http://www.w3.org/2001/XMLSchema#date
+<http://www.w3.org/2001/XMLSchema#date> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# https://w3id.org/bcore#bridgesRoute
+<https://w3id.org/bcore#bridgesRoute> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/bcore#bridgesRoute> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<https://w3id.org/bcore#bridgesRoute> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/brot#Bridge> .
+<https://w3id.org/bcore#bridgesRoute> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/bcore#InfrastructureRoute> .
+<https://w3id.org/bcore#bridgesRoute> <http://www.w3.org/2000/01/rdf-schema#comment> "Brücke überquert Trasse"@de .
+# 
+# https://w3id.org/bcore#bridgesZone
+<https://w3id.org/bcore#bridgesZone> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/bcore#bridgesZone> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<https://w3id.org/bcore#bridgesZone> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/brot#Bridge> .
+<https://w3id.org/bcore#bridgesZone> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/bot#Zone> .
+<https://w3id.org/bcore#bridgesZone> <http://www.w3.org/2000/01/rdf-schema#comment> "Brücke überquert Zone"@de .
+# 
+# https://w3id.org/bcore#carriesRoute
+<https://w3id.org/bcore#carriesRoute> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/bcore#carriesRoute> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<https://w3id.org/bcore#carriesRoute> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/bcore#traversesBridge> .
+<https://w3id.org/bcore#carriesRoute> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/brot#Bridge> .
+<https://w3id.org/bcore#carriesRoute> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/bcore#InfrastructureRoute> .
+<https://w3id.org/bcore#carriesRoute> <http://www.w3.org/2000/01/rdf-schema#comment> "Brücke folgt Trasse"@de .
+# 
+# https://w3id.org/bcore#compositeOf
+<https://w3id.org/bcore#compositeOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/bcore#compositeOf> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<https://w3id.org/bcore#compositeOf> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/bcore#CompositeMaterial> .
+<https://w3id.org/bcore#compositeOf> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/bmat#BuildingMaterial> .
+<https://w3id.org/bcore#compositeOf> <http://www.w3.org/2000/01/rdf-schema#comment> "Verbundmaterial ist Verbund aus anderem Material"@de .
+# 
+# https://w3id.org/bcore#crossesRoute
+<https://w3id.org/bcore#crossesRoute> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/bcore#crossesRoute> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<https://w3id.org/bcore#crossesRoute> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#SymmetricProperty> .
+<https://w3id.org/bcore#crossesRoute> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/bcore#InfrastructureRoute> .
+<https://w3id.org/bcore#crossesRoute> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/bcore#InfrastructureRoute> .
+<https://w3id.org/bcore#crossesRoute> <http://www.w3.org/2000/01/rdf-schema#comment> "Trasse kreuzt Trasse"@de .
+# 
+# https://w3id.org/bcore#crossesZone
+<https://w3id.org/bcore#crossesZone> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/bcore#crossesZone> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<https://w3id.org/bcore#crossesZone> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/bcore#InfrastructureRoute> .
+<https://w3id.org/bcore#crossesZone> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/bot#Zone> .
+<https://w3id.org/bcore#crossesZone> <http://www.w3.org/2000/01/rdf-schema#comment> "Trasse durchquert Zone"@de .
+# 
+# https://w3id.org/bcore#describes
+<https://w3id.org/bcore#describes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/bcore#describes> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<https://w3id.org/bcore#describes> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/bcore#MediaFile> .
+<https://w3id.org/bcore#describes> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/brot#Bridge> .
+<https://w3id.org/bcore#describes> <http://www.w3.org/2000/01/rdf-schema#comment> "Medium stellt Brücke dar"@de .
+# 
+# https://w3id.org/bcore#hasPartialStructure
+<https://w3id.org/bcore#hasPartialStructure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/bcore#hasPartialStructure> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<https://w3id.org/bcore#hasPartialStructure> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/bcore#partialStructureOf> .
+<https://w3id.org/bcore#hasPartialStructure> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/brot#Bridge> .
+<https://w3id.org/bcore#hasPartialStructure> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/brot#Bridge> .
+<https://w3id.org/bcore#hasPartialStructure> <http://www.w3.org/2000/01/rdf-schema#comment> "Brücke besitzt Brückenzug"@de .
+# 
+# https://w3id.org/bcore#includesPoint
+<https://w3id.org/bcore#includesPoint> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/bcore#includesPoint> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<https://w3id.org/bcore#includesPoint> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/bcore#partOfRoute> .
+<https://w3id.org/bcore#includesPoint> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/bcore#InfrastructureRoute> .
+<https://w3id.org/bcore#includesPoint> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/bcore#RoutePoint> .
+<https://w3id.org/bcore#includesPoint> <http://www.w3.org/2000/01/rdf-schema#comment> "Trasse enthält Trassenpunkt"@de .
+# 
+# https://w3id.org/bcore#liesWithin
+<https://w3id.org/bcore#liesWithin> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/bcore#liesWithin> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<https://w3id.org/bcore#liesWithin> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/bot#containsZone> .
+<https://w3id.org/bcore#liesWithin> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#TransitiveProperty> .
+<https://w3id.org/bcore#liesWithin> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/bot#Zone> .
+<https://w3id.org/bcore#liesWithin> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/bot#Zone> .
+<https://w3id.org/bcore#liesWithin> <http://www.w3.org/2000/01/rdf-schema#comment> "Zone liegt in Zone"@de .
+# 
+# https://w3id.org/bcore#locatedAt
+<https://w3id.org/bcore#locatedAt> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/bcore#locatedAt> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<https://w3id.org/bcore#locatedAt> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://w3id.org/bcore#locatedAt> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/bot#Zone> .
+<https://w3id.org/bcore#locatedAt> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/bcore#LocationPoint> .
+<https://w3id.org/bcore#locatedAt> <http://www.w3.org/2000/01/rdf-schema#comment> "Zone befindet sich an Ort"@de .
+# 
+# https://w3id.org/bcore#locatedInZone
+<https://w3id.org/bcore#locatedInZone> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/bcore#locatedInZone> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<https://w3id.org/bcore#locatedInZone> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/bcore#LocationPoint> .
+<https://w3id.org/bcore#locatedInZone> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/bot#Zone> .
+<https://w3id.org/bcore#locatedInZone> <http://www.w3.org/2000/01/rdf-schema#comment> "Örtlicher Punkt befindet sich in Zone"@de .
+# 
+# https://w3id.org/bcore#madeOfMaterial
+<https://w3id.org/bcore#madeOfMaterial> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/bcore#madeOfMaterial> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<https://w3id.org/bcore#madeOfMaterial> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/brot#Component> .
+<https://w3id.org/bcore#madeOfMaterial> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/bmat#BuildingMaterial> .
+<https://w3id.org/bcore#madeOfMaterial> <http://www.w3.org/2000/01/rdf-schema#comment> "Bauteil besteht aus Material"@de .
+# 
+# https://w3id.org/bcore#partOfComponent
+<https://w3id.org/bcore#partOfComponent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/bcore#partOfComponent> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<https://w3id.org/bcore#partOfComponent> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/brot#aggregates> .
+<https://w3id.org/bcore#partOfComponent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#TransitiveProperty> .
+<https://w3id.org/bcore#partOfComponent> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/brot#Component> .
+<https://w3id.org/bcore#partOfComponent> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/brot#Component> .
+<https://w3id.org/bcore#partOfComponent> <http://www.w3.org/2000/01/rdf-schema#comment> "Bauteil ist Teil von Bauteil"@de .
+# 
+# https://w3id.org/bcore#partOfRoute
+<https://w3id.org/bcore#partOfRoute> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/bcore#partOfRoute> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<https://w3id.org/bcore#partOfRoute> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://w3id.org/bcore#partOfRoute> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/bcore#RoutePoint> .
+<https://w3id.org/bcore#partOfRoute> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/bcore#InfrastructureRoute> .
+<https://w3id.org/bcore#partOfRoute> <http://www.w3.org/2000/01/rdf-schema#comment> "Trassenpunkt ist Teil von Trasse"@de .
+# 
+# https://w3id.org/bcore#partOfZone
+<https://w3id.org/bcore#partOfZone> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/bcore#partOfZone> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<https://w3id.org/bcore#partOfZone> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/brot#containsComponent> .
+<https://w3id.org/bcore#partOfZone> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://w3id.org/bcore#partOfZone> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/brot#Component> .
+<https://w3id.org/bcore#partOfZone> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/brot#SpatialZone> .
+<https://w3id.org/bcore#partOfZone> <http://www.w3.org/2000/01/rdf-schema#comment> "Bauteil ist Teil genau einer Brücke"@de .
+# 
+# https://w3id.org/bcore#partialStructureOf
+<https://w3id.org/bcore#partialStructureOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/bcore#partialStructureOf> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<https://w3id.org/bcore#partialStructureOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://w3id.org/bcore#partialStructureOf> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/brot#Bridge> .
+<https://w3id.org/bcore#partialStructureOf> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/brot#Bridge> .
+<https://w3id.org/bcore#partialStructureOf> <http://www.w3.org/2000/01/rdf-schema#comment> "Brückenzug ist Teil genau einer Brücke"@de .
+# 
+# https://w3id.org/bcore#traversesBridge
+<https://w3id.org/bcore#traversesBridge> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/bcore#traversesBridge> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<https://w3id.org/bcore#traversesBridge> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/bcore#InfrastructureRoute> .
+<https://w3id.org/bcore#traversesBridge> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/brot#Bridge> .
+<https://w3id.org/bcore#traversesBridge> <http://www.w3.org/2000/01/rdf-schema#comment> "Trasse überquert Brücke"@de .
+# 
+# https://w3id.org/bot#containsZone
+<https://w3id.org/bot#containsZone> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/bot#containsZone> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<https://w3id.org/bot#containsZone> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#TransitiveProperty> .
+<https://w3id.org/bot#containsZone> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/bot#Zone> .
+<https://w3id.org/bot#containsZone> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/bot#Zone> .
+<https://w3id.org/bot#containsZone> <http://www.w3.org/2000/01/rdf-schema#comment> "Zone enthält Zone"@de .
+# 
+# https://w3id.org/bot#intersectsZone
+<https://w3id.org/bot#intersectsZone> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/bot#intersectsZone> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#SymmetricProperty> .
+<https://w3id.org/bot#intersectsZone> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/bot#Zone> .
+<https://w3id.org/bot#intersectsZone> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/bot#Zone> .
+<https://w3id.org/bot#intersectsZone> <http://www.w3.org/2000/01/rdf-schema#comment> "Zone schneidet Zone"@de .
+# 
+# https://w3id.org/brot#aggregates
+<https://w3id.org/brot#aggregates> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/brot#aggregates> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<https://w3id.org/brot#aggregates> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#TransitiveProperty> .
+<https://w3id.org/brot#aggregates> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/brot#Component> .
+<https://w3id.org/brot#aggregates> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/brot#Component> .
+<https://w3id.org/brot#aggregates> <http://www.w3.org/2000/01/rdf-schema#comment> "Bauteil besteht aus Bauteil"@de .
+# 
+# https://w3id.org/brot#containsComponent
+<https://w3id.org/brot#containsComponent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/brot#containsComponent> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<https://w3id.org/brot#containsComponent> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/brot#SpatialZone> .
+<https://w3id.org/brot#containsComponent> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/brot#Component> .
+<https://w3id.org/brot#containsComponent> <http://www.w3.org/2000/01/rdf-schema#comment> "Brücke besteht aus Bauteil"@de .
+# 
+# https://w3id.org/reloc#meetBottom
+<https://w3id.org/reloc#meetBottom> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/reloc#meetBottom> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<https://w3id.org/reloc#meetBottom> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/reloc#meetTop> .
+<https://w3id.org/reloc#meetBottom> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/brot#Component> .
+<https://w3id.org/reloc#meetBottom> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/brot#Component> .
+<https://w3id.org/reloc#meetBottom> <http://www.w3.org/2000/01/rdf-schema#comment> "Bauteil liegt direkt unter anderem Bauteil"@de .
+# 
+# https://w3id.org/reloc#meetLeft
+<https://w3id.org/reloc#meetLeft> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/reloc#meetLeft> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<https://w3id.org/reloc#meetLeft> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/reloc#meetRight> .
+<https://w3id.org/reloc#meetLeft> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/brot#Component> .
+<https://w3id.org/reloc#meetLeft> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/brot#Component> .
+<https://w3id.org/reloc#meetLeft> <http://www.w3.org/2000/01/rdf-schema#comment> "Bauteil liegt links angrenzend zu anderem Bauteil"@de .
+# 
+# https://w3id.org/reloc#meetRight
+<https://w3id.org/reloc#meetRight> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/reloc#meetRight> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<https://w3id.org/reloc#meetRight> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/brot#Component> .
+<https://w3id.org/reloc#meetRight> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/brot#Component> .
+<https://w3id.org/reloc#meetRight> <http://www.w3.org/2000/01/rdf-schema#comment> "Bauteil liegt rechts angrenzend zu anderem Bauteil"@de .
+# 
+# https://w3id.org/reloc#meetTop
+<https://w3id.org/reloc#meetTop> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/reloc#meetTop> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<https://w3id.org/reloc#meetTop> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/brot#Component> .
+<https://w3id.org/reloc#meetTop> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/brot#Component> .
+<https://w3id.org/reloc#meetTop> <http://www.w3.org/2000/01/rdf-schema#comment> "Bauteil liegt direkt über anderem Bauteil"@de .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# https://w3id.org/bcore#Altitude
+<https://w3id.org/bcore#Altitude> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/bcore#Altitude> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://w3id.org/bcore#Altitude> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/bcore#LocationPoint> .
+<https://w3id.org/bcore#Altitude> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#decimal> .
+<https://w3id.org/bcore#Altitude> <http://www.w3.org/2000/01/rdf-schema#comment> "Höhe über NN"@de .
+<https://w3id.org/bcore#Altitude> <http://www.w3.org/2000/01/rdf-schema#comment> "[m]" .
+# 
+# https://w3id.org/bcore#ArchShape
+<https://w3id.org/bcore#ArchShape> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/bcore#ArchShape> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/brcomp#Arch> .
+<https://w3id.org/bcore#ArchShape> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/bcore#ArchShape> <http://www.w3.org/2000/01/rdf-schema#comment> "Form des Bogens" .
+# 
+# https://w3id.org/bcore#BridgeConstructionEndDate
+<https://w3id.org/bcore#BridgeConstructionEndDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/bcore#BridgeConstructionEndDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://w3id.org/bcore#BridgeConstructionEndDate> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/brot#Bridge> .
+<https://w3id.org/bcore#BridgeConstructionEndDate> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/bcore#BridgeConstructionEndDate> <http://www.w3.org/2000/01/rdf-schema#comment> "Datum der Brückenfertigstellung"@de .
+<https://w3id.org/bcore#BridgeConstructionEndDate> <http://www.w3.org/2000/01/rdf-schema#comment> "[ISO Date Format]" .
+# 
+# https://w3id.org/bcore#BridgeID
+<https://w3id.org/bcore#BridgeID> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/bcore#BridgeID> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://w3id.org/bcore#BridgeID> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/brot#Bridge> .
+<https://w3id.org/bcore#BridgeID> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#int> .
+<https://w3id.org/bcore#BridgeID> <http://www.w3.org/2000/01/rdf-schema#comment> "Identifikationsnummer der Brücke"@de .
+# 
+# https://w3id.org/bcore#BridgeName
+<https://w3id.org/bcore#BridgeName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/bcore#BridgeName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://w3id.org/bcore#BridgeName> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/brot#Bridge> .
+<https://w3id.org/bcore#BridgeName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/bcore#BridgeName> <http://www.w3.org/2000/01/rdf-schema#comment> "Name der Brücke"@de .
+# 
+# https://w3id.org/bcore#BridgeStatus
+<https://w3id.org/bcore#BridgeStatus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/bcore#BridgeStatus> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/brot#Bridge> .
+<https://w3id.org/bcore#BridgeStatus> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/bcore#BridgeStatus> <http://www.w3.org/2000/01/rdf-schema#comment> "Status der Brücke"@de .
+# 
+# https://w3id.org/bcore#ComponentVolume
+<https://w3id.org/bcore#ComponentVolume> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/bcore#ComponentVolume> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<https://w3id.org/bcore#ComponentVolume> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://w3id.org/bcore#ComponentVolume> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/brot#Component> .
+<https://w3id.org/bcore#ComponentVolume> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#decimal> .
+<https://w3id.org/bcore#ComponentVolume> <http://www.w3.org/2000/01/rdf-schema#comment> "Volumen"@de .
+<https://w3id.org/bcore#ComponentVolume> <http://www.w3.org/2000/01/rdf-schema#comment> "[m³]" .
+# 
+# https://w3id.org/bcore#Density
+<https://w3id.org/bcore#Density> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/bcore#Density> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<https://w3id.org/bcore#Density> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://w3id.org/bcore#Density> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/bmat#BuildingMaterial> .
+<https://w3id.org/bcore#Density> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#decimal> .
+<https://w3id.org/bcore#Density> <http://www.w3.org/2000/01/rdf-schema#comment> "Dichte"@de .
+<https://w3id.org/bcore#Density> <http://www.w3.org/2000/01/rdf-schema#comment> "[kg/m³]" .
+# 
+# https://w3id.org/bcore#Ductility
+<https://w3id.org/bcore#Ductility> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/bcore#Ductility> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://w3id.org/bcore#Ductility> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/bcore#Steel> .
+<https://w3id.org/bcore#Ductility> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/bcore#Ductility> <http://www.w3.org/2000/01/rdf-schema#comment> "Duktilität"@de .
+# 
+# https://w3id.org/bcore#Ec
+<https://w3id.org/bcore#Ec> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/bcore#Ec> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://w3id.org/bcore#Ec> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/bmat#Concrete> .
+<https://w3id.org/bcore#Ec> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#decimal> .
+<https://w3id.org/bcore#Ec> <http://www.w3.org/2000/01/rdf-schema#comment> "Elastizitätsmodul des Betons"@de .
+<https://w3id.org/bcore#Ec> <http://www.w3.org/2000/01/rdf-schema#comment> "[N/m²]" .
+# 
+# https://w3id.org/bcore#Ep
+<https://w3id.org/bcore#Ep> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/bcore#Ep> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<https://w3id.org/bcore#Ep> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://w3id.org/bcore#Ep> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/bcore#PrestressingSteel> .
+<https://w3id.org/bcore#Ep> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#decimal> .
+<https://w3id.org/bcore#Ep> <http://www.w3.org/2000/01/rdf-schema#comment> "Elastizitätsmodul des Spannstahls"@de .
+<https://w3id.org/bcore#Ep> <http://www.w3.org/2000/01/rdf-schema#comment> "[N/m²]" .
+# 
+# https://w3id.org/bcore#ExpositionClass
+<https://w3id.org/bcore#ExpositionClass> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/bcore#ExpositionClass> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<https://w3id.org/bcore#ExpositionClass> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/bmat#Concrete> .
+<https://w3id.org/bcore#ExpositionClass> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/bcore#ExpositionClass> <http://www.w3.org/2000/01/rdf-schema#comment> "Expositionsklasse"@de .
+<https://w3id.org/bcore#ExpositionClass> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "https://w3id.org/bmat#expositionClassConcrete" .
+# 
+# https://w3id.org/bcore#Ey
+<https://w3id.org/bcore#Ey> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/bcore#Ey> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<https://w3id.org/bcore#Ey> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://w3id.org/bcore#Ey> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/bcore#ConstructionSteel> .
+<https://w3id.org/bcore#Ey> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/bmat#ReinforcementSteel> .
+<https://w3id.org/bcore#Ey> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#decimal> .
+<https://w3id.org/bcore#Ey> <http://www.w3.org/2000/01/rdf-schema#comment> "Elastizitätsmodul des Stahls"@de .
+<https://w3id.org/bcore#Ey> <http://www.w3.org/2000/01/rdf-schema#comment> "[N/m²]" .
+# 
+# https://w3id.org/bcore#GirderShape
+<https://w3id.org/bcore#GirderShape> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/bcore#GirderShape> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/brcomp#Girder> .
+<https://w3id.org/bcore#GirderShape> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/bcore#GirderShape> <http://www.w3.org/2000/01/rdf-schema#comment> "Form des Trägers"@de .
+# 
+# https://w3id.org/bcore#InfrastructureRouteName
+<https://w3id.org/bcore#InfrastructureRouteName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/bcore#InfrastructureRouteName> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<https://w3id.org/bcore#InfrastructureRouteName> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/bcore#InfrastructureRoute> .
+<https://w3id.org/bcore#InfrastructureRouteName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/bcore#InfrastructureRouteName> <http://www.w3.org/2000/01/rdf-schema#comment> "Name/ Bezeichnung der Infrastruktur"@de .
+# 
+# https://w3id.org/bcore#InfrastructureRouteWidth
+<https://w3id.org/bcore#InfrastructureRouteWidth> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/bcore#InfrastructureRouteWidth> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<https://w3id.org/bcore#InfrastructureRouteWidth> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://w3id.org/bcore#InfrastructureRouteWidth> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/bcore#InfrastructureRoute> .
+<https://w3id.org/bcore#InfrastructureRouteWidth> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#decimal> .
+<https://w3id.org/bcore#InfrastructureRouteWidth> <http://www.w3.org/2000/01/rdf-schema#comment> "Querschnittsbreite der Infrastruktur"@de .
+<https://w3id.org/bcore#InfrastructureRouteWidth> <http://www.w3.org/2000/01/rdf-schema#comment> "[m]" .
+# 
+# https://w3id.org/bcore#Latitude
+<https://w3id.org/bcore#Latitude> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/bcore#Latitude> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<https://w3id.org/bcore#Latitude> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://w3id.org/bcore#Latitude> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/bcore#LocationPoint> .
+<https://w3id.org/bcore#Latitude> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#decimal> .
+<https://w3id.org/bcore#Latitude> <http://www.w3.org/2000/01/rdf-schema#comment> "Breitengrad"@de .
+# 
+# https://w3id.org/bcore#LocalX
+<https://w3id.org/bcore#LocalX> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/bcore#LocalX> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<https://w3id.org/bcore#LocalX> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://w3id.org/bcore#LocalX> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/bcore#LocationPoint> .
+<https://w3id.org/bcore#LocalX> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#decimal> .
+<https://w3id.org/bcore#LocalX> <http://www.w3.org/2000/01/rdf-schema#comment> "Lokale X-Koordinate"@de .
+<https://w3id.org/bcore#LocalX> <http://www.w3.org/2000/01/rdf-schema#comment> "[m]" .
+# 
+# https://w3id.org/bcore#LocalY
+<https://w3id.org/bcore#LocalY> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/bcore#LocalY> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<https://w3id.org/bcore#LocalY> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://w3id.org/bcore#LocalY> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/bcore#LocationPoint> .
+<https://w3id.org/bcore#LocalY> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#decimal> .
+<https://w3id.org/bcore#LocalY> <http://www.w3.org/2000/01/rdf-schema#comment> "Lokale Y-Koordinate"@de .
+<https://w3id.org/bcore#LocalY> <http://www.w3.org/2000/01/rdf-schema#comment> "[m]" .
+# 
+# https://w3id.org/bcore#LocalZ
+<https://w3id.org/bcore#LocalZ> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/bcore#LocalZ> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<https://w3id.org/bcore#LocalZ> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://w3id.org/bcore#LocalZ> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/bcore#LocationPoint> .
+<https://w3id.org/bcore#LocalZ> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#decimal> .
+<https://w3id.org/bcore#LocalZ> <http://www.w3.org/2000/01/rdf-schema#comment> "Lokale Z-Koordinate"@de .
+<https://w3id.org/bcore#LocalZ> <http://www.w3.org/2000/01/rdf-schema#comment> "[m]" .
+# 
+# https://w3id.org/bcore#Longitude
+<https://w3id.org/bcore#Longitude> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/bcore#Longitude> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<https://w3id.org/bcore#Longitude> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://w3id.org/bcore#Longitude> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/bcore#LocationPoint> .
+<https://w3id.org/bcore#Longitude> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#decimal> .
+<https://w3id.org/bcore#Longitude> <http://www.w3.org/2000/01/rdf-schema#comment> "Längengrad"@de .
+# 
+# https://w3id.org/bcore#MaterialName
+<https://w3id.org/bcore#MaterialName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/bcore#MaterialName> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<https://w3id.org/bcore#MaterialName> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/bmat#BuildingMaterial> .
+<https://w3id.org/bcore#MaterialName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# https://w3id.org/bcore#PylonShape
+<https://w3id.org/bcore#PylonShape> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/bcore#PylonShape> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/brcomp#Pylon> .
+<https://w3id.org/bcore#PylonShape> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/bcore#PylonShape> <http://www.w3.org/2000/01/rdf-schema#comment> "Form des Pylonen"@de .
+# 
+# https://w3id.org/bcore#ZoneName
+<https://w3id.org/bcore#ZoneName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/bcore#ZoneName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://w3id.org/bcore#ZoneName> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/bot#Zone> .
+<https://w3id.org/bcore#ZoneName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/bcore#ZoneName> <http://www.w3.org/2000/01/rdf-schema#comment> "Name der Zone"@de .
+# 
+# https://w3id.org/bcore#fck
+<https://w3id.org/bcore#fck> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/bcore#fck> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<https://w3id.org/bcore#fck> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://w3id.org/bcore#fck> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/bmat#Concrete> .
+<https://w3id.org/bcore#fck> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#decimal> .
+<https://w3id.org/bcore#fck> <http://www.w3.org/2000/01/rdf-schema#comment> "Charakteristische Druckfestigkeit des Betons"@de .
+<https://w3id.org/bcore#fck> <http://www.w3.org/2000/01/rdf-schema#comment> "[N/m²]" .
+# 
+# https://w3id.org/bcore#fpk
+<https://w3id.org/bcore#fpk> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/bcore#fpk> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<https://w3id.org/bcore#fpk> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://w3id.org/bcore#fpk> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/bcore#PrestressingSteel> .
+<https://w3id.org/bcore#fpk> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#decimal> .
+<https://w3id.org/bcore#fpk> <http://www.w3.org/2000/01/rdf-schema#comment> "Charakteristische Zugfestigkeit des Spannstahls"@de .
+<https://w3id.org/bcore#fpk> <http://www.w3.org/2000/01/rdf-schema#comment> "[N/m²]" .
+# 
+# https://w3id.org/bcore#fyk
+<https://w3id.org/bcore#fyk> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/bcore#fyk> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<https://w3id.org/bcore#fyk> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://w3id.org/bcore#fyk> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/bcore#ConstructionSteel> .
+<https://w3id.org/bcore#fyk> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/bmat#ReinforcementSteel> .
+<https://w3id.org/bcore#fyk> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#decimal> .
+<https://w3id.org/bcore#fyk> <http://www.w3.org/2000/01/rdf-schema#comment> "Charakteristische Festigkeit des Stahls"@de .
+<https://w3id.org/bcore#fyk> <http://www.w3.org/2000/01/rdf-schema#comment> "[N/m²]" .
+# 
+# https://w3id.org/brcomp#height
+<https://w3id.org/brcomp#height> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/brcomp#height> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<https://w3id.org/brcomp#height> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://w3id.org/brcomp#height> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/brot#Component> .
+<https://w3id.org/brcomp#height> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#decimal> .
+<https://w3id.org/brcomp#height> <http://www.w3.org/2000/01/rdf-schema#comment> "Höhe"@de .
+<https://w3id.org/brcomp#height> <http://www.w3.org/2000/01/rdf-schema#comment> "[m]" .
+# 
+# https://w3id.org/brcomp#length
+<https://w3id.org/brcomp#length> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/brcomp#length> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<https://w3id.org/brcomp#length> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://w3id.org/brcomp#length> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/brot#Component> .
+<https://w3id.org/brcomp#length> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#decimal> .
+<https://w3id.org/brcomp#length> <http://www.w3.org/2000/01/rdf-schema#comment> "Länge"@de .
+<https://w3id.org/brcomp#length> <http://www.w3.org/2000/01/rdf-schema#comment> "[m]" .
+# 
+# https://w3id.org/brcomp#width
+<https://w3id.org/brcomp#width> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/brcomp#width> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<https://w3id.org/brcomp#width> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://w3id.org/brcomp#width> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/brot#Component> .
+<https://w3id.org/brcomp#width> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#decimal> .
+<https://w3id.org/brcomp#width> <http://www.w3.org/2000/01/rdf-schema#comment> "Breite"@de .
+<https://w3id.org/brcomp#width> <http://www.w3.org/2000/01/rdf-schema#comment> "[m]" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# https://w3id.org/bcore#Abutment
+<https://w3id.org/bcore#Abutment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/bcore#Abutment> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/brcomp#SubStructureComponent> .
+<https://w3id.org/bcore#Abutment> <http://www.w3.org/2000/01/rdf-schema#comment> "Widerlager"@de .
+# 
+# https://w3id.org/bcore#BoxGirder
+<https://w3id.org/bcore#BoxGirder> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/bcore#BoxGirder> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/brcomp#GirderMainGirder> .
+<https://w3id.org/bcore#BoxGirder> <http://www.w3.org/2000/01/rdf-schema#comment> "Hohlkastenträger"@de .
+# 
+# https://w3id.org/bcore#City
+<https://w3id.org/bcore#City> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/bcore#City> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/bot#Zone> .
+<https://w3id.org/bcore#City> <http://www.w3.org/2000/01/rdf-schema#comment> "Stadt"@de .
+# 
+# https://w3id.org/bcore#CompositeMaterial
+<https://w3id.org/bcore#CompositeMaterial> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/bcore#CompositeMaterial> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/bmat#BuildingMaterial> .
+<https://w3id.org/bcore#CompositeMaterial> <http://www.w3.org/2000/01/rdf-schema#comment> "Materialverbund"@de .
+# 
+# https://w3id.org/bcore#ConstructionSteel
+<https://w3id.org/bcore#ConstructionSteel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/bcore#ConstructionSteel> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/bcore#Steel> .
+<https://w3id.org/bcore#ConstructionSteel> <http://www.w3.org/2000/01/rdf-schema#comment> "Baustahl"@de .
+# 
+# https://w3id.org/bcore#Country
+<https://w3id.org/bcore#Country> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/bcore#Country> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/bot#Zone> .
+<https://w3id.org/bcore#Country> <http://www.w3.org/2000/01/rdf-schema#comment> "Land"@de .
+# 
+# https://w3id.org/bcore#EquipmentComponent
+<https://w3id.org/bcore#EquipmentComponent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/bcore#EquipmentComponent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/brot#Component> .
+<https://w3id.org/bcore#EquipmentComponent> <http://www.w3.org/2002/07/owl#disjointWith> <https://w3id.org/brcomp#SubStructureComponent> .
+<https://w3id.org/bcore#EquipmentComponent> <http://www.w3.org/2002/07/owl#disjointWith> <https://w3id.org/brcomp#SuperStructureComponent> .
+<https://w3id.org/bcore#EquipmentComponent> <http://www.w3.org/2000/01/rdf-schema#comment> "Bauteil der Brückenausstattung"@de .
+<https://w3id.org/bcore#EquipmentComponent> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "https://w3id.org/brcomp/#FinishingComponent" .
+# 
+# https://w3id.org/bcore#FootCycleRoute
+<https://w3id.org/bcore#FootCycleRoute> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/bcore#FootCycleRoute> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/bcore#InfrastructureRoute> .
+<https://w3id.org/bcore#FootCycleRoute> <http://www.w3.org/2000/01/rdf-schema#comment> "Geh- und/oder Radweg"@de .
+# 
+# https://w3id.org/bcore#IBeam
+<https://w3id.org/bcore#IBeam> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/bcore#IBeam> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/brcomp#GirderMainGirder> .
+<https://w3id.org/bcore#IBeam> <http://www.w3.org/2000/01/rdf-schema#comment> "I-Träger"@de .
+# 
+# https://w3id.org/bcore#Image
+<https://w3id.org/bcore#Image> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/bcore#Image> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/bcore#MediaFile> .
+<https://w3id.org/bcore#Image> <http://www.w3.org/2002/07/owl#disjointWith> <https://w3id.org/bcore#TechnicalDocument> .
+<https://w3id.org/bcore#Image> <http://www.w3.org/2000/01/rdf-schema#comment> "Bild"@de .
+# 
+# https://w3id.org/bcore#InfrastructureRoute
+<https://w3id.org/bcore#InfrastructureRoute> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/bcore#InfrastructureRoute> <http://www.w3.org/2000/01/rdf-schema#comment> "Infrastrukturtrasse"@de .
+# 
+# https://w3id.org/bcore#LocationPoint
+<https://w3id.org/bcore#LocationPoint> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/bcore#LocationPoint> <http://www.w3.org/2000/01/rdf-schema#comment> "Örtlicher Punkt"@de .
+# 
+# https://w3id.org/bcore#MediaFile
+<https://w3id.org/bcore#MediaFile> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/bcore#MediaFile> <http://www.w3.org/2000/01/rdf-schema#comment> "Datei"@de .
+# 
+# https://w3id.org/bcore#Metal
+<https://w3id.org/bcore#Metal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/bcore#Metal> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/bmat#BuildingMaterial> .
+<https://w3id.org/bcore#Metal> <http://www.w3.org/2000/01/rdf-schema#comment> "Metall"@de .
+# 
+# https://w3id.org/bcore#PlateGirder
+<https://w3id.org/bcore#PlateGirder> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/bcore#PlateGirder> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/brcomp#GirderMainGirder> .
+<https://w3id.org/bcore#PlateGirder> <http://www.w3.org/2000/01/rdf-schema#comment> "Vollwandträger (Stahl)"@de .
+# 
+# https://w3id.org/bcore#PrestressedConcrete
+<https://w3id.org/bcore#PrestressedConcrete> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/bcore#PrestressedConcrete> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/bcore#CompositeMaterial> .
+<https://w3id.org/bcore#PrestressedConcrete> <http://www.w3.org/2000/01/rdf-schema#comment> "Spannbeton"@de .
+# 
+# https://w3id.org/bcore#PrestressingSteel
+<https://w3id.org/bcore#PrestressingSteel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/bcore#PrestressingSteel> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/bcore#Steel> .
+<https://w3id.org/bcore#PrestressingSteel> <http://www.w3.org/2000/01/rdf-schema#comment> "Spannstahl"@de .
+# 
+# https://w3id.org/bcore#RailwayRoute
+<https://w3id.org/bcore#RailwayRoute> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/bcore#RailwayRoute> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/bcore#InfrastructureRoute> .
+<https://w3id.org/bcore#RailwayRoute> <http://www.w3.org/2000/01/rdf-schema#comment> "Schienenweg"@de .
+# 
+# https://w3id.org/bcore#Region
+<https://w3id.org/bcore#Region> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/bcore#Region> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/bot#Zone> .
+<https://w3id.org/bcore#Region> <http://www.w3.org/2000/01/rdf-schema#comment> "Region/ Bundesland"@de .
+# 
+# https://w3id.org/bcore#RoadRoute
+<https://w3id.org/bcore#RoadRoute> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/bcore#RoadRoute> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/bcore#InfrastructureRoute> .
+<https://w3id.org/bcore#RoadRoute> <http://www.w3.org/2000/01/rdf-schema#comment> "Straße"@de .
+# 
+# https://w3id.org/bcore#RoutePoint
+<https://w3id.org/bcore#RoutePoint> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/bcore#RoutePoint> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/bcore#LocationPoint> .
+<https://w3id.org/bcore#RoutePoint> <http://www.w3.org/2000/01/rdf-schema#comment> "Trassenpunkt"@de .
+# 
+# https://w3id.org/bcore#Steel
+<https://w3id.org/bcore#Steel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/bcore#Steel> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/bcore#Metal> .
+<https://w3id.org/bcore#Steel> <http://www.w3.org/2000/01/rdf-schema#comment> "Stahl"@de .
+# 
+# https://w3id.org/bcore#SteelConcreteComposite
+<https://w3id.org/bcore#SteelConcreteComposite> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/bcore#SteelConcreteComposite> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/bcore#CompositeMaterial> .
+<https://w3id.org/bcore#SteelConcreteComposite> <http://www.w3.org/2000/01/rdf-schema#comment> "Stahl-Beton-Verbund"@de .
+# 
+# https://w3id.org/bcore#TBeam
+<https://w3id.org/bcore#TBeam> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/bcore#TBeam> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/brcomp#GirderMainGirder> .
+<https://w3id.org/bcore#TBeam> <http://www.w3.org/2000/01/rdf-schema#comment> "Plattenbalken (Beton)"@de .
+# 
+# https://w3id.org/bcore#TechnicalDocument
+<https://w3id.org/bcore#TechnicalDocument> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/bcore#TechnicalDocument> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/bcore#MediaFile> .
+<https://w3id.org/bcore#TechnicalDocument> <http://www.w3.org/2000/01/rdf-schema#comment> "Technisches Dokument"@de .
+# 
+# https://w3id.org/bcore#TrussGirder
+<https://w3id.org/bcore#TrussGirder> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/bcore#TrussGirder> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/brcomp#GirderMainGirder> .
+<https://w3id.org/bcore#TrussGirder> <http://www.w3.org/2000/01/rdf-schema#comment> "Fachwerkträger"@de .
+# 
+# https://w3id.org/bcore#WaterWayRoute
+<https://w3id.org/bcore#WaterWayRoute> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/bcore#WaterWayRoute> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/bcore#InfrastructureRoute> .
+<https://w3id.org/bcore#WaterWayRoute> <http://www.w3.org/2000/01/rdf-schema#comment> "Wasserstraße"@de .
+# 
+# https://w3id.org/bmat#BuildingMaterial
+<https://w3id.org/bmat#BuildingMaterial> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/bmat#BuildingMaterial> <http://www.w3.org/2000/01/rdf-schema#comment> "Baumaterial"@de .
+# 
+# https://w3id.org/bmat#Concrete
+<https://w3id.org/bmat#Concrete> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/bmat#Concrete> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/bmat#BuildingMaterial> .
+<https://w3id.org/bmat#Concrete> <http://www.w3.org/2000/01/rdf-schema#comment> "Beton"@de .
+# 
+# https://w3id.org/bmat#ReinforcedConcrete
+<https://w3id.org/bmat#ReinforcedConcrete> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/bmat#ReinforcedConcrete> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/bcore#CompositeMaterial> .
+<https://w3id.org/bmat#ReinforcedConcrete> <http://www.w3.org/2000/01/rdf-schema#comment> "Stahlbeton"@de .
+# 
+# https://w3id.org/bmat#ReinforcementSteel
+<https://w3id.org/bmat#ReinforcementSteel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/bmat#ReinforcementSteel> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/bcore#Steel> .
+<https://w3id.org/bmat#ReinforcementSteel> <http://www.w3.org/2000/01/rdf-schema#comment> "Betonstahl"@de .
+# 
+# https://w3id.org/bot#Building
+<https://w3id.org/bot#Building> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/bot#Building> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/bot#Zone> .
+<https://w3id.org/bot#Building> <http://www.w3.org/2000/01/rdf-schema#comment> "Gebäude"@de .
+# 
+# https://w3id.org/bot#Site
+<https://w3id.org/bot#Site> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/bot#Site> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/bot#Zone> .
+<https://w3id.org/bot#Site> <http://www.w3.org/2000/01/rdf-schema#comment> "Baustelle"@de .
+# 
+# https://w3id.org/bot#Zone
+<https://w3id.org/bot#Zone> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/bot#Zone> <http://www.w3.org/2002/07/owl#equivalentClass> <https://w3id.org/brot#SpatialZone> .
+# 
+# https://w3id.org/brcomp#AbutmentBenching
+<https://w3id.org/brcomp#AbutmentBenching> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/brcomp#AbutmentBenching> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/brcomp#AbutmentComponent> .
+<https://w3id.org/brcomp#AbutmentBenching> <http://www.w3.org/2000/01/rdf-schema#comment> "Auflagerbank"@de .
+# 
+# https://w3id.org/brcomp#AbutmentChamberWall
+<https://w3id.org/brcomp#AbutmentChamberWall> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/brcomp#AbutmentChamberWall> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/brcomp#AbutmentComponent> .
+<https://w3id.org/brcomp#AbutmentChamberWall> <http://www.w3.org/2000/01/rdf-schema#comment> "Widerlagerwand"@de .
+# 
+# https://w3id.org/brcomp#AbutmentComponent
+<https://w3id.org/brcomp#AbutmentComponent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/brcomp#AbutmentComponent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/brcomp#SubStructureComponent> .
+<https://w3id.org/brcomp#AbutmentComponent> <http://www.w3.org/2000/01/rdf-schema#comment> "Bauteil des Widerlagers"@de .
+# 
+# https://w3id.org/brcomp#AbutmentFooting
+<https://w3id.org/brcomp#AbutmentFooting> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/brcomp#AbutmentFooting> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/brcomp#AbutmentComponent> .
+<https://w3id.org/brcomp#AbutmentFooting> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/brcomp#Foundation> .
+<https://w3id.org/brcomp#AbutmentFooting> <http://www.w3.org/2000/01/rdf-schema#comment> "Fundament des Widerlagers"@de .
+# 
+# https://w3id.org/brcomp#AbutmentWingWall
+<https://w3id.org/brcomp#AbutmentWingWall> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/brcomp#AbutmentWingWall> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/brcomp#AbutmentComponent> .
+<https://w3id.org/brcomp#AbutmentWingWall> <http://www.w3.org/2000/01/rdf-schema#comment> "Flügelwand des Widerlagers"@de .
+# 
+# https://w3id.org/brcomp#Arch
+<https://w3id.org/brcomp#Arch> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/brcomp#Arch> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/brcomp#SubStructureComponent> .
+<https://w3id.org/brcomp#Arch> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/brcomp#SuperStructureComponent> .
+<https://w3id.org/brcomp#Arch> <http://www.w3.org/2000/01/rdf-schema#comment> "Bogen"@de .
+# 
+# https://w3id.org/brcomp#Bearing
+<https://w3id.org/brcomp#Bearing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/brcomp#Bearing> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/brcomp#SubStructureComponent> .
+<https://w3id.org/brcomp#Bearing> <http://www.w3.org/2000/01/rdf-schema#comment> "Lager"@de .
+# 
+# https://w3id.org/brcomp#Cable
+<https://w3id.org/brcomp#Cable> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/brcomp#Cable> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/brcomp#TensionComponent> .
+<https://w3id.org/brcomp#Cable> <http://www.w3.org/2000/01/rdf-schema#comment> "Spannkabel/ Spannseil"@de .
+# 
+# https://w3id.org/brcomp#Foundation
+<https://w3id.org/brcomp#Foundation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/brcomp#Foundation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/brcomp#SubStructureComponent> .
+<https://w3id.org/brcomp#Foundation> <http://www.w3.org/2000/01/rdf-schema#comment> "Gründung/ Fundament"@de .
+# 
+# https://w3id.org/brcomp#Girder
+<https://w3id.org/brcomp#Girder> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/brcomp#Girder> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/brcomp#SuperStructureComponent> .
+<https://w3id.org/brcomp#Girder> <http://www.w3.org/2000/01/rdf-schema#comment> "Brückenträger"@de .
+# 
+# https://w3id.org/brcomp#GirderComponent
+<https://w3id.org/brcomp#GirderComponent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/brcomp#GirderComponent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/brcomp#SuperStructureComponent> .
+<https://w3id.org/brcomp#GirderComponent> <http://www.w3.org/2000/01/rdf-schema#comment> "Bauteil des Brückenträgers" .
+# 
+# https://w3id.org/brcomp#GirderCrossGirder
+<https://w3id.org/brcomp#GirderCrossGirder> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/brcomp#GirderCrossGirder> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/brcomp#GirderComponent> .
+<https://w3id.org/brcomp#GirderCrossGirder> <http://www.w3.org/2000/01/rdf-schema#comment> "Querträger"@de .
+# 
+# https://w3id.org/brcomp#GirderDeck
+<https://w3id.org/brcomp#GirderDeck> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/brcomp#GirderDeck> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/brcomp#GirderComponent> .
+<https://w3id.org/brcomp#GirderDeck> <http://www.w3.org/2000/01/rdf-schema#comment> "Fahrbahnplatte"@de .
+# 
+# https://w3id.org/brcomp#GirderMainGirder
+<https://w3id.org/brcomp#GirderMainGirder> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/brcomp#GirderMainGirder> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/brcomp#GirderComponent> .
+<https://w3id.org/brcomp#GirderMainGirder> <http://www.w3.org/2000/01/rdf-schema#comment> "Hauptträger (Längsträger)"@de .
+# 
+# https://w3id.org/brcomp#Pier
+<https://w3id.org/brcomp#Pier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/brcomp#Pier> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/brcomp#SubStructureComponent> .
+<https://w3id.org/brcomp#Pier> <http://www.w3.org/2000/01/rdf-schema#comment> "Stütze"@de .
+# 
+# https://w3id.org/brcomp#Pile
+<https://w3id.org/brcomp#Pile> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/brcomp#Pile> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/brcomp#SubStructureComponent> .
+<https://w3id.org/brcomp#Pile> <http://www.w3.org/2000/01/rdf-schema#comment> "Bohrpfahl"@de .
+# 
+# https://w3id.org/brcomp#Pylon
+<https://w3id.org/brcomp#Pylon> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/brcomp#Pylon> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/brcomp#SubStructureComponent> .
+<https://w3id.org/brcomp#Pylon> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/brcomp#SuperStructureComponent> .
+# 
+# https://w3id.org/brcomp#SubStructureComponent
+<https://w3id.org/brcomp#SubStructureComponent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/brcomp#SubStructureComponent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/brot#Component> .
+<https://w3id.org/brcomp#SubStructureComponent> <http://www.w3.org/2000/01/rdf-schema#comment> "Bauteil des Unterbaus"@de .
+# 
+# https://w3id.org/brcomp#SuperStructureComponent
+<https://w3id.org/brcomp#SuperStructureComponent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/brcomp#SuperStructureComponent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/brot#Component> .
+<https://w3id.org/brcomp#SuperStructureComponent> <http://www.w3.org/2000/01/rdf-schema#comment> "Bauteil des Überbaus"@de .
+# 
+# https://w3id.org/brcomp#TensionComponent
+<https://w3id.org/brcomp#TensionComponent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/brcomp#TensionComponent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/brcomp#SubStructureComponent> .
+<https://w3id.org/brcomp#TensionComponent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/brcomp#SuperStructureComponent> .
+<https://w3id.org/brcomp#TensionComponent> <http://www.w3.org/2000/01/rdf-schema#comment> "Spanngliedkomponente" .
+# 
+# https://w3id.org/brot#Bridge
+<https://w3id.org/brot#Bridge> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/brot#Bridge> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/brot#SpatialZone> .
+<https://w3id.org/brot#Bridge> <http://www.w3.org/2000/01/rdf-schema#comment> "Brücke"@de .
+# 
+# https://w3id.org/brot#Component
+<https://w3id.org/brot#Component> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/brot#Component> <http://www.w3.org/2000/01/rdf-schema#comment> "Bauteil"@de .
+# 
+# https://w3id.org/brot#SpatialZone
+<https://w3id.org/brot#SpatialZone> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/brot#SubStructure
+<https://w3id.org/brot#SubStructure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/brot#SubStructure> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/brot#SpatialZone> .
+<https://w3id.org/brot#SubStructure> <http://www.w3.org/2000/01/rdf-schema#comment> "Überbau"@de .
+# 
+# https://w3id.org/brot#SuperStructure
+<https://w3id.org/brot#SuperStructure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/brot#SuperStructure> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/brot#SpatialZone> .
+<https://w3id.org/brot#SuperStructure> <http://www.w3.org/2000/01/rdf-schema#comment> "Unterbau"@de .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    General axioms
+# #
+# #################################################################
+# 
+# 
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid1 <http://www.w3.org/2002/07/owl#members> _:genid8 .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid7 .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid6 .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid5 .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid4 .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid3 .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid2 .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/brcomp#Pylon> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/brcomp#Pile> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/brcomp#Pier> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/brcomp#Foundation> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/brcomp#Bearing> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/brcomp#Arch> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/bcore#Abutment> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+# 
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid9 <http://www.w3.org/2002/07/owl#members> _:genid13 .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid12 .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid11 .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid10 .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/bcore#TBeam> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/bcore#PlateGirder> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/bcore#IBeam> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/bcore#BoxGirder> .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+# 
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid14 <http://www.w3.org/2002/07/owl#members> _:genid17 .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid16 .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid15 .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/bmat#Concrete> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/bcore#Metal> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/bcore#CompositeMaterial> .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+# 
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid18 <http://www.w3.org/2002/07/owl#members> _:genid22 .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid21 .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid20 .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid19 .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/bcore#WaterWayRoute> .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/bcore#RoadRoute> .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/bcore#RailwayRoute> .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/bcore#FootCycleRoute> .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+# 
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid23 <http://www.w3.org/2002/07/owl#members> _:genid26 .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid25 .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid24 .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/bmat#ReinforcedConcrete> .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/bcore#SteelConcreteComposite> .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/bcore#PrestressedConcrete> .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+# 
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid27 <http://www.w3.org/2002/07/owl#members> _:genid31 .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid30 .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid29 .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid28 .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/brcomp#AbutmentWingWall> .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/brcomp#AbutmentFooting> .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/brcomp#AbutmentChamberWall> .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/brcomp#AbutmentBenching> .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+# 
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid32 <http://www.w3.org/2002/07/owl#members> _:genid37 .
+_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid36 .
+_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid35 .
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid34 .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid33 .
+_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/brcomp#TensionComponent> .
+_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/brcomp#Pylon> .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/brcomp#GirderComponent> .
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/brcomp#Girder> .
+_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/brcomp#Arch> .
+_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+# 
+_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid38 <http://www.w3.org/2002/07/owl#members> _:genid41 .
+_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid40 .
+_:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid39 .
+_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/brcomp#GirderMainGirder> .
+_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/brcomp#GirderDeck> .
+_:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/brcomp#GirderCrossGirder> .
+_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+# 
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
