@@ -7,7 +7,7 @@
       "en" : "Bridge Core Ontology for Institute of Concrete Structures, Dresden University of Technology"
     },
     "iri" : "https://w3id.org/bcore",
-    "version" : "0.0.1",
+    "version" : "0.0.2",
     "author" : [ "Tim Noack", "Morris Florek", "Johannes Reimer", "Xiaoli Song" ],
     "description" : {
       "en" : "Core ontology for the representation of bridges."
@@ -19,22 +19,22 @@
       "creator" : [ {
         "identifier" : "creator",
         "language" : "undefined",
-        "value" : "Tim Noack",
-        "type" : "label"
-      }, {
-        "identifier" : "creator",
-        "language" : "undefined",
-        "value" : "Johannes Reimer",
-        "type" : "label"
-      }, {
-        "identifier" : "creator",
-        "language" : "undefined",
         "value" : "Morris Florek",
         "type" : "label"
       }, {
         "identifier" : "creator",
         "language" : "undefined",
         "value" : "Xiaoli Song",
+        "type" : "label"
+      }, {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "Tim Noack",
+        "type" : "label"
+      }, {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "Johannes Reimer",
         "type" : "label"
       } ],
       "contributor" : [ {
@@ -55,16 +55,16 @@
         "value" : "bcore",
         "type" : "label"
       } ],
-      "versionInfo" : [ {
-        "identifier" : "versionInfo",
-        "language" : "undefined",
-        "value" : "0.0.1",
-        "type" : "label"
-      } ],
       "abstract" : [ {
         "identifier" : "abstract",
         "language" : "en",
         "value" : "The Bridge Core Ontology (BCore) enables the represetation of a bridge structure, its components and material, as well as the infrastructure and media files connected to it and the environment and location of the bridge. BCore is created by the Institute of Concrete Structures (IMB) at the Dresden University of Technology (TUD).",
+        "type" : "label"
+      } ],
+      "versionInfo" : [ {
+        "identifier" : "versionInfo",
+        "language" : "undefined",
+        "value" : "0.0.2",
         "type" : "label"
       } ],
       "title" : [ {
@@ -77,283 +77,322 @@
   },
   "namespace" : [ ],
   "class" : [ {
-    "id" : "15",
+    "id" : "51",
     "type" : "owl:Class"
   }, {
-    "id" : "50",
-    "type" : "owl:Class"
+    "id" : "60",
+    "type" : "rdfs:Literal"
   }, {
-    "id" : "79",
-    "type" : "owl:Class"
+    "id" : "61",
+    "type" : "rdfs:Literal"
   }, {
-    "id" : "81",
-    "type" : "owl:Class"
+    "id" : "62",
+    "type" : "rdfs:Literal"
   }, {
-    "id" : "48",
-    "type" : "owl:Class"
+    "id" : "63",
+    "type" : "rdfs:Literal"
   }, {
-    "id" : "89",
-    "type" : "owl:Class"
-  }, {
-    "id" : "94",
-    "type" : "owl:Class"
-  }, {
-    "id" : "1",
-    "type" : "owl:Class"
-  }, {
-    "id" : "47",
+    "id" : "64",
     "type" : "owl:Class"
   }, {
     "id" : "67",
     "type" : "owl:Class"
   }, {
-    "id" : "104",
-    "type" : "owl:Class"
-  }, {
-    "id" : "105",
-    "type" : "owl:Class"
-  }, {
-    "id" : "116",
-    "type" : "owl:Class"
-  }, {
-    "id" : "13",
-    "type" : "owl:Class"
-  }, {
-    "id" : "52",
-    "type" : "owl:Class"
-  }, {
-    "id" : "117",
-    "type" : "owl:Class"
-  }, {
-    "id" : "118",
-    "type" : "owl:Class"
-  }, {
-    "id" : "120",
-    "type" : "owl:Class"
-  }, {
-    "id" : "135",
-    "type" : "owl:Class"
-  }, {
-    "id" : "49",
-    "type" : "owl:Class"
-  }, {
-    "id" : "76",
-    "type" : "owl:Class"
-  }, {
-    "id" : "57",
-    "type" : "owl:Class"
-  }, {
-    "id" : "126",
-    "type" : "owl:Class"
-  }, {
-    "id" : "141",
-    "type" : "owl:Class"
-  }, {
-    "id" : "142",
-    "type" : "owl:Class"
-  }, {
-    "id" : "110",
-    "type" : "owl:Class"
-  }, {
-    "id" : "112",
-    "type" : "owl:Class"
-  }, {
     "id" : "2",
-    "type" : "owl:equivalentClass"
-  }, {
-    "id" : "122",
-    "type" : "owl:Class"
-  }, {
-    "id" : "11",
-    "type" : "owl:Class"
-  }, {
-    "id" : "18",
-    "type" : "owl:Class"
-  }, {
-    "id" : "137",
-    "type" : "owl:Class"
-  }, {
-    "id" : "4",
-    "type" : "owl:Class"
-  }, {
-    "id" : "8",
-    "type" : "owl:Class"
-  }, {
-    "id" : "152",
-    "type" : "owl:Class"
-  }, {
-    "id" : "51",
-    "type" : "owl:Class"
-  }, {
-    "id" : "69",
-    "type" : "owl:Class"
-  }, {
-    "id" : "59",
-    "type" : "owl:Class"
-  }, {
-    "id" : "150",
-    "type" : "owl:Class"
-  }, {
-    "id" : "6",
-    "type" : "owl:Class"
-  }, {
-    "id" : "75",
-    "type" : "owl:Class"
-  }, {
-    "id" : "10",
-    "type" : "owl:Class"
-  }, {
-    "id" : "134",
-    "type" : "owl:Class"
-  }, {
-    "id" : "17",
-    "type" : "owl:Class"
-  }, {
-    "id" : "129",
-    "type" : "owl:Class"
-  }, {
-    "id" : "61",
-    "type" : "owl:Class"
-  }, {
-    "id" : "207",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "99",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "140",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "213",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "72",
-    "type" : "owl:Class"
-  }, {
-    "id" : "204",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "106",
-    "type" : "owl:Class"
-  }, {
-    "id" : "80",
-    "type" : "owl:equivalentClass"
-  }, {
-    "id" : "115",
-    "type" : "owl:Class"
-  }, {
-    "id" : "63",
-    "type" : "owl:Class"
-  }, {
-    "id" : "230",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "93",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "231",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "226",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "232",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "144",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "91",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "192",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "209",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "233",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "65",
-    "type" : "owl:Class"
-  }, {
-    "id" : "206",
-    "type" : "owl:Class"
-  }, {
-    "id" : "20",
-    "type" : "owl:Thing"
-  }, {
-    "id" : "87",
     "type" : "owl:Class"
   }, {
     "id" : "71",
     "type" : "owl:Class"
   }, {
-    "id" : "103",
-    "type" : "rdfs:Literal"
-  }, {
-    "id" : "56",
-    "type" : "owl:Class"
-  }, {
     "id" : "73",
     "type" : "owl:Class"
   }, {
-    "id" : "46",
+    "id" : "78",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "79",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "57",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "22",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "53",
+    "type" : "owl:Class"
+  }, {
+    "id" : "66",
+    "type" : "owl:Class"
+  }, {
+    "id" : "88",
+    "type" : "owl:Class"
+  }, {
+    "id" : "101",
+    "type" : "owl:Class"
+  }, {
+    "id" : "9",
+    "type" : "owl:Class"
+  }, {
+    "id" : "13",
+    "type" : "owl:Class"
+  }, {
+    "id" : "65",
+    "type" : "owl:Class"
+  }, {
+    "id" : "111",
+    "type" : "owl:Class"
+  }, {
+    "id" : "130",
+    "type" : "owl:Class"
+  }, {
+    "id" : "131",
+    "type" : "owl:Class"
+  }, {
+    "id" : "55",
+    "type" : "owl:Class"
+  }, {
+    "id" : "129",
+    "type" : "owl:Class"
+  }, {
+    "id" : "125",
+    "type" : "owl:Class"
+  }, {
+    "id" : "116",
+    "type" : "owl:Class"
+  }, {
+    "id" : "18",
+    "type" : "owl:Class"
+  }, {
+    "id" : "121",
+    "type" : "owl:Class"
+  }, {
+    "id" : "151",
+    "type" : "owl:Class"
+  }, {
+    "id" : "152",
+    "type" : "owl:Class"
+  }, {
+    "id" : "105",
     "type" : "owl:Class"
   }, {
     "id" : "146",
     "type" : "owl:Class"
   }, {
-    "id" : "220",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "88",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "54",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "162",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "97",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "228",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "211",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "159",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "238",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "95",
+    "id" : "153",
     "type" : "owl:Class"
   }, {
-    "id" : "131",
-    "type" : "rdfs:Datatype"
+    "id" : "76",
+    "type" : "owl:Class"
+  }, {
+    "id" : "174",
+    "type" : "owl:Class"
+  }, {
+    "id" : "80",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "118",
+    "type" : "owl:Class"
+  }, {
+    "id" : "52",
+    "type" : "owl:Class"
+  }, {
+    "id" : "74",
+    "type" : "owl:Class"
+  }, {
+    "id" : "166",
+    "type" : "owl:Class"
   }, {
     "id" : "113",
     "type" : "owl:Class"
   }, {
+    "id" : "170",
+    "type" : "owl:Class"
+  }, {
+    "id" : "140",
+    "type" : "owl:Class"
+  }, {
+    "id" : "54",
+    "type" : "owl:Class"
+  }, {
+    "id" : "15",
+    "type" : "owl:Class"
+  }, {
+    "id" : "163",
+    "type" : "owl:Class"
+  }, {
+    "id" : "123",
+    "type" : "owl:Class"
+  }, {
+    "id" : "97",
+    "type" : "owl:Class"
+  }, {
+    "id" : "168",
+    "type" : "owl:Class"
+  }, {
+    "id" : "89",
+    "type" : "owl:Class"
+  }, {
+    "id" : "109",
+    "type" : "owl:Class"
+  }, {
+    "id" : "159",
+    "type" : "owl:Class"
+  }, {
+    "id" : "127",
+    "type" : "owl:Class"
+  }, {
+    "id" : "6",
+    "type" : "owl:Class"
+  }, {
+    "id" : "87",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "245",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "220",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "247",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "1",
+    "type" : "owl:Class"
+  }, {
+    "id" : "155",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "110",
+    "type" : "owl:Class"
+  }, {
+    "id" : "72",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "234",
+    "type" : "owl:Class"
+  }, {
+    "id" : "8",
+    "type" : "owl:Class"
+  }, {
+    "id" : "253",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "50",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "254",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "224",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "182",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "249",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "85",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "208",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "255",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "256",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "11",
+    "type" : "owl:Class"
+  }, {
+    "id" : "172",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "94",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "82",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "226",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "20",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "92",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "17",
+    "type" : "owl:Class"
+  }, {
+    "id" : "77",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "4",
+    "type" : "owl:Class"
+  }, {
+    "id" : "83",
+    "type" : "owl:Class"
+  }, {
+    "id" : "48",
+    "type" : "owl:Class"
+  }, {
+    "id" : "136",
+    "type" : "owl:Class"
+  }, {
+    "id" : "251",
+    "type" : "rdfs:Datatype"
+  }, {
     "id" : "261",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "235",
+    "id" : "281",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "101",
+    "id" : "282",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "264",
+    "id" : "285",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "266",
+    "id" : "286",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "142",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "287",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "258",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "90",
+    "type" : "owl:Class"
+  }, {
+    "id" : "100",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "175",
+    "type" : "owl:Class"
+  }, {
+    "id" : "149",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "222",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "98",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "244",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "228",
     "type" : "rdfs:Datatype"
   } ],
   "classAttribute" : [ {
@@ -363,13 +402,51 @@
     "label" : {
       "IRI-based" : "SuperStructureComponent"
     },
-    "subClasses" : [ "48", "49", "50", "51", "52" ],
+    "subClasses" : [ "53", "18", "2", "54", "55" ],
     "comment" : {
       "de" : "Bauteil des Überbaus"
     },
     "attributes" : [ "external" ],
-    "id" : "15",
-    "superClasses" : [ "11" ]
+    "id" : "51",
+    "superClasses" : [ "52" ]
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "60",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "61",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "62",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "63",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "instances" : 0,
+    "union" : [ "65", "66" ],
+    "attributes" : [ "union", "anonymous" ],
+    "id" : "64"
+  }, {
+    "instances" : 0,
+    "union" : [ "65", "66" ],
+    "attributes" : [ "union", "anonymous" ],
+    "id" : "67"
   }, {
     "iri" : "https://w3id.org/brcomp#GirderComponent",
     "baseIri" : "https://w3id.org/brcomp",
@@ -377,13 +454,13 @@
     "label" : {
       "IRI-based" : "GirderComponent"
     },
-    "subClasses" : [ "72", "73", "61" ],
+    "subClasses" : [ "1", "4", "6" ],
     "comment" : {
       "undefined" : "Bauteil des Brückenträgers"
     },
     "attributes" : [ "external" ],
-    "id" : "50",
-    "superClasses" : [ "15" ]
+    "id" : "2",
+    "superClasses" : [ "51" ]
   }, {
     "iri" : "https://w3id.org/brot#SubStructure",
     "baseIri" : "https://w3id.org/brot",
@@ -395,8 +472,8 @@
       "de" : "Überbau"
     },
     "attributes" : [ "external" ],
-    "id" : "79",
-    "superClasses" : [ "80" ]
+    "id" : "71",
+    "superClasses" : [ "72" ]
   }, {
     "iri" : "https://w3id.org/bcore#SteelConcreteComposite",
     "baseIri" : "https://w3id.org/bcore",
@@ -407,8 +484,36 @@
     "comment" : {
       "de" : "Stahl-Beton-Verbund"
     },
-    "id" : "81",
-    "superClasses" : [ "18" ]
+    "id" : "73",
+    "superClasses" : [ "74" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "78",
+    "label" : {
+      "IRI-based" : "decimal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "79",
+    "label" : {
+      "IRI-based" : "decimal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "57",
+    "label" : {
+      "IRI-based" : "decimal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "22",
+    "label" : {
+      "undefined" : "Thing"
+    }
   }, {
     "iri" : "https://w3id.org/brcomp#Girder",
     "baseIri" : "https://w3id.org/brcomp",
@@ -420,8 +525,8 @@
       "de" : "Brückenträger"
     },
     "attributes" : [ "external" ],
-    "id" : "48",
-    "superClasses" : [ "15" ]
+    "id" : "53",
+    "superClasses" : [ "51" ]
   }, {
     "iri" : "https://w3id.org/bmat#ReinforcementSteel",
     "baseIri" : "https://w3id.org/bmat",
@@ -433,8 +538,8 @@
       "de" : "Betonstahl"
     },
     "attributes" : [ "external" ],
-    "id" : "89",
-    "superClasses" : [ "56" ]
+    "id" : "66",
+    "superClasses" : [ "83" ]
   }, {
     "iri" : "https://w3id.org/brcomp#Pile",
     "baseIri" : "https://w3id.org/brcomp",
@@ -446,8 +551,8 @@
       "de" : "Bohrpfahl"
     },
     "attributes" : [ "external" ],
-    "id" : "94",
-    "superClasses" : [ "10" ]
+    "id" : "88",
+    "superClasses" : [ "89" ]
   }, {
     "iri" : "https://w3id.org/bot#Building",
     "baseIri" : "https://w3id.org/bot",
@@ -459,8 +564,8 @@
       "de" : "Gebäude"
     },
     "attributes" : [ "external" ],
-    "id" : "1",
-    "superClasses" : [ "2" ]
+    "id" : "101",
+    "superClasses" : [ "80" ]
   }, {
     "iri" : "https://w3id.org/bcore#InfrastructureRoute",
     "baseIri" : "https://w3id.org/bcore",
@@ -468,11 +573,11 @@
     "label" : {
       "IRI-based" : "InfrastructureRoute"
     },
-    "subClasses" : [ "63", "65", "67", "69" ],
+    "subClasses" : [ "8", "11", "13", "15" ],
     "comment" : {
       "de" : "Infrastrukturtrasse"
     },
-    "id" : "47"
+    "id" : "9"
   }, {
     "iri" : "https://w3id.org/bcore#RailwayRoute",
     "baseIri" : "https://w3id.org/bcore",
@@ -483,8 +588,8 @@
     "comment" : {
       "de" : "Schienenweg"
     },
-    "id" : "67",
-    "superClasses" : [ "47" ]
+    "id" : "13",
+    "superClasses" : [ "9" ]
   }, {
     "iri" : "https://w3id.org/bcore#ConstructionSteel",
     "baseIri" : "https://w3id.org/bcore",
@@ -495,8 +600,8 @@
     "comment" : {
       "de" : "Baustahl"
     },
-    "id" : "104",
-    "superClasses" : [ "56" ]
+    "id" : "65",
+    "superClasses" : [ "83" ]
   }, {
     "iri" : "https://w3id.org/brcomp#AbutmentBenching",
     "baseIri" : "https://w3id.org/brcomp",
@@ -508,8 +613,8 @@
       "de" : "Auflagerbank"
     },
     "attributes" : [ "external" ],
-    "id" : "105",
-    "superClasses" : [ "106" ]
+    "id" : "111",
+    "superClasses" : [ "110" ]
   }, {
     "iri" : "https://w3id.org/brcomp#Pier",
     "baseIri" : "https://w3id.org/brcomp",
@@ -521,8 +626,8 @@
       "de" : "Stütze"
     },
     "attributes" : [ "external" ],
-    "id" : "116",
-    "superClasses" : [ "10" ]
+    "id" : "130",
+    "superClasses" : [ "89" ]
   }, {
     "iri" : "https://w3id.org/bcore#EquipmentComponent",
     "baseIri" : "https://w3id.org/bcore",
@@ -541,8 +646,8 @@
     "comment" : {
       "de" : "Bauteil der Brückenausstattung"
     },
-    "id" : "13",
-    "superClasses" : [ "11" ]
+    "id" : "131",
+    "superClasses" : [ "52" ]
   }, {
     "iri" : "https://w3id.org/brcomp#Arch",
     "baseIri" : "https://w3id.org/brcomp",
@@ -554,8 +659,8 @@
       "de" : "Bogen"
     },
     "attributes" : [ "external" ],
-    "id" : "52",
-    "superClasses" : [ "10", "15" ]
+    "id" : "55",
+    "superClasses" : [ "89", "51" ]
   }, {
     "iri" : "https://w3id.org/bcore#TrussGirder",
     "baseIri" : "https://w3id.org/bcore",
@@ -566,8 +671,8 @@
     "comment" : {
       "de" : "Fachwerkträger"
     },
-    "id" : "117",
-    "superClasses" : [ "61" ]
+    "id" : "129",
+    "superClasses" : [ "6" ]
   }, {
     "iri" : "https://w3id.org/bcore#BoxGirder",
     "baseIri" : "https://w3id.org/bcore",
@@ -578,8 +683,8 @@
     "comment" : {
       "de" : "Hohlkastenträger"
     },
-    "id" : "118",
-    "superClasses" : [ "61" ]
+    "id" : "125",
+    "superClasses" : [ "6" ]
   }, {
     "iri" : "https://w3id.org/brcomp#AbutmentChamberWall",
     "baseIri" : "https://w3id.org/brcomp",
@@ -591,8 +696,22 @@
       "de" : "Widerlagerwand"
     },
     "attributes" : [ "external" ],
-    "id" : "120",
-    "superClasses" : [ "106" ]
+    "id" : "116",
+    "superClasses" : [ "110" ]
+  }, {
+    "iri" : "https://w3id.org/brcomp#TensionComponent",
+    "baseIri" : "https://w3id.org/brcomp",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "TensionComponent"
+    },
+    "subClasses" : [ "17" ],
+    "comment" : {
+      "undefined" : "Spanngliedkomponente"
+    },
+    "attributes" : [ "external" ],
+    "id" : "18",
+    "superClasses" : [ "89", "51" ]
   }, {
     "iri" : "https://w3id.org/bcore#PlateGirder",
     "baseIri" : "https://w3id.org/bcore",
@@ -603,22 +722,8 @@
     "comment" : {
       "de" : "Vollwandträger (Stahl)"
     },
-    "id" : "135",
-    "superClasses" : [ "61" ]
-  }, {
-    "iri" : "https://w3id.org/brcomp#TensionComponent",
-    "baseIri" : "https://w3id.org/brcomp",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "TensionComponent"
-    },
-    "subClasses" : [ "71" ],
-    "comment" : {
-      "undefined" : "Spanngliedkomponente"
-    },
-    "attributes" : [ "external" ],
-    "id" : "49",
-    "superClasses" : [ "10", "15" ]
+    "id" : "121",
+    "superClasses" : [ "6" ]
   }, {
     "iri" : "https://w3id.org/bmat#BuildingMaterial",
     "baseIri" : "https://w3id.org/bmat",
@@ -626,12 +731,12 @@
     "label" : {
       "IRI-based" : "BuildingMaterial"
     },
-    "subClasses" : [ "75", "57", "18" ],
+    "subClasses" : [ "97", "152", "74" ],
     "comment" : {
       "de" : "Baumaterial"
     },
     "attributes" : [ "external" ],
-    "id" : "76"
+    "id" : "151"
   }, {
     "iri" : "https://w3id.org/bcore#Metal",
     "baseIri" : "https://w3id.org/bcore",
@@ -639,12 +744,12 @@
     "label" : {
       "IRI-based" : "Metal"
     },
-    "subClasses" : [ "56" ],
+    "subClasses" : [ "83" ],
     "comment" : {
       "de" : "Metall"
     },
-    "id" : "57",
-    "superClasses" : [ "76" ]
+    "id" : "152",
+    "superClasses" : [ "151" ]
   }, {
     "iri" : "https://w3id.org/bcore#PrestressingSteel",
     "baseIri" : "https://w3id.org/bcore",
@@ -655,8 +760,8 @@
     "comment" : {
       "de" : "Spannstahl"
     },
-    "id" : "126",
-    "superClasses" : [ "56" ]
+    "id" : "105",
+    "superClasses" : [ "83" ]
   }, {
     "iri" : "https://w3id.org/brcomp#Bearing",
     "baseIri" : "https://w3id.org/brcomp",
@@ -668,8 +773,8 @@
       "de" : "Lager"
     },
     "attributes" : [ "external" ],
-    "id" : "141",
-    "superClasses" : [ "10" ]
+    "id" : "146",
+    "superClasses" : [ "89" ]
   }, {
     "iri" : "https://w3id.org/bcore#PrestressedConcrete",
     "baseIri" : "https://w3id.org/bcore",
@@ -680,8 +785,8 @@
     "comment" : {
       "de" : "Spannbeton"
     },
-    "id" : "142",
-    "superClasses" : [ "18" ]
+    "id" : "153",
+    "superClasses" : [ "74" ]
   }, {
     "iri" : "https://w3id.org/bcore#RoutePoint",
     "baseIri" : "https://w3id.org/bcore",
@@ -692,8 +797,8 @@
     "comment" : {
       "de" : "Trassenpunkt"
     },
-    "id" : "110",
-    "superClasses" : [ "95" ]
+    "id" : "76",
+    "superClasses" : [ "90" ]
   }, {
     "iri" : "https://w3id.org/bcore#Image",
     "baseIri" : "https://w3id.org/bcore",
@@ -704,19 +809,19 @@
     "comment" : {
       "de" : "Bild"
     },
-    "id" : "112",
-    "superClasses" : [ "113" ]
+    "id" : "174",
+    "superClasses" : [ "175" ]
   }, {
     "iri" : "https://w3id.org/bot#Zone",
-    "equivalent" : [ "80" ],
+    "equivalent" : [ "72" ],
     "baseIri" : "https://w3id.org/bot",
     "instances" : 0,
     "label" : {
       "IRI-based" : "Zone"
     },
-    "subClasses" : [ "59", "1", "4", "6", "8" ],
-    "attributes" : [ "external", "equivalent" ],
-    "id" : "2"
+    "subClasses" : [ "163", "101", "166", "168", "170" ],
+    "attributes" : [ "equivalent", "external" ],
+    "id" : "80"
   }, {
     "iri" : "https://w3id.org/brot#SuperStructure",
     "baseIri" : "https://w3id.org/brot",
@@ -728,8 +833,8 @@
       "de" : "Unterbau"
     },
     "attributes" : [ "external" ],
-    "id" : "122",
-    "superClasses" : [ "80" ]
+    "id" : "118",
+    "superClasses" : [ "72" ]
   }, {
     "iri" : "https://w3id.org/brot#Component",
     "baseIri" : "https://w3id.org/brot",
@@ -737,12 +842,12 @@
     "label" : {
       "IRI-based" : "Component"
     },
-    "subClasses" : [ "10", "13", "15" ],
+    "subClasses" : [ "89", "131", "51" ],
     "comment" : {
       "de" : "Bauteil"
     },
     "attributes" : [ "external" ],
-    "id" : "11"
+    "id" : "52"
   }, {
     "iri" : "https://w3id.org/bcore#CompositeMaterial",
     "baseIri" : "https://w3id.org/bcore",
@@ -750,12 +855,24 @@
     "label" : {
       "IRI-based" : "CompositeMaterial"
     },
-    "subClasses" : [ "17", "142", "81" ],
+    "subClasses" : [ "159", "153", "73" ],
     "comment" : {
       "de" : "Materialverbund"
     },
-    "id" : "18",
-    "superClasses" : [ "76" ]
+    "id" : "74",
+    "superClasses" : [ "151" ]
+  }, {
+    "iri" : "https://w3id.org/bcore#Country",
+    "baseIri" : "https://w3id.org/bcore",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Country"
+    },
+    "comment" : {
+      "de" : "Land"
+    },
+    "id" : "166",
+    "superClasses" : [ "80" ]
   }, {
     "iri" : "https://w3id.org/brcomp#AbutmentWingWall",
     "baseIri" : "https://w3id.org/brcomp",
@@ -767,20 +884,8 @@
       "de" : "Flügelwand des Widerlagers"
     },
     "attributes" : [ "external" ],
-    "id" : "137",
-    "superClasses" : [ "106" ]
-  }, {
-    "iri" : "https://w3id.org/bcore#Country",
-    "baseIri" : "https://w3id.org/bcore",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "Country"
-    },
-    "comment" : {
-      "de" : "Land"
-    },
-    "id" : "4",
-    "superClasses" : [ "2" ]
+    "id" : "113",
+    "superClasses" : [ "110" ]
   }, {
     "iri" : "https://w3id.org/bot#Site",
     "baseIri" : "https://w3id.org/bot",
@@ -792,8 +897,8 @@
       "de" : "Baustelle"
     },
     "attributes" : [ "external" ],
-    "id" : "8",
-    "superClasses" : [ "2" ]
+    "id" : "170",
+    "superClasses" : [ "80" ]
   }, {
     "iri" : "https://w3id.org/brcomp#Foundation",
     "baseIri" : "https://w3id.org/brcomp",
@@ -801,13 +906,13 @@
     "label" : {
       "IRI-based" : "Foundation"
     },
-    "subClasses" : [ "134" ],
+    "subClasses" : [ "109" ],
     "comment" : {
       "de" : "Gründung/ Fundament"
     },
     "attributes" : [ "external" ],
-    "id" : "152",
-    "superClasses" : [ "10" ]
+    "id" : "140",
+    "superClasses" : [ "89" ]
   }, {
     "iri" : "https://w3id.org/brcomp#Pylon",
     "baseIri" : "https://w3id.org/brcomp",
@@ -816,8 +921,8 @@
       "IRI-based" : "Pylon"
     },
     "attributes" : [ "external" ],
-    "id" : "51",
-    "superClasses" : [ "10", "15" ]
+    "id" : "54",
+    "superClasses" : [ "89", "51" ]
   }, {
     "iri" : "https://w3id.org/bcore#FootCycleRoute",
     "baseIri" : "https://w3id.org/bcore",
@@ -828,8 +933,8 @@
     "comment" : {
       "de" : "Geh- und/oder Radweg"
     },
-    "id" : "69",
-    "superClasses" : [ "47" ]
+    "id" : "15",
+    "superClasses" : [ "9" ]
   }, {
     "iri" : "https://w3id.org/bcore#City",
     "baseIri" : "https://w3id.org/bcore",
@@ -840,8 +945,8 @@
     "comment" : {
       "de" : "Stadt"
     },
-    "id" : "59",
-    "superClasses" : [ "2" ]
+    "id" : "163",
+    "superClasses" : [ "80" ]
   }, {
     "iri" : "https://w3id.org/bcore#IBeam",
     "baseIri" : "https://w3id.org/bcore",
@@ -852,20 +957,8 @@
     "comment" : {
       "de" : "I-Träger"
     },
-    "id" : "150",
-    "superClasses" : [ "61" ]
-  }, {
-    "iri" : "https://w3id.org/bcore#Region",
-    "baseIri" : "https://w3id.org/bcore",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "Region"
-    },
-    "comment" : {
-      "de" : "Region/ Bundesland"
-    },
-    "id" : "6",
-    "superClasses" : [ "2" ]
+    "id" : "123",
+    "superClasses" : [ "6" ]
   }, {
     "iri" : "https://w3id.org/bmat#Concrete",
     "baseIri" : "https://w3id.org/bmat",
@@ -877,8 +970,20 @@
       "de" : "Beton"
     },
     "attributes" : [ "external" ],
-    "id" : "75",
-    "superClasses" : [ "76" ]
+    "id" : "97",
+    "superClasses" : [ "151" ]
+  }, {
+    "iri" : "https://w3id.org/bcore#Region",
+    "baseIri" : "https://w3id.org/bcore",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Region"
+    },
+    "comment" : {
+      "de" : "Region/ Bundesland"
+    },
+    "id" : "168",
+    "superClasses" : [ "80" ]
   }, {
     "iri" : "https://w3id.org/brcomp#SubStructureComponent",
     "baseIri" : "https://w3id.org/brcomp",
@@ -886,13 +991,13 @@
     "label" : {
       "IRI-based" : "SubStructureComponent"
     },
-    "subClasses" : [ "152", "94", "141", "49", "116", "106", "51", "146", "52" ],
+    "subClasses" : [ "140", "88", "146", "18", "130", "110", "54", "136", "55" ],
     "comment" : {
       "de" : "Bauteil des Unterbaus"
     },
     "attributes" : [ "external" ],
-    "id" : "10",
-    "superClasses" : [ "11" ]
+    "id" : "89",
+    "superClasses" : [ "52" ]
   }, {
     "iri" : "https://w3id.org/brcomp#AbutmentFooting",
     "baseIri" : "https://w3id.org/brcomp",
@@ -904,8 +1009,8 @@
       "de" : "Fundament des Widerlagers"
     },
     "attributes" : [ "external" ],
-    "id" : "134",
-    "superClasses" : [ "152", "106" ]
+    "id" : "109",
+    "superClasses" : [ "140", "110" ]
   }, {
     "iri" : "https://w3id.org/bmat#ReinforcedConcrete",
     "baseIri" : "https://w3id.org/bmat",
@@ -917,8 +1022,8 @@
       "de" : "Stahlbeton"
     },
     "attributes" : [ "external" ],
-    "id" : "17",
-    "superClasses" : [ "18" ]
+    "id" : "159",
+    "superClasses" : [ "74" ]
   }, {
     "iri" : "https://w3id.org/bcore#TBeam",
     "baseIri" : "https://w3id.org/bcore",
@@ -929,8 +1034,8 @@
     "comment" : {
       "de" : "Plattenbalken (Beton)"
     },
-    "id" : "129",
-    "superClasses" : [ "61" ]
+    "id" : "127",
+    "superClasses" : [ "6" ]
   }, {
     "iri" : "https://w3id.org/brcomp#GirderMainGirder",
     "baseIri" : "https://w3id.org/brcomp",
@@ -938,40 +1043,40 @@
     "label" : {
       "IRI-based" : "GirderMainGirder"
     },
-    "subClasses" : [ "135", "150", "118", "129", "117" ],
+    "subClasses" : [ "121", "123", "125", "127", "129" ],
     "comment" : {
       "de" : "Hauptträger (Längsträger)"
     },
     "attributes" : [ "external" ],
-    "id" : "61",
-    "superClasses" : [ "50" ]
+    "id" : "6",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "87",
+    "label" : {
+      "IRI-based" : "string"
+    }
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#decimal",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "207",
+    "id" : "245",
     "label" : {
       "IRI-based" : "decimal"
     }
   }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "iri" : "http://www.w3.org/2001/XMLSchema#decimal",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "99",
+    "id" : "220",
     "label" : {
-      "IRI-based" : "string"
+      "IRI-based" : "decimal"
     }
   }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "iri" : "http://www.w3.org/2001/XMLSchema#decimal",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "140",
+    "id" : "247",
     "label" : {
-      "IRI-based" : "string"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#string",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "213",
-    "label" : {
-      "IRI-based" : "string"
+      "IRI-based" : "decimal"
     }
   }, {
     "iri" : "https://w3id.org/brcomp#GirderCrossGirder",
@@ -984,12 +1089,12 @@
       "de" : "Querträger"
     },
     "attributes" : [ "external" ],
-    "id" : "72",
-    "superClasses" : [ "50" ]
+    "id" : "1",
+    "superClasses" : [ "2" ]
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#decimal",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "204",
+    "id" : "155",
     "label" : {
       "IRI-based" : "decimal"
     }
@@ -1000,24 +1105,24 @@
     "label" : {
       "IRI-based" : "AbutmentComponent"
     },
-    "subClasses" : [ "134", "137", "105", "120" ],
+    "subClasses" : [ "109", "113", "111", "116" ],
     "comment" : {
       "de" : "Bauteil des Widerlagers"
     },
     "attributes" : [ "external" ],
-    "id" : "106",
-    "superClasses" : [ "10" ]
+    "id" : "110",
+    "superClasses" : [ "89" ]
   }, {
     "iri" : "https://w3id.org/brot#SpatialZone",
-    "equivalent" : [ "2" ],
+    "equivalent" : [ "80" ],
     "baseIri" : "https://w3id.org/brot",
     "instances" : 0,
     "label" : {
       "IRI-based" : "SpatialZone"
     },
-    "subClasses" : [ "122", "79", "46" ],
-    "attributes" : [ "external", "equivalent" ],
-    "id" : "80"
+    "subClasses" : [ "118", "71", "48" ],
+    "attributes" : [ "equivalent", "external" ],
+    "id" : "72"
   }, {
     "iri" : "https://w3id.org/bcore#TechnicalDocument",
     "baseIri" : "https://w3id.org/bcore",
@@ -1028,8 +1133,8 @@
     "comment" : {
       "de" : "Technisches Dokument"
     },
-    "id" : "115",
-    "superClasses" : [ "113" ]
+    "id" : "234",
+    "superClasses" : [ "175" ]
   }, {
     "iri" : "https://w3id.org/bcore#RoadRoute",
     "baseIri" : "https://w3id.org/bcore",
@@ -1040,77 +1145,77 @@
     "comment" : {
       "de" : "Straße"
     },
-    "id" : "63",
-    "superClasses" : [ "47" ]
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#decimal",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "230",
-    "label" : {
-      "IRI-based" : "decimal"
-    }
+    "id" : "8",
+    "superClasses" : [ "9" ]
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "93",
+    "id" : "253",
     "label" : {
       "IRI-based" : "string"
     }
   }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "iri" : "http://www.w3.org/2001/XMLSchema#date",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "231",
+    "id" : "50",
     "label" : {
-      "IRI-based" : "string"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#string",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "226",
-    "label" : {
-      "IRI-based" : "string"
+      "IRI-based" : "date"
     }
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#decimal",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "232",
-    "label" : {
-      "IRI-based" : "decimal"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#decimal",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "144",
-    "label" : {
-      "IRI-based" : "decimal"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#string",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "91",
-    "label" : {
-      "IRI-based" : "string"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#decimal",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "192",
+    "id" : "254",
     "label" : {
       "IRI-based" : "decimal"
     }
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#int",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "209",
+    "id" : "224",
     "label" : {
       "IRI-based" : "int"
     }
   }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#date",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "182",
+    "label" : {
+      "IRI-based" : "date"
+    }
+  }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "233",
+    "id" : "249",
     "label" : {
       "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "85",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "208",
+    "label" : {
+      "IRI-based" : "decimal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#date",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "255",
+    "label" : {
+      "IRI-based" : "date"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#date",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "256",
+    "label" : {
+      "IRI-based" : "date"
     }
   }, {
     "iri" : "https://w3id.org/bcore#WaterWayRoute",
@@ -1122,25 +1227,50 @@
     "comment" : {
       "de" : "Wasserstraße"
     },
-    "id" : "65",
-    "superClasses" : [ "47" ]
+    "id" : "11",
+    "superClasses" : [ "9" ]
   }, {
-    "instances" : 0,
-    "union" : [ "104", "89" ],
-    "attributes" : [ "union", "anonymous" ],
-    "id" : "206"
-  }, {
-    "iri" : "http://www.w3.org/2002/07/owl#Thing",
-    "baseIri" : "http://owl2vowl.de",
-    "id" : "20",
+    "iri" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "172",
     "label" : {
-      "undefined" : "Thing"
+      "IRI-based" : "decimal"
     }
   }, {
-    "instances" : 0,
-    "union" : [ "104", "89" ],
-    "attributes" : [ "union", "anonymous" ],
-    "id" : "87"
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "94",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "82",
+    "label" : {
+      "IRI-based" : "decimal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "226",
+    "label" : {
+      "IRI-based" : "decimal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#integer",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "20",
+    "label" : {
+      "IRI-based" : "integer"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "92",
+    "label" : {
+      "IRI-based" : "decimal"
+    }
   }, {
     "iri" : "https://w3id.org/brcomp#Cable",
     "baseIri" : "https://w3id.org/brcomp",
@@ -1152,28 +1282,15 @@
       "de" : "Spannkabel/ Spannseil"
     },
     "attributes" : [ "external" ],
-    "id" : "71",
-    "superClasses" : [ "49" ]
+    "id" : "17",
+    "superClasses" : [ "18" ]
   }, {
-    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
-    "id" : "103",
+    "iri" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "77",
     "label" : {
-      "IRI-based" : "Literal",
-      "undefined" : "Literal"
+      "IRI-based" : "decimal"
     }
-  }, {
-    "iri" : "https://w3id.org/bcore#Steel",
-    "baseIri" : "https://w3id.org/bcore",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "Steel"
-    },
-    "subClasses" : [ "126", "104", "89" ],
-    "comment" : {
-      "de" : "Stahl"
-    },
-    "id" : "56",
-    "superClasses" : [ "57" ]
   }, {
     "iri" : "https://w3id.org/brcomp#GirderDeck",
     "baseIri" : "https://w3id.org/brcomp",
@@ -1185,8 +1302,21 @@
       "de" : "Fahrbahnplatte"
     },
     "attributes" : [ "external" ],
-    "id" : "73",
-    "superClasses" : [ "50" ]
+    "id" : "4",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "https://w3id.org/bcore#Steel",
+    "baseIri" : "https://w3id.org/bcore",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Steel"
+    },
+    "subClasses" : [ "105", "65", "66" ],
+    "comment" : {
+      "de" : "Stahl"
+    },
+    "id" : "83",
+    "superClasses" : [ "152" ]
   }, {
     "iri" : "https://w3id.org/brot#Bridge",
     "baseIri" : "https://w3id.org/brot",
@@ -1198,8 +1328,8 @@
       "de" : "Brücke"
     },
     "attributes" : [ "external" ],
-    "id" : "46",
-    "superClasses" : [ "80" ]
+    "id" : "48",
+    "superClasses" : [ "72" ]
   }, {
     "iri" : "https://w3id.org/bcore#Abutment",
     "baseIri" : "https://w3id.org/bcore",
@@ -1210,70 +1340,70 @@
     "comment" : {
       "de" : "Widerlager"
     },
-    "id" : "146",
-    "superClasses" : [ "10" ]
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#decimal",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "220",
-    "label" : {
-      "IRI-based" : "decimal"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#decimal",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "88",
-    "label" : {
-      "IRI-based" : "decimal"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#decimal",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "54",
-    "label" : {
-      "IRI-based" : "decimal"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#decimal",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "162",
-    "label" : {
-      "IRI-based" : "decimal"
-    }
+    "id" : "136",
+    "superClasses" : [ "89" ]
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "97",
+    "id" : "251",
     "label" : {
       "IRI-based" : "string"
     }
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "228",
+    "id" : "261",
     "label" : {
       "IRI-based" : "string"
     }
   }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#integer",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "281",
+    "label" : {
+      "IRI-based" : "integer"
+    }
+  }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#decimal",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "211",
+    "id" : "282",
     "label" : {
       "IRI-based" : "decimal"
     }
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#decimal",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "159",
+    "id" : "285",
     "label" : {
       "IRI-based" : "decimal"
     }
   }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "iri" : "http://www.w3.org/2001/XMLSchema#decimal",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "238",
+    "id" : "286",
     "label" : {
-      "IRI-based" : "string"
+      "IRI-based" : "decimal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "142",
+    "label" : {
+      "IRI-based" : "decimal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "287",
+    "label" : {
+      "IRI-based" : "decimal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "258",
+    "label" : {
+      "IRI-based" : "decimal"
     }
   }, {
     "iri" : "https://w3id.org/bcore#LocationPoint",
@@ -1282,15 +1412,15 @@
     "label" : {
       "IRI-based" : "LocationPoint"
     },
-    "subClasses" : [ "110" ],
+    "subClasses" : [ "76" ],
     "comment" : {
       "de" : "Örtlicher Punkt"
     },
-    "id" : "95"
+    "id" : "90"
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#decimal",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "131",
+    "id" : "100",
     "label" : {
       "IRI-based" : "decimal"
     }
@@ -1301,45 +1431,45 @@
     "label" : {
       "IRI-based" : "MediaFile"
     },
-    "subClasses" : [ "112", "115" ],
+    "subClasses" : [ "174", "234" ],
     "comment" : {
       "de" : "Datei"
     },
-    "id" : "113"
+    "id" : "175"
   }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "261",
+    "id" : "149",
     "label" : {
-      "IRI-based" : "decimal"
+      "IRI-based" : "string"
     }
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#decimal",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "235",
+    "id" : "222",
     "label" : {
       "IRI-based" : "decimal"
     }
   }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "101",
+    "id" : "98",
     "label" : {
-      "IRI-based" : "decimal"
+      "IRI-based" : "string"
     }
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#decimal",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "264",
+    "id" : "244",
     "label" : {
       "IRI-based" : "decimal"
     }
   }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "266",
+    "id" : "228",
     "label" : {
-      "IRI-based" : "decimal"
+      "IRI-based" : "string"
     }
   } ],
   "property" : [ {
@@ -1355,7 +1485,7 @@
     "id" : "7",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "9",
+    "id" : "10",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "12",
@@ -1368,142 +1498,133 @@
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "19",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "30",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "53",
     "type" : "owl:datatypeProperty"
-  }, {
-    "id" : "55",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "58",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "60",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "62",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "64",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "66",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "68",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "70",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "74",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "77",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "78",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "82",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "83",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "84",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "85",
-    "type" : "rdfs:SubClassOf"
   }, {
     "id" : "21",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "22",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "86",
-    "type" : "owl:datatypeProperty"
-  }, {
-    "id" : "24",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "90",
-    "type" : "owl:datatypeProperty"
-  }, {
-    "id" : "92",
-    "type" : "owl:datatypeProperty"
-  }, {
-    "id" : "29",
     "type" : "owl:objectProperty"
   }, {
     "id" : "32",
     "type" : "owl:objectProperty"
   }, {
+    "id" : "49",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "56",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "58",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "59",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "68",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "69",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "70",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "75",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "23",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "24",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "81",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "26",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "84",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "86",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "31",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "34",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "91",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "93",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "37",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "95",
+    "type" : "owl:datatypeProperty"
+  }, {
     "id" : "96",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "35",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "98",
-    "type" : "owl:datatypeProperty"
-  }, {
-    "id" : "100",
+    "id" : "99",
     "type" : "owl:datatypeProperty"
   }, {
     "id" : "102",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "44",
+    "id" : "46",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "23",
-    "type" : "owl:objectProperty"
+    "id" : "103",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "104",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "106",
+    "type" : "rdfs:SubClassOf"
   }, {
     "id" : "107",
     "type" : "rdfs:SubClassOf"
   }, {
+    "id" : "25",
+    "type" : "owl:objectProperty"
+  }, {
     "id" : "108",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "109",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "111",
+    "id" : "112",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "114",
     "type" : "rdfs:SubClassOf"
   }, {
+    "id" : "115",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "117",
+    "type" : "rdfs:SubClassOf"
+  }, {
     "id" : "119",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "121",
+    "id" : "120",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "123",
+    "id" : "122",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "124",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "125",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "127",
+    "id" : "126",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "128",
     "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "130",
-    "type" : "owl:datatypeProperty"
   }, {
     "id" : "132",
     "type" : "rdfs:SubClassOf"
@@ -1511,17 +1632,29 @@
     "id" : "133",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "136",
+    "id" : "134",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "135",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "137",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "138",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "139",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "141",
     "type" : "owl:datatypeProperty"
   }, {
     "id" : "143",
-    "type" : "owl:datatypeProperty"
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "144",
+    "type" : "rdfs:SubClassOf"
   }, {
     "id" : "145",
     "type" : "rdfs:SubClassOf"
@@ -1530,48 +1663,30 @@
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "148",
-    "type" : "rdfs:SubClassOf"
+    "type" : "owl:datatypeProperty"
   }, {
-    "id" : "149",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "151",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "153",
-    "type" : "rdfs:SubClassOf"
+    "id" : "150",
+    "type" : "owl:datatypeProperty"
   }, {
     "id" : "154",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "155",
-    "type" : "rdfs:SubClassOf"
+    "type" : "owl:datatypeProperty"
   }, {
     "id" : "156",
     "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "34",
-    "type" : "owl:objectProperty"
   }, {
     "id" : "157",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "158",
-    "type" : "owl:datatypeProperty"
+    "type" : "rdfs:SubClassOf"
   }, {
     "id" : "160",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "37",
-    "type" : "owl:objectProperty"
-  }, {
     "id" : "161",
-    "type" : "owl:datatypeProperty"
+    "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "43",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "163",
+    "id" : "162",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "164",
@@ -1580,77 +1695,59 @@
     "id" : "165",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "166",
-    "type" : "owl:disjointWith"
-  }, {
     "id" : "167",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "25",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "27",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "168",
-    "type" : "owl:disjointWith"
-  }, {
-    "id" : "28",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "169",
-    "type" : "owl:disjointWith"
-  }, {
-    "id" : "170",
-    "type" : "owl:disjointWith"
-  }, {
-    "id" : "171",
-    "type" : "owl:disjointWith"
-  }, {
-    "id" : "172",
-    "type" : "owl:disjointWith"
-  }, {
-    "id" : "173",
-    "type" : "owl:disjointWith"
-  }, {
-    "id" : "174",
-    "type" : "owl:disjointWith"
-  }, {
-    "id" : "175",
-    "type" : "owl:disjointWith"
-  }, {
-    "id" : "176",
-    "type" : "owl:disjointWith"
-  }, {
-    "id" : "177",
-    "type" : "owl:disjointWith"
+    "type" : "rdfs:SubClassOf"
   }, {
     "id" : "36",
     "type" : "owl:objectProperty"
   }, {
+    "id" : "169",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "171",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "173",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "176",
+    "type" : "owl:datatypeProperty"
+  }, {
     "id" : "39",
     "type" : "owl:objectProperty"
   }, {
+    "id" : "45",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "177",
+    "type" : "rdfs:SubClassOf"
+  }, {
     "id" : "178",
-    "type" : "owl:disjointWith"
+    "type" : "rdfs:SubClassOf"
   }, {
     "id" : "179",
-    "type" : "owl:disjointWith"
+    "type" : "rdfs:SubClassOf"
   }, {
     "id" : "180",
     "type" : "owl:disjointWith"
   }, {
     "id" : "181",
-    "type" : "owl:disjointWith"
-  }, {
-    "id" : "182",
-    "type" : "owl:disjointWith"
+    "type" : "owl:datatypeProperty"
   }, {
     "id" : "183",
-    "type" : "owl:disjointWith"
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "27",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "29",
+    "type" : "owl:objectProperty"
   }, {
     "id" : "184",
     "type" : "owl:disjointWith"
+  }, {
+    "id" : "30",
+    "type" : "owl:objectProperty"
   }, {
     "id" : "185",
     "type" : "owl:disjointWith"
@@ -1671,10 +1768,19 @@
     "type" : "owl:disjointWith"
   }, {
     "id" : "191",
-    "type" : "owl:datatypeProperty"
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "192",
+    "type" : "owl:disjointWith"
   }, {
     "id" : "193",
     "type" : "owl:disjointWith"
+  }, {
+    "id" : "38",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "41",
+    "type" : "owl:objectProperty"
   }, {
     "id" : "194",
     "type" : "owl:disjointWith"
@@ -1704,25 +1810,37 @@
     "type" : "owl:disjointWith"
   }, {
     "id" : "203",
-    "type" : "owl:datatypeProperty"
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "204",
+    "type" : "owl:disjointWith"
   }, {
     "id" : "205",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "206",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "207",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "208",
-    "type" : "owl:datatypeProperty"
+    "id" : "209",
+    "type" : "owl:disjointWith"
   }, {
     "id" : "210",
-    "type" : "owl:datatypeProperty"
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "211",
+    "type" : "owl:disjointWith"
   }, {
     "id" : "212",
-    "type" : "owl:datatypeProperty"
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "213",
+    "type" : "owl:disjointWith"
   }, {
     "id" : "214",
     "type" : "owl:disjointWith"
-  }, {
-    "id" : "42",
-    "type" : "owl:objectProperty"
   }, {
     "id" : "215",
     "type" : "owl:disjointWith"
@@ -1740,19 +1858,10 @@
     "type" : "owl:datatypeProperty"
   }, {
     "id" : "221",
-    "type" : "owl:disjointWith"
-  }, {
-    "id" : "45",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "222",
-    "type" : "owl:disjointWith"
+    "type" : "owl:datatypeProperty"
   }, {
     "id" : "223",
-    "type" : "owl:disjointWith"
-  }, {
-    "id" : "224",
-    "type" : "owl:disjointWith"
+    "type" : "owl:datatypeProperty"
   }, {
     "id" : "225",
     "type" : "owl:datatypeProperty"
@@ -1760,23 +1869,41 @@
     "id" : "227",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "26",
+    "id" : "229",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "44",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "229",
-    "type" : "owl:datatypeProperty"
+    "id" : "230",
+    "type" : "owl:disjointWith"
   }, {
-    "id" : "234",
-    "type" : "owl:datatypeProperty"
+    "id" : "231",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "232",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "233",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "235",
+    "type" : "rdfs:SubClassOf"
   }, {
     "id" : "236",
-    "type" : "owl:datatypeProperty"
+    "type" : "owl:disjointWith"
   }, {
     "id" : "237",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "238",
     "type" : "owl:datatypeProperty"
   }, {
     "id" : "239",
     "type" : "owl:disjointWith"
+  }, {
+    "id" : "47",
+    "type" : "owl:objectProperty"
   }, {
     "id" : "240",
     "type" : "owl:disjointWith"
@@ -1788,380 +1915,440 @@
     "type" : "owl:disjointWith"
   }, {
     "id" : "243",
-    "type" : "owl:disjointWith"
-  }, {
-    "id" : "244",
-    "type" : "owl:disjointWith"
-  }, {
-    "id" : "245",
-    "type" : "owl:disjointWith"
+    "type" : "owl:datatypeProperty"
   }, {
     "id" : "246",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "247",
-    "type" : "rdfs:SubClassOf"
+    "type" : "owl:datatypeProperty"
   }, {
     "id" : "248",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "249",
-    "type" : "owl:disjointWith"
+    "type" : "owl:datatypeProperty"
   }, {
     "id" : "250",
-    "type" : "owl:disjointWith"
+    "type" : "owl:datatypeProperty"
   }, {
-    "id" : "251",
-    "type" : "owl:disjointWith"
+    "id" : "28",
+    "type" : "owl:objectProperty"
   }, {
     "id" : "252",
-    "type" : "owl:disjointWith"
-  }, {
-    "id" : "253",
-    "type" : "owl:disjointWith"
-  }, {
-    "id" : "254",
-    "type" : "owl:disjointWith"
-  }, {
-    "id" : "255",
-    "type" : "owl:disjointWith"
-  }, {
-    "id" : "256",
-    "type" : "owl:disjointWith"
+    "type" : "owl:datatypeProperty"
   }, {
     "id" : "257",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "258",
+    "id" : "259",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "259",
-    "type" : "owl:disjointWith"
-  }, {
     "id" : "260",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "262",
     "type" : "owl:disjointWith"
   }, {
-    "id" : "31",
-    "type" : "owl:objectProperty"
+    "id" : "263",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "264",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "265",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "266",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "267",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "268",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "269",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "270",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "271",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "272",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "273",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "274",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "275",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "276",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "277",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "278",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "279",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "280",
+    "type" : "owl:disjointWith"
   }, {
     "id" : "33",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "38",
+    "id" : "35",
     "type" : "owl:objectProperty"
+  }, {
+    "id" : "283",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "284",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "288",
+    "type" : "owl:datatypeProperty"
   }, {
     "id" : "40",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "41",
+    "id" : "42",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "262",
+    "id" : "43",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "289",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "263",
+    "id" : "290",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "265",
+    "id" : "291",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "292",
     "type" : "owl:datatypeProperty"
   } ],
   "propertyAttribute" : [ {
     "range" : "2",
     "domain" : "1",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "0"
   }, {
     "range" : "2",
     "domain" : "4",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "3"
   }, {
     "range" : "2",
     "domain" : "6",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "5"
   }, {
-    "range" : "2",
+    "range" : "9",
     "domain" : "8",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "7"
   }, {
-    "range" : "11",
-    "domain" : "10",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "9"
+    "range" : "9",
+    "domain" : "11",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "10"
   }, {
-    "range" : "11",
+    "range" : "9",
     "domain" : "13",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "12"
   }, {
-    "range" : "11",
+    "range" : "9",
     "domain" : "15",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "14"
   }, {
     "range" : "18",
     "domain" : "17",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "16"
+  }, {
+    "iri" : "https://w3id.org/bcore#RoadRouteNumberOfLanes",
+    "baseIri" : "https://w3id.org/bcore",
+    "range" : "20",
+    "label" : {
+      "IRI-based" : "RoadRouteNumberOfLanes"
+    },
+    "domain" : "8",
+    "comment" : {
+      "de" : "Anzahl der Spuren einer Straße, in beide Richtungen addiert"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "19"
   }, {
     "iri" : "http://www.w3.org/2002/07/owl#topObjectProperty",
     "baseIri" : "http://www.w3.org/2002/07/owl",
-    "range" : "20",
+    "range" : "22",
     "label" : {
       "IRI-based" : "topObjectProperty"
     },
-    "domain" : "20",
-    "subproperty" : [ "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31", "32", "33", "34", "35", "36", "37", "38", "39", "40", "41", "42", "43", "44", "45" ],
-    "attributes" : [ "external", "object" ],
-    "id" : "19"
+    "domain" : "22",
+    "subproperty" : [ "23", "24", "25", "26", "27", "28", "29", "30", "31", "32", "33", "34", "35", "36", "37", "38", "39", "40", "41", "42", "43", "44", "45", "46", "47" ],
+    "attributes" : [ "object", "external" ],
+    "id" : "21"
   }, {
     "iri" : "https://w3id.org/bcore#carriesRoute",
-    "inverse" : "44",
+    "inverse" : "46",
     "baseIri" : "https://w3id.org/bcore",
-    "range" : "47",
+    "range" : "9",
     "label" : {
       "IRI-based" : "carriesRoute"
     },
-    "superproperty" : [ "19" ],
-    "domain" : "46",
+    "superproperty" : [ "21" ],
+    "domain" : "48",
     "comment" : {
       "de" : "Brücke folgt Trasse"
     },
     "attributes" : [ "object" ],
-    "id" : "30"
+    "id" : "32"
+  }, {
+    "iri" : "https://w3id.org/bcore#BridgePlanningStart",
+    "baseIri" : "https://w3id.org/bcore",
+    "range" : "50",
+    "label" : {
+      "IRI-based" : "BridgePlanningStart"
+    },
+    "domain" : "48",
+    "comment" : {
+      "de" : "Beginn der Planungsphase der Brücke"
+    },
+    "attributes" : [ "functional", "datatype" ],
+    "id" : "49"
   }, {
     "iri" : "https://w3id.org/brcomp#width",
     "baseIri" : "https://w3id.org/brcomp",
-    "range" : "54",
+    "range" : "57",
     "label" : {
       "IRI-based" : "width"
     },
-    "domain" : "11",
+    "domain" : "52",
     "comment" : {
       "de" : "Breite",
       "undefined" : "[m]"
     },
-    "attributes" : [ "external", "datatype", "functional" ],
-    "id" : "53"
+    "attributes" : [ "functional", "external", "datatype" ],
+    "id" : "56"
   }, {
-    "range" : "57",
-    "domain" : "56",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "55"
-  }, {
-    "range" : "2",
-    "domain" : "59",
-    "attributes" : [ "object", "anonymous" ],
+    "range" : "51",
+    "domain" : "54",
+    "attributes" : [ "anonymous", "object" ],
     "id" : "58"
   }, {
-    "range" : "50",
-    "domain" : "61",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "60"
+    "range" : "51",
+    "domain" : "55",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "59"
   }, {
-    "range" : "47",
-    "domain" : "63",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "62"
-  }, {
-    "range" : "47",
-    "domain" : "65",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "64"
-  }, {
-    "range" : "47",
-    "domain" : "67",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "66"
-  }, {
-    "range" : "47",
-    "domain" : "69",
-    "attributes" : [ "object", "anonymous" ],
+    "range" : "51",
+    "domain" : "53",
+    "attributes" : [ "anonymous", "object" ],
     "id" : "68"
   }, {
-    "range" : "49",
-    "domain" : "71",
-    "attributes" : [ "object", "anonymous" ],
+    "range" : "51",
+    "domain" : "18",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "69"
+  }, {
+    "range" : "51",
+    "domain" : "2",
+    "attributes" : [ "anonymous", "object" ],
     "id" : "70"
   }, {
-    "range" : "76",
-    "domain" : "75",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "74"
-  }, {
-    "range" : "76",
-    "domain" : "57",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "77"
-  }, {
-    "range" : "76",
-    "domain" : "18",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "78"
-  }, {
-    "range" : "15",
-    "domain" : "52",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "82"
-  }, {
-    "range" : "15",
-    "domain" : "51",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "83"
-  }, {
-    "range" : "50",
-    "domain" : "72",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "84"
-  }, {
-    "range" : "50",
-    "domain" : "73",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "85"
+    "iri" : "https://w3id.org/bcore#RoutePointEnvironmentZ",
+    "baseIri" : "https://w3id.org/bcore",
+    "range" : "77",
+    "label" : {
+      "IRI-based" : "RoutePointEnvironmentZ"
+    },
+    "domain" : "76",
+    "comment" : {
+      "de" : "Höhe (über NN) der Umgebung der Trasse senkrecht unter dem Trassenpunkt",
+      "undefined" : "[m]"
+    },
+    "attributes" : [ "functional", "datatype" ],
+    "id" : "75"
   }, {
     "iri" : "https://w3id.org/bcore#liesWithin",
-    "inverse" : "31",
+    "inverse" : "33",
     "baseIri" : "https://w3id.org/bcore",
-    "range" : "2",
+    "range" : "80",
     "label" : {
       "IRI-based" : "liesWithin"
     },
-    "superproperty" : [ "19" ],
-    "domain" : "2",
+    "superproperty" : [ "21" ],
+    "domain" : "80",
     "comment" : {
       "de" : "Zone liegt in Zone"
     },
     "attributes" : [ "object", "transitive" ],
-    "id" : "21"
+    "id" : "23"
   }, {
     "iri" : "https://w3id.org/bcore#crossesRoute",
     "baseIri" : "https://w3id.org/bcore",
-    "range" : "47",
+    "range" : "9",
     "label" : {
       "IRI-based" : "crossesRoute"
     },
-    "superproperty" : [ "19" ],
-    "domain" : "47",
+    "superproperty" : [ "21" ],
+    "domain" : "9",
     "comment" : {
       "de" : "Trasse kreuzt Trasse"
     },
     "attributes" : [ "object", "symmetric" ],
-    "id" : "22"
+    "id" : "24"
   }, {
     "iri" : "https://w3id.org/bcore#fyk",
     "baseIri" : "https://w3id.org/bcore",
-    "range" : "88",
+    "range" : "82",
     "label" : {
       "IRI-based" : "fyk"
     },
-    "domain" : "87",
+    "domain" : "64",
     "comment" : {
       "de" : "Charakteristische Festigkeit des Stahls",
       "undefined" : "[N/m²]"
     },
-    "attributes" : [ "datatype", "functional" ],
-    "id" : "86"
+    "attributes" : [ "functional", "datatype" ],
+    "id" : "81"
   }, {
     "iri" : "https://w3id.org/bcore#crossesZone",
     "baseIri" : "https://w3id.org/bcore",
-    "range" : "2",
+    "range" : "80",
     "label" : {
       "IRI-based" : "crossesZone"
     },
-    "superproperty" : [ "19" ],
-    "domain" : "47",
+    "superproperty" : [ "21" ],
+    "domain" : "9",
     "comment" : {
       "de" : "Trasse durchquert Zone"
     },
     "attributes" : [ "object" ],
-    "id" : "24"
+    "id" : "26"
   }, {
     "iri" : "https://w3id.org/bcore#ArchShape",
     "baseIri" : "https://w3id.org/bcore",
-    "range" : "91",
+    "range" : "85",
     "label" : {
       "IRI-based" : "ArchShape"
     },
-    "domain" : "52",
+    "domain" : "55",
     "comment" : {
       "undefined" : "Form des Bogens"
     },
     "attributes" : [ "datatype" ],
-    "id" : "90"
+    "id" : "84"
   }, {
     "iri" : "https://w3id.org/bcore#Ductility",
     "baseIri" : "https://w3id.org/bcore",
-    "range" : "93",
+    "range" : "87",
     "label" : {
       "IRI-based" : "Ductility"
     },
-    "domain" : "56",
+    "domain" : "83",
     "comment" : {
       "de" : "Duktilität"
     },
-    "attributes" : [ "datatype", "functional" ],
-    "id" : "92"
+    "attributes" : [ "functional", "datatype" ],
+    "id" : "86"
   }, {
     "iri" : "https://w3id.org/brot#containsComponent",
     "baseIri" : "https://w3id.org/brot",
-    "range" : "11",
+    "range" : "52",
     "label" : {
       "IRI-based" : "containsComponent"
     },
-    "superproperty" : [ "19" ],
-    "domain" : "80",
+    "superproperty" : [ "21" ],
+    "domain" : "72",
     "comment" : {
       "de" : "Brücke besteht aus Bauteil"
     },
-    "attributes" : [ "external", "object" ],
-    "id" : "29"
+    "attributes" : [ "object", "external" ],
+    "id" : "31"
   }, {
     "iri" : "https://w3id.org/bcore#locatedAt",
     "baseIri" : "https://w3id.org/bcore",
-    "range" : "95",
+    "range" : "90",
     "label" : {
       "IRI-based" : "locatedAt"
     },
-    "superproperty" : [ "19" ],
-    "domain" : "2",
+    "superproperty" : [ "21" ],
+    "domain" : "80",
     "comment" : {
       "de" : "Zone befindet sich an Ort"
     },
     "attributes" : [ "object", "functional" ],
-    "id" : "32"
+    "id" : "34"
+  }, {
+    "iri" : "https://w3id.org/bcore#RoutePointStation",
+    "baseIri" : "https://w3id.org/bcore",
+    "range" : "92",
+    "label" : {
+      "IRI-based" : "RoutePointStation"
+    },
+    "domain" : "76",
+    "comment" : {
+      "de" : "Kilometrierung des Trassenpunkts",
+      "undefined" : "[m]"
+    },
+    "attributes" : [ "functional", "datatype" ],
+    "id" : "91"
   }, {
     "iri" : "https://w3id.org/bcore#ZoneName",
     "baseIri" : "https://w3id.org/bcore",
-    "range" : "97",
+    "range" : "94",
     "label" : {
       "IRI-based" : "ZoneName"
     },
-    "domain" : "2",
+    "domain" : "80",
     "comment" : {
       "de" : "Name der Zone"
     },
-    "attributes" : [ "datatype", "functional" ],
-    "id" : "96"
+    "attributes" : [ "functional", "datatype" ],
+    "id" : "93"
   }, {
     "iri" : "https://w3id.org/bcore#partialStructureOf",
     "baseIri" : "https://w3id.org/bcore",
-    "range" : "46",
+    "range" : "48",
     "label" : {
       "IRI-based" : "partialStructureOf"
     },
-    "superproperty" : [ "19" ],
-    "domain" : "46",
+    "superproperty" : [ "21" ],
+    "domain" : "48",
     "comment" : {
       "de" : "Brückenzug ist Teil genau einer Brücke"
     },
     "attributes" : [ "object", "functional" ],
-    "id" : "35"
+    "id" : "37"
+  }, {
+    "iri" : "https://w3id.org/bcore#FootCycleRouteType",
+    "baseIri" : "https://w3id.org/bcore",
+    "range" : "60",
+    "label" : {
+      "IRI-based" : "FootCycleRouteType"
+    },
+    "domain" : "15",
+    "comment" : {
+      "de" : "Art des Fuß- und/oder Radweges",
+      "en" : "Possible values:\n- foot only\n- bike only\n- segregated\n- shared-use"
+    },
+    "attributes" : [ "functional", "datatype" ],
+    "id" : "95"
   }, {
     "iri" : "https://w3id.org/bcore#ExpositionClass",
     "baseIri" : "https://w3id.org/bcore",
-    "range" : "99",
+    "range" : "98",
     "annotations" : {
       "seeAlso" : [ {
         "identifier" : "seeAlso",
@@ -2173,1081 +2360,1240 @@
     "label" : {
       "IRI-based" : "ExpositionClass"
     },
-    "domain" : "75",
+    "domain" : "97",
     "comment" : {
       "de" : "Expositionsklasse"
     },
     "attributes" : [ "datatype" ],
-    "id" : "98"
+    "id" : "96"
   }, {
     "iri" : "https://w3id.org/bcore#InfrastructureRouteWidth",
     "baseIri" : "https://w3id.org/bcore",
-    "range" : "101",
+    "range" : "100",
     "label" : {
       "IRI-based" : "InfrastructureRouteWidth"
     },
-    "domain" : "47",
+    "domain" : "9",
     "comment" : {
       "de" : "Querschnittsbreite der Infrastruktur",
       "undefined" : "[m]"
     },
-    "attributes" : [ "datatype", "functional" ],
-    "id" : "100"
+    "attributes" : [ "functional", "datatype" ],
+    "id" : "99"
   }, {
     "iri" : "http://www.w3.org/2002/07/owl#topDataProperty",
     "baseIri" : "http://www.w3.org/2002/07/owl",
-    "range" : "103",
+    "range" : "61",
     "label" : {
       "IRI-based" : "topDataProperty"
     },
-    "domain" : "20",
+    "domain" : "22",
     "attributes" : [ "external", "datatype" ],
     "id" : "102"
   }, {
     "iri" : "https://w3id.org/bcore#traversesBridge",
     "baseIri" : "https://w3id.org/bcore",
-    "range" : "46",
+    "range" : "48",
     "label" : {
       "IRI-based" : "traversesBridge"
     },
-    "superproperty" : [ "19" ],
-    "domain" : "47",
+    "superproperty" : [ "21" ],
+    "domain" : "9",
     "comment" : {
       "de" : "Trasse überquert Brücke"
     },
     "attributes" : [ "object" ],
-    "id" : "44"
+    "id" : "46"
+  }, {
+    "range" : "72",
+    "domain" : "48",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "103"
+  }, {
+    "range" : "83",
+    "domain" : "105",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "104"
+  }, {
+    "range" : "83",
+    "domain" : "65",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "106"
+  }, {
+    "range" : "83",
+    "domain" : "66",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "107"
   }, {
     "iri" : "https://w3id.org/bcore#partOfZone",
-    "inverse" : "29",
+    "inverse" : "31",
     "baseIri" : "https://w3id.org/bcore",
-    "range" : "80",
+    "range" : "72",
     "label" : {
       "IRI-based" : "partOfZone"
     },
-    "superproperty" : [ "19" ],
-    "domain" : "11",
+    "superproperty" : [ "21" ],
+    "domain" : "52",
     "comment" : {
       "de" : "Bauteil ist Teil genau einer Brücke"
     },
     "attributes" : [ "object", "functional" ],
-    "id" : "23"
+    "id" : "25"
   }, {
-    "range" : "56",
-    "domain" : "104",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "107"
-  }, {
-    "range" : "56",
-    "domain" : "89",
-    "attributes" : [ "object", "anonymous" ],
+    "range" : "110",
+    "domain" : "109",
+    "attributes" : [ "anonymous", "object" ],
     "id" : "108"
   }, {
-    "range" : "95",
-    "domain" : "110",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "109"
+    "range" : "110",
+    "domain" : "113",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "112"
   }, {
-    "range" : "113",
-    "domain" : "112",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "111"
-  }, {
-    "range" : "113",
-    "domain" : "115",
-    "attributes" : [ "object", "anonymous" ],
+    "range" : "110",
+    "domain" : "111",
+    "attributes" : [ "anonymous", "object" ],
     "id" : "114"
   }, {
-    "range" : "106",
-    "domain" : "120",
-    "attributes" : [ "object", "anonymous" ],
+    "range" : "110",
+    "domain" : "116",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "115"
+  }, {
+    "range" : "72",
+    "domain" : "118",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "117"
+  }, {
+    "range" : "72",
+    "domain" : "71",
+    "attributes" : [ "anonymous", "object" ],
     "id" : "119"
   }, {
-    "range" : "80",
-    "domain" : "122",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "121"
+    "range" : "6",
+    "domain" : "121",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "120"
   }, {
-    "range" : "80",
-    "domain" : "79",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "123"
+    "range" : "6",
+    "domain" : "123",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "122"
   }, {
-    "range" : "80",
-    "domain" : "46",
-    "attributes" : [ "object", "anonymous" ],
+    "range" : "6",
+    "domain" : "125",
+    "attributes" : [ "anonymous", "object" ],
     "id" : "124"
   }, {
-    "range" : "56",
-    "domain" : "126",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "125"
+    "range" : "6",
+    "domain" : "127",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "126"
   }, {
-    "range" : "61",
-    "domain" : "118",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "127"
-  }, {
-    "range" : "61",
+    "range" : "6",
     "domain" : "129",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "128"
+  }, {
+    "range" : "89",
+    "domain" : "130",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "132"
+  }, {
+    "range" : "89",
+    "domain" : "110",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "133"
+  }, {
+    "range" : "89",
+    "domain" : "54",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "134"
+  }, {
+    "range" : "89",
+    "domain" : "136",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "135"
+  }, {
+    "range" : "89",
+    "domain" : "55",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "137"
+  }, {
+    "range" : "74",
+    "domain" : "73",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "138"
+  }, {
+    "range" : "140",
+    "domain" : "109",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "139"
   }, {
     "iri" : "https://w3id.org/bcore#Longitude",
     "baseIri" : "https://w3id.org/bcore",
-    "range" : "131",
+    "range" : "142",
     "label" : {
       "IRI-based" : "Longitude"
     },
-    "domain" : "95",
+    "domain" : "90",
     "comment" : {
       "de" : "Längengrad"
     },
-    "attributes" : [ "datatype", "functional" ],
-    "id" : "130"
+    "attributes" : [ "functional", "datatype" ],
+    "id" : "141"
   }, {
-    "range" : "61",
-    "domain" : "117",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "132"
+    "range" : "89",
+    "domain" : "140",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "143"
   }, {
-    "range" : "106",
-    "domain" : "134",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "133"
+    "range" : "89",
+    "domain" : "88",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "144"
   }, {
-    "range" : "106",
-    "domain" : "137",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "136"
+    "range" : "89",
+    "domain" : "146",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "145"
   }, {
-    "range" : "106",
-    "domain" : "105",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "138"
+    "range" : "89",
+    "domain" : "18",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "147"
   }, {
     "iri" : "https://w3id.org/bcore#InfrastructureRouteName",
     "baseIri" : "https://w3id.org/bcore",
-    "range" : "140",
+    "range" : "149",
     "label" : {
       "IRI-based" : "InfrastructureRouteName"
     },
-    "domain" : "47",
+    "domain" : "9",
     "comment" : {
       "de" : "Name/ Bezeichnung der Infrastruktur"
     },
     "attributes" : [ "datatype" ],
-    "id" : "139"
+    "id" : "148"
+  }, {
+    "iri" : "https://w3id.org/bcore#RoadRouteClass",
+    "baseIri" : "https://w3id.org/bcore",
+    "range" : "63",
+    "label" : {
+      "IRI-based" : "RoadRouteClass"
+    },
+    "domain" : "8",
+    "comment" : {
+      "de" : "Klasse der Straße",
+      "en" : "Possible values:\n- highway\n- federal road\n- country road\n- district road\n- urban road\n- non-public road"
+    },
+    "attributes" : [ "functional", "datatype" ],
+    "id" : "150"
   }, {
     "iri" : "https://w3id.org/bcore#ComponentVolume",
     "baseIri" : "https://w3id.org/bcore",
-    "range" : "144",
+    "range" : "155",
     "label" : {
       "IRI-based" : "ComponentVolume"
     },
-    "domain" : "11",
+    "domain" : "52",
     "comment" : {
       "de" : "Volumen",
       "undefined" : "[m³]"
     },
-    "attributes" : [ "datatype", "functional" ],
-    "id" : "143"
-  }, {
-    "range" : "10",
-    "domain" : "146",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "145"
-  }, {
-    "range" : "10",
-    "domain" : "52",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "147"
-  }, {
-    "range" : "61",
-    "domain" : "135",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "148"
-  }, {
-    "range" : "61",
-    "domain" : "150",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "149"
-  }, {
-    "range" : "10",
-    "domain" : "152",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "151"
-  }, {
-    "range" : "10",
-    "domain" : "94",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "153"
-  }, {
-    "range" : "10",
-    "domain" : "141",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "functional", "datatype" ],
     "id" : "154"
   }, {
-    "range" : "10",
-    "domain" : "49",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "155"
-  }, {
-    "range" : "10",
-    "domain" : "116",
-    "attributes" : [ "object", "anonymous" ],
+    "range" : "52",
+    "domain" : "131",
+    "attributes" : [ "anonymous", "object" ],
     "id" : "156"
+  }, {
+    "range" : "52",
+    "domain" : "51",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "157"
+  }, {
+    "range" : "74",
+    "domain" : "159",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "158"
+  }, {
+    "range" : "74",
+    "domain" : "153",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "160"
+  }, {
+    "range" : "152",
+    "domain" : "83",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "161"
+  }, {
+    "range" : "80",
+    "domain" : "163",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "162"
+  }, {
+    "range" : "80",
+    "domain" : "101",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "164"
+  }, {
+    "range" : "80",
+    "domain" : "166",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "165"
+  }, {
+    "range" : "80",
+    "domain" : "168",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "167"
   }, {
     "iri" : "https://w3id.org/reloc#meetTop",
     "baseIri" : "https://w3id.org/reloc",
-    "range" : "11",
+    "range" : "52",
     "label" : {
       "IRI-based" : "meetTop"
     },
-    "superproperty" : [ "19" ],
-    "domain" : "11",
+    "superproperty" : [ "21" ],
+    "domain" : "52",
     "comment" : {
       "de" : "Bauteil liegt direkt über anderem Bauteil"
     },
-    "attributes" : [ "external", "object" ],
-    "id" : "34"
+    "attributes" : [ "object", "external" ],
+    "id" : "36"
   }, {
-    "range" : "10",
-    "domain" : "106",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "157"
+    "range" : "80",
+    "domain" : "170",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "169"
   }, {
     "iri" : "https://w3id.org/bcore#fck",
     "baseIri" : "https://w3id.org/bcore",
-    "range" : "159",
+    "range" : "172",
     "label" : {
       "IRI-based" : "fck"
     },
-    "domain" : "75",
+    "domain" : "97",
     "comment" : {
       "de" : "Charakteristische Druckfestigkeit des Betons",
       "undefined" : "[N/m²]"
     },
-    "attributes" : [ "datatype", "functional" ],
-    "id" : "158"
+    "attributes" : [ "functional", "datatype" ],
+    "id" : "171"
   }, {
-    "range" : "10",
-    "domain" : "51",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "160"
-  }, {
-    "iri" : "https://w3id.org/bcore#partOfRoute",
-    "baseIri" : "https://w3id.org/bcore",
-    "range" : "47",
-    "label" : {
-      "IRI-based" : "partOfRoute"
-    },
-    "superproperty" : [ "19" ],
-    "domain" : "110",
-    "comment" : {
-      "de" : "Trassenpunkt ist Teil von Trasse"
-    },
-    "attributes" : [ "object", "functional" ],
-    "id" : "37"
+    "range" : "52",
+    "domain" : "89",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "173"
   }, {
     "iri" : "https://w3id.org/brcomp#length",
     "baseIri" : "https://w3id.org/brcomp",
-    "range" : "162",
+    "range" : "78",
     "label" : {
       "IRI-based" : "length"
     },
-    "domain" : "11",
+    "domain" : "52",
     "comment" : {
       "de" : "Länge",
       "undefined" : "[m]"
     },
-    "attributes" : [ "external", "datatype", "functional" ],
-    "id" : "161"
+    "attributes" : [ "functional", "external", "datatype" ],
+    "id" : "176"
+  }, {
+    "iri" : "https://w3id.org/bcore#partOfRoute",
+    "baseIri" : "https://w3id.org/bcore",
+    "range" : "9",
+    "label" : {
+      "IRI-based" : "partOfRoute"
+    },
+    "superproperty" : [ "21" ],
+    "domain" : "76",
+    "comment" : {
+      "de" : "Trassenpunkt ist Teil von Trasse"
+    },
+    "attributes" : [ "object", "functional" ],
+    "id" : "39"
   }, {
     "iri" : "https://w3id.org/bcore#madeOfMaterial",
     "baseIri" : "https://w3id.org/bcore",
-    "range" : "76",
+    "range" : "151",
     "label" : {
       "IRI-based" : "madeOfMaterial"
     },
-    "superproperty" : [ "19" ],
-    "domain" : "11",
+    "superproperty" : [ "21" ],
+    "domain" : "52",
     "comment" : {
       "de" : "Bauteil besteht aus Material"
     },
     "attributes" : [ "object" ],
-    "id" : "43"
+    "id" : "45"
   }, {
-    "range" : "18",
-    "domain" : "142",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "163"
+    "range" : "151",
+    "domain" : "97",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "177"
   }, {
-    "range" : "18",
-    "domain" : "81",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "164"
+    "range" : "151",
+    "domain" : "152",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "178"
   }, {
-    "range" : "152",
-    "domain" : "134",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "165"
+    "range" : "151",
+    "domain" : "74",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "179"
   }, {
-    "range" : "15",
-    "domain" : "13",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "166"
+    "range" : "89",
+    "domain" : "131",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "180"
+  }, {
+    "iri" : "https://w3id.org/bcore#BridgePlanningEnd",
+    "baseIri" : "https://w3id.org/bcore",
+    "range" : "182",
+    "label" : {
+      "IRI-based" : "BridgePlanningEnd"
+    },
+    "domain" : "48",
+    "comment" : {
+      "de" : "Ende der Planungsphase der Brücke"
+    },
+    "attributes" : [ "functional", "datatype" ],
+    "id" : "181"
   }, {
     "iri" : "https://w3id.org/bot#intersectsZone",
     "baseIri" : "https://w3id.org/bot",
-    "range" : "2",
+    "range" : "80",
     "label" : {
       "IRI-based" : "intersectsZone"
     },
-    "domain" : "2",
+    "domain" : "80",
     "comment" : {
       "de" : "Zone schneidet Zone"
     },
-    "attributes" : [ "external", "object", "symmetric" ],
-    "id" : "167"
+    "attributes" : [ "object", "symmetric", "external" ],
+    "id" : "183"
   }, {
     "iri" : "https://w3id.org/brot#aggregates",
     "baseIri" : "https://w3id.org/brot",
-    "range" : "11",
+    "range" : "52",
     "label" : {
       "IRI-based" : "aggregates"
     },
-    "superproperty" : [ "19" ],
-    "domain" : "11",
+    "superproperty" : [ "21" ],
+    "domain" : "52",
     "comment" : {
       "de" : "Bauteil besteht aus Bauteil"
     },
-    "attributes" : [ "external", "object", "transitive" ],
-    "id" : "25"
+    "attributes" : [ "object", "transitive", "external" ],
+    "id" : "27"
   }, {
     "iri" : "https://w3id.org/bcore#locatedInZone",
     "baseIri" : "https://w3id.org/bcore",
-    "range" : "2",
+    "range" : "80",
     "label" : {
       "IRI-based" : "locatedInZone"
     },
-    "superproperty" : [ "19" ],
-    "domain" : "95",
+    "superproperty" : [ "21" ],
+    "domain" : "90",
     "comment" : {
       "de" : "Örtlicher Punkt befindet sich in Zone"
     },
     "attributes" : [ "object" ],
-    "id" : "27"
+    "id" : "29"
   }, {
-    "range" : "75",
-    "domain" : "57",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "168"
+    "range" : "97",
+    "domain" : "152",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "184"
   }, {
     "iri" : "https://w3id.org/reloc#meetLeft",
-    "inverse" : "33",
+    "inverse" : "35",
     "baseIri" : "https://w3id.org/reloc",
-    "range" : "11",
+    "range" : "52",
     "label" : {
       "IRI-based" : "meetLeft"
     },
-    "superproperty" : [ "19" ],
-    "domain" : "11",
+    "superproperty" : [ "21" ],
+    "domain" : "52",
     "comment" : {
       "de" : "Bauteil liegt links angrenzend zu anderem Bauteil"
     },
-    "attributes" : [ "external", "object" ],
-    "id" : "28"
+    "attributes" : [ "object", "external" ],
+    "id" : "30"
   }, {
-    "range" : "75",
-    "domain" : "18",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "169"
+    "range" : "97",
+    "domain" : "74",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "185"
   }, {
-    "range" : "129",
-    "domain" : "150",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "170"
+    "range" : "127",
+    "domain" : "123",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "186"
   }, {
-    "range" : "135",
-    "domain" : "150",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "171"
+    "range" : "121",
+    "domain" : "123",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "187"
   }, {
-    "range" : "57",
-    "domain" : "18",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "172"
+    "range" : "152",
+    "domain" : "74",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "188"
   }, {
-    "range" : "129",
-    "domain" : "135",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "173"
+    "range" : "127",
+    "domain" : "121",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "189"
   }, {
-    "range" : "150",
-    "domain" : "118",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "174"
+    "range" : "123",
+    "domain" : "125",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "190"
   }, {
-    "range" : "51",
-    "domain" : "94",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "175"
+    "range" : "54",
+    "domain" : "88",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "191"
   }, {
-    "range" : "129",
-    "domain" : "118",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "176"
+    "range" : "127",
+    "domain" : "125",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "192"
   }, {
-    "range" : "135",
-    "domain" : "118",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "177"
+    "range" : "121",
+    "domain" : "125",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "193"
   }, {
     "iri" : "https://w3id.org/bcore#bridgesZone",
     "baseIri" : "https://w3id.org/bcore",
-    "range" : "2",
+    "range" : "80",
     "label" : {
       "IRI-based" : "bridgesZone"
     },
-    "superproperty" : [ "19" ],
-    "domain" : "46",
+    "superproperty" : [ "21" ],
+    "domain" : "48",
     "comment" : {
       "de" : "Brücke überquert Zone"
     },
     "attributes" : [ "object" ],
-    "id" : "36"
+    "id" : "38"
   }, {
     "iri" : "https://w3id.org/bcore#partOfComponent",
-    "inverse" : "25",
+    "inverse" : "27",
     "baseIri" : "https://w3id.org/bcore",
-    "range" : "11",
+    "range" : "52",
     "label" : {
       "IRI-based" : "partOfComponent"
     },
-    "superproperty" : [ "19" ],
-    "domain" : "11",
+    "superproperty" : [ "21" ],
+    "domain" : "52",
     "comment" : {
       "de" : "Bauteil ist Teil von Bauteil"
     },
     "attributes" : [ "object", "transitive" ],
-    "id" : "39"
+    "id" : "41"
   }, {
-    "range" : "94",
-    "domain" : "116",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "178"
+    "range" : "88",
+    "domain" : "130",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "194"
   }, {
-    "range" : "51",
-    "domain" : "152",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "179"
+    "range" : "54",
+    "domain" : "140",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "195"
   }, {
-    "range" : "51",
-    "domain" : "116",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "180"
+    "range" : "54",
+    "domain" : "130",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "196"
   }, {
-    "range" : "51",
-    "domain" : "141",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "181"
+    "range" : "54",
+    "domain" : "146",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "197"
   }, {
-    "range" : "94",
-    "domain" : "141",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "182"
+    "range" : "88",
+    "domain" : "146",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "198"
   }, {
-    "range" : "94",
-    "domain" : "152",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "183"
+    "range" : "88",
+    "domain" : "140",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "199"
   }, {
-    "range" : "116",
-    "domain" : "152",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "184"
+    "range" : "130",
+    "domain" : "140",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "200"
   }, {
-    "range" : "51",
-    "domain" : "52",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "185"
+    "range" : "54",
+    "domain" : "55",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "201"
   }, {
-    "range" : "116",
-    "domain" : "141",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "186"
+    "range" : "130",
+    "domain" : "146",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "202"
   }, {
-    "range" : "152",
-    "domain" : "141",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "187"
+    "range" : "140",
+    "domain" : "146",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "203"
   }, {
-    "range" : "49",
-    "domain" : "52",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "188"
+    "range" : "18",
+    "domain" : "55",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "204"
   }, {
-    "range" : "51",
-    "domain" : "48",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "189"
+    "range" : "54",
+    "domain" : "53",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "205"
   }, {
-    "range" : "50",
-    "domain" : "48",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "190"
+    "range" : "2",
+    "domain" : "53",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "206"
   }, {
     "iri" : "https://w3id.org/bcore#Altitude",
     "baseIri" : "https://w3id.org/bcore",
-    "range" : "192",
+    "range" : "208",
     "label" : {
       "IRI-based" : "Altitude"
     },
-    "domain" : "95",
+    "domain" : "90",
     "comment" : {
       "de" : "Höhe über NN",
       "undefined" : "[m]"
     },
-    "attributes" : [ "datatype", "functional" ],
-    "id" : "191"
+    "attributes" : [ "functional", "datatype" ],
+    "id" : "207"
   }, {
-    "range" : "137",
-    "domain" : "134",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "193"
+    "range" : "113",
+    "domain" : "109",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "209"
   }, {
-    "range" : "137",
-    "domain" : "120",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "194"
+    "range" : "113",
+    "domain" : "116",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "210"
   }, {
-    "range" : "50",
-    "domain" : "52",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "195"
+    "range" : "2",
+    "domain" : "55",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "211"
   }, {
-    "range" : "48",
-    "domain" : "52",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "196"
+    "range" : "53",
+    "domain" : "55",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "212"
   }, {
-    "range" : "134",
-    "domain" : "105",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "197"
+    "range" : "109",
+    "domain" : "111",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "213"
   }, {
-    "range" : "120",
-    "domain" : "105",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "198"
+    "range" : "116",
+    "domain" : "111",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "214"
   }, {
-    "range" : "134",
-    "domain" : "120",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "199"
+    "range" : "109",
+    "domain" : "116",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "215"
   }, {
-    "range" : "137",
-    "domain" : "105",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "200"
+    "range" : "113",
+    "domain" : "111",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "216"
   }, {
-    "range" : "17",
-    "domain" : "81",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "201"
+    "range" : "159",
+    "domain" : "73",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "217"
   }, {
-    "range" : "17",
-    "domain" : "142",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "202"
+    "range" : "159",
+    "domain" : "153",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "218"
   }, {
     "iri" : "https://w3id.org/bcore#Ep",
     "baseIri" : "https://w3id.org/bcore",
-    "range" : "204",
+    "range" : "220",
     "label" : {
       "IRI-based" : "Ep"
     },
-    "domain" : "126",
+    "domain" : "105",
     "comment" : {
       "de" : "Elastizitätsmodul des Spannstahls",
       "undefined" : "[N/m²]"
     },
-    "attributes" : [ "datatype", "functional" ],
-    "id" : "203"
+    "attributes" : [ "functional", "datatype" ],
+    "id" : "219"
   }, {
     "iri" : "https://w3id.org/bcore#Ey",
     "baseIri" : "https://w3id.org/bcore",
-    "range" : "207",
+    "range" : "222",
     "label" : {
       "IRI-based" : "Ey"
     },
-    "domain" : "206",
+    "domain" : "67",
     "comment" : {
       "de" : "Elastizitätsmodul des Stahls",
       "undefined" : "[N/m²]"
     },
-    "attributes" : [ "datatype", "functional" ],
-    "id" : "205"
+    "attributes" : [ "functional", "datatype" ],
+    "id" : "221"
   }, {
     "iri" : "https://w3id.org/bcore#BridgeID",
     "baseIri" : "https://w3id.org/bcore",
-    "range" : "209",
+    "range" : "224",
     "label" : {
       "IRI-based" : "BridgeID"
     },
-    "domain" : "46",
+    "domain" : "48",
     "comment" : {
       "de" : "Identifikationsnummer der Brücke"
     },
-    "attributes" : [ "datatype", "functional" ],
-    "id" : "208"
+    "attributes" : [ "functional", "datatype" ],
+    "id" : "223"
   }, {
     "iri" : "https://w3id.org/bcore#fpk",
     "baseIri" : "https://w3id.org/bcore",
-    "range" : "211",
+    "range" : "226",
     "label" : {
       "IRI-based" : "fpk"
     },
-    "domain" : "126",
+    "domain" : "105",
     "comment" : {
       "de" : "Charakteristische Zugfestigkeit des Spannstahls",
       "undefined" : "[N/m²]"
     },
-    "attributes" : [ "datatype", "functional" ],
-    "id" : "210"
+    "attributes" : [ "functional", "datatype" ],
+    "id" : "225"
   }, {
     "iri" : "https://w3id.org/bcore#GirderShape",
     "baseIri" : "https://w3id.org/bcore",
-    "range" : "213",
+    "range" : "228",
     "label" : {
       "IRI-based" : "GirderShape"
     },
-    "domain" : "48",
+    "domain" : "53",
     "comment" : {
       "de" : "Form des Trägers"
     },
     "attributes" : [ "datatype" ],
-    "id" : "212"
+    "id" : "227"
   }, {
-    "range" : "81",
-    "domain" : "142",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "214"
+    "range" : "73",
+    "domain" : "153",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "229"
   }, {
     "iri" : "https://w3id.org/bcore#includesPoint",
-    "inverse" : "37",
+    "inverse" : "39",
     "baseIri" : "https://w3id.org/bcore",
-    "range" : "110",
+    "range" : "76",
     "label" : {
       "IRI-based" : "includesPoint"
     },
-    "superproperty" : [ "19" ],
-    "domain" : "47",
+    "superproperty" : [ "21" ],
+    "domain" : "9",
     "comment" : {
       "de" : "Trasse enthält Trassenpunkt"
     },
     "attributes" : [ "object" ],
-    "id" : "42"
+    "id" : "44"
   }, {
-    "range" : "65",
-    "domain" : "67",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "215"
+    "range" : "11",
+    "domain" : "13",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "230"
   }, {
-    "range" : "63",
-    "domain" : "67",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "216"
+    "range" : "8",
+    "domain" : "13",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "231"
   }, {
-    "range" : "115",
-    "domain" : "112",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "217"
+    "range" : "90",
+    "domain" : "76",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "232"
   }, {
-    "range" : "65",
-    "domain" : "63",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "218"
+    "range" : "234",
+    "domain" : "174",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "233"
+  }, {
+    "range" : "175",
+    "domain" : "174",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "235"
+  }, {
+    "range" : "11",
+    "domain" : "8",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "236"
+  }, {
+    "range" : "175",
+    "domain" : "234",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "237"
   }, {
     "iri" : "https://w3id.org/brcomp#height",
     "baseIri" : "https://w3id.org/brcomp",
-    "range" : "220",
+    "range" : "79",
     "label" : {
       "IRI-based" : "height"
     },
-    "domain" : "11",
+    "domain" : "52",
     "comment" : {
       "de" : "Höhe",
       "undefined" : "[m]"
     },
-    "attributes" : [ "external", "datatype", "functional" ],
-    "id" : "219"
+    "attributes" : [ "functional", "external", "datatype" ],
+    "id" : "238"
   }, {
-    "range" : "67",
-    "domain" : "69",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "221"
+    "range" : "13",
+    "domain" : "15",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "239"
   }, {
     "iri" : "https://w3id.org/bcore#hasPartialStructure",
-    "inverse" : "35",
+    "inverse" : "37",
     "baseIri" : "https://w3id.org/bcore",
-    "range" : "46",
+    "range" : "48",
     "label" : {
       "IRI-based" : "hasPartialStructure"
     },
-    "superproperty" : [ "19" ],
-    "domain" : "46",
+    "superproperty" : [ "21" ],
+    "domain" : "48",
     "comment" : {
       "de" : "Brücke besitzt Brückenzug"
     },
     "attributes" : [ "object" ],
-    "id" : "45"
+    "id" : "47"
   }, {
-    "range" : "10",
-    "domain" : "13",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "222"
+    "range" : "51",
+    "domain" : "131",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "240"
   }, {
-    "range" : "65",
-    "domain" : "69",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "223"
+    "range" : "11",
+    "domain" : "15",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "241"
   }, {
-    "range" : "63",
-    "domain" : "69",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "224"
+    "range" : "8",
+    "domain" : "15",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "242"
+  }, {
+    "iri" : "https://w3id.org/bcore#InfrastructureRouteClearanceHeight",
+    "baseIri" : "https://w3id.org/bcore",
+    "range" : "244",
+    "label" : {
+      "IRI-based" : "InfrastructureRouteClearanceHeight"
+    },
+    "domain" : "9",
+    "comment" : {
+      "de" : "Höhe des Lichtraumprofils der Trasse",
+      "undefined" : "[m]"
+    },
+    "attributes" : [ "functional", "datatype" ],
+    "id" : "243"
+  }, {
+    "iri" : "https://w3id.org/bcore#LocationPointName",
+    "baseIri" : "https://w3id.org/bcore",
+    "range" : "62",
+    "label" : {
+      "IRI-based" : "LocationPointName"
+    },
+    "domain" : "90",
+    "comment" : {
+      "de" : "Name des Punktes"
+    },
+    "attributes" : [ "functional", "datatype" ],
+    "id" : "246"
   }, {
     "iri" : "https://w3id.org/bcore#BridgeName",
     "baseIri" : "https://w3id.org/bcore",
-    "range" : "226",
+    "range" : "249",
     "label" : {
       "IRI-based" : "BridgeName"
     },
-    "domain" : "46",
+    "domain" : "48",
     "comment" : {
       "de" : "Name der Brücke"
     },
-    "attributes" : [ "datatype", "functional" ],
-    "id" : "225"
+    "attributes" : [ "functional", "datatype" ],
+    "id" : "248"
   }, {
     "iri" : "https://w3id.org/bcore#PylonShape",
     "baseIri" : "https://w3id.org/bcore",
-    "range" : "228",
+    "range" : "251",
     "label" : {
       "IRI-based" : "PylonShape"
     },
-    "domain" : "51",
+    "domain" : "54",
     "comment" : {
       "de" : "Form des Pylonen"
     },
     "attributes" : [ "datatype" ],
-    "id" : "227"
+    "id" : "250"
   }, {
     "iri" : "https://w3id.org/bcore#compositeOf",
     "baseIri" : "https://w3id.org/bcore",
-    "range" : "76",
+    "range" : "151",
     "label" : {
       "IRI-based" : "compositeOf"
     },
-    "superproperty" : [ "19" ],
-    "domain" : "18",
+    "superproperty" : [ "21" ],
+    "domain" : "74",
     "comment" : {
       "de" : "Verbundmaterial ist Verbund aus anderem Material"
     },
     "attributes" : [ "object" ],
-    "id" : "26"
+    "id" : "28"
   }, {
     "iri" : "https://w3id.org/bcore#Ec",
     "baseIri" : "https://w3id.org/bcore",
-    "range" : "230",
+    "range" : "247",
     "label" : {
       "IRI-based" : "Ec"
     },
-    "domain" : "75",
+    "domain" : "97",
     "comment" : {
       "de" : "Elastizitätsmodul des Betons",
       "undefined" : "[N/m²]"
     },
-    "attributes" : [ "datatype", "functional" ],
-    "id" : "229"
+    "attributes" : [ "functional", "datatype" ],
+    "id" : "252"
   }, {
     "iri" : "https://w3id.org/bcore#Latitude",
     "baseIri" : "https://w3id.org/bcore",
-    "range" : "235",
+    "range" : "258",
     "label" : {
       "IRI-based" : "Latitude"
     },
-    "domain" : "95",
+    "domain" : "90",
     "comment" : {
       "de" : "Breitengrad"
     },
-    "attributes" : [ "datatype", "functional" ],
-    "id" : "234"
+    "attributes" : [ "functional", "datatype" ],
+    "id" : "257"
   }, {
     "iri" : "https://w3id.org/bcore#BridgeStatus",
     "baseIri" : "https://w3id.org/bcore",
-    "range" : "231",
+    "range" : "253",
     "label" : {
       "IRI-based" : "BridgeStatus"
     },
-    "domain" : "46",
+    "domain" : "48",
     "comment" : {
       "de" : "Status der Brücke"
     },
     "attributes" : [ "datatype" ],
-    "id" : "236"
+    "id" : "259"
   }, {
     "iri" : "https://w3id.org/bcore#MaterialName",
     "baseIri" : "https://w3id.org/bcore",
-    "range" : "238",
+    "range" : "261",
     "label" : {
       "IRI-based" : "MaterialName"
     },
-    "domain" : "76",
+    "domain" : "151",
     "attributes" : [ "datatype" ],
-    "id" : "237"
+    "id" : "260"
   }, {
-    "range" : "61",
-    "domain" : "72",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "239"
+    "range" : "6",
+    "domain" : "1",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "262"
   }, {
-    "range" : "73",
-    "domain" : "72",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "240"
+    "range" : "4",
+    "domain" : "1",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "263"
   }, {
-    "range" : "61",
-    "domain" : "73",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "241"
+    "range" : "6",
+    "domain" : "4",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "264"
   }, {
-    "range" : "51",
-    "domain" : "50",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "242"
+    "range" : "54",
+    "domain" : "2",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "265"
   }, {
-    "range" : "49",
-    "domain" : "48",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "243"
+    "range" : "18",
+    "domain" : "53",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "266"
   }, {
-    "range" : "49",
-    "domain" : "51",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "244"
+    "range" : "18",
+    "domain" : "54",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "267"
   }, {
-    "range" : "49",
-    "domain" : "50",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "245"
+    "range" : "18",
+    "domain" : "2",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "268"
   }, {
-    "range" : "15",
-    "domain" : "48",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "246"
+    "range" : "140",
+    "domain" : "136",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "269"
   }, {
-    "range" : "15",
-    "domain" : "50",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "247"
+    "range" : "130",
+    "domain" : "136",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "270"
   }, {
-    "range" : "15",
-    "domain" : "49",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "248"
+    "range" : "88",
+    "domain" : "136",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "271"
   }, {
-    "range" : "152",
-    "domain" : "146",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "249"
+    "range" : "54",
+    "domain" : "136",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "272"
   }, {
-    "range" : "116",
-    "domain" : "146",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "250"
+    "range" : "146",
+    "domain" : "55",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "273"
   }, {
-    "range" : "94",
-    "domain" : "146",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "251"
+    "range" : "140",
+    "domain" : "55",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "274"
   }, {
-    "range" : "51",
-    "domain" : "146",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "252"
+    "range" : "130",
+    "domain" : "55",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "275"
   }, {
-    "range" : "141",
-    "domain" : "52",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "253"
-  }, {
-    "range" : "152",
-    "domain" : "52",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "254"
-  }, {
-    "range" : "116",
-    "domain" : "52",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "255"
-  }, {
-    "range" : "94",
-    "domain" : "52",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "256"
+    "range" : "88",
+    "domain" : "55",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "276"
   }, {
     "iri" : "https://w3id.org/bcore#BridgeConstructionEndDate",
     "baseIri" : "https://w3id.org/bcore",
-    "range" : "233",
+    "range" : "256",
     "label" : {
       "IRI-based" : "BridgeConstructionEndDate"
     },
-    "domain" : "46",
+    "domain" : "48",
     "comment" : {
       "de" : "Datum der Brückenfertigstellung",
       "undefined" : "[ISO Date Format]"
     },
-    "attributes" : [ "datatype", "functional" ],
-    "id" : "257"
+    "attributes" : [ "functional", "datatype" ],
+    "id" : "277"
   }, {
     "iri" : "https://w3id.org/bcore#Density",
     "baseIri" : "https://w3id.org/bcore",
-    "range" : "232",
+    "range" : "245",
     "label" : {
       "IRI-based" : "Density"
     },
-    "domain" : "76",
+    "domain" : "151",
     "comment" : {
       "de" : "Dichte",
       "undefined" : "[kg/m³]"
     },
-    "attributes" : [ "datatype", "functional" ],
-    "id" : "258"
+    "attributes" : [ "functional", "datatype" ],
+    "id" : "278"
   }, {
-    "range" : "52",
-    "domain" : "146",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "259"
+    "range" : "55",
+    "domain" : "136",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "279"
   }, {
-    "range" : "141",
-    "domain" : "146",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "260"
+    "range" : "146",
+    "domain" : "136",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "280"
   }, {
     "iri" : "https://w3id.org/bot#containsZone",
     "baseIri" : "https://w3id.org/bot",
-    "range" : "2",
+    "range" : "80",
     "label" : {
       "IRI-based" : "containsZone"
     },
-    "superproperty" : [ "19" ],
-    "domain" : "2",
+    "superproperty" : [ "21" ],
+    "domain" : "80",
     "comment" : {
       "de" : "Zone enthält Zone"
     },
-    "attributes" : [ "external", "object", "transitive" ],
-    "id" : "31"
+    "attributes" : [ "object", "transitive", "external" ],
+    "id" : "33"
   }, {
     "iri" : "https://w3id.org/reloc#meetRight",
     "baseIri" : "https://w3id.org/reloc",
-    "range" : "11",
+    "range" : "52",
     "label" : {
       "IRI-based" : "meetRight"
     },
-    "superproperty" : [ "19" ],
-    "domain" : "11",
+    "superproperty" : [ "21" ],
+    "domain" : "52",
     "comment" : {
       "de" : "Bauteil liegt rechts angrenzend zu anderem Bauteil"
     },
-    "attributes" : [ "external", "object" ],
-    "id" : "33"
+    "attributes" : [ "object", "external" ],
+    "id" : "35"
+  }, {
+    "iri" : "https://w3id.org/bcore#BridgeConstructionStart",
+    "baseIri" : "https://w3id.org/bcore",
+    "range" : "255",
+    "label" : {
+      "IRI-based" : "BridgeConstructionStart"
+    },
+    "domain" : "48",
+    "comment" : {
+      "de" : "Baubeginn der Brücke"
+    },
+    "attributes" : [ "functional", "datatype" ],
+    "id" : "283"
+  }, {
+    "iri" : "https://w3id.org/bcore#BridgeLength",
+    "baseIri" : "https://w3id.org/bcore",
+    "range" : "254",
+    "label" : {
+      "IRI-based" : "BridgeLength"
+    },
+    "domain" : "48",
+    "comment" : {
+      "de" : "Länge der Brücke",
+      "undefined" : "[m]"
+    },
+    "attributes" : [ "functional", "datatype" ],
+    "id" : "284"
+  }, {
+    "iri" : "https://w3id.org/bcore#RailwayRouteMaximumVelocity",
+    "baseIri" : "https://w3id.org/bcore",
+    "range" : "282",
+    "label" : {
+      "IRI-based" : "RailwayRouteMaximumVelocity"
+    },
+    "domain" : "13",
+    "comment" : {
+      "de" : "Maximale Geschwindigkeit des Schienenweges",
+      "undefined" : "[km/h]"
+    },
+    "attributes" : [ "functional", "datatype" ],
+    "id" : "288"
   }, {
     "iri" : "https://w3id.org/bcore#bridgesRoute",
     "baseIri" : "https://w3id.org/bcore",
-    "range" : "47",
+    "range" : "9",
     "label" : {
       "IRI-based" : "bridgesRoute"
     },
-    "superproperty" : [ "19" ],
-    "domain" : "46",
+    "superproperty" : [ "21" ],
+    "domain" : "48",
     "comment" : {
       "de" : "Brücke überquert Trasse"
     },
     "attributes" : [ "object" ],
-    "id" : "38"
+    "id" : "40"
   }, {
     "iri" : "https://w3id.org/reloc#meetBottom",
-    "inverse" : "34",
+    "inverse" : "36",
     "baseIri" : "https://w3id.org/reloc",
-    "range" : "11",
+    "range" : "52",
     "label" : {
       "IRI-based" : "meetBottom"
     },
-    "superproperty" : [ "19" ],
-    "domain" : "11",
+    "superproperty" : [ "21" ],
+    "domain" : "52",
     "comment" : {
       "de" : "Bauteil liegt direkt unter anderem Bauteil"
     },
-    "attributes" : [ "external", "object" ],
-    "id" : "40"
+    "attributes" : [ "object", "external" ],
+    "id" : "42"
   }, {
     "iri" : "https://w3id.org/bcore#describes",
     "baseIri" : "https://w3id.org/bcore",
-    "range" : "46",
+    "range" : "48",
     "label" : {
       "IRI-based" : "describes"
     },
-    "superproperty" : [ "19" ],
-    "domain" : "113",
+    "superproperty" : [ "21" ],
+    "domain" : "175",
     "comment" : {
       "de" : "Medium stellt Brücke dar"
     },
     "attributes" : [ "object" ],
-    "id" : "41"
+    "id" : "43"
   }, {
     "iri" : "https://w3id.org/bcore#LocalZ",
     "baseIri" : "https://w3id.org/bcore",
-    "range" : "261",
+    "range" : "287",
     "label" : {
       "IRI-based" : "LocalZ"
     },
-    "domain" : "95",
+    "domain" : "90",
     "comment" : {
       "de" : "Lokale Z-Koordinate",
       "undefined" : "[m]"
     },
-    "attributes" : [ "datatype", "functional" ],
-    "id" : "262"
+    "attributes" : [ "functional", "datatype" ],
+    "id" : "289"
   }, {
     "iri" : "https://w3id.org/bcore#LocalY",
     "baseIri" : "https://w3id.org/bcore",
-    "range" : "264",
+    "range" : "285",
     "label" : {
       "IRI-based" : "LocalY"
     },
-    "domain" : "95",
+    "domain" : "90",
     "comment" : {
       "de" : "Lokale Y-Koordinate",
       "undefined" : "[m]"
     },
-    "attributes" : [ "datatype", "functional" ],
-    "id" : "263"
+    "attributes" : [ "functional", "datatype" ],
+    "id" : "290"
   }, {
     "iri" : "https://w3id.org/bcore#LocalX",
     "baseIri" : "https://w3id.org/bcore",
-    "range" : "266",
+    "range" : "286",
     "label" : {
       "IRI-based" : "LocalX"
     },
-    "domain" : "95",
+    "domain" : "90",
     "comment" : {
       "de" : "Lokale X-Koordinate",
       "undefined" : "[m]"
     },
-    "attributes" : [ "datatype", "functional" ],
-    "id" : "265"
+    "attributes" : [ "functional", "datatype" ],
+    "id" : "291"
+  }, {
+    "iri" : "https://w3id.org/bcore#RailwayRouteNumberOfTracks",
+    "baseIri" : "https://w3id.org/bcore",
+    "range" : "281",
+    "label" : {
+      "IRI-based" : "RailwayRouteNumberOfTracks"
+    },
+    "domain" : "13",
+    "comment" : {
+      "de" : "Anzahl der Gleise eines Schienenweges",
+      "undefined" : "[-]"
+    },
+    "attributes" : [ "functional", "datatype" ],
+    "id" : "292"
   } ]
 }

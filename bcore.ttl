@@ -16,7 +16,7 @@
                                                              "Tim Noack" ,
                                                              "Xiaoli Song" ;
                           rdfs:label "Bridge Core Ontology"@en ;
-                          owl:versionInfo "0.0.1" ;
+                          owl:versionInfo "0.0.2" ;
                           :dct:description "Core ontology for the representation of bridges."@en ;
                           :vann:preferredNamespacePrefix "bcore" .
 
@@ -317,9 +317,18 @@ xsd:date rdf:type rdfs:Datatype .
 :BridgeConstructionEndDate rdf:type owl:DatatypeProperty ,
                                     owl:FunctionalProperty ;
                            rdfs:domain <https://w3id.org/brot#Bridge> ;
-                           rdfs:range xsd:string ;
+                           rdfs:range xsd:date ;
                            rdfs:comment "Datum der Brückenfertigstellung"@de ,
                                         "[ISO Date Format]" .
+
+
+###  https://w3id.org/bcore#BridgeConstructionStart
+:BridgeConstructionStart rdf:type owl:DatatypeProperty ;
+                         rdfs:subPropertyOf owl:topDataProperty ;
+                         rdf:type owl:FunctionalProperty ;
+                         rdfs:domain <https://w3id.org/brot#Bridge> ;
+                         rdfs:range xsd:date ;
+                         rdfs:comment "Baubeginn der Brücke"@de .
 
 
 ###  https://w3id.org/bcore#BridgeID
@@ -330,12 +339,40 @@ xsd:date rdf:type rdfs:Datatype .
           rdfs:comment "Identifikationsnummer der Brücke"@de .
 
 
+###  https://w3id.org/bcore#BridgeLength
+:BridgeLength rdf:type owl:DatatypeProperty ;
+              rdfs:subPropertyOf owl:topDataProperty ;
+              rdf:type owl:FunctionalProperty ;
+              rdfs:domain <https://w3id.org/brot#Bridge> ;
+              rdfs:range xsd:decimal ;
+              rdfs:comment "Länge der Brücke"@de ,
+                           "[m]" .
+
+
 ###  https://w3id.org/bcore#BridgeName
 :BridgeName rdf:type owl:DatatypeProperty ,
                      owl:FunctionalProperty ;
             rdfs:domain <https://w3id.org/brot#Bridge> ;
             rdfs:range xsd:string ;
             rdfs:comment "Name der Brücke"@de .
+
+
+###  https://w3id.org/bcore#BridgePlanningEnd
+:BridgePlanningEnd rdf:type owl:DatatypeProperty ;
+                   rdfs:subPropertyOf owl:topDataProperty ;
+                   rdf:type owl:FunctionalProperty ;
+                   rdfs:domain <https://w3id.org/brot#Bridge> ;
+                   rdfs:range xsd:date ;
+                   rdfs:comment "Ende der Planungsphase der Brücke"@de .
+
+
+###  https://w3id.org/bcore#BridgePlanningStart
+:BridgePlanningStart rdf:type owl:DatatypeProperty ;
+                     rdfs:subPropertyOf owl:topDataProperty ;
+                     rdf:type owl:FunctionalProperty ;
+                     rdfs:domain <https://w3id.org/brot#Bridge> ;
+                     rdfs:range xsd:date ;
+                     rdfs:comment "Beginn der Planungsphase der Brücke"@de .
 
 
 ###  https://w3id.org/bcore#BridgeStatus
@@ -412,11 +449,49 @@ xsd:date rdf:type rdfs:Datatype .
                  "[N/m²]" .
 
 
+###  https://w3id.org/bcore#FootCycleRouteType
+:FootCycleRouteType rdf:type owl:DatatypeProperty ;
+                    rdfs:subPropertyOf owl:topDataProperty ;
+                    rdf:type owl:FunctionalProperty ;
+                    rdfs:domain :FootCycleRoute ;
+                    rdfs:range [ rdf:type rdfs:Datatype ;
+                                 owl:oneOf [ rdf:type rdf:List ;
+                                             rdf:first "bike only" ;
+                                             rdf:rest [ rdf:type rdf:List ;
+                                                        rdf:first "foot only" ;
+                                                        rdf:rest [ rdf:type rdf:List ;
+                                                                   rdf:first "segregated" ;
+                                                                   rdf:rest [ rdf:type rdf:List ;
+                                                                              rdf:first "shared-use" ;
+                                                                              rdf:rest rdf:nil
+                                                                            ]
+                                                                 ]
+                                                      ]
+                                           ]
+                               ] ;
+                    rdfs:comment "Art des Fuß- und/oder Radweges"@de ,
+                                 """Possible values:
+- foot only
+- bike only
+- segregated
+- shared-use"""@en .
+
+
 ###  https://w3id.org/bcore#GirderShape
 :GirderShape rdf:type owl:DatatypeProperty ;
              rdfs:domain <https://w3id.org/brcomp#Girder> ;
              rdfs:range xsd:string ;
              rdfs:comment "Form des Trägers"@de .
+
+
+###  https://w3id.org/bcore#InfrastructureRouteClearanceHeight
+:InfrastructureRouteClearanceHeight rdf:type owl:DatatypeProperty ;
+                                    rdfs:subPropertyOf owl:topDataProperty ;
+                                    rdf:type owl:FunctionalProperty ;
+                                    rdfs:domain :InfrastructureRoute ;
+                                    rdfs:range xsd:decimal ;
+                                    rdfs:comment "Höhe des Lichtraumprofils der Trasse"@de ,
+                                                 "[m]" .
 
 
 ###  https://w3id.org/bcore#InfrastructureRouteName
@@ -476,6 +551,14 @@ xsd:date rdf:type rdfs:Datatype .
                      "[m]" .
 
 
+###  https://w3id.org/bcore#LocationPointName
+:LocationPointName rdf:type owl:DatatypeProperty ;
+                   rdfs:subPropertyOf owl:topDataProperty ;
+                   rdf:type owl:FunctionalProperty ;
+                   rdfs:domain :LocationPoint ;
+                   rdfs:comment "Name des Punktes"@de .
+
+
 ###  https://w3id.org/bcore#Longitude
 :Longitude rdf:type owl:DatatypeProperty ;
            rdfs:subPropertyOf owl:topDataProperty ;
@@ -497,6 +580,89 @@ xsd:date rdf:type rdfs:Datatype .
             rdfs:domain <https://w3id.org/brcomp#Pylon> ;
             rdfs:range xsd:string ;
             rdfs:comment "Form des Pylonen"@de .
+
+
+###  https://w3id.org/bcore#RailwayRouteMaximumVelocity
+:RailwayRouteMaximumVelocity rdf:type owl:DatatypeProperty ;
+                             rdfs:subPropertyOf owl:topDataProperty ;
+                             rdf:type owl:FunctionalProperty ;
+                             rdfs:domain :RailwayRoute ;
+                             rdfs:range xsd:decimal ;
+                             rdfs:comment "Maximale Geschwindigkeit des Schienenweges"@de ,
+                                          "[km/h]" .
+
+
+###  https://w3id.org/bcore#RailwayRouteNumberOfTracks
+:RailwayRouteNumberOfTracks rdf:type owl:DatatypeProperty ;
+                            rdfs:subPropertyOf owl:topDataProperty ;
+                            rdf:type owl:FunctionalProperty ;
+                            rdfs:domain :RailwayRoute ;
+                            rdfs:range xsd:integer ;
+                            rdfs:comment "Anzahl der Gleise eines Schienenweges"@de ,
+                                         "[-]" .
+
+
+###  https://w3id.org/bcore#RoadRouteClass
+:RoadRouteClass rdf:type owl:DatatypeProperty ;
+                rdfs:subPropertyOf owl:topDataProperty ;
+                rdf:type owl:FunctionalProperty ;
+                rdfs:domain :RoadRoute ;
+                rdfs:range [ rdf:type rdfs:Datatype ;
+                             owl:oneOf [ rdf:type rdf:List ;
+                                         rdf:first "country road" ;
+                                         rdf:rest [ rdf:type rdf:List ;
+                                                    rdf:first "district road" ;
+                                                    rdf:rest [ rdf:type rdf:List ;
+                                                               rdf:first "federal road" ;
+                                                               rdf:rest [ rdf:type rdf:List ;
+                                                                          rdf:first "highway" ;
+                                                                          rdf:rest [ rdf:type rdf:List ;
+                                                                                     rdf:first "non-public road" ;
+                                                                                     rdf:rest [ rdf:type rdf:List ;
+                                                                                                rdf:first "urban road" ;
+                                                                                                rdf:rest rdf:nil
+                                                                                              ]
+                                                                                   ]
+                                                                        ]
+                                                             ]
+                                                  ]
+                                       ]
+                           ] ;
+                rdfs:comment "Klasse der Straße"@de ,
+                             """Possible values:
+- highway
+- federal road
+- country road
+- district road
+- urban road
+- non-public road"""@en .
+
+
+###  https://w3id.org/bcore#RoadRouteNumberOfLanes
+:RoadRouteNumberOfLanes rdf:type owl:DatatypeProperty ;
+                        rdfs:domain :RoadRoute ;
+                        rdfs:range xsd:integer ;
+                        rdfs:comment "Anzahl der Spuren einer Straße, in beide Richtungen addiert"@de .
+
+
+###  https://w3id.org/bcore#RoutePointEnvironmentZ
+:RoutePointEnvironmentZ rdf:type owl:DatatypeProperty ;
+                        rdfs:subPropertyOf owl:topDataProperty ;
+                        rdf:type owl:FunctionalProperty ;
+                        rdfs:domain :RoutePoint ;
+                        rdfs:range xsd:decimal ;
+                        rdfs:comment "Höhe (über NN) der Umgebung der Trasse senkrecht unter dem Trassenpunkt"@de ,
+                                     "[m]" .
+
+
+###  https://w3id.org/bcore#RoutePointStation
+:RoutePointStation rdf:type owl:DatatypeProperty ;
+                   rdfs:subPropertyOf owl:topDataProperty ;
+                   rdf:type owl:FunctionalProperty ;
+                   rdfs:domain :RoutePoint ;
+                   rdfs:range xsd:decimal ;
+                   rdfs:comment "Kilometrierung des Trassenpunkts"@de ,
+                                "[m]" .
 
 
 ###  https://w3id.org/bcore#ZoneName

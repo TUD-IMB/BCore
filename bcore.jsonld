@@ -1,5 +1,19 @@
 [ {
   "@id" : "_:genid1",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
+  "http://www.w3.org/2002/07/owl#oneOf" : [ {
+    "@list" : [ {
+      "@value" : "bike only"
+    }, {
+      "@value" : "foot only"
+    }, {
+      "@value" : "segregated"
+    }, {
+      "@value" : "shared-use"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid13",
   "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
   "http://www.w3.org/2002/07/owl#members" : [ {
     "@list" : [ {
@@ -19,7 +33,21 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid14",
+  "@id" : "_:genid21",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
+  "http://www.w3.org/2002/07/owl#members" : [ {
+    "@list" : [ {
+      "@id" : "https://w3id.org/bcore#BoxGirder"
+    }, {
+      "@id" : "https://w3id.org/bcore#IBeam"
+    }, {
+      "@id" : "https://w3id.org/bcore#PlateGirder"
+    }, {
+      "@id" : "https://w3id.org/bcore#TBeam"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid26",
   "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
   "http://www.w3.org/2002/07/owl#members" : [ {
     "@list" : [ {
@@ -31,7 +59,7 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid18",
+  "@id" : "_:genid30",
   "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
   "http://www.w3.org/2002/07/owl#members" : [ {
     "@list" : [ {
@@ -45,7 +73,7 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid23",
+  "@id" : "_:genid35",
   "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
   "http://www.w3.org/2002/07/owl#members" : [ {
     "@list" : [ {
@@ -57,7 +85,7 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid27",
+  "@id" : "_:genid39",
   "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
   "http://www.w3.org/2002/07/owl#members" : [ {
     "@list" : [ {
@@ -71,7 +99,7 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid32",
+  "@id" : "_:genid44",
   "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
   "http://www.w3.org/2002/07/owl#members" : [ {
     "@list" : [ {
@@ -87,7 +115,7 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid38",
+  "@id" : "_:genid50",
   "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
   "http://www.w3.org/2002/07/owl#members" : [ {
     "@list" : [ {
@@ -99,17 +127,21 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid9",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
-  "http://www.w3.org/2002/07/owl#members" : [ {
+  "@id" : "_:genid6",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
+  "http://www.w3.org/2002/07/owl#oneOf" : [ {
     "@list" : [ {
-      "@id" : "https://w3id.org/bcore#BoxGirder"
+      "@value" : "country road"
     }, {
-      "@id" : "https://w3id.org/bcore#IBeam"
+      "@value" : "district road"
     }, {
-      "@id" : "https://w3id.org/bcore#PlateGirder"
+      "@value" : "federal road"
     }, {
-      "@id" : "https://w3id.org/bcore#TBeam"
+      "@value" : "highway"
+    }, {
+      "@value" : "non-public road"
+    }, {
+      "@value" : "urban road"
     } ]
   } ]
 }, {
@@ -165,7 +197,7 @@
     "@value" : "Bridge Core Ontology"
   } ],
   "http://www.w3.org/2002/07/owl#versionInfo" : [ {
-    "@value" : "0.0.1"
+    "@value" : "0.0.2"
   } ],
   "https://w3id.org/bcore#dct:description" : [ {
     "@language" : "en",
@@ -234,7 +266,23 @@
     "@id" : "https://w3id.org/brot#Bridge"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+    "@id" : "http://www.w3.org/2001/XMLSchema#date"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bcore#BridgeConstructionStart",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "de",
+    "@value" : "Baubeginn der Brücke"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/brot#Bridge"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#date"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
   } ]
 }, {
   "@id" : "https://w3id.org/bcore#BridgeID",
@@ -250,6 +298,24 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#int"
   } ]
 }, {
+  "@id" : "https://w3id.org/bcore#BridgeLength",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "de",
+    "@value" : "Länge der Brücke"
+  }, {
+    "@value" : "[m]"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/brot#Bridge"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#decimal"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
+  } ]
+}, {
   "@id" : "https://w3id.org/bcore#BridgeName",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -261,6 +327,38 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bcore#BridgePlanningEnd",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "de",
+    "@value" : "Ende der Planungsphase der Brücke"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/brot#Bridge"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#date"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bcore#BridgePlanningStart",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "de",
+    "@value" : "Beginn der Planungsphase der Brücke"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/brot#Bridge"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#date"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
   } ]
 }, {
   "@id" : "https://w3id.org/bcore#BridgeStatus",
@@ -465,6 +563,25 @@
     "@id" : "https://w3id.org/bcore#InfrastructureRoute"
   } ]
 }, {
+  "@id" : "https://w3id.org/bcore#FootCycleRouteType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "de",
+    "@value" : "Art des Fuß- und/oder Radweges"
+  }, {
+    "@language" : "en",
+    "@value" : "Possible values:\n- foot only\n- bike only\n- segregated\n- shared-use"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/bcore#FootCycleRoute"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "_:genid1"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
+  } ]
+}, {
   "@id" : "https://w3id.org/bcore#GirderShape",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -506,6 +623,24 @@
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "de",
     "@value" : "Infrastrukturtrasse"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bcore#InfrastructureRouteClearanceHeight",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "de",
+    "@value" : "Höhe des Lichtraumprofils der Trasse"
+  }, {
+    "@value" : "[m]"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/bcore#InfrastructureRoute"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#decimal"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
   } ]
 }, {
   "@id" : "https://w3id.org/bcore#InfrastructureRouteName",
@@ -619,6 +754,19 @@
     "@value" : "Örtlicher Punkt"
   } ]
 }, {
+  "@id" : "https://w3id.org/bcore#LocationPointName",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "de",
+    "@value" : "Name des Punktes"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/bcore#LocationPoint"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
+  } ]
+}, {
   "@id" : "https://w3id.org/bcore#Longitude",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -717,6 +865,42 @@
     "@id" : "https://w3id.org/bcore#InfrastructureRoute"
   } ]
 }, {
+  "@id" : "https://w3id.org/bcore#RailwayRouteMaximumVelocity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "de",
+    "@value" : "Maximale Geschwindigkeit des Schienenweges"
+  }, {
+    "@value" : "[km/h]"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/bcore#RailwayRoute"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#decimal"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bcore#RailwayRouteNumberOfTracks",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "de",
+    "@value" : "Anzahl der Gleise eines Schienenweges"
+  }, {
+    "@value" : "[-]"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/bcore#RailwayRoute"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
+  } ]
+}, {
   "@id" : "https://w3id.org/bcore#Region",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -737,6 +921,38 @@
     "@id" : "https://w3id.org/bcore#InfrastructureRoute"
   } ]
 }, {
+  "@id" : "https://w3id.org/bcore#RoadRouteClass",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "de",
+    "@value" : "Klasse der Straße"
+  }, {
+    "@language" : "en",
+    "@value" : "Possible values:\n- highway\n- federal road\n- country road\n- district road\n- urban road\n- non-public road"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/bcore#RoadRoute"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "_:genid6"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bcore#RoadRouteNumberOfLanes",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "de",
+    "@value" : "Anzahl der Spuren einer Straße, in beide Richtungen addiert"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/bcore#RoadRoute"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
+  } ]
+}, {
   "@id" : "https://w3id.org/bcore#RoutePoint",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -745,6 +961,42 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/bcore#LocationPoint"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bcore#RoutePointEnvironmentZ",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "de",
+    "@value" : "Höhe (über NN) der Umgebung der Trasse senkrecht unter dem Trassenpunkt"
+  }, {
+    "@value" : "[m]"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/bcore#RoutePoint"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#decimal"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bcore#RoutePointStation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "de",
+    "@value" : "Kilometrierung des Trassenpunkts"
+  }, {
+    "@value" : "[m]"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/bcore#RoutePoint"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#decimal"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
   } ]
 }, {
   "@id" : "https://w3id.org/bcore#Steel",
