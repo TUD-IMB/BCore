@@ -1,0 +1,816 @@
+[ {
+  "@id" : "_:genid1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
+  "http://www.w3.org/2002/07/owl#members" : [ {
+    "@list" : [ {
+      "@id" : "https://w3id.org/bcore/comp#Abutment"
+    }, {
+      "@id" : "https://w3id.org/brcomp#Arch"
+    }, {
+      "@id" : "https://w3id.org/brcomp#Bearing"
+    }, {
+      "@id" : "https://w3id.org/brcomp#Foundation"
+    }, {
+      "@id" : "https://w3id.org/brcomp#Pier"
+    }, {
+      "@id" : "https://w3id.org/brcomp#Pile"
+    }, {
+      "@id" : "https://w3id.org/brcomp#Pylon"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid14",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
+  "http://www.w3.org/2002/07/owl#members" : [ {
+    "@list" : [ {
+      "@id" : "https://w3id.org/brcomp#AbutmentBenching"
+    }, {
+      "@id" : "https://w3id.org/brcomp#AbutmentChamberWall"
+    }, {
+      "@id" : "https://w3id.org/brcomp#AbutmentFooting"
+    }, {
+      "@id" : "https://w3id.org/brcomp#AbutmentWingWall"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid19",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
+  "http://www.w3.org/2002/07/owl#members" : [ {
+    "@list" : [ {
+      "@id" : "https://w3id.org/brcomp#Arch"
+    }, {
+      "@id" : "https://w3id.org/brcomp#Girder"
+    }, {
+      "@id" : "https://w3id.org/brcomp#GirderComponent"
+    }, {
+      "@id" : "https://w3id.org/brcomp#Pylon"
+    }, {
+      "@id" : "https://w3id.org/brcomp#TensionComponent"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid25",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
+  "http://www.w3.org/2002/07/owl#members" : [ {
+    "@list" : [ {
+      "@id" : "https://w3id.org/brcomp#GirderCrossGirder"
+    }, {
+      "@id" : "https://w3id.org/brcomp#GirderDeck"
+    }, {
+      "@id" : "https://w3id.org/brcomp#GirderMainGirder"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid9",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
+  "http://www.w3.org/2002/07/owl#members" : [ {
+    "@list" : [ {
+      "@id" : "https://w3id.org/bcore/comp#BoxGirder"
+    }, {
+      "@id" : "https://w3id.org/bcore/comp#IBeam"
+    }, {
+      "@id" : "https://w3id.org/bcore/comp#PlateGirder"
+    }, {
+      "@id" : "https://w3id.org/bcore/comp#TBeam"
+    } ]
+  } ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/abstract",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/title",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/contributor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/created",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/creator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/description",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/license",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/modified",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/ontology/bibo/status",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/vocab/vann/preferredNamespacePrefix",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2001/XMLSchema#date",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ]
+}, {
+  "@id" : "http://www.w3.org/2002/07/owl#versionIRI",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://xmlns.com/foaf/0.1/logo",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://dtc-ontology.cms.ed.tum.de/infraspatialot#Localisation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://schema.org/codeRepository",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://w3id.org/bcore/comp",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://purl.org/dc/elements/1.1/abstract" : [ {
+    "@language" : "en",
+    "@value" : "The Bridge Core Ontology (BCore) enables the represetation of a bridge structure, its components and material, as well as the infrastructure and media files connected to it and the environment and location of the bridge. BCore is created by the Institute of Concrete Structures (IMB) at the Dresden University of Technology (TUD). This ontology contains the corresponding components extension."
+  } ],
+  "http://purl.org/dc/elements/1.1/title" : [ {
+    "@language" : "en",
+    "@value" : "Bridge Core Ontology for Institute of Concrete Structures, Dresden University of Technology – Components Extension"
+  } ],
+  "http://purl.org/dc/terms/contributor" : [ {
+    "@value" : "Jakob Vogt"
+  } ],
+  "http://purl.org/dc/terms/created" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2025-11-06"
+  } ],
+  "http://purl.org/dc/terms/creator" : [ {
+    "@value" : "Johannes Reimer"
+  }, {
+    "@value" : "Morris Florek"
+  }, {
+    "@value" : "Tim Noack"
+  }, {
+    "@value" : "Xiaoli Song"
+  } ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "Extension ontology for the representation of bridge components. Designed to work in conjunction with the BCore ontology but to also allow for external use."
+  } ],
+  "http://purl.org/dc/terms/license" : [ {
+    "@value" : "https://creativecommons.org/licenses/by/4.0/deed.en"
+  } ],
+  "http://purl.org/dc/terms/modified" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2026-07-21"
+  } ],
+  "http://purl.org/ontology/bibo/status" : [ {
+    "@value" : "Ontology Specification Draft"
+  } ],
+  "http://purl.org/vocab/vann/preferredNamespacePrefix" : [ {
+    "@value" : "bcorecomp"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Bridge Core Ontology – Components Extension"
+  } ],
+  "http://www.w3.org/2002/07/owl#priorVersion" : [ {
+    "@value" : "https://w3id.org/bcore/0.0.2"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionIRI" : [ {
+    "@id" : "https://w3id.org/bcore/0.1.0"
+  }, {
+    "@value" : "https://w3id.org/bcore/0.1.0"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
+    "@value" : "0.1.0"
+  } ],
+  "https://schema.org/codeRepository" : [ {
+    "@value" : "https://github.com/TUD-IMB/BCore"
+  } ],
+  "http://xmlns.com/foaf/0.1/logo" : [ {
+    "@value" : "https://raw.githubusercontent.com/TUD-IMB/BCore/main/BCore.svg"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bcore/comp#Abutment",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "de",
+    "@value" : "Widerlager"
+  }, {
+    "@language" : "en",
+    "@value" : "abutment"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/brcomp#SubStructureComponent"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bcore/comp#ArchShape",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "de",
+    "@value" : "Form des Bogens"
+  }, {
+    "@language" : "en",
+    "@value" : "shape of the arch"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/brcomp#Arch"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bcore/comp#BoxGirder",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "de",
+    "@value" : "Hohlkastenträger"
+  }, {
+    "@language" : "en",
+    "@value" : "box girder"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/brcomp#GirderMainGirder"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bcore/comp#EquipmentComponent",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "de",
+    "@value" : "Bauteil der Brückenausstattung"
+  }, {
+    "@language" : "en",
+    "@value" : "component of bridge equipment"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@value" : "https://w3id.org/brcomp/#FinishingComponent"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/brot#Component"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://w3id.org/brcomp#SubStructureComponent"
+  }, {
+    "@id" : "https://w3id.org/brcomp#SuperStructureComponent"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bcore/comp#GirderShape",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "de",
+    "@value" : "Form des Trägers"
+  }, {
+    "@language" : "en",
+    "@value" : "shape of the girder"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/brcomp#Girder"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bcore/comp#IBeam",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "de",
+    "@value" : "I-Träger"
+  }, {
+    "@language" : "en",
+    "@value" : "I-beam"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/brcomp#GirderMainGirder"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bcore/comp#PierShape",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "de",
+    "@value" : "Form des Pfeilers"
+  }, {
+    "@language" : "en",
+    "@value" : "shape of the pier"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/brcomp#Pier"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bcore/comp#PierUnit",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "de",
+    "@value" : "Pfeilereinheit/-gruppe"
+  }, {
+    "@language" : "en",
+    "@value" : "pier unit/group"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/brcomp#SubStructureComponent"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bcore/comp#PlateGirder",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "de",
+    "@value" : "Vollwandträger (z. B. aus Stahl)"
+  }, {
+    "@language" : "en",
+    "@value" : "plate girder (solid-web; e.g., made of steel)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/brcomp#GirderMainGirder"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bcore/comp#PylonShape",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "de",
+    "@value" : "Form des Pylons"
+  }, {
+    "@language" : "en",
+    "@value" : "shape of the pylon"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/brcomp#Pylon"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bcore/comp#Rope",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "de",
+    "@value" : "Seil"
+  }, {
+    "@language" : "en",
+    "@value" : "rope"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/brcomp#TensionComponent"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bcore/comp#Slab",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "de",
+    "@value" : "Platte"
+  }, {
+    "@language" : "en",
+    "@value" : "slab"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/brcomp#GirderMainGirder"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bcore/comp#Span",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "de",
+    "@value" : "Spannweite"
+  }, {
+    "@language" : "en",
+    "@value" : "span"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bcore/comp#TBeam",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "de",
+    "@value" : "Plattenbalken (Beton)"
+  }, {
+    "@language" : "en",
+    "@value" : "T-beam"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/brcomp#GirderMainGirder"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bcore/comp#Tendon",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "de",
+    "@value" : "Spannglied"
+  }, {
+    "@language" : "en",
+    "@value" : "tendon"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/brcomp#TensionComponent"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bcore/comp#TrussGirder",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "de",
+    "@value" : "Fachwerkträger"
+  }, {
+    "@language" : "en",
+    "@value" : "truss girder"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/brcomp#GirderMainGirder"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bcore/comp#Wire",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "de",
+    "@value" : "Draht"
+  }, {
+    "@language" : "en",
+    "@value" : "wire"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/brcomp#TensionComponent"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bcore/comp#afterSpan",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#TransitiveProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "de",
+    "@value" : "Spannweite liegt hinter einer anderen Spannweite (wird genutzt, um Teilspannweiten darzustellen, z. B. bei Einzelspannweiten eines Durchlaufträgers oder Hängerabstände einer Schrägkabelbrücke)"
+  }, {
+    "@language" : "en",
+    "@value" : "span is located behind another span (used to represent partial spans, e.g., individual spans of a continuous girder or suspension spans of a cable-stayed bridge)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/bcore/comp#Span"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/bcore/comp#Span"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bcore/comp#beginsAtLocation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "de",
+    "@value" : "Spannweite beginnt an einer Lokalisation (Punkt)"
+  }, {
+    "@language" : "en",
+    "@value" : "span begins at localision (location point)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/bcore/comp#Span"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://dtc-ontology.cms.ed.tum.de/infraspatialot#Localisation"
+  } ],
+  "http://www.w3.org/2002/07/owl#propertyDisjointWith" : [ {
+    "@id" : "https://w3id.org/bcore/comp#endsAtLocation"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bcore/comp#beginsAtSupport",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "de",
+    "@value" : "Spannweite beginnt an einem Bauteil des Brückenunterbaus"
+  }, {
+    "@language" : "en",
+    "@value" : "span begins at a component of the bridge substructure"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/bcore/comp#Span"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/brcomp#SubStructureComponent"
+  } ],
+  "http://www.w3.org/2002/07/owl#propertyDisjointWith" : [ {
+    "@id" : "https://w3id.org/bcore/comp#endsAtSupport"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bcore/comp#endsAtLocation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "de",
+    "@value" : "Spannweite endet an einer Lokalisation (Punkt)"
+  }, {
+    "@language" : "en",
+    "@value" : "span ends at localision (location point)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/bcore/comp#Span"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://dtc-ontology.cms.ed.tum.de/infraspatialot#Localisation"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bcore/comp#endsAtSupport",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "de",
+    "@value" : "Spannweite endet an einem Bauteil des Brückenunterbaus"
+  }, {
+    "@language" : "en",
+    "@value" : "span ends at a component of the bridge substructure"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/bcore/comp#Span"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/brcomp#SubStructureComponent"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bcore/comp#hasMainSpan",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "de",
+    "@value" : "Brücke hat eine Hauptspannweite"
+  }, {
+    "@language" : "en",
+    "@value" : "bridge has main span"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/brot#Bridge"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/bcore/comp#Span"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bcore/comp#hasSpan",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "de",
+    "@value" : "Bauteil hat eine Spannweite"
+  }, {
+    "@language" : "en",
+    "@value" : "component has span"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/brcomp#SuperStructureComponent"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/bcore/comp#Span"
+  } ]
+}, {
+  "@id" : "https://w3id.org/brcomp#AbutmentBenching",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "de",
+    "@value" : "Auflagerbank"
+  }, {
+    "@language" : "en",
+    "@value" : "abutment front wall (benching, breast wall, stem)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/brcomp#AbutmentComponent"
+  } ]
+}, {
+  "@id" : "https://w3id.org/brcomp#AbutmentChamberWall",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "de",
+    "@value" : "Widerlagerwand"
+  }, {
+    "@language" : "en",
+    "@value" : "abutment wall (breast wall, stem)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/brcomp#AbutmentComponent"
+  } ]
+}, {
+  "@id" : "https://w3id.org/brcomp#AbutmentComponent",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "de",
+    "@value" : "Bauteil des Widerlagers"
+  }, {
+    "@language" : "en",
+    "@value" : "component of the abutment"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/brcomp#SubStructureComponent"
+  } ]
+}, {
+  "@id" : "https://w3id.org/brcomp#AbutmentFooting",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "de",
+    "@value" : "Fundament des Widerlagers"
+  }, {
+    "@language" : "en",
+    "@value" : "abutment foundation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/brcomp#AbutmentComponent"
+  }, {
+    "@id" : "https://w3id.org/brcomp#Foundation"
+  } ]
+}, {
+  "@id" : "https://w3id.org/brcomp#AbutmentWingWall",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "de",
+    "@value" : "Flügelwand des Widerlagers"
+  }, {
+    "@language" : "en",
+    "@value" : "abutment wing wall"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/brcomp#AbutmentComponent"
+  } ]
+}, {
+  "@id" : "https://w3id.org/brcomp#Arch",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "de",
+    "@value" : "Bogen"
+  }, {
+    "@language" : "en",
+    "@value" : "arch"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/brcomp#SubStructureComponent"
+  }, {
+    "@id" : "https://w3id.org/brcomp#SuperStructureComponent"
+  } ]
+}, {
+  "@id" : "https://w3id.org/brcomp#Bearing",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "de",
+    "@value" : "Lager"
+  }, {
+    "@language" : "en",
+    "@value" : "bearing"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/brcomp#SubStructureComponent"
+  } ]
+}, {
+  "@id" : "https://w3id.org/brcomp#Cable",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "de",
+    "@value" : "Kabel"
+  }, {
+    "@language" : "en",
+    "@value" : "cable"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/brcomp#TensionComponent"
+  } ]
+}, {
+  "@id" : "https://w3id.org/brcomp#Foundation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "de",
+    "@value" : "Gründung/ Fundament"
+  }, {
+    "@language" : "en",
+    "@value" : "foundation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/brcomp#SubStructureComponent"
+  } ]
+}, {
+  "@id" : "https://w3id.org/brcomp#Girder",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "de",
+    "@value" : "Brückenträger"
+  }, {
+    "@language" : "en",
+    "@value" : "girder"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/brcomp#SuperStructureComponent"
+  } ]
+}, {
+  "@id" : "https://w3id.org/brcomp#GirderComponent",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "component of the girder"
+  }, {
+    "@value" : "Bauteil des Brückenträgers"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/brcomp#SuperStructureComponent"
+  } ]
+}, {
+  "@id" : "https://w3id.org/brcomp#GirderCrossGirder",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "de",
+    "@value" : "Querträger"
+  }, {
+    "@language" : "en",
+    "@value" : "cross girder"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/brcomp#GirderComponent"
+  } ]
+}, {
+  "@id" : "https://w3id.org/brcomp#GirderDeck",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "de",
+    "@value" : "Fahrbahnplatte"
+  }, {
+    "@language" : "en",
+    "@value" : "bridge deck/slab"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/brcomp#GirderComponent"
+  } ]
+}, {
+  "@id" : "https://w3id.org/brcomp#GirderMainGirder",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "de",
+    "@value" : "Hauptträger (Längsträger)"
+  }, {
+    "@language" : "en",
+    "@value" : "main (longitudinal) girder"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/brcomp#GirderComponent"
+  } ]
+}, {
+  "@id" : "https://w3id.org/brcomp#Pier",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "de",
+    "@value" : "Stütze"
+  }, {
+    "@language" : "en",
+    "@value" : "pier"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/brcomp#SubStructureComponent"
+  } ]
+}, {
+  "@id" : "https://w3id.org/brcomp#Pile",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "de",
+    "@value" : "Bohrpfahl"
+  }, {
+    "@language" : "en",
+    "@value" : "bored/drilled pile"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/brcomp#SubStructureComponent"
+  } ]
+}, {
+  "@id" : "https://w3id.org/brcomp#Pylon",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "de",
+    "@value" : "Pylon"
+  }, {
+    "@language" : "en",
+    "@value" : "pylon"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/brcomp#SubStructureComponent"
+  }, {
+    "@id" : "https://w3id.org/brcomp#SuperStructureComponent"
+  } ]
+}, {
+  "@id" : "https://w3id.org/brcomp#SubStructureComponent",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "de",
+    "@value" : "Bauteil des Unterbaus"
+  }, {
+    "@language" : "en",
+    "@value" : "component of bridge substructure"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/brot#Component"
+  } ]
+}, {
+  "@id" : "https://w3id.org/brcomp#SuperStructureComponent",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "de",
+    "@value" : "Bauteil des Überbaus"
+  }, {
+    "@language" : "en",
+    "@value" : "component of bridge superstructure"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/brot#Component"
+  } ]
+}, {
+  "@id" : "https://w3id.org/brcomp#TensionComponent",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "de",
+    "@value" : "Zugkomponente"
+  }, {
+    "@language" : "en",
+    "@value" : "tension component"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/brcomp#SubStructureComponent"
+  }, {
+    "@id" : "https://w3id.org/brcomp#SuperStructureComponent"
+  } ]
+}, {
+  "@id" : "https://w3id.org/brot#Bridge",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://w3id.org/brot#Component",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+} ]

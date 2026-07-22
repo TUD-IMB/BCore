@@ -1,0 +1,284 @@
+<https://w3id.org/bcore/mat> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<https://w3id.org/bcore/mat> <http://www.w3.org/2002/07/owl#versionIRI> <https://w3id.org/bcore/0.1.0> .
+<https://w3id.org/bcore/mat> <http://purl.org/dc/elements/1.1/abstract> "The Bridge Core Ontology (BCore) enables the represetation of a bridge structure, its components and material, as well as the infrastructure and media files connected to it and the environment and location of the bridge. BCore is created by the Institute of Concrete Structures (IMB) at the Dresden University of Technology (TUD). This ontology contains the corresponding material extension."@en .
+<https://w3id.org/bcore/mat> <http://purl.org/dc/elements/1.1/title> "Bridge Core Ontology for Institute of Concrete Structures, Dresden University of Technology – Material Extension"@en .
+<https://w3id.org/bcore/mat> <http://purl.org/dc/terms/contributor> "Jakob Vogt" .
+<https://w3id.org/bcore/mat> <http://purl.org/dc/terms/created> "2025-11-06"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://w3id.org/bcore/mat> <http://purl.org/dc/terms/creator> "Johannes Reimer" .
+<https://w3id.org/bcore/mat> <http://purl.org/dc/terms/creator> "Morris Florek" .
+<https://w3id.org/bcore/mat> <http://purl.org/dc/terms/creator> "Tim Noack" .
+<https://w3id.org/bcore/mat> <http://purl.org/dc/terms/creator> "Xiaoli Song" .
+<https://w3id.org/bcore/mat> <http://purl.org/dc/terms/description> "Extension ontology for the representation of bridge building materials. Designed to work in conjunction with the BCore ontology but to also allow for external use."@en .
+<https://w3id.org/bcore/mat> <http://purl.org/dc/terms/license> "https://creativecommons.org/licenses/by/4.0/deed.en" .
+<https://w3id.org/bcore/mat> <http://purl.org/dc/terms/modified> "2026-07-21"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://w3id.org/bcore/mat> <http://purl.org/ontology/bibo/status> "Ontology Specification Draft" .
+<https://w3id.org/bcore/mat> <http://purl.org/vocab/vann/preferredNamespacePrefix> "bcoremat" .
+<https://w3id.org/bcore/mat> <http://www.w3.org/2000/01/rdf-schema#label> "Bridge Core Ontology – Material Extension"@en .
+<https://w3id.org/bcore/mat> <http://www.w3.org/2002/07/owl#priorVersion> "https://w3id.org/bcore/0.0.2" .
+<https://w3id.org/bcore/mat> <http://www.w3.org/2002/07/owl#versionIRI> "https://w3id.org/bcore/0.1.0" .
+<https://w3id.org/bcore/mat> <http://www.w3.org/2002/07/owl#versionInfo> "0.1.0" .
+<https://w3id.org/bcore/mat> <https://schema.org/codeRepository> "https://github.com/TUD-IMB/BCore" .
+<https://w3id.org/bcore/mat> <http://xmlns.com/foaf/0.1/logo> "https://raw.githubusercontent.com/TUD-IMB/BCore/main/BCore.svg" .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/elements/1.1/abstract
+<http://purl.org/dc/elements/1.1/abstract> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/title
+<http://purl.org/dc/elements/1.1/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/contributor
+<http://purl.org/dc/terms/contributor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/created
+<http://purl.org/dc/terms/created> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/description
+<http://purl.org/dc/terms/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/modified
+<http://purl.org/dc/terms/modified> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/ontology/bibo/status
+<http://purl.org/ontology/bibo/status> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2002/07/owl#versionIRI
+<http://www.w3.org/2002/07/owl#versionIRI> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://xmlns.com/foaf/0.1/logo
+<http://xmlns.com/foaf/0.1/logo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# https://schema.org/codeRepository
+<https://schema.org/codeRepository> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Datatypes
+# #
+# #################################################################
+# 
+# 
+# http://www.w3.org/2001/XMLSchema#date
+<http://www.w3.org/2001/XMLSchema#date> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# https://w3id.org/bcore/mat#compositeOf
+<https://w3id.org/bcore/mat#compositeOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/bcore/mat#compositeOf> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/bcore/mat#CompositeMaterial> .
+<https://w3id.org/bcore/mat#compositeOf> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/bmat#BuildingMaterial> .
+<https://w3id.org/bmat#BuildingMaterial> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/bcore/mat#compositeOf> <http://www.w3.org/2000/01/rdf-schema#comment> "Verbundmaterial ist Verbund aus anderem Material"@de .
+<https://w3id.org/bcore/mat#compositeOf> <http://www.w3.org/2000/01/rdf-schema#comment> "composite material is a composite of another material"@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# https://w3id.org/bcore/mat#Ductility
+<https://w3id.org/bcore/mat#Ductility> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/bcore/mat#Ductility> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://w3id.org/bcore/mat#Ductility> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/bcore/mat#Steel> .
+<https://w3id.org/bcore/mat#Ductility> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/bcore/mat#Ductility> <http://www.w3.org/2000/01/rdf-schema#comment> "Duktilität"@de .
+<https://w3id.org/bcore/mat#Ductility> <http://www.w3.org/2000/01/rdf-schema#comment> "ductility"@en .
+# 
+# https://w3id.org/bcore/mat#Ec
+<https://w3id.org/bcore/mat#Ec> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/bcore/mat#Ec> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://w3id.org/bcore/mat#Ec> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/bmat#Concrete> .
+<https://w3id.org/bcore/mat#Ec> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#decimal> .
+<https://w3id.org/bcore/mat#Ec> <http://www.w3.org/2000/01/rdf-schema#comment> "Elastizitätsmodul des Betons"@de .
+<https://w3id.org/bcore/mat#Ec> <http://www.w3.org/2000/01/rdf-schema#comment> "modulus of elasticity (Young's modulus) of the concrete"@en .
+<https://w3id.org/bcore/mat#Ec> <http://www.w3.org/2000/01/rdf-schema#comment> "[N/m²]" .
+# 
+# https://w3id.org/bcore/mat#Ep
+<https://w3id.org/bcore/mat#Ep> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/bcore/mat#Ep> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://w3id.org/bcore/mat#Ep> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/bcore/mat#PrestressingSteel> .
+<https://w3id.org/bcore/mat#Ep> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#decimal> .
+<https://w3id.org/bcore/mat#Ep> <http://www.w3.org/2000/01/rdf-schema#comment> "Elastizitätsmodul des Spannstahls"@de .
+<https://w3id.org/bcore/mat#Ep> <http://www.w3.org/2000/01/rdf-schema#comment> "modulus of elasticity (Young's modulus) of the prestressing steel"@en .
+<https://w3id.org/bcore/mat#Ep> <http://www.w3.org/2000/01/rdf-schema#comment> "[N/m²]" .
+# 
+# https://w3id.org/bcore/mat#ExpositionClass
+<https://w3id.org/bcore/mat#ExpositionClass> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/bcore/mat#ExpositionClass> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/bmat#Concrete> .
+<https://w3id.org/bcore/mat#ExpositionClass> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/bcore/mat#ExpositionClass> <http://www.w3.org/2000/01/rdf-schema#comment> "Expositionsklasse (z. B. nach Eurocode 2-1-1)"@de .
+<https://w3id.org/bcore/mat#ExpositionClass> <http://www.w3.org/2000/01/rdf-schema#comment> "exposure class (e.g., according to Eurocode 2-1-1)"@en .
+<https://w3id.org/bcore/mat#ExpositionClass> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "https://w3id.org/bmat#expositionClassConcrete" .
+# 
+# https://w3id.org/bcore/mat#Ey
+<https://w3id.org/bcore/mat#Ey> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/bcore/mat#Ey> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://w3id.org/bcore/mat#Ey> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/bcore/mat#ConstructionSteel> .
+<https://w3id.org/bcore/mat#Ey> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/bmat#ReinforcementSteel> .
+<https://w3id.org/bcore/mat#Ey> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#decimal> .
+<https://w3id.org/bcore/mat#Ey> <http://www.w3.org/2000/01/rdf-schema#comment> "Elastizitätsmodul des Stahls"@de .
+<https://w3id.org/bcore/mat#Ey> <http://www.w3.org/2000/01/rdf-schema#comment> "modulus of elasticity (Young's modulus) of the steel"@en .
+<https://w3id.org/bcore/mat#Ey> <http://www.w3.org/2000/01/rdf-schema#comment> "[N/m²]" .
+# 
+# https://w3id.org/bcore/mat#fck
+<https://w3id.org/bcore/mat#fck> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/bcore/mat#fck> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://w3id.org/bcore/mat#fck> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/bmat#Concrete> .
+<https://w3id.org/bcore/mat#fck> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#decimal> .
+<https://w3id.org/bcore/mat#fck> <http://www.w3.org/2000/01/rdf-schema#comment> "characteristic compressive strength of the concrete"@en .
+<https://w3id.org/bcore/mat#fck> <http://www.w3.org/2000/01/rdf-schema#comment> "charakteristische Druckfestigkeit des Betons"@de .
+<https://w3id.org/bcore/mat#fck> <http://www.w3.org/2000/01/rdf-schema#comment> "[N/m²]" .
+# 
+# https://w3id.org/bcore/mat#fpk
+<https://w3id.org/bcore/mat#fpk> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/bcore/mat#fpk> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://w3id.org/bcore/mat#fpk> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/bcore/mat#PrestressingSteel> .
+<https://w3id.org/bcore/mat#fpk> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#decimal> .
+<https://w3id.org/bcore/mat#fpk> <http://www.w3.org/2000/01/rdf-schema#comment> "characteristic tensile strength of the prestressing steel"@en .
+<https://w3id.org/bcore/mat#fpk> <http://www.w3.org/2000/01/rdf-schema#comment> "charakteristische Zugfestigkeit des Spannstahls"@de .
+<https://w3id.org/bcore/mat#fpk> <http://www.w3.org/2000/01/rdf-schema#comment> "[N/m²]" .
+# 
+# https://w3id.org/bcore/mat#fyk
+<https://w3id.org/bcore/mat#fyk> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/bcore/mat#fyk> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://w3id.org/bcore/mat#fyk> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/bcore/mat#ConstructionSteel> .
+<https://w3id.org/bcore/mat#fyk> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/bmat#ReinforcementSteel> .
+<https://w3id.org/bcore/mat#fyk> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#decimal> .
+<https://w3id.org/bcore/mat#fyk> <http://www.w3.org/2000/01/rdf-schema#comment> "characteristic tensile strength of the steel"@en .
+<https://w3id.org/bcore/mat#fyk> <http://www.w3.org/2000/01/rdf-schema#comment> "charakteristische Zugfestigkeit des Stahls"@de .
+<https://w3id.org/bcore/mat#fyk> <http://www.w3.org/2000/01/rdf-schema#comment> "[N/m²]" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# https://w3id.org/bcore/mat#CompositeMaterial
+<https://w3id.org/bcore/mat#CompositeMaterial> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/bcore/mat#CompositeMaterial> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/bmat#BuildingMaterial> .
+<https://w3id.org/bcore/mat#CompositeMaterial> <http://www.w3.org/2000/01/rdf-schema#comment> "Verbundmaterial"@de .
+<https://w3id.org/bcore/mat#CompositeMaterial> <http://www.w3.org/2000/01/rdf-schema#comment> "composite material"@en .
+# 
+# https://w3id.org/bcore/mat#ConstructionSteel
+<https://w3id.org/bcore/mat#ConstructionSteel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/bcore/mat#ConstructionSteel> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/bcore/mat#Steel> .
+<https://w3id.org/bcore/mat#ConstructionSteel> <http://www.w3.org/2000/01/rdf-schema#comment> "Baustahl"@de .
+<https://w3id.org/bcore/mat#ConstructionSteel> <http://www.w3.org/2000/01/rdf-schema#comment> "construction steel"@en .
+# 
+# https://w3id.org/bcore/mat#Metal
+<https://w3id.org/bcore/mat#Metal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/bcore/mat#Metal> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/bmat#BuildingMaterial> .
+<https://w3id.org/bcore/mat#Metal> <http://www.w3.org/2000/01/rdf-schema#comment> "Metall"@de .
+<https://w3id.org/bcore/mat#Metal> <http://www.w3.org/2000/01/rdf-schema#comment> "metal"@en .
+# 
+# https://w3id.org/bcore/mat#PrestressedConcrete
+<https://w3id.org/bcore/mat#PrestressedConcrete> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/bcore/mat#PrestressedConcrete> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/bcore/mat#CompositeMaterial> .
+<https://w3id.org/bcore/mat#PrestressedConcrete> <http://www.w3.org/2000/01/rdf-schema#comment> "Spannbeton"@de .
+<https://w3id.org/bcore/mat#PrestressedConcrete> <http://www.w3.org/2000/01/rdf-schema#comment> "prestressed concrete"@en .
+# 
+# https://w3id.org/bcore/mat#PrestressingSteel
+<https://w3id.org/bcore/mat#PrestressingSteel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/bcore/mat#PrestressingSteel> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/bcore/mat#Steel> .
+<https://w3id.org/bcore/mat#PrestressingSteel> <http://www.w3.org/2000/01/rdf-schema#comment> "Spannstahl"@de .
+<https://w3id.org/bcore/mat#PrestressingSteel> <http://www.w3.org/2000/01/rdf-schema#comment> "prestressing steel"@en .
+# 
+# https://w3id.org/bcore/mat#Steel
+<https://w3id.org/bcore/mat#Steel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/bcore/mat#Steel> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/bcore/mat#Metal> .
+<https://w3id.org/bcore/mat#Steel> <http://www.w3.org/2000/01/rdf-schema#comment> "Stahl"@de .
+<https://w3id.org/bcore/mat#Steel> <http://www.w3.org/2000/01/rdf-schema#comment> "steel"@en .
+# 
+# https://w3id.org/bcore/mat#SteelConcreteComposite
+<https://w3id.org/bcore/mat#SteelConcreteComposite> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/bcore/mat#SteelConcreteComposite> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/bcore/mat#CompositeMaterial> .
+<https://w3id.org/bcore/mat#SteelConcreteComposite> <http://www.w3.org/2000/01/rdf-schema#comment> "Stahl-Beton-Verbund"@de .
+<https://w3id.org/bcore/mat#SteelConcreteComposite> <http://www.w3.org/2000/01/rdf-schema#comment> "steel-concrete composite"@en .
+# 
+# https://w3id.org/bmat#BuildingMaterial
+# 
+# https://w3id.org/bmat#Concrete
+<https://w3id.org/bmat#Concrete> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/bmat#Concrete> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/bmat#BuildingMaterial> .
+<https://w3id.org/bmat#Concrete> <http://www.w3.org/2000/01/rdf-schema#comment> "Beton"@de .
+<https://w3id.org/bmat#Concrete> <http://www.w3.org/2000/01/rdf-schema#comment> "concrete"@en .
+# 
+# https://w3id.org/bmat#ReinforcedConcrete
+<https://w3id.org/bmat#ReinforcedConcrete> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/bmat#ReinforcedConcrete> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/bcore/mat#CompositeMaterial> .
+<https://w3id.org/bmat#ReinforcedConcrete> <http://www.w3.org/2000/01/rdf-schema#comment> "Stahlbeton"@de .
+<https://w3id.org/bmat#ReinforcedConcrete> <http://www.w3.org/2000/01/rdf-schema#comment> "reinforced concrete"@en .
+# 
+# https://w3id.org/bmat#ReinforcementSteel
+<https://w3id.org/bmat#ReinforcementSteel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/bmat#ReinforcementSteel> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/bcore/mat#Steel> .
+<https://w3id.org/bmat#ReinforcementSteel> <http://www.w3.org/2000/01/rdf-schema#comment> "Betonstahl"@de .
+<https://w3id.org/bmat#ReinforcementSteel> <http://www.w3.org/2000/01/rdf-schema#comment> "reinforcement (mild) steel"@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    General axioms
+# #
+# #################################################################
+# 
+# 
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid1 <http://www.w3.org/2002/07/owl#members> _:genid4 .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid3 .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid2 .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/bmat#Concrete> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/bcore/mat#Metal> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/bcore/mat#CompositeMaterial> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+# 
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid5 <http://www.w3.org/2002/07/owl#members> _:genid8 .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid7 .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid6 .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/bmat#ReinforcedConcrete> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/bcore/mat#SteelConcreteComposite> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/bcore/mat#PrestressedConcrete> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+# 
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

@@ -1,0 +1,141 @@
+<https://w3id.org/bcore/zones> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<https://w3id.org/bcore/zones> <http://www.w3.org/2002/07/owl#versionIRI> <https://w3id.org/bcore/0.1.0> .
+<https://w3id.org/bcore/zones> <http://purl.org/dc/elements/1.1/abstract> "The Bridge Core Ontology (BCore) enables the represetation of a bridge structure, its components and material, as well as the infrastructure and media files connected to it and the environment and location of the bridge. BCore is created by the Institute of Concrete Structures (IMB) at the Dresden University of Technology (TUD). This ontology contains the corresponding zones extension."@en .
+<https://w3id.org/bcore/zones> <http://purl.org/dc/elements/1.1/title> "Bridge Core Ontology for Institute of Concrete Structures, Dresden University of Technology – Zones Extension"@en .
+<https://w3id.org/bcore/zones> <http://purl.org/dc/terms/contributor> "Jakob Vogt" .
+<https://w3id.org/bcore/zones> <http://purl.org/dc/terms/created> "2025-11-06"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://w3id.org/bcore/zones> <http://purl.org/dc/terms/creator> "Johannes Reimer" .
+<https://w3id.org/bcore/zones> <http://purl.org/dc/terms/creator> "Morris Florek" .
+<https://w3id.org/bcore/zones> <http://purl.org/dc/terms/creator> "Tim Noack" .
+<https://w3id.org/bcore/zones> <http://purl.org/dc/terms/creator> "Xiaoli Song" .
+<https://w3id.org/bcore/zones> <http://purl.org/dc/terms/description> "Extension ontology for the representation of bridge-related zones. Designed to work in conjunction with the BCore ontology but to also allow for external use."@en .
+<https://w3id.org/bcore/zones> <http://purl.org/dc/terms/license> "https://creativecommons.org/licenses/by/4.0/deed.en" .
+<https://w3id.org/bcore/zones> <http://purl.org/dc/terms/modified> "2026-07-21"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://w3id.org/bcore/zones> <http://purl.org/ontology/bibo/status> "Ontology Specification Draft" .
+<https://w3id.org/bcore/zones> <http://purl.org/vocab/vann/preferredNamespacePrefix> "bcorezones" .
+<https://w3id.org/bcore/zones> <http://www.w3.org/2000/01/rdf-schema#label> "Bridge Core Ontology – Zones Extension"@en .
+<https://w3id.org/bcore/zones> <http://www.w3.org/2002/07/owl#priorVersion> "https://w3id.org/bcore/0.0.2" .
+<https://w3id.org/bcore/zones> <http://www.w3.org/2002/07/owl#versionIRI> "https://w3id.org/bcore/0.1.0" .
+<https://w3id.org/bcore/zones> <http://www.w3.org/2002/07/owl#versionInfo> "0.1.0" .
+<https://w3id.org/bcore/zones> <https://schema.org/codeRepository> "https://github.com/TUD-IMB/BCore" .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/elements/1.1/abstract
+<http://purl.org/dc/elements/1.1/abstract> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/title
+<http://purl.org/dc/elements/1.1/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/contributor
+<http://purl.org/dc/terms/contributor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/created
+<http://purl.org/dc/terms/created> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/description
+<http://purl.org/dc/terms/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/modified
+<http://purl.org/dc/terms/modified> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/ontology/bibo/status
+<http://purl.org/ontology/bibo/status> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2002/07/owl#versionIRI
+<http://www.w3.org/2002/07/owl#versionIRI> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://xmlns.com/foaf/0.1/logo
+<http://xmlns.com/foaf/0.1/logo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# https://schema.org/codeRepository
+<https://schema.org/codeRepository> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Datatypes
+# #
+# #################################################################
+# 
+# 
+# http://www.w3.org/2001/XMLSchema#date
+<http://www.w3.org/2001/XMLSchema#date> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# https://w3id.org/bcore/zones#BuiltUpArea
+<https://w3id.org/bcore/zones#BuiltUpArea> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/bcore/zones#BuiltUpArea> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/bot#Zone> .
+<https://w3id.org/bot#Zone> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/bcore/zones#BuiltUpArea> <http://www.w3.org/2000/01/rdf-schema#comment> "bebautes Gebiet"@de .
+<https://w3id.org/bcore/zones#BuiltUpArea> <http://www.w3.org/2000/01/rdf-schema#comment> "built-up area"@en .
+# 
+# https://w3id.org/bcore/zones#Estate
+<https://w3id.org/bcore/zones#Estate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/bcore/zones#Estate> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/bot#Zone> .
+<https://w3id.org/bcore/zones#Estate> <http://www.w3.org/2000/01/rdf-schema#comment> "Grundstück (Grundbesitz)"@de .
+<https://w3id.org/bcore/zones#Estate> <http://www.w3.org/2000/01/rdf-schema#comment> "estate (land ownership, real estate)"@en .
+# 
+# https://w3id.org/bcore/zones#Field
+<https://w3id.org/bcore/zones#Field> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/bcore/zones#Field> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/bcore/zones#VegetationArea> .
+<https://w3id.org/bcore/zones#Field> <http://www.w3.org/2000/01/rdf-schema#comment> "Feld (z. B. Landwirtschaft)"@de .
+<https://w3id.org/bcore/zones#Field> <http://www.w3.org/2000/01/rdf-schema#comment> "field (e.g., agriculture)"@en .
+# 
+# https://w3id.org/bcore/zones#Forest
+<https://w3id.org/bcore/zones#Forest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/bcore/zones#Forest> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/bcore/zones#VegetationArea> .
+<https://w3id.org/bcore/zones#Forest> <http://www.w3.org/2000/01/rdf-schema#comment> "Wald"@de .
+<https://w3id.org/bcore/zones#Forest> <http://www.w3.org/2000/01/rdf-schema#comment> "forrest/wood"@en .
+# 
+# https://w3id.org/bcore/zones#LandscapeConservationMeasureArea
+<https://w3id.org/bcore/zones#LandscapeConservationMeasureArea> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/bcore/zones#LandscapeConservationMeasureArea> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/bot#Zone> .
+<https://w3id.org/bcore/zones#LandscapeConservationMeasureArea> <http://www.w3.org/2000/01/rdf-schema#comment> "Landschaftsschutzgebiet"@de .
+<https://w3id.org/bcore/zones#LandscapeConservationMeasureArea> <http://www.w3.org/2000/01/rdf-schema#comment> "landscape conservation measure area"@en .
+# 
+# https://w3id.org/bcore/zones#Meadow
+<https://w3id.org/bcore/zones#Meadow> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/bcore/zones#Meadow> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/bcore/zones#VegetationArea> .
+<https://w3id.org/bcore/zones#Meadow> <http://www.w3.org/2000/01/rdf-schema#comment> "Wiese/Aue"@de .
+<https://w3id.org/bcore/zones#Meadow> <http://www.w3.org/2000/01/rdf-schema#comment> "meadow"@en .
+# 
+# https://w3id.org/bcore/zones#VegetationArea
+<https://w3id.org/bcore/zones#VegetationArea> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/bcore/zones#VegetationArea> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/bot#Zone> .
+<https://w3id.org/bcore/zones#VegetationArea> <http://www.w3.org/2000/01/rdf-schema#comment> "Vegetationsgebiet"@de .
+<https://w3id.org/bcore/zones#VegetationArea> <http://www.w3.org/2000/01/rdf-schema#comment> "vegetation area"@en .
+# 
+# https://w3id.org/bcore/zones#WaterBody
+<https://w3id.org/bcore/zones#WaterBody> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/bcore/zones#WaterBody> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/bot#Zone> .
+<https://w3id.org/bcore/zones#WaterBody> <http://www.w3.org/2000/01/rdf-schema#comment> "Gewässer"@de .
+<https://w3id.org/bcore/zones#WaterBody> <http://www.w3.org/2000/01/rdf-schema#comment> "water body"@en .
+# 
+# https://w3id.org/bot#Zone
+# 
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

@@ -2,18 +2,20 @@
 @prefix dc: <http://purl.org/dc/terms/> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix : <> .
-<..\index-en.html> a prov:Entity;
-	 dc:title "Bridge Core Ontology";
+<https://w3id.org/bcore/0.1.0> a prov:Entity;
+	 dc:title "Bridge Core Ontology for Institute of Concrete Structures, Dresden University of Technology";
 	 prov:wasAttributedTo :agent0;
 	 prov:wasAttributedTo :agent1;
 	 prov:wasAttributedTo :agent2;
 	 prov:wasAttributedTo :agent3;
 	 prov:wasAttributedTo :agent4;
 	 prov:wasAttributedTo <https://github.com/dgarijo/Widoco/>,<http://www.essepuntato.it/lode/>;
-	 prov:wasGeneratedAt "2025-11-06T11:00:00";
+	 prov:specializationOf <https://w3id.org/bcore>;
+	 prov:wasRevisionOf <https://w3id.org/bcore/0.0.2>;
+	 prov:wasGeneratedAt "2025-11-06";
 .
-:agent0 a prov:Agent; foaf:name "Tim Noack".
-:agent1 a prov:Agent; foaf:name "Jakob Vogt".
-:agent2 a prov:Agent; foaf:name "Johannes Reimer".
-:agent3 a prov:Agent; foaf:name "Morris Florek".
-:agent4 a prov:Agent; foaf:name "Xiaoli Song".
+:agent0 a prov:Agent; foaf:name "Johannes Reimer".
+:agent1 a prov:Agent; foaf:name "Morris Florek".
+:agent2 a prov:Agent; foaf:name "Tim Noack".
+:agent3 a prov:Agent; foaf:name "Xiaoli Song".
+:agent4 a prov:Agent; foaf:name "Jakob Vogt".

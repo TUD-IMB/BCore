@@ -1,0 +1,227 @@
+<https://w3id.org/bcore/infra> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<https://w3id.org/bcore/infra> <http://www.w3.org/2002/07/owl#versionIRI> <https://w3id.org/bcore/0.1.0> .
+<https://w3id.org/bcore/infra> <http://purl.org/dc/elements/1.1/abstract> "The Bridge Core Ontology (BCore) enables the represetation of a bridge structure, its components and material, as well as the infrastructure and media files connected to it and the environment and location of the bridge. BCore is created by the Institute of Concrete Structures (IMB) at the Dresden University of Technology (TUD). This ontology contains the corresponding infrastructure extension."@en .
+<https://w3id.org/bcore/infra> <http://purl.org/dc/elements/1.1/title> "Bridge Core Ontology for Institute of Concrete Structures, Dresden University of Technology – Infrastructure Extension"@en .
+<https://w3id.org/bcore/infra> <http://purl.org/dc/terms/contributor> "Jakob Vogt" .
+<https://w3id.org/bcore/infra> <http://purl.org/dc/terms/created> "2025-11-06"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://w3id.org/bcore/infra> <http://purl.org/dc/terms/creator> "Johannes Reimer" .
+<https://w3id.org/bcore/infra> <http://purl.org/dc/terms/creator> "Morris Florek" .
+<https://w3id.org/bcore/infra> <http://purl.org/dc/terms/creator> "Tim Noack" .
+<https://w3id.org/bcore/infra> <http://purl.org/dc/terms/creator> "Xiaoli Song" .
+<https://w3id.org/bcore/infra> <http://purl.org/dc/terms/description> "Extension ontology for the representation of bridge-related infrastructure. Designed to work in conjunction with the BCore ontology but to also allow for external use."@en .
+<https://w3id.org/bcore/infra> <http://purl.org/dc/terms/license> "https://creativecommons.org/licenses/by/4.0/deed.en" .
+<https://w3id.org/bcore/infra> <http://purl.org/dc/terms/modified> "2026-07-21"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://w3id.org/bcore/infra> <http://purl.org/ontology/bibo/status> "Ontology Specification Draft" .
+<https://w3id.org/bcore/infra> <http://purl.org/vocab/vann/preferredNamespacePrefix> "bcoreinfra" .
+<https://w3id.org/bcore/infra> <http://www.w3.org/2000/01/rdf-schema#label> "Bridge Core Ontology – Infrastructure Extension"@en .
+<https://w3id.org/bcore/infra> <http://www.w3.org/2002/07/owl#priorVersion> "https://w3id.org/bcore/0.0.2" .
+<https://w3id.org/bcore/infra> <http://www.w3.org/2002/07/owl#versionIRI> "https://w3id.org/bcore/0.1.0" .
+<https://w3id.org/bcore/infra> <http://www.w3.org/2002/07/owl#versionInfo> "0.1.0" .
+<https://w3id.org/bcore/infra> <https://schema.org/codeRepository> "https://github.com/TUD-IMB/BCore" .
+<https://w3id.org/bcore/infra> <http://xmlns.com/foaf/0.1/logo> "https://raw.githubusercontent.com/TUD-IMB/BCore/main/BCore.svg" .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/elements/1.1/abstract
+<http://purl.org/dc/elements/1.1/abstract> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/title
+<http://purl.org/dc/elements/1.1/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/contributor
+<http://purl.org/dc/terms/contributor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/created
+<http://purl.org/dc/terms/created> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/description
+<http://purl.org/dc/terms/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/modified
+<http://purl.org/dc/terms/modified> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/ontology/bibo/status
+<http://purl.org/ontology/bibo/status> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2002/07/owl#versionIRI
+<http://www.w3.org/2002/07/owl#versionIRI> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://xmlns.com/foaf/0.1/logo
+<http://xmlns.com/foaf/0.1/logo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# https://schema.org/codeRepository
+<https://schema.org/codeRepository> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Datatypes
+# #
+# #################################################################
+# 
+# 
+# http://www.w3.org/2001/XMLSchema#date
+<http://www.w3.org/2001/XMLSchema#date> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# https://w3id.org/bcore/infra#FootCycleRouteType
+<https://w3id.org/bcore/infra#FootCycleRouteType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/bcore/infra#FootCycleRouteType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://w3id.org/bcore/infra#FootCycleRouteType> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/bcore/infra#FootCycleRoute> .
+<https://w3id.org/bcore/infra#FootCycleRouteType> <http://www.w3.org/2000/01/rdf-schema#range> _:genid1 .
+_:genid1 <http://www.w3.org/2002/07/owl#oneOf> _:genid5 .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid4 .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid3 .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid2 .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "shared-use" .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "segregated" .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "foot only" .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "bike only" .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+<https://w3id.org/bcore/infra#FootCycleRouteType> <http://www.w3.org/2000/01/rdf-schema#comment> "Art des Fuß- und/oder Radweges"@de .
+<https://w3id.org/bcore/infra#FootCycleRouteType> <http://www.w3.org/2000/01/rdf-schema#comment> "Possible values:\n- foot only\n- bike only\n- segregated\n- shared-use"@en .
+<https://w3id.org/bcore/infra#FootCycleRouteType> <http://www.w3.org/2000/01/rdf-schema#comment> "type of pedestrian and/or bike path"@en .
+# 
+# https://w3id.org/bcore/infra#RailwayRouteMaximumVelocity
+<https://w3id.org/bcore/infra#RailwayRouteMaximumVelocity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/bcore/infra#RailwayRouteMaximumVelocity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://w3id.org/bcore/infra#RailwayRouteMaximumVelocity> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/bcore/infra#RailwayRoute> .
+<https://w3id.org/bcore/infra#RailwayRouteMaximumVelocity> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#decimal> .
+<https://w3id.org/bcore/infra#RailwayRouteMaximumVelocity> <http://www.w3.org/2000/01/rdf-schema#comment> "maximal zulässige Geschwindigkeit auf dem Schienenweg"@de .
+<https://w3id.org/bcore/infra#RailwayRouteMaximumVelocity> <http://www.w3.org/2000/01/rdf-schema#comment> "maximum permitted speed on the rail line"@en .
+<https://w3id.org/bcore/infra#RailwayRouteMaximumVelocity> <http://www.w3.org/2000/01/rdf-schema#comment> "[km/h]" .
+# 
+# https://w3id.org/bcore/infra#RailwayRouteNumberOfTracks
+<https://w3id.org/bcore/infra#RailwayRouteNumberOfTracks> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/bcore/infra#RailwayRouteNumberOfTracks> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://w3id.org/bcore/infra#RailwayRouteNumberOfTracks> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/bcore/infra#RailwayRoute> .
+<https://w3id.org/bcore/infra#RailwayRouteNumberOfTracks> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<https://w3id.org/bcore/infra#RailwayRouteNumberOfTracks> <http://www.w3.org/2000/01/rdf-schema#comment> "Anzahl der Gleise des Schienenweges"@de .
+<https://w3id.org/bcore/infra#RailwayRouteNumberOfTracks> <http://www.w3.org/2000/01/rdf-schema#comment> "number of tracks on the railroad"@en .
+# 
+# https://w3id.org/bcore/infra#RoadRouteClass
+<https://w3id.org/bcore/infra#RoadRouteClass> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/bcore/infra#RoadRouteClass> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://w3id.org/bcore/infra#RoadRouteClass> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/bcore/infra#RoadRoute> .
+<https://w3id.org/bcore/infra#RoadRouteClass> <http://www.w3.org/2000/01/rdf-schema#range> _:genid6 .
+_:genid6 <http://www.w3.org/2002/07/owl#oneOf> _:genid12 .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid11 .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid10 .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid9 .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid8 .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid7 .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "urban road" .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "non-public road" .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "highway" .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "federal road" .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "district road" .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "country road" .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+<https://w3id.org/bcore/infra#RoadRouteClass> <http://www.w3.org/2000/01/rdf-schema#comment> "Straßenklasse"@de .
+<https://w3id.org/bcore/infra#RoadRouteClass> <http://www.w3.org/2000/01/rdf-schema#comment> "possible values:\n- highway\n- federal road\n- country road\n- district road\n- urban road\n- non-public road"@en .
+<https://w3id.org/bcore/infra#RoadRouteClass> <http://www.w3.org/2000/01/rdf-schema#comment> "road classification"@en .
+# 
+# https://w3id.org/bcore/infra#RoadRouteNumberOfLanes
+<https://w3id.org/bcore/infra#RoadRouteNumberOfLanes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/bcore/infra#RoadRouteNumberOfLanes> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/bcore/infra#RoadRoute> .
+<https://w3id.org/bcore/infra#RoadRouteNumberOfLanes> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<https://w3id.org/bcore/infra#RoadRouteNumberOfLanes> <http://www.w3.org/2000/01/rdf-schema#comment> "Anzahl der Fahrstreifen der Straße (Gesamtzahl beider Richtungsfahrbahnen)"@de .
+<https://w3id.org/bcore/infra#RoadRouteNumberOfLanes> <http://www.w3.org/2000/01/rdf-schema#comment> "number of lanes on the road (total number of lanes in both directions)"@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# https://w3id.org/bcore#InfrastructureRoute
+<https://w3id.org/bcore#InfrastructureRoute> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/bcore/infra#FootCycleRoute
+<https://w3id.org/bcore/infra#FootCycleRoute> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/bcore/infra#FootCycleRoute> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/bcore#InfrastructureRoute> .
+<https://w3id.org/bcore/infra#FootCycleRoute> <http://www.w3.org/2000/01/rdf-schema#comment> "Geh- und/oder Radweg"@de .
+<https://w3id.org/bcore/infra#FootCycleRoute> <http://www.w3.org/2000/01/rdf-schema#comment> "footpath and/or bike path"@en .
+# 
+# https://w3id.org/bcore/infra#RailwayRoute
+<https://w3id.org/bcore/infra#RailwayRoute> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/bcore/infra#RailwayRoute> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/bcore#InfrastructureRoute> .
+<https://w3id.org/bcore/infra#RailwayRoute> <http://www.w3.org/2000/01/rdf-schema#comment> "Schienenweg"@de .
+<https://w3id.org/bcore/infra#RailwayRoute> <http://www.w3.org/2000/01/rdf-schema#comment> "railway"@en .
+# 
+# https://w3id.org/bcore/infra#RoadRoute
+<https://w3id.org/bcore/infra#RoadRoute> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/bcore/infra#RoadRoute> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/bcore#InfrastructureRoute> .
+<https://w3id.org/bcore/infra#RoadRoute> <http://www.w3.org/2000/01/rdf-schema#comment> "Straße"@de .
+<https://w3id.org/bcore/infra#RoadRoute> <http://www.w3.org/2000/01/rdf-schema#comment> "road/street"@en .
+# 
+# https://w3id.org/bcore/infra#WaterWayRoute
+<https://w3id.org/bcore/infra#WaterWayRoute> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/bcore/infra#WaterWayRoute> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/bcore#InfrastructureRoute> .
+<https://w3id.org/bcore/infra#WaterWayRoute> <http://www.w3.org/2000/01/rdf-schema#comment> "Wasserstraße"@de .
+<https://w3id.org/bcore/infra#WaterWayRoute> <http://www.w3.org/2000/01/rdf-schema#comment> "water way"@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    General axioms
+# #
+# #################################################################
+# 
+# 
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid13 <http://www.w3.org/2002/07/owl#members> _:genid17 .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid16 .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid15 .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid14 .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/bcore/infra#WaterWayRoute> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/bcore/infra#RoadRoute> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/bcore/infra#RailwayRoute> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/bcore/infra#FootCycleRoute> .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+# 
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

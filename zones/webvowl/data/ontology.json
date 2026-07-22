@@ -1,0 +1,325 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "de", "en", "undefined" ],
+    "baseIris" : [ "https://w3id.org/bot", "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://www.w3.org/2000/01/rdf-schema", "http://www.w3.org/2001/XMLSchema", "https://w3id.org/bcore/zones" ],
+    "title" : {
+      "en" : "Bridge Core Ontology for Institute of Concrete Structures, Dresden University of Technology – Zones Extension"
+    },
+    "iri" : "https://w3id.org/bcore/zones",
+    "version" : "0.1.0",
+    "author" : [ "Tim Noack", "Morris Florek", "Johannes Reimer", "Xiaoli Song" ],
+    "description" : {
+      "en" : "Extension ontology for the representation of bridge-related zones. Designed to work in conjunction with the BCore ontology but to also allow for external use."
+    },
+    "labels" : {
+      "en" : "Bridge Core Ontology – Zones Extension"
+    },
+    "other" : {
+      "versionIRI" : [ {
+        "identifier" : "versionIRI",
+        "language" : "undefined",
+        "value" : "https://w3id.org/bcore/0.1.0",
+        "type" : "label"
+      } ],
+      "priorVersion" : [ {
+        "identifier" : "priorVersion",
+        "language" : "undefined",
+        "value" : "https://w3id.org/bcore/0.0.2",
+        "type" : "label"
+      } ],
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "Morris Florek",
+        "type" : "label"
+      }, {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "Xiaoli Song",
+        "type" : "label"
+      }, {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "Tim Noack",
+        "type" : "label"
+      }, {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "Johannes Reimer",
+        "type" : "label"
+      } ],
+      "created" : [ {
+        "identifier" : "created",
+        "language" : "undefined",
+        "value" : "2025-11-06",
+        "type" : "label"
+      } ],
+      "versionInfo" : [ {
+        "identifier" : "versionInfo",
+        "language" : "undefined",
+        "value" : "0.1.0",
+        "type" : "label"
+      } ],
+      "abstract" : [ {
+        "identifier" : "abstract",
+        "language" : "en",
+        "value" : "The Bridge Core Ontology (BCore) enables the represetation of a bridge structure, its components and material, as well as the infrastructure and media files connected to it and the environment and location of the bridge. BCore is created by the Institute of Concrete Structures (IMB) at the Dresden University of Technology (TUD). This ontology contains the corresponding zones extension.",
+        "type" : "label"
+      } ],
+      "title" : [ {
+        "identifier" : "title",
+        "language" : "en",
+        "value" : "Bridge Core Ontology for Institute of Concrete Structures, Dresden University of Technology – Zones Extension",
+        "type" : "label"
+      } ],
+      "license" : [ {
+        "identifier" : "license",
+        "language" : "undefined",
+        "value" : "https://creativecommons.org/licenses/by/4.0/deed.en",
+        "type" : "label"
+      } ],
+      "contributor" : [ {
+        "identifier" : "contributor",
+        "language" : "undefined",
+        "value" : "Jakob Vogt",
+        "type" : "label"
+      } ],
+      "preferredNamespacePrefix" : [ {
+        "identifier" : "preferredNamespacePrefix",
+        "language" : "undefined",
+        "value" : "bcorezones",
+        "type" : "label"
+      } ],
+      "modified" : [ {
+        "identifier" : "modified",
+        "language" : "undefined",
+        "value" : "2026-07-21",
+        "type" : "label"
+      } ],
+      "codeRepository" : [ {
+        "identifier" : "codeRepository",
+        "language" : "undefined",
+        "value" : "https://github.com/TUD-IMB/BCore",
+        "type" : "label"
+      } ],
+      "status" : [ {
+        "identifier" : "status",
+        "language" : "undefined",
+        "value" : "Ontology Specification Draft",
+        "type" : "label"
+      } ]
+    }
+  },
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "0",
+    "type" : "owl:Class"
+  }, {
+    "id" : "2",
+    "type" : "owl:Class"
+  }, {
+    "id" : "6",
+    "type" : "owl:Class"
+  }, {
+    "id" : "5",
+    "type" : "owl:Class"
+  }, {
+    "id" : "1",
+    "type" : "owl:Class"
+  }, {
+    "id" : "13",
+    "type" : "owl:Class"
+  }, {
+    "id" : "8",
+    "type" : "owl:Class"
+  }, {
+    "id" : "3",
+    "type" : "owl:Class"
+  }, {
+    "id" : "12",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "https://w3id.org/bcore/zones#Field",
+    "baseIri" : "https://w3id.org/bcore/zones",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Field"
+    },
+    "comment" : {
+      "de" : "Feld (z. B. Landwirtschaft)",
+      "en" : "field (e.g., agriculture)"
+    },
+    "id" : "0",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "https://w3id.org/bcore/zones#WaterBody",
+    "baseIri" : "https://w3id.org/bcore/zones",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "WaterBody"
+    },
+    "comment" : {
+      "de" : "Gewässer",
+      "en" : "water body"
+    },
+    "id" : "2",
+    "superClasses" : [ "3" ]
+  }, {
+    "iri" : "https://w3id.org/bcore/zones#BuiltUpArea",
+    "baseIri" : "https://w3id.org/bcore/zones",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "BuiltUpArea"
+    },
+    "comment" : {
+      "de" : "bebautes Gebiet",
+      "en" : "built-up area"
+    },
+    "id" : "6",
+    "superClasses" : [ "3" ]
+  }, {
+    "iri" : "https://w3id.org/bcore/zones#Meadow",
+    "baseIri" : "https://w3id.org/bcore/zones",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Meadow"
+    },
+    "comment" : {
+      "de" : "Wiese/Aue",
+      "en" : "meadow"
+    },
+    "id" : "5",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "https://w3id.org/bcore/zones#VegetationArea",
+    "baseIri" : "https://w3id.org/bcore/zones",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "VegetationArea"
+    },
+    "subClasses" : [ "0", "13", "5" ],
+    "comment" : {
+      "de" : "Vegetationsgebiet",
+      "en" : "vegetation area"
+    },
+    "id" : "1",
+    "superClasses" : [ "3" ]
+  }, {
+    "iri" : "https://w3id.org/bcore/zones#Forest",
+    "baseIri" : "https://w3id.org/bcore/zones",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Forest"
+    },
+    "comment" : {
+      "de" : "Wald",
+      "en" : "forrest/wood"
+    },
+    "id" : "13",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "https://w3id.org/bcore/zones#LandscapeConservationMeasureArea",
+    "baseIri" : "https://w3id.org/bcore/zones",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "LandscapeConservationMeasureArea"
+    },
+    "comment" : {
+      "de" : "Landschaftsschutzgebiet",
+      "en" : "landscape conservation measure area"
+    },
+    "id" : "8",
+    "superClasses" : [ "3" ]
+  }, {
+    "iri" : "https://w3id.org/bot#Zone",
+    "baseIri" : "https://w3id.org/bot",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Zone"
+    },
+    "subClasses" : [ "8", "2", "6", "12", "1" ],
+    "attributes" : [ "external" ],
+    "id" : "3"
+  }, {
+    "iri" : "https://w3id.org/bcore/zones#Estate",
+    "baseIri" : "https://w3id.org/bcore/zones",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Estate"
+    },
+    "comment" : {
+      "de" : "Grundstück (Grundbesitz)",
+      "en" : "estate (land ownership, real estate)"
+    },
+    "id" : "12",
+    "superClasses" : [ "3" ]
+  } ],
+  "property" : [ {
+    "id" : "4",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "7",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "9",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "10",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "11",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "14",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "15",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "16",
+    "type" : "rdfs:SubClassOf"
+  } ],
+  "propertyAttribute" : [ {
+    "range" : "1",
+    "domain" : "5",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "4"
+  }, {
+    "range" : "3",
+    "domain" : "8",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "7"
+  }, {
+    "range" : "3",
+    "domain" : "2",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "9"
+  }, {
+    "range" : "3",
+    "domain" : "6",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "10"
+  }, {
+    "range" : "3",
+    "domain" : "12",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "11"
+  }, {
+    "range" : "3",
+    "domain" : "1",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "14"
+  }, {
+    "range" : "1",
+    "domain" : "0",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "15"
+  }, {
+    "range" : "1",
+    "domain" : "13",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "16"
+  } ]
+}

@@ -1,0 +1,412 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "de", "en", "undefined" ],
+    "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "https://w3id.org/bcore/infra", "https://w3id.org/bcore", "http://www.w3.org/2000/01/rdf-schema", "http://www.w3.org/2001/XMLSchema" ],
+    "title" : {
+      "en" : "Bridge Core Ontology for Institute of Concrete Structures, Dresden University of Technology – Infrastructure Extension"
+    },
+    "iri" : "https://w3id.org/bcore/infra",
+    "version" : "0.1.0",
+    "author" : [ "Tim Noack", "Morris Florek", "Johannes Reimer", "Xiaoli Song" ],
+    "description" : {
+      "en" : "Extension ontology for the representation of bridge-related infrastructure. Designed to work in conjunction with the BCore ontology but to also allow for external use."
+    },
+    "labels" : {
+      "en" : "Bridge Core Ontology – Infrastructure Extension"
+    },
+    "other" : {
+      "versionIRI" : [ {
+        "identifier" : "versionIRI",
+        "language" : "undefined",
+        "value" : "https://w3id.org/bcore/0.1.0",
+        "type" : "label"
+      } ],
+      "priorVersion" : [ {
+        "identifier" : "priorVersion",
+        "language" : "undefined",
+        "value" : "https://w3id.org/bcore/0.0.2",
+        "type" : "label"
+      } ],
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "Morris Florek",
+        "type" : "label"
+      }, {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "Johannes Reimer",
+        "type" : "label"
+      }, {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "Xiaoli Song",
+        "type" : "label"
+      }, {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "Tim Noack",
+        "type" : "label"
+      } ],
+      "created" : [ {
+        "identifier" : "created",
+        "language" : "undefined",
+        "value" : "2025-11-06",
+        "type" : "label"
+      } ],
+      "abstract" : [ {
+        "identifier" : "abstract",
+        "language" : "en",
+        "value" : "The Bridge Core Ontology (BCore) enables the represetation of a bridge structure, its components and material, as well as the infrastructure and media files connected to it and the environment and location of the bridge. BCore is created by the Institute of Concrete Structures (IMB) at the Dresden University of Technology (TUD). This ontology contains the corresponding infrastructure extension.",
+        "type" : "label"
+      } ],
+      "versionInfo" : [ {
+        "identifier" : "versionInfo",
+        "language" : "undefined",
+        "value" : "0.1.0",
+        "type" : "label"
+      } ],
+      "title" : [ {
+        "identifier" : "title",
+        "language" : "en",
+        "value" : "Bridge Core Ontology for Institute of Concrete Structures, Dresden University of Technology – Infrastructure Extension",
+        "type" : "label"
+      } ],
+      "license" : [ {
+        "identifier" : "license",
+        "language" : "undefined",
+        "value" : "https://creativecommons.org/licenses/by/4.0/deed.en",
+        "type" : "label"
+      } ],
+      "contributor" : [ {
+        "identifier" : "contributor",
+        "language" : "undefined",
+        "value" : "Jakob Vogt",
+        "type" : "label"
+      } ],
+      "preferredNamespacePrefix" : [ {
+        "identifier" : "preferredNamespacePrefix",
+        "language" : "undefined",
+        "value" : "bcoreinfra",
+        "type" : "label"
+      } ],
+      "modified" : [ {
+        "identifier" : "modified",
+        "language" : "undefined",
+        "value" : "2026-07-21",
+        "type" : "label"
+      } ],
+      "codeRepository" : [ {
+        "identifier" : "codeRepository",
+        "language" : "undefined",
+        "value" : "https://github.com/TUD-IMB/BCore",
+        "type" : "label"
+      } ],
+      "status" : [ {
+        "identifier" : "status",
+        "language" : "undefined",
+        "value" : "Ontology Specification Draft",
+        "type" : "label"
+      } ]
+    }
+  },
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "0",
+    "type" : "owl:Class"
+  }, {
+    "id" : "11",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "12",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "13",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "14",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "2",
+    "type" : "owl:Class"
+  }, {
+    "id" : "1",
+    "type" : "owl:Class"
+  }, {
+    "id" : "3",
+    "type" : "owl:Class"
+  }, {
+    "id" : "6",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "4",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "https://w3id.org/bcore#InfrastructureRoute",
+    "baseIri" : "https://w3id.org/bcore",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "InfrastructureRoute"
+    },
+    "subClasses" : [ "1", "2", "3", "4" ],
+    "attributes" : [ "external" ],
+    "id" : "0"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "11",
+    "label" : {
+      "IRI-based" : "decimal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#integer",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "12",
+    "label" : {
+      "IRI-based" : "integer"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#integer",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "13",
+    "label" : {
+      "IRI-based" : "integer"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "14",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "https://w3id.org/bcore/infra#WaterWayRoute",
+    "baseIri" : "https://w3id.org/bcore/infra",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "WaterWayRoute"
+    },
+    "comment" : {
+      "de" : "Wasserstraße",
+      "en" : "water way"
+    },
+    "id" : "2",
+    "superClasses" : [ "0" ]
+  }, {
+    "iri" : "https://w3id.org/bcore/infra#RoadRoute",
+    "baseIri" : "https://w3id.org/bcore/infra",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "RoadRoute"
+    },
+    "comment" : {
+      "de" : "Straße",
+      "en" : "road/street"
+    },
+    "id" : "1",
+    "superClasses" : [ "0" ]
+  }, {
+    "iri" : "https://w3id.org/bcore/infra#FootCycleRoute",
+    "baseIri" : "https://w3id.org/bcore/infra",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "FootCycleRoute"
+    },
+    "comment" : {
+      "de" : "Geh- und/oder Radweg",
+      "en" : "footpath and/or bike path"
+    },
+    "id" : "3",
+    "superClasses" : [ "0" ]
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "6",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "https://w3id.org/bcore/infra#RailwayRoute",
+    "baseIri" : "https://w3id.org/bcore/infra",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "RailwayRoute"
+    },
+    "comment" : {
+      "de" : "Schienenweg",
+      "en" : "railway"
+    },
+    "id" : "4",
+    "superClasses" : [ "0" ]
+  } ],
+  "property" : [ {
+    "id" : "5",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "7",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "8",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "9",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "10",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "15",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "16",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "17",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "18",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "19",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "20",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "21",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "22",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "23",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "24",
+    "type" : "rdfs:SubClassOf"
+  } ],
+  "propertyAttribute" : [ {
+    "iri" : "https://w3id.org/bcore/infra#RoadRouteClass",
+    "baseIri" : "https://w3id.org/bcore/infra",
+    "range" : "6",
+    "label" : {
+      "IRI-based" : "RoadRouteClass"
+    },
+    "domain" : "1",
+    "comment" : {
+      "de" : "Straßenklasse",
+      "en" : "road classification"
+    },
+    "attributes" : [ "functional", "datatype" ],
+    "id" : "5"
+  }, {
+    "range" : "2",
+    "domain" : "3",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "7"
+  }, {
+    "range" : "1",
+    "domain" : "4",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "8"
+  }, {
+    "range" : "2",
+    "domain" : "4",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "9"
+  }, {
+    "range" : "2",
+    "domain" : "1",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "10"
+  }, {
+    "range" : "4",
+    "domain" : "3",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "15"
+  }, {
+    "range" : "1",
+    "domain" : "3",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "16"
+  }, {
+    "iri" : "https://w3id.org/bcore/infra#RoadRouteNumberOfLanes",
+    "baseIri" : "https://w3id.org/bcore/infra",
+    "range" : "13",
+    "label" : {
+      "IRI-based" : "RoadRouteNumberOfLanes"
+    },
+    "domain" : "1",
+    "comment" : {
+      "de" : "Anzahl der Fahrstreifen der Straße (Gesamtzahl beider Richtungsfahrbahnen)",
+      "en" : "number of lanes on the road (total number of lanes in both directions)"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "17"
+  }, {
+    "iri" : "https://w3id.org/bcore/infra#FootCycleRouteType",
+    "baseIri" : "https://w3id.org/bcore/infra",
+    "range" : "14",
+    "label" : {
+      "IRI-based" : "FootCycleRouteType"
+    },
+    "domain" : "3",
+    "comment" : {
+      "de" : "Art des Fuß- und/oder Radweges",
+      "en" : "type of pedestrian and/or bike path"
+    },
+    "attributes" : [ "functional", "datatype" ],
+    "id" : "18"
+  }, {
+    "iri" : "https://w3id.org/bcore/infra#RailwayRouteNumberOfTracks",
+    "baseIri" : "https://w3id.org/bcore/infra",
+    "range" : "12",
+    "label" : {
+      "IRI-based" : "RailwayRouteNumberOfTracks"
+    },
+    "domain" : "4",
+    "comment" : {
+      "de" : "Anzahl der Gleise des Schienenweges",
+      "en" : "number of tracks on the railroad"
+    },
+    "attributes" : [ "functional", "datatype" ],
+    "id" : "19"
+  }, {
+    "iri" : "https://w3id.org/bcore/infra#RailwayRouteMaximumVelocity",
+    "baseIri" : "https://w3id.org/bcore/infra",
+    "range" : "11",
+    "label" : {
+      "IRI-based" : "RailwayRouteMaximumVelocity"
+    },
+    "domain" : "4",
+    "comment" : {
+      "de" : "maximal zulässige Geschwindigkeit auf dem Schienenweg",
+      "en" : "maximum permitted speed on the rail line",
+      "undefined" : "[km/h]"
+    },
+    "attributes" : [ "functional", "datatype" ],
+    "id" : "20"
+  }, {
+    "range" : "0",
+    "domain" : "4",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "21"
+  }, {
+    "range" : "0",
+    "domain" : "3",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "22"
+  }, {
+    "range" : "0",
+    "domain" : "2",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "23"
+  }, {
+    "range" : "0",
+    "domain" : "1",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "24"
+  } ]
+}
