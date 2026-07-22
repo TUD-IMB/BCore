@@ -35,7 +35,7 @@ BCore reuses established concepts from well‑known ontologies to ensure interop
 | **[BROT](https://w3id.org/brot)** | `https://w3id.org/brot` | Bridge Topology Ontology |
 | **[RELOC](https://w3id.org/reloc)** | `https://w3id.org/reloc` | Relative Location Ontology |
 
-*Icons used in the BCore logo: [Bridges](https://thenounproject.com/icon/bridges-7745970/), [Bricks](https://thenounproject.com/icon/bricks-3204094/), [Girder](https://thenounproject.com/icon/girder-5517023/), [Railway](https://thenounproject.com/icon/railway-8395550/), [Concrete](https://thenounproject.com/icon/concrete-2476665/), [Region](https://thenounproject.com/icon/region-3097495/), [Camera](https://thenounproject.com/icon/camera-1091895/), XXX, [File](https://thenounproject.com/icon/file-8355625/) via [Noun Project](https://thenounproject.com/)*
+*Icons used in the BCore logo: [Bridges](https://thenounproject.com/icon/bridges-7745970/), [Girder](https://thenounproject.com/icon/girder-5517023/), [Railway](https://thenounproject.com/icon/railway-8395550/), [Concrete](https://thenounproject.com/icon/concrete-2476665/), [Region](https://thenounproject.com/icon/region-3097495/), [Camera](https://thenounproject.com/icon/camera-1091895/) via [Noun Project](https://thenounproject.com/)*
 
 ## Contact
 
