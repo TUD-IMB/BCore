@@ -1,8 +1,10 @@
 # Bridge Core Ontology
 
-The Bridge Core Ontology (BCore) enables the represetation of a bridge structure, its components and material, as well as the infrastructure and media files connected to it and the environment and location of the bridge. 
+<img align="right" src="BCore.svg" height="200">
 
-Recommended namespace for BCore: https://w3id.org/bcore#
+The **Bridge Core Ontology (BCore)** enables the represetation of a bridge structure, its components and material, as well as the infrastructure and media files connected to it and the environment and location of the bridge.
+
+Recommended namespace for BCore: **`https://w3id.org/bcore`**.
 
 BCore is based on the following ontologies and therefore reuses various classes and properties from them:
 - Building Topology Ontology (BOT): https://w3id.org/bot#
