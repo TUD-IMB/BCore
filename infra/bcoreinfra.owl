@@ -13,7 +13,6 @@
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:schema="https://schema.org/">
     <owl:Ontology rdf:about="https://w3id.org/bcore/infra">
-        <owl:versionIRI rdf:resource="https://w3id.org/bcore/0.1.0"/>
         <dc:abstract xml:lang="en">The Bridge Core Ontology (BCore) enables the represetation of a bridge structure, its components and material, as well as the infrastructure and media files connected to it and the environment and location of the bridge. BCore is created by the Institute of Concrete Structures (IMB) at the Dresden University of Technology (TUD). This ontology contains the corresponding infrastructure extension.</dc:abstract>
         <dc:title xml:lang="en">Bridge Core Ontology for Institute of Concrete Structures, Dresden University of Technology – Infrastructure Extension</dc:title>
         <terms:contributor>Jakob Vogt</terms:contributor>
@@ -29,10 +28,9 @@
         <vann:preferredNamespacePrefix>bcoreinfra</vann:preferredNamespacePrefix>
         <rdfs:label xml:lang="en">Bridge Core Ontology – Infrastructure Extension</rdfs:label>
         <owl:priorVersion>https://w3id.org/bcore/0.0.2</owl:priorVersion>
-        <owl:versionIRI>https://w3id.org/bcore/0.1.0</owl:versionIRI>
         <owl:versionInfo>0.1.0</owl:versionInfo>
-        <schema:codeRepository>https://github.com/TUD-IMB/BCore</schema:codeRepository>
         <foaf:logo>https://raw.githubusercontent.com/TUD-IMB/BCore/main/BCore.svg</foaf:logo>
+        <schema:codeRepository>https://github.com/TUD-IMB/BCore</schema:codeRepository>
     </owl:Ontology>
     
 
@@ -45,12 +43,10 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-
     
 
 
     <!-- http://purl.org/dc/elements/1.1/abstract -->
-
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/abstract"/>
     
@@ -58,13 +54,11 @@
 
     <!-- http://purl.org/dc/elements/1.1/title -->
 
-
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/title"/>
     
 
 
     <!-- http://purl.org/dc/terms/contributor -->
-
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/contributor"/>
     
@@ -72,13 +66,11 @@
 
     <!-- http://purl.org/dc/terms/created -->
 
-
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/created"/>
     
 
 
     <!-- http://purl.org/dc/terms/creator -->
-
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
     
@@ -86,13 +78,11 @@
 
     <!-- http://purl.org/dc/terms/description -->
 
-
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description"/>
     
 
 
     <!-- http://purl.org/dc/terms/license -->
-
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
     
@@ -100,13 +90,11 @@
 
     <!-- http://purl.org/dc/terms/modified -->
 
-
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/modified"/>
     
 
 
     <!-- http://purl.org/ontology/bibo/status -->
-
 
     <owl:AnnotationProperty rdf:about="http://purl.org/ontology/bibo/status"/>
     
@@ -114,13 +102,11 @@
 
     <!-- http://purl.org/vocab/vann/preferredNamespacePrefix -->
 
-
     <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespacePrefix"/>
     
 
 
     <!-- http://www.w3.org/2002/07/owl#versionIRI -->
-
 
     <owl:AnnotationProperty rdf:about="http://www.w3.org/2002/07/owl#versionIRI"/>
     
@@ -128,13 +114,11 @@
 
     <!-- http://xmlns.com/foaf/0.1/logo -->
 
-
     <owl:AnnotationProperty rdf:about="http://xmlns.com/foaf/0.1/logo"/>
     
 
 
     <!-- https://schema.org/codeRepository -->
-
 
     <owl:AnnotationProperty rdf:about="https://schema.org/codeRepository"/>
     
@@ -148,12 +132,10 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-
     
 
 
     <!-- http://www.w3.org/2001/XMLSchema#date -->
-
 
     <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#date"/>
     
@@ -167,12 +149,10 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-
     
 
 
     <!-- https://w3id.org/bcore/infra#FootCycleRouteType -->
-
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/bcore/infra#FootCycleRouteType">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
@@ -219,20 +199,18 @@
 
     <!-- https://w3id.org/bcore/infra#RailwayRouteMaximumVelocity -->
 
-
     <owl:DatatypeProperty rdf:about="https://w3id.org/bcore/infra#RailwayRouteMaximumVelocity">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="https://w3id.org/bcore/infra#RailwayRoute"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+        <rdfs:comment>[km/h]</rdfs:comment>
         <rdfs:comment xml:lang="de">maximal zulässige Geschwindigkeit auf dem Schienenweg</rdfs:comment>
         <rdfs:comment xml:lang="en">maximum permitted speed on the rail line</rdfs:comment>
-        <rdfs:comment>[km/h]</rdfs:comment>
     </owl:DatatypeProperty>
     
 
 
     <!-- https://w3id.org/bcore/infra#RailwayRouteNumberOfTracks -->
-
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/bcore/infra#RailwayRouteNumberOfTracks">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
@@ -245,7 +223,6 @@
 
 
     <!-- https://w3id.org/bcore/infra#RoadRouteClass -->
-
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/bcore/infra#RoadRouteClass">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
@@ -306,7 +283,6 @@
 
     <!-- https://w3id.org/bcore/infra#RoadRouteNumberOfLanes -->
 
-
     <owl:DatatypeProperty rdf:about="https://w3id.org/bcore/infra#RoadRouteNumberOfLanes">
         <rdfs:domain rdf:resource="https://w3id.org/bcore/infra#RoadRoute"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
@@ -324,19 +300,16 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-
     
 
 
     <!-- https://w3id.org/bcore#InfrastructureRoute -->
-
 
     <owl:Class rdf:about="https://w3id.org/bcore#InfrastructureRoute"/>
     
 
 
     <!-- https://w3id.org/bcore/infra#FootCycleRoute -->
-
 
     <owl:Class rdf:about="https://w3id.org/bcore/infra#FootCycleRoute">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bcore#InfrastructureRoute"/>
@@ -348,7 +321,6 @@
 
     <!-- https://w3id.org/bcore/infra#RailwayRoute -->
 
-
     <owl:Class rdf:about="https://w3id.org/bcore/infra#RailwayRoute">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bcore#InfrastructureRoute"/>
         <rdfs:comment xml:lang="de">Schienenweg</rdfs:comment>
@@ -359,7 +331,6 @@
 
     <!-- https://w3id.org/bcore/infra#RoadRoute -->
 
-
     <owl:Class rdf:about="https://w3id.org/bcore/infra#RoadRoute">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bcore#InfrastructureRoute"/>
         <rdfs:comment xml:lang="de">Straße</rdfs:comment>
@@ -369,7 +340,6 @@
 
 
     <!-- https://w3id.org/bcore/infra#WaterWayRoute -->
-
 
     <owl:Class rdf:about="https://w3id.org/bcore/infra#WaterWayRoute">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bcore#InfrastructureRoute"/>
@@ -387,7 +357,6 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-
     <rdf:Description>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">
@@ -401,6 +370,5 @@
 
 
 
-<!-- Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/ -->
-
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
 
