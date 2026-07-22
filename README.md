@@ -25,7 +25,7 @@ The BCore ecosystem consists of several modular ontologies, each addressing a sp
 |--------|------|---------|
 | **[BEDRO](https://w3id.org/bedro)** | `https://w3id.org/bedro` | Bridge Element Design Rule Ontology |
 
-## Agknowledgements
+## Acknowledgements
 
 BCore reuses established concepts from well‑known ontologies to ensure interoperability:
 
