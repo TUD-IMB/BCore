@@ -415,7 +415,7 @@
     "@id" : "https://w3id.org/brcomp#TensionComponent"
   } ]
 }, {
-  "@id" : "https://w3id.org/bcore/comp#afterSpan",
+  "@id" : "https://w3id.org/bcore/comp#followsSpan",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#TransitiveProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "de",
