@@ -304,7 +304,7 @@
     "@id" : "https://w3id.org/bcore/mat#CompositeMaterial"
   } ]
 }, {
-  "@id" : "https://w3id.org/bcore/mat#compositeOf",
+  "@id" : "https://w3id.org/bcore/mat#isCompositeOf",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "de",
