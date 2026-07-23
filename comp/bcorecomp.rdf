@@ -13,7 +13,6 @@
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:schema="https://schema.org/">
     <owl:Ontology rdf:about="https://w3id.org/bcore/comp">
-        <owl:versionIRI rdf:resource="https://w3id.org/bcore/0.1.0"/>
         <dc:abstract xml:lang="en">The Bridge Core Ontology (BCore) enables the represetation of a bridge structure, its components and material, as well as the infrastructure and media files connected to it and the environment and location of the bridge. BCore is created by the Institute of Concrete Structures (IMB) at the Dresden University of Technology (TUD). This ontology contains the corresponding components extension.</dc:abstract>
         <dc:title xml:lang="en">Bridge Core Ontology for Institute of Concrete Structures, Dresden University of Technology – Components Extension</dc:title>
         <terms:contributor>Jakob Vogt</terms:contributor>
@@ -28,8 +27,6 @@
         <bibo:status>Ontology Specification Draft</bibo:status>
         <vann:preferredNamespacePrefix>bcorecomp</vann:preferredNamespacePrefix>
         <rdfs:label xml:lang="en">Bridge Core Ontology – Components Extension</rdfs:label>
-        <owl:priorVersion>https://w3id.org/bcore/0.0.2</owl:priorVersion>
-        <owl:versionIRI>https://w3id.org/bcore/0.1.0</owl:versionIRI>
         <owl:versionInfo>0.1.0</owl:versionInfo>
         <schema:codeRepository>https://github.com/TUD-IMB/BCore</schema:codeRepository>
         <foaf:logo>https://raw.githubusercontent.com/TUD-IMB/BCore/main/BCore.svg</foaf:logo>

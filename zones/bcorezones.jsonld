@@ -88,14 +88,6 @@
     "@language" : "en",
     "@value" : "Bridge Core Ontology – Zones Extension"
   } ],
-  "http://www.w3.org/2002/07/owl#priorVersion" : [ {
-    "@value" : "https://w3id.org/bcore/0.0.2"
-  } ],
-  "http://www.w3.org/2002/07/owl#versionIRI" : [ {
-    "@id" : "https://w3id.org/bcore/0.1.0"
-  }, {
-    "@value" : "https://w3id.org/bcore/0.1.0"
-  } ],
   "http://www.w3.org/2002/07/owl#versionInfo" : [ {
     "@value" : "0.1.0"
   } ],

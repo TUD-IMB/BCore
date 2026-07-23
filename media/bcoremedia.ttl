@@ -7,7 +7,6 @@
 @base <https://w3id.org/bcore/media#> .
 
 <https://w3id.org/bcore/media> rdf:type owl:Ontology ;
-                                owl:versionIRI <https://w3id.org/bcore/0.1.0> ;
                                 <http://purl.org/dc/elements/1.1/abstract> "The Bridge Core Ontology (BCore) enables the represetation of a bridge structure, its components and material, as well as the infrastructure and media files connected to it and the environment and location of the bridge. BCore is created by the Institute of Concrete Structures (IMB) at the Dresden University of Technology (TUD). This ontology contains the corresponding media extension."@en ;
                                 <http://purl.org/dc/elements/1.1/title> "Bridge Core Ontology for Institute of Concrete Structures, Dresden University of Technology – Media Extension"@en ;
                                 <http://purl.org/dc/terms/contributor> "Jakob Vogt" ;
@@ -22,8 +21,6 @@
                                 <http://purl.org/ontology/bibo/status> "Ontology Specification Draft" ;
                                 <http://purl.org/vocab/vann/preferredNamespacePrefix> "bcoremedia" ;
                                 rdfs:label "Bridge Core Ontology – Media Extension"@en ;
-                                owl:priorVersion "https://w3id.org/bcore/0.0.2" ;
-                                owl:versionIRI "https://w3id.org/bcore/0.1.0" ;
                                 owl:versionInfo "0.1.0" ;
                                 <https://schema.org/codeRepository> "https://github.com/TUD-IMB/BCore" .
                                 <http://xmlns.com/foaf/0.1/logo> "https://raw.githubusercontent.com/TUD-IMB/BCore/main/BCore.svg" .

@@ -16,18 +16,6 @@
       "en" : "Bridge Core Ontology – Zones Extension"
     },
     "other" : {
-      "versionIRI" : [ {
-        "identifier" : "versionIRI",
-        "language" : "undefined",
-        "value" : "https://w3id.org/bcore/0.1.0",
-        "type" : "label"
-      } ],
-      "priorVersion" : [ {
-        "identifier" : "priorVersion",
-        "language" : "undefined",
-        "value" : "https://w3id.org/bcore/0.0.2",
-        "type" : "label"
-      } ],
       "creator" : [ {
         "identifier" : "creator",
         "language" : "undefined",

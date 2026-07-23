@@ -1,5 +1,4 @@
 <https://w3id.org/bcore> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
-<https://w3id.org/bcore> <http://www.w3.org/2002/07/owl#versionIRI> <https://w3id.org/bcore/0.1.0> .
 <https://w3id.org/bcore> <http://purl.org/dc/elements/1.1/abstract> "The Bridge Core Ontology (BCore) enables the represetation of a bridge structure, its components and material, as well as the infrastructure and media files connected to it and the environment and location of the bridge. BCore is created by the Institute of Concrete Structures (IMB) at the Dresden University of Technology (TUD)."@en .
 <https://w3id.org/bcore> <http://purl.org/dc/elements/1.1/title> "Bridge Core Ontology for Institute of Concrete Structures, Dresden University of Technology"@en .
 <https://w3id.org/bcore> <http://purl.org/dc/terms/contributor> "Jakob Vogt" .
@@ -14,8 +13,6 @@
 <https://w3id.org/bcore> <http://purl.org/ontology/bibo/status> "Ontology Specification Draft" .
 <https://w3id.org/bcore> <http://purl.org/vocab/vann/preferredNamespacePrefix> "bcore" .
 <https://w3id.org/bcore> <http://www.w3.org/2000/01/rdf-schema#label> "Bridge Core Ontology"@en .
-<https://w3id.org/bcore> <http://www.w3.org/2002/07/owl#priorVersion> "https://w3id.org/bcore/0.0.2" .
-<https://w3id.org/bcore> <http://www.w3.org/2002/07/owl#versionIRI> "https://w3id.org/bcore/0.1.0" .
 <https://w3id.org/bcore> <http://www.w3.org/2002/07/owl#versionInfo> "0.1.0" .
 <https://w3id.org/bcore> <https://schema.org/codeRepository> "https://github.com/TUD-IMB/BCore" .
 <https://w3id.org/bcore> <http://xmlns.com/foaf/0.1/logo> "https://raw.githubusercontent.com/TUD-IMB/BCore/main/BCore.svg" .

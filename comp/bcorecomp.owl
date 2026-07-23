@@ -27,7 +27,6 @@
         <bibo:status>Ontology Specification Draft</bibo:status>
         <vann:preferredNamespacePrefix>bcorecomp</vann:preferredNamespacePrefix>
         <rdfs:label xml:lang="en">Bridge Core Ontology – Components Extension</rdfs:label>
-        <owl:priorVersion>https://w3id.org/bcore/0.0.2</owl:priorVersion>
         <owl:versionInfo>0.1.0</owl:versionInfo>
         <foaf:logo>https://raw.githubusercontent.com/TUD-IMB/BCore/main/BCore.svg</foaf:logo>
         <schema:codeRepository>https://github.com/TUD-IMB/BCore</schema:codeRepository>
