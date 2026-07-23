@@ -37,6 +37,13 @@ BCore reuses established concepts from well‑known ontologies to ensure interop
 
 *Icons used in the BCore logo: [Bridges](https://thenounproject.com/icon/bridges-7745970/), [Girder](https://thenounproject.com/icon/girder-5517023/), [Railway](https://thenounproject.com/icon/railway-8395550/), [Concrete](https://thenounproject.com/icon/concrete-2476665/), [Region](https://thenounproject.com/icon/region-3097495/), [Camera](https://thenounproject.com/icon/camera-1091895/) via [Noun Project](https://thenounproject.com/)*
 
+## License
+
+BCore is licensed under the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/) (**CC BY 4.0**).
+
+You are free to share and adapt the ontology, provided that appropriate credit is given.
+
+
 ## Contact
 
 - **Tim Noack** • [`tim.noack@tu-dresden.de`](tim.noack@tu-dresden.de) • GitHub: [**NoackTim**](https://github.com/NoackTim)

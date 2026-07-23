@@ -13,7 +13,7 @@
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:schema="https://schema.org/">
     <owl:Ontology rdf:about="https://w3id.org/bcore/mat">
-        <dc:abstract xml:lang="en">The Bridge Core Ontology (BCore) enables the represetation of a bridge structure, its components and material, as well as the infrastructure and media files connected to it and the environment and location of the bridge. BCore is created by the Institute of Concrete Structures (IMB) at the Dresden University of Technology (TUD). This ontology contains the corresponding material extension.</dc:abstract>
+        <dc:abstract xml:lang="en">The Bridge Core Ontology (BCore) enables the representation of a bridge structure, its components and material, as well as the infrastructure and media files connected to it and the environment and location of the bridge. BCore is created by the Institute of Concrete Structures (IMB) at the Dresden University of Technology (TUD). This ontology contains the corresponding material extension.</dc:abstract>
         <dc:title xml:lang="en">Bridge Core Ontology for Institute of Concrete Structures, Dresden University of Technology – Material Extension</dc:title>
         <terms:contributor>Jakob Vogt</terms:contributor>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-11-06</terms:created>
