@@ -93,8 +93,8 @@ xsd:date rdf:type rdfs:Datatype .
 #    Object Properties
 #################################################################
 
-###  https://w3id.org/bcore/comp#afterSpan
-:afterSpan rdf:type owl:ObjectProperty ,
+###  https://w3id.org/bcore/comp#followsSpan
+:followsSpan rdf:type owl:ObjectProperty ,
                     owl:TransitiveProperty ;
            rdfs:domain :Span ;
            rdfs:range :Span ;
