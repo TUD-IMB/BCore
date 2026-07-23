@@ -139,7 +139,7 @@ _:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 # 
 # https://w3id.org/bcore#hasPartialStructure
 <https://w3id.org/bcore#hasPartialStructure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://w3id.org/bcore#hasPartialStructure> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/bcore#partialStructureOf> .
+<https://w3id.org/bcore#hasPartialStructure> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/bcore#isPartialStructureOf> .
 <https://w3id.org/bcore#hasPartialStructure> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/brot#Bridge> .
 <https://w3id.org/bcore#hasPartialStructure> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/brot#Bridge> .
 <https://w3id.org/bcore#hasPartialStructure> <http://www.w3.org/2000/01/rdf-schema#comment> "Brücke besitzt Brückenzug"@de .
@@ -147,7 +147,7 @@ _:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 # 
 # https://w3id.org/bcore#includesPoint
 <https://w3id.org/bcore#includesPoint> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://w3id.org/bcore#includesPoint> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/bcore#partOfRoute> .
+<https://w3id.org/bcore#includesPoint> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/bcore#isPartOfRoute> .
 <https://w3id.org/bcore#includesPoint> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/bcore#InfrastructureRoute> .
 <https://w3id.org/bcore#includesPoint> <http://www.w3.org/2000/01/rdf-schema#range> <https://dtc-ontology.cms.ed.tum.de/infraspatialot#Localisation> .
 <https://w3id.org/bcore#includesPoint> <http://www.w3.org/2000/01/rdf-schema#comment> "Trasse enthält Lokalisation (Trassenpunkt)"@de .
@@ -162,20 +162,20 @@ _:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 <https://w3id.org/bcore#liesWithin> <http://www.w3.org/2000/01/rdf-schema#comment> "Zone liegt in Zone"@de .
 <https://w3id.org/bcore#liesWithin> <http://www.w3.org/2000/01/rdf-schema#comment> "zone lies within zone"@en .
 # 
-# https://w3id.org/bcore#locatedAt
-<https://w3id.org/bcore#locatedAt> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://w3id.org/bcore#locatedAt> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
-<https://w3id.org/bcore#locatedAt> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/bot#Zone> .
-<https://w3id.org/bcore#locatedAt> <http://www.w3.org/2000/01/rdf-schema#range> <https://dtc-ontology.cms.ed.tum.de/infraspatialot#Localisation> .
-<https://w3id.org/bcore#locatedAt> <http://www.w3.org/2000/01/rdf-schema#comment> "Zone befindet sich an Lokalisierung (Ort)"@de .
-<https://w3id.org/bcore#locatedAt> <http://www.w3.org/2000/01/rdf-schema#comment> "zone is located at localisation (location)"@en .
+# https://w3id.org/bcore#isLocatedAt
+<https://w3id.org/bcore#isLocatedAt> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/bcore#isLocatedAt> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://w3id.org/bcore#isLocatedAt> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/bot#Zone> .
+<https://w3id.org/bcore#isLocatedAt> <http://www.w3.org/2000/01/rdf-schema#range> <https://dtc-ontology.cms.ed.tum.de/infraspatialot#Localisation> .
+<https://w3id.org/bcore#isLocatedAt> <http://www.w3.org/2000/01/rdf-schema#comment> "Zone befindet sich an Lokalisierung (Ort)"@de .
+<https://w3id.org/bcore#isLocatedAt> <http://www.w3.org/2000/01/rdf-schema#comment> "zone is located at localisation (location)"@en .
 # 
-# https://w3id.org/bcore#locatedInZone
-<https://w3id.org/bcore#locatedInZone> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://w3id.org/bcore#locatedInZone> <http://www.w3.org/2000/01/rdf-schema#domain> <https://dtc-ontology.cms.ed.tum.de/infraspatialot#Point> .
-<https://w3id.org/bcore#locatedInZone> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/bot#Zone> .
-<https://w3id.org/bcore#locatedInZone> <http://www.w3.org/2000/01/rdf-schema#comment> "Lokalisierung (Ort) befindet sich in Zone"@de .
-<https://w3id.org/bcore#locatedInZone> <http://www.w3.org/2000/01/rdf-schema#comment> "localisation (location) is located in zone"@en .
+# https://w3id.org/bcore#isLocatedInZone
+<https://w3id.org/bcore#isLocatedInZone> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/bcore#isLocatedInZone> <http://www.w3.org/2000/01/rdf-schema#domain> <https://dtc-ontology.cms.ed.tum.de/infraspatialot#Point> .
+<https://w3id.org/bcore#isLocatedInZone> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/bot#Zone> .
+<https://w3id.org/bcore#isLocatedInZone> <http://www.w3.org/2000/01/rdf-schema#comment> "Lokalisierung (Ort) befindet sich in Zone"@de .
+<https://w3id.org/bcore#isLocatedInZone> <http://www.w3.org/2000/01/rdf-schema#comment> "localisation (location) is located in zone"@en .
 # 
 # https://w3id.org/bcore#locationAt
 <https://w3id.org/bcore#locationAt> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -183,7 +183,7 @@ _:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 <https://w3id.org/bcore#locationAt> <http://www.w3.org/2000/01/rdf-schema#range> <https://dtc-ontology.cms.ed.tum.de/infraspatialot#Point> .
 <https://w3id.org/bcore#locationAt> <http://www.w3.org/2000/01/rdf-schema#comment> "Punkt der Lokalisierung (Ort)"@de .
 <https://w3id.org/bcore#locationAt> <http://www.w3.org/2000/01/rdf-schema#comment> "point of the line localisation (location)"@en .
-<https://w3id.org/bcore#locationAt> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "https://dtc-ontology.cms.ed.tum.de/infraspatialot#isLocatedAt" .
+<https://w3id.org/bcore#locationAt> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "https://dtc-ontology.cms.ed.tum.de/infraspatialot#isisLocatedAt" .
 # 
 # https://w3id.org/bcore#locationEndsAt
 <https://w3id.org/bcore#locationEndsAt> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -200,46 +200,46 @@ _:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 <https://w3id.org/bcore#locationStartsAt> <http://www.w3.org/2000/01/rdf-schema#comment> "Startpunkt der Linienlokalisierung"@de .
 <https://w3id.org/bcore#locationStartsAt> <http://www.w3.org/2000/01/rdf-schema#comment> "starting point of the line localisation"@en .
 # 
-# https://w3id.org/bcore#madeOfMaterial
-<https://w3id.org/bcore#madeOfMaterial> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://w3id.org/bcore#madeOfMaterial> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/brot#Component> .
-<https://w3id.org/bcore#madeOfMaterial> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/bmat#BuildingMaterial> .
-<https://w3id.org/bcore#madeOfMaterial> <http://www.w3.org/2000/01/rdf-schema#comment> "Bauteil besteht aus Material"@de .
-<https://w3id.org/bcore#madeOfMaterial> <http://www.w3.org/2000/01/rdf-schema#comment> "component consists of material"@en .
+# https://w3id.org/bcore#isMadeOfMaterial
+<https://w3id.org/bcore#isMadeOfMaterial> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/bcore#isMadeOfMaterial> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/brot#Component> .
+<https://w3id.org/bcore#isMadeOfMaterial> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/bmat#BuildingMaterial> .
+<https://w3id.org/bcore#isMadeOfMaterial> <http://www.w3.org/2000/01/rdf-schema#comment> "Bauteil besteht aus Material"@de .
+<https://w3id.org/bcore#isMadeOfMaterial> <http://www.w3.org/2000/01/rdf-schema#comment> "component consists of material"@en .
 # 
-# https://w3id.org/bcore#partOfComponent
-<https://w3id.org/bcore#partOfComponent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://w3id.org/bcore#partOfComponent> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/brot#aggregates> .
-<https://w3id.org/bcore#partOfComponent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#TransitiveProperty> .
-<https://w3id.org/bcore#partOfComponent> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/brot#Component> .
-<https://w3id.org/bcore#partOfComponent> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/brot#Component> .
-<https://w3id.org/bcore#partOfComponent> <http://www.w3.org/2000/01/rdf-schema#comment> "Bauteil ist Teil von Bauteil"@de .
-<https://w3id.org/bcore#partOfComponent> <http://www.w3.org/2000/01/rdf-schema#comment> "component is part of component"@en .
+# https://w3id.org/bcore#isPartOfComponent
+<https://w3id.org/bcore#isPartOfComponent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/bcore#isPartOfComponent> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/brot#aggregates> .
+<https://w3id.org/bcore#isPartOfComponent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#TransitiveProperty> .
+<https://w3id.org/bcore#isPartOfComponent> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/brot#Component> .
+<https://w3id.org/bcore#isPartOfComponent> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/brot#Component> .
+<https://w3id.org/bcore#isPartOfComponent> <http://www.w3.org/2000/01/rdf-schema#comment> "Bauteil ist Teil von Bauteil"@de .
+<https://w3id.org/bcore#isPartOfComponent> <http://www.w3.org/2000/01/rdf-schema#comment> "component is part of component"@en .
 # 
-# https://w3id.org/bcore#partOfRoute
-<https://w3id.org/bcore#partOfRoute> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://w3id.org/bcore#partOfRoute> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
-<https://w3id.org/bcore#partOfRoute> <http://www.w3.org/2000/01/rdf-schema#domain> <https://dtc-ontology.cms.ed.tum.de/infraspatialot#Localisation> .
-<https://w3id.org/bcore#partOfRoute> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/bcore#InfrastructureRoute> .
-<https://w3id.org/bcore#partOfRoute> <http://www.w3.org/2000/01/rdf-schema#comment> "Trassenpunkt ist Teil von Trasse"@de .
-<https://w3id.org/bcore#partOfRoute> <http://www.w3.org/2000/01/rdf-schema#comment> "route point is part of a route"@en .
+# https://w3id.org/bcore#isPartOfRoute
+<https://w3id.org/bcore#isPartOfRoute> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/bcore#isPartOfRoute> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://w3id.org/bcore#isPartOfRoute> <http://www.w3.org/2000/01/rdf-schema#domain> <https://dtc-ontology.cms.ed.tum.de/infraspatialot#Localisation> .
+<https://w3id.org/bcore#isPartOfRoute> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/bcore#InfrastructureRoute> .
+<https://w3id.org/bcore#isPartOfRoute> <http://www.w3.org/2000/01/rdf-schema#comment> "Trassenpunkt ist Teil von Trasse"@de .
+<https://w3id.org/bcore#isPartOfRoute> <http://www.w3.org/2000/01/rdf-schema#comment> "route point is part of a route"@en .
 # 
-# https://w3id.org/bcore#partOfZone
-<https://w3id.org/bcore#partOfZone> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://w3id.org/bcore#partOfZone> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/brot#containsComponent> .
-<https://w3id.org/bcore#partOfZone> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
-<https://w3id.org/bcore#partOfZone> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/brot#Component> .
-<https://w3id.org/bcore#partOfZone> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/brot#SpatialZone> .
-<https://w3id.org/bcore#partOfZone> <http://www.w3.org/2000/01/rdf-schema#comment> "Bauteil ist Teil genau einer Zone (z.B. Brücke)"@de .
-<https://w3id.org/bcore#partOfZone> <http://www.w3.org/2000/01/rdf-schema#comment> "component is part of exactly one zone (e.g., bridge)"@en .
+# https://w3id.org/bcore#isPartOfZone
+<https://w3id.org/bcore#isPartOfZone> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/bcore#isPartOfZone> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/brot#containsComponent> .
+<https://w3id.org/bcore#isPartOfZone> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://w3id.org/bcore#isPartOfZone> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/brot#Component> .
+<https://w3id.org/bcore#isPartOfZone> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/brot#SpatialZone> .
+<https://w3id.org/bcore#isPartOfZone> <http://www.w3.org/2000/01/rdf-schema#comment> "Bauteil ist Teil genau einer Zone (z.B. Brücke)"@de .
+<https://w3id.org/bcore#isPartOfZone> <http://www.w3.org/2000/01/rdf-schema#comment> "component is part of exactly one zone (e.g., bridge)"@en .
 # 
-# https://w3id.org/bcore#partialStructureOf
-<https://w3id.org/bcore#partialStructureOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://w3id.org/bcore#partialStructureOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
-<https://w3id.org/bcore#partialStructureOf> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/brot#Bridge> .
-<https://w3id.org/bcore#partialStructureOf> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/brot#Bridge> .
-<https://w3id.org/bcore#partialStructureOf> <http://www.w3.org/2000/01/rdf-schema#comment> "Brückenzug ist Teil genau einer Brücke"@de .
-<https://w3id.org/bcore#partialStructureOf> <http://www.w3.org/2000/01/rdf-schema#comment> "bridge section is part of exactly one bridge"@en .
+# https://w3id.org/bcore#isPartialStructureOf
+<https://w3id.org/bcore#isPartialStructureOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/bcore#isPartialStructureOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://w3id.org/bcore#isPartialStructureOf> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/brot#Bridge> .
+<https://w3id.org/bcore#isPartialStructureOf> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/brot#Bridge> .
+<https://w3id.org/bcore#isPartialStructureOf> <http://www.w3.org/2000/01/rdf-schema#comment> "Brückenzug ist Teil genau einer Brücke"@de .
+<https://w3id.org/bcore#isPartialStructureOf> <http://www.w3.org/2000/01/rdf-schema#comment> "bridge section is part of exactly one bridge"@en .
 # 
 # https://w3id.org/bcore#traversesBridge
 <https://w3id.org/bcore#traversesBridge> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
