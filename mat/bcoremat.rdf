@@ -151,9 +151,9 @@
     
 
 
-    <!-- https://w3id.org/bcore/mat#compositeOf -->
+    <!-- https://w3id.org/bcore/mat#isCompositeOf -->
 
-    <owl:ObjectProperty rdf:about="https://w3id.org/bcore/mat#compositeOf">
+    <owl:ObjectProperty rdf:about="https://w3id.org/bcore/mat#isCompositeOf">
         <rdfs:domain rdf:resource="https://w3id.org/bcore/mat#CompositeMaterial"/>
         <rdfs:range rdf:resource="https://w3id.org/bmat#BuildingMaterial"/>
         <rdfs:comment xml:lang="de">Verbundmaterial ist Verbund aus anderem Material</rdfs:comment>
