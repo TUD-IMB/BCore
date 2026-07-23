@@ -151,9 +151,9 @@
     
 
 
-    <!-- https://w3id.org/bcore/comp#afterSpan -->
+    <!-- https://w3id.org/bcore/comp#followsSpan -->
 
-    <owl:ObjectProperty rdf:about="https://w3id.org/bcore/comp#afterSpan">
+    <owl:ObjectProperty rdf:about="https://w3id.org/bcore/comp#followsSpan">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
         <rdfs:domain rdf:resource="https://w3id.org/bcore/comp#Span"/>
         <rdfs:range rdf:resource="https://w3id.org/bcore/comp#Span"/>
