@@ -85,13 +85,13 @@
 # #################################################################
 # 
 # 
-# https://w3id.org/bcore/mat#compositeOf
-<https://w3id.org/bcore/mat#compositeOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://w3id.org/bcore/mat#compositeOf> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/bcore/mat#CompositeMaterial> .
-<https://w3id.org/bcore/mat#compositeOf> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/bmat#BuildingMaterial> .
+# https://w3id.org/bcore/mat#isCompositeOf
+<https://w3id.org/bcore/mat#isCompositeOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/bcore/mat#isCompositeOf> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/bcore/mat#CompositeMaterial> .
+<https://w3id.org/bcore/mat#isCompositeOf> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/bmat#BuildingMaterial> .
 <https://w3id.org/bmat#BuildingMaterial> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/bcore/mat#compositeOf> <http://www.w3.org/2000/01/rdf-schema#comment> "Verbundmaterial ist Verbund aus anderem Material"@de .
-<https://w3id.org/bcore/mat#compositeOf> <http://www.w3.org/2000/01/rdf-schema#comment> "composite material is a composite of another material"@en .
+<https://w3id.org/bcore/mat#isCompositeOf> <http://www.w3.org/2000/01/rdf-schema#comment> "Verbundmaterial ist Verbund aus anderem Material"@de .
+<https://w3id.org/bcore/mat#isCompositeOf> <http://www.w3.org/2000/01/rdf-schema#comment> "composite material is a composite of another material"@en .
 # 
 # 
 # 
