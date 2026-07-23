@@ -48,3 +48,5 @@ You are free to share and adapt the ontology, provided that appropriate credit i
 
 - **Tim Noack** • [`tim.noack@tu-dresden.de`](tim.noack@tu-dresden.de) • GitHub: [**NoackTim**](https://github.com/NoackTim)
 - **Johannes Reimer** • [`johannes.reimer@tu-dresden.de`](johannes.reimer@tu-dresden.de) • GitHub: [**JohannesReimer**](https://github.com/JohannesReimer)
+- **Xiaoli Song** • [`xiaoli.song@tu-dresden.de`](xiaoli.song@tu-dresden.de) • GitHub: [**XiaoliSong1126**](https://github.com/XiaoliSong1126)
+- **Morris Florek** • [`morris_benedikt.florek@tu-dresden.de`](morris_benedikt.florek@tu-dresden.de) • GitHub: [**morrisfl**](https://github.com/morrisfl)
