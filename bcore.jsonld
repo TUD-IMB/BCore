@@ -761,7 +761,7 @@
     "@id" : "https://w3id.org/brot#Bridge"
   } ],
   "http://www.w3.org/2002/07/owl#inverseOf" : [ {
-    "@id" : "https://w3id.org/bcore#partialStructureOf"
+    "@id" : "https://w3id.org/bcore#isPartialStructureOf"
   } ]
 }, {
   "@id" : "https://w3id.org/bcore#includesPoint",
@@ -780,7 +780,7 @@
     "@id" : "https://dtc-ontology.cms.ed.tum.de/infraspatialot#Localisation"
   } ],
   "http://www.w3.org/2002/07/owl#inverseOf" : [ {
-    "@id" : "https://w3id.org/bcore#partOfRoute"
+    "@id" : "https://w3id.org/bcore#isPartOfRoute"
   } ]
 }, {
   "@id" : "https://w3id.org/bcore#liesWithin",
@@ -802,7 +802,7 @@
     "@id" : "https://w3id.org/bot#containsZone"
   } ]
 }, {
-  "@id" : "https://w3id.org/bcore#locatedAt",
+  "@id" : "https://w3id.org/bcore#isLocatedAt",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "de",
@@ -818,7 +818,7 @@
     "@id" : "https://dtc-ontology.cms.ed.tum.de/infraspatialot#Localisation"
   } ]
 }, {
-  "@id" : "https://w3id.org/bcore#locatedInZone",
+  "@id" : "https://w3id.org/bcore#isLocatedInZone",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "de",
@@ -850,7 +850,7 @@
     "@id" : "https://dtc-ontology.cms.ed.tum.de/infraspatialot#Point"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
-    "@value" : "https://dtc-ontology.cms.ed.tum.de/infraspatialot#isLocatedAt"
+    "@value" : "https://dtc-ontology.cms.ed.tum.de/infraspatialot#isisLocatedAt"
   } ]
 }, {
   "@id" : "https://w3id.org/bcore#locationEndsAt",
@@ -888,7 +888,7 @@
     "@id" : "https://dtc-ontology.cms.ed.tum.de/infraspatialot#Point"
   } ]
 }, {
-  "@id" : "https://w3id.org/bcore#madeOfMaterial",
+  "@id" : "https://w3id.org/bcore#isMadeOfMaterial",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "de",
@@ -904,7 +904,7 @@
     "@id" : "https://w3id.org/bmat#BuildingMaterial"
   } ]
 }, {
-  "@id" : "https://w3id.org/bcore#partOfComponent",
+  "@id" : "https://w3id.org/bcore#isPartOfComponent",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#TransitiveProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "de",
@@ -923,7 +923,7 @@
     "@id" : "https://w3id.org/brot#aggregates"
   } ]
 }, {
-  "@id" : "https://w3id.org/bcore#partOfRoute",
+  "@id" : "https://w3id.org/bcore#isPartOfRoute",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "de",
@@ -939,7 +939,7 @@
     "@id" : "https://w3id.org/bcore#InfrastructureRoute"
   } ]
 }, {
-  "@id" : "https://w3id.org/bcore#partOfZone",
+  "@id" : "https://w3id.org/bcore#isPartOfZone",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "de",
@@ -958,7 +958,7 @@
     "@id" : "https://w3id.org/brot#containsComponent"
   } ]
 }, {
-  "@id" : "https://w3id.org/bcore#partialStructureOf",
+  "@id" : "https://w3id.org/bcore#isPartialStructureOf",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "de",
