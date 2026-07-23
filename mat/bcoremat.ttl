@@ -93,8 +93,8 @@ xsd:date rdf:type rdfs:Datatype .
 #    Object Properties
 #################################################################
 
-###  https://w3id.org/bcore/mat#compositeOf
-:compositeOf rdf:type owl:ObjectProperty ;
+###  https://w3id.org/bcore/mat#isCompositeOf
+:isCompositeOf rdf:type owl:ObjectProperty ;
              rdfs:domain :CompositeMaterial ;
              rdfs:range <https://w3id.org/bmat#BuildingMaterial> ;
              rdfs:comment "Verbundmaterial ist Verbund aus anderem Material"@de ,
