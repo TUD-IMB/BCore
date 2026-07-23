@@ -85,13 +85,13 @@
 # #################################################################
 # 
 # 
-# https://w3id.org/bcore/comp#afterSpan
-<https://w3id.org/bcore/comp#afterSpan> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://w3id.org/bcore/comp#afterSpan> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#TransitiveProperty> .
-<https://w3id.org/bcore/comp#afterSpan> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/bcore/comp#Span> .
-<https://w3id.org/bcore/comp#afterSpan> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/bcore/comp#Span> .
-<https://w3id.org/bcore/comp#afterSpan> <http://www.w3.org/2000/01/rdf-schema#comment> "Spannweite liegt hinter einer anderen Spannweite (wird genutzt, um Teilspannweiten darzustellen, z. B. bei Einzelspannweiten eines Durchlaufträgers oder Hängerabstände einer Schrägkabelbrücke)"@de .
-<https://w3id.org/bcore/comp#afterSpan> <http://www.w3.org/2000/01/rdf-schema#comment> "span is located behind another span (used to represent partial spans, e.g., individual spans of a continuous girder or suspension spans of a cable-stayed bridge)"@en .
+# https://w3id.org/bcore/comp#followsSpan
+<https://w3id.org/bcore/comp#followsSpan> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/bcore/comp#followsSpan> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#TransitiveProperty> .
+<https://w3id.org/bcore/comp#followsSpan> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/bcore/comp#Span> .
+<https://w3id.org/bcore/comp#followsSpan> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/bcore/comp#Span> .
+<https://w3id.org/bcore/comp#followsSpan> <http://www.w3.org/2000/01/rdf-schema#comment> "Spannweite liegt hinter einer anderen Spannweite (wird genutzt, um Teilspannweiten darzustellen, z. B. bei Einzelspannweiten eines Durchlaufträgers oder Hängerabstände einer Schrägkabelbrücke)"@de .
+<https://w3id.org/bcore/comp#followsSpan> <http://www.w3.org/2000/01/rdf-schema#comment> "span is located behind another span (used to represent partial spans, e.g., individual spans of a continuous girder or suspension spans of a cable-stayed bridge)"@en .
 # 
 # https://w3id.org/bcore/comp#beginsAtLocation
 <https://w3id.org/bcore/comp#beginsAtLocation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
