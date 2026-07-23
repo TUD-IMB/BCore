@@ -964,11 +964,11 @@
     "attributes" : [ "object", "external", "transitive" ],
     "id" : "9"
   }, {
-    "iri" : "https://w3id.org/bcore#locatedInZone",
+    "iri" : "https://w3id.org/bcore#isLocatedInZone",
     "baseIri" : "https://w3id.org/bcore",
     "range" : "8",
     "label" : {
-      "IRI-based" : "locatedInZone"
+      "IRI-based" : "isLocatedInZone"
     },
     "domain" : "11",
     "comment" : {
@@ -1081,12 +1081,12 @@
     "attributes" : [ "object" ],
     "id" : "37"
   }, {
-    "iri" : "https://w3id.org/bcore#partOfComponent",
+    "iri" : "https://w3id.org/bcore#isPartOfComponent",
     "inverse" : "9",
     "baseIri" : "https://w3id.org/bcore",
     "range" : "6",
     "label" : {
-      "IRI-based" : "partOfComponent"
+      "IRI-based" : "isPartOfComponent"
     },
     "domain" : "6",
     "comment" : {
@@ -1225,11 +1225,11 @@
     "attributes" : [ "datatype" ],
     "id" : "64"
   }, {
-    "iri" : "https://w3id.org/bcore#locatedAt",
+    "iri" : "https://w3id.org/bcore#isLocatedAt",
     "baseIri" : "https://w3id.org/bcore",
     "range" : "20",
     "label" : {
-      "IRI-based" : "locatedAt"
+      "IRI-based" : "isLocatedAt"
     },
     "domain" : "8",
     "comment" : {
@@ -1258,11 +1258,11 @@
     "attributes" : [ "functional", "datatype" ],
     "id" : "67"
   }, {
-    "iri" : "https://w3id.org/bcore#partialStructureOf",
+    "iri" : "https://w3id.org/bcore#isPartialStructureOf",
     "baseIri" : "https://w3id.org/bcore",
     "range" : "4",
     "label" : {
-      "IRI-based" : "partialStructureOf"
+      "IRI-based" : "isPartialStructureOf"
     },
     "domain" : "4",
     "comment" : {
@@ -1471,12 +1471,12 @@
     "attributes" : [ "functional", "datatype" ],
     "id" : "89"
   }, {
-    "iri" : "https://w3id.org/bcore#partOfZone",
+    "iri" : "https://w3id.org/bcore#isPartOfZone",
     "inverse" : "63",
     "baseIri" : "https://w3id.org/bcore",
     "range" : "1",
     "label" : {
-      "IRI-based" : "partOfZone"
+      "IRI-based" : "isPartOfZone"
     },
     "domain" : "6",
     "comment" : {
@@ -1549,7 +1549,7 @@
       "seeAlso" : [ {
         "identifier" : "seeAlso",
         "language" : "undefined",
-        "value" : "https://dtc-ontology.cms.ed.tum.de/infraspatialot#isLocatedAt",
+        "value" : "https://dtc-ontology.cms.ed.tum.de/infraspatialot#isisLocatedAt",
         "type" : "label"
       } ]
     },
@@ -1738,11 +1738,11 @@
     "attributes" : [ "functional", "datatype", "external" ],
     "id" : "111"
   }, {
-    "iri" : "https://w3id.org/bcore#partOfRoute",
+    "iri" : "https://w3id.org/bcore#isPartOfRoute",
     "baseIri" : "https://w3id.org/bcore",
     "range" : "17",
     "label" : {
-      "IRI-based" : "partOfRoute"
+      "IRI-based" : "isPartOfRoute"
     },
     "domain" : "20",
     "comment" : {
@@ -1810,11 +1810,11 @@
     "attributes" : [ "functional", "datatype" ],
     "id" : "115"
   }, {
-    "iri" : "https://w3id.org/bcore#madeOfMaterial",
+    "iri" : "https://w3id.org/bcore#isMadeOfMaterial",
     "baseIri" : "https://w3id.org/bcore",
     "range" : "96",
     "label" : {
-      "IRI-based" : "madeOfMaterial"
+      "IRI-based" : "isMadeOfMaterial"
     },
     "domain" : "6",
     "comment" : {
