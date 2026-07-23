@@ -1530,11 +1530,11 @@
     "attributes" : [ "object", "anonymous" ],
     "id" : "122"
   }, {
-    "iri" : "https://w3id.org/bcore/comp#afterSpan",
+    "iri" : "https://w3id.org/bcore/comp#followsSpan",
     "baseIri" : "https://w3id.org/bcore/comp",
     "range" : "6",
     "label" : {
-      "IRI-based" : "afterSpan"
+      "IRI-based" : "followsSpan"
     },
     "domain" : "6",
     "comment" : {
