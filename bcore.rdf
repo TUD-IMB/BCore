@@ -9,6 +9,7 @@
      xmlns:bibo="http://purl.org/ontology/bibo/"
      xmlns:foaf="http://xmlns.com/foaf/0.1/"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+
      xmlns:vann="http://purl.org/vocab/vann/"
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:schema="https://schema.org/">
@@ -229,7 +230,7 @@
     <!-- https://w3id.org/bcore#hasPartialStructure -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/bcore#hasPartialStructure">
-        <owl:inverseOf rdf:resource="https://w3id.org/bcore#partialStructureOf"/>
+        <owl:inverseOf rdf:resource="https://w3id.org/bcore#isPartialStructureOf"/>
         <rdfs:domain rdf:resource="https://w3id.org/brot#Bridge"/>
         <rdfs:range rdf:resource="https://w3id.org/brot#Bridge"/>
         <rdfs:comment xml:lang="de">Brücke besitzt Brückenzug</rdfs:comment>
@@ -241,7 +242,7 @@
     <!-- https://w3id.org/bcore#includesPoint -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/bcore#includesPoint">
-        <owl:inverseOf rdf:resource="https://w3id.org/bcore#partOfRoute"/>
+        <owl:inverseOf rdf:resource="https://w3id.org/bcore#isPartOfRoute"/>
         <rdfs:domain rdf:resource="https://w3id.org/bcore#InfrastructureRoute"/>
         <rdfs:range rdf:resource="https://dtc-ontology.cms.ed.tum.de/infraspatialot#Localisation"/>
         <rdfs:comment xml:lang="de">Trasse enthält Lokalisation (Trassenpunkt)</rdfs:comment>
@@ -263,9 +264,9 @@
     
 
 
-    <!-- https://w3id.org/bcore#locatedAt -->
+    <!-- https://w3id.org/bcore#isLocatedAt -->
 
-    <owl:ObjectProperty rdf:about="https://w3id.org/bcore#locatedAt">
+    <owl:ObjectProperty rdf:about="https://w3id.org/bcore#isLocatedAt">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="https://w3id.org/bot#Zone"/>
         <rdfs:range rdf:resource="https://dtc-ontology.cms.ed.tum.de/infraspatialot#Localisation"/>
@@ -275,9 +276,9 @@
     
 
 
-    <!-- https://w3id.org/bcore#locatedInZone -->
+    <!-- https://w3id.org/bcore#isLocatedInZone -->
 
-    <owl:ObjectProperty rdf:about="https://w3id.org/bcore#locatedInZone">
+    <owl:ObjectProperty rdf:about="https://w3id.org/bcore#isLocatedInZone">
         <rdfs:domain rdf:resource="https://dtc-ontology.cms.ed.tum.de/infraspatialot#Point"/>
         <rdfs:range rdf:resource="https://w3id.org/bot#Zone"/>
         <rdfs:comment xml:lang="de">Lokalisierung (Ort) befindet sich in Zone</rdfs:comment>
@@ -293,7 +294,7 @@
         <rdfs:range rdf:resource="https://dtc-ontology.cms.ed.tum.de/infraspatialot#Point"/>
         <rdfs:comment xml:lang="de">Punkt der Lokalisierung (Ort)</rdfs:comment>
         <rdfs:comment xml:lang="en">point of the line localisation (location)</rdfs:comment>
-        <rdfs:seeAlso>https://dtc-ontology.cms.ed.tum.de/infraspatialot#isLocatedAt</rdfs:seeAlso>
+        <rdfs:seeAlso>https://dtc-ontology.cms.ed.tum.de/infraspatialot#isisLocatedAt</rdfs:seeAlso>
     </owl:ObjectProperty>
     
 
@@ -321,9 +322,9 @@
     
 
 
-    <!-- https://w3id.org/bcore#madeOfMaterial -->
+    <!-- https://w3id.org/bcore#isMadeOfMaterial -->
 
-    <owl:ObjectProperty rdf:about="https://w3id.org/bcore#madeOfMaterial">
+    <owl:ObjectProperty rdf:about="https://w3id.org/bcore#isMadeOfMaterial">
         <rdfs:domain rdf:resource="https://w3id.org/brot#Component"/>
         <rdfs:range rdf:resource="https://w3id.org/bmat#BuildingMaterial"/>
         <rdfs:comment xml:lang="de">Bauteil besteht aus Material</rdfs:comment>
@@ -332,9 +333,9 @@
     
 
 
-    <!-- https://w3id.org/bcore#partOfComponent -->
+    <!-- https://w3id.org/bcore#isPartOfComponent -->
 
-    <owl:ObjectProperty rdf:about="https://w3id.org/bcore#partOfComponent">
+    <owl:ObjectProperty rdf:about="https://w3id.org/bcore#isPartOfComponent">
         <owl:inverseOf rdf:resource="https://w3id.org/brot#aggregates"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
         <rdfs:domain rdf:resource="https://w3id.org/brot#Component"/>
@@ -345,9 +346,9 @@
     
 
 
-    <!-- https://w3id.org/bcore#partOfRoute -->
+    <!-- https://w3id.org/bcore#isPartOfRoute -->
 
-    <owl:ObjectProperty rdf:about="https://w3id.org/bcore#partOfRoute">
+    <owl:ObjectProperty rdf:about="https://w3id.org/bcore#isPartOfRoute">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="https://dtc-ontology.cms.ed.tum.de/infraspatialot#Localisation"/>
         <rdfs:range rdf:resource="https://w3id.org/bcore#InfrastructureRoute"/>
@@ -357,9 +358,9 @@
     
 
 
-    <!-- https://w3id.org/bcore#partOfZone -->
+    <!-- https://w3id.org/bcore#isPartOfZone -->
 
-    <owl:ObjectProperty rdf:about="https://w3id.org/bcore#partOfZone">
+    <owl:ObjectProperty rdf:about="https://w3id.org/bcore#isPartOfZone">
         <owl:inverseOf rdf:resource="https://w3id.org/brot#containsComponent"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="https://w3id.org/brot#Component"/>
@@ -370,9 +371,9 @@
     
 
 
-    <!-- https://w3id.org/bcore#partialStructureOf -->
+    <!-- https://w3id.org/bcore#isPartialStructureOf -->
 
-    <owl:ObjectProperty rdf:about="https://w3id.org/bcore#partialStructureOf">
+    <owl:ObjectProperty rdf:about="https://w3id.org/bcore#isPartialStructureOf">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="https://w3id.org/brot#Bridge"/>
         <rdfs:range rdf:resource="https://w3id.org/brot#Bridge"/>
