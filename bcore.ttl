@@ -149,7 +149,7 @@ xsd:date rdf:type rdfs:Datatype .
 
 ###  https://w3id.org/bcore#hasPartialStructure
 :hasPartialStructure rdf:type owl:ObjectProperty ;
-                     owl:inverseOf :partialStructureOf ;
+                     owl:inverseOf :isPartialStructureOf ;
                      rdfs:domain <https://w3id.org/brot#Bridge> ;
                      rdfs:range <https://w3id.org/brot#Bridge> ;
                      rdfs:comment "Brücke besitzt Brückenzug"@de ,
@@ -158,7 +158,7 @@ xsd:date rdf:type rdfs:Datatype .
 
 ###  https://w3id.org/bcore#includesPoint
 :includesPoint rdf:type owl:ObjectProperty ;
-               owl:inverseOf :partOfRoute ;
+               owl:inverseOf :isPartOfRoute ;
                rdfs:domain :InfrastructureRoute ;
                rdfs:range <https://dtc-ontology.cms.ed.tum.de/infraspatialot#Localisation> ;
                rdfs:comment "Trasse enthält Lokalisation (Trassenpunkt)"@de ,
@@ -175,8 +175,8 @@ xsd:date rdf:type rdfs:Datatype .
                          "zone lies within zone"@en .
 
 
-###  https://w3id.org/bcore#locatedAt
-:locatedAt rdf:type owl:ObjectProperty ,
+###  https://w3id.org/bcore#isLocatedAt
+:isLocatedAt rdf:type owl:ObjectProperty ,
                     owl:FunctionalProperty ;
            rdfs:domain <https://w3id.org/bot#Zone> ;
            rdfs:range <https://dtc-ontology.cms.ed.tum.de/infraspatialot#Localisation> ;
@@ -184,8 +184,8 @@ xsd:date rdf:type rdfs:Datatype .
                         "zone is located at localisation (location)"@en .
 
 
-###  https://w3id.org/bcore#locatedInZone
-:locatedInZone rdf:type owl:ObjectProperty ;
+###  https://w3id.org/bcore#isLocatedInZone
+:isLocatedInZone rdf:type owl:ObjectProperty ;
                rdfs:domain <https://dtc-ontology.cms.ed.tum.de/infraspatialot#Point> ;
                rdfs:range <https://w3id.org/bot#Zone> ;
                rdfs:comment "Lokalisierung (Ort) befindet sich in Zone"@de ,
@@ -198,7 +198,7 @@ xsd:date rdf:type rdfs:Datatype .
             rdfs:range <https://dtc-ontology.cms.ed.tum.de/infraspatialot#Point> ;
             rdfs:comment "Punkt der Lokalisierung (Ort)"@de ,
                          "point of the line localisation (location)"@en ;
-            rdfs:seeAlso "https://dtc-ontology.cms.ed.tum.de/infraspatialot#isLocatedAt" .
+            rdfs:seeAlso "https://dtc-ontology.cms.ed.tum.de/infraspatialot#isisLocatedAt" .
 
 
 ###  https://w3id.org/bcore#locationEndsAt
@@ -218,16 +218,16 @@ xsd:date rdf:type rdfs:Datatype .
                                "starting point of the line localisation"@en .
 
 
-###  https://w3id.org/bcore#madeOfMaterial
-:madeOfMaterial rdf:type owl:ObjectProperty ;
+###  https://w3id.org/bcore#isMadeOfMaterial
+:isMadeOfMaterial rdf:type owl:ObjectProperty ;
                 rdfs:domain <https://w3id.org/brot#Component> ;
                 rdfs:range <https://w3id.org/bmat#BuildingMaterial> ;
                 rdfs:comment "Bauteil besteht aus Material"@de ,
                              "component consists of material"@en .
 
 
-###  https://w3id.org/bcore#partOfComponent
-:partOfComponent rdf:type owl:ObjectProperty ;
+###  https://w3id.org/bcore#isPartOfComponent
+:isPartOfComponent rdf:type owl:ObjectProperty ;
                  owl:inverseOf <https://w3id.org/brot#aggregates> ;
                  rdf:type owl:TransitiveProperty ;
                  rdfs:domain <https://w3id.org/brot#Component> ;
@@ -236,8 +236,8 @@ xsd:date rdf:type rdfs:Datatype .
                               "component is part of component"@en .
 
 
-###  https://w3id.org/bcore#partOfRoute
-:partOfRoute rdf:type owl:ObjectProperty ,
+###  https://w3id.org/bcore#isPartOfRoute
+:isPartOfRoute rdf:type owl:ObjectProperty ,
                       owl:FunctionalProperty ;
              rdfs:domain <https://dtc-ontology.cms.ed.tum.de/infraspatialot#Localisation> ;
              rdfs:range :InfrastructureRoute ;
@@ -245,8 +245,8 @@ xsd:date rdf:type rdfs:Datatype .
                           "route point is part of a route"@en .
 
 
-###  https://w3id.org/bcore#partOfZone
-:partOfZone rdf:type owl:ObjectProperty ;
+###  https://w3id.org/bcore#isPartOfZone
+:isPartOfZone rdf:type owl:ObjectProperty ;
             owl:inverseOf <https://w3id.org/brot#containsComponent> ;
             rdf:type owl:FunctionalProperty ;
             rdfs:domain <https://w3id.org/brot#Component> ;
@@ -255,8 +255,8 @@ xsd:date rdf:type rdfs:Datatype .
                          "component is part of exactly one zone (e.g., bridge)"@en .
 
 
-###  https://w3id.org/bcore#partialStructureOf
-:partialStructureOf rdf:type owl:ObjectProperty ,
+###  https://w3id.org/bcore#isPartialStructureOf
+:isPartialStructureOf rdf:type owl:ObjectProperty ,
                              owl:FunctionalProperty ;
                     rdfs:domain <https://w3id.org/brot#Bridge> ;
                     rdfs:range <https://w3id.org/brot#Bridge> ;
