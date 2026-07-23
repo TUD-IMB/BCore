@@ -585,11 +585,11 @@
     "attributes" : [ "object", "anonymous" ],
     "id" : "37"
   }, {
-    "iri" : "https://w3id.org/bcore/mat#compositeOf",
+    "iri" : "https://w3id.org/bcore/mat#isCompositeOf",
     "baseIri" : "https://w3id.org/bcore/mat",
     "range" : "8",
     "label" : {
-      "IRI-based" : "compositeOf"
+      "IRI-based" : "isCompositeOf"
     },
     "domain" : "11",
     "comment" : {
