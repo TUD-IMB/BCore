@@ -1,0 +1,367 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns:bcoreinfra="https://w3id.org/bcore/infra/"
+     xml:base="https://w3id.org/bcore/infra/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:bibo="http://purl.org/ontology/bibo/"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:schema="https://schema.org/">
+    <owl:Ontology rdf:about="https://w3id.org/bcore/infra">
+        <dc:abstract xml:lang="en">The Bridge Core Ontology (BCore) enables the representation of a bridge structure, its components and material, as well as the infrastructure and media files connected to it and the environment and location of the bridge. BCore is created by the Institute of Concrete Structures (IMB) at the Dresden University of Technology (TUD). This ontology contains the corresponding infrastructure extension.</dc:abstract>
+        <dc:title xml:lang="en">Bridge Core Ontology for Institute of Concrete Structures, Dresden University of Technology – Infrastructure Extension</dc:title>
+        <terms:contributor>Jakob Vogt</terms:contributor>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-11-06</terms:created>
+        <terms:creator>Johannes Reimer</terms:creator>
+        <terms:creator>Morris Florek</terms:creator>
+        <terms:creator>Tim Noack</terms:creator>
+        <terms:creator>Xiaoli Song</terms:creator>
+        <terms:description xml:lang="en">Extension ontology for the representation of bridge-related infrastructure. Designed to work in conjunction with the BCore ontology but to also allow for external use.</terms:description>
+        <terms:license>https://creativecommons.org/licenses/by/4.0/deed.en</terms:license>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-07-21</terms:modified>
+        <bibo:status>Ontology Specification Draft</bibo:status>
+        <vann:preferredNamespacePrefix>bcoreinfra</vann:preferredNamespacePrefix>
+        <rdfs:label xml:lang="en">Bridge Core Ontology – Infrastructure Extension</rdfs:label>
+        <owl:versionInfo>0.1.0</owl:versionInfo>
+        <schema:codeRepository>https://github.com/TUD-IMB/BCore</schema:codeRepository>
+        <foaf:logo>https://raw.githubusercontent.com/TUD-IMB/BCore/main/BCore.svg</foaf:logo>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/abstract -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/abstract"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/title -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/title"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/contributor -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/contributor"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/created -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/created"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/creator -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/description -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/license -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/modified -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/modified"/>
+    
+
+
+    <!-- http://purl.org/ontology/bibo/status -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/ontology/bibo/status"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespacePrefix -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespacePrefix"/>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#versionIRI -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2002/07/owl#versionIRI"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/logo -->
+
+    <owl:AnnotationProperty rdf:about="http://xmlns.com/foaf/0.1/logo"/>
+    
+
+
+    <!-- https://schema.org/codeRepository -->
+
+    <owl:AnnotationProperty rdf:about="https://schema.org/codeRepository"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#date -->
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#date"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://w3id.org/bcore/infra#FootCycleRouteType -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/bcore/infra#FootCycleRouteType">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/bcore/infra#FootCycleRoute"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:oneOf>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                        <rdf:first>bike only</rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                <rdf:first>foot only</rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                        <rdf:first>segregated</rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first>shared-use</rdf:first>
+                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </owl:oneOf>
+            </rdfs:Datatype>
+        </rdfs:range>
+        <rdfs:comment xml:lang="de">Art des Fuß- und/oder Radweges</rdfs:comment>
+        <rdfs:comment xml:lang="en">Possible values:
+- foot only
+- bike only
+- segregated
+- shared-use</rdfs:comment>
+        <rdfs:comment xml:lang="en">type of pedestrian and/or bike path</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/bcore/infra#RailwayRouteMaximumVelocity -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/bcore/infra#RailwayRouteMaximumVelocity">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/bcore/infra#RailwayRoute"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+        <rdfs:comment>[km/h]</rdfs:comment>
+        <rdfs:comment xml:lang="de">maximal zulässige Geschwindigkeit auf dem Schienenweg</rdfs:comment>
+        <rdfs:comment xml:lang="en">maximum permitted speed on the rail line</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/bcore/infra#RailwayRouteNumberOfTracks -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/bcore/infra#RailwayRouteNumberOfTracks">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/bcore/infra#RailwayRoute"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:comment xml:lang="de">Anzahl der Gleise des Schienenweges</rdfs:comment>
+        <rdfs:comment xml:lang="en">number of tracks on the railroad</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/bcore/infra#RoadRouteClass -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/bcore/infra#RoadRouteClass">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/bcore/infra#RoadRoute"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:oneOf>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                        <rdf:first>country road</rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                <rdf:first>district road</rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                        <rdf:first>federal road</rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first>highway</rdf:first>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first>non-public road</rdf:first>
+                                                        <rdf:rest>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                <rdf:first>urban road</rdf:first>
+                                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                            </rdf:Description>
+                                                        </rdf:rest>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </owl:oneOf>
+            </rdfs:Datatype>
+        </rdfs:range>
+        <rdfs:comment xml:lang="de">Straßenklasse</rdfs:comment>
+        <rdfs:comment xml:lang="en">possible values:
+- highway
+- federal road
+- country road
+- district road
+- urban road
+- non-public road</rdfs:comment>
+        <rdfs:comment xml:lang="en">road classification</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/bcore/infra#RoadRouteNumberOfLanes -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/bcore/infra#RoadRouteNumberOfLanes">
+        <rdfs:domain rdf:resource="https://w3id.org/bcore/infra#RoadRoute"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:comment xml:lang="de">Anzahl der Fahrstreifen der Straße (Gesamtzahl beider Richtungsfahrbahnen)</rdfs:comment>
+        <rdfs:comment xml:lang="en">number of lanes on the road (total number of lanes in both directions)</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://w3id.org/bcore/infra#FootCycleRoute -->
+
+    <owl:Class rdf:about="https://w3id.org/bcore/infra#FootCycleRoute">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bcore#InfrastructureRoute"/>
+        <rdfs:comment xml:lang="de">Geh- und/oder Radweg</rdfs:comment>
+        <rdfs:comment xml:lang="en">footpath and/or bike path</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/bcore/infra#RailwayRoute -->
+
+    <owl:Class rdf:about="https://w3id.org/bcore/infra#RailwayRoute">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bcore#InfrastructureRoute"/>
+        <rdfs:comment xml:lang="de">Schienenweg</rdfs:comment>
+        <rdfs:comment xml:lang="en">railway</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/bcore/infra#RoadRoute -->
+
+    <owl:Class rdf:about="https://w3id.org/bcore/infra#RoadRoute">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bcore#InfrastructureRoute"/>
+        <rdfs:comment xml:lang="de">Straße</rdfs:comment>
+        <rdfs:comment xml:lang="en">road/street</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/bcore/infra#WaterWayRoute -->
+
+    <owl:Class rdf:about="https://w3id.org/bcore/infra#WaterWayRoute">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bcore#InfrastructureRoute"/>
+        <rdfs:comment xml:lang="de">Wasserstraße</rdfs:comment>
+        <rdfs:comment xml:lang="en">water way</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://w3id.org/bcore/infra#FootCycleRoute"/>
+            <rdf:Description rdf:about="https://w3id.org/bcore/infra#RailwayRoute"/>
+            <rdf:Description rdf:about="https://w3id.org/bcore/infra#RoadRoute"/>
+            <rdf:Description rdf:about="https://w3id.org/bcore/infra#WaterWayRoute"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+

@@ -1,0 +1,426 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns:bcoremat="https://w3id.org/bcore/mat#"
+     xml:base="https://w3id.org/bcore/mat"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:bibo="http://purl.org/ontology/bibo/"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:schema="https://schema.org/">
+    <owl:Ontology rdf:about="https://w3id.org/bcore/mat">
+        <dc:abstract xml:lang="en">The Bridge Core Ontology (BCore) enables the representation of a bridge structure, its components and material, as well as the infrastructure and media files connected to it and the environment and location of the bridge. BCore is created by the Institute of Concrete Structures (IMB) at the Dresden University of Technology (TUD). This ontology contains the corresponding material extension.</dc:abstract>
+        <dc:title xml:lang="en">Bridge Core Ontology for Institute of Concrete Structures, Dresden University of Technology – Material Extension</dc:title>
+        <terms:contributor>Jakob Vogt</terms:contributor>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-11-06</terms:created>
+        <terms:creator>Johannes Reimer</terms:creator>
+        <terms:creator>Morris Florek</terms:creator>
+        <terms:creator>Tim Noack</terms:creator>
+        <terms:creator>Xiaoli Song</terms:creator>
+        <terms:description xml:lang="en">Extension ontology for the representation of bridge building materials. Designed to work in conjunction with the BCore ontology but to also allow for external use.</terms:description>
+        <terms:license>https://creativecommons.org/licenses/by/4.0/deed.en</terms:license>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-07-21</terms:modified>
+        <bibo:status>Ontology Specification Draft</bibo:status>
+        <vann:preferredNamespacePrefix>bcoremat</vann:preferredNamespacePrefix>
+        <rdfs:label xml:lang="en">Bridge Core Ontology – Material Extension</rdfs:label>
+        <owl:versionInfo>0.1.0</owl:versionInfo>
+        <foaf:logo>https://raw.githubusercontent.com/TUD-IMB/BCore/main/BCore.svg</foaf:logo>
+        <schema:codeRepository>https://github.com/TUD-IMB/BCore</schema:codeRepository>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/abstract -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/abstract"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/title -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/title"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/contributor -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/contributor"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/created -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/created"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/creator -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/description -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/license -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/modified -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/modified"/>
+    
+
+
+    <!-- http://purl.org/ontology/bibo/status -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/ontology/bibo/status"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespacePrefix -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespacePrefix"/>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#versionIRI -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2002/07/owl#versionIRI"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/logo -->
+
+    <owl:AnnotationProperty rdf:about="http://xmlns.com/foaf/0.1/logo"/>
+    
+
+
+    <!-- https://schema.org/codeRepository -->
+
+    <owl:AnnotationProperty rdf:about="https://schema.org/codeRepository"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#date -->
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#date"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://w3id.org/bcore/mat#isCompositeOf -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/bcore/mat#isCompositeOf">
+        <rdfs:domain rdf:resource="https://w3id.org/bcore/mat#CompositeMaterial"/>
+        <rdfs:range rdf:resource="https://w3id.org/bmat#BuildingMaterial"/>
+        <rdfs:comment xml:lang="de">Verbundmaterial ist Verbund aus anderem Material</rdfs:comment>
+        <rdfs:comment xml:lang="en">composite material is a composite of another material</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://w3id.org/bcore/mat#Ductility -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/bcore/mat#Ductility">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/bcore/mat#Steel"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="de">Duktilität</rdfs:comment>
+        <rdfs:comment xml:lang="en">ductility</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/bcore/mat#Ec -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/bcore/mat#Ec">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/bmat#Concrete"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+        <rdfs:comment xml:lang="de">Elastizitätsmodul des Betons</rdfs:comment>
+        <rdfs:comment>[N/m²]</rdfs:comment>
+        <rdfs:comment xml:lang="en">modulus of elasticity (Young&apos;s modulus) of the concrete</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/bcore/mat#Ep -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/bcore/mat#Ep">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/bcore/mat#PrestressingSteel"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+        <rdfs:comment xml:lang="de">Elastizitätsmodul des Spannstahls</rdfs:comment>
+        <rdfs:comment>[N/m²]</rdfs:comment>
+        <rdfs:comment xml:lang="en">modulus of elasticity (Young&apos;s modulus) of the prestressing steel</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/bcore/mat#ExpositionClass -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/bcore/mat#ExpositionClass">
+        <rdfs:domain rdf:resource="https://w3id.org/bmat#Concrete"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="de">Expositionsklasse (z. B. nach Eurocode 2-1-1)</rdfs:comment>
+        <rdfs:comment xml:lang="en">exposure class (e.g., according to Eurocode 2-1-1)</rdfs:comment>
+        <rdfs:seeAlso>https://w3id.org/bmat#expositionClassConcrete</rdfs:seeAlso>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/bcore/mat#Ey -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/bcore/mat#Ey">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/bcore/mat#ConstructionSteel"/>
+        <rdfs:domain rdf:resource="https://w3id.org/bmat#ReinforcementSteel"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+        <rdfs:comment xml:lang="de">Elastizitätsmodul des Stahls</rdfs:comment>
+        <rdfs:comment>[N/m²]</rdfs:comment>
+        <rdfs:comment xml:lang="en">modulus of elasticity (Young&apos;s modulus) of the steel</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/bcore/mat#fck -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/bcore/mat#fck">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/bmat#Concrete"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+        <rdfs:comment>[N/m²]</rdfs:comment>
+        <rdfs:comment xml:lang="en">characteristic compressive strength of the concrete</rdfs:comment>
+        <rdfs:comment xml:lang="de">charakteristische Druckfestigkeit des Betons</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/bcore/mat#fpk -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/bcore/mat#fpk">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/bcore/mat#PrestressingSteel"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+        <rdfs:comment>[N/m²]</rdfs:comment>
+        <rdfs:comment xml:lang="en">characteristic tensile strength of the prestressing steel</rdfs:comment>
+        <rdfs:comment xml:lang="de">charakteristische Zugfestigkeit des Spannstahls</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/bcore/mat#fyk -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/bcore/mat#fyk">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/bcore/mat#ConstructionSteel"/>
+        <rdfs:domain rdf:resource="https://w3id.org/bmat#ReinforcementSteel"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+        <rdfs:comment>[N/m²]</rdfs:comment>
+        <rdfs:comment xml:lang="en">characteristic tensile strength of the steel</rdfs:comment>
+        <rdfs:comment xml:lang="de">charakteristische Zugfestigkeit des Stahls</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://w3id.org/bcore/mat#CompositeMaterial -->
+
+    <owl:Class rdf:about="https://w3id.org/bcore/mat#CompositeMaterial">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bmat#BuildingMaterial"/>
+        <rdfs:comment xml:lang="de">Verbundmaterial</rdfs:comment>
+        <rdfs:comment xml:lang="en">composite material</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/bcore/mat#ConstructionSteel -->
+
+    <owl:Class rdf:about="https://w3id.org/bcore/mat#ConstructionSteel">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bcore/mat#Steel"/>
+        <rdfs:comment xml:lang="de">Baustahl</rdfs:comment>
+        <rdfs:comment xml:lang="en">construction steel</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/bcore/mat#Metal -->
+
+    <owl:Class rdf:about="https://w3id.org/bcore/mat#Metal">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bmat#BuildingMaterial"/>
+        <rdfs:comment xml:lang="de">Metall</rdfs:comment>
+        <rdfs:comment xml:lang="en">metal</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/bcore/mat#PrestressedConcrete -->
+
+    <owl:Class rdf:about="https://w3id.org/bcore/mat#PrestressedConcrete">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bcore/mat#CompositeMaterial"/>
+        <rdfs:comment xml:lang="de">Spannbeton</rdfs:comment>
+        <rdfs:comment xml:lang="en">prestressed concrete</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/bcore/mat#PrestressingSteel -->
+
+    <owl:Class rdf:about="https://w3id.org/bcore/mat#PrestressingSteel">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bcore/mat#Steel"/>
+        <rdfs:comment xml:lang="de">Spannstahl</rdfs:comment>
+        <rdfs:comment xml:lang="en">prestressing steel</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/bcore/mat#Steel -->
+
+    <owl:Class rdf:about="https://w3id.org/bcore/mat#Steel">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bcore/mat#Metal"/>
+        <rdfs:comment xml:lang="de">Stahl</rdfs:comment>
+        <rdfs:comment xml:lang="en">steel</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/bcore/mat#SteelConcreteComposite -->
+
+    <owl:Class rdf:about="https://w3id.org/bcore/mat#SteelConcreteComposite">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bcore/mat#CompositeMaterial"/>
+        <rdfs:comment xml:lang="de">Stahl-Beton-Verbund</rdfs:comment>
+        <rdfs:comment xml:lang="en">steel-concrete composite</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/bmat#BuildingMaterial -->
+
+    <owl:Class rdf:about="https://w3id.org/bmat#BuildingMaterial"/>
+    
+
+
+    <!-- https://w3id.org/bmat#Concrete -->
+
+    <owl:Class rdf:about="https://w3id.org/bmat#Concrete">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bmat#BuildingMaterial"/>
+        <rdfs:comment xml:lang="de">Beton</rdfs:comment>
+        <rdfs:comment xml:lang="en">concrete</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/bmat#ReinforcedConcrete -->
+
+    <owl:Class rdf:about="https://w3id.org/bmat#ReinforcedConcrete">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bcore/mat#CompositeMaterial"/>
+        <rdfs:comment xml:lang="de">Stahlbeton</rdfs:comment>
+        <rdfs:comment xml:lang="en">reinforced concrete</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/bmat#ReinforcementSteel -->
+
+    <owl:Class rdf:about="https://w3id.org/bmat#ReinforcementSteel">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bcore/mat#Steel"/>
+        <rdfs:comment xml:lang="de">Betonstahl</rdfs:comment>
+        <rdfs:comment xml:lang="en">reinforcement (mild) steel</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://w3id.org/bcore/mat#CompositeMaterial"/>
+            <rdf:Description rdf:about="https://w3id.org/bcore/mat#Metal"/>
+            <rdf:Description rdf:about="https://w3id.org/bmat#Concrete"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://w3id.org/bcore/mat#PrestressedConcrete"/>
+            <rdf:Description rdf:about="https://w3id.org/bcore/mat#SteelConcreteComposite"/>
+            <rdf:Description rdf:about="https://w3id.org/bmat#ReinforcedConcrete"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
