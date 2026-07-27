@@ -262,6 +262,7 @@ xsd:date rdf:type rdfs:Datatype .
 :Span rdf:type owl:Class ;
       rdfs:comment "Spannweite"@de ,
                    "span"@en .
+      schema:image "https://raw.githubusercontent.com/TUD-IMB/BCore/refs/heads/main/comp/BCore_Spans.svg" .
 
 
 ###  https://w3id.org/bcore/comp#TBeam
