@@ -394,6 +394,7 @@
     <owl:Class rdf:about="https://w3id.org/bcore/comp#Span">
         <rdfs:comment xml:lang="de">Spannweite</rdfs:comment>
         <rdfs:comment xml:lang="en">span</rdfs:comment>
+        <schema:image>https://raw.githubusercontent.com/TUD-IMB/BCore/refs/heads/main/comp/BCore_Spans.svg</schema:image>
     </owl:Class>
     
 
