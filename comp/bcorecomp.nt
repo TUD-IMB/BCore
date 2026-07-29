@@ -13,9 +13,9 @@
 <https://w3id.org/bcore/comp> <http://purl.org/ontology/bibo/status> "Ontology Specification Draft" .
 <https://w3id.org/bcore/comp> <http://purl.org/vocab/vann/preferredNamespacePrefix> "bcorecomp" .
 <https://w3id.org/bcore/comp> <http://www.w3.org/2000/01/rdf-schema#label> "Bridge Core Ontology – Components Extension"@en .
-<https://w3id.org/bcore/comp> <http://www.w3.org/2002/07/owl#versionInfo> "0.1.0" .
-<https://w3id.org/bcore/comp> <https://schema.org/codeRepository> "https://github.com/TUD-IMB/BCore" .
+<https://w3id.org/bcore/comp> <http://www.w3.org/2002/07/owl#versionInfo> "0.1.1" .
 <https://w3id.org/bcore/comp> <http://xmlns.com/foaf/0.1/logo> "https://raw.githubusercontent.com/TUD-IMB/BCore/main/BCore.svg" .
+<https://w3id.org/bcore/comp> <https://schema.org/codeRepository> "https://github.com/TUD-IMB/BCore" .
 # 
 # 
 # #################################################################
@@ -64,6 +64,12 @@
 # https://schema.org/codeRepository
 <https://schema.org/codeRepository> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
+# https://schema.org/image
+<https://schema.org/image> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# https://schema.org/unitText
+<https://schema.org/unitText> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
 # 
 # 
 # #################################################################
@@ -85,23 +91,15 @@
 # #################################################################
 # 
 # 
-# https://w3id.org/bcore/comp#followsSpan
-<https://w3id.org/bcore/comp#followsSpan> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://w3id.org/bcore/comp#followsSpan> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#TransitiveProperty> .
-<https://w3id.org/bcore/comp#followsSpan> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/bcore/comp#Span> .
-<https://w3id.org/bcore/comp#followsSpan> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/bcore/comp#Span> .
-<https://w3id.org/bcore/comp#followsSpan> <http://www.w3.org/2000/01/rdf-schema#comment> "Spannweite liegt hinter einer anderen Spannweite (wird genutzt, um Teilspannweiten darzustellen, z. B. bei Einzelspannweiten eines Durchlaufträgers oder Hängerabstände einer Schrägkabelbrücke)"@de .
-<https://w3id.org/bcore/comp#followsSpan> <http://www.w3.org/2000/01/rdf-schema#comment> "span is located behind another span (used to represent partial spans, e.g., individual spans of a continuous girder or suspension spans of a cable-stayed bridge)"@en .
-# 
 # https://w3id.org/bcore/comp#beginsAtLocation
 <https://w3id.org/bcore/comp#beginsAtLocation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://w3id.org/bcore/comp#beginsAtLocation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
 <https://w3id.org/bcore/comp#beginsAtLocation> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/bcore/comp#Span> .
 <https://w3id.org/bcore/comp#beginsAtLocation> <http://www.w3.org/2000/01/rdf-schema#range> <https://dtc-ontology.cms.ed.tum.de/infraspatialot#Localisation> .
-<https://dtc-ontology.cms.ed.tum.de/infraspatialot#Localisation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/bcore/comp#beginsAtLocation> <http://www.w3.org/2002/07/owl#propertyDisjointWith> <https://w3id.org/bcore/comp#endsAtLocation> .
 <https://w3id.org/bcore/comp#beginsAtLocation> <http://www.w3.org/2000/01/rdf-schema#comment> "Spannweite beginnt an einer Lokalisation (Punkt)"@de .
 <https://w3id.org/bcore/comp#beginsAtLocation> <http://www.w3.org/2000/01/rdf-schema#comment> "span begins at localision (location point)"@en .
+<https://w3id.org/bcore/comp#beginsAtLocation> <http://www.w3.org/2000/01/rdf-schema#label> "begins at location"@en .
 # 
 # https://w3id.org/bcore/comp#beginsAtSupport
 <https://w3id.org/bcore/comp#beginsAtSupport> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -110,6 +108,7 @@
 <https://w3id.org/bcore/comp#beginsAtSupport> <http://www.w3.org/2002/07/owl#propertyDisjointWith> <https://w3id.org/bcore/comp#endsAtSupport> .
 <https://w3id.org/bcore/comp#beginsAtSupport> <http://www.w3.org/2000/01/rdf-schema#comment> "Spannweite beginnt an einem Bauteil des Brückenunterbaus"@de .
 <https://w3id.org/bcore/comp#beginsAtSupport> <http://www.w3.org/2000/01/rdf-schema#comment> "span begins at a component of the bridge substructure"@en .
+<https://w3id.org/bcore/comp#beginsAtSupport> <http://www.w3.org/2000/01/rdf-schema#label> "begins at support"@en .
 # 
 # https://w3id.org/bcore/comp#endsAtLocation
 <https://w3id.org/bcore/comp#endsAtLocation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -118,6 +117,7 @@
 <https://w3id.org/bcore/comp#endsAtLocation> <http://www.w3.org/2000/01/rdf-schema#range> <https://dtc-ontology.cms.ed.tum.de/infraspatialot#Localisation> .
 <https://w3id.org/bcore/comp#endsAtLocation> <http://www.w3.org/2000/01/rdf-schema#comment> "Spannweite endet an einer Lokalisation (Punkt)"@de .
 <https://w3id.org/bcore/comp#endsAtLocation> <http://www.w3.org/2000/01/rdf-schema#comment> "span ends at localision (location point)"@en .
+<https://w3id.org/bcore/comp#endsAtLocation> <http://www.w3.org/2000/01/rdf-schema#label> "ends at location"@en .
 # 
 # https://w3id.org/bcore/comp#endsAtSupport
 <https://w3id.org/bcore/comp#endsAtSupport> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -125,15 +125,25 @@
 <https://w3id.org/bcore/comp#endsAtSupport> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/brcomp#SubStructureComponent> .
 <https://w3id.org/bcore/comp#endsAtSupport> <http://www.w3.org/2000/01/rdf-schema#comment> "Spannweite endet an einem Bauteil des Brückenunterbaus"@de .
 <https://w3id.org/bcore/comp#endsAtSupport> <http://www.w3.org/2000/01/rdf-schema#comment> "span ends at a component of the bridge substructure"@en .
+<https://w3id.org/bcore/comp#endsAtSupport> <http://www.w3.org/2000/01/rdf-schema#label> "ends at support"@en .
+# 
+# https://w3id.org/bcore/comp#followsSpan
+<https://w3id.org/bcore/comp#followsSpan> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/bcore/comp#followsSpan> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#TransitiveProperty> .
+<https://w3id.org/bcore/comp#followsSpan> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/bcore/comp#Span> .
+<https://w3id.org/bcore/comp#followsSpan> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/bcore/comp#Span> .
+<https://w3id.org/bcore/comp#followsSpan> <http://www.w3.org/2000/01/rdf-schema#comment> "Spannweite liegt hinter einer anderen Spannweite (wird genutzt, um Teilspannweiten darzustellen, z. B. bei Einzelspannweiten eines Durchlaufträgers oder Hängerabstände einer Schrägkabelbrücke)"@de .
+<https://w3id.org/bcore/comp#followsSpan> <http://www.w3.org/2000/01/rdf-schema#comment> "span is located behind another span (used to represent partial spans, e.g., individual spans of a continuous girder or suspension spans of a cable-stayed bridge)"@en .
+<https://w3id.org/bcore/comp#followsSpan> <http://www.w3.org/2000/01/rdf-schema#label> "follows span"@en .
 # 
 # https://w3id.org/bcore/comp#hasMainSpan
 <https://w3id.org/bcore/comp#hasMainSpan> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://w3id.org/bcore/comp#hasMainSpan> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
 <https://w3id.org/bcore/comp#hasMainSpan> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/brot#Bridge> .
-<https://w3id.org/brot#Bridge> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/bcore/comp#hasMainSpan> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/bcore/comp#Span> .
 <https://w3id.org/bcore/comp#hasMainSpan> <http://www.w3.org/2000/01/rdf-schema#comment> "Brücke hat eine Hauptspannweite"@de .
 <https://w3id.org/bcore/comp#hasMainSpan> <http://www.w3.org/2000/01/rdf-schema#comment> "bridge has main span"@en .
+<https://w3id.org/bcore/comp#hasMainSpan> <http://www.w3.org/2000/01/rdf-schema#label> "has main span"@en .
 # 
 # https://w3id.org/bcore/comp#hasSpan
 <https://w3id.org/bcore/comp#hasSpan> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -141,6 +151,16 @@
 <https://w3id.org/bcore/comp#hasSpan> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/bcore/comp#Span> .
 <https://w3id.org/bcore/comp#hasSpan> <http://www.w3.org/2000/01/rdf-schema#comment> "Bauteil hat eine Spannweite"@de .
 <https://w3id.org/bcore/comp#hasSpan> <http://www.w3.org/2000/01/rdf-schema#comment> "component has span"@en .
+<https://w3id.org/bcore/comp#hasSpan> <http://www.w3.org/2000/01/rdf-schema#label> "has span"@en .
+# 
+# https://w3id.org/bcore/comp#isSpanOf
+<https://w3id.org/bcore/comp#isSpanOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/bcore/comp#isSpanOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://w3id.org/bcore/comp#isSpanOf> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/bcore/comp#Span> .
+<https://w3id.org/bcore/comp#isSpanOf> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/brot#Bridge> .
+<https://w3id.org/bcore/comp#isSpanOf> <http://www.w3.org/2000/01/rdf-schema#comment> "ist Feld von genau einer Brücke"@de .
+<https://w3id.org/bcore/comp#isSpanOf> <http://www.w3.org/2000/01/rdf-schema#comment> "the span belongs to just one bridge"@en .
+<https://w3id.org/bcore/comp#isSpanOf> <http://www.w3.org/2000/01/rdf-schema#label> "is span of"@en .
 # 
 # 
 # 
@@ -157,6 +177,7 @@
 <https://w3id.org/bcore/comp#ArchShape> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
 <https://w3id.org/bcore/comp#ArchShape> <http://www.w3.org/2000/01/rdf-schema#comment> "Form des Bogens"@de .
 <https://w3id.org/bcore/comp#ArchShape> <http://www.w3.org/2000/01/rdf-schema#comment> "shape of the arch"@en .
+<https://w3id.org/bcore/comp#ArchShape> <http://www.w3.org/2000/01/rdf-schema#label> "arch shape"@en .
 # 
 # https://w3id.org/bcore/comp#GirderShape
 <https://w3id.org/bcore/comp#GirderShape> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
@@ -164,6 +185,7 @@
 <https://w3id.org/bcore/comp#GirderShape> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
 <https://w3id.org/bcore/comp#GirderShape> <http://www.w3.org/2000/01/rdf-schema#comment> "Form des Trägers"@de .
 <https://w3id.org/bcore/comp#GirderShape> <http://www.w3.org/2000/01/rdf-schema#comment> "shape of the girder"@en .
+<https://w3id.org/bcore/comp#GirderShape> <http://www.w3.org/2000/01/rdf-schema#label> "girder shape"@en .
 # 
 # https://w3id.org/bcore/comp#PierShape
 <https://w3id.org/bcore/comp#PierShape> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
@@ -171,6 +193,7 @@
 <https://w3id.org/bcore/comp#PierShape> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
 <https://w3id.org/bcore/comp#PierShape> <http://www.w3.org/2000/01/rdf-schema#comment> "Form des Pfeilers"@de .
 <https://w3id.org/bcore/comp#PierShape> <http://www.w3.org/2000/01/rdf-schema#comment> "shape of the pier"@en .
+<https://w3id.org/bcore/comp#PierShape> <http://www.w3.org/2000/01/rdf-schema#label> "pier shape"@en .
 # 
 # https://w3id.org/bcore/comp#PylonShape
 <https://w3id.org/bcore/comp#PylonShape> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
@@ -178,6 +201,17 @@
 <https://w3id.org/bcore/comp#PylonShape> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
 <https://w3id.org/bcore/comp#PylonShape> <http://www.w3.org/2000/01/rdf-schema#comment> "Form des Pylons"@de .
 <https://w3id.org/bcore/comp#PylonShape> <http://www.w3.org/2000/01/rdf-schema#comment> "shape of the pylon"@en .
+<https://w3id.org/bcore/comp#PylonShape> <http://www.w3.org/2000/01/rdf-schema#label> "pylon shape"@en .
+# 
+# https://w3id.org/bcore/comp#SpanLength
+<https://w3id.org/bcore/comp#SpanLength> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/bcore/comp#SpanLength> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://w3id.org/bcore/comp#SpanLength> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/bcore/comp#Span> .
+<https://w3id.org/bcore/comp#SpanLength> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#decimal> .
+<https://w3id.org/bcore/comp#SpanLength> <http://www.w3.org/2000/01/rdf-schema#comment> "Spannweite"@de .
+<https://w3id.org/bcore/comp#SpanLength> <http://www.w3.org/2000/01/rdf-schema#comment> "length of bridge span"@en .
+<https://w3id.org/bcore/comp#SpanLength> <http://www.w3.org/2000/01/rdf-schema#label> "span length"@en .
+<https://w3id.org/bcore/comp#SpanLength> <https://schema.org/unitText> "m" .
 # 
 # 
 # 
@@ -189,105 +223,123 @@
 # 
 # 
 # https://dtc-ontology.cms.ed.tum.de/infraspatialot#Localisation
+<https://dtc-ontology.cms.ed.tum.de/infraspatialot#Localisation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 # 
 # https://w3id.org/bcore/comp#Abutment
 <https://w3id.org/bcore/comp#Abutment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/bcore/comp#Abutment> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/brcomp#SubStructureComponent> .
 <https://w3id.org/bcore/comp#Abutment> <http://www.w3.org/2000/01/rdf-schema#comment> "Widerlager"@de .
-<https://w3id.org/bcore/comp#Abutment> <http://www.w3.org/2000/01/rdf-schema#comment> "abutment"@en .
+<https://w3id.org/bcore/comp#Abutment> <http://www.w3.org/2000/01/rdf-schema#comment> "bridge abutment"@en .
+<https://w3id.org/bcore/comp#Abutment> <http://www.w3.org/2000/01/rdf-schema#label> "abutment"@en .
 # 
 # https://w3id.org/bcore/comp#BoxGirder
 <https://w3id.org/bcore/comp#BoxGirder> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/bcore/comp#BoxGirder> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/brcomp#GirderMainGirder> .
 <https://w3id.org/bcore/comp#BoxGirder> <http://www.w3.org/2000/01/rdf-schema#comment> "Hohlkastenträger"@de .
-<https://w3id.org/bcore/comp#BoxGirder> <http://www.w3.org/2000/01/rdf-schema#comment> "box girder"@en .
+<https://w3id.org/bcore/comp#BoxGirder> <http://www.w3.org/2000/01/rdf-schema#comment> "box girder/ hollow beam"@en .
+<https://w3id.org/bcore/comp#BoxGirder> <http://www.w3.org/2000/01/rdf-schema#label> "box girder"@en .
 # 
 # https://w3id.org/bcore/comp#EquipmentComponent
 <https://w3id.org/bcore/comp#EquipmentComponent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/bcore/comp#EquipmentComponent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/brot#Component> .
-<https://w3id.org/brot#Component> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/bcore/comp#EquipmentComponent> <http://www.w3.org/2002/07/owl#disjointWith> <https://w3id.org/brcomp#SubStructureComponent> .
 <https://w3id.org/bcore/comp#EquipmentComponent> <http://www.w3.org/2002/07/owl#disjointWith> <https://w3id.org/brcomp#SuperStructureComponent> .
 <https://w3id.org/bcore/comp#EquipmentComponent> <http://www.w3.org/2000/01/rdf-schema#comment> "Bauteil der Brückenausstattung"@de .
 <https://w3id.org/bcore/comp#EquipmentComponent> <http://www.w3.org/2000/01/rdf-schema#comment> "component of bridge equipment"@en .
+<https://w3id.org/bcore/comp#EquipmentComponent> <http://www.w3.org/2000/01/rdf-schema#label> "equipment component"@en .
 <https://w3id.org/bcore/comp#EquipmentComponent> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "https://w3id.org/brcomp/#FinishingComponent" .
 # 
 # https://w3id.org/bcore/comp#IBeam
 <https://w3id.org/bcore/comp#IBeam> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/bcore/comp#IBeam> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/brcomp#GirderMainGirder> .
 <https://w3id.org/bcore/comp#IBeam> <http://www.w3.org/2000/01/rdf-schema#comment> "I-Träger"@de .
-<https://w3id.org/bcore/comp#IBeam> <http://www.w3.org/2000/01/rdf-schema#comment> "I-beam"@en .
+<https://w3id.org/bcore/comp#IBeam> <http://www.w3.org/2000/01/rdf-schema#comment> "I-shaped girder"@en .
+<https://w3id.org/bcore/comp#IBeam> <http://www.w3.org/2000/01/rdf-schema#label> "I-beam"@en .
 # 
 # https://w3id.org/bcore/comp#PierUnit
 <https://w3id.org/bcore/comp#PierUnit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/bcore/comp#PierUnit> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/brcomp#SubStructureComponent> .
 <https://w3id.org/bcore/comp#PierUnit> <http://www.w3.org/2000/01/rdf-schema#comment> "Pfeilereinheit/-gruppe"@de .
 <https://w3id.org/bcore/comp#PierUnit> <http://www.w3.org/2000/01/rdf-schema#comment> "pier unit/group"@en .
+<https://w3id.org/bcore/comp#PierUnit> <http://www.w3.org/2000/01/rdf-schema#label> "pier unit"@en .
 # 
 # https://w3id.org/bcore/comp#PlateGirder
 <https://w3id.org/bcore/comp#PlateGirder> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/bcore/comp#PlateGirder> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/brcomp#GirderMainGirder> .
 <https://w3id.org/bcore/comp#PlateGirder> <http://www.w3.org/2000/01/rdf-schema#comment> "Vollwandträger (z. B. aus Stahl)"@de .
 <https://w3id.org/bcore/comp#PlateGirder> <http://www.w3.org/2000/01/rdf-schema#comment> "plate girder (solid-web; e.g., made of steel)"@en .
+<https://w3id.org/bcore/comp#PlateGirder> <http://www.w3.org/2000/01/rdf-schema#label> "plate girder"@en .
 # 
 # https://w3id.org/bcore/comp#Rope
 <https://w3id.org/bcore/comp#Rope> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/bcore/comp#Rope> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/brcomp#TensionComponent> .
 <https://w3id.org/bcore/comp#Rope> <http://www.w3.org/2000/01/rdf-schema#comment> "Seil"@de .
-<https://w3id.org/bcore/comp#Rope> <http://www.w3.org/2000/01/rdf-schema#comment> "rope"@en .
+<https://w3id.org/bcore/comp#Rope> <http://www.w3.org/2000/01/rdf-schema#comment> "suspension rope"@en .
+<https://w3id.org/bcore/comp#Rope> <http://www.w3.org/2000/01/rdf-schema#label> "rope"@en .
 # 
 # https://w3id.org/bcore/comp#Slab
 <https://w3id.org/bcore/comp#Slab> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/bcore/comp#Slab> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/brcomp#GirderMainGirder> .
 <https://w3id.org/bcore/comp#Slab> <http://www.w3.org/2000/01/rdf-schema#comment> "Platte"@de .
-<https://w3id.org/bcore/comp#Slab> <http://www.w3.org/2000/01/rdf-schema#comment> "slab"@en .
+<https://w3id.org/bcore/comp#Slab> <http://www.w3.org/2000/01/rdf-schema#comment> "bridge slab"@en .
+<https://w3id.org/bcore/comp#Slab> <http://www.w3.org/2000/01/rdf-schema#label> "slab"@en .
 # 
 # https://w3id.org/bcore/comp#Span
 <https://w3id.org/bcore/comp#Span> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/bcore/comp#Span> <http://www.w3.org/2000/01/rdf-schema#comment> "Spannweite"@de .
-<https://w3id.org/bcore/comp#Span> <http://www.w3.org/2000/01/rdf-schema#comment> "span"@en .
+<https://w3id.org/bcore/comp#Span> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
+<https://w3id.org/bcore/comp#Span> <http://www.w3.org/2000/01/rdf-schema#comment> "Brückenfeld"@de .
+<https://w3id.org/bcore/comp#Span> <http://www.w3.org/2000/01/rdf-schema#comment> "bridge span"@en .
+<https://w3id.org/bcore/comp#Span> <http://www.w3.org/2000/01/rdf-schema#label> "span"@en .
+<https://w3id.org/bcore/comp#Span> <https://schema.org/image> "https://raw.githubusercontent.com/TUD-IMB/BCore/refs/heads/main/comp/BCore_Spans.svg" .
 # 
 # https://w3id.org/bcore/comp#TBeam
 <https://w3id.org/bcore/comp#TBeam> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/bcore/comp#TBeam> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/brcomp#GirderMainGirder> .
 <https://w3id.org/bcore/comp#TBeam> <http://www.w3.org/2000/01/rdf-schema#comment> "Plattenbalken (Beton)"@de .
-<https://w3id.org/bcore/comp#TBeam> <http://www.w3.org/2000/01/rdf-schema#comment> "T-beam"@en .
+<https://w3id.org/bcore/comp#TBeam> <http://www.w3.org/2000/01/rdf-schema#comment> "T-shaped girder"@en .
+<https://w3id.org/bcore/comp#TBeam> <http://www.w3.org/2000/01/rdf-schema#label> "T-beam"@en .
 # 
 # https://w3id.org/bcore/comp#Tendon
 <https://w3id.org/bcore/comp#Tendon> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/bcore/comp#Tendon> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/brcomp#TensionComponent> .
 <https://w3id.org/bcore/comp#Tendon> <http://www.w3.org/2000/01/rdf-schema#comment> "Spannglied"@de .
-<https://w3id.org/bcore/comp#Tendon> <http://www.w3.org/2000/01/rdf-schema#comment> "tendon"@en .
+<https://w3id.org/bcore/comp#Tendon> <http://www.w3.org/2000/01/rdf-schema#comment> "tendon for prestressed concrete"@en .
+<https://w3id.org/bcore/comp#Tendon> <http://www.w3.org/2000/01/rdf-schema#label> "tendon"@en .
 # 
 # https://w3id.org/bcore/comp#TrussGirder
 <https://w3id.org/bcore/comp#TrussGirder> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/bcore/comp#TrussGirder> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/brcomp#GirderMainGirder> .
 <https://w3id.org/bcore/comp#TrussGirder> <http://www.w3.org/2000/01/rdf-schema#comment> "Fachwerkträger"@de .
-<https://w3id.org/bcore/comp#TrussGirder> <http://www.w3.org/2000/01/rdf-schema#comment> "truss girder"@en .
+<https://w3id.org/bcore/comp#TrussGirder> <http://www.w3.org/2000/01/rdf-schema#comment> "longitudinal truss"@en .
+<https://w3id.org/bcore/comp#TrussGirder> <http://www.w3.org/2000/01/rdf-schema#label> "truss girder"@en .
 # 
 # https://w3id.org/bcore/comp#Wire
 <https://w3id.org/bcore/comp#Wire> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/bcore/comp#Wire> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/brcomp#TensionComponent> .
 <https://w3id.org/bcore/comp#Wire> <http://www.w3.org/2000/01/rdf-schema#comment> "Draht"@de .
-<https://w3id.org/bcore/comp#Wire> <http://www.w3.org/2000/01/rdf-schema#comment> "wire"@en .
+<https://w3id.org/bcore/comp#Wire> <http://www.w3.org/2000/01/rdf-schema#comment> "tension wire"@en .
+<https://w3id.org/bcore/comp#Wire> <http://www.w3.org/2000/01/rdf-schema#label> "wire"@en .
 # 
 # https://w3id.org/brcomp#AbutmentBenching
 <https://w3id.org/brcomp#AbutmentBenching> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/brcomp#AbutmentBenching> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/brcomp#AbutmentComponent> .
 <https://w3id.org/brcomp#AbutmentBenching> <http://www.w3.org/2000/01/rdf-schema#comment> "Auflagerbank"@de .
 <https://w3id.org/brcomp#AbutmentBenching> <http://www.w3.org/2000/01/rdf-schema#comment> "abutment front wall (benching, breast wall, stem)"@en .
+<https://w3id.org/brcomp#AbutmentBenching> <http://www.w3.org/2000/01/rdf-schema#label> "abutment benching"@en .
 # 
 # https://w3id.org/brcomp#AbutmentChamberWall
 <https://w3id.org/brcomp#AbutmentChamberWall> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/brcomp#AbutmentChamberWall> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/brcomp#AbutmentComponent> .
 <https://w3id.org/brcomp#AbutmentChamberWall> <http://www.w3.org/2000/01/rdf-schema#comment> "Widerlagerwand"@de .
 <https://w3id.org/brcomp#AbutmentChamberWall> <http://www.w3.org/2000/01/rdf-schema#comment> "abutment wall (breast wall, stem)"@en .
+<https://w3id.org/brcomp#AbutmentChamberWall> <http://www.w3.org/2000/01/rdf-schema#label> "abutment chamber wall"@en .
 # 
 # https://w3id.org/brcomp#AbutmentComponent
 <https://w3id.org/brcomp#AbutmentComponent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/brcomp#AbutmentComponent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/brcomp#SubStructureComponent> .
 <https://w3id.org/brcomp#AbutmentComponent> <http://www.w3.org/2000/01/rdf-schema#comment> "Bauteil des Widerlagers"@de .
 <https://w3id.org/brcomp#AbutmentComponent> <http://www.w3.org/2000/01/rdf-schema#comment> "component of the abutment"@en .
+<https://w3id.org/brcomp#AbutmentComponent> <http://www.w3.org/2000/01/rdf-schema#label> "abutment component"@en .
 # 
 # https://w3id.org/brcomp#AbutmentFooting
 <https://w3id.org/brcomp#AbutmentFooting> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -295,109 +347,128 @@
 <https://w3id.org/brcomp#AbutmentFooting> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/brcomp#Foundation> .
 <https://w3id.org/brcomp#AbutmentFooting> <http://www.w3.org/2000/01/rdf-schema#comment> "Fundament des Widerlagers"@de .
 <https://w3id.org/brcomp#AbutmentFooting> <http://www.w3.org/2000/01/rdf-schema#comment> "abutment foundation"@en .
+<https://w3id.org/brcomp#AbutmentFooting> <http://www.w3.org/2000/01/rdf-schema#label> "abutment footing"@en .
 # 
 # https://w3id.org/brcomp#AbutmentWingWall
 <https://w3id.org/brcomp#AbutmentWingWall> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/brcomp#AbutmentWingWall> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/brcomp#AbutmentComponent> .
 <https://w3id.org/brcomp#AbutmentWingWall> <http://www.w3.org/2000/01/rdf-schema#comment> "Flügelwand des Widerlagers"@de .
-<https://w3id.org/brcomp#AbutmentWingWall> <http://www.w3.org/2000/01/rdf-schema#comment> "abutment wing wall"@en .
+<https://w3id.org/brcomp#AbutmentWingWall> <http://www.w3.org/2000/01/rdf-schema#comment> "wing wall of abutment"@en .
+<https://w3id.org/brcomp#AbutmentWingWall> <http://www.w3.org/2000/01/rdf-schema#label> "abutment wing wall"@en .
 # 
 # https://w3id.org/brcomp#Arch
 <https://w3id.org/brcomp#Arch> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/brcomp#Arch> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/brcomp#SubStructureComponent> .
 <https://w3id.org/brcomp#Arch> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/brcomp#SuperStructureComponent> .
 <https://w3id.org/brcomp#Arch> <http://www.w3.org/2000/01/rdf-schema#comment> "Bogen"@de .
-<https://w3id.org/brcomp#Arch> <http://www.w3.org/2000/01/rdf-schema#comment> "arch"@en .
+<https://w3id.org/brcomp#Arch> <http://www.w3.org/2000/01/rdf-schema#comment> "bridge arch"@en .
+<https://w3id.org/brcomp#Arch> <http://www.w3.org/2000/01/rdf-schema#label> "arch"@en .
 # 
 # https://w3id.org/brcomp#Bearing
 <https://w3id.org/brcomp#Bearing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/brcomp#Bearing> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/brcomp#SubStructureComponent> .
 <https://w3id.org/brcomp#Bearing> <http://www.w3.org/2000/01/rdf-schema#comment> "Lager"@de .
-<https://w3id.org/brcomp#Bearing> <http://www.w3.org/2000/01/rdf-schema#comment> "bearing"@en .
+<https://w3id.org/brcomp#Bearing> <http://www.w3.org/2000/01/rdf-schema#comment> "bearing/ support"@en .
+<https://w3id.org/brcomp#Bearing> <http://www.w3.org/2000/01/rdf-schema#label> "bearing"@en .
 # 
 # https://w3id.org/brcomp#Cable
 <https://w3id.org/brcomp#Cable> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/brcomp#Cable> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/brcomp#TensionComponent> .
 <https://w3id.org/brcomp#Cable> <http://www.w3.org/2000/01/rdf-schema#comment> "Kabel"@de .
-<https://w3id.org/brcomp#Cable> <http://www.w3.org/2000/01/rdf-schema#comment> "cable"@en .
+<https://w3id.org/brcomp#Cable> <http://www.w3.org/2000/01/rdf-schema#comment> "suspension cable"@en .
+<https://w3id.org/brcomp#Cable> <http://www.w3.org/2000/01/rdf-schema#label> "cable"@en .
 # 
 # https://w3id.org/brcomp#Foundation
 <https://w3id.org/brcomp#Foundation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/brcomp#Foundation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/brcomp#SubStructureComponent> .
 <https://w3id.org/brcomp#Foundation> <http://www.w3.org/2000/01/rdf-schema#comment> "Gründung/ Fundament"@de .
-<https://w3id.org/brcomp#Foundation> <http://www.w3.org/2000/01/rdf-schema#comment> "foundation"@en .
+<https://w3id.org/brcomp#Foundation> <http://www.w3.org/2000/01/rdf-schema#comment> "foundation  / footing / grounding"@en .
+<https://w3id.org/brcomp#Foundation> <http://www.w3.org/2000/01/rdf-schema#label> "foundation"@en .
 # 
 # https://w3id.org/brcomp#Girder
 <https://w3id.org/brcomp#Girder> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/brcomp#Girder> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/brcomp#SuperStructureComponent> .
 <https://w3id.org/brcomp#Girder> <http://www.w3.org/2000/01/rdf-schema#comment> "Brückenträger"@de .
-<https://w3id.org/brcomp#Girder> <http://www.w3.org/2000/01/rdf-schema#comment> "girder"@en .
+<https://w3id.org/brcomp#Girder> <http://www.w3.org/2000/01/rdf-schema#comment> "girder/ beam"@en .
+<https://w3id.org/brcomp#Girder> <http://www.w3.org/2000/01/rdf-schema#label> "girder"@en .
 # 
 # https://w3id.org/brcomp#GirderComponent
 <https://w3id.org/brcomp#GirderComponent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/brcomp#GirderComponent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/brcomp#SuperStructureComponent> .
 <https://w3id.org/brcomp#GirderComponent> <http://www.w3.org/2000/01/rdf-schema#comment> "component of the girder"@en .
 <https://w3id.org/brcomp#GirderComponent> <http://www.w3.org/2000/01/rdf-schema#comment> "Bauteil des Brückenträgers" .
+<https://w3id.org/brcomp#GirderComponent> <http://www.w3.org/2000/01/rdf-schema#label> "girder component"@en .
 # 
 # https://w3id.org/brcomp#GirderCrossGirder
 <https://w3id.org/brcomp#GirderCrossGirder> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/brcomp#GirderCrossGirder> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/brcomp#GirderComponent> .
 <https://w3id.org/brcomp#GirderCrossGirder> <http://www.w3.org/2000/01/rdf-schema#comment> "Querträger"@de .
-<https://w3id.org/brcomp#GirderCrossGirder> <http://www.w3.org/2000/01/rdf-schema#comment> "cross girder"@en .
+<https://w3id.org/brcomp#GirderCrossGirder> <http://www.w3.org/2000/01/rdf-schema#comment> "cross girder/ cross beam"@en .
+<https://w3id.org/brcomp#GirderCrossGirder> <http://www.w3.org/2000/01/rdf-schema#label> "cross girder"@en .
 # 
 # https://w3id.org/brcomp#GirderDeck
 <https://w3id.org/brcomp#GirderDeck> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/brcomp#GirderDeck> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/brcomp#GirderComponent> .
 <https://w3id.org/brcomp#GirderDeck> <http://www.w3.org/2000/01/rdf-schema#comment> "Fahrbahnplatte"@de .
 <https://w3id.org/brcomp#GirderDeck> <http://www.w3.org/2000/01/rdf-schema#comment> "bridge deck/slab"@en .
+<https://w3id.org/brcomp#GirderDeck> <http://www.w3.org/2000/01/rdf-schema#label> "deck"@en .
 # 
 # https://w3id.org/brcomp#GirderMainGirder
 <https://w3id.org/brcomp#GirderMainGirder> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/brcomp#GirderMainGirder> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/brcomp#GirderComponent> .
 <https://w3id.org/brcomp#GirderMainGirder> <http://www.w3.org/2000/01/rdf-schema#comment> "Hauptträger (Längsträger)"@de .
 <https://w3id.org/brcomp#GirderMainGirder> <http://www.w3.org/2000/01/rdf-schema#comment> "main (longitudinal) girder"@en .
+<https://w3id.org/brcomp#GirderMainGirder> <http://www.w3.org/2000/01/rdf-schema#label> "main girder"@en .
 # 
 # https://w3id.org/brcomp#Pier
 <https://w3id.org/brcomp#Pier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/brcomp#Pier> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/brcomp#SubStructureComponent> .
 <https://w3id.org/brcomp#Pier> <http://www.w3.org/2000/01/rdf-schema#comment> "Stütze"@de .
-<https://w3id.org/brcomp#Pier> <http://www.w3.org/2000/01/rdf-schema#comment> "pier"@en .
+<https://w3id.org/brcomp#Pier> <http://www.w3.org/2000/01/rdf-schema#comment> "bridge pier"@en .
+<https://w3id.org/brcomp#Pier> <http://www.w3.org/2000/01/rdf-schema#label> "pier"@en .
 # 
 # https://w3id.org/brcomp#Pile
 <https://w3id.org/brcomp#Pile> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/brcomp#Pile> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/brcomp#SubStructureComponent> .
 <https://w3id.org/brcomp#Pile> <http://www.w3.org/2000/01/rdf-schema#comment> "Bohrpfahl"@de .
 <https://w3id.org/brcomp#Pile> <http://www.w3.org/2000/01/rdf-schema#comment> "bored/drilled pile"@en .
+<https://w3id.org/brcomp#Pile> <http://www.w3.org/2000/01/rdf-schema#label> "pile"@en .
 # 
 # https://w3id.org/brcomp#Pylon
 <https://w3id.org/brcomp#Pylon> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/brcomp#Pylon> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/brcomp#SubStructureComponent> .
 <https://w3id.org/brcomp#Pylon> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/brcomp#SuperStructureComponent> .
 <https://w3id.org/brcomp#Pylon> <http://www.w3.org/2000/01/rdf-schema#comment> "Pylon"@de .
-<https://w3id.org/brcomp#Pylon> <http://www.w3.org/2000/01/rdf-schema#comment> "pylon"@en .
+<https://w3id.org/brcomp#Pylon> <http://www.w3.org/2000/01/rdf-schema#comment> "bridge pylon"@en .
+<https://w3id.org/brcomp#Pylon> <http://www.w3.org/2000/01/rdf-schema#label> "pylon"@en .
 # 
 # https://w3id.org/brcomp#SubStructureComponent
 <https://w3id.org/brcomp#SubStructureComponent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/brcomp#SubStructureComponent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/brot#Component> .
 <https://w3id.org/brcomp#SubStructureComponent> <http://www.w3.org/2000/01/rdf-schema#comment> "Bauteil des Unterbaus"@de .
 <https://w3id.org/brcomp#SubStructureComponent> <http://www.w3.org/2000/01/rdf-schema#comment> "component of bridge substructure"@en .
+<https://w3id.org/brcomp#SubStructureComponent> <http://www.w3.org/2000/01/rdf-schema#label> "substructure component"@en .
 # 
 # https://w3id.org/brcomp#SuperStructureComponent
 <https://w3id.org/brcomp#SuperStructureComponent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/brcomp#SuperStructureComponent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/brot#Component> .
 <https://w3id.org/brcomp#SuperStructureComponent> <http://www.w3.org/2000/01/rdf-schema#comment> "Bauteil des Überbaus"@de .
 <https://w3id.org/brcomp#SuperStructureComponent> <http://www.w3.org/2000/01/rdf-schema#comment> "component of bridge superstructure"@en .
+<https://w3id.org/brcomp#SuperStructureComponent> <http://www.w3.org/2000/01/rdf-schema#label> "superstructure component"@en .
 # 
 # https://w3id.org/brcomp#TensionComponent
 <https://w3id.org/brcomp#TensionComponent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/brcomp#TensionComponent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/brcomp#SubStructureComponent> .
 <https://w3id.org/brcomp#TensionComponent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/brcomp#SuperStructureComponent> .
 <https://w3id.org/brcomp#TensionComponent> <http://www.w3.org/2000/01/rdf-schema#comment> "Zugkomponente"@de .
-<https://w3id.org/brcomp#TensionComponent> <http://www.w3.org/2000/01/rdf-schema#comment> "tension component"@en .
+<https://w3id.org/brcomp#TensionComponent> <http://www.w3.org/2000/01/rdf-schema#comment> "components that only work on tension"@en .
+<https://w3id.org/brcomp#TensionComponent> <http://www.w3.org/2000/01/rdf-schema#label> "tension component"@en .
 # 
 # https://w3id.org/brot#Bridge
+<https://w3id.org/brot#Bridge> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 # 
 # https://w3id.org/brot#Component
+<https://w3id.org/brot#Component> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 # 
 # 
 # 

@@ -7,7 +7,7 @@
       "en" : "Bridge Core Ontology for Institute of Concrete Structures, Dresden University of Technology – Components Extension"
     },
     "iri" : "https://w3id.org/bcore/comp",
-    "version" : "0.1.0",
+    "version" : "0.1.1",
     "author" : [ "Tim Noack", "Morris Florek", "Johannes Reimer", "Xiaoli Song" ],
     "description" : {
       "en" : "Extension ontology for the representation of bridge components. Designed to work in conjunction with the BCore ontology but to also allow for external use."
@@ -16,17 +16,13 @@
       "en" : "Bridge Core Ontology – Components Extension"
     },
     "other" : {
+      "license" : [ {
+        "identifier" : "license",
+        "language" : "undefined",
+        "value" : "https://creativecommons.org/licenses/by/4.0/deed.en",
+        "type" : "label"
+      } ],
       "creator" : [ {
-        "identifier" : "creator",
-        "language" : "undefined",
-        "value" : "Morris Florek",
-        "type" : "label"
-      }, {
-        "identifier" : "creator",
-        "language" : "undefined",
-        "value" : "Johannes Reimer",
-        "type" : "label"
-      }, {
         "identifier" : "creator",
         "language" : "undefined",
         "value" : "Xiaoli Song",
@@ -34,43 +30,29 @@
       }, {
         "identifier" : "creator",
         "language" : "undefined",
+        "value" : "Morris Florek",
+        "type" : "label"
+      }, {
+        "identifier" : "creator",
+        "language" : "undefined",
         "value" : "Tim Noack",
         "type" : "label"
-      } ],
-      "created" : [ {
-        "identifier" : "created",
+      }, {
+        "identifier" : "creator",
         "language" : "undefined",
-        "value" : "2025-11-06",
-        "type" : "label"
-      } ],
-      "abstract" : [ {
-        "identifier" : "abstract",
-        "language" : "en",
-        "value" : "The Bridge Core Ontology (BCore) enables the representation of a bridge structure, its components and material, as well as the infrastructure and media files connected to it and the environment and location of the bridge. BCore is created by the Institute of Concrete Structures (IMB) at the Dresden University of Technology (TUD). This ontology contains the corresponding components extension.",
-        "type" : "label"
-      } ],
-      "versionInfo" : [ {
-        "identifier" : "versionInfo",
-        "language" : "undefined",
-        "value" : "0.1.0",
-        "type" : "label"
-      } ],
-      "title" : [ {
-        "identifier" : "title",
-        "language" : "en",
-        "value" : "Bridge Core Ontology for Institute of Concrete Structures, Dresden University of Technology – Components Extension",
-        "type" : "label"
-      } ],
-      "license" : [ {
-        "identifier" : "license",
-        "language" : "undefined",
-        "value" : "https://creativecommons.org/licenses/by/4.0/deed.en",
+        "value" : "Johannes Reimer",
         "type" : "label"
       } ],
       "contributor" : [ {
         "identifier" : "contributor",
         "language" : "undefined",
         "value" : "Jakob Vogt",
+        "type" : "label"
+      } ],
+      "created" : [ {
+        "identifier" : "created",
+        "language" : "undefined",
+        "value" : "2025-11-06",
         "type" : "label"
       } ],
       "preferredNamespacePrefix" : [ {
@@ -85,10 +67,34 @@
         "value" : "2026-07-21",
         "type" : "label"
       } ],
+      "logo" : [ {
+        "identifier" : "logo",
+        "language" : "undefined",
+        "value" : "https://raw.githubusercontent.com/TUD-IMB/BCore/main/BCore.svg",
+        "type" : "label"
+      } ],
+      "abstract" : [ {
+        "identifier" : "abstract",
+        "language" : "en",
+        "value" : "The Bridge Core Ontology (BCore) enables the representation of a bridge structure, its components and material, as well as the infrastructure and media files connected to it and the environment and location of the bridge. BCore is created by the Institute of Concrete Structures (IMB) at the Dresden University of Technology (TUD). This ontology contains the corresponding components extension.",
+        "type" : "label"
+      } ],
       "codeRepository" : [ {
         "identifier" : "codeRepository",
         "language" : "undefined",
         "value" : "https://github.com/TUD-IMB/BCore",
+        "type" : "label"
+      } ],
+      "versionInfo" : [ {
+        "identifier" : "versionInfo",
+        "language" : "undefined",
+        "value" : "0.1.1",
+        "type" : "label"
+      } ],
+      "title" : [ {
+        "identifier" : "title",
+        "language" : "en",
+        "value" : "Bridge Core Ontology for Institute of Concrete Structures, Dresden University of Technology – Components Extension",
         "type" : "label"
       } ],
       "status" : [ {
@@ -146,6 +152,9 @@
     "id" : "30",
     "type" : "owl:Class"
   }, {
+    "id" : "58",
+    "type" : "rdfs:Datatype"
+  }, {
     "id" : "35",
     "type" : "owl:Class"
   }, {
@@ -167,7 +176,7 @@
     "id" : "4",
     "type" : "owl:Class"
   }, {
-    "id" : "70",
+    "id" : "72",
     "type" : "owl:Class"
   }, {
     "id" : "7",
@@ -191,13 +200,13 @@
     "id" : "43",
     "type" : "owl:Class"
   }, {
-    "id" : "98",
+    "id" : "101",
     "type" : "owl:Class"
   }, {
     "id" : "33",
     "type" : "owl:Class"
   }, {
-    "id" : "101",
+    "id" : "104",
     "type" : "owl:Class"
   }, {
     "id" : "15",
@@ -206,7 +215,7 @@
     "id" : "24",
     "type" : "owl:Class"
   }, {
-    "id" : "108",
+    "id" : "111",
     "type" : "owl:Class"
   }, {
     "id" : "39",
@@ -218,7 +227,7 @@
     "id" : "47",
     "type" : "owl:Class"
   }, {
-    "id" : "77",
+    "id" : "79",
     "type" : "owl:Class"
   } ],
   "classAttribute" : [ {
@@ -226,11 +235,12 @@
     "baseIri" : "https://w3id.org/bcore/comp",
     "instances" : 0,
     "label" : {
-      "IRI-based" : "TBeam"
+      "IRI-based" : "TBeam",
+      "en" : "T-beam"
     },
     "comment" : {
       "de" : "Plattenbalken (Beton)",
-      "en" : "T-beam"
+      "en" : "T-shaped girder"
     },
     "id" : "0",
     "superClasses" : [ "1" ]
@@ -249,11 +259,12 @@
     "baseIri" : "https://w3id.org/bcore/comp",
     "instances" : 0,
     "label" : {
-      "IRI-based" : "BoxGirder"
+      "IRI-based" : "BoxGirder",
+      "en" : "box girder"
     },
     "comment" : {
       "de" : "Hohlkastenträger",
-      "en" : "box girder"
+      "en" : "box girder/ hollow beam"
     },
     "id" : "12",
     "superClasses" : [ "1" ]
@@ -262,11 +273,12 @@
     "baseIri" : "https://w3id.org/bcore/comp",
     "instances" : 0,
     "label" : {
-      "IRI-based" : "Abutment"
+      "IRI-based" : "Abutment",
+      "en" : "abutment"
     },
     "comment" : {
       "de" : "Widerlager",
-      "en" : "abutment"
+      "en" : "bridge abutment"
     },
     "id" : "13",
     "superClasses" : [ "9" ]
@@ -275,11 +287,12 @@
     "baseIri" : "https://w3id.org/brcomp",
     "instances" : 0,
     "label" : {
-      "IRI-based" : "AbutmentWingWall"
+      "IRI-based" : "AbutmentWingWall",
+      "en" : "abutment wing wall"
     },
     "comment" : {
       "de" : "Flügelwand des Widerlagers",
-      "en" : "abutment wing wall"
+      "en" : "wing wall of abutment"
     },
     "attributes" : [ "external" ],
     "id" : "19",
@@ -289,11 +302,12 @@
     "baseIri" : "https://w3id.org/bcore/comp",
     "instances" : 0,
     "label" : {
-      "IRI-based" : "Wire"
+      "IRI-based" : "Wire",
+      "en" : "wire"
     },
     "comment" : {
       "de" : "Draht",
-      "en" : "wire"
+      "en" : "tension wire"
     },
     "id" : "23",
     "superClasses" : [ "24" ]
@@ -302,7 +316,8 @@
     "baseIri" : "https://w3id.org/brcomp",
     "instances" : 0,
     "label" : {
-      "IRI-based" : "SuperStructureComponent"
+      "IRI-based" : "SuperStructureComponent",
+      "en" : "superstructure component"
     },
     "subClasses" : [ "30", "24", "31", "32", "33" ],
     "comment" : {
@@ -317,7 +332,8 @@
     "baseIri" : "https://w3id.org/brcomp",
     "instances" : 0,
     "label" : {
-      "IRI-based" : "GirderComponent"
+      "IRI-based" : "GirderComponent",
+      "en" : "girder component"
     },
     "subClasses" : [ "38", "39", "1" ],
     "comment" : {
@@ -328,31 +344,33 @@
     "id" : "31",
     "superClasses" : [ "11" ]
   }, {
+    "iri" : "https://w3id.org/brcomp#Foundation",
+    "baseIri" : "https://w3id.org/brcomp",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Foundation",
+      "en" : "foundation"
+    },
+    "subClasses" : [ "4" ],
+    "comment" : {
+      "de" : "Gründung/ Fundament",
+      "en" : "foundation  / footing / grounding"
+    },
+    "attributes" : [ "external" ],
+    "id" : "40",
+    "superClasses" : [ "9" ]
+  }, {
     "iri" : "https://w3id.org/bcore/comp#PierUnit",
     "baseIri" : "https://w3id.org/bcore/comp",
     "instances" : 0,
     "label" : {
-      "IRI-based" : "PierUnit"
+      "IRI-based" : "PierUnit",
+      "en" : "pier unit"
     },
     "comment" : {
       "de" : "Pfeilereinheit/-gruppe",
       "en" : "pier unit/group"
     },
-    "id" : "40",
-    "superClasses" : [ "9" ]
-  }, {
-    "iri" : "https://w3id.org/brcomp#Foundation",
-    "baseIri" : "https://w3id.org/brcomp",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "Foundation"
-    },
-    "subClasses" : [ "4" ],
-    "comment" : {
-      "de" : "Gründung/ Fundament",
-      "en" : "foundation"
-    },
-    "attributes" : [ "external" ],
     "id" : "41",
     "superClasses" : [ "9" ]
   }, {
@@ -360,7 +378,8 @@
     "baseIri" : "https://w3id.org/bcore/comp",
     "instances" : 0,
     "label" : {
-      "IRI-based" : "PlateGirder"
+      "IRI-based" : "PlateGirder",
+      "en" : "plate girder"
     },
     "comment" : {
       "de" : "Vollwandträger (z. B. aus Stahl)",
@@ -373,11 +392,12 @@
     "baseIri" : "https://w3id.org/bcore/comp",
     "instances" : 0,
     "label" : {
-      "IRI-based" : "IBeam"
+      "IRI-based" : "IBeam",
+      "en" : "I-beam"
     },
     "comment" : {
       "de" : "I-Träger",
-      "en" : "I-beam"
+      "en" : "I-shaped girder"
     },
     "id" : "22",
     "superClasses" : [ "1" ]
@@ -386,11 +406,12 @@
     "baseIri" : "https://w3id.org/brcomp",
     "instances" : 0,
     "label" : {
-      "IRI-based" : "Pylon"
+      "IRI-based" : "Pylon",
+      "en" : "pylon"
     },
     "comment" : {
       "de" : "Pylon",
-      "en" : "pylon"
+      "en" : "bridge pylon"
     },
     "attributes" : [ "external" ],
     "id" : "32",
@@ -407,21 +428,30 @@
     "baseIri" : "https://w3id.org/brcomp",
     "instances" : 0,
     "label" : {
-      "IRI-based" : "Girder"
+      "IRI-based" : "Girder",
+      "en" : "girder"
     },
     "comment" : {
       "de" : "Brückenträger",
-      "en" : "girder"
+      "en" : "girder/ beam"
     },
     "attributes" : [ "external" ],
     "id" : "30",
     "superClasses" : [ "11" ]
   }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "58",
+    "label" : {
+      "IRI-based" : "decimal"
+    }
+  }, {
     "iri" : "https://w3id.org/brcomp#Pile",
     "baseIri" : "https://w3id.org/brcomp",
     "instances" : 0,
     "label" : {
-      "IRI-based" : "Pile"
+      "IRI-based" : "Pile",
+      "en" : "pile"
     },
     "comment" : {
       "de" : "Bohrpfahl",
@@ -456,9 +486,10 @@
     "baseIri" : "https://w3id.org/brcomp",
     "instances" : 0,
     "label" : {
-      "IRI-based" : "SubStructureComponent"
+      "IRI-based" : "SubStructureComponent",
+      "en" : "substructure component"
     },
-    "subClasses" : [ "40", "41", "13", "35", "47", "24", "43", "20", "32", "33" ],
+    "subClasses" : [ "41", "40", "13", "35", "47", "24", "43", "20", "32", "33" ],
     "comment" : {
       "de" : "Bauteil des Unterbaus",
       "en" : "component of bridge substructure"
@@ -470,12 +501,21 @@
     "iri" : "https://w3id.org/bcore/comp#Span",
     "baseIri" : "https://w3id.org/bcore/comp",
     "instances" : 0,
+    "annotations" : {
+      "image" : [ {
+        "identifier" : "image",
+        "language" : "undefined",
+        "value" : "https://raw.githubusercontent.com/TUD-IMB/BCore/refs/heads/main/comp/BCore_Spans.svg",
+        "type" : "label"
+      } ]
+    },
     "label" : {
-      "IRI-based" : "Span"
+      "IRI-based" : "Span",
+      "en" : "span"
     },
     "comment" : {
-      "de" : "Spannweite",
-      "en" : "span"
+      "de" : "Brückenfeld",
+      "en" : "bridge span"
     },
     "id" : "6"
   }, {
@@ -483,7 +523,8 @@
     "baseIri" : "https://w3id.org/brcomp",
     "instances" : 0,
     "label" : {
-      "IRI-based" : "AbutmentFooting"
+      "IRI-based" : "AbutmentFooting",
+      "en" : "abutment footing"
     },
     "comment" : {
       "de" : "Fundament des Widerlagers",
@@ -491,19 +532,20 @@
     },
     "attributes" : [ "external" ],
     "id" : "4",
-    "superClasses" : [ "41", "20" ]
+    "superClasses" : [ "40", "20" ]
   }, {
     "iri" : "https://w3id.org/bcore/comp#Slab",
     "baseIri" : "https://w3id.org/bcore/comp",
     "instances" : 0,
     "label" : {
-      "IRI-based" : "Slab"
+      "IRI-based" : "Slab",
+      "en" : "slab"
     },
     "comment" : {
       "de" : "Platte",
-      "en" : "slab"
+      "en" : "bridge slab"
     },
-    "id" : "70",
+    "id" : "72",
     "superClasses" : [ "1" ]
   }, {
     "iri" : "https://dtc-ontology.cms.ed.tum.de/infraspatialot#Localisation",
@@ -519,9 +561,10 @@
     "baseIri" : "https://w3id.org/brcomp",
     "instances" : 0,
     "label" : {
-      "IRI-based" : "GirderMainGirder"
+      "IRI-based" : "GirderMainGirder",
+      "en" : "main girder"
     },
-    "subClasses" : [ "0", "70", "26", "22", "77", "12" ],
+    "subClasses" : [ "0", "72", "26", "22", "79", "12" ],
     "comment" : {
       "de" : "Hauptträger (Längsträger)",
       "en" : "main (longitudinal) girder"
@@ -534,11 +577,12 @@
     "baseIri" : "https://w3id.org/brcomp",
     "instances" : 0,
     "label" : {
-      "IRI-based" : "GirderCrossGirder"
+      "IRI-based" : "GirderCrossGirder",
+      "en" : "cross girder"
     },
     "comment" : {
       "de" : "Querträger",
-      "en" : "cross girder"
+      "en" : "cross girder/ cross beam"
     },
     "attributes" : [ "external" ],
     "id" : "38",
@@ -548,7 +592,8 @@
     "baseIri" : "https://w3id.org/brcomp",
     "instances" : 0,
     "label" : {
-      "IRI-based" : "AbutmentComponent"
+      "IRI-based" : "AbutmentComponent",
+      "en" : "abutment component"
     },
     "subClasses" : [ "4", "19", "3", "15" ],
     "comment" : {
@@ -563,7 +608,8 @@
     "baseIri" : "https://w3id.org/brcomp",
     "instances" : 0,
     "label" : {
-      "IRI-based" : "AbutmentBenching"
+      "IRI-based" : "AbutmentBenching",
+      "en" : "abutment benching"
     },
     "comment" : {
       "de" : "Auflagerbank",
@@ -585,7 +631,8 @@
       } ]
     },
     "label" : {
-      "IRI-based" : "EquipmentComponent"
+      "IRI-based" : "EquipmentComponent",
+      "en" : "equipment component"
     },
     "comment" : {
       "de" : "Bauteil der Brückenausstattung",
@@ -598,11 +645,12 @@
     "baseIri" : "https://w3id.org/brcomp",
     "instances" : 0,
     "label" : {
-      "IRI-based" : "Pier"
+      "IRI-based" : "Pier",
+      "en" : "pier"
     },
     "comment" : {
       "de" : "Stütze",
-      "en" : "pier"
+      "en" : "bridge pier"
     },
     "attributes" : [ "external" ],
     "id" : "43",
@@ -612,24 +660,26 @@
     "baseIri" : "https://w3id.org/bcore/comp",
     "instances" : 0,
     "label" : {
-      "IRI-based" : "Tendon"
+      "IRI-based" : "Tendon",
+      "en" : "tendon"
     },
     "comment" : {
       "de" : "Spannglied",
-      "en" : "tendon"
+      "en" : "tendon for prestressed concrete"
     },
-    "id" : "98",
+    "id" : "101",
     "superClasses" : [ "24" ]
   }, {
     "iri" : "https://w3id.org/brcomp#Arch",
     "baseIri" : "https://w3id.org/brcomp",
     "instances" : 0,
     "label" : {
-      "IRI-based" : "Arch"
+      "IRI-based" : "Arch",
+      "en" : "arch"
     },
     "comment" : {
       "de" : "Bogen",
-      "en" : "arch"
+      "en" : "bridge arch"
     },
     "attributes" : [ "external" ],
     "id" : "33",
@@ -639,20 +689,22 @@
     "baseIri" : "https://w3id.org/bcore/comp",
     "instances" : 0,
     "label" : {
-      "IRI-based" : "Rope"
+      "IRI-based" : "Rope",
+      "en" : "rope"
     },
     "comment" : {
       "de" : "Seil",
-      "en" : "rope"
+      "en" : "suspension rope"
     },
-    "id" : "101",
+    "id" : "104",
     "superClasses" : [ "24" ]
   }, {
     "iri" : "https://w3id.org/brcomp#AbutmentChamberWall",
     "baseIri" : "https://w3id.org/brcomp",
     "instances" : 0,
     "label" : {
-      "IRI-based" : "AbutmentChamberWall"
+      "IRI-based" : "AbutmentChamberWall",
+      "en" : "abutment chamber wall"
     },
     "comment" : {
       "de" : "Widerlagerwand",
@@ -666,12 +718,13 @@
     "baseIri" : "https://w3id.org/brcomp",
     "instances" : 0,
     "label" : {
-      "IRI-based" : "TensionComponent"
+      "IRI-based" : "TensionComponent",
+      "en" : "tension component"
     },
-    "subClasses" : [ "108", "98", "23", "101" ],
+    "subClasses" : [ "111", "101", "23", "104" ],
     "comment" : {
       "de" : "Zugkomponente",
-      "en" : "tension component"
+      "en" : "components that only work on tension"
     },
     "attributes" : [ "external" ],
     "id" : "24",
@@ -681,21 +734,23 @@
     "baseIri" : "https://w3id.org/brcomp",
     "instances" : 0,
     "label" : {
-      "IRI-based" : "Cable"
+      "IRI-based" : "Cable",
+      "en" : "cable"
     },
     "comment" : {
       "de" : "Kabel",
-      "en" : "cable"
+      "en" : "suspension cable"
     },
     "attributes" : [ "external" ],
-    "id" : "108",
+    "id" : "111",
     "superClasses" : [ "24" ]
   }, {
     "iri" : "https://w3id.org/brcomp#GirderDeck",
     "baseIri" : "https://w3id.org/brcomp",
     "instances" : 0,
     "label" : {
-      "IRI-based" : "GirderDeck"
+      "IRI-based" : "GirderDeck",
+      "en" : "deck"
     },
     "comment" : {
       "de" : "Fahrbahnplatte",
@@ -718,11 +773,12 @@
     "baseIri" : "https://w3id.org/brcomp",
     "instances" : 0,
     "label" : {
-      "IRI-based" : "Bearing"
+      "IRI-based" : "Bearing",
+      "en" : "bearing"
     },
     "comment" : {
       "de" : "Lager",
-      "en" : "bearing"
+      "en" : "bearing/ support"
     },
     "attributes" : [ "external" ],
     "id" : "47",
@@ -732,13 +788,14 @@
     "baseIri" : "https://w3id.org/bcore/comp",
     "instances" : 0,
     "label" : {
-      "IRI-based" : "TrussGirder"
+      "IRI-based" : "TrussGirder",
+      "en" : "truss girder"
     },
     "comment" : {
       "de" : "Fachwerkträger",
-      "en" : "truss girder"
+      "en" : "longitudinal truss"
     },
-    "id" : "77",
+    "id" : "79",
     "superClasses" : [ "1" ]
   } ],
   "property" : [ {
@@ -820,9 +877,6 @@
     "id" : "57",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "58",
-    "type" : "rdfs:SubClassOf"
-  }, {
     "id" : "60",
     "type" : "owl:disjointWith"
   }, {
@@ -845,13 +899,13 @@
     "type" : "owl:disjointWith"
   }, {
     "id" : "69",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "70",
     "type" : "owl:objectProperty"
   }, {
     "id" : "71",
-    "type" : "owl:disjointWith"
-  }, {
-    "id" : "72",
-    "type" : "owl:disjointWith"
+    "type" : "owl:objectProperty"
   }, {
     "id" : "73",
     "type" : "owl:disjointWith"
@@ -865,20 +919,20 @@
     "id" : "76",
     "type" : "owl:disjointWith"
   }, {
-    "id" : "78",
+    "id" : "77",
     "type" : "owl:disjointWith"
   }, {
-    "id" : "79",
+    "id" : "78",
     "type" : "owl:disjointWith"
   }, {
     "id" : "80",
     "type" : "owl:disjointWith"
   }, {
     "id" : "81",
-    "type" : "rdfs:SubClassOf"
+    "type" : "owl:disjointWith"
   }, {
     "id" : "82",
-    "type" : "rdfs:SubClassOf"
+    "type" : "owl:disjointWith"
   }, {
     "id" : "83",
     "type" : "rdfs:SubClassOf"
@@ -890,16 +944,16 @@
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "86",
-    "type" : "owl:objectProperty"
+    "type" : "rdfs:SubClassOf"
   }, {
     "id" : "87",
-    "type" : "owl:datatypeProperty"
+    "type" : "rdfs:SubClassOf"
   }, {
     "id" : "88",
-    "type" : "rdfs:SubClassOf"
+    "type" : "owl:objectProperty"
   }, {
     "id" : "89",
-    "type" : "rdfs:SubClassOf"
+    "type" : "owl:datatypeProperty"
   }, {
     "id" : "90",
     "type" : "rdfs:SubClassOf"
@@ -925,11 +979,14 @@
     "id" : "97",
     "type" : "rdfs:SubClassOf"
   }, {
+    "id" : "98",
+    "type" : "rdfs:SubClassOf"
+  }, {
     "id" : "99",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "100",
-    "type" : "rdfs:SubClassOf"
+    "type" : "owl:objectProperty"
   }, {
     "id" : "102",
     "type" : "rdfs:SubClassOf"
@@ -937,29 +994,26 @@
     "id" : "103",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "104",
-    "type" : "rdfs:SubClassOf"
-  }, {
     "id" : "105",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "106",
-    "type" : "owl:datatypeProperty"
+    "type" : "rdfs:SubClassOf"
   }, {
     "id" : "107",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "108",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "109",
     "type" : "owl:datatypeProperty"
   }, {
     "id" : "110",
-    "type" : "owl:disjointWith"
-  }, {
-    "id" : "111",
-    "type" : "owl:disjointWith"
+    "type" : "rdfs:SubClassOf"
   }, {
     "id" : "112",
-    "type" : "owl:disjointWith"
+    "type" : "owl:datatypeProperty"
   }, {
     "id" : "113",
     "type" : "owl:disjointWith"
@@ -983,22 +1037,22 @@
     "type" : "owl:disjointWith"
   }, {
     "id" : "120",
-    "type" : "rdfs:SubClassOf"
+    "type" : "owl:disjointWith"
   }, {
     "id" : "121",
-    "type" : "owl:datatypeProperty"
+    "type" : "owl:disjointWith"
   }, {
     "id" : "122",
-    "type" : "rdfs:SubClassOf"
+    "type" : "owl:disjointWith"
   }, {
     "id" : "123",
-    "type" : "owl:objectProperty"
+    "type" : "rdfs:SubClassOf"
   }, {
     "id" : "124",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "125",
-    "type" : "rdfs:SubClassOf"
+    "type" : "owl:datatypeProperty"
   }, {
     "id" : "126",
     "type" : "rdfs:SubClassOf"
@@ -1023,37 +1077,48 @@
   }, {
     "id" : "133",
     "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "134",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "135",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "136",
+    "type" : "rdfs:SubClassOf"
   } ],
   "propertyAttribute" : [ {
     "range" : "4",
     "domain" : "3",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "2"
   }, {
     "iri" : "https://w3id.org/bcore/comp#endsAtLocation",
     "baseIri" : "https://w3id.org/bcore/comp",
     "range" : "7",
     "label" : {
-      "IRI-based" : "endsAtLocation"
+      "IRI-based" : "endsAtLocation",
+      "en" : "ends at location"
     },
     "domain" : "6",
     "comment" : {
       "de" : "Spannweite endet an einer Lokalisation (Punkt)",
       "en" : "span ends at localision (location point)"
     },
-    "attributes" : [ "object", "functional" ],
+    "attributes" : [ "functional", "object" ],
     "id" : "5"
   }, {
     "range" : "15",
     "domain" : "3",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "14"
   }, {
     "iri" : "https://w3id.org/bcore/comp#hasSpan",
     "baseIri" : "https://w3id.org/bcore/comp",
     "range" : "6",
     "label" : {
-      "IRI-based" : "hasSpan"
+      "IRI-based" : "hasSpan",
+      "en" : "has span"
     },
     "domain" : "11",
     "comment" : {
@@ -1065,177 +1130,198 @@
   }, {
     "range" : "9",
     "domain" : "10",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "17"
   }, {
     "iri" : "https://w3id.org/bcore/comp#beginsAtLocation",
     "baseIri" : "https://w3id.org/bcore/comp",
     "range" : "7",
     "label" : {
-      "IRI-based" : "beginsAtLocation"
+      "IRI-based" : "beginsAtLocation",
+      "en" : "begins at location"
     },
     "domain" : "6",
     "comment" : {
       "de" : "Spannweite beginnt an einer Lokalisation (Punkt)",
       "en" : "span begins at localision (location point)"
     },
-    "attributes" : [ "object", "functional" ],
+    "attributes" : [ "functional", "object" ],
     "id" : "18"
   }, {
     "range" : "0",
     "domain" : "22",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "21"
   }, {
     "range" : "26",
     "domain" : "22",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "25"
   }, {
     "range" : "11",
     "domain" : "10",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "27"
   }, {
     "range" : "0",
     "domain" : "26",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "28"
   }, {
     "range" : "22",
     "domain" : "12",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "29"
   }, {
     "range" : "32",
     "domain" : "35",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "34"
   }, {
     "range" : "0",
     "domain" : "12",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "36"
   }, {
     "range" : "26",
     "domain" : "12",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "37"
   }, {
     "range" : "35",
     "domain" : "43",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "42"
   }, {
     "range" : "32",
-    "domain" : "41",
-    "attributes" : [ "object", "anonymous" ],
+    "domain" : "40",
+    "attributes" : [ "anonymous", "object" ],
     "id" : "44"
   }, {
     "range" : "32",
     "domain" : "43",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "45"
   }, {
     "range" : "32",
     "domain" : "47",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "46"
   }, {
     "range" : "35",
     "domain" : "47",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "48"
   }, {
     "range" : "35",
-    "domain" : "41",
-    "attributes" : [ "object", "anonymous" ],
+    "domain" : "40",
+    "attributes" : [ "anonymous", "object" ],
     "id" : "49"
   }, {
     "iri" : "https://w3id.org/bcore/comp#hasMainSpan",
     "baseIri" : "https://w3id.org/bcore/comp",
     "range" : "6",
     "label" : {
-      "IRI-based" : "hasMainSpan"
+      "IRI-based" : "hasMainSpan",
+      "en" : "has main span"
     },
     "domain" : "51",
     "comment" : {
       "de" : "Brücke hat eine Hauptspannweite",
       "en" : "bridge has main span"
     },
-    "attributes" : [ "object", "functional" ],
+    "attributes" : [ "functional", "object" ],
     "id" : "50"
   }, {
     "range" : "43",
-    "domain" : "41",
-    "attributes" : [ "object", "anonymous" ],
+    "domain" : "40",
+    "attributes" : [ "anonymous", "object" ],
     "id" : "52"
   }, {
     "range" : "32",
     "domain" : "33",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "53"
   }, {
     "range" : "43",
     "domain" : "47",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "54"
   }, {
-    "range" : "41",
+    "range" : "40",
     "domain" : "47",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "55"
   }, {
     "range" : "8",
-    "domain" : "10",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "57"
-  }, {
-    "range" : "8",
     "domain" : "9",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "58"
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "57"
   }, {
     "range" : "1",
     "domain" : "39",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "60"
   }, {
     "range" : "24",
     "domain" : "32",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "63"
   }, {
     "range" : "24",
     "domain" : "31",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "64"
   }, {
     "range" : "1",
     "domain" : "38",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "65"
   }, {
     "range" : "39",
     "domain" : "38",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "66"
   }, {
     "range" : "32",
     "domain" : "31",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "67"
   }, {
     "range" : "24",
     "domain" : "30",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "68"
+  }, {
+    "iri" : "https://w3id.org/bcore/comp#SpanLength",
+    "baseIri" : "https://w3id.org/bcore/comp",
+    "range" : "58",
+    "annotations" : {
+      "unitText" : [ {
+        "identifier" : "unitText",
+        "language" : "undefined",
+        "value" : "m",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "SpanLength",
+      "en" : "span length"
+    },
+    "domain" : "6",
+    "comment" : {
+      "de" : "Spannweite",
+      "en" : "length of bridge span"
+    },
+    "attributes" : [ "functional", "datatype" ],
+    "id" : "69"
   }, {
     "iri" : "https://w3id.org/bcore/comp#endsAtSupport",
     "baseIri" : "https://w3id.org/bcore/comp",
     "range" : "9",
     "label" : {
-      "IRI-based" : "endsAtSupport"
+      "IRI-based" : "endsAtSupport",
+      "en" : "ends at support"
     },
     "domain" : "6",
     "comment" : {
@@ -1243,83 +1329,99 @@
       "en" : "span ends at a component of the bridge substructure"
     },
     "attributes" : [ "object" ],
-    "id" : "69"
+    "id" : "70"
+  }, {
+    "iri" : "https://w3id.org/bcore/comp#followsSpan",
+    "baseIri" : "https://w3id.org/bcore/comp",
+    "range" : "6",
+    "label" : {
+      "IRI-based" : "followsSpan",
+      "en" : "follows span"
+    },
+    "domain" : "6",
+    "comment" : {
+      "de" : "Spannweite liegt hinter einer anderen Spannweite (wird genutzt, um Teilspannweiten darzustellen, z. B. bei Einzelspannweiten eines Durchlaufträgers oder Hängerabstände einer Schrägkabelbrücke)",
+      "en" : "span is located behind another span (used to represent partial spans, e.g., individual spans of a continuous girder or suspension spans of a cable-stayed bridge)"
+    },
+    "attributes" : [ "transitive", "object" ],
+    "id" : "71"
   }, {
     "range" : "32",
     "domain" : "30",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "71"
-  }, {
-    "range" : "31",
-    "domain" : "33",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "72"
-  }, {
-    "range" : "30",
-    "domain" : "33",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "73"
   }, {
     "range" : "31",
-    "domain" : "30",
-    "attributes" : [ "object", "anonymous" ],
+    "domain" : "33",
+    "attributes" : [ "anonymous", "object" ],
     "id" : "74"
+  }, {
+    "range" : "30",
+    "domain" : "33",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "75"
+  }, {
+    "range" : "31",
+    "domain" : "30",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "76"
   }, {
     "range" : "24",
     "domain" : "33",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "75"
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "77"
   }, {
     "range" : "4",
     "domain" : "15",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "76"
-  }, {
-    "range" : "19",
-    "domain" : "3",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "78"
   }, {
     "range" : "19",
+    "domain" : "3",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "80"
+  }, {
+    "range" : "19",
     "domain" : "4",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "79"
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "81"
   }, {
     "range" : "19",
     "domain" : "15",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "80"
-  }, {
-    "range" : "9",
-    "domain" : "33",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "81"
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "82"
   }, {
     "range" : "9",
     "domain" : "32",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "82"
-  }, {
-    "range" : "1",
-    "domain" : "70",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "83"
-  }, {
-    "range" : "1",
-    "domain" : "0",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "84"
   }, {
     "range" : "9",
     "domain" : "20",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "84"
+  }, {
+    "range" : "1",
+    "domain" : "0",
+    "attributes" : [ "anonymous", "object" ],
     "id" : "85"
+  }, {
+    "range" : "9",
+    "domain" : "33",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "86"
+  }, {
+    "range" : "9",
+    "domain" : "43",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "87"
   }, {
     "iri" : "https://w3id.org/bcore/comp#beginsAtSupport",
     "baseIri" : "https://w3id.org/bcore/comp",
     "range" : "9",
     "label" : {
-      "IRI-based" : "beginsAtSupport"
+      "IRI-based" : "beginsAtSupport",
+      "en" : "begins at support"
     },
     "domain" : "6",
     "comment" : {
@@ -1327,13 +1429,14 @@
       "en" : "span begins at a component of the bridge substructure"
     },
     "attributes" : [ "object" ],
-    "id" : "86"
+    "id" : "88"
   }, {
     "iri" : "https://w3id.org/bcore/comp#PierShape",
     "baseIri" : "https://w3id.org/bcore/comp",
     "range" : "61",
     "label" : {
-      "IRI-based" : "PierShape"
+      "IRI-based" : "PierShape",
+      "en" : "pier shape"
     },
     "domain" : "43",
     "comment" : {
@@ -1341,93 +1444,109 @@
       "en" : "shape of the pier"
     },
     "attributes" : [ "datatype" ],
-    "id" : "87"
-  }, {
-    "range" : "9",
-    "domain" : "43",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "88"
-  }, {
-    "range" : "9",
-    "domain" : "24",
-    "attributes" : [ "object", "anonymous" ],
     "id" : "89"
   }, {
     "range" : "9",
-    "domain" : "13",
-    "attributes" : [ "object", "anonymous" ],
+    "domain" : "24",
+    "attributes" : [ "anonymous", "object" ],
     "id" : "90"
   }, {
     "range" : "9",
-    "domain" : "41",
-    "attributes" : [ "object", "anonymous" ],
+    "domain" : "47",
+    "attributes" : [ "anonymous", "object" ],
     "id" : "91"
   }, {
     "range" : "9",
-    "domain" : "47",
-    "attributes" : [ "object", "anonymous" ],
+    "domain" : "40",
+    "attributes" : [ "anonymous", "object" ],
     "id" : "92"
   }, {
     "range" : "9",
-    "domain" : "35",
-    "attributes" : [ "object", "anonymous" ],
+    "domain" : "41",
+    "attributes" : [ "anonymous", "object" ],
     "id" : "93"
   }, {
-    "range" : "31",
-    "domain" : "1",
-    "attributes" : [ "object", "anonymous" ],
+    "range" : "9",
+    "domain" : "35",
+    "attributes" : [ "anonymous", "object" ],
     "id" : "94"
+  }, {
+    "range" : "9",
+    "domain" : "13",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "95"
   }, {
     "range" : "31",
     "domain" : "39",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "95"
-  }, {
-    "range" : "9",
-    "domain" : "40",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "96"
-  }, {
-    "range" : "41",
-    "domain" : "4",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "97"
-  }, {
-    "range" : "11",
-    "domain" : "33",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "99"
-  }, {
-    "range" : "11",
-    "domain" : "32",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "100"
   }, {
     "range" : "31",
     "domain" : "38",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "97"
+  }, {
+    "range" : "40",
+    "domain" : "4",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "98"
+  }, {
+    "range" : "31",
+    "domain" : "1",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "99"
+  }, {
+    "iri" : "https://w3id.org/bcore/comp#isSpanOf",
+    "baseIri" : "https://w3id.org/bcore/comp",
+    "range" : "51",
+    "label" : {
+      "IRI-based" : "isSpanOf",
+      "en" : "is span of"
+    },
+    "domain" : "6",
+    "comment" : {
+      "de" : "ist Feld von genau einer Brücke",
+      "en" : "the span belongs to just one bridge"
+    },
+    "attributes" : [ "functional", "object" ],
+    "id" : "100"
+  }, {
+    "range" : "11",
+    "domain" : "32",
+    "attributes" : [ "anonymous", "object" ],
     "id" : "102"
   }, {
     "range" : "11",
-    "domain" : "30",
-    "attributes" : [ "object", "anonymous" ],
+    "domain" : "31",
+    "attributes" : [ "anonymous", "object" ],
     "id" : "103"
+  }, {
+    "range" : "11",
+    "domain" : "33",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "105"
   }, {
     "range" : "8",
     "domain" : "11",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "104"
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "106"
+  }, {
+    "range" : "8",
+    "domain" : "10",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "107"
   }, {
     "range" : "11",
-    "domain" : "31",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "105"
+    "domain" : "24",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "108"
   }, {
     "iri" : "https://w3id.org/bcore/comp#ArchShape",
     "baseIri" : "https://w3id.org/bcore/comp",
     "range" : "59",
     "label" : {
-      "IRI-based" : "ArchShape"
+      "IRI-based" : "ArchShape",
+      "en" : "arch shape"
     },
     "domain" : "33",
     "comment" : {
@@ -1435,18 +1554,19 @@
       "en" : "shape of the arch"
     },
     "attributes" : [ "datatype" ],
-    "id" : "106"
+    "id" : "109"
   }, {
     "range" : "11",
-    "domain" : "24",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "107"
+    "domain" : "30",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "110"
   }, {
     "iri" : "https://w3id.org/bcore/comp#GirderShape",
     "baseIri" : "https://w3id.org/bcore/comp",
     "range" : "62",
     "label" : {
-      "IRI-based" : "GirderShape"
+      "IRI-based" : "GirderShape",
+      "en" : "girder shape"
     },
     "domain" : "30",
     "comment" : {
@@ -1454,68 +1574,74 @@
       "en" : "shape of the girder"
     },
     "attributes" : [ "datatype" ],
-    "id" : "109"
+    "id" : "112"
   }, {
-    "range" : "41",
+    "range" : "40",
     "domain" : "13",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "110"
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "113"
   }, {
     "range" : "43",
     "domain" : "13",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "111"
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "114"
   }, {
     "range" : "35",
     "domain" : "13",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "112"
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "115"
   }, {
     "range" : "32",
     "domain" : "13",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "113"
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "116"
   }, {
     "range" : "47",
     "domain" : "33",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "114"
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "117"
   }, {
-    "range" : "41",
+    "range" : "40",
     "domain" : "33",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "115"
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "118"
   }, {
     "range" : "43",
     "domain" : "33",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "116"
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "119"
   }, {
     "range" : "35",
     "domain" : "33",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "117"
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "120"
   }, {
     "range" : "33",
     "domain" : "13",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "118"
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "121"
   }, {
     "range" : "47",
     "domain" : "13",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "119"
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "122"
   }, {
     "range" : "24",
-    "domain" : "101",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "120"
+    "domain" : "104",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "123"
+  }, {
+    "range" : "24",
+    "domain" : "23",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "124"
   }, {
     "iri" : "https://w3id.org/bcore/comp#PylonShape",
     "baseIri" : "https://w3id.org/bcore/comp",
     "range" : "56",
     "label" : {
-      "IRI-based" : "PylonShape"
+      "IRI-based" : "PylonShape",
+      "en" : "pylon shape"
     },
     "domain" : "32",
     "comment" : {
@@ -1523,75 +1649,61 @@
       "en" : "shape of the pylon"
     },
     "attributes" : [ "datatype" ],
-    "id" : "121"
-  }, {
-    "range" : "24",
-    "domain" : "108",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "122"
-  }, {
-    "iri" : "https://w3id.org/bcore/comp#followsSpan",
-    "baseIri" : "https://w3id.org/bcore/comp",
-    "range" : "6",
-    "label" : {
-      "IRI-based" : "followsSpan"
-    },
-    "domain" : "6",
-    "comment" : {
-      "de" : "Spannweite liegt hinter einer anderen Spannweite (wird genutzt, um Teilspannweiten darzustellen, z. B. bei Einzelspannweiten eines Durchlaufträgers oder Hängerabstände einer Schrägkabelbrücke)",
-      "en" : "span is located behind another span (used to represent partial spans, e.g., individual spans of a continuous girder or suspension spans of a cable-stayed bridge)"
-    },
-    "attributes" : [ "object", "transitive" ],
-    "id" : "123"
+    "id" : "125"
   }, {
     "range" : "20",
     "domain" : "15",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "124"
-  }, {
-    "range" : "24",
-    "domain" : "23",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "125"
-  }, {
-    "range" : "24",
-    "domain" : "98",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "126"
   }, {
     "range" : "20",
     "domain" : "3",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "127"
+  }, {
+    "range" : "24",
+    "domain" : "101",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "128"
+  }, {
+    "range" : "24",
+    "domain" : "111",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "129"
   }, {
     "range" : "20",
     "domain" : "19",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "128"
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "130"
   }, {
     "range" : "20",
     "domain" : "4",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "129"
-  }, {
-    "range" : "1",
-    "domain" : "22",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "130"
-  }, {
-    "range" : "1",
-    "domain" : "26",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "131"
   }, {
     "range" : "1",
     "domain" : "12",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "132"
   }, {
     "range" : "1",
-    "domain" : "77",
-    "attributes" : [ "object", "anonymous" ],
+    "domain" : "26",
+    "attributes" : [ "anonymous", "object" ],
     "id" : "133"
+  }, {
+    "range" : "1",
+    "domain" : "72",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "134"
+  }, {
+    "range" : "1",
+    "domain" : "79",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "135"
+  }, {
+    "range" : "1",
+    "domain" : "22",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "136"
   } ]
 }
