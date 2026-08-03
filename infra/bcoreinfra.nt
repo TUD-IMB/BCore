@@ -9,13 +9,13 @@
 <https://w3id.org/bcore/infra> <http://purl.org/dc/terms/creator> "Xiaoli Song" .
 <https://w3id.org/bcore/infra> <http://purl.org/dc/terms/description> "Extension ontology for the representation of bridge-related infrastructure. Designed to work in conjunction with the BCore ontology but to also allow for external use."@en .
 <https://w3id.org/bcore/infra> <http://purl.org/dc/terms/license> "https://creativecommons.org/licenses/by/4.0/deed.en" .
-<https://w3id.org/bcore/infra> <http://purl.org/dc/terms/modified> "2026-07-21"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://w3id.org/bcore/infra> <http://purl.org/dc/terms/modified> "2026-08-03" .
 <https://w3id.org/bcore/infra> <http://purl.org/ontology/bibo/status> "Ontology Specification Draft" .
 <https://w3id.org/bcore/infra> <http://purl.org/vocab/vann/preferredNamespacePrefix> "bcoreinfra" .
 <https://w3id.org/bcore/infra> <http://www.w3.org/2000/01/rdf-schema#label> "Bridge Core Ontology – Infrastructure Extension"@en .
-<https://w3id.org/bcore/infra> <http://www.w3.org/2002/07/owl#versionInfo> "0.1.0" .
-<https://w3id.org/bcore/infra> <https://schema.org/codeRepository> "https://github.com/TUD-IMB/BCore" .
+<https://w3id.org/bcore/infra> <http://www.w3.org/2002/07/owl#versionInfo> "0.1.1" .
 <https://w3id.org/bcore/infra> <http://xmlns.com/foaf/0.1/logo> "https://raw.githubusercontent.com/TUD-IMB/BCore/main/BCore.svg" .
+<https://w3id.org/bcore/infra> <https://schema.org/codeRepository> "https://github.com/TUD-IMB/BCore" .
 # 
 # 
 # #################################################################
@@ -64,6 +64,9 @@
 # https://schema.org/codeRepository
 <https://schema.org/codeRepository> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
+# https://schema.org/unitText
+<https://schema.org/unitText> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
 # 
 # 
 # #################################################################
@@ -105,8 +108,9 @@ _:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "bike only" .
 _:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
 _:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
 <https://w3id.org/bcore/infra#FootCycleRouteType> <http://www.w3.org/2000/01/rdf-schema#comment> "Art des Fuß- und/oder Radweges"@de .
-<https://w3id.org/bcore/infra#FootCycleRouteType> <http://www.w3.org/2000/01/rdf-schema#comment> "Possible values:\n- foot only\n- bike only\n- segregated\n- shared-use"@en .
-<https://w3id.org/bcore/infra#FootCycleRouteType> <http://www.w3.org/2000/01/rdf-schema#comment> "type of pedestrian and/or bike path"@en .
+<https://w3id.org/bcore/infra#FootCycleRouteType> <http://www.w3.org/2000/01/rdf-schema#comment> "Type of pedestrian and/or bike path. Possible values:\n- foot only\n- bike only\n- segregated\n- shared-use"@en .
+<https://w3id.org/bcore/infra#FootCycleRouteType> <http://www.w3.org/2000/01/rdf-schema#label> "Fuß- oder Gehwegtyp"@de .
+<https://w3id.org/bcore/infra#FootCycleRouteType> <http://www.w3.org/2000/01/rdf-schema#label> "foot or cycle route type"@en .
 # 
 # https://w3id.org/bcore/infra#RailwayRouteMaximumVelocity
 <https://w3id.org/bcore/infra#RailwayRouteMaximumVelocity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
@@ -115,7 +119,9 @@ _:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 <https://w3id.org/bcore/infra#RailwayRouteMaximumVelocity> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#decimal> .
 <https://w3id.org/bcore/infra#RailwayRouteMaximumVelocity> <http://www.w3.org/2000/01/rdf-schema#comment> "maximal zulässige Geschwindigkeit auf dem Schienenweg"@de .
 <https://w3id.org/bcore/infra#RailwayRouteMaximumVelocity> <http://www.w3.org/2000/01/rdf-schema#comment> "maximum permitted speed on the rail line"@en .
-<https://w3id.org/bcore/infra#RailwayRouteMaximumVelocity> <http://www.w3.org/2000/01/rdf-schema#comment> "[km/h]" .
+<https://w3id.org/bcore/infra#RailwayRouteMaximumVelocity> <http://www.w3.org/2000/01/rdf-schema#label> "Eisenbahntrasse maximale Geschwindigkeit"@de .
+<https://w3id.org/bcore/infra#RailwayRouteMaximumVelocity> <http://www.w3.org/2000/01/rdf-schema#label> "railway route maximum velocity"@en .
+<https://w3id.org/bcore/infra#RailwayRouteMaximumVelocity> <https://schema.org/unitText> "km/h" .
 # 
 # https://w3id.org/bcore/infra#RailwayRouteNumberOfTracks
 <https://w3id.org/bcore/infra#RailwayRouteNumberOfTracks> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
@@ -124,13 +130,17 @@ _:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 <https://w3id.org/bcore/infra#RailwayRouteNumberOfTracks> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
 <https://w3id.org/bcore/infra#RailwayRouteNumberOfTracks> <http://www.w3.org/2000/01/rdf-schema#comment> "Anzahl der Gleise des Schienenweges"@de .
 <https://w3id.org/bcore/infra#RailwayRouteNumberOfTracks> <http://www.w3.org/2000/01/rdf-schema#comment> "number of tracks on the railroad"@en .
+<https://w3id.org/bcore/infra#RailwayRouteNumberOfTracks> <http://www.w3.org/2000/01/rdf-schema#label> "Eisenbahntrasse Gleisanzahl"@de .
+<https://w3id.org/bcore/infra#RailwayRouteNumberOfTracks> <http://www.w3.org/2000/01/rdf-schema#label> "railway route number of tracks"@en .
+<https://w3id.org/bcore/infra#RailwayRouteNumberOfTracks> <https://schema.org/unitText> "-" .
 # 
 # https://w3id.org/bcore/infra#RoadRouteClass
 <https://w3id.org/bcore/infra#RoadRouteClass> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <https://w3id.org/bcore/infra#RoadRouteClass> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
 <https://w3id.org/bcore/infra#RoadRouteClass> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/bcore/infra#RoadRoute> .
 <https://w3id.org/bcore/infra#RoadRouteClass> <http://www.w3.org/2000/01/rdf-schema#range> _:genid6 .
-_:genid6 <http://www.w3.org/2002/07/owl#oneOf> _:genid12 .
+_:genid6 <http://www.w3.org/2002/07/owl#oneOf> _:genid13 .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid12 .
 _:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid11 .
 _:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid10 .
 _:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid9 .
@@ -149,17 +159,24 @@ _:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "district road" .
 _:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
 _:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "country road" .
 _:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "agricultural road" .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
 _:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
-<https://w3id.org/bcore/infra#RoadRouteClass> <http://www.w3.org/2000/01/rdf-schema#comment> "Straßenklasse"@de .
-<https://w3id.org/bcore/infra#RoadRouteClass> <http://www.w3.org/2000/01/rdf-schema#comment> "possible values:\n- highway\n- federal road\n- country road\n- district road\n- urban road\n- non-public road"@en .
-<https://w3id.org/bcore/infra#RoadRouteClass> <http://www.w3.org/2000/01/rdf-schema#comment> "road classification"@en .
+<https://w3id.org/bcore/infra#RoadRouteClass> <http://www.w3.org/2000/01/rdf-schema#comment> "Klassifizierung der Straße"@de .
+<https://w3id.org/bcore/infra#RoadRouteClass> <http://www.w3.org/2000/01/rdf-schema#comment> "Road classification. Possible values:\n- highway\n- federal road\n- country road\n- district road\n- urban road\n- agricultural road\n- non-public road"@en .
+<https://w3id.org/bcore/infra#RoadRouteClass> <http://www.w3.org/2000/01/rdf-schema#label> "Straßentrasse Klasse"@de .
+<https://w3id.org/bcore/infra#RoadRouteClass> <http://www.w3.org/2000/01/rdf-schema#label> "road route class"@en .
 # 
 # https://w3id.org/bcore/infra#RoadRouteNumberOfLanes
 <https://w3id.org/bcore/infra#RoadRouteNumberOfLanes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/bcore/infra#RoadRouteNumberOfLanes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
 <https://w3id.org/bcore/infra#RoadRouteNumberOfLanes> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/bcore/infra#RoadRoute> .
 <https://w3id.org/bcore/infra#RoadRouteNumberOfLanes> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
 <https://w3id.org/bcore/infra#RoadRouteNumberOfLanes> <http://www.w3.org/2000/01/rdf-schema#comment> "Anzahl der Fahrstreifen der Straße (Gesamtzahl beider Richtungsfahrbahnen)"@de .
 <https://w3id.org/bcore/infra#RoadRouteNumberOfLanes> <http://www.w3.org/2000/01/rdf-schema#comment> "number of lanes on the road (total number of lanes in both directions)"@en .
+<https://w3id.org/bcore/infra#RoadRouteNumberOfLanes> <http://www.w3.org/2000/01/rdf-schema#label> "Straßentrasse Spurenanzahl"@de .
+<https://w3id.org/bcore/infra#RoadRouteNumberOfLanes> <http://www.w3.org/2000/01/rdf-schema#label> "road route number of lanes"@en .
+<https://w3id.org/bcore/infra#RoadRouteNumberOfLanes> <https://schema.org/unitText> "-" .
 # 
 # 
 # 
@@ -176,26 +193,34 @@ _:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 # https://w3id.org/bcore/infra#FootCycleRoute
 <https://w3id.org/bcore/infra#FootCycleRoute> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/bcore/infra#FootCycleRoute> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/bcore#InfrastructureRoute> .
-<https://w3id.org/bcore/infra#FootCycleRoute> <http://www.w3.org/2000/01/rdf-schema#comment> "Geh- und/oder Radweg"@de .
-<https://w3id.org/bcore/infra#FootCycleRoute> <http://www.w3.org/2000/01/rdf-schema#comment> "footpath and/or bike path"@en .
+<https://w3id.org/bcore/infra#FootCycleRoute> <http://www.w3.org/2000/01/rdf-schema#comment> "Trasse eines Geh- und/oder Radweges"@de .
+<https://w3id.org/bcore/infra#FootCycleRoute> <http://www.w3.org/2000/01/rdf-schema#comment> "route of a footpath and/or bike path"@en .
+<https://w3id.org/bcore/infra#FootCycleRoute> <http://www.w3.org/2000/01/rdf-schema#label> "Fuß- oder Radwegtrasse"@de .
+<https://w3id.org/bcore/infra#FootCycleRoute> <http://www.w3.org/2000/01/rdf-schema#label> "foot or cycle route"@en .
 # 
 # https://w3id.org/bcore/infra#RailwayRoute
 <https://w3id.org/bcore/infra#RailwayRoute> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/bcore/infra#RailwayRoute> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/bcore#InfrastructureRoute> .
-<https://w3id.org/bcore/infra#RailwayRoute> <http://www.w3.org/2000/01/rdf-schema#comment> "Schienenweg"@de .
-<https://w3id.org/bcore/infra#RailwayRoute> <http://www.w3.org/2000/01/rdf-schema#comment> "railway"@en .
+<https://w3id.org/bcore/infra#RailwayRoute> <http://www.w3.org/2000/01/rdf-schema#comment> "Trasse eines Schienenweges"@de .
+<https://w3id.org/bcore/infra#RailwayRoute> <http://www.w3.org/2000/01/rdf-schema#comment> "railway line, railroad"@en .
+<https://w3id.org/bcore/infra#RailwayRoute> <http://www.w3.org/2000/01/rdf-schema#label> "Eisenbahntrasse"@de .
+<https://w3id.org/bcore/infra#RailwayRoute> <http://www.w3.org/2000/01/rdf-schema#label> "railway route"@en .
 # 
 # https://w3id.org/bcore/infra#RoadRoute
 <https://w3id.org/bcore/infra#RoadRoute> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/bcore/infra#RoadRoute> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/bcore#InfrastructureRoute> .
-<https://w3id.org/bcore/infra#RoadRoute> <http://www.w3.org/2000/01/rdf-schema#comment> "Straße"@de .
-<https://w3id.org/bcore/infra#RoadRoute> <http://www.w3.org/2000/01/rdf-schema#comment> "road/street"@en .
+<https://w3id.org/bcore/infra#RoadRoute> <http://www.w3.org/2000/01/rdf-schema#comment> "Trasse einer Straße/ eines Feldweges/ einer Autobahn"@de .
+<https://w3id.org/bcore/infra#RoadRoute> <http://www.w3.org/2000/01/rdf-schema#comment> "route of a street/road/highway/federal way/..."@en .
+<https://w3id.org/bcore/infra#RoadRoute> <http://www.w3.org/2000/01/rdf-schema#label> "Straßentrasse"@de .
+<https://w3id.org/bcore/infra#RoadRoute> <http://www.w3.org/2000/01/rdf-schema#label> "road route" .
 # 
 # https://w3id.org/bcore/infra#WaterWayRoute
 <https://w3id.org/bcore/infra#WaterWayRoute> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/bcore/infra#WaterWayRoute> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/bcore#InfrastructureRoute> .
-<https://w3id.org/bcore/infra#WaterWayRoute> <http://www.w3.org/2000/01/rdf-schema#comment> "Wasserstraße"@de .
-<https://w3id.org/bcore/infra#WaterWayRoute> <http://www.w3.org/2000/01/rdf-schema#comment> "water way"@en .
+<https://w3id.org/bcore/infra#WaterWayRoute> <http://www.w3.org/2000/01/rdf-schema#comment> "Trasse einer Wasserstraße"@de .
+<https://w3id.org/bcore/infra#WaterWayRoute> <http://www.w3.org/2000/01/rdf-schema#comment> "route of a water way"@en .
+<https://w3id.org/bcore/infra#WaterWayRoute> <http://www.w3.org/2000/01/rdf-schema#label> "Wasserstraßentrasse"@de .
+<https://w3id.org/bcore/infra#WaterWayRoute> <http://www.w3.org/2000/01/rdf-schema#label> "water way route"@en .
 # 
 # 
 # 
@@ -206,19 +231,19 @@ _:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 # #################################################################
 # 
 # 
-_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
-_:genid13 <http://www.w3.org/2002/07/owl#members> _:genid17 .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid14 <http://www.w3.org/2002/07/owl#members> _:genid18 .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid17 .
 _:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid16 .
 _:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid15 .
-_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid14 .
-_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/bcore/infra#WaterWayRoute> .
-_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/bcore/infra#RoadRoute> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/bcore/infra#WaterWayRoute> .
 _:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/bcore/infra#RailwayRoute> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/bcore/infra#RoadRoute> .
 _:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/bcore/infra#FootCycleRoute> .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/bcore/infra#RailwayRoute> .
 _:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/bcore/infra#FootCycleRoute> .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
 # 
 # Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

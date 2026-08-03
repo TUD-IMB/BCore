@@ -13,7 +13,7 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid13",
+  "@id" : "_:genid14",
   "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
   "http://www.w3.org/2002/07/owl#members" : [ {
     "@list" : [ {
@@ -31,6 +31,8 @@
   "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
   "http://www.w3.org/2002/07/owl#oneOf" : [ {
     "@list" : [ {
+      "@value" : "agricultural road"
+    }, {
       "@value" : "country road"
     }, {
       "@value" : "district road"
@@ -87,6 +89,9 @@
   "@id" : "https://schema.org/codeRepository",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
+  "@id" : "https://schema.org/unitText",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
   "@id" : "https://w3id.org/bcore#InfrastructureRoute",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
@@ -124,8 +129,7 @@
     "@value" : "https://creativecommons.org/licenses/by/4.0/deed.en"
   } ],
   "http://purl.org/dc/terms/modified" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#date",
-    "@value" : "2026-07-21"
+    "@value" : "2026-08-03"
   } ],
   "http://purl.org/ontology/bibo/status" : [ {
     "@value" : "Ontology Specification Draft"
@@ -138,23 +142,30 @@
     "@value" : "Bridge Core Ontology – Infrastructure Extension"
   } ],
   "http://www.w3.org/2002/07/owl#versionInfo" : [ {
-    "@value" : "0.1.0"
-  } ],
-  "https://schema.org/codeRepository" : [ {
-    "@value" : "https://github.com/TUD-IMB/BCore"
+    "@value" : "0.1.1"
   } ],
   "http://xmlns.com/foaf/0.1/logo" : [ {
     "@value" : "https://raw.githubusercontent.com/TUD-IMB/BCore/main/BCore.svg"
+  } ],
+  "https://schema.org/codeRepository" : [ {
+    "@value" : "https://github.com/TUD-IMB/BCore"
   } ]
 }, {
   "@id" : "https://w3id.org/bcore/infra#FootCycleRoute",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "de",
-    "@value" : "Geh- und/oder Radweg"
+    "@value" : "Trasse eines Geh- und/oder Radweges"
   }, {
     "@language" : "en",
-    "@value" : "footpath and/or bike path"
+    "@value" : "route of a footpath and/or bike path"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "de",
+    "@value" : "Fuß- oder Radwegtrasse"
+  }, {
+    "@language" : "en",
+    "@value" : "foot or cycle route"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/bcore#InfrastructureRoute"
@@ -167,13 +178,17 @@
     "@value" : "Art des Fuß- und/oder Radweges"
   }, {
     "@language" : "en",
-    "@value" : "Possible values:\n- foot only\n- bike only\n- segregated\n- shared-use"
-  }, {
-    "@language" : "en",
-    "@value" : "type of pedestrian and/or bike path"
+    "@value" : "Type of pedestrian and/or bike path. Possible values:\n- foot only\n- bike only\n- segregated\n- shared-use"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/bcore/infra#FootCycleRoute"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "de",
+    "@value" : "Fuß- oder Gehwegtyp"
+  }, {
+    "@language" : "en",
+    "@value" : "foot or cycle route type"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "_:genid1"
@@ -183,10 +198,17 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "de",
-    "@value" : "Schienenweg"
+    "@value" : "Trasse eines Schienenweges"
   }, {
     "@language" : "en",
-    "@value" : "railway"
+    "@value" : "railway line, railroad"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "de",
+    "@value" : "Eisenbahntrasse"
+  }, {
+    "@language" : "en",
+    "@value" : "railway route"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/bcore#InfrastructureRoute"
@@ -200,14 +222,22 @@
   }, {
     "@language" : "en",
     "@value" : "maximum permitted speed on the rail line"
-  }, {
-    "@value" : "[km/h]"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/bcore/infra#RailwayRoute"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "de",
+    "@value" : "Eisenbahntrasse maximale Geschwindigkeit"
+  }, {
+    "@language" : "en",
+    "@value" : "railway route maximum velocity"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#decimal"
+  } ],
+  "https://schema.org/unitText" : [ {
+    "@value" : "km/h"
   } ]
 }, {
   "@id" : "https://w3id.org/bcore/infra#RailwayRouteNumberOfTracks",
@@ -222,18 +252,34 @@
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/bcore/infra#RailwayRoute"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "de",
+    "@value" : "Eisenbahntrasse Gleisanzahl"
+  }, {
+    "@language" : "en",
+    "@value" : "railway route number of tracks"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#integer"
+  } ],
+  "https://schema.org/unitText" : [ {
+    "@value" : "-"
   } ]
 }, {
   "@id" : "https://w3id.org/bcore/infra#RoadRoute",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "de",
-    "@value" : "Straße"
+    "@value" : "Trasse einer Straße/ eines Feldweges/ einer Autobahn"
   }, {
     "@language" : "en",
-    "@value" : "road/street"
+    "@value" : "route of a street/road/highway/federal way/..."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "de",
+    "@value" : "Straßentrasse"
+  }, {
+    "@value" : "road route"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/bcore#InfrastructureRoute"
@@ -243,23 +289,27 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "de",
-    "@value" : "Straßenklasse"
+    "@value" : "Klassifizierung der Straße"
   }, {
     "@language" : "en",
-    "@value" : "possible values:\n- highway\n- federal road\n- country road\n- district road\n- urban road\n- non-public road"
-  }, {
-    "@language" : "en",
-    "@value" : "road classification"
+    "@value" : "Road classification. Possible values:\n- highway\n- federal road\n- country road\n- district road\n- urban road\n- agricultural road\n- non-public road"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/bcore/infra#RoadRoute"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "de",
+    "@value" : "Straßentrasse Klasse"
+  }, {
+    "@language" : "en",
+    "@value" : "road route class"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "_:genid6"
   } ]
 }, {
   "@id" : "https://w3id.org/bcore/infra#RoadRouteNumberOfLanes",
-  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "de",
     "@value" : "Anzahl der Fahrstreifen der Straße (Gesamtzahl beider Richtungsfahrbahnen)"
@@ -270,18 +320,35 @@
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/bcore/infra#RoadRoute"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "de",
+    "@value" : "Straßentrasse Spurenanzahl"
+  }, {
+    "@language" : "en",
+    "@value" : "road route number of lanes"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#integer"
+  } ],
+  "https://schema.org/unitText" : [ {
+    "@value" : "-"
   } ]
 }, {
   "@id" : "https://w3id.org/bcore/infra#WaterWayRoute",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "de",
-    "@value" : "Wasserstraße"
+    "@value" : "Trasse einer Wasserstraße"
   }, {
     "@language" : "en",
-    "@value" : "water way"
+    "@value" : "route of a water way"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "de",
+    "@value" : "Wasserstraßentrasse"
+  }, {
+    "@language" : "en",
+    "@value" : "water way route"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/bcore#InfrastructureRoute"
