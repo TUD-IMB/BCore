@@ -9,13 +9,13 @@
 <https://w3id.org/bcore/media> <http://purl.org/dc/terms/creator> "Xiaoli Song" .
 <https://w3id.org/bcore/media> <http://purl.org/dc/terms/description> "Extension ontology for the representation of bridge-related media. Designed to work in conjunction with the BCore ontology but to also allow for external use."@en .
 <https://w3id.org/bcore/media> <http://purl.org/dc/terms/license> "https://creativecommons.org/licenses/by/4.0/deed.en" .
-<https://w3id.org/bcore/media> <http://purl.org/dc/terms/modified> "2026-07-21"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://w3id.org/bcore/media> <http://purl.org/dc/terms/modified> "2026-08-04"^^<http://www.w3.org/2001/XMLSchema#date> .
 <https://w3id.org/bcore/media> <http://purl.org/ontology/bibo/status> "Ontology Specification Draft" .
 <https://w3id.org/bcore/media> <http://purl.org/vocab/vann/preferredNamespacePrefix> "bcoremedia" .
 <https://w3id.org/bcore/media> <http://www.w3.org/2000/01/rdf-schema#label> "Bridge Core Ontology – Media Extension"@en .
-<https://w3id.org/bcore/media> <http://www.w3.org/2002/07/owl#versionInfo> "0.1.0" .
-<https://w3id.org/bcore/media> <https://schema.org/codeRepository> "https://github.com/TUD-IMB/BCore" .
+<https://w3id.org/bcore/media> <http://www.w3.org/2002/07/owl#versionInfo> "0.1.1" .
 <https://w3id.org/bcore/media> <http://xmlns.com/foaf/0.1/logo> "https://raw.githubusercontent.com/TUD-IMB/BCore/main/BCore.svg" .
+<https://w3id.org/bcore/media> <https://schema.org/codeRepository> "https://github.com/TUD-IMB/BCore" .
 # 
 # 
 # #################################################################
@@ -64,6 +64,9 @@
 # https://schema.org/codeRepository
 <https://schema.org/codeRepository> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
+# https://schema.org/unitText
+<https://schema.org/unitText> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
 # 
 # 
 # #################################################################
@@ -88,20 +91,19 @@
 # https://w3id.org/bcore#describes
 <https://w3id.org/bcore#describes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://w3id.org/bcore#describes> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/bcore#MediaFile> .
-<https://w3id.org/bcore#MediaFile> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/bcore#describes> <http://www.w3.org/2000/01/rdf-schema#range> _:genid1 .
 _:genid1 <http://www.w3.org/2002/07/owl#unionOf> _:genid3 .
 _:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid2 .
 _:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
 _:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/brot#Component> .
-<https://w3id.org/brot#Component> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 _:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
 _:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/brot#Bridge> .
-<https://w3id.org/brot#Bridge> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 _:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
 _:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/bcore#describes> <http://www.w3.org/2000/01/rdf-schema#comment> "Mediendatei beschreibt (stellt dar, zeigt, veranschaulicht) eine Brücke"@de .
-<https://w3id.org/bcore#describes> <http://www.w3.org/2000/01/rdf-schema#comment> "media file describes (represents, depicts, illustrates) a bridge"@en .
+<https://w3id.org/bcore#describes> <http://www.w3.org/2000/01/rdf-schema#comment> "Mediendatei beschreibt (stellt dar, zeigt, veranschaulicht) eine Brücke oder ein Bauteil"@de .
+<https://w3id.org/bcore#describes> <http://www.w3.org/2000/01/rdf-schema#comment> "media file describes (represents, depicts, illustrates) a bridge or a bridge component"@en .
+<https://w3id.org/bcore#describes> <http://www.w3.org/2000/01/rdf-schema#label> "beschreibt"@de .
+<https://w3id.org/bcore#describes> <http://www.w3.org/2000/01/rdf-schema#label> "describes"@en .
 # 
 # https://w3id.org/bcore/media#containsMedia
 <https://w3id.org/bcore/media#containsMedia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -111,6 +113,8 @@ _:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 <https://w3id.org/bcore/media#containsMedia> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/bcore#MediaFile> .
 <https://w3id.org/bcore/media#containsMedia> <http://www.w3.org/2000/01/rdf-schema#comment> "Mediendatei enthält eine andere Mediendatei"@de .
 <https://w3id.org/bcore/media#containsMedia> <http://www.w3.org/2000/01/rdf-schema#comment> "media file contains another media file"@en .
+<https://w3id.org/bcore/media#containsMedia> <http://www.w3.org/2000/01/rdf-schema#label> "contains media"@en .
+<https://w3id.org/bcore/media#containsMedia> <http://www.w3.org/2000/01/rdf-schema#label> "enthält Mediendatei"@de .
 # 
 # 
 # 
@@ -123,19 +127,25 @@ _:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 # 
 # https://w3id.org/bcore/media#ImageResolutionX
 <https://w3id.org/bcore/media#ImageResolutionX> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/bcore/media#ImageResolutionX> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
 <https://w3id.org/bcore/media#ImageResolutionX> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/bcore/media#Image> .
 <https://w3id.org/bcore/media#ImageResolutionX> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
 <https://w3id.org/bcore/media#ImageResolutionX> <http://www.w3.org/2000/01/rdf-schema#comment> "Bildauflösung in X-Richtung"@de .
 <https://w3id.org/bcore/media#ImageResolutionX> <http://www.w3.org/2000/01/rdf-schema#comment> "image resolution in X-direction"@en .
-<https://w3id.org/bcore/media#ImageResolutionX> <http://www.w3.org/2000/01/rdf-schema#comment> "[pixel]" .
+<https://w3id.org/bcore/media#ImageResolutionX> <http://www.w3.org/2000/01/rdf-schema#label> "Bildauflösung X"@de .
+<https://w3id.org/bcore/media#ImageResolutionX> <http://www.w3.org/2000/01/rdf-schema#label> "image resolution X"@en .
+<https://w3id.org/bcore/media#ImageResolutionX> <https://schema.org/unitText> "pixel" .
 # 
 # https://w3id.org/bcore/media#ImageResolutionY
 <https://w3id.org/bcore/media#ImageResolutionY> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/bcore/media#ImageResolutionY> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
 <https://w3id.org/bcore/media#ImageResolutionY> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/bcore/media#Image> .
 <https://w3id.org/bcore/media#ImageResolutionY> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
 <https://w3id.org/bcore/media#ImageResolutionY> <http://www.w3.org/2000/01/rdf-schema#comment> "Bildauflösung in Y-Richtung"@de .
 <https://w3id.org/bcore/media#ImageResolutionY> <http://www.w3.org/2000/01/rdf-schema#comment> "image resolution in Y-direction"@en .
-<https://w3id.org/bcore/media#ImageResolutionY> <http://www.w3.org/2000/01/rdf-schema#comment> "[pixel]" .
+<https://w3id.org/bcore/media#ImageResolutionY> <http://www.w3.org/2000/01/rdf-schema#label> "Bildauflösung Y"@de .
+<https://w3id.org/bcore/media#ImageResolutionY> <http://www.w3.org/2000/01/rdf-schema#label> "image resolution Y"@en .
+<https://w3id.org/bcore/media#ImageResolutionY> <https://schema.org/unitText> "pixel" .
 # 
 # 
 # 
@@ -147,12 +157,15 @@ _:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 # 
 # 
 # https://w3id.org/bcore#MediaFile
+<https://w3id.org/bcore#MediaFile> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 # 
 # https://w3id.org/bcore/media#Document
 <https://w3id.org/bcore/media#Document> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/bcore/media#Document> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/bcore#MediaFile> .
 <https://w3id.org/bcore/media#Document> <http://www.w3.org/2000/01/rdf-schema#comment> "Physische oder digitale Darstellung einer Informationseinheit, die zur Kommunikation verwendet werden kann"@de .
 <https://w3id.org/bcore/media#Document> <http://www.w3.org/2000/01/rdf-schema#comment> "physical or digital representation of a body of information designed with the capacity to communicate"@en .
+<https://w3id.org/bcore/media#Document> <http://www.w3.org/2000/01/rdf-schema#label> "Dokument"@de .
+<https://w3id.org/bcore/media#Document> <http://www.w3.org/2000/01/rdf-schema#label> "document"@en .
 <https://w3id.org/bcore/media#Document> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "http://semanticscience.org/resource/SIO_000148" .
 # 
 # https://w3id.org/bcore/media#Image
@@ -160,6 +173,8 @@ _:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 <https://w3id.org/bcore/media#Image> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/bcore#MediaFile> .
 <https://w3id.org/bcore/media#Image> <http://www.w3.org/2000/01/rdf-schema#comment> "Bilddatei"@de .
 <https://w3id.org/bcore/media#Image> <http://www.w3.org/2000/01/rdf-schema#comment> "image file"@en .
+<https://w3id.org/bcore/media#Image> <http://www.w3.org/2000/01/rdf-schema#label> "Bild"@de .
+<https://w3id.org/bcore/media#Image> <http://www.w3.org/2000/01/rdf-schema#label> "image"@en .
 <https://w3id.org/bcore/media#Image> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "http://semanticscience.org/resource/SIO_000081" .
 # 
 # https://w3id.org/bcore/media#Photo
@@ -167,10 +182,14 @@ _:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 <https://w3id.org/bcore/media#Photo> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/bcore/media#Image> .
 <https://w3id.org/bcore/media#Photo> <http://www.w3.org/2000/01/rdf-schema#comment> "Foto (entstanden durch auf eine lichtempfindliche Oberfläche fallendes Licht)"@de .
 <https://w3id.org/bcore/media#Photo> <http://www.w3.org/2000/01/rdf-schema#comment> "photograph (created by light falling on light-sensitive surface)"@en .
+<https://w3id.org/bcore/media#Photo> <http://www.w3.org/2000/01/rdf-schema#label> "Foto"@de .
+<https://w3id.org/bcore/media#Photo> <http://www.w3.org/2000/01/rdf-schema#label> "photo"@en .
 <https://w3id.org/bcore/media#Photo> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "http://semanticscience.org/resource/SIO_000082" .
 # 
 # https://w3id.org/brot#Bridge
+<https://w3id.org/brot#Bridge> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 # 
 # https://w3id.org/brot#Component
+<https://w3id.org/brot#Component> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 # 
 # Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

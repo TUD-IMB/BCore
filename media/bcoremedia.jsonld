@@ -51,6 +51,9 @@
   "@id" : "https://schema.org/codeRepository",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
+  "@id" : "https://schema.org/unitText",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
   "@id" : "https://w3id.org/bcore#MediaFile",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
@@ -58,13 +61,20 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "de",
-    "@value" : "Mediendatei beschreibt (stellt dar, zeigt, veranschaulicht) eine Brücke"
+    "@value" : "Mediendatei beschreibt (stellt dar, zeigt, veranschaulicht) eine Brücke oder ein Bauteil"
   }, {
     "@language" : "en",
-    "@value" : "media file describes (represents, depicts, illustrates) a bridge"
+    "@value" : "media file describes (represents, depicts, illustrates) a bridge or a bridge component"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/bcore#MediaFile"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "de",
+    "@value" : "beschreibt"
+  }, {
+    "@language" : "en",
+    "@value" : "describes"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "_:genid1"
@@ -105,7 +115,7 @@
   } ],
   "http://purl.org/dc/terms/modified" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#date",
-    "@value" : "2026-07-21"
+    "@value" : "2026-08-04"
   } ],
   "http://purl.org/ontology/bibo/status" : [ {
     "@value" : "Ontology Specification Draft"
@@ -118,13 +128,13 @@
     "@value" : "Bridge Core Ontology – Media Extension"
   } ],
   "http://www.w3.org/2002/07/owl#versionInfo" : [ {
-    "@value" : "0.1.0"
-  } ],
-  "https://schema.org/codeRepository" : [ {
-    "@value" : "https://github.com/TUD-IMB/BCore"
+    "@value" : "0.1.1"
   } ],
   "http://xmlns.com/foaf/0.1/logo" : [ {
     "@value" : "https://raw.githubusercontent.com/TUD-IMB/BCore/main/BCore.svg"
+  } ],
+  "https://schema.org/codeRepository" : [ {
+    "@value" : "https://github.com/TUD-IMB/BCore"
   } ]
 }, {
   "@id" : "https://w3id.org/bcore/media#Document",
@@ -135,6 +145,13 @@
   }, {
     "@language" : "en",
     "@value" : "physical or digital representation of a body of information designed with the capacity to communicate"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "de",
+    "@value" : "Dokument"
+  }, {
+    "@language" : "en",
+    "@value" : "document"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
     "@value" : "http://semanticscience.org/resource/SIO_000148"
@@ -152,6 +169,13 @@
     "@language" : "en",
     "@value" : "image file"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "de",
+    "@value" : "Bild"
+  }, {
+    "@language" : "en",
+    "@value" : "image"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
     "@value" : "http://semanticscience.org/resource/SIO_000081"
   } ],
@@ -160,39 +184,55 @@
   } ]
 }, {
   "@id" : "https://w3id.org/bcore/media#ImageResolutionX",
-  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "de",
     "@value" : "Bildauflösung in X-Richtung"
   }, {
     "@language" : "en",
     "@value" : "image resolution in X-direction"
-  }, {
-    "@value" : "[pixel]"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/bcore/media#Image"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "de",
+    "@value" : "Bildauflösung X"
+  }, {
+    "@language" : "en",
+    "@value" : "image resolution X"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#integer"
+  } ],
+  "https://schema.org/unitText" : [ {
+    "@value" : "pixel"
   } ]
 }, {
   "@id" : "https://w3id.org/bcore/media#ImageResolutionY",
-  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "de",
     "@value" : "Bildauflösung in Y-Richtung"
   }, {
     "@language" : "en",
     "@value" : "image resolution in Y-direction"
-  }, {
-    "@value" : "[pixel]"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/bcore/media#Image"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "de",
+    "@value" : "Bildauflösung Y"
+  }, {
+    "@language" : "en",
+    "@value" : "image resolution Y"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#integer"
+  } ],
+  "https://schema.org/unitText" : [ {
+    "@value" : "pixel"
   } ]
 }, {
   "@id" : "https://w3id.org/bcore/media#Photo",
@@ -203,6 +243,13 @@
   }, {
     "@language" : "en",
     "@value" : "photograph (created by light falling on light-sensitive surface)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "de",
+    "@value" : "Foto"
+  }, {
+    "@language" : "en",
+    "@value" : "photo"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
     "@value" : "http://semanticscience.org/resource/SIO_000082"
@@ -222,6 +269,13 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/bcore#MediaFile"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "contains media"
+  }, {
+    "@language" : "de",
+    "@value" : "enthält Mediendatei"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "https://w3id.org/bcore#MediaFile"
