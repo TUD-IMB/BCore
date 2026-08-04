@@ -57,6 +57,13 @@
     "@language" : "en",
     "@value" : "line localisation (describes a line object which is defined by a start point and an end point and is used for linear referencing according to the principles defined in ISO 19148)"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "de",
+    "@value" : "Linienlokalisierung"
+  }, {
+    "@language" : "en",
+    "@value" : "line localisation"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://dtc-ontology.cms.ed.tum.de/infraspatialot#Localisation"
   } ]
@@ -69,6 +76,13 @@
   }, {
     "@language" : "en",
     "@value" : "localisation (location; describes a geographic place in relation to a linear reference element according to the principles defined in ISO 19148)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "de",
+    "@value" : "Lokalisierung"
+  }, {
+    "@language" : "en",
+    "@value" : "localisation"
   } ]
 }, {
   "@id" : "https://dtc-ontology.cms.ed.tum.de/infraspatialot#Point",
@@ -79,9 +93,19 @@
   }, {
     "@language" : "en",
     "@value" : "point in three-dimensional space"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "de",
+    "@value" : "Punkt"
+  }, {
+    "@language" : "en",
+    "@value" : "point"
   } ]
 }, {
   "@id" : "https://schema.org/codeRepository",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://schema.org/unitText",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
   "@id" : "https://w3id.org/bcore",
@@ -119,7 +143,7 @@
   } ],
   "http://purl.org/dc/terms/modified" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#date",
-    "@value" : "2026-07-21"
+    "@value" : "2026-08-04"
   } ],
   "http://purl.org/ontology/bibo/status" : [ {
     "@value" : "Ontology Specification Draft"
@@ -132,13 +156,13 @@
     "@value" : "Bridge Core Ontology"
   } ],
   "http://www.w3.org/2002/07/owl#versionInfo" : [ {
-    "@value" : "0.1.0"
-  } ],
-  "https://schema.org/codeRepository" : [ {
-    "@value" : "https://github.com/TUD-IMB/BCore"
+    "@value" : "0.1.1"
   } ],
   "http://xmlns.com/foaf/0.1/logo" : [ {
     "@value" : "https://raw.githubusercontent.com/TUD-IMB/BCore/main/BCore.svg"
+  } ],
+  "https://schema.org/codeRepository" : [ {
+    "@value" : "https://github.com/TUD-IMB/BCore"
   } ]
 }, {
   "@id" : "https://w3id.org/bcore#Altitude",
@@ -149,14 +173,22 @@
   }, {
     "@language" : "en",
     "@value" : "elevation above sea level (according to the locally applicable official elevation system)"
-  }, {
-    "@value" : "[m]"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://dtc-ontology.cms.ed.tum.de/infraspatialot#Point"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "de",
+    "@value" : "Altitude"
+  }, {
+    "@language" : "en",
+    "@value" : "altitude"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#decimal"
+  } ],
+  "https://schema.org/unitText" : [ {
+    "@value" : "m"
   } ]
 }, {
   "@id" : "https://w3id.org/bcore#BridgeConstructionEndDate",
@@ -167,17 +199,25 @@
   }, {
     "@language" : "en",
     "@value" : "end date of the bridge's construction (completion)"
-  }, {
-    "@value" : "[ISO Date Format]"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/brot#Bridge"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "de",
+    "@value" : "Brücke Fertigstellung"
+  }, {
+    "@language" : "en",
+    "@value" : "bridge construction end date"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#date"
+  } ],
+  "https://schema.org/unitText" : [ {
+    "@value" : "ISO Date Format"
   } ]
 }, {
-  "@id" : "https://w3id.org/bcore#BridgeConstructionStart",
+  "@id" : "https://w3id.org/bcore#BridgeConstructionStartDate",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "de",
@@ -185,14 +225,22 @@
   }, {
     "@language" : "en",
     "@value" : "start date of the bridge's construction"
-  }, {
-    "@value" : "[ISO Date Format]"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/brot#Bridge"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "de",
+    "@value" : "Brücke Baubeginn"
+  }, {
+    "@language" : "en",
+    "@value" : "bridge construction start date"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#date"
+  } ],
+  "https://schema.org/unitText" : [ {
+    "@value" : "ISO Date Format"
   } ]
 }, {
   "@id" : "https://w3id.org/bcore#BridgeID",
@@ -207,6 +255,13 @@
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/brot#Bridge"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "de",
+    "@value" : "Brücke ID"
+  }, {
+    "@language" : "en",
+    "@value" : "bridge ID"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#int"
   } ]
@@ -219,14 +274,22 @@
   }, {
     "@language" : "en",
     "@value" : "length of the bridge"
-  }, {
-    "@value" : "[m]"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/brot#Bridge"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "de",
+    "@value" : "Brückenlänge"
+  }, {
+    "@language" : "en",
+    "@value" : "bridge length"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#decimal"
+  } ],
+  "https://schema.org/unitText" : [ {
+    "@value" : "m"
   } ]
 }, {
   "@id" : "https://w3id.org/bcore#BridgeLoadCase",
@@ -240,6 +303,13 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/brot#Bridge"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "de",
+    "@value" : "Brücke Lastfall"
+  }, {
+    "@language" : "en",
+    "@value" : "bridge load case"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
@@ -257,11 +327,18 @@
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/brot#Bridge"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "de",
+    "@value" : "Brückenname"
+  }, {
+    "@language" : "en",
+    "@value" : "bridge name"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
-  "@id" : "https://w3id.org/bcore#BridgePlanningEnd",
+  "@id" : "https://w3id.org/bcore#BridgePlanningEndDate",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "de",
@@ -269,17 +346,25 @@
   }, {
     "@language" : "en",
     "@value" : "end date of the bridge's planning phase"
-  }, {
-    "@value" : "[ISO Date Format]"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/brot#Bridge"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "de",
+    "@value" : "Brücke Planungsbeginn"
+  }, {
+    "@language" : "en",
+    "@value" : "bridge planning end date"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#date"
+  } ],
+  "https://schema.org/unitText" : [ {
+    "@value" : "ISO Date Format"
   } ]
 }, {
-  "@id" : "https://w3id.org/bcore#BridgePlanningStart",
+  "@id" : "https://w3id.org/bcore#BridgePlanningStartDate",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "de",
@@ -287,14 +372,22 @@
   }, {
     "@language" : "en",
     "@value" : "start date of the bridge's planning phase"
-  }, {
-    "@value" : "[ISO Date Format]"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/brot#Bridge"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "de",
+    "@value" : "Brücke Planungsbeginn"
+  }, {
+    "@language" : "en",
+    "@value" : "bridge planning start date"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#date"
+  } ],
+  "https://schema.org/unitText" : [ {
+    "@value" : "ISO Date Format"
   } ]
 }, {
   "@id" : "https://w3id.org/bcore#BridgeStatus",
@@ -309,6 +402,13 @@
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/brot#Bridge"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "de",
+    "@value" : "Brückenstatus"
+  }, {
+    "@language" : "en",
+    "@value" : "bridge status"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
@@ -321,6 +421,13 @@
   }, {
     "@language" : "en",
     "@value" : "city (can also be used for towns and thelike)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "de",
+    "@value" : "Stadt"
+  }, {
+    "@language" : "en",
+    "@value" : "city"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/bot#Zone"
@@ -335,12 +442,19 @@
     "@language" : "en",
     "@value" : "country (nation-state)"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "de",
+    "@value" : "Land"
+  }, {
+    "@language" : "en",
+    "@value" : "country"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/bot#Zone"
   } ]
 }, {
   "@id" : "https://w3id.org/bcore#CountryISOCode",
-  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "de",
     "@value" : "Ländercode nach ISO-3166-1 (ALPHA-2)"
@@ -351,6 +465,13 @@
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/bcore#Country"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "de",
+    "@value" : "Ländercode ISO"
+  }, {
+    "@language" : "en",
+    "@value" : "country ISO code"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
@@ -358,24 +479,39 @@
   "@id" : "https://w3id.org/bcore#Density",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "average mass density of material"
+  }, {
+    "@language" : "de",
+    "@value" : "durchschnittliche Massendichte des Materials"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/bmat#BuildingMaterial"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "de",
     "@value" : "Dichte"
   }, {
     "@language" : "en",
     "@value" : "density"
-  }, {
-    "@value" : "[kg/m³]"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/bmat#BuildingMaterial"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#decimal"
+  } ],
+  "https://schema.org/unitText" : [ {
+    "@value" : "kg/m³"
   } ]
 }, {
   "@id" : "https://w3id.org/bcore#InfrastructureRoute",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "de",
+    "@value" : "Trasse/ Linienführung einer linearen Infrastruktur"
+  }, {
+    "@language" : "en",
+    "@value" : "route or alignment of a linear infrastructure"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "de",
     "@value" : "Infrastrukturtrasse"
   }, {
@@ -391,14 +527,22 @@
   }, {
     "@language" : "en",
     "@value" : "height of the route's clearance profile"
-  }, {
-    "@value" : "[m]"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/bcore#InfrastructureRoute"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "de",
+    "@value" : "Infrastrukturtrasse lichte Höhe"
+  }, {
+    "@language" : "en",
+    "@value" : "infrastructure route clearance height"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#decimal"
+  } ],
+  "https://schema.org/unitText" : [ {
+    "@value" : "m"
   } ]
 }, {
   "@id" : "https://w3id.org/bcore#InfrastructureRouteName",
@@ -413,6 +557,13 @@
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/bcore#InfrastructureRoute"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "de",
+    "@value" : "Infrastrukturtrasse Name"
+  }, {
+    "@language" : "en",
+    "@value" : "infrastructure route name"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
@@ -423,28 +574,44 @@
     "@language" : "de",
     "@value" : "Querschnittsbreite der Infrastrukturtrasse"
   }, {
-    "@value" : "[m]"
-  }, {
+    "@language" : "en",
     "@value" : "cross-sectional width of the infrastructure route"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/bcore#InfrastructureRoute"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "de",
+    "@value" : "Infrastrukturtrasse Breite"
+  }, {
+    "@language" : "en",
+    "@value" : "infrastructure route width"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#decimal"
+  } ],
+  "https://schema.org/unitText" : [ {
+    "@value" : "m"
   } ]
 }, {
   "@id" : "https://w3id.org/bcore#Latitude",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "de",
+    "@value" : "geografische Breite"
+  }, {
+    "@language" : "en",
+    "@value" : "geographic latitude"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://dtc-ontology.cms.ed.tum.de/infraspatialot#Point"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "de",
     "@value" : "Breitengrad"
   }, {
     "@language" : "en",
     "@value" : "latitude"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://dtc-ontology.cms.ed.tum.de/infraspatialot#Point"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#decimal"
@@ -458,14 +625,22 @@
   }, {
     "@language" : "de",
     "@value" : "lokale X-Koordinate"
-  }, {
-    "@value" : "[m]"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://dtc-ontology.cms.ed.tum.de/infraspatialot#Point"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "local X"
+  }, {
+    "@language" : "de",
+    "@value" : "lokales X"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#decimal"
+  } ],
+  "https://schema.org/unitText" : [ {
+    "@value" : "m"
   } ]
 }, {
   "@id" : "https://w3id.org/bcore#LocalY",
@@ -476,14 +651,22 @@
   }, {
     "@language" : "de",
     "@value" : "lokale Y-Koordinate"
-  }, {
-    "@value" : "[m]"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://dtc-ontology.cms.ed.tum.de/infraspatialot#Point"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "local Y"
+  }, {
+    "@language" : "de",
+    "@value" : "lokales Y"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#decimal"
+  } ],
+  "https://schema.org/unitText" : [ {
+    "@value" : "m"
   } ]
 }, {
   "@id" : "https://w3id.org/bcore#LocalZ",
@@ -494,14 +677,22 @@
   }, {
     "@language" : "de",
     "@value" : "lokale Z-Koordinate"
-  }, {
-    "@value" : "[m]"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://dtc-ontology.cms.ed.tum.de/infraspatialot#Point"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "local Z"
+  }, {
+    "@language" : "de",
+    "@value" : "lokales Z"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#decimal"
+  } ],
+  "https://schema.org/unitText" : [ {
+    "@value" : "m"
   } ]
 }, {
   "@id" : "https://w3id.org/bcore#LocalisationName",
@@ -516,6 +707,13 @@
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://dtc-ontology.cms.ed.tum.de/infraspatialot#Localisation"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "de",
+    "@value" : "Lokalisierung Name"
+  }, {
+    "@language" : "en",
+    "@value" : "localisation name"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
@@ -528,27 +726,42 @@
   }, {
     "@language" : "en",
     "@value" : "kilometer marking of the localisation (location) on the route"
-  }, {
-    "@value" : "[km]"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://dtc-ontology.cms.ed.tum.de/infraspatialot#Localisation"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "de",
+    "@value" : "Lokalisierung Stationierung"
+  }, {
+    "@language" : "en",
+    "@value" : "localisation station"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#decimal"
+  } ],
+  "https://schema.org/unitText" : [ {
+    "@value" : "m"
   } ]
 }, {
   "@id" : "https://w3id.org/bcore#Longitude",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "de",
+    "@value" : "geografische Länge"
+  }, {
+    "@language" : "en",
+    "@value" : "geographic longitude"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://dtc-ontology.cms.ed.tum.de/infraspatialot#Point"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "de",
     "@value" : "Längengrad"
   }, {
     "@language" : "en",
     "@value" : "longitude"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://dtc-ontology.cms.ed.tum.de/infraspatialot#Point"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#decimal"
@@ -566,6 +779,13 @@
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/bmat#BuildingMaterial"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "de",
+    "@value" : "Materialname"
+  }, {
+    "@language" : "en",
+    "@value" : "material name"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
@@ -573,6 +793,13 @@
   "@id" : "https://w3id.org/bcore#MediaFile",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "digital data or real object that transports/stores information"
+  }, {
+    "@language" : "de",
+    "@value" : "digitale Datei oder reales Objekt, das Informationen trägt"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "de",
     "@value" : "Mediendatei"
   }, {
@@ -592,12 +819,19 @@
     "@language" : "en",
     "@value" : "region/federal state"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "de",
+    "@value" : "Region"
+  }, {
+    "@language" : "en",
+    "@value" : "region"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/bot#Zone"
   } ]
 }, {
   "@id" : "https://w3id.org/bcore#RegionISOCode",
-  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "de",
     "@value" : "Regionalcode nach ISO-3166-2"
@@ -608,6 +842,13 @@
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/bcore#Region"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "de",
+    "@value" : "Regionalcode ISO"
+  }, {
+    "@language" : "en",
+    "@value" : "region ISO code"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
@@ -616,18 +857,26 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "de",
-    "@value" : "Volumen"
+    "@value" : "metrisches Volumen des Bauteils"
   }, {
     "@language" : "en",
-    "@value" : "volume"
-  }, {
-    "@value" : "[m³]"
+    "@value" : "volume of the component"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/brot#Component"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "de",
+    "@value" : "Volumen"
+  }, {
+    "@language" : "en",
+    "@value" : "volume"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#decimal"
+  } ],
+  "https://schema.org/unitText" : [ {
+    "@value" : "m³"
   } ]
 }, {
   "@id" : "https://w3id.org/bcore#ZoneName",
@@ -641,6 +890,13 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/bot#Zone"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "de",
+    "@value" : "Zonenname"
+  }, {
+    "@language" : "en",
+    "@value" : "zone name"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
@@ -658,6 +914,13 @@
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/brot#Bridge"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "bridges route"
+  }, {
+    "@language" : "de",
+    "@value" : "überquert Trasse"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "https://w3id.org/bcore#InfrastructureRoute"
   } ]
@@ -673,6 +936,13 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/brot#Bridge"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "bridges zone"
+  }, {
+    "@language" : "de",
+    "@value" : "überquert Zone"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "https://w3id.org/bot#Zone"
@@ -690,6 +960,13 @@
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/brot#Bridge"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "carries route"
+  }, {
+    "@language" : "de",
+    "@value" : "überführt Trasse"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "https://w3id.org/bcore#InfrastructureRoute"
   } ],
@@ -701,13 +978,20 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#SymmetricProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "de",
-    "@value" : "Trasse kreuzt Trasse"
+    "@value" : "Trasse kreuzt Trasse im Lageplan (ohne Beachtung der Altitude)"
   }, {
     "@language" : "en",
-    "@value" : "route crosses route"
+    "@value" : "route crosses route on the site plan (without regard of the altitude)"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/bcore#InfrastructureRoute"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "crosses route"
+  }, {
+    "@language" : "de",
+    "@value" : "kreuzt Trasse"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "https://w3id.org/bcore#InfrastructureRoute"
@@ -725,6 +1009,13 @@
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/bcore#InfrastructureRoute"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "crosses zone"
+  }, {
+    "@language" : "de",
+    "@value" : "durchquert Zone"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "https://w3id.org/bot#Zone"
   } ]
@@ -741,8 +1032,67 @@
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/bcore#MediaFile"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "de",
+    "@value" : "beschreibt"
+  }, {
+    "@language" : "en",
+    "@value" : "describes"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "_:genid1"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bcore#endsAt",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "de",
+    "@value" : "Endpunkt der Linienlokalisierung"
+  }, {
+    "@language" : "en",
+    "@value" : "end point of the line localisation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://dtc-ontology.cms.ed.tum.de/infraspatialot#LineLocalisation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "de",
+    "@value" : "endet an"
+  }, {
+    "@language" : "en",
+    "@value" : "ends at"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://dtc-ontology.cms.ed.tum.de/infraspatialot#Point"
+  } ],
+  "http://www.w3.org/2002/07/owl#propertyDisjointWith" : [ {
+    "@id" : "https://w3id.org/bcore#startsAt"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bcore#hasLocationAt",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "de",
+    "@value" : "Punkt der Lokalisierung (Ort)"
+  }, {
+    "@language" : "en",
+    "@value" : "point of the line localisation (location)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://dtc-ontology.cms.ed.tum.de/infraspatialot#Localisation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has location at"
+  }, {
+    "@language" : "de",
+    "@value" : "ist lokalisiert an"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://dtc-ontology.cms.ed.tum.de/infraspatialot#Point"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@value" : "https://dtc-ontology.cms.ed.tum.de/infraspatialot#isisLocatedAt"
   } ]
 }, {
   "@id" : "https://w3id.org/bcore#hasPartialStructure",
@@ -757,6 +1107,13 @@
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/brot#Bridge"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "contains partial structure"
+  }, {
+    "@language" : "de",
+    "@value" : "enthält Brückenzug"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "https://w3id.org/brot#Bridge"
   } ],
@@ -764,7 +1121,7 @@
     "@id" : "https://w3id.org/bcore#isPartialStructureOf"
   } ]
 }, {
-  "@id" : "https://w3id.org/bcore#includesPoint",
+  "@id" : "https://w3id.org/bcore#includesLocalisation",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "de",
@@ -776,30 +1133,18 @@
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/bcore#InfrastructureRoute"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "de",
+    "@value" : "enthält Lokalisation"
+  }, {
+    "@language" : "en",
+    "@value" : "includes localisation"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "https://dtc-ontology.cms.ed.tum.de/infraspatialot#Localisation"
   } ],
   "http://www.w3.org/2002/07/owl#inverseOf" : [ {
     "@id" : "https://w3id.org/bcore#isPartOfRoute"
-  } ]
-}, {
-  "@id" : "https://w3id.org/bcore#liesWithin",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#TransitiveProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "de",
-    "@value" : "Zone liegt in Zone"
-  }, {
-    "@language" : "en",
-    "@value" : "zone lies within zone"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/bot#Zone"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://w3id.org/bot#Zone"
-  } ],
-  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
-    "@id" : "https://w3id.org/bot#containsZone"
   } ]
 }, {
   "@id" : "https://w3id.org/bcore#isLocatedAt",
@@ -813,6 +1158,13 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/bot#Zone"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "de",
+    "@value" : "befindet sich an"
+  }, {
+    "@language" : "en",
+    "@value" : "is located at"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "https://dtc-ontology.cms.ed.tum.de/infraspatialot#Localisation"
@@ -830,62 +1182,15 @@
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://dtc-ontology.cms.ed.tum.de/infraspatialot#Point"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "de",
+    "@value" : "befindet sich in Zone"
+  }, {
+    "@language" : "en",
+    "@value" : "is located in zone"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "https://w3id.org/bot#Zone"
-  } ]
-}, {
-  "@id" : "https://w3id.org/bcore#locationAt",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "de",
-    "@value" : "Punkt der Lokalisierung (Ort)"
-  }, {
-    "@language" : "en",
-    "@value" : "point of the line localisation (location)"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://dtc-ontology.cms.ed.tum.de/infraspatialot#Localisation"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://dtc-ontology.cms.ed.tum.de/infraspatialot#Point"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
-    "@value" : "https://dtc-ontology.cms.ed.tum.de/infraspatialot#isisLocatedAt"
-  } ]
-}, {
-  "@id" : "https://w3id.org/bcore#locationEndsAt",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "de",
-    "@value" : "Endpunkt der Linienlokalisierung"
-  }, {
-    "@language" : "en",
-    "@value" : "end point of the line localisation"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://dtc-ontology.cms.ed.tum.de/infraspatialot#LineLocalisation"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://dtc-ontology.cms.ed.tum.de/infraspatialot#Point"
-  } ],
-  "http://www.w3.org/2002/07/owl#propertyDisjointWith" : [ {
-    "@id" : "https://w3id.org/bcore#locationStartsAt"
-  } ]
-}, {
-  "@id" : "https://w3id.org/bcore#locationStartsAt",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "de",
-    "@value" : "Startpunkt der Linienlokalisierung"
-  }, {
-    "@language" : "en",
-    "@value" : "starting point of the line localisation"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://dtc-ontology.cms.ed.tum.de/infraspatialot#LineLocalisation"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://dtc-ontology.cms.ed.tum.de/infraspatialot#Point"
   } ]
 }, {
   "@id" : "https://w3id.org/bcore#isMadeOfMaterial",
@@ -900,6 +1205,13 @@
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/brot#Component"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "de",
+    "@value" : "besteht aus Material"
+  }, {
+    "@language" : "en",
+    "@value" : "is made of material"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "https://w3id.org/bmat#BuildingMaterial"
   } ]
@@ -908,13 +1220,20 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#TransitiveProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "de",
-    "@value" : "Bauteil ist Teil von Bauteil"
+    "@value" : "Brückenauteil ist Teil eines anderen Bauteils"
   }, {
     "@language" : "en",
-    "@value" : "component is part of component"
+    "@value" : "bridge element is part of another element"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/brot#Component"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "is part of component"
+  }, {
+    "@language" : "de",
+    "@value" : "ist Teil von Bauteil"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "https://w3id.org/brot#Component"
@@ -927,13 +1246,20 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "de",
-    "@value" : "Trassenpunkt ist Teil von Trasse"
+    "@value" : "Trassenpunkt ist Teil einer Trasse"
   }, {
     "@language" : "en",
-    "@value" : "route point is part of a route"
+    "@value" : "localisation (route point) is part of a route"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://dtc-ontology.cms.ed.tum.de/infraspatialot#Localisation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "is part of route"
+  }, {
+    "@language" : "de",
+    "@value" : "ist Teil von Trasse"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "https://w3id.org/bcore#InfrastructureRoute"
@@ -950,6 +1276,13 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/brot#Component"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "is part of zone"
+  }, {
+    "@language" : "de",
+    "@value" : "ist Teil einer Zone"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "https://w3id.org/brot#SpatialZone"
@@ -970,8 +1303,64 @@
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/brot#Bridge"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "is partial structure of"
+  }, {
+    "@language" : "de",
+    "@value" : "ist Brückenzug von"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "https://w3id.org/brot#Bridge"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bcore#liesWithin",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#TransitiveProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "de",
+    "@value" : "Zone wird vollständig von anderer Zone umschlossen"
+  }, {
+    "@language" : "en",
+    "@value" : "zone is fully enclosed by another zone"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/bot#Zone"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "de",
+    "@value" : "liegt in"
+  }, {
+    "@language" : "en",
+    "@value" : "lies within"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/bot#Zone"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://w3id.org/bot#containsZone"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bcore#startsAt",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "de",
+    "@value" : "Startpunkt der Linienlokalisierung"
+  }, {
+    "@language" : "en",
+    "@value" : "starting point of the line localisation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://dtc-ontology.cms.ed.tum.de/infraspatialot#LineLocalisation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "de",
+    "@value" : "beginnt an"
+  }, {
+    "@language" : "en",
+    "@value" : "starts at"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://dtc-ontology.cms.ed.tum.de/infraspatialot#Point"
   } ]
 }, {
   "@id" : "https://w3id.org/bcore#traversesBridge",
@@ -986,30 +1375,45 @@
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/bcore#InfrastructureRoute"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "traverses bridge"
+  }, {
+    "@language" : "de",
+    "@value" : "überquert Brücke"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "https://w3id.org/brot#Bridge"
   } ]
 }, {
   "@id" : "https://w3id.org/bcore/media#MediaFileSize",
-  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "de",
     "@value" : "Dateigröße einer digitalen Mediendatei"
   }, {
     "@language" : "en",
     "@value" : "file size of a digital media file"
-  }, {
-    "@value" : "[byte]"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/bcore#MediaFile"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "de",
+    "@value" : "Mediendatei Größe"
+  }, {
+    "@language" : "en",
+    "@value" : "media file size"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#decimal"
+  } ],
+  "https://schema.org/unitText" : [ {
+    "@value" : "byte"
   } ]
 }, {
   "@id" : "https://w3id.org/bcore/media#MediaIsDigital",
-  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "de",
     "@value" : "Boolean: wahr, wenn die Mediendatei digital ist"
@@ -1020,6 +1424,13 @@
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/bcore#MediaFile"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "de",
+    "@value" : "Mediendatei ist digital"
+  }, {
+    "@language" : "en",
+    "@value" : "media is digital"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
   } ]
@@ -1027,6 +1438,13 @@
   "@id" : "https://w3id.org/bmat#BuildingMaterial",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "de",
+    "@value" : "Material, aus dem Brücken(-bauteile) bestehen"
+  }, {
+    "@language" : "en",
+    "@value" : "materials used to build bridges"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "de",
     "@value" : "Baumaterial"
   }, {
@@ -1037,6 +1455,13 @@
   "@id" : "https://w3id.org/bot#Building",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "de",
+    "@value" : "Bauwerk, das Räume einschließt, betreten werden kann und dem Aufenthalt von Menschen, Tieren oder der Lagerung von Sachen dient (de.wikipedia.org/wiki/Gebäude)."
+  }, {
+    "@language" : "en",
+    "@value" : "Enclosed structure with a roof, walls and often windows, usually standing permanently in one place (en.wikipedia.org/wiki/Building)."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "de",
     "@value" : "Gebäude"
   }, {
@@ -1051,10 +1476,17 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "de",
-    "@value" : "Baustelle"
+    "@value" : "Areal, auf dem eine Bautätigkeit ausgeübt wird."
   }, {
     "@language" : "en",
     "@value" : "building site"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "de",
+    "@value" : "Baustelle"
+  }, {
+    "@language" : "en",
+    "@value" : "site"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/bot#Zone"
@@ -1068,6 +1500,13 @@
   }, {
     "@language" : "en",
     "@value" : "spatial zone (volume that encloses a physical or abstract object)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "de",
+    "@value" : "Zone"
+  }, {
+    "@language" : "en",
+    "@value" : "zone"
   } ],
   "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
     "@id" : "https://w3id.org/brot#SpatialZone"
@@ -1085,6 +1524,13 @@
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/bot#Zone"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "contains zone"
+  }, {
+    "@language" : "de",
+    "@value" : "enthält Zone"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "https://w3id.org/bot#Zone"
   } ]
@@ -1093,13 +1539,20 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#SymmetricProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "de",
-    "@value" : "Zone schneidet Zone"
+    "@value" : "ein Teil der Zone liegt in einer anderen Zone"
   }, {
     "@language" : "en",
-    "@value" : "zone intersects zone"
+    "@value" : "part of the zone lies within another zone"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/bot#Zone"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "intersects Zone"
+  }, {
+    "@language" : "de",
+    "@value" : "schneidet Zone"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "https://w3id.org/bot#Zone"
@@ -1108,60 +1561,91 @@
   "@id" : "https://w3id.org/brcomp#height",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "vertical distance of the ends of the component/ component's cross section"
+  }, {
+    "@language" : "de",
+    "@value" : "vertikaler Abstand der Enden des Bauteils/Bauteilquerschnitts"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/brot#Component"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "de",
     "@value" : "Höhe"
   }, {
     "@language" : "en",
     "@value" : "height"
-  }, {
-    "@value" : "[m]"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/brot#Component"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#decimal"
+  } ],
+  "https://schema.org/unitText" : [ {
+    "@value" : "m"
   } ]
 }, {
   "@id" : "https://w3id.org/brcomp#length",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "longitudinal distance of the ends of a component"
+  }, {
+    "@language" : "de",
+    "@value" : "longitudinaler Abstand der Enden eines Bauteils"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/brot#Component"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "de",
     "@value" : "Länge"
   }, {
     "@language" : "en",
     "@value" : "length"
-  }, {
-    "@value" : "[m]"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/brot#Component"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#decimal"
+  } ],
+  "https://schema.org/unitText" : [ {
+    "@value" : "m"
   } ]
 }, {
   "@id" : "https://w3id.org/brcomp#width",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "de",
-    "@value" : "Breite"
+    "@value" : "transversaler Abstand der Enden eines Bauteils/ Bauteilquerschnitts"
   }, {
     "@language" : "en",
-    "@value" : "width"
-  }, {
-    "@value" : "[m]"
+    "@value" : "width/ broadth: transversal distance of the ends of the component/ component's cross section"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/brot#Component"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "de",
+    "@value" : "Breite"
+  }, {
+    "@language" : "en",
+    "@value" : "width"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#decimal"
+  } ],
+  "https://schema.org/unitText" : [ {
+    "@value" : "m"
   } ]
 }, {
   "@id" : "https://w3id.org/brot#Bridge",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "de",
+    "@value" : "Bauwerk, das Verkehrswege oder Versorgungseinrichtungen über natürliche Hindernisse oder andere Verkehrswege hinwegführt (de.wikipedia.org/wiki/Brücke)."
+  }, {
+    "@language" : "en",
+    "@value" : "Structure designed to span an obstacle, allowing vehicles, pedestrians, and other loads to pass across (en.wikipedia.org/wiki/Bridge)."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "de",
     "@value" : "Brücke"
   }, {
@@ -1176,6 +1660,13 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "de",
+    "@value" : "Bauteil, aus dem Brücken bestehen"
+  }, {
+    "@language" : "en",
+    "@value" : "bridge element"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "de",
     "@value" : "Bauteil"
   }, {
     "@language" : "en",
@@ -1186,10 +1677,17 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "de",
-    "@value" : "räumliche Zone (Volumen, das ein materielles oder ideelles Objekt umschließt)"
+    "@value" : "Volumen, das ein materielles oder ideelles Objekt umschließt"
   }, {
     "@language" : "en",
-    "@value" : "spatial zone (volume that encloses a physical or abstract object)"
+    "@value" : "volume that encloses a physical or abstract object"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "de",
+    "@value" : "räumliche Zone"
+  }, {
+    "@language" : "en",
+    "@value" : "spatial zone"
   } ]
 }, {
   "@id" : "https://w3id.org/brot#SubStructure",
@@ -1201,6 +1699,13 @@
     "@language" : "en",
     "@value" : "bridge substructure"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "de",
+    "@value" : "Unterbau"
+  }, {
+    "@language" : "en",
+    "@value" : "substructure"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/brot#SpatialZone"
   } ]
@@ -1209,10 +1714,17 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "bridge superstructure"
+    "@value" : "bridge superstructure, longitudinally supporting bridge elements"
   }, {
     "@language" : "de",
-    "@value" : "Überbau der Brücke"
+    "@value" : "Überbau der Brücke, Längstragglieder der Brücke"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "superstructure"
+  }, {
+    "@language" : "de",
+    "@value" : "Überbau"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/brot#SpatialZone"
@@ -1230,6 +1742,13 @@
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/brot#Component"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "aggregates"
+  }, {
+    "@language" : "de",
+    "@value" : "besteht aus"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "https://w3id.org/brot#Component"
   } ]
@@ -1246,6 +1765,13 @@
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/brot#SpatialZone"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "de",
+    "@value" : "beinhaltet Bauteil"
+  }, {
+    "@language" : "en",
+    "@value" : "contains component"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "https://w3id.org/brot#Component"
   } ]
@@ -1261,6 +1787,13 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/brot#Component"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "de",
+    "@value" : "liegt unter"
+  }, {
+    "@language" : "en",
+    "@value" : "meet bottom"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "https://w3id.org/brot#Component"
@@ -1281,6 +1814,13 @@
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/brot#Component"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "de",
+    "@value" : "liegt vor"
+  }, {
+    "@language" : "en",
+    "@value" : "meet front"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "https://w3id.org/brot#Component"
   } ],
@@ -1299,6 +1839,13 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/brot#Component"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "de",
+    "@value" : "liegt links von"
+  }, {
+    "@language" : "en",
+    "@value" : "meet left"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "https://w3id.org/brot#Component"
@@ -1319,6 +1866,13 @@
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/brot#Component"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "de",
+    "@value" : "liegt hinter"
+  }, {
+    "@language" : "en",
+    "@value" : "meet rear"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "https://w3id.org/brot#Component"
   } ]
@@ -1335,6 +1889,13 @@
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/brot#Component"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "de",
+    "@value" : "liegt rechts von"
+  }, {
+    "@language" : "en",
+    "@value" : "meet right"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "https://w3id.org/brot#Component"
   } ]
@@ -1350,6 +1911,13 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/brot#Component"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "de",
+    "@value" : "liegt über"
+  }, {
+    "@language" : "en",
+    "@value" : "meet top"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "https://w3id.org/brot#Component"
