@@ -1,4 +1,20 @@
 [ {
+  "@id" : "_:genid1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
+  "http://www.w3.org/2002/07/owl#members" : [ {
+    "@list" : [ {
+      "@id" : "https://w3id.org/bcore/zones#BuiltUpArea"
+    }, {
+      "@id" : "https://w3id.org/bcore/zones#Estate"
+    }, {
+      "@id" : "https://w3id.org/bcore/zones#LandscapeConservationMeasureArea"
+    }, {
+      "@id" : "https://w3id.org/bcore/zones#VegetationArea"
+    }, {
+      "@id" : "https://w3id.org/bcore/zones#WaterBody"
+    } ]
+  } ]
+}, {
   "@id" : "http://purl.org/dc/elements/1.1/abstract",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
@@ -75,8 +91,7 @@
     "@value" : "https://creativecommons.org/licenses/by/4.0/deed.en"
   } ],
   "http://purl.org/dc/terms/modified" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#date",
-    "@value" : "2026-07-21"
+    "@value" : "2026-08-04"
   } ],
   "http://purl.org/ontology/bibo/status" : [ {
     "@value" : "Ontology Specification Draft"
@@ -89,18 +104,25 @@
     "@value" : "Bridge Core Ontology – Zones Extension"
   } ],
   "http://www.w3.org/2002/07/owl#versionInfo" : [ {
-    "@value" : "0.1.0"
-  } ],
-  "https://schema.org/codeRepository" : [ {
-    "@value" : "https://github.com/TUD-IMB/BCore"
+    "@value" : "0.1.1"
   } ],
   "http://xmlns.com/foaf/0.1/logo" : [ {
     "@value" : "https://raw.githubusercontent.com/TUD-IMB/BCore/main/BCore.svg"
+  } ],
+  "https://schema.org/codeRepository" : [ {
+    "@value" : "https://github.com/TUD-IMB/BCore"
   } ]
 }, {
   "@id" : "https://w3id.org/bcore/zones#BuiltUpArea",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "de",
+    "@value" : "Ortschaft/ Fläche, die mit Gebäuden oder Bauwerken bebaut ist oder wird"
+  }, {
+    "@language" : "en",
+    "@value" : "town/ area that is covered with buildings or anthropogene structures"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "de",
     "@value" : "bebautes Gebiet"
   }, {
@@ -120,6 +142,13 @@
     "@language" : "en",
     "@value" : "estate (land ownership, real estate)"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "de",
+    "@value" : "Grundstück"
+  }, {
+    "@language" : "en",
+    "@value" : "estate"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/bot#Zone"
   } ]
@@ -133,6 +162,13 @@
     "@language" : "en",
     "@value" : "field (e.g., agriculture)"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "de",
+    "@value" : "Feld"
+  }, {
+    "@language" : "en",
+    "@value" : "field"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/bcore/zones#VegetationArea"
   } ]
@@ -141,10 +177,17 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "de",
-    "@value" : "Wald"
+    "@value" : "bewaldetes Gebiet"
   }, {
     "@language" : "en",
     "@value" : "forrest/wood"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "de",
+    "@value" : "Wald"
+  }, {
+    "@language" : "en",
+    "@value" : "forest"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/bcore/zones#VegetationArea"
@@ -153,6 +196,13 @@
   "@id" : "https://w3id.org/bcore/zones#LandscapeConservationMeasureArea",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "de",
+    "@value" : "Fläche, die einem Landschafts- oder Naturschutz unterliegt"
+  }, {
+    "@language" : "en",
+    "@value" : "area that is protected by landscape or nature protection"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "de",
     "@value" : "Landschaftsschutzgebiet"
   }, {
@@ -170,6 +220,13 @@
     "@value" : "Wiese/Aue"
   }, {
     "@language" : "en",
+    "@value" : "meadow/ lawn"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "de",
+    "@value" : "Wiese"
+  }, {
+    "@language" : "en",
     "@value" : "meadow"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
@@ -179,6 +236,13 @@
   "@id" : "https://w3id.org/bcore/zones#VegetationArea",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "de",
+    "@value" : "bewachsene Fläche"
+  }, {
+    "@language" : "en",
+    "@value" : "planted area"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "de",
     "@value" : "Vegetationsgebiet"
   }, {
@@ -192,6 +256,13 @@
   "@id" : "https://w3id.org/bcore/zones#WaterBody",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "de",
+    "@value" : "Fläche, die permanent mit Wasser bedeckt ist"
+  }, {
+    "@language" : "en",
+    "@value" : "area that is permanently covered by water"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "de",
     "@value" : "Gewässer"
   }, {

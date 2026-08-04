@@ -1,17 +1,21 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="https://w3id.org/bcore/zones/"
-     xml:base="https://w3id.org/bcore/zones/"
+<rdf:RDF xmlns="https://w3id.org/bcore/zones#"
+     xml:base="https://w3id.org/bcore/zones"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:bot="https://w3id.org/bot#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:bibo="http://purl.org/ontology/bibo/"
+     xmlns:brot="https://w3id.org/brot#"
      xmlns:foaf="http://xmlns.com/foaf/0.1/"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:bcore="https://w3id.org/bcore#"
      xmlns:terms="http://purl.org/dc/terms/"
-     xmlns:schema="https://schema.org/">
+     xmlns:schema="https://schema.org/"
+     xmlns:bcorezones="https://w3id.org/bcore/zones#">
     <owl:Ontology rdf:about="https://w3id.org/bcore/zones">
         <dc:abstract xml:lang="en">The Bridge Core Ontology (BCore) enables the representation of a bridge structure, its components and material, as well as the infrastructure and media files connected to it and the environment and location of the bridge. BCore is created by the Institute of Concrete Structures (IMB) at the Dresden University of Technology (TUD). This ontology contains the corresponding zones extension.</dc:abstract>
         <dc:title xml:lang="en">Bridge Core Ontology for Institute of Concrete Structures, Dresden University of Technology – Zones Extension</dc:title>
@@ -23,13 +27,13 @@
         <terms:creator>Xiaoli Song</terms:creator>
         <terms:description xml:lang="en">Extension ontology for the representation of bridge-related zones. Designed to work in conjunction with the BCore ontology but to also allow for external use.</terms:description>
         <terms:license>https://creativecommons.org/licenses/by/4.0/deed.en</terms:license>
-        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-07-21</terms:modified>
+        <terms:modified>2026-08-04</terms:modified>
         <bibo:status>Ontology Specification Draft</bibo:status>
         <vann:preferredNamespacePrefix>bcorezones</vann:preferredNamespacePrefix>
         <rdfs:label xml:lang="en">Bridge Core Ontology – Zones Extension</rdfs:label>
-        <owl:versionInfo>0.1.0</owl:versionInfo>
-        <schema:codeRepository>https://github.com/TUD-IMB/BCore</schema:codeRepository>
+        <owl:versionInfo>0.1.1</owl:versionInfo>
         <foaf:logo>https://raw.githubusercontent.com/TUD-IMB/BCore/main/BCore.svg</foaf:logo>
+        <schema:codeRepository>https://github.com/TUD-IMB/BCore</schema:codeRepository>
     </owl:Ontology>
     
 
@@ -155,8 +159,10 @@
 
     <owl:Class rdf:about="https://w3id.org/bcore/zones#BuiltUpArea">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bot#Zone"/>
-        <rdfs:comment xml:lang="de">bebautes Gebiet</rdfs:comment>
-        <rdfs:comment xml:lang="en">built-up area</rdfs:comment>
+        <rdfs:comment xml:lang="de">Ortschaft/ Fläche, die mit Gebäuden oder Bauwerken bebaut ist oder wird</rdfs:comment>
+        <rdfs:comment xml:lang="en">town/ area that is covered with buildings or anthropogene structures</rdfs:comment>
+        <rdfs:label xml:lang="de">bebautes Gebiet</rdfs:label>
+        <rdfs:label xml:lang="en">built-up area</rdfs:label>
     </owl:Class>
     
 
@@ -167,6 +173,8 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/bot#Zone"/>
         <rdfs:comment xml:lang="de">Grundstück (Grundbesitz)</rdfs:comment>
         <rdfs:comment xml:lang="en">estate (land ownership, real estate)</rdfs:comment>
+        <rdfs:label xml:lang="de">Grundstück</rdfs:label>
+        <rdfs:label xml:lang="en">estate</rdfs:label>
     </owl:Class>
     
 
@@ -177,6 +185,8 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/bcore/zones#VegetationArea"/>
         <rdfs:comment xml:lang="de">Feld (z. B. Landwirtschaft)</rdfs:comment>
         <rdfs:comment xml:lang="en">field (e.g., agriculture)</rdfs:comment>
+        <rdfs:label xml:lang="de">Feld</rdfs:label>
+        <rdfs:label xml:lang="en">field</rdfs:label>
     </owl:Class>
     
 
@@ -185,8 +195,10 @@
 
     <owl:Class rdf:about="https://w3id.org/bcore/zones#Forest">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bcore/zones#VegetationArea"/>
-        <rdfs:comment xml:lang="de">Wald</rdfs:comment>
+        <rdfs:comment xml:lang="de">bewaldetes Gebiet</rdfs:comment>
         <rdfs:comment xml:lang="en">forrest/wood</rdfs:comment>
+        <rdfs:label xml:lang="de">Wald</rdfs:label>
+        <rdfs:label xml:lang="en">forest</rdfs:label>
     </owl:Class>
     
 
@@ -195,8 +207,10 @@
 
     <owl:Class rdf:about="https://w3id.org/bcore/zones#LandscapeConservationMeasureArea">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bot#Zone"/>
-        <rdfs:comment xml:lang="de">Landschaftsschutzgebiet</rdfs:comment>
-        <rdfs:comment xml:lang="en">landscape conservation measure area</rdfs:comment>
+        <rdfs:comment xml:lang="de">Fläche, die einem Landschafts- oder Naturschutz unterliegt</rdfs:comment>
+        <rdfs:comment xml:lang="en">area that is protected by landscape or nature protection</rdfs:comment>
+        <rdfs:label xml:lang="de">Landschaftsschutzgebiet</rdfs:label>
+        <rdfs:label xml:lang="en">landscape conservation measure area</rdfs:label>
     </owl:Class>
     
 
@@ -206,7 +220,9 @@
     <owl:Class rdf:about="https://w3id.org/bcore/zones#Meadow">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bcore/zones#VegetationArea"/>
         <rdfs:comment xml:lang="de">Wiese/Aue</rdfs:comment>
-        <rdfs:comment xml:lang="en">meadow</rdfs:comment>
+        <rdfs:comment xml:lang="en">meadow/ lawn</rdfs:comment>
+        <rdfs:label xml:lang="de">Wiese</rdfs:label>
+        <rdfs:label xml:lang="en">meadow</rdfs:label>
     </owl:Class>
     
 
@@ -215,8 +231,10 @@
 
     <owl:Class rdf:about="https://w3id.org/bcore/zones#VegetationArea">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bot#Zone"/>
-        <rdfs:comment xml:lang="de">Vegetationsgebiet</rdfs:comment>
-        <rdfs:comment xml:lang="en">vegetation area</rdfs:comment>
+        <rdfs:comment xml:lang="de">bewachsene Fläche</rdfs:comment>
+        <rdfs:comment xml:lang="en">planted area</rdfs:comment>
+        <rdfs:label xml:lang="de">Vegetationsgebiet</rdfs:label>
+        <rdfs:label xml:lang="en">vegetation area</rdfs:label>
     </owl:Class>
     
 
@@ -225,9 +243,38 @@
 
     <owl:Class rdf:about="https://w3id.org/bcore/zones#WaterBody">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bot#Zone"/>
-        <rdfs:comment xml:lang="de">Gewässer</rdfs:comment>
-        <rdfs:comment xml:lang="en">water body</rdfs:comment>
+        <rdfs:comment xml:lang="de">Fläche, die permanent mit Wasser bedeckt ist</rdfs:comment>
+        <rdfs:comment xml:lang="en">area that is permanently covered by water</rdfs:comment>
+        <rdfs:label xml:lang="de">Gewässer</rdfs:label>
+        <rdfs:label xml:lang="en">water body</rdfs:label>
     </owl:Class>
+    
+
+
+    <!-- https://w3id.org/bot#Zone -->
+
+    <owl:Class rdf:about="https://w3id.org/bot#Zone"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://w3id.org/bcore/zones#BuiltUpArea"/>
+            <rdf:Description rdf:about="https://w3id.org/bcore/zones#Estate"/>
+            <rdf:Description rdf:about="https://w3id.org/bcore/zones#LandscapeConservationMeasureArea"/>
+            <rdf:Description rdf:about="https://w3id.org/bcore/zones#VegetationArea"/>
+            <rdf:Description rdf:about="https://w3id.org/bcore/zones#WaterBody"/>
+        </owl:members>
+    </rdf:Description>
 </rdf:RDF>
 
 

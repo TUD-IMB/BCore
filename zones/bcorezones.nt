@@ -9,11 +9,12 @@
 <https://w3id.org/bcore/zones> <http://purl.org/dc/terms/creator> "Xiaoli Song" .
 <https://w3id.org/bcore/zones> <http://purl.org/dc/terms/description> "Extension ontology for the representation of bridge-related zones. Designed to work in conjunction with the BCore ontology but to also allow for external use."@en .
 <https://w3id.org/bcore/zones> <http://purl.org/dc/terms/license> "https://creativecommons.org/licenses/by/4.0/deed.en" .
-<https://w3id.org/bcore/zones> <http://purl.org/dc/terms/modified> "2026-07-21"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://w3id.org/bcore/zones> <http://purl.org/dc/terms/modified> "2026-08-04" .
 <https://w3id.org/bcore/zones> <http://purl.org/ontology/bibo/status> "Ontology Specification Draft" .
 <https://w3id.org/bcore/zones> <http://purl.org/vocab/vann/preferredNamespacePrefix> "bcorezones" .
 <https://w3id.org/bcore/zones> <http://www.w3.org/2000/01/rdf-schema#label> "Bridge Core Ontology – Zones Extension"@en .
-<https://w3id.org/bcore/zones> <http://www.w3.org/2002/07/owl#versionInfo> "0.1.0" .
+<https://w3id.org/bcore/zones> <http://www.w3.org/2002/07/owl#versionInfo> "0.1.1" .
+<https://w3id.org/bcore/zones> <http://xmlns.com/foaf/0.1/logo> "https://raw.githubusercontent.com/TUD-IMB/BCore/main/BCore.svg" .
 <https://w3id.org/bcore/zones> <https://schema.org/codeRepository> "https://github.com/TUD-IMB/BCore" .
 # 
 # 
@@ -87,52 +88,95 @@
 # https://w3id.org/bcore/zones#BuiltUpArea
 <https://w3id.org/bcore/zones#BuiltUpArea> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/bcore/zones#BuiltUpArea> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/bot#Zone> .
-<https://w3id.org/bot#Zone> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/bcore/zones#BuiltUpArea> <http://www.w3.org/2000/01/rdf-schema#comment> "bebautes Gebiet"@de .
-<https://w3id.org/bcore/zones#BuiltUpArea> <http://www.w3.org/2000/01/rdf-schema#comment> "built-up area"@en .
+<https://w3id.org/bcore/zones#BuiltUpArea> <http://www.w3.org/2000/01/rdf-schema#comment> "Ortschaft/ Fläche, die mit Gebäuden oder Bauwerken bebaut ist oder wird"@de .
+<https://w3id.org/bcore/zones#BuiltUpArea> <http://www.w3.org/2000/01/rdf-schema#comment> "town/ area that is covered with buildings or anthropogene structures"@en .
+<https://w3id.org/bcore/zones#BuiltUpArea> <http://www.w3.org/2000/01/rdf-schema#label> "bebautes Gebiet"@de .
+<https://w3id.org/bcore/zones#BuiltUpArea> <http://www.w3.org/2000/01/rdf-schema#label> "built-up area"@en .
 # 
 # https://w3id.org/bcore/zones#Estate
 <https://w3id.org/bcore/zones#Estate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/bcore/zones#Estate> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/bot#Zone> .
 <https://w3id.org/bcore/zones#Estate> <http://www.w3.org/2000/01/rdf-schema#comment> "Grundstück (Grundbesitz)"@de .
 <https://w3id.org/bcore/zones#Estate> <http://www.w3.org/2000/01/rdf-schema#comment> "estate (land ownership, real estate)"@en .
+<https://w3id.org/bcore/zones#Estate> <http://www.w3.org/2000/01/rdf-schema#label> "Grundstück"@de .
+<https://w3id.org/bcore/zones#Estate> <http://www.w3.org/2000/01/rdf-schema#label> "estate"@en .
 # 
 # https://w3id.org/bcore/zones#Field
 <https://w3id.org/bcore/zones#Field> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/bcore/zones#Field> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/bcore/zones#VegetationArea> .
 <https://w3id.org/bcore/zones#Field> <http://www.w3.org/2000/01/rdf-schema#comment> "Feld (z. B. Landwirtschaft)"@de .
 <https://w3id.org/bcore/zones#Field> <http://www.w3.org/2000/01/rdf-schema#comment> "field (e.g., agriculture)"@en .
+<https://w3id.org/bcore/zones#Field> <http://www.w3.org/2000/01/rdf-schema#label> "Feld"@de .
+<https://w3id.org/bcore/zones#Field> <http://www.w3.org/2000/01/rdf-schema#label> "field"@en .
 # 
 # https://w3id.org/bcore/zones#Forest
 <https://w3id.org/bcore/zones#Forest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/bcore/zones#Forest> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/bcore/zones#VegetationArea> .
-<https://w3id.org/bcore/zones#Forest> <http://www.w3.org/2000/01/rdf-schema#comment> "Wald"@de .
+<https://w3id.org/bcore/zones#Forest> <http://www.w3.org/2000/01/rdf-schema#comment> "bewaldetes Gebiet"@de .
 <https://w3id.org/bcore/zones#Forest> <http://www.w3.org/2000/01/rdf-schema#comment> "forrest/wood"@en .
+<https://w3id.org/bcore/zones#Forest> <http://www.w3.org/2000/01/rdf-schema#label> "Wald"@de .
+<https://w3id.org/bcore/zones#Forest> <http://www.w3.org/2000/01/rdf-schema#label> "forest"@en .
 # 
 # https://w3id.org/bcore/zones#LandscapeConservationMeasureArea
 <https://w3id.org/bcore/zones#LandscapeConservationMeasureArea> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/bcore/zones#LandscapeConservationMeasureArea> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/bot#Zone> .
-<https://w3id.org/bcore/zones#LandscapeConservationMeasureArea> <http://www.w3.org/2000/01/rdf-schema#comment> "Landschaftsschutzgebiet"@de .
-<https://w3id.org/bcore/zones#LandscapeConservationMeasureArea> <http://www.w3.org/2000/01/rdf-schema#comment> "landscape conservation measure area"@en .
+<https://w3id.org/bcore/zones#LandscapeConservationMeasureArea> <http://www.w3.org/2000/01/rdf-schema#comment> "Fläche, die einem Landschafts- oder Naturschutz unterliegt"@de .
+<https://w3id.org/bcore/zones#LandscapeConservationMeasureArea> <http://www.w3.org/2000/01/rdf-schema#comment> "area that is protected by landscape or nature protection"@en .
+<https://w3id.org/bcore/zones#LandscapeConservationMeasureArea> <http://www.w3.org/2000/01/rdf-schema#label> "Landschaftsschutzgebiet"@de .
+<https://w3id.org/bcore/zones#LandscapeConservationMeasureArea> <http://www.w3.org/2000/01/rdf-schema#label> "landscape conservation measure area"@en .
 # 
 # https://w3id.org/bcore/zones#Meadow
 <https://w3id.org/bcore/zones#Meadow> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/bcore/zones#Meadow> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/bcore/zones#VegetationArea> .
 <https://w3id.org/bcore/zones#Meadow> <http://www.w3.org/2000/01/rdf-schema#comment> "Wiese/Aue"@de .
-<https://w3id.org/bcore/zones#Meadow> <http://www.w3.org/2000/01/rdf-schema#comment> "meadow"@en .
+<https://w3id.org/bcore/zones#Meadow> <http://www.w3.org/2000/01/rdf-schema#comment> "meadow/ lawn"@en .
+<https://w3id.org/bcore/zones#Meadow> <http://www.w3.org/2000/01/rdf-schema#label> "Wiese"@de .
+<https://w3id.org/bcore/zones#Meadow> <http://www.w3.org/2000/01/rdf-schema#label> "meadow"@en .
 # 
 # https://w3id.org/bcore/zones#VegetationArea
 <https://w3id.org/bcore/zones#VegetationArea> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/bcore/zones#VegetationArea> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/bot#Zone> .
-<https://w3id.org/bcore/zones#VegetationArea> <http://www.w3.org/2000/01/rdf-schema#comment> "Vegetationsgebiet"@de .
-<https://w3id.org/bcore/zones#VegetationArea> <http://www.w3.org/2000/01/rdf-schema#comment> "vegetation area"@en .
+<https://w3id.org/bcore/zones#VegetationArea> <http://www.w3.org/2000/01/rdf-schema#comment> "bewachsene Fläche"@de .
+<https://w3id.org/bcore/zones#VegetationArea> <http://www.w3.org/2000/01/rdf-schema#comment> "planted area"@en .
+<https://w3id.org/bcore/zones#VegetationArea> <http://www.w3.org/2000/01/rdf-schema#label> "Vegetationsgebiet"@de .
+<https://w3id.org/bcore/zones#VegetationArea> <http://www.w3.org/2000/01/rdf-schema#label> "vegetation area"@en .
 # 
 # https://w3id.org/bcore/zones#WaterBody
 <https://w3id.org/bcore/zones#WaterBody> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/bcore/zones#WaterBody> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/bot#Zone> .
-<https://w3id.org/bcore/zones#WaterBody> <http://www.w3.org/2000/01/rdf-schema#comment> "Gewässer"@de .
-<https://w3id.org/bcore/zones#WaterBody> <http://www.w3.org/2000/01/rdf-schema#comment> "water body"@en .
+<https://w3id.org/bcore/zones#WaterBody> <http://www.w3.org/2000/01/rdf-schema#comment> "Fläche, die permanent mit Wasser bedeckt ist"@de .
+<https://w3id.org/bcore/zones#WaterBody> <http://www.w3.org/2000/01/rdf-schema#comment> "area that is permanently covered by water"@en .
+<https://w3id.org/bcore/zones#WaterBody> <http://www.w3.org/2000/01/rdf-schema#label> "Gewässer"@de .
+<https://w3id.org/bcore/zones#WaterBody> <http://www.w3.org/2000/01/rdf-schema#label> "water body"@en .
 # 
 # https://w3id.org/bot#Zone
+<https://w3id.org/bot#Zone> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    General axioms
+# #
+# #################################################################
+# 
+# 
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid1 <http://www.w3.org/2002/07/owl#members> _:genid6 .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid5 .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid4 .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid3 .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid2 .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/bcore/zones#WaterBody> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/bcore/zones#VegetationArea> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/bcore/zones#LandscapeConservationMeasureArea> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/bcore/zones#Estate> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/bcore/zones#BuiltUpArea> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
 # 
 # Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
