@@ -7,7 +7,7 @@
       "en" : "Bridge Core Ontology for Institute of Concrete Structures, Dresden University of Technology – Material Extension"
     },
     "iri" : "https://w3id.org/bcore/mat",
-    "version" : "0.1.0",
+    "version" : "0.1.1",
     "author" : [ "Tim Noack", "Morris Florek", "Johannes Reimer", "Xiaoli Song" ],
     "description" : {
       "en" : "Extension ontology for the representation of bridge building materials. Designed to work in conjunction with the BCore ontology but to also allow for external use."
@@ -16,17 +16,13 @@
       "en" : "Bridge Core Ontology – Material Extension"
     },
     "other" : {
+      "license" : [ {
+        "identifier" : "license",
+        "language" : "undefined",
+        "value" : "https://creativecommons.org/licenses/by/4.0/deed.en",
+        "type" : "label"
+      } ],
       "creator" : [ {
-        "identifier" : "creator",
-        "language" : "undefined",
-        "value" : "Johannes Reimer",
-        "type" : "label"
-      }, {
-        "identifier" : "creator",
-        "language" : "undefined",
-        "value" : "Morris Florek",
-        "type" : "label"
-      }, {
         "identifier" : "creator",
         "language" : "undefined",
         "value" : "Xiaoli Song",
@@ -34,37 +30,17 @@
       }, {
         "identifier" : "creator",
         "language" : "undefined",
+        "value" : "Johannes Reimer",
+        "type" : "label"
+      }, {
+        "identifier" : "creator",
+        "language" : "undefined",
         "value" : "Tim Noack",
         "type" : "label"
-      } ],
-      "created" : [ {
-        "identifier" : "created",
+      }, {
+        "identifier" : "creator",
         "language" : "undefined",
-        "value" : "2025-11-06",
-        "type" : "label"
-      } ],
-      "abstract" : [ {
-        "identifier" : "abstract",
-        "language" : "en",
-        "value" : "The Bridge Core Ontology (BCore) enables the representation of a bridge structure, its components and material, as well as the infrastructure and media files connected to it and the environment and location of the bridge. BCore is created by the Institute of Concrete Structures (IMB) at the Dresden University of Technology (TUD). This ontology contains the corresponding material extension.",
-        "type" : "label"
-      } ],
-      "versionInfo" : [ {
-        "identifier" : "versionInfo",
-        "language" : "undefined",
-        "value" : "0.1.0",
-        "type" : "label"
-      } ],
-      "title" : [ {
-        "identifier" : "title",
-        "language" : "en",
-        "value" : "Bridge Core Ontology for Institute of Concrete Structures, Dresden University of Technology – Material Extension",
-        "type" : "label"
-      } ],
-      "license" : [ {
-        "identifier" : "license",
-        "language" : "undefined",
-        "value" : "https://creativecommons.org/licenses/by/4.0/deed.en",
+        "value" : "Morris Florek",
         "type" : "label"
       } ],
       "contributor" : [ {
@@ -73,22 +49,52 @@
         "value" : "Jakob Vogt",
         "type" : "label"
       } ],
+      "created" : [ {
+        "identifier" : "created",
+        "language" : "undefined",
+        "value" : "2025-11-06",
+        "type" : "label"
+      } ],
       "preferredNamespacePrefix" : [ {
         "identifier" : "preferredNamespacePrefix",
         "language" : "undefined",
         "value" : "bcoremat",
         "type" : "label"
       } ],
+      "logo" : [ {
+        "identifier" : "logo",
+        "language" : "undefined",
+        "value" : "https://raw.githubusercontent.com/TUD-IMB/BCore/main/BCore.svg",
+        "type" : "label"
+      } ],
       "modified" : [ {
         "identifier" : "modified",
         "language" : "undefined",
-        "value" : "2026-07-21",
+        "value" : "2026-08-04",
+        "type" : "label"
+      } ],
+      "versionInfo" : [ {
+        "identifier" : "versionInfo",
+        "language" : "undefined",
+        "value" : "0.1.1",
+        "type" : "label"
+      } ],
+      "abstract" : [ {
+        "identifier" : "abstract",
+        "language" : "en",
+        "value" : "The Bridge Core Ontology (BCore) enables the representation of a bridge structure, its components and material, as well as the infrastructure and media files connected to it and the environment and location of the bridge. BCore is created by the Institute of Concrete Structures (IMB) at the Dresden University of Technology (TUD). This ontology contains the corresponding material extension.",
         "type" : "label"
       } ],
       "codeRepository" : [ {
         "identifier" : "codeRepository",
         "language" : "undefined",
         "value" : "https://github.com/TUD-IMB/BCore",
+        "type" : "label"
+      } ],
+      "title" : [ {
+        "identifier" : "title",
+        "language" : "en",
+        "value" : "Bridge Core Ontology for Institute of Concrete Structures, Dresden University of Technology – Material Extension",
         "type" : "label"
       } ],
       "status" : [ {
@@ -111,7 +117,7 @@
     "type" : "owl:Class"
   }, {
     "id" : "22",
-    "type" : "owl:Class"
+    "type" : "owl:unionOf"
   }, {
     "id" : "23",
     "type" : "rdfs:Datatype"
@@ -120,10 +126,10 @@
     "type" : "owl:Class"
   }, {
     "id" : "25",
-    "type" : "owl:Class"
+    "type" : "rdfs:Datatype"
   }, {
     "id" : "26",
-    "type" : "rdfs:Datatype"
+    "type" : "owl:unionOf"
   }, {
     "id" : "27",
     "type" : "rdfs:Datatype"
@@ -140,10 +146,10 @@
     "id" : "6",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "34",
+    "id" : "35",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "32",
+    "id" : "33",
     "type" : "rdfs:Datatype"
   }, {
     "id" : "30",
@@ -169,11 +175,13 @@
     "baseIri" : "https://w3id.org/bcore/mat",
     "instances" : 0,
     "label" : {
-      "IRI-based" : "PrestressingSteel"
+      "de" : "Spannstahl",
+      "IRI-based" : "PrestressingSteel",
+      "en" : "prestressing steel"
     },
     "comment" : {
-      "de" : "Spannstahl",
-      "en" : "prestressing steel"
+      "de" : "hochfester Stahl, der vor allem im Spannbetonbau zum Vorspannen verwendet wird (https://de.wikipedia.org/wiki/Spannstahl)",
+      "en" : "high-tensile steel that is mostly used in prestressed concrete structures"
     },
     "id" : "0",
     "superClasses" : [ "1" ]
@@ -182,12 +190,14 @@
     "baseIri" : "https://w3id.org/bcore/mat",
     "instances" : 0,
     "label" : {
-      "IRI-based" : "Metal"
+      "de" : "Metall",
+      "IRI-based" : "Metal",
+      "en" : "metal"
     },
     "subClasses" : [ "1" ],
     "comment" : {
-      "de" : "Metall",
-      "en" : "metal"
+      "de" : "elementares Metall, metallischer Werkstoff oder Legierung",
+      "en" : "elemental metal, metallic construction material or alloy"
     },
     "id" : "7",
     "superClasses" : [ "8" ]
@@ -196,12 +206,14 @@
     "baseIri" : "https://w3id.org/bcore/mat",
     "instances" : 0,
     "label" : {
-      "IRI-based" : "CompositeMaterial"
+      "de" : "Verbundmaterial",
+      "IRI-based" : "CompositeMaterial",
+      "en" : "composite material"
     },
     "subClasses" : [ "13", "10", "17" ],
     "comment" : {
-      "de" : "Verbundmaterial",
-      "en" : "composite material"
+      "de" : "Verbundstoff/ Material, das sich heterogen aus mehreren anderen Materialien zusammensetzt",
+      "en" : "material, that is heterogenically composed of several materials"
     },
     "id" : "11",
     "superClasses" : [ "8" ]
@@ -222,26 +234,28 @@
     "baseIri" : "https://w3id.org/bcore/mat",
     "instances" : 0,
     "label" : {
-      "IRI-based" : "SteelConcreteComposite"
+      "de" : "Stahl-Beton-Verbund",
+      "IRI-based" : "SteelConcreteComposite",
+      "en" : "steel-concrete composite"
     },
     "comment" : {
-      "de" : "Stahl-Beton-Verbund",
-      "en" : "steel-concrete composite"
+      "de" : "Verbund aus (bewehrtem) Beton und Baustahl, die aber räumlich bis auf eine Verbundfläche getrennt sind",
+      "en" : "composite of (reinforced) concrete and construction steel, that are spatially separated"
     },
     "id" : "17",
     "superClasses" : [ "11" ]
   }, {
-    "instances" : 0,
-    "union" : [ "15", "4" ],
-    "attributes" : [ "anonymous", "union" ],
-    "id" : "25"
-  }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#decimal",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "26",
+    "id" : "25",
     "label" : {
       "IRI-based" : "decimal"
     }
+  }, {
+    "instances" : 0,
+    "union" : [ "15", "4" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "26"
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#decimal",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
@@ -271,10 +285,12 @@
     "baseIri" : "https://w3id.org/bmat",
     "instances" : 0,
     "label" : {
-      "IRI-based" : "ReinforcementSteel"
+      "de" : "Betonstahl",
+      "IRI-based" : "ReinforcementSteel",
+      "en" : "reinforcement steel"
     },
     "comment" : {
-      "de" : "Betonstahl",
+      "de" : "Bewehrungsstahl, für schlaffe Bewehrungen von Stahlbeton verwendet",
       "en" : "reinforcement (mild) steel"
     },
     "attributes" : [ "external" ],
@@ -290,14 +306,14 @@
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#decimal",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "34",
+    "id" : "35",
     "label" : {
       "IRI-based" : "decimal"
     }
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#decimal",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "32",
+    "id" : "33",
     "label" : {
       "IRI-based" : "decimal"
     }
@@ -313,11 +329,13 @@
     "baseIri" : "https://w3id.org/bmat",
     "instances" : 0,
     "label" : {
-      "IRI-based" : "Concrete"
+      "de" : "Beton",
+      "IRI-based" : "Concrete",
+      "en" : "concrete"
     },
     "comment" : {
-      "de" : "Beton",
-      "en" : "concrete"
+      "de" : "Baustoff, der als Dispersion unter Zugabe von Flüssigkeit aus einem Bindemittel und Zuschlagstoffen angemischt wird (de.wikipedia.org/wiki/Beton)",
+      "en" : "composite material composed of aggregate bound together with a fluid cement that cures to a solid (en.wikipedia.org/wiki/Concrete)"
     },
     "attributes" : [ "external" ],
     "id" : "20",
@@ -327,11 +345,12 @@
     "baseIri" : "https://w3id.org/bcore/mat",
     "instances" : 0,
     "label" : {
-      "IRI-based" : "ConstructionSteel"
+      "de" : "Baustahl",
+      "IRI-based" : "ConstructionSteel",
+      "en" : "construction steel"
     },
     "comment" : {
-      "de" : "Baustahl",
-      "en" : "construction steel"
+      "en" : "Stahl für den Stahl- und den Maschinenbau"
     },
     "id" : "15",
     "superClasses" : [ "1" ]
@@ -340,11 +359,13 @@
     "baseIri" : "https://w3id.org/bmat",
     "instances" : 0,
     "label" : {
-      "IRI-based" : "ReinforcedConcrete"
+      "de" : "Stahlbeton",
+      "IRI-based" : "ReinforcedConcrete",
+      "en" : "reinforced concrete"
     },
     "comment" : {
-      "de" : "Stahlbeton",
-      "en" : "reinforced concrete"
+      "de" : "Beton, der von schlaffer Stahlbewehrung durchsetzt ist",
+      "en" : "concrete that is permeated by steel reinforcement"
     },
     "attributes" : [ "external" ],
     "id" : "13",
@@ -354,11 +375,13 @@
     "baseIri" : "https://w3id.org/bcore/mat",
     "instances" : 0,
     "label" : {
-      "IRI-based" : "PrestressedConcrete"
+      "de" : "Spannbeton",
+      "IRI-based" : "PrestressedConcrete",
+      "en" : "prestressed concrete"
     },
     "comment" : {
-      "de" : "Spannbeton",
-      "en" : "prestressed concrete"
+      "de" : "Beton, der mit vorgespannten Spanngliedern aus anderen Materialien (Stahl, Carbon, ...) durchsetzt ist",
+      "en" : "concrete that is permeated by prestressed tendons of other material (steel, carbon fibers, ...)"
     },
     "id" : "10",
     "superClasses" : [ "11" ]
@@ -367,12 +390,14 @@
     "baseIri" : "https://w3id.org/bcore/mat",
     "instances" : 0,
     "label" : {
-      "IRI-based" : "Steel"
+      "de" : "Stahl",
+      "IRI-based" : "Steel",
+      "en" : "steel"
     },
     "subClasses" : [ "15", "4", "0" ],
     "comment" : {
-      "de" : "Stahl",
-      "en" : "steel"
+      "de" : "Werkstoff, der überwiegend aus Eisen mit geringem Kohlenstoffanteil besteht (de.wikipedia.org/wiki/Stahl)",
+      "en" : "alloy of iron and carbon (en.wikipedia.org/wiki/Steel)"
     },
     "id" : "1",
     "superClasses" : [ "7" ]
@@ -415,13 +440,13 @@
     "type" : "owl:datatypeProperty"
   }, {
     "id" : "31",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "32",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "33",
+    "id" : "34",
     "type" : "owl:datatypeProperty"
-  }, {
-    "id" : "35",
-    "type" : "owl:disjointWith"
   }, {
     "id" : "36",
     "type" : "owl:disjointWith"
@@ -430,7 +455,7 @@
     "type" : "owl:disjointWith"
   }, {
     "id" : "38",
-    "type" : "owl:objectProperty"
+    "type" : "owl:disjointWith"
   }, {
     "id" : "39",
     "type" : "owl:disjointWith"
@@ -456,66 +481,68 @@
   "propertyAttribute" : [ {
     "range" : "1",
     "domain" : "0",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "2"
   }, {
     "range" : "1",
     "domain" : "4",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "3"
   }, {
     "iri" : "https://w3id.org/bcore/mat#Ductility",
     "baseIri" : "https://w3id.org/bcore/mat",
     "range" : "6",
     "label" : {
-      "IRI-based" : "Ductility"
+      "de" : "Duktilität",
+      "IRI-based" : "Ductility",
+      "en" : "ductility"
     },
     "domain" : "1",
     "comment" : {
-      "de" : "Duktilität",
-      "en" : "ductility"
+      "de" : "die Eigenschaft eines Werkstoffes, sich unter Zugbelastung vor einem Bruch dauerhaft plastisch zu verformen (https://de.wikipedia.org/wiki/Duktilit%C3%A4t)",
+      "en" : "the ability of a material to sustain significant plastic deformation before fracture when undergoing tension (https://en.wikipedia.org/wiki/Ductility)"
     },
-    "attributes" : [ "functional", "datatype" ],
+    "attributes" : [ "datatype", "functional" ],
     "id" : "5"
   }, {
     "range" : "11",
     "domain" : "10",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "9"
   }, {
     "range" : "11",
     "domain" : "13",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "12"
   }, {
     "range" : "1",
     "domain" : "15",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "14"
   }, {
     "range" : "11",
     "domain" : "17",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "16"
   }, {
     "range" : "8",
     "domain" : "7",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "18"
   }, {
     "range" : "8",
     "domain" : "20",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "19"
   }, {
     "range" : "7",
     "domain" : "1",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "21"
   }, {
     "range" : "8",
     "domain" : "11",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "24"
   }, {
     "iri" : "https://w3id.org/bcore/mat#ExpositionClass",
@@ -530,7 +557,9 @@
       } ]
     },
     "label" : {
-      "IRI-based" : "ExpositionClass"
+      "de" : "Expositionsklasse",
+      "IRI-based" : "ExpositionClass",
+      "en" : "exposition class"
     },
     "domain" : "20",
     "comment" : {
@@ -540,56 +569,13 @@
     "attributes" : [ "datatype" ],
     "id" : "29"
   }, {
-    "iri" : "https://w3id.org/bcore/mat#Ep",
-    "baseIri" : "https://w3id.org/bcore/mat",
-    "range" : "32",
-    "label" : {
-      "IRI-based" : "Ep"
-    },
-    "domain" : "0",
-    "comment" : {
-      "de" : "Elastizitätsmodul des Spannstahls",
-      "en" : "modulus of elasticity (Young's modulus) of the prestressing steel",
-      "undefined" : "[N/m²]"
-    },
-    "attributes" : [ "functional", "datatype" ],
-    "id" : "31"
-  }, {
-    "iri" : "https://w3id.org/bcore/mat#Ec",
-    "baseIri" : "https://w3id.org/bcore/mat",
-    "range" : "34",
-    "label" : {
-      "IRI-based" : "Ec"
-    },
-    "domain" : "20",
-    "comment" : {
-      "de" : "Elastizitätsmodul des Betons",
-      "en" : "modulus of elasticity (Young's modulus) of the concrete",
-      "undefined" : "[N/m²]"
-    },
-    "attributes" : [ "functional", "datatype" ],
-    "id" : "33"
-  }, {
-    "range" : "20",
-    "domain" : "7",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "35"
-  }, {
-    "range" : "17",
-    "domain" : "10",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "36"
-  }, {
-    "range" : "13",
-    "domain" : "10",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "37"
-  }, {
     "iri" : "https://w3id.org/bcore/mat#isCompositeOf",
     "baseIri" : "https://w3id.org/bcore/mat",
     "range" : "8",
     "label" : {
-      "IRI-based" : "isCompositeOf"
+      "de" : "ist Verbund aus",
+      "IRI-based" : "isCompositeOf",
+      "en" : "is composite of"
     },
     "domain" : "11",
     "comment" : {
@@ -597,81 +583,173 @@
       "en" : "composite material is a composite of another material"
     },
     "attributes" : [ "object" ],
+    "id" : "31"
+  }, {
+    "iri" : "https://w3id.org/bcore/mat#Ep",
+    "baseIri" : "https://w3id.org/bcore/mat",
+    "range" : "33",
+    "annotations" : {
+      "unitText" : [ {
+        "identifier" : "unitText",
+        "language" : "undefined",
+        "value" : "N/m²",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "de" : "Ep",
+      "IRI-based" : "Ep",
+      "en" : "Ep"
+    },
+    "domain" : "0",
+    "comment" : {
+      "de" : "Elastizitätsmodul des Spannstahls",
+      "en" : "modulus of elasticity (Young's modulus) of the prestressing steel"
+    },
+    "attributes" : [ "datatype", "functional" ],
+    "id" : "32"
+  }, {
+    "iri" : "https://w3id.org/bcore/mat#Ec",
+    "baseIri" : "https://w3id.org/bcore/mat",
+    "range" : "35",
+    "annotations" : {
+      "unitText" : [ {
+        "identifier" : "unitText",
+        "language" : "undefined",
+        "value" : "N/m²",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "de" : "Ec",
+      "IRI-based" : "Ec",
+      "en" : "Ec"
+    },
+    "domain" : "20",
+    "comment" : {
+      "de" : "Elastizitätsmodul des Betons",
+      "en" : "modulus of elasticity (Young's modulus) of the concrete"
+    },
+    "attributes" : [ "datatype", "functional" ],
+    "id" : "34"
+  }, {
+    "range" : "20",
+    "domain" : "7",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "36"
+  }, {
+    "range" : "17",
+    "domain" : "10",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "37"
+  }, {
+    "range" : "13",
+    "domain" : "10",
+    "attributes" : [ "anonymous", "object" ],
     "id" : "38"
   }, {
     "range" : "13",
     "domain" : "17",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "39"
   }, {
     "iri" : "https://w3id.org/bcore/mat#Ey",
     "baseIri" : "https://w3id.org/bcore/mat",
-    "range" : "26",
-    "label" : {
-      "IRI-based" : "Ey"
+    "range" : "28",
+    "annotations" : {
+      "unitText" : [ {
+        "identifier" : "unitText",
+        "language" : "undefined",
+        "value" : "N/m²",
+        "type" : "label"
+      } ]
     },
-    "domain" : "22",
+    "label" : {
+      "de" : "Ey",
+      "IRI-based" : "Ey",
+      "en" : "Ey"
+    },
+    "domain" : "26",
     "comment" : {
       "de" : "Elastizitätsmodul des Stahls",
-      "en" : "modulus of elasticity (Young's modulus) of the steel",
-      "undefined" : "[N/m²]"
+      "en" : "modulus of elasticity (Young's modulus) of the steel"
     },
-    "attributes" : [ "functional", "datatype" ],
+    "attributes" : [ "datatype", "functional" ],
     "id" : "40"
   }, {
     "range" : "7",
     "domain" : "11",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "41"
   }, {
     "range" : "20",
     "domain" : "11",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "42"
   }, {
     "iri" : "https://w3id.org/bcore/mat#fck",
     "baseIri" : "https://w3id.org/bcore/mat",
-    "range" : "28",
+    "range" : "27",
+    "annotations" : {
+      "unitText" : [ {
+        "identifier" : "unitText",
+        "language" : "undefined",
+        "value" : "N/m²",
+        "type" : "label"
+      } ]
+    },
     "label" : {
-      "IRI-based" : "fck"
+      "de" : "fck",
+      "IRI-based" : "fck",
+      "en" : "fck"
     },
     "domain" : "20",
     "comment" : {
       "de" : "charakteristische Druckfestigkeit des Betons",
-      "en" : "characteristic compressive strength of the concrete",
-      "undefined" : "[N/m²]"
+      "en" : "characteristic compressive strength of the concrete"
     },
-    "attributes" : [ "functional", "datatype" ],
+    "attributes" : [ "datatype", "functional" ],
     "id" : "43"
   }, {
     "iri" : "https://w3id.org/bcore/mat#fpk",
     "baseIri" : "https://w3id.org/bcore/mat",
-    "range" : "27",
+    "range" : "23",
     "label" : {
-      "IRI-based" : "fpk"
+      "de" : "fpk",
+      "IRI-based" : "fpk",
+      "en" : "fpk"
     },
     "domain" : "0",
     "comment" : {
       "de" : "charakteristische Zugfestigkeit des Spannstahls",
       "en" : "characteristic tensile strength of the prestressing steel",
-      "undefined" : "[N/m²]"
+      "undefined" : "N/m²"
     },
-    "attributes" : [ "functional", "datatype" ],
+    "attributes" : [ "datatype", "functional" ],
     "id" : "44"
   }, {
     "iri" : "https://w3id.org/bcore/mat#fyk",
     "baseIri" : "https://w3id.org/bcore/mat",
-    "range" : "23",
-    "label" : {
-      "IRI-based" : "fyk"
+    "range" : "25",
+    "annotations" : {
+      "unitText" : [ {
+        "identifier" : "unitText",
+        "language" : "undefined",
+        "value" : "N/m²",
+        "type" : "label"
+      } ]
     },
-    "domain" : "25",
+    "label" : {
+      "de" : "fyk",
+      "IRI-based" : "fyk",
+      "en" : "fyk"
+    },
+    "domain" : "22",
     "comment" : {
       "de" : "charakteristische Zugfestigkeit des Stahls",
-      "en" : "characteristic tensile strength of the steel",
-      "undefined" : "[N/m²]"
+      "en" : "characteristic tensile strength of the steel"
     },
-    "attributes" : [ "functional", "datatype" ],
+    "attributes" : [ "datatype", "functional" ],
     "id" : "45"
   } ]
 }

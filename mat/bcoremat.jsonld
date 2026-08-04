@@ -1,17 +1,15 @@
 [ {
   "@id" : "_:genid1",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
-  "http://www.w3.org/2002/07/owl#members" : [ {
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
-      "@id" : "https://w3id.org/bcore/mat#CompositeMaterial"
+      "@id" : "https://w3id.org/bcore/mat#ConstructionSteel"
     }, {
-      "@id" : "https://w3id.org/bcore/mat#Metal"
-    }, {
-      "@id" : "https://w3id.org/bmat#Concrete"
+      "@id" : "https://w3id.org/bmat#ReinforcementSteel"
     } ]
   } ]
 }, {
-  "@id" : "_:genid5",
+  "@id" : "_:genid11",
   "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
   "http://www.w3.org/2002/07/owl#members" : [ {
     "@list" : [ {
@@ -20,6 +18,28 @@
       "@id" : "https://w3id.org/bcore/mat#SteelConcreteComposite"
     }, {
       "@id" : "https://w3id.org/bmat#ReinforcedConcrete"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid4",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://w3id.org/bcore/mat#ConstructionSteel"
+    }, {
+      "@id" : "https://w3id.org/bmat#ReinforcementSteel"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid7",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
+  "http://www.w3.org/2002/07/owl#members" : [ {
+    "@list" : [ {
+      "@id" : "https://w3id.org/bcore/mat#CompositeMaterial"
+    }, {
+      "@id" : "https://w3id.org/bcore/mat#Metal"
+    }, {
+      "@id" : "https://w3id.org/bmat#Concrete"
     } ]
   } ]
 }, {
@@ -65,6 +85,9 @@
   "@id" : "https://schema.org/codeRepository",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
+  "@id" : "https://schema.org/unitText",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
   "@id" : "https://w3id.org/bcore/mat",
   "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
   "http://purl.org/dc/elements/1.1/abstract" : [ {
@@ -100,7 +123,7 @@
   } ],
   "http://purl.org/dc/terms/modified" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#date",
-    "@value" : "2026-07-21"
+    "@value" : "2026-08-04"
   } ],
   "http://purl.org/ontology/bibo/status" : [ {
     "@value" : "Ontology Specification Draft"
@@ -113,18 +136,25 @@
     "@value" : "Bridge Core Ontology – Material Extension"
   } ],
   "http://www.w3.org/2002/07/owl#versionInfo" : [ {
-    "@value" : "0.1.0"
-  } ],
-  "https://schema.org/codeRepository" : [ {
-    "@value" : "https://github.com/TUD-IMB/BCore"
+    "@value" : "0.1.1"
   } ],
   "http://xmlns.com/foaf/0.1/logo" : [ {
     "@value" : "https://raw.githubusercontent.com/TUD-IMB/BCore/main/BCore.svg"
+  } ],
+  "https://schema.org/codeRepository" : [ {
+    "@value" : "https://github.com/TUD-IMB/BCore"
   } ]
 }, {
   "@id" : "https://w3id.org/bcore/mat#CompositeMaterial",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "de",
+    "@value" : "Verbundstoff/ Material, das sich heterogen aus mehreren anderen Materialien zusammensetzt"
+  }, {
+    "@language" : "en",
+    "@value" : "material, that is heterogenically composed of several materials"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "de",
     "@value" : "Verbundmaterial"
   }, {
@@ -138,6 +168,13 @@
   "@id" : "https://w3id.org/bcore/mat#ConstructionSteel",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Stahl für den Stahl- und den Maschinenbau"
+  }, {
+    "@language" : "en",
+    "@value" : "structural steel, used for making construction elements in a variety of shapes"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "de",
     "@value" : "Baustahl"
   }, {
@@ -152,13 +189,20 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "de",
+    "@value" : "die Eigenschaft eines Werkstoffes, sich unter Zugbelastung vor einem Bruch dauerhaft plastisch zu verformen (https://de.wikipedia.org/wiki/Duktilit%C3%A4t)"
+  }, {
+    "@language" : "en",
+    "@value" : "the ability of a material to sustain significant plastic deformation before fracture when undergoing tension (https://en.wikipedia.org/wiki/Ductility)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/bcore/mat#Steel"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "de",
     "@value" : "Duktilität"
   }, {
     "@language" : "en",
     "@value" : "ductility"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/bcore/mat#Steel"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
@@ -172,14 +216,22 @@
   }, {
     "@language" : "en",
     "@value" : "modulus of elasticity (Young's modulus) of the concrete"
-  }, {
-    "@value" : "[N/m²]"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/bmat#Concrete"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "de",
+    "@value" : "Ec"
+  }, {
+    "@language" : "en",
+    "@value" : "Ec"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#decimal"
+  } ],
+  "https://schema.org/unitText" : [ {
+    "@value" : "N/m²"
   } ]
 }, {
   "@id" : "https://w3id.org/bcore/mat#Ep",
@@ -190,14 +242,22 @@
   }, {
     "@language" : "en",
     "@value" : "modulus of elasticity (Young's modulus) of the prestressing steel"
-  }, {
-    "@value" : "[N/m²]"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/bcore/mat#PrestressingSteel"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "de",
+    "@value" : "Ep"
+  }, {
+    "@language" : "en",
+    "@value" : "Ep"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#decimal"
+  } ],
+  "https://schema.org/unitText" : [ {
+    "@value" : "N/m²"
   } ]
 }, {
   "@id" : "https://w3id.org/bcore/mat#ExpositionClass",
@@ -211,6 +271,13 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/bmat#Concrete"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "de",
+    "@value" : "Expositionsklasse"
+  }, {
+    "@language" : "en",
+    "@value" : "exposition class"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
@@ -227,21 +294,34 @@
   }, {
     "@language" : "en",
     "@value" : "modulus of elasticity (Young's modulus) of the steel"
-  }, {
-    "@value" : "[N/m²]"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/bcore/mat#ConstructionSteel"
+    "@id" : "_:genid1"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "de",
+    "@value" : "Ey"
   }, {
-    "@id" : "https://w3id.org/bmat#ReinforcementSteel"
+    "@language" : "en",
+    "@value" : "Ey"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#decimal"
+  } ],
+  "https://schema.org/unitText" : [ {
+    "@value" : "N/m²"
   } ]
 }, {
   "@id" : "https://w3id.org/bcore/mat#Metal",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "elemental metal, metallic construction material or alloy"
+  }, {
+    "@language" : "de",
+    "@value" : "elementares Metall, metallischer Werkstoff oder Legierung"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "de",
     "@value" : "Metall"
   }, {
@@ -256,6 +336,13 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "de",
+    "@value" : "Beton, der mit vorgespannten Spanngliedern aus anderen Materialien (Stahl, Carbon, ...) durchsetzt ist"
+  }, {
+    "@language" : "en",
+    "@value" : "concrete that is permeated by prestressed tendons of other material (steel, carbon fibers, ...)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "de",
     "@value" : "Spannbeton"
   }, {
     "@language" : "en",
@@ -268,6 +355,13 @@
   "@id" : "https://w3id.org/bcore/mat#PrestressingSteel",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "high-tensile steel that is mostly used in prestressed concrete structures"
+  }, {
+    "@language" : "de",
+    "@value" : "hochfester Stahl, der vor allem im Spannbetonbau zum Vorspannen verwendet wird (https://de.wikipedia.org/wiki/Spannstahl)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "de",
     "@value" : "Spannstahl"
   }, {
@@ -282,6 +376,13 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "de",
+    "@value" : "Werkstoff, der überwiegend aus Eisen mit geringem Kohlenstoffanteil besteht (de.wikipedia.org/wiki/Stahl)"
+  }, {
+    "@language" : "en",
+    "@value" : "alloy of iron and carbon (en.wikipedia.org/wiki/Steel)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "de",
     "@value" : "Stahl"
   }, {
     "@language" : "en",
@@ -295,6 +396,13 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "de",
+    "@value" : "Verbund aus (bewehrtem) Beton und Baustahl, die aber räumlich bis auf eine Verbundfläche getrennt sind"
+  }, {
+    "@language" : "en",
+    "@value" : "composite of (reinforced) concrete and construction steel, that are spatially separated"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "de",
     "@value" : "Stahl-Beton-Verbund"
   }, {
     "@language" : "en",
@@ -302,6 +410,83 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/bcore/mat#CompositeMaterial"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bcore/mat#fck",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "characteristic compressive strength of the concrete"
+  }, {
+    "@language" : "de",
+    "@value" : "charakteristische Druckfestigkeit des Betons"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/bmat#Concrete"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "de",
+    "@value" : "fck"
+  }, {
+    "@language" : "en",
+    "@value" : "fck"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#decimal"
+  } ],
+  "https://schema.org/unitText" : [ {
+    "@value" : "N/m²"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bcore/mat#fpk",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "characteristic tensile strength of the prestressing steel"
+  }, {
+    "@language" : "de",
+    "@value" : "charakteristische Zugfestigkeit des Spannstahls"
+  }, {
+    "@value" : "N/m²"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/bcore/mat#PrestressingSteel"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "de",
+    "@value" : "fpk"
+  }, {
+    "@language" : "en",
+    "@value" : "fpk"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#decimal"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bcore/mat#fyk",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "characteristic tensile strength of the steel"
+  }, {
+    "@language" : "de",
+    "@value" : "charakteristische Zugfestigkeit des Stahls"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "_:genid4"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "de",
+    "@value" : "fyk"
+  }, {
+    "@language" : "en",
+    "@value" : "fyk"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#decimal"
+  } ],
+  "https://schema.org/unitText" : [ {
+    "@value" : "N/m²"
   } ]
 }, {
   "@id" : "https://w3id.org/bcore/mat#isCompositeOf",
@@ -316,64 +501,15 @@
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/bcore/mat#CompositeMaterial"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "is composite of"
+  }, {
+    "@language" : "de",
+    "@value" : "ist Verbund aus"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "https://w3id.org/bmat#BuildingMaterial"
-  } ]
-}, {
-  "@id" : "https://w3id.org/bcore/mat#fck",
-  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "characteristic compressive strength of the concrete"
-  }, {
-    "@language" : "de",
-    "@value" : "charakteristische Druckfestigkeit des Betons"
-  }, {
-    "@value" : "[N/m²]"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/bmat#Concrete"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.w3.org/2001/XMLSchema#decimal"
-  } ]
-}, {
-  "@id" : "https://w3id.org/bcore/mat#fpk",
-  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "characteristic tensile strength of the prestressing steel"
-  }, {
-    "@language" : "de",
-    "@value" : "charakteristische Zugfestigkeit des Spannstahls"
-  }, {
-    "@value" : "[N/m²]"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/bcore/mat#PrestressingSteel"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.w3.org/2001/XMLSchema#decimal"
-  } ]
-}, {
-  "@id" : "https://w3id.org/bcore/mat#fyk",
-  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "characteristic tensile strength of the steel"
-  }, {
-    "@language" : "de",
-    "@value" : "charakteristische Zugfestigkeit des Stahls"
-  }, {
-    "@value" : "[N/m²]"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/bcore/mat#ConstructionSteel"
-  }, {
-    "@id" : "https://w3id.org/bmat#ReinforcementSteel"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.w3.org/2001/XMLSchema#decimal"
   } ]
 }, {
   "@id" : "https://w3id.org/bmat#BuildingMaterial",
@@ -382,6 +518,13 @@
   "@id" : "https://w3id.org/bmat#Concrete",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "de",
+    "@value" : "Baustoff, der als Dispersion unter Zugabe von Flüssigkeit aus einem Bindemittel und Zuschlagstoffen angemischt wird (de.wikipedia.org/wiki/Beton)"
+  }, {
+    "@language" : "en",
+    "@value" : "composite material composed of aggregate bound together with a fluid cement that cures to a solid (en.wikipedia.org/wiki/Concrete)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "de",
     "@value" : "Beton"
   }, {
@@ -396,6 +539,13 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "de",
+    "@value" : "Beton, der von schlaffer Stahlbewehrung durchsetzt ist"
+  }, {
+    "@language" : "en",
+    "@value" : "concrete that is permeated by steel reinforcement"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "de",
     "@value" : "Stahlbeton"
   }, {
     "@language" : "en",
@@ -409,10 +559,17 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "de",
-    "@value" : "Betonstahl"
+    "@value" : "Bewehrungsstahl, für schlaffe Bewehrungen von Stahlbeton verwendet"
   }, {
     "@language" : "en",
     "@value" : "reinforcement (mild) steel"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "de",
+    "@value" : "Betonstahl"
+  }, {
+    "@language" : "en",
+    "@value" : "reinforcement steel"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/bcore/mat#Steel"
