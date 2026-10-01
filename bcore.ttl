@@ -1,7 +1,8 @@
 @prefix bcore: <https://w3id.org/bcore#> .
 @prefix brot: <https://w3id.org/brot#> .
-@prefix bot: <https://w3id.org/bot#> .
+@prefix brcomp: <https://w3id.org/brcomp#> .
 @prefix reloc: <https://w3id.org/reloc#> .
+@prefix bot: <https://w3id.org/bot#> .
 @prefix infraspatialot: <https://dtc-ontology.cms.ed.tum.de/infraspatialot#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -21,11 +22,11 @@
                                                              "Xiaoli Song" ;
                           <http://purl.org/dc/terms/description> "Core ontology for the representation of bridges."@en ;
                           <http://purl.org/dc/terms/license> "https://creativecommons.org/licenses/by/4.0/deed.en" ;
-                          <http://purl.org/dc/terms/modified> "2026-08-04"^^xsd:date ;
+                          <http://purl.org/dc/terms/modified> "2026-09-30"^^xsd:date ;
                           <http://purl.org/ontology/bibo/status> "Ontology Specification Draft" ;
                           <http://purl.org/vocab/vann/preferredNamespacePrefix> "bcore" ;
                           rdfs:label "Bridge Core Ontology"@en ;
-                          owl:versionInfo "0.1.1" ;
+                          owl:versionInfo "0.1.2" ;
                           <http://xmlns.com/foaf/0.1/logo> "https://raw.githubusercontent.com/TUD-IMB/BCore/main/BCore.svg" ;
                           <https://schema.org/codeRepository> "https://github.com/TUD-IMB/BCore" .
 
@@ -183,7 +184,7 @@ xsd:date rdf:type rdfs:Datatype .
                rdfs:domain <https://dtc-ontology.cms.ed.tum.de/infraspatialot#Localisation> ;
                rdfs:range <https://dtc-ontology.cms.ed.tum.de/infraspatialot#Point> ;
                rdfs:comment "Punkt der Lokalisierung (Ort)"@de ,
-                            "point of the line localisation (location)"@en ;
+                            "point of the localisation (location)"@en ;
                rdfs:label "has location at"@en ,
                           "ist lokalisiert an"@de ;
                rdfs:seeAlso "https://dtc-ontology.cms.ed.tum.de/infraspatialot#isisLocatedAt" .
@@ -198,6 +199,18 @@ xsd:date rdf:type rdfs:Datatype .
                                   "bridge contains partial structure (bridge section)"@en ;
                      rdfs:label "contains partial structure"@en ,
                                 "enthält Brückenzug"@de .
+
+
+###  https://w3id.org/bcore#hasWayPointAt
+:hasWayPointAt rdf:type owl:ObjectProperty ;
+               rdfs:subPropertyOf owl:topObjectProperty ;
+               owl:inverseOf :isWayPointOf ;
+               rdfs:domain <https://dtc-ontology.cms.ed.tum.de/infraspatialot#LineLocalisation> ;
+               rdfs:range :WayPoint ;
+               rdfs:comment "Punkt auf der Linienlokalisierung"@de ,
+                            "point of the line localisation"@en ;
+               rdfs:label "has waypoint at"@en ,
+                          "hat Trassenpunkt auf"@de .
 
 
 ###  https://w3id.org/bcore#includesLocalisation
@@ -286,6 +299,17 @@ xsd:date rdf:type rdfs:Datatype .
                                    "bridge section is part of exactly one bridge"@en ;
                       rdfs:label "is partial structure of"@en ,
                                  "ist Brückenzug von"@de .
+
+
+###  https://w3id.org/bcore#isWayPointOf
+:isWayPointOf rdf:type owl:ObjectProperty ;
+              rdfs:subPropertyOf owl:topObjectProperty ;
+              rdfs:domain :WayPoint ;
+              rdfs:range <https://dtc-ontology.cms.ed.tum.de/infraspatialot#LineLocalisation> ;
+              rdfs:comment "Ist Punkt auf der Linienlokalisierung"@de ,
+                           "is point of the line localisation"@en ;
+              rdfs:label "is waypoint of"@en ,
+                         "ist Wegpunkt von"@de .
 
 
 ###  https://w3id.org/bcore#liesWithin
@@ -659,18 +683,6 @@ xsd:date rdf:type rdfs:Datatype .
                              "localisation name"@en .
 
 
-###  https://w3id.org/bcore#LocalisationStation
-:LocalisationStation rdf:type owl:DatatypeProperty ,
-                              owl:FunctionalProperty ;
-                     rdfs:domain <https://dtc-ontology.cms.ed.tum.de/infraspatialot#Localisation> ;
-                     rdfs:range xsd:decimal ;
-                     rdfs:comment "Kilometrierung der Lokalisierung (des Standortes) auf der Trasse"@de ,
-                                  "kilometer marking of the localisation (location) on the route"@en ;
-                     rdfs:label "Lokalisierung Stationierung"@de ,
-                                "localisation station"@en ;
-                     <https://schema.org/unitText> "m" .
-
-
 ###  https://w3id.org/bcore#Longitude
 :Longitude rdf:type owl:DatatypeProperty ,
                     owl:FunctionalProperty ;
@@ -690,6 +702,29 @@ xsd:date rdf:type rdfs:Datatype .
                            "name of the material"@en ;
               rdfs:label "Materialname"@de ,
                          "material name"@en .
+
+
+###  https://w3id.org/bcore#MediaFilePath
+:MediaFilePath rdf:type owl:DatatypeProperty ;
+               rdfs:subPropertyOf owl:topDataProperty ;
+               rdf:type owl:FunctionalProperty ;
+               rdfs:domain :MediaFile ;
+               rdfs:range xsd:string ;
+               rdfs:comment "local or web path (URL) of a media file"@en ,
+                            "lokaler Dateipfad oder Webadresse (URL) einer Mediendatei"@de ;
+               rdfs:label "Pfad der Mediendatei"@de ,
+                          "media file path"@en .
+
+
+###  https://w3id.org/bcore#PointName
+:PointName rdf:type owl:DatatypeProperty ,
+                    owl:FunctionalProperty ;
+           rdfs:domain <https://dtc-ontology.cms.ed.tum.de/infraspatialot#Point> ;
+           rdfs:range xsd:string ;
+           rdfs:comment "Name des geografischen Punktes"@de ,
+                        "name of the geographic point"@en ;
+           rdfs:label "Punkt Name"@de ,
+                      "point name"@en .
 
 
 ###  https://w3id.org/bcore#RegionISOCode
@@ -713,6 +748,18 @@ xsd:date rdf:type rdfs:Datatype .
         rdfs:label "Volumen"@de ,
                    "volume"@en ;
         <https://schema.org/unitText> "m³" .
+
+
+###  https://w3id.org/bcore#WayPointStation
+:WayPointStation rdf:type owl:DatatypeProperty ,
+                          owl:FunctionalProperty ;
+                 rdfs:domain :WayPoint ;
+                 rdfs:range xsd:decimal ;
+                 rdfs:comment "Kilometrierung des Trassenpunktes"@de ,
+                              "kilometer marking of point on the infrastructure route"@en ;
+                 rdfs:label "Trassenpunkt Stationierung"@de ,
+                            "waypoint station"@en ;
+                 <https://schema.org/unitText> "m" .
 
 
 ###  https://w3id.org/bcore#ZoneName
@@ -858,21 +905,21 @@ xsd:date rdf:type rdfs:Datatype .
                    "region"@en .
 
 
+###  https://w3id.org/bcore#WayPoint
+:WayPoint rdf:type owl:Class ;
+          rdfs:subClassOf <https://dtc-ontology.cms.ed.tum.de/infraspatialot#Point> ;
+          rdfs:comment "Punkt auf einer linearen Infrastrukturtrasse"@de ,
+                       "point on a linear infrastructure route"@en ;
+          rdfs:label "Wegpunkt"@de ,
+                     "waypoint"@en .
+
+
 ###  https://w3id.org/bmat#BuildingMaterial
 <https://w3id.org/bmat#BuildingMaterial> rdf:type owl:Class ;
                                          rdfs:comment "Material, aus dem Brücken(-bauteile) bestehen"@de ,
                                                       "materials used to build bridges"@en ;
                                          rdfs:label "Baumaterial"@de ,
                                                     "building material"@en .
-
-
-###  https://w3id.org/bot#Building
-<https://w3id.org/bot#Building> rdf:type owl:Class ;
-                                rdfs:subClassOf <https://w3id.org/bot#Zone> ;
-                                rdfs:comment "Bauwerk, das Räume einschließt, betreten werden kann und dem Aufenthalt von Menschen, Tieren oder der Lagerung von Sachen dient (de.wikipedia.org/wiki/Gebäude)."@de ,
-                                             "Enclosed structure with a roof, walls and often windows, usually standing permanently in one place (en.wikipedia.org/wiki/Building)."@en ;
-                                rdfs:label "Gebäude"@de ,
-                                           "building"@en .
 
 
 ###  https://w3id.org/bot#Site

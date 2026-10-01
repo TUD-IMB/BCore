@@ -13,7 +13,6 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:vann="http://purl.org/vocab/vann/"
      xmlns:bcore="https://w3id.org/bcore#"
-     xmlns:reloc="https://w3id.org/reloc#"
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:schema="https://schema.org/"
      xmlns:infraspatialot="https://dtc-ontology.cms.ed.tum.de/infraspatialot#">
@@ -28,11 +27,11 @@
         <terms:creator>Xiaoli Song</terms:creator>
         <terms:description xml:lang="en">Core ontology for the representation of bridges.</terms:description>
         <terms:license>https://creativecommons.org/licenses/by/4.0/deed.en</terms:license>
-        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-08-04</terms:modified>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-09-30</terms:modified>
         <bibo:status>Ontology Specification Draft</bibo:status>
         <vann:preferredNamespacePrefix>bcore</vann:preferredNamespacePrefix>
         <rdfs:label xml:lang="en">Bridge Core Ontology</rdfs:label>
-        <owl:versionInfo>0.1.1</owl:versionInfo>
+        <owl:versionInfo>0.1.2</owl:versionInfo>
         <foaf:logo>https://raw.githubusercontent.com/TUD-IMB/BCore/main/BCore.svg</foaf:logo>
         <schema:codeRepository>https://github.com/TUD-IMB/BCore</schema:codeRepository>
     </owl:Ontology>
@@ -269,7 +268,7 @@
         <rdfs:domain rdf:resource="https://dtc-ontology.cms.ed.tum.de/infraspatialot#Localisation"/>
         <rdfs:range rdf:resource="https://dtc-ontology.cms.ed.tum.de/infraspatialot#Point"/>
         <rdfs:comment xml:lang="de">Punkt der Lokalisierung (Ort)</rdfs:comment>
-        <rdfs:comment xml:lang="en">point of the line localisation (location)</rdfs:comment>
+        <rdfs:comment xml:lang="en">point of the localisation (location)</rdfs:comment>
         <rdfs:label xml:lang="en">has location at</rdfs:label>
         <rdfs:label xml:lang="de">ist lokalisiert an</rdfs:label>
         <rdfs:seeAlso>https://dtc-ontology.cms.ed.tum.de/infraspatialot#isisLocatedAt</rdfs:seeAlso>
@@ -287,6 +286,21 @@
         <rdfs:comment xml:lang="en">bridge contains partial structure (bridge section)</rdfs:comment>
         <rdfs:label xml:lang="en">contains partial structure</rdfs:label>
         <rdfs:label xml:lang="de">enthält Brückenzug</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/bcore#hasWayPointAt -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/bcore#hasWayPointAt">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="https://w3id.org/bcore#isWayPointOf"/>
+        <rdfs:domain rdf:resource="https://dtc-ontology.cms.ed.tum.de/infraspatialot#LineLocalisation"/>
+        <rdfs:range rdf:resource="https://w3id.org/bcore#WayPoint"/>
+        <rdfs:comment xml:lang="de">Punkt auf der Linienlokalisierung</rdfs:comment>
+        <rdfs:comment xml:lang="en">point of the line localisation</rdfs:comment>
+        <rdfs:label xml:lang="en">has waypoint at</rdfs:label>
+        <rdfs:label xml:lang="de">hat Trassenpunkt auf</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -399,6 +413,20 @@
         <rdfs:comment xml:lang="en">bridge section is part of exactly one bridge</rdfs:comment>
         <rdfs:label xml:lang="en">is partial structure of</rdfs:label>
         <rdfs:label xml:lang="de">ist Brückenzug von</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/bcore#isWayPointOf -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/bcore#isWayPointOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/bcore#WayPoint"/>
+        <rdfs:range rdf:resource="https://dtc-ontology.cms.ed.tum.de/infraspatialot#LineLocalisation"/>
+        <rdfs:comment xml:lang="de">Ist Punkt auf der Linienlokalisierung</rdfs:comment>
+        <rdfs:comment xml:lang="en">is point of the line localisation</rdfs:comment>
+        <rdfs:label xml:lang="en">is waypoint of</rdfs:label>
+        <rdfs:label xml:lang="de">ist Wegpunkt von</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -880,21 +908,6 @@
     
 
 
-    <!-- https://w3id.org/bcore#LocalisationStation -->
-
-    <owl:DatatypeProperty rdf:about="https://w3id.org/bcore#LocalisationStation">
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="https://dtc-ontology.cms.ed.tum.de/infraspatialot#Localisation"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
-        <rdfs:comment xml:lang="de">Kilometrierung der Lokalisierung (des Standortes) auf der Trasse</rdfs:comment>
-        <rdfs:comment xml:lang="en">kilometer marking of the localisation (location) on the route</rdfs:comment>
-        <rdfs:label xml:lang="de">Lokalisierung Stationierung</rdfs:label>
-        <rdfs:label xml:lang="en">localisation station</rdfs:label>
-        <schema:unitText>m</schema:unitText>
-    </owl:DatatypeProperty>
-    
-
-
     <!-- https://w3id.org/bcore#Longitude -->
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/bcore#Longitude">
@@ -918,6 +931,35 @@
         <rdfs:comment xml:lang="en">name of the material</rdfs:comment>
         <rdfs:label xml:lang="de">Materialname</rdfs:label>
         <rdfs:label xml:lang="en">material name</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/bcore#MediaFilePath -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/bcore#MediaFilePath">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/bcore#MediaFile"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">local or web path (URL) of a media file</rdfs:comment>
+        <rdfs:comment xml:lang="de">lokaler Dateipfad oder Webadresse (URL) einer Mediendatei</rdfs:comment>
+        <rdfs:label xml:lang="de">Pfad der Mediendatei</rdfs:label>
+        <rdfs:label xml:lang="en">media file path</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/bcore#PointName -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/bcore#PointName">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://dtc-ontology.cms.ed.tum.de/infraspatialot#Point"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="de">Name des geografischen Punktes</rdfs:comment>
+        <rdfs:comment xml:lang="en">name of the geographic point</rdfs:comment>
+        <rdfs:label xml:lang="de">Punkt Name</rdfs:label>
+        <rdfs:label xml:lang="en">point name</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -947,6 +989,21 @@
         <rdfs:label xml:lang="de">Volumen</rdfs:label>
         <rdfs:label xml:lang="en">volume</rdfs:label>
         <schema:unitText>m³</schema:unitText>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/bcore#WayPointStation -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/bcore#WayPointStation">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/bcore#WayPoint"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+        <rdfs:comment xml:lang="de">Kilometrierung des Trassenpunktes</rdfs:comment>
+        <rdfs:comment xml:lang="en">kilometer marking of point on the infrastructure route</rdfs:comment>
+        <rdfs:label xml:lang="de">Trassenpunkt Stationierung</rdfs:label>
+        <rdfs:label xml:lang="en">waypoint station</rdfs:label>
+        <schema:unitText>m</schema:unitText>
     </owl:DatatypeProperty>
     
 
@@ -1143,6 +1200,18 @@
     
 
 
+    <!-- https://w3id.org/bcore#WayPoint -->
+
+    <owl:Class rdf:about="https://w3id.org/bcore#WayPoint">
+        <rdfs:subClassOf rdf:resource="https://dtc-ontology.cms.ed.tum.de/infraspatialot#Point"/>
+        <rdfs:comment xml:lang="de">Punkt auf einer linearen Infrastrukturtrasse</rdfs:comment>
+        <rdfs:comment xml:lang="en">point on a linear infrastructure route</rdfs:comment>
+        <rdfs:label xml:lang="de">Wegpunkt</rdfs:label>
+        <rdfs:label xml:lang="en">waypoint</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- https://w3id.org/bmat#BuildingMaterial -->
 
     <owl:Class rdf:about="https://w3id.org/bmat#BuildingMaterial">
@@ -1150,18 +1219,6 @@
         <rdfs:comment xml:lang="en">materials used to build bridges</rdfs:comment>
         <rdfs:label xml:lang="de">Baumaterial</rdfs:label>
         <rdfs:label xml:lang="en">building material</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/bot#Building -->
-
-    <owl:Class rdf:about="https://w3id.org/bot#Building">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/bot#Zone"/>
-        <rdfs:comment xml:lang="de">Bauwerk, das Räume einschließt, betreten werden kann und dem Aufenthalt von Menschen, Tieren oder der Lagerung von Sachen dient (de.wikipedia.org/wiki/Gebäude).</rdfs:comment>
-        <rdfs:comment xml:lang="en">Enclosed structure with a roof, walls and often windows, usually standing permanently in one place (en.wikipedia.org/wiki/Building).</rdfs:comment>
-        <rdfs:label xml:lang="de">Gebäude</rdfs:label>
-        <rdfs:label xml:lang="en">building</rdfs:label>
     </owl:Class>
     
 

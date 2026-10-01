@@ -2,12 +2,12 @@
   "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
   "header" : {
     "languages" : [ "de", "en", "undefined" ],
-    "baseIris" : [ "https://w3id.org/bot", "https://w3id.org/bmat", "http://www.w3.org/1999/02/22-rdf-syntax-ns", "https://dtc-ontology.cms.ed.tum.de/infraspatialot", "https://w3id.org/bcore/media", "https://w3id.org/brcomp", "https://w3id.org/bcore", "http://www.w3.org/2000/01/rdf-schema", "https://w3id.org/reloc", "https://w3id.org/brot", "http://www.w3.org/2001/XMLSchema" ],
+    "baseIris" : [ "https://w3id.org/bot", "https://w3id.org/bmat", "http://www.w3.org/1999/02/22-rdf-syntax-ns", "https://dtc-ontology.cms.ed.tum.de/infraspatialot", "https://w3id.org/bcore/media", "https://w3id.org/brcomp", "https://w3id.org/bcore", "http://www.w3.org/2002/07/owl", "http://www.w3.org/2000/01/rdf-schema", "https://w3id.org/reloc", "https://w3id.org/brot", "http://www.w3.org/2001/XMLSchema" ],
     "title" : {
       "en" : "Bridge Core Ontology for Institute of Concrete Structures, Dresden University of Technology"
     },
     "iri" : "https://w3id.org/bcore",
-    "version" : "0.1.1",
+    "version" : "0.1.2",
     "author" : [ "Tim Noack", "Morris Florek", "Johannes Reimer", "Xiaoli Song" ],
     "description" : {
       "en" : "Core ontology for the representation of bridges."
@@ -25,22 +25,22 @@
       "creator" : [ {
         "identifier" : "creator",
         "language" : "undefined",
-        "value" : "Johannes Reimer",
-        "type" : "label"
-      }, {
-        "identifier" : "creator",
-        "language" : "undefined",
-        "value" : "Morris Florek",
-        "type" : "label"
-      }, {
-        "identifier" : "creator",
-        "language" : "undefined",
         "value" : "Xiaoli Song",
         "type" : "label"
       }, {
         "identifier" : "creator",
         "language" : "undefined",
+        "value" : "Johannes Reimer",
+        "type" : "label"
+      }, {
+        "identifier" : "creator",
+        "language" : "undefined",
         "value" : "Tim Noack",
+        "type" : "label"
+      }, {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "Morris Florek",
         "type" : "label"
       } ],
       "contributor" : [ {
@@ -70,7 +70,7 @@
       "modified" : [ {
         "identifier" : "modified",
         "language" : "undefined",
-        "value" : "2026-08-04",
+        "value" : "2026-09-30",
         "type" : "label"
       } ],
       "codeRepository" : [ {
@@ -88,7 +88,7 @@
       "versionInfo" : [ {
         "identifier" : "versionInfo",
         "language" : "undefined",
-        "value" : "0.1.1",
+        "value" : "0.1.2",
         "type" : "label"
       } ],
       "title" : [ {
@@ -116,70 +116,58 @@
     "id" : "3",
     "type" : "owl:Class"
   }, {
-    "id" : "9",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "12",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "17",
+    "id" : "5",
     "type" : "owl:Class"
   }, {
-    "id" : "18",
+    "id" : "11",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "14",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "23",
     "type" : "owl:Class"
-  }, {
-    "id" : "19",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "20",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "21",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "22",
-    "type" : "rdfs:Datatype"
   }, {
     "id" : "24",
-    "type" : "rdfs:Datatype"
+    "type" : "owl:Class"
   }, {
     "id" : "25",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "28",
-    "type" : "owl:Class"
+    "id" : "26",
+    "type" : "rdfs:Datatype"
   }, {
-    "id" : "29",
+    "id" : "27",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "28",
     "type" : "rdfs:Datatype"
   }, {
     "id" : "30",
     "type" : "rdfs:Datatype"
   }, {
     "id" : "31",
-    "type" : "owl:Class"
-  }, {
-    "id" : "33",
-    "type" : "owl:Class"
+    "type" : "rdfs:Datatype"
   }, {
     "id" : "34",
-    "type" : "rdfs:Datatype"
+    "type" : "owl:Class"
   }, {
     "id" : "35",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "38",
+    "id" : "36",
     "type" : "rdfs:Datatype"
+  }, {
+    "id" : "4",
+    "type" : "owl:Class"
+  }, {
+    "id" : "38",
+    "type" : "owl:Class"
   }, {
     "id" : "39",
     "type" : "rdfs:Datatype"
   }, {
     "id" : "40",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "41",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "42",
     "type" : "rdfs:Datatype"
   }, {
     "id" : "43",
@@ -191,67 +179,91 @@
     "id" : "45",
     "type" : "rdfs:Datatype"
   }, {
+    "id" : "46",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "47",
+    "type" : "rdfs:Datatype"
+  }, {
     "id" : "48",
-    "type" : "owl:Class"
-  }, {
-    "id" : "61",
-    "type" : "owl:Class"
-  }, {
-    "id" : "8",
-    "type" : "owl:Class"
-  }, {
-    "id" : "71",
-    "type" : "owl:Class"
-  }, {
-    "id" : "27",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "15",
-    "type" : "owl:Class"
-  }, {
-    "id" : "1",
-    "type" : "owl:equivalentClass"
-  }, {
-    "id" : "98",
+    "id" : "49",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "99",
+    "id" : "50",
     "type" : "rdfs:Datatype"
   }, {
     "id" : "54",
     "type" : "owl:Class"
   }, {
-    "id" : "69",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "100",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "52",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "14",
+    "id" : "66",
     "type" : "owl:Class"
   }, {
-    "id" : "89",
+    "id" : "10",
+    "type" : "owl:Class"
+  }, {
+    "id" : "84",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "93",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "92",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "16",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "33",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "21",
+    "type" : "owl:Class"
+  }, {
+    "id" : "1",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "109",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "110",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "60",
+    "type" : "owl:Class"
+  }, {
+    "id" : "80",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "111",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "58",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "20",
+    "type" : "owl:Class"
+  }, {
+    "id" : "99",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "112",
     "type" : "rdfs:Datatype"
   }, {
     "id" : "101",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "91",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "105",
+    "id" : "116",
     "type" : "owl:unionOf"
   }, {
-    "id" : "59",
+    "id" : "64",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "67",
+    "id" : "78",
     "type" : "owl:Class"
   }, {
-    "id" : "5",
+    "id" : "7",
     "type" : "owl:equivalentClass"
   } ],
   "classAttribute" : [ {
@@ -271,12 +283,27 @@
     "id" : "0",
     "superClasses" : [ "1" ]
   }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "iri" : "http://www.w3.org/2001/XMLSchema#boolean",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
     "id" : "2",
     "label" : {
-      "IRI-based" : "decimal"
+      "IRI-based" : "boolean"
     }
+  }, {
+    "iri" : "https://w3id.org/bcore#WayPoint",
+    "baseIri" : "https://w3id.org/bcore",
+    "instances" : 0,
+    "label" : {
+      "de" : "Wegpunkt",
+      "IRI-based" : "WayPoint",
+      "en" : "waypoint"
+    },
+    "comment" : {
+      "de" : "Punkt auf einer linearen Infrastrukturtrasse",
+      "en" : "point on a linear infrastructure route"
+    },
+    "id" : "3",
+    "superClasses" : [ "4" ]
   }, {
     "iri" : "https://w3id.org/brot#Component",
     "baseIri" : "https://w3id.org/brot",
@@ -291,20 +318,20 @@
       "en" : "bridge element"
     },
     "attributes" : [ "external" ],
-    "id" : "3"
+    "id" : "5"
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#decimal",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "9",
+    "id" : "11",
     "label" : {
       "IRI-based" : "decimal"
     }
   }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "12",
+    "id" : "14",
     "label" : {
-      "IRI-based" : "boolean"
+      "IRI-based" : "string"
     }
   }, {
     "iri" : "https://dtc-ontology.cms.ed.tum.de/infraspatialot#LineLocalisation",
@@ -320,8 +347,8 @@
       "en" : "line localisation (describes a line object which is defined by a start point and an end point and is used for linear referencing according to the principles defined in ISO 19148)"
     },
     "attributes" : [ "external" ],
-    "id" : "17",
-    "superClasses" : [ "8" ]
+    "id" : "23",
+    "superClasses" : [ "10" ]
   }, {
     "iri" : "https://w3id.org/bcore#Country",
     "baseIri" : "https://w3id.org/bcore",
@@ -335,47 +362,47 @@
       "de" : "Land (Nationalstaat)",
       "en" : "country (nation-state)"
     },
-    "id" : "18",
-    "superClasses" : [ "5" ]
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#decimal",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "19",
-    "label" : {
-      "IRI-based" : "decimal"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#string",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "20",
-    "label" : {
-      "IRI-based" : "string"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#decimal",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "21",
-    "label" : {
-      "IRI-based" : "decimal"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#string",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "22",
-    "label" : {
-      "IRI-based" : "string"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#decimal",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
     "id" : "24",
-    "label" : {
-      "IRI-based" : "decimal"
-    }
+    "superClasses" : [ "7" ]
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
     "id" : "25",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "26",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "27",
+    "label" : {
+      "IRI-based" : "decimal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "28",
+    "label" : {
+      "IRI-based" : "decimal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "30",
+    "label" : {
+      "IRI-based" : "decimal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "31",
     "label" : {
       "IRI-based" : "string"
     }
@@ -393,21 +420,21 @@
       "en" : "building site"
     },
     "attributes" : [ "external" ],
-    "id" : "28",
-    "superClasses" : [ "5" ]
+    "id" : "34",
+    "superClasses" : [ "7" ]
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "29",
+    "id" : "35",
     "label" : {
       "IRI-based" : "string"
     }
   }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "30",
+    "id" : "36",
     "label" : {
-      "IRI-based" : "decimal"
+      "IRI-based" : "string"
     }
   }, {
     "iri" : "https://dtc-ontology.cms.ed.tum.de/infraspatialot#Point",
@@ -418,12 +445,13 @@
       "IRI-based" : "Point",
       "en" : "point"
     },
+    "subClasses" : [ "3" ],
     "comment" : {
       "de" : "Punkt im dreidimensionalen Raum",
       "en" : "point in three-dimensional space"
     },
     "attributes" : [ "external" ],
-    "id" : "31"
+    "id" : "4"
   }, {
     "iri" : "https://w3id.org/brot#SubStructure",
     "baseIri" : "https://w3id.org/brot",
@@ -438,35 +466,14 @@
       "en" : "bridge substructure"
     },
     "attributes" : [ "external" ],
-    "id" : "33",
+    "id" : "38",
     "superClasses" : [ "1" ]
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#decimal",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "34",
-    "label" : {
-      "IRI-based" : "decimal"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#decimal",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "35",
-    "label" : {
-      "IRI-based" : "decimal"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#decimal",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "38",
-    "label" : {
-      "IRI-based" : "decimal"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#string",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
     "id" : "39",
     "label" : {
-      "IRI-based" : "string"
+      "IRI-based" : "decimal"
     }
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#decimal",
@@ -478,35 +485,56 @@
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#decimal",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "41",
-    "label" : {
-      "IRI-based" : "decimal"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#decimal",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "42",
+    "id" : "43",
     "label" : {
       "IRI-based" : "decimal"
     }
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "43",
+    "id" : "44",
     "label" : {
       "IRI-based" : "string"
     }
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#decimal",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "44",
+    "id" : "45",
+    "label" : {
+      "IRI-based" : "decimal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "46",
+    "label" : {
+      "IRI-based" : "decimal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "47",
     "label" : {
       "IRI-based" : "decimal"
     }
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "45",
+    "id" : "48",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "49",
+    "label" : {
+      "IRI-based" : "decimal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "50",
     "label" : {
       "IRI-based" : "string"
     }
@@ -523,8 +551,8 @@
       "de" : "Stadt (kann auch für andere Ortschaften verwendet werden)",
       "en" : "city (can also be used for towns and thelike)"
     },
-    "id" : "48",
-    "superClasses" : [ "5" ]
+    "id" : "54",
+    "superClasses" : [ "7" ]
   }, {
     "iri" : "https://w3id.org/bcore#Region",
     "baseIri" : "https://w3id.org/bcore",
@@ -538,8 +566,8 @@
       "de" : "Region/Bundesland",
       "en" : "region/federal state"
     },
-    "id" : "61",
-    "superClasses" : [ "5" ]
+    "id" : "66",
+    "superClasses" : [ "7" ]
   }, {
     "iri" : "https://dtc-ontology.cms.ed.tum.de/infraspatialot#Localisation",
     "baseIri" : "https://dtc-ontology.cms.ed.tum.de/infraspatialot",
@@ -549,33 +577,45 @@
       "IRI-based" : "Localisation",
       "en" : "localisation"
     },
-    "subClasses" : [ "17" ],
+    "subClasses" : [ "23" ],
     "comment" : {
       "de" : "Lokalisierung (Standort; beschreibt einen geografischen Ort in Bezug auf ein lineares Referenzelement gemäß den in ISO 19148 festgelegten Grundsätzen)",
       "en" : "localisation (location; describes a geographic place in relation to a linear reference element according to the principles defined in ISO 19148)"
     },
     "attributes" : [ "external" ],
-    "id" : "8"
+    "id" : "10"
   }, {
-    "iri" : "https://w3id.org/bot#Building",
-    "baseIri" : "https://w3id.org/bot",
-    "instances" : 0,
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "84",
     "label" : {
-      "de" : "Gebäude",
-      "IRI-based" : "Building",
-      "en" : "building"
-    },
-    "comment" : {
-      "de" : "Bauwerk, das Räume einschließt, betreten werden kann und dem Aufenthalt von Menschen, Tieren oder der Lagerung von Sachen dient (de.wikipedia.org/wiki/Gebäude).",
-      "en" : "Enclosed structure with a roof, walls and often windows, usually standing permanently in one place (en.wikipedia.org/wiki/Building)."
-    },
-    "attributes" : [ "external" ],
-    "id" : "71",
-    "superClasses" : [ "5" ]
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#decimal",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "27",
+    "id" : "93",
+    "label" : {
+      "IRI-based" : "decimal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "92",
+    "label" : {
+      "IRI-based" : "decimal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "16",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "33",
     "label" : {
       "IRI-based" : "decimal"
     }
@@ -592,10 +632,10 @@
       "de" : "Trasse/ Linienführung einer linearen Infrastruktur",
       "en" : "route or alignment of a linear infrastructure"
     },
-    "id" : "15"
+    "id" : "21"
   }, {
     "iri" : "https://w3id.org/brot#SpatialZone",
-    "equivalent" : [ "5" ],
+    "equivalent" : [ "7" ],
     "baseIri" : "https://w3id.org/brot",
     "instances" : 0,
     "label" : {
@@ -603,24 +643,24 @@
       "IRI-based" : "SpatialZone",
       "en" : "spatial zone"
     },
-    "subClasses" : [ "0", "33", "14" ],
+    "subClasses" : [ "0", "38", "20" ],
     "comment" : {
       "de" : "Volumen, das ein materielles oder ideelles Objekt umschließt",
       "en" : "volume that encloses a physical or abstract object"
     },
-    "attributes" : [ "external", "equivalent" ],
+    "attributes" : [ "equivalent", "external" ],
     "id" : "1"
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#date",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "98",
+    "id" : "109",
     "label" : {
       "IRI-based" : "date"
     }
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#date",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "99",
+    "id" : "110",
     "label" : {
       "IRI-based" : "date"
     }
@@ -638,25 +678,25 @@
       "en" : "materials used to build bridges"
     },
     "attributes" : [ "external" ],
-    "id" : "54"
+    "id" : "60"
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#int",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "69",
+    "id" : "80",
     "label" : {
       "IRI-based" : "int"
     }
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#decimal",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "100",
+    "id" : "111",
     "label" : {
       "IRI-based" : "decimal"
     }
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "52",
+    "id" : "58",
     "label" : {
       "IRI-based" : "string"
     }
@@ -674,14 +714,21 @@
       "en" : "Structure designed to span an obstacle, allowing vehicles, pedestrians, and other loads to pass across (en.wikipedia.org/wiki/Bridge)."
     },
     "attributes" : [ "external" ],
-    "id" : "14",
+    "id" : "20",
     "superClasses" : [ "1" ]
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "89",
+    "id" : "99",
     "label" : {
       "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#date",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "112",
+    "label" : {
+      "IRI-based" : "date"
     }
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#date",
@@ -691,21 +738,14 @@
       "IRI-based" : "date"
     }
   }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#date",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "91",
-    "label" : {
-      "IRI-based" : "date"
-    }
-  }, {
     "instances" : 0,
-    "union" : [ "3", "14" ],
-    "attributes" : [ "anonymous", "union" ],
-    "id" : "105"
+    "union" : [ "5", "20" ],
+    "attributes" : [ "union", "anonymous" ],
+    "id" : "116"
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#decimal",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "59",
+    "id" : "64",
     "label" : {
       "IRI-based" : "decimal"
     }
@@ -730,7 +770,7 @@
       "de" : "digitale Datei oder reales Objekt, das Informationen trägt",
       "en" : "digital data or real object that transports/stores information"
     },
-    "id" : "67"
+    "id" : "78"
   }, {
     "iri" : "https://w3id.org/bot#Zone",
     "equivalent" : [ "1" ],
@@ -741,56 +781,56 @@
       "IRI-based" : "Zone",
       "en" : "zone"
     },
-    "subClasses" : [ "48", "71", "18", "61", "28" ],
+    "subClasses" : [ "54", "24", "66", "34" ],
     "comment" : {
       "de" : "Räumliche Zone (Volumen, das ein materielles oder ideelles Objekt umschließt)",
       "en" : "spatial zone (volume that encloses a physical or abstract object)"
     },
-    "attributes" : [ "external", "equivalent" ],
-    "id" : "5"
+    "attributes" : [ "equivalent", "external" ],
+    "id" : "7"
   } ],
   "property" : [ {
-    "id" : "4",
-    "type" : "owl:objectProperty"
-  }, {
     "id" : "6",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "7",
+    "id" : "8",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "10",
+    "id" : "9",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "13",
+    "id" : "12",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "23",
-    "type" : "owl:datatypeProperty"
+    "id" : "15",
+    "type" : "owl:objectProperty"
   }, {
-    "id" : "26",
+    "id" : "19",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "29",
     "type" : "owl:datatypeProperty"
   }, {
     "id" : "32",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "37",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "36",
+    "id" : "17",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "46",
+    "id" : "41",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "49",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "50",
+    "id" : "18",
     "type" : "owl:objectProperty"
   }, {
     "id" : "51",
-    "type" : "owl:datatypeProperty"
+    "type" : "owl:objectProperty"
   }, {
     "id" : "53",
-    "type" : "owl:objectProperty"
+    "type" : "owl:datatypeProperty"
   }, {
     "id" : "55",
     "type" : "owl:objectProperty"
@@ -799,79 +839,73 @@
     "type" : "owl:objectProperty"
   }, {
     "id" : "57",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "59",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "58",
-    "type" : "owl:datatypeProperty"
-  }, {
-    "id" : "60",
-    "type" : "owl:datatypeProperty"
+    "id" : "61",
+    "type" : "owl:objectProperty"
   }, {
     "id" : "62",
-    "type" : "owl:datatypeProperty"
+    "type" : "owl:objectProperty"
   }, {
     "id" : "63",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "64",
-    "type" : "owl:objectProperty"
+    "type" : "owl:datatypeProperty"
   }, {
     "id" : "65",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "66",
-    "type" : "owl:datatypeProperty"
+    "id" : "67",
+    "type" : "owl:objectProperty"
   }, {
     "id" : "68",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "37",
-    "type" : "owl:objectProperty"
+    "id" : "69",
+    "type" : "rdfs:SubClassOf"
   }, {
     "id" : "70",
-    "type" : "owl:datatypeProperty"
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "71",
+    "type" : "rdfs:SubClassOf"
   }, {
     "id" : "72",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "73",
-    "type" : "owl:objectProperty"
+    "type" : "rdfs:SubClassOf"
   }, {
     "id" : "74",
-    "type" : "rdfs:SubClassOf"
+    "type" : "owl:objectProperty"
   }, {
     "id" : "75",
     "type" : "owl:datatypeProperty"
   }, {
     "id" : "76",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "77",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "78",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "79",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "16",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "80",
     "type" : "owl:datatypeProperty"
   }, {
+    "id" : "77",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "79",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "42",
+    "type" : "owl:objectProperty"
+  }, {
     "id" : "81",
-    "type" : "rdfs:SubClassOf"
+    "type" : "owl:datatypeProperty"
   }, {
     "id" : "82",
-    "type" : "owl:objectProperty"
+    "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "84",
-    "type" : "owl:objectProperty"
+    "id" : "83",
+    "type" : "owl:datatypeProperty"
   }, {
     "id" : "85",
-    "type" : "rdfs:SubClassOf"
+    "type" : "owl:objectProperty"
   }, {
     "id" : "86",
     "type" : "rdfs:SubClassOf"
@@ -880,31 +914,34 @@
     "type" : "owl:datatypeProperty"
   }, {
     "id" : "88",
-    "type" : "owl:datatypeProperty"
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "89",
+    "type" : "rdfs:SubClassOf"
   }, {
     "id" : "90",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "91",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "92",
-    "type" : "owl:datatypeProperty"
-  }, {
-    "id" : "93",
-    "type" : "owl:datatypeProperty"
+    "id" : "22",
+    "type" : "owl:objectProperty"
   }, {
     "id" : "94",
-    "type" : "owl:datatypeProperty"
-  }, {
-    "id" : "95",
-    "type" : "owl:datatypeProperty"
+    "type" : "owl:objectProperty"
   }, {
     "id" : "96",
-    "type" : "owl:datatypeProperty"
+    "type" : "owl:objectProperty"
   }, {
     "id" : "97",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "83",
-    "type" : "owl:objectProperty"
+    "id" : "98",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "100",
+    "type" : "owl:datatypeProperty"
   }, {
     "id" : "102",
     "type" : "owl:datatypeProperty"
@@ -915,14 +952,11 @@
     "id" : "104",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "47",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "11",
-    "type" : "owl:objectProperty"
+    "id" : "105",
+    "type" : "owl:datatypeProperty"
   }, {
     "id" : "106",
-    "type" : "owl:objectProperty"
+    "type" : "owl:datatypeProperty"
   }, {
     "id" : "107",
     "type" : "owl:datatypeProperty"
@@ -930,122 +964,157 @@
     "id" : "108",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "109",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "110",
-    "type" : "owl:datatypeProperty"
-  }, {
-    "id" : "111",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "112",
+    "id" : "95",
     "type" : "owl:objectProperty"
   }, {
     "id" : "113",
-    "type" : "owl:objectProperty"
+    "type" : "owl:datatypeProperty"
   }, {
     "id" : "114",
-    "type" : "owl:objectProperty"
+    "type" : "owl:datatypeProperty"
   }, {
     "id" : "115",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "116",
-    "type" : "owl:datatypeProperty"
+    "id" : "52",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "13",
+    "type" : "owl:objectProperty"
   }, {
     "id" : "117",
-    "type" : "owl:datatypeProperty"
+    "type" : "owl:objectProperty"
   }, {
     "id" : "118",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "119",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "120",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "121",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "122",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "123",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "124",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "125",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "126",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "127",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "128",
     "type" : "owl:datatypeProperty"
   } ],
   "propertyAttribute" : [ {
     "iri" : "https://w3id.org/bot#intersectsZone",
     "baseIri" : "https://w3id.org/bot",
-    "range" : "5",
+    "range" : "7",
     "label" : {
       "de" : "schneidet Zone",
       "IRI-based" : "intersectsZone",
       "en" : "intersects Zone"
     },
-    "domain" : "5",
+    "domain" : "7",
     "comment" : {
       "de" : "ein Teil der Zone liegt in einer anderen Zone",
       "en" : "part of the zone lies within another zone"
     },
-    "attributes" : [ "object", "external", "symmetric" ],
-    "id" : "4"
+    "attributes" : [ "object", "symmetric", "external" ],
+    "id" : "6"
   }, {
     "iri" : "https://w3id.org/brot#aggregates",
     "baseIri" : "https://w3id.org/brot",
-    "range" : "3",
+    "range" : "5",
     "label" : {
       "de" : "besteht aus",
       "IRI-based" : "aggregates",
       "en" : "aggregates"
     },
-    "domain" : "3",
+    "domain" : "5",
     "comment" : {
       "de" : "Bauteil besteht aus Bauteil",
       "en" : "component consists of component"
     },
-    "attributes" : [ "transitive", "object", "external" ],
-    "id" : "6"
+    "attributes" : [ "object", "transitive", "external" ],
+    "id" : "8"
   }, {
     "iri" : "https://w3id.org/bcore#isLocatedAt",
     "baseIri" : "https://w3id.org/bcore",
-    "range" : "8",
+    "range" : "10",
     "label" : {
       "de" : "befindet sich an",
       "IRI-based" : "isLocatedAt",
       "en" : "is located at"
     },
-    "domain" : "5",
+    "domain" : "7",
     "comment" : {
       "de" : "Zone befindet sich an Lokalisierung (Ort)",
       "en" : "zone is located at localisation (location)"
     },
     "attributes" : [ "object", "functional" ],
-    "id" : "7"
+    "id" : "9"
   }, {
     "iri" : "https://w3id.org/reloc#meetLeft",
-    "inverse" : "11",
+    "inverse" : "13",
     "baseIri" : "https://w3id.org/reloc",
-    "range" : "3",
+    "range" : "5",
     "label" : {
       "de" : "liegt links von",
       "IRI-based" : "meetLeft",
       "en" : "meet left"
     },
-    "domain" : "3",
+    "domain" : "5",
     "comment" : {
       "de" : "Bauteil liegt links angrenzend zu anderem Bauteil",
       "en" : "component is located directly to the left of another component"
     },
     "attributes" : [ "object", "external" ],
-    "id" : "10"
+    "id" : "12"
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#topObjectProperty",
+    "baseIri" : "http://www.w3.org/2002/07/owl",
+    "range" : "16",
+    "label" : {
+      "IRI-based" : "topObjectProperty"
+    },
+    "domain" : "16",
+    "subproperty" : [ "17", "18" ],
+    "attributes" : [ "object", "external" ],
+    "id" : "15"
   }, {
     "iri" : "https://w3id.org/bcore#carriesRoute",
-    "inverse" : "16",
+    "inverse" : "22",
     "baseIri" : "https://w3id.org/bcore",
-    "range" : "15",
+    "range" : "21",
     "label" : {
       "de" : "überführt Trasse",
       "IRI-based" : "carriesRoute",
       "en" : "carries route"
     },
-    "domain" : "14",
+    "domain" : "20",
     "comment" : {
       "de" : "Brücke überführt Trasse",
       "en" : "bridge carries route"
     },
     "attributes" : [ "object" ],
-    "id" : "13"
+    "id" : "19"
   }, {
     "iri" : "https://w3id.org/bcore#Volume",
     "baseIri" : "https://w3id.org/bcore",
-    "range" : "19",
+    "range" : "28",
     "annotations" : {
       "unitText" : [ {
         "identifier" : "unitText",
@@ -1059,17 +1128,17 @@
       "IRI-based" : "Volume",
       "en" : "volume"
     },
-    "domain" : "3",
+    "domain" : "5",
     "comment" : {
       "de" : "metrisches Volumen des Bauteils",
       "en" : "volume of the component"
     },
-    "attributes" : [ "datatype", "functional" ],
-    "id" : "23"
+    "attributes" : [ "functional", "datatype" ],
+    "id" : "29"
   }, {
     "iri" : "https://w3id.org/brcomp#width",
     "baseIri" : "https://w3id.org/brcomp",
-    "range" : "27",
+    "range" : "33",
     "annotations" : {
       "unitText" : [ {
         "identifier" : "unitText",
@@ -1083,147 +1152,198 @@
       "IRI-based" : "width",
       "en" : "width"
     },
-    "domain" : "3",
+    "domain" : "5",
     "comment" : {
       "de" : "transversaler Abstand der Enden eines Bauteils/ Bauteilquerschnitts",
       "en" : "width/ broadth: transversal distance of the ends of the component/ component's cross section"
     },
-    "attributes" : [ "datatype", "functional", "external" ],
-    "id" : "26"
+    "attributes" : [ "functional", "datatype", "external" ],
+    "id" : "32"
   }, {
     "iri" : "https://w3id.org/bcore#bridgesZone",
     "baseIri" : "https://w3id.org/bcore",
-    "range" : "5",
+    "range" : "7",
     "label" : {
       "de" : "überquert Zone",
       "IRI-based" : "bridgesZone",
       "en" : "bridges zone"
     },
-    "domain" : "14",
+    "domain" : "20",
     "comment" : {
       "de" : "Brücke überquert Zone",
       "en" : "bridge bridges zone"
     },
     "attributes" : [ "object" ],
-    "id" : "32"
+    "id" : "37"
+  }, {
+    "iri" : "https://w3id.org/bcore#isWayPointOf",
+    "baseIri" : "https://w3id.org/bcore",
+    "range" : "23",
+    "label" : {
+      "de" : "ist Wegpunkt von",
+      "IRI-based" : "isWayPointOf",
+      "en" : "is waypoint of"
+    },
+    "superproperty" : [ "15" ],
+    "domain" : "3",
+    "comment" : {
+      "de" : "Ist Punkt auf der Linienlokalisierung",
+      "en" : "is point of the line localisation"
+    },
+    "attributes" : [ "object" ],
+    "id" : "17"
   }, {
     "iri" : "https://w3id.org/reloc#meetFront",
-    "inverse" : "37",
+    "inverse" : "42",
     "baseIri" : "https://w3id.org/reloc",
-    "range" : "3",
+    "range" : "5",
     "label" : {
       "de" : "liegt vor",
       "IRI-based" : "meetFront",
       "en" : "meet front"
     },
-    "domain" : "3",
+    "domain" : "5",
     "comment" : {
       "de" : "Bauteil liegt direkt vor anderem Bauteil",
       "en" : "component is located directly in front of another component"
     },
     "attributes" : [ "object", "external" ],
-    "id" : "36"
+    "id" : "41"
+  }, {
+    "iri" : "https://w3id.org/bcore#hasWayPointAt",
+    "inverse" : "17",
+    "baseIri" : "https://w3id.org/bcore",
+    "range" : "3",
+    "label" : {
+      "de" : "hat Trassenpunkt auf",
+      "IRI-based" : "hasWayPointAt",
+      "en" : "has waypoint at"
+    },
+    "superproperty" : [ "15" ],
+    "domain" : "23",
+    "comment" : {
+      "de" : "Punkt auf der Linienlokalisierung",
+      "en" : "point of the line localisation"
+    },
+    "attributes" : [ "object" ],
+    "id" : "18"
   }, {
     "iri" : "https://w3id.org/bcore#liesWithin",
-    "inverse" : "47",
+    "inverse" : "52",
     "baseIri" : "https://w3id.org/bcore",
-    "range" : "5",
+    "range" : "7",
     "label" : {
       "de" : "liegt in",
       "IRI-based" : "liesWithin",
       "en" : "lies within"
     },
-    "domain" : "5",
+    "domain" : "7",
     "comment" : {
       "de" : "Zone wird vollständig von anderer Zone umschlossen",
       "en" : "zone is fully enclosed by another zone"
     },
-    "attributes" : [ "transitive", "object" ],
-    "id" : "46"
+    "attributes" : [ "object", "transitive" ],
+    "id" : "51"
   }, {
-    "iri" : "https://w3id.org/bcore#crossesRoute",
+    "iri" : "https://w3id.org/bcore#PointName",
     "baseIri" : "https://w3id.org/bcore",
-    "range" : "15",
+    "range" : "26",
     "label" : {
-      "de" : "kreuzt Trasse",
-      "IRI-based" : "crossesRoute",
-      "en" : "crosses route"
+      "de" : "Punkt Name",
+      "IRI-based" : "PointName",
+      "en" : "point name"
     },
-    "domain" : "15",
+    "domain" : "4",
     "comment" : {
-      "de" : "Trasse kreuzt Trasse im Lageplan (ohne Beachtung der Altitude)",
-      "en" : "route crosses route on the site plan (without regard of the altitude)"
+      "de" : "Name des geografischen Punktes",
+      "en" : "name of the geographic point"
     },
-    "attributes" : [ "object", "symmetric" ],
-    "id" : "49"
+    "attributes" : [ "functional", "datatype" ],
+    "id" : "53"
   }, {
     "iri" : "https://w3id.org/bcore#isLocatedInZone",
     "baseIri" : "https://w3id.org/bcore",
-    "range" : "5",
+    "range" : "7",
     "label" : {
       "de" : "befindet sich in Zone",
       "IRI-based" : "isLocatedInZone",
       "en" : "is located in zone"
     },
-    "domain" : "31",
+    "domain" : "4",
     "comment" : {
       "de" : "Lokalisierung (Ort) befindet sich in Zone",
       "en" : "localisation (location) is located in zone"
     },
     "attributes" : [ "object" ],
-    "id" : "50"
+    "id" : "55"
+  }, {
+    "iri" : "https://w3id.org/bcore#crossesRoute",
+    "baseIri" : "https://w3id.org/bcore",
+    "range" : "21",
+    "label" : {
+      "de" : "kreuzt Trasse",
+      "IRI-based" : "crossesRoute",
+      "en" : "crosses route"
+    },
+    "domain" : "21",
+    "comment" : {
+      "de" : "Trasse kreuzt Trasse im Lageplan (ohne Beachtung der Altitude)",
+      "en" : "route crosses route on the site plan (without regard of the altitude)"
+    },
+    "attributes" : [ "object", "symmetric" ],
+    "id" : "56"
   }, {
     "iri" : "https://w3id.org/bcore#BridgeLoadCase",
     "baseIri" : "https://w3id.org/bcore",
-    "range" : "52",
+    "range" : "58",
     "label" : {
       "de" : "Brücke Lastfall",
       "IRI-based" : "BridgeLoadCase",
       "en" : "bridge load case"
     },
-    "domain" : "14",
+    "domain" : "20",
     "comment" : {
       "de" : "maximaler Lastfall, für den die Brücke bemessen wurde (z.B. \"LM1\" oder \"BK30/60\" in Deutschland)",
       "en" : "maximum load case the bridge is designed for (e.g., \"LM1\" or \"BK30/60\" in Germany)"
     },
     "attributes" : [ "datatype" ],
-    "id" : "51"
+    "id" : "57"
   }, {
     "iri" : "https://w3id.org/bcore#isMadeOfMaterial",
     "baseIri" : "https://w3id.org/bcore",
-    "range" : "54",
+    "range" : "60",
     "label" : {
       "de" : "besteht aus Material",
       "IRI-based" : "isMadeOfMaterial",
       "en" : "is made of material"
     },
-    "domain" : "3",
+    "domain" : "5",
     "comment" : {
       "de" : "Bauteil besteht aus Material",
       "en" : "component consists of material"
     },
     "attributes" : [ "object" ],
-    "id" : "53"
+    "id" : "59"
   }, {
     "iri" : "https://w3id.org/bcore#crossesZone",
     "baseIri" : "https://w3id.org/bcore",
-    "range" : "5",
+    "range" : "7",
     "label" : {
       "de" : "durchquert Zone",
       "IRI-based" : "crossesZone",
       "en" : "crosses zone"
     },
-    "domain" : "15",
+    "domain" : "21",
     "comment" : {
       "de" : "Trasse durchquert Zone",
       "en" : "route crosses zone"
     },
     "attributes" : [ "object" ],
-    "id" : "55"
+    "id" : "61"
   }, {
     "iri" : "https://w3id.org/bcore#hasLocationAt",
     "baseIri" : "https://w3id.org/bcore",
-    "range" : "31",
+    "range" : "4",
     "annotations" : {
       "seeAlso" : [ {
         "identifier" : "seeAlso",
@@ -1237,33 +1357,17 @@
       "IRI-based" : "hasLocationAt",
       "en" : "has location at"
     },
-    "domain" : "8",
+    "domain" : "10",
     "comment" : {
       "de" : "Punkt der Lokalisierung (Ort)",
-      "en" : "point of the line localisation (location)"
+      "en" : "point of the localisation (location)"
     },
     "attributes" : [ "object" ],
-    "id" : "56"
-  }, {
-    "iri" : "https://w3id.org/brot#containsComponent",
-    "baseIri" : "https://w3id.org/brot",
-    "range" : "3",
-    "label" : {
-      "de" : "beinhaltet Bauteil",
-      "IRI-based" : "containsComponent",
-      "en" : "contains component"
-    },
-    "domain" : "1",
-    "comment" : {
-      "de" : "Brücke besteht aus Bauteil",
-      "en" : "bridge consists of component"
-    },
-    "attributes" : [ "object", "external" ],
-    "id" : "57"
+    "id" : "62"
   }, {
     "iri" : "https://w3id.org/bcore#Altitude",
     "baseIri" : "https://w3id.org/bcore",
-    "range" : "59",
+    "range" : "64",
     "annotations" : {
       "unitText" : [ {
         "identifier" : "unitText",
@@ -1277,86 +1381,146 @@
       "IRI-based" : "Altitude",
       "en" : "altitude"
     },
-    "domain" : "31",
+    "domain" : "4",
     "comment" : {
       "de" : "Höhe ü. NN (bezogen auf das lokal gültige amtliche Höhensystem)",
       "en" : "elevation above sea level (according to the locally applicable official elevation system)"
     },
-    "attributes" : [ "datatype", "functional" ],
-    "id" : "58"
+    "attributes" : [ "functional", "datatype" ],
+    "id" : "63"
   }, {
     "iri" : "https://w3id.org/bcore#RegionISOCode",
     "baseIri" : "https://w3id.org/bcore",
-    "range" : "20",
+    "range" : "25",
     "label" : {
       "de" : "Regionalcode ISO",
       "IRI-based" : "RegionISOCode",
       "en" : "region ISO code"
     },
-    "domain" : "61",
+    "domain" : "66",
     "comment" : {
       "de" : "Regionalcode nach ISO-3166-2",
       "en" : "regional code according to ISO 3166-2"
     },
-    "attributes" : [ "datatype", "functional" ],
-    "id" : "60"
+    "attributes" : [ "functional", "datatype" ],
+    "id" : "65"
+  }, {
+    "iri" : "https://w3id.org/brot#containsComponent",
+    "baseIri" : "https://w3id.org/brot",
+    "range" : "5",
+    "label" : {
+      "de" : "beinhaltet Bauteil",
+      "IRI-based" : "containsComponent",
+      "en" : "contains component"
+    },
+    "domain" : "1",
+    "comment" : {
+      "de" : "Brücke besteht aus Bauteil",
+      "en" : "bridge consists of component"
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "67"
   }, {
     "iri" : "https://w3id.org/bcore#CountryISOCode",
     "baseIri" : "https://w3id.org/bcore",
-    "range" : "45",
+    "range" : "50",
     "label" : {
       "de" : "Ländercode ISO",
       "IRI-based" : "CountryISOCode",
       "en" : "country ISO code"
     },
-    "domain" : "18",
+    "domain" : "24",
     "comment" : {
       "de" : "Ländercode nach ISO-3166-1 (ALPHA-2)",
       "en" : "country code according to ISO 3166-1 (ALPHA-2)"
     },
-    "attributes" : [ "datatype", "functional" ],
-    "id" : "62"
+    "attributes" : [ "functional", "datatype" ],
+    "id" : "68"
   }, {
-    "range" : "5",
-    "domain" : "28",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "63"
+    "range" : "7",
+    "domain" : "66",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "69"
+  }, {
+    "range" : "7",
+    "domain" : "24",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "70"
+  }, {
+    "range" : "7",
+    "domain" : "34",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "71"
+  }, {
+    "range" : "7",
+    "domain" : "54",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "72"
+  }, {
+    "range" : "1",
+    "domain" : "20",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "73"
   }, {
     "iri" : "https://w3id.org/bcore#isPartOfRoute",
     "baseIri" : "https://w3id.org/bcore",
-    "range" : "15",
+    "range" : "21",
     "label" : {
       "de" : "ist Teil von Trasse",
       "IRI-based" : "isPartOfRoute",
       "en" : "is part of route"
     },
-    "domain" : "8",
+    "domain" : "10",
     "comment" : {
       "de" : "Trassenpunkt ist Teil einer Trasse",
       "en" : "localisation (route point) is part of a route"
     },
     "attributes" : [ "object", "functional" ],
-    "id" : "64"
+    "id" : "74"
+  }, {
+    "iri" : "https://w3id.org/bcore#WayPointStation",
+    "baseIri" : "https://w3id.org/bcore",
+    "range" : "27",
+    "annotations" : {
+      "unitText" : [ {
+        "identifier" : "unitText",
+        "language" : "undefined",
+        "value" : "m",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "de" : "Trassenpunkt Stationierung",
+      "IRI-based" : "WayPointStation",
+      "en" : "waypoint station"
+    },
+    "domain" : "3",
+    "comment" : {
+      "de" : "Kilometrierung des Trassenpunktes",
+      "en" : "kilometer marking of point on the infrastructure route"
+    },
+    "attributes" : [ "functional", "datatype" ],
+    "id" : "75"
   }, {
     "iri" : "https://w3id.org/bcore#ZoneName",
     "baseIri" : "https://w3id.org/bcore",
-    "range" : "22",
+    "range" : "14",
     "label" : {
       "de" : "Zonenname",
       "IRI-based" : "ZoneName",
       "en" : "zone name"
     },
-    "domain" : "5",
+    "domain" : "7",
     "comment" : {
       "de" : "Name der Zone",
       "en" : "name of the zone"
     },
-    "attributes" : [ "datatype", "functional" ],
-    "id" : "65"
+    "attributes" : [ "functional", "datatype" ],
+    "id" : "76"
   }, {
     "iri" : "https://w3id.org/bcore/media#MediaFileSize",
     "baseIri" : "https://w3id.org/bcore/media",
-    "range" : "21",
+    "range" : "11",
     "annotations" : {
       "unitText" : [ {
         "identifier" : "unitText",
@@ -1370,49 +1534,49 @@
       "IRI-based" : "MediaFileSize",
       "en" : "media file size"
     },
-    "domain" : "67",
+    "domain" : "78",
     "comment" : {
       "de" : "Dateigröße einer digitalen Mediendatei",
       "en" : "file size of a digital media file"
     },
-    "attributes" : [ "datatype", "functional", "external" ],
-    "id" : "66"
+    "attributes" : [ "functional", "datatype", "external" ],
+    "id" : "77"
   }, {
     "iri" : "https://w3id.org/bcore#BridgeID",
     "baseIri" : "https://w3id.org/bcore",
-    "range" : "69",
+    "range" : "80",
     "label" : {
       "de" : "Brücke ID",
       "IRI-based" : "BridgeID",
       "en" : "bridge ID"
     },
-    "domain" : "14",
+    "domain" : "20",
     "comment" : {
       "de" : "Identifikationsnummer der Brücke",
       "en" : "bridge identification number"
     },
-    "attributes" : [ "datatype", "functional" ],
-    "id" : "68"
+    "attributes" : [ "functional", "datatype" ],
+    "id" : "79"
   }, {
     "iri" : "https://w3id.org/reloc#meetRear",
     "baseIri" : "https://w3id.org/reloc",
-    "range" : "3",
+    "range" : "5",
     "label" : {
       "de" : "liegt hinter",
       "IRI-based" : "meetRear",
       "en" : "meet rear"
     },
-    "domain" : "3",
+    "domain" : "5",
     "comment" : {
       "de" : "Bauteil liegt direkt hinter anderem Bauteil",
       "en" : "component is located directly behind another component"
     },
     "attributes" : [ "object", "external" ],
-    "id" : "37"
+    "id" : "42"
   }, {
     "iri" : "https://w3id.org/bcore#InfrastructureRouteWidth",
     "baseIri" : "https://w3id.org/bcore",
-    "range" : "42",
+    "range" : "47",
     "annotations" : {
       "unitText" : [ {
         "identifier" : "unitText",
@@ -1426,106 +1590,95 @@
       "IRI-based" : "InfrastructureRouteWidth",
       "en" : "infrastructure route width"
     },
-    "domain" : "15",
+    "domain" : "21",
     "comment" : {
       "de" : "Querschnittsbreite der Infrastrukturtrasse",
       "en" : "cross-sectional width of the infrastructure route"
     },
-    "attributes" : [ "datatype", "functional" ],
-    "id" : "70"
+    "attributes" : [ "functional", "datatype" ],
+    "id" : "81"
   }, {
-    "range" : "5",
-    "domain" : "61",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "72"
+    "range" : "1",
+    "domain" : "38",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "82"
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#topDataProperty",
+    "baseIri" : "http://www.w3.org/2002/07/owl",
+    "range" : "84",
+    "label" : {
+      "IRI-based" : "topDataProperty"
+    },
+    "domain" : "16",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "83"
   }, {
     "iri" : "https://w3id.org/bcore#startsAt",
     "baseIri" : "https://w3id.org/bcore",
-    "range" : "31",
+    "range" : "4",
     "label" : {
       "de" : "beginnt an",
       "IRI-based" : "startsAt",
       "en" : "starts at"
     },
-    "domain" : "17",
+    "domain" : "23",
     "comment" : {
       "de" : "Startpunkt der Linienlokalisierung",
       "en" : "starting point of the line localisation"
     },
     "attributes" : [ "object" ],
-    "id" : "73"
+    "id" : "85"
   }, {
-    "range" : "5",
-    "domain" : "48",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "74"
+    "range" : "4",
+    "domain" : "3",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "86"
   }, {
     "iri" : "https://w3id.org/bcore/media#MediaIsDigital",
     "baseIri" : "https://w3id.org/bcore/media",
-    "range" : "12",
+    "range" : "2",
     "label" : {
       "de" : "Mediendatei ist digital",
       "IRI-based" : "MediaIsDigital",
       "en" : "media is digital"
     },
-    "domain" : "67",
+    "domain" : "78",
     "comment" : {
       "de" : "Boolean: wahr, wenn die Mediendatei digital ist",
       "en" : "boolean: true, if media file is digital"
     },
-    "attributes" : [ "datatype", "functional", "external" ],
-    "id" : "75"
-  }, {
-    "range" : "1",
-    "domain" : "14",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "76"
+    "attributes" : [ "functional", "datatype", "external" ],
+    "id" : "87"
   }, {
     "iri" : "https://w3id.org/bcore#endsAt",
     "baseIri" : "https://w3id.org/bcore",
-    "range" : "31",
+    "range" : "4",
     "label" : {
       "de" : "endet an",
       "IRI-based" : "endsAt",
       "en" : "ends at"
     },
-    "domain" : "17",
+    "domain" : "23",
     "comment" : {
       "de" : "Endpunkt der Linienlokalisierung",
       "en" : "end point of the line localisation"
     },
     "attributes" : [ "object" ],
-    "id" : "77"
+    "id" : "88"
   }, {
-    "range" : "5",
-    "domain" : "18",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "78"
+    "range" : "1",
+    "domain" : "0",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "89"
   }, {
-    "range" : "5",
-    "domain" : "71",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "79"
-  }, {
-    "iri" : "https://w3id.org/bcore#traversesBridge",
-    "baseIri" : "https://w3id.org/bcore",
-    "range" : "14",
-    "label" : {
-      "de" : "überquert Brücke",
-      "IRI-based" : "traversesBridge",
-      "en" : "traverses bridge"
-    },
-    "domain" : "15",
-    "comment" : {
-      "de" : "Trasse überquert/führt über Brücke",
-      "en" : "route crosses/goes over bridge"
-    },
-    "attributes" : [ "object" ],
-    "id" : "16"
+    "range" : "10",
+    "domain" : "23",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "90"
   }, {
     "iri" : "https://w3id.org/brcomp#height",
     "baseIri" : "https://w3id.org/brcomp",
-    "range" : "9",
+    "range" : "92",
     "annotations" : {
       "unitText" : [ {
         "identifier" : "unitText",
@@ -1539,66 +1692,67 @@
       "IRI-based" : "height",
       "en" : "height"
     },
-    "domain" : "3",
+    "domain" : "5",
     "comment" : {
       "de" : "vertikaler Abstand der Enden des Bauteils/Bauteilquerschnitts",
       "en" : "vertical distance of the ends of the component/ component's cross section"
     },
-    "attributes" : [ "datatype", "functional", "external" ],
-    "id" : "80"
+    "attributes" : [ "functional", "datatype", "external" ],
+    "id" : "91"
   }, {
-    "range" : "8",
-    "domain" : "17",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "81"
+    "iri" : "https://w3id.org/bcore#traversesBridge",
+    "baseIri" : "https://w3id.org/bcore",
+    "range" : "20",
+    "label" : {
+      "de" : "überquert Brücke",
+      "IRI-based" : "traversesBridge",
+      "en" : "traverses bridge"
+    },
+    "domain" : "21",
+    "comment" : {
+      "de" : "Trasse überquert/führt über Brücke",
+      "en" : "route crosses/goes over bridge"
+    },
+    "attributes" : [ "object" ],
+    "id" : "22"
   }, {
     "iri" : "https://w3id.org/bcore#hasPartialStructure",
-    "inverse" : "83",
+    "inverse" : "95",
     "baseIri" : "https://w3id.org/bcore",
-    "range" : "14",
+    "range" : "20",
     "label" : {
       "de" : "enthält Brückenzug",
       "IRI-based" : "hasPartialStructure",
       "en" : "contains partial structure"
     },
-    "domain" : "14",
+    "domain" : "20",
     "comment" : {
       "de" : "Brücke besitzt Brückenzug",
       "en" : "bridge contains partial structure (bridge section)"
     },
     "attributes" : [ "object" ],
-    "id" : "82"
+    "id" : "94"
   }, {
     "iri" : "https://w3id.org/bcore#isPartOfComponent",
-    "inverse" : "6",
+    "inverse" : "8",
     "baseIri" : "https://w3id.org/bcore",
-    "range" : "3",
+    "range" : "5",
     "label" : {
       "de" : "ist Teil von Bauteil",
       "IRI-based" : "isPartOfComponent",
       "en" : "is part of component"
     },
-    "domain" : "3",
+    "domain" : "5",
     "comment" : {
       "de" : "Brückenauteil ist Teil eines anderen Bauteils",
       "en" : "bridge element is part of another element"
     },
-    "attributes" : [ "transitive", "object" ],
-    "id" : "84"
-  }, {
-    "range" : "1",
-    "domain" : "33",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "85"
-  }, {
-    "range" : "1",
-    "domain" : "0",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "86"
+    "attributes" : [ "object", "transitive" ],
+    "id" : "96"
   }, {
     "iri" : "https://w3id.org/bcore#InfrastructureRouteClearanceHeight",
     "baseIri" : "https://w3id.org/bcore",
-    "range" : "40",
+    "range" : "45",
     "annotations" : {
       "unitText" : [ {
         "identifier" : "unitText",
@@ -1612,33 +1766,33 @@
       "IRI-based" : "InfrastructureRouteClearanceHeight",
       "en" : "infrastructure route clearance height"
     },
-    "domain" : "15",
+    "domain" : "21",
     "comment" : {
       "de" : "Höhe des Lichtraumprofils der Trasse",
       "en" : "height of the route's clearance profile"
     },
-    "attributes" : [ "datatype", "functional" ],
-    "id" : "87"
+    "attributes" : [ "functional", "datatype" ],
+    "id" : "97"
   }, {
     "iri" : "https://w3id.org/bcore#BridgeName",
     "baseIri" : "https://w3id.org/bcore",
-    "range" : "89",
+    "range" : "99",
     "label" : {
       "de" : "Brückenname",
       "IRI-based" : "BridgeName",
       "en" : "bridge name"
     },
-    "domain" : "14",
+    "domain" : "20",
     "comment" : {
       "de" : "Name der Brücke",
       "en" : "name of the bridge"
     },
-    "attributes" : [ "datatype", "functional" ],
-    "id" : "88"
+    "attributes" : [ "functional", "datatype" ],
+    "id" : "98"
   }, {
     "iri" : "https://w3id.org/bcore#BridgePlanningStartDate",
     "baseIri" : "https://w3id.org/bcore",
-    "range" : "91",
+    "range" : "101",
     "annotations" : {
       "unitText" : [ {
         "identifier" : "unitText",
@@ -1652,77 +1806,93 @@
       "IRI-based" : "BridgePlanningStartDate",
       "en" : "bridge planning start date"
     },
-    "domain" : "14",
+    "domain" : "20",
     "comment" : {
       "de" : "Startdatum der Planungsphase der Brücke",
       "en" : "start date of the bridge's planning phase"
     },
-    "attributes" : [ "datatype", "functional" ],
-    "id" : "90"
+    "attributes" : [ "functional", "datatype" ],
+    "id" : "100"
+  }, {
+    "iri" : "https://w3id.org/bcore#MediaFilePath",
+    "baseIri" : "https://w3id.org/bcore",
+    "range" : "35",
+    "label" : {
+      "de" : "Pfad der Mediendatei",
+      "IRI-based" : "MediaFilePath",
+      "en" : "media file path"
+    },
+    "domain" : "78",
+    "comment" : {
+      "de" : "lokaler Dateipfad oder Webadresse (URL) einer Mediendatei",
+      "en" : "local or web path (URL) of a media file"
+    },
+    "attributes" : [ "functional", "datatype" ],
+    "id" : "102"
   }, {
     "iri" : "https://w3id.org/bcore#Latitude",
     "baseIri" : "https://w3id.org/bcore",
-    "range" : "41",
+    "range" : "46",
     "label" : {
       "de" : "Breitengrad",
       "IRI-based" : "Latitude",
       "en" : "latitude"
     },
-    "domain" : "31",
+    "domain" : "4",
     "comment" : {
       "de" : "geografische Breite",
       "en" : "geographic latitude"
     },
-    "attributes" : [ "datatype", "functional" ],
-    "id" : "92"
+    "attributes" : [ "functional", "datatype" ],
+    "id" : "103"
   }, {
     "iri" : "https://w3id.org/bcore#BridgeStatus",
     "baseIri" : "https://w3id.org/bcore",
-    "range" : "43",
+    "range" : "48",
     "label" : {
       "de" : "Brückenstatus",
       "IRI-based" : "BridgeStatus",
       "en" : "bridge status"
     },
-    "domain" : "14",
+    "domain" : "20",
     "comment" : {
       "de" : "Status der Brücke",
       "en" : "status of the bridge"
     },
     "attributes" : [ "datatype" ],
-    "id" : "93"
+    "id" : "104"
   }, {
     "iri" : "https://w3id.org/bcore#MaterialName",
     "baseIri" : "https://w3id.org/bcore",
-    "range" : "29",
+    "range" : "36",
     "label" : {
       "de" : "Materialname",
       "IRI-based" : "MaterialName",
       "en" : "material name"
     },
-    "domain" : "54",
+    "domain" : "60",
     "comment" : {
       "de" : "Name des Materials",
       "en" : "name of the material"
     },
     "attributes" : [ "datatype" ],
-    "id" : "94"
+    "id" : "105"
   }, {
     "iri" : "https://w3id.org/bcore#LocalisationName",
     "baseIri" : "https://w3id.org/bcore",
-    "range" : "25",
+    "range" : "31",
     "label" : {
       "de" : "Lokalisierung Name",
       "IRI-based" : "LocalisationName",
       "en" : "localisation name"
     },
-    "domain" : "8",
+    "domain" : "10",
     "comment" : {
       "de" : "Name der Lokalisierung (Standort)",
       "en" : "name of the localisation (location)"
     },
-    "attributes" : [ "datatype", "functional" ],
-    "id" : "95"
+    "attributes" : [ "functional", "datatype" ],
+    "id" : "106"
   }, {
     "iri" : "https://w3id.org/bcore#Longitude",
     "baseIri" : "https://w3id.org/bcore",
@@ -1732,49 +1902,49 @@
       "IRI-based" : "Longitude",
       "en" : "longitude"
     },
-    "domain" : "31",
+    "domain" : "4",
     "comment" : {
       "de" : "geografische Länge",
       "en" : "geographic longitude"
     },
-    "attributes" : [ "datatype", "functional" ],
-    "id" : "96"
+    "attributes" : [ "functional", "datatype" ],
+    "id" : "107"
   }, {
     "iri" : "https://w3id.org/bcore#InfrastructureRouteName",
     "baseIri" : "https://w3id.org/bcore",
-    "range" : "39",
+    "range" : "44",
     "label" : {
       "de" : "Infrastrukturtrasse Name",
       "IRI-based" : "InfrastructureRouteName",
       "en" : "infrastructure route name"
     },
-    "domain" : "15",
+    "domain" : "21",
     "comment" : {
       "de" : "Name oder Bezeichnung der Infrastrukturtrasse",
       "en" : "name or designation of the infrastructure route"
     },
     "attributes" : [ "datatype" ],
-    "id" : "97"
+    "id" : "108"
   }, {
     "iri" : "https://w3id.org/bcore#isPartialStructureOf",
     "baseIri" : "https://w3id.org/bcore",
-    "range" : "14",
+    "range" : "20",
     "label" : {
       "de" : "ist Brückenzug von",
       "IRI-based" : "isPartialStructureOf",
       "en" : "is partial structure of"
     },
-    "domain" : "14",
+    "domain" : "20",
     "comment" : {
       "de" : "Brückenzug ist Teil genau einer Brücke",
       "en" : "bridge section is part of exactly one bridge"
     },
     "attributes" : [ "object", "functional" ],
-    "id" : "83"
+    "id" : "95"
   }, {
     "iri" : "https://w3id.org/bcore#BridgeConstructionEndDate",
     "baseIri" : "https://w3id.org/bcore",
-    "range" : "98",
+    "range" : "109",
     "annotations" : {
       "unitText" : [ {
         "identifier" : "unitText",
@@ -1788,17 +1958,17 @@
       "IRI-based" : "BridgeConstructionEndDate",
       "en" : "bridge construction end date"
     },
-    "domain" : "14",
+    "domain" : "20",
     "comment" : {
       "de" : "Enddatum des Baus der Brücke (Fertigstellung)",
       "en" : "end date of the bridge's construction (completion)"
     },
-    "attributes" : [ "datatype", "functional" ],
-    "id" : "102"
+    "attributes" : [ "functional", "datatype" ],
+    "id" : "113"
   }, {
     "iri" : "https://w3id.org/bcore#Density",
     "baseIri" : "https://w3id.org/bcore",
-    "range" : "44",
+    "range" : "49",
     "annotations" : {
       "unitText" : [ {
         "identifier" : "unitText",
@@ -1812,17 +1982,17 @@
       "IRI-based" : "Density",
       "en" : "density"
     },
-    "domain" : "54",
+    "domain" : "60",
     "comment" : {
       "de" : "durchschnittliche Massendichte des Materials",
       "en" : "average mass density of material"
     },
-    "attributes" : [ "datatype", "functional" ],
-    "id" : "103"
+    "attributes" : [ "functional", "datatype" ],
+    "id" : "114"
   }, {
     "iri" : "https://w3id.org/bcore#BridgePlanningEndDate",
     "baseIri" : "https://w3id.org/bcore",
-    "range" : "101",
+    "range" : "112",
     "annotations" : {
       "unitText" : [ {
         "identifier" : "unitText",
@@ -1836,90 +2006,66 @@
       "IRI-based" : "BridgePlanningEndDate",
       "en" : "bridge planning end date"
     },
-    "domain" : "14",
+    "domain" : "20",
     "comment" : {
       "de" : "Enddatum der Planungsphase der Brücke",
       "en" : "end date of the bridge's planning phase"
     },
-    "attributes" : [ "datatype", "functional" ],
-    "id" : "104"
+    "attributes" : [ "functional", "datatype" ],
+    "id" : "115"
   }, {
     "iri" : "https://w3id.org/bot#containsZone",
     "baseIri" : "https://w3id.org/bot",
-    "range" : "5",
+    "range" : "7",
     "label" : {
       "de" : "enthält Zone",
       "IRI-based" : "containsZone",
       "en" : "contains zone"
     },
-    "domain" : "5",
+    "domain" : "7",
     "comment" : {
       "de" : "Zone enthält Zone",
       "en" : "zone contains zone"
     },
-    "attributes" : [ "transitive", "object", "external" ],
-    "id" : "47"
+    "attributes" : [ "object", "transitive", "external" ],
+    "id" : "52"
   }, {
     "iri" : "https://w3id.org/reloc#meetRight",
     "baseIri" : "https://w3id.org/reloc",
-    "range" : "3",
+    "range" : "5",
     "label" : {
       "de" : "liegt rechts von",
       "IRI-based" : "meetRight",
       "en" : "meet right"
     },
-    "domain" : "3",
+    "domain" : "5",
     "comment" : {
       "de" : "Bauteil liegt rechts angrenzend zu anderem Bauteil",
       "en" : "component is located directly to the right of another component"
     },
     "attributes" : [ "object", "external" ],
-    "id" : "11"
+    "id" : "13"
   }, {
     "iri" : "https://w3id.org/bcore#includesLocalisation",
-    "inverse" : "64",
+    "inverse" : "74",
     "baseIri" : "https://w3id.org/bcore",
-    "range" : "8",
+    "range" : "10",
     "label" : {
       "de" : "enthält Lokalisation",
       "IRI-based" : "includesLocalisation",
       "en" : "includes localisation"
     },
-    "domain" : "15",
+    "domain" : "21",
     "comment" : {
       "de" : "Trasse enthält Lokalisation (Trassenpunkt)",
       "en" : "route contains localisation (route point)"
     },
     "attributes" : [ "object" ],
-    "id" : "106"
-  }, {
-    "iri" : "https://w3id.org/bcore#LocalisationStation",
-    "baseIri" : "https://w3id.org/bcore",
-    "range" : "24",
-    "annotations" : {
-      "unitText" : [ {
-        "identifier" : "unitText",
-        "language" : "undefined",
-        "value" : "m",
-        "type" : "label"
-      } ]
-    },
-    "label" : {
-      "de" : "Lokalisierung Stationierung",
-      "IRI-based" : "LocalisationStation",
-      "en" : "localisation station"
-    },
-    "domain" : "8",
-    "comment" : {
-      "de" : "Kilometrierung der Lokalisierung (des Standortes) auf der Trasse",
-      "en" : "kilometer marking of the localisation (location) on the route"
-    },
-    "attributes" : [ "datatype", "functional" ],
-    "id" : "107"
+    "id" : "117"
   }, {
     "iri" : "https://w3id.org/bcore#BridgeLength",
     "baseIri" : "https://w3id.org/bcore",
-    "range" : "100",
+    "range" : "111",
     "annotations" : {
       "unitText" : [ {
         "identifier" : "unitText",
@@ -1933,33 +2079,33 @@
       "IRI-based" : "BridgeLength",
       "en" : "bridge length"
     },
-    "domain" : "14",
+    "domain" : "20",
     "comment" : {
       "de" : "Länge der Brücke",
       "en" : "length of the bridge"
     },
-    "attributes" : [ "datatype", "functional" ],
-    "id" : "108"
+    "attributes" : [ "functional", "datatype" ],
+    "id" : "118"
   }, {
     "iri" : "https://w3id.org/reloc#meetTop",
     "baseIri" : "https://w3id.org/reloc",
-    "range" : "3",
+    "range" : "5",
     "label" : {
       "de" : "liegt über",
       "IRI-based" : "meetTop",
       "en" : "meet top"
     },
-    "domain" : "3",
+    "domain" : "5",
     "comment" : {
       "de" : "Bauteil liegt direkt über anderem Bauteil",
       "en" : "component is located directly above another component"
     },
     "attributes" : [ "object", "external" ],
-    "id" : "109"
+    "id" : "119"
   }, {
     "iri" : "https://w3id.org/brcomp#length",
     "baseIri" : "https://w3id.org/brcomp",
-    "range" : "2",
+    "range" : "93",
     "annotations" : {
       "unitText" : [ {
         "identifier" : "unitText",
@@ -1973,83 +2119,66 @@
       "IRI-based" : "length",
       "en" : "length"
     },
-    "domain" : "3",
+    "domain" : "5",
     "comment" : {
       "de" : "longitudinaler Abstand der Enden eines Bauteils",
       "en" : "longitudinal distance of the ends of a component"
     },
-    "attributes" : [ "datatype", "functional", "external" ],
-    "id" : "110"
+    "attributes" : [ "functional", "datatype", "external" ],
+    "id" : "120"
   }, {
     "iri" : "https://w3id.org/bcore#bridgesRoute",
     "baseIri" : "https://w3id.org/bcore",
-    "range" : "15",
+    "range" : "21",
     "label" : {
       "de" : "überquert Trasse",
       "IRI-based" : "bridgesRoute",
       "en" : "bridges route"
     },
-    "domain" : "14",
+    "domain" : "20",
     "comment" : {
       "de" : "Brücke überquert Trasse",
       "en" : "bridge bridges route"
     },
     "attributes" : [ "object" ],
-    "id" : "111"
+    "id" : "121"
   }, {
     "iri" : "https://w3id.org/reloc#meetBottom",
-    "inverse" : "109",
+    "inverse" : "119",
     "baseIri" : "https://w3id.org/reloc",
-    "range" : "3",
+    "range" : "5",
     "label" : {
       "de" : "liegt unter",
       "IRI-based" : "meetBottom",
       "en" : "meet bottom"
     },
-    "domain" : "3",
+    "domain" : "5",
     "comment" : {
       "de" : "Bauteil liegt direkt unter anderem Bauteil",
       "en" : "component is located directly below another component"
     },
     "attributes" : [ "object", "external" ],
-    "id" : "112"
+    "id" : "122"
   }, {
     "iri" : "https://w3id.org/bcore#describes",
     "baseIri" : "https://w3id.org/bcore",
-    "range" : "105",
+    "range" : "116",
     "label" : {
       "de" : "beschreibt",
       "IRI-based" : "describes",
       "en" : "describes"
     },
-    "domain" : "67",
+    "domain" : "78",
     "comment" : {
       "de" : "Mediendatei beschreibt (stellt dar, zeigt, veranschaulicht) eine Brücke",
       "en" : "media file describes (represents, depicts, illustrates) a bridge"
     },
     "attributes" : [ "object" ],
-    "id" : "113"
-  }, {
-    "iri" : "https://w3id.org/bcore#isPartOfZone",
-    "inverse" : "57",
-    "baseIri" : "https://w3id.org/bcore",
-    "range" : "1",
-    "label" : {
-      "de" : "ist Teil einer Zone",
-      "IRI-based" : "isPartOfZone",
-      "en" : "is part of zone"
-    },
-    "domain" : "3",
-    "comment" : {
-      "de" : "Bauteil ist Teil genau einer Zone (z.B. Brücke)",
-      "en" : "component is part of exactly one zone (e.g., bridge)"
-    },
-    "attributes" : [ "object", "functional" ],
-    "id" : "114"
+    "id" : "123"
   }, {
     "iri" : "https://w3id.org/bcore#LocalZ",
     "baseIri" : "https://w3id.org/bcore",
-    "range" : "38",
+    "range" : "43",
     "annotations" : {
       "unitText" : [ {
         "identifier" : "unitText",
@@ -2063,17 +2192,34 @@
       "IRI-based" : "LocalZ",
       "en" : "local Z"
     },
-    "domain" : "31",
+    "domain" : "4",
     "comment" : {
       "de" : "lokale Z-Koordinate",
       "en" : "local Z-coordinate"
     },
-    "attributes" : [ "datatype", "functional" ],
-    "id" : "115"
+    "attributes" : [ "functional", "datatype" ],
+    "id" : "124"
+  }, {
+    "iri" : "https://w3id.org/bcore#isPartOfZone",
+    "inverse" : "67",
+    "baseIri" : "https://w3id.org/bcore",
+    "range" : "1",
+    "label" : {
+      "de" : "ist Teil einer Zone",
+      "IRI-based" : "isPartOfZone",
+      "en" : "is part of zone"
+    },
+    "domain" : "5",
+    "comment" : {
+      "de" : "Bauteil ist Teil genau einer Zone (z.B. Brücke)",
+      "en" : "component is part of exactly one zone (e.g., bridge)"
+    },
+    "attributes" : [ "object", "functional" ],
+    "id" : "125"
   }, {
     "iri" : "https://w3id.org/bcore#LocalY",
     "baseIri" : "https://w3id.org/bcore",
-    "range" : "34",
+    "range" : "39",
     "annotations" : {
       "unitText" : [ {
         "identifier" : "unitText",
@@ -2087,17 +2233,17 @@
       "IRI-based" : "LocalY",
       "en" : "local Y"
     },
-    "domain" : "31",
+    "domain" : "4",
     "comment" : {
       "de" : "lokale Y-Koordinate",
       "en" : "local Y-coordinate"
     },
-    "attributes" : [ "datatype", "functional" ],
-    "id" : "116"
+    "attributes" : [ "functional", "datatype" ],
+    "id" : "126"
   }, {
     "iri" : "https://w3id.org/bcore#LocalX",
     "baseIri" : "https://w3id.org/bcore",
-    "range" : "35",
+    "range" : "40",
     "annotations" : {
       "unitText" : [ {
         "identifier" : "unitText",
@@ -2111,17 +2257,17 @@
       "IRI-based" : "LocalX",
       "en" : "local X"
     },
-    "domain" : "31",
+    "domain" : "4",
     "comment" : {
       "de" : "lokale X-Koordinate",
       "en" : "local X-coordinate"
     },
-    "attributes" : [ "datatype", "functional" ],
-    "id" : "117"
+    "attributes" : [ "functional", "datatype" ],
+    "id" : "127"
   }, {
     "iri" : "https://w3id.org/bcore#BridgeConstructionStartDate",
     "baseIri" : "https://w3id.org/bcore",
-    "range" : "99",
+    "range" : "110",
     "annotations" : {
       "unitText" : [ {
         "identifier" : "unitText",
@@ -2135,12 +2281,12 @@
       "IRI-based" : "BridgeConstructionStartDate",
       "en" : "bridge construction start date"
     },
-    "domain" : "14",
+    "domain" : "20",
     "comment" : {
       "de" : "Startdatum des Baus der Brücke",
       "en" : "start date of the bridge's construction"
     },
-    "attributes" : [ "datatype", "functional" ],
-    "id" : "118"
+    "attributes" : [ "functional", "datatype" ],
+    "id" : "128"
   } ]
 }

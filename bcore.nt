@@ -9,11 +9,11 @@
 <https://w3id.org/bcore> <http://purl.org/dc/terms/creator> "Xiaoli Song" .
 <https://w3id.org/bcore> <http://purl.org/dc/terms/description> "Core ontology for the representation of bridges."@en .
 <https://w3id.org/bcore> <http://purl.org/dc/terms/license> "https://creativecommons.org/licenses/by/4.0/deed.en" .
-<https://w3id.org/bcore> <http://purl.org/dc/terms/modified> "2026-08-04"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://w3id.org/bcore> <http://purl.org/dc/terms/modified> "2026-09-30"^^<http://www.w3.org/2001/XMLSchema#date> .
 <https://w3id.org/bcore> <http://purl.org/ontology/bibo/status> "Ontology Specification Draft" .
 <https://w3id.org/bcore> <http://purl.org/vocab/vann/preferredNamespacePrefix> "bcore" .
 <https://w3id.org/bcore> <http://www.w3.org/2000/01/rdf-schema#label> "Bridge Core Ontology"@en .
-<https://w3id.org/bcore> <http://www.w3.org/2002/07/owl#versionInfo> "0.1.1" .
+<https://w3id.org/bcore> <http://www.w3.org/2002/07/owl#versionInfo> "0.1.2" .
 <https://w3id.org/bcore> <http://xmlns.com/foaf/0.1/logo> "https://raw.githubusercontent.com/TUD-IMB/BCore/main/BCore.svg" .
 <https://w3id.org/bcore> <https://schema.org/codeRepository> "https://github.com/TUD-IMB/BCore" .
 # 
@@ -167,7 +167,7 @@ _:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 <https://w3id.org/bcore#hasLocationAt> <http://www.w3.org/2000/01/rdf-schema#domain> <https://dtc-ontology.cms.ed.tum.de/infraspatialot#Localisation> .
 <https://w3id.org/bcore#hasLocationAt> <http://www.w3.org/2000/01/rdf-schema#range> <https://dtc-ontology.cms.ed.tum.de/infraspatialot#Point> .
 <https://w3id.org/bcore#hasLocationAt> <http://www.w3.org/2000/01/rdf-schema#comment> "Punkt der Lokalisierung (Ort)"@de .
-<https://w3id.org/bcore#hasLocationAt> <http://www.w3.org/2000/01/rdf-schema#comment> "point of the line localisation (location)"@en .
+<https://w3id.org/bcore#hasLocationAt> <http://www.w3.org/2000/01/rdf-schema#comment> "point of the localisation (location)"@en .
 <https://w3id.org/bcore#hasLocationAt> <http://www.w3.org/2000/01/rdf-schema#label> "has location at"@en .
 <https://w3id.org/bcore#hasLocationAt> <http://www.w3.org/2000/01/rdf-schema#label> "ist lokalisiert an"@de .
 <https://w3id.org/bcore#hasLocationAt> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "https://dtc-ontology.cms.ed.tum.de/infraspatialot#isisLocatedAt" .
@@ -181,6 +181,17 @@ _:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 <https://w3id.org/bcore#hasPartialStructure> <http://www.w3.org/2000/01/rdf-schema#comment> "bridge contains partial structure (bridge section)"@en .
 <https://w3id.org/bcore#hasPartialStructure> <http://www.w3.org/2000/01/rdf-schema#label> "contains partial structure"@en .
 <https://w3id.org/bcore#hasPartialStructure> <http://www.w3.org/2000/01/rdf-schema#label> "enthält Brückenzug"@de .
+# 
+# https://w3id.org/bcore#hasWayPointAt
+<https://w3id.org/bcore#hasWayPointAt> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/bcore#hasWayPointAt> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<https://w3id.org/bcore#hasWayPointAt> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/bcore#isWayPointOf> .
+<https://w3id.org/bcore#hasWayPointAt> <http://www.w3.org/2000/01/rdf-schema#domain> <https://dtc-ontology.cms.ed.tum.de/infraspatialot#LineLocalisation> .
+<https://w3id.org/bcore#hasWayPointAt> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/bcore#WayPoint> .
+<https://w3id.org/bcore#hasWayPointAt> <http://www.w3.org/2000/01/rdf-schema#comment> "Punkt auf der Linienlokalisierung"@de .
+<https://w3id.org/bcore#hasWayPointAt> <http://www.w3.org/2000/01/rdf-schema#comment> "point of the line localisation"@en .
+<https://w3id.org/bcore#hasWayPointAt> <http://www.w3.org/2000/01/rdf-schema#label> "has waypoint at"@en .
+<https://w3id.org/bcore#hasWayPointAt> <http://www.w3.org/2000/01/rdf-schema#label> "hat Trassenpunkt auf"@de .
 # 
 # https://w3id.org/bcore#includesLocalisation
 <https://w3id.org/bcore#includesLocalisation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -261,6 +272,16 @@ _:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 <https://w3id.org/bcore#isPartialStructureOf> <http://www.w3.org/2000/01/rdf-schema#comment> "bridge section is part of exactly one bridge"@en .
 <https://w3id.org/bcore#isPartialStructureOf> <http://www.w3.org/2000/01/rdf-schema#label> "is partial structure of"@en .
 <https://w3id.org/bcore#isPartialStructureOf> <http://www.w3.org/2000/01/rdf-schema#label> "ist Brückenzug von"@de .
+# 
+# https://w3id.org/bcore#isWayPointOf
+<https://w3id.org/bcore#isWayPointOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/bcore#isWayPointOf> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<https://w3id.org/bcore#isWayPointOf> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/bcore#WayPoint> .
+<https://w3id.org/bcore#isWayPointOf> <http://www.w3.org/2000/01/rdf-schema#range> <https://dtc-ontology.cms.ed.tum.de/infraspatialot#LineLocalisation> .
+<https://w3id.org/bcore#isWayPointOf> <http://www.w3.org/2000/01/rdf-schema#comment> "Ist Punkt auf der Linienlokalisierung"@de .
+<https://w3id.org/bcore#isWayPointOf> <http://www.w3.org/2000/01/rdf-schema#comment> "is point of the line localisation"@en .
+<https://w3id.org/bcore#isWayPointOf> <http://www.w3.org/2000/01/rdf-schema#label> "is waypoint of"@en .
+<https://w3id.org/bcore#isWayPointOf> <http://www.w3.org/2000/01/rdf-schema#label> "ist Wegpunkt von"@de .
 # 
 # https://w3id.org/bcore#liesWithin
 <https://w3id.org/bcore#liesWithin> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -605,17 +626,6 @@ _:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 <https://w3id.org/bcore#LocalisationName> <http://www.w3.org/2000/01/rdf-schema#label> "Lokalisierung Name"@de .
 <https://w3id.org/bcore#LocalisationName> <http://www.w3.org/2000/01/rdf-schema#label> "localisation name"@en .
 # 
-# https://w3id.org/bcore#LocalisationStation
-<https://w3id.org/bcore#LocalisationStation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://w3id.org/bcore#LocalisationStation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
-<https://w3id.org/bcore#LocalisationStation> <http://www.w3.org/2000/01/rdf-schema#domain> <https://dtc-ontology.cms.ed.tum.de/infraspatialot#Localisation> .
-<https://w3id.org/bcore#LocalisationStation> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#decimal> .
-<https://w3id.org/bcore#LocalisationStation> <http://www.w3.org/2000/01/rdf-schema#comment> "Kilometrierung der Lokalisierung (des Standortes) auf der Trasse"@de .
-<https://w3id.org/bcore#LocalisationStation> <http://www.w3.org/2000/01/rdf-schema#comment> "kilometer marking of the localisation (location) on the route"@en .
-<https://w3id.org/bcore#LocalisationStation> <http://www.w3.org/2000/01/rdf-schema#label> "Lokalisierung Stationierung"@de .
-<https://w3id.org/bcore#LocalisationStation> <http://www.w3.org/2000/01/rdf-schema#label> "localisation station"@en .
-<https://w3id.org/bcore#LocalisationStation> <https://schema.org/unitText> "m" .
-# 
 # https://w3id.org/bcore#Longitude
 <https://w3id.org/bcore#Longitude> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <https://w3id.org/bcore#Longitude> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
@@ -634,6 +644,27 @@ _:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 <https://w3id.org/bcore#MaterialName> <http://www.w3.org/2000/01/rdf-schema#comment> "name of the material"@en .
 <https://w3id.org/bcore#MaterialName> <http://www.w3.org/2000/01/rdf-schema#label> "Materialname"@de .
 <https://w3id.org/bcore#MaterialName> <http://www.w3.org/2000/01/rdf-schema#label> "material name"@en .
+# 
+# https://w3id.org/bcore#MediaFilePath
+<https://w3id.org/bcore#MediaFilePath> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/bcore#MediaFilePath> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<https://w3id.org/bcore#MediaFilePath> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://w3id.org/bcore#MediaFilePath> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/bcore#MediaFile> .
+<https://w3id.org/bcore#MediaFilePath> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/bcore#MediaFilePath> <http://www.w3.org/2000/01/rdf-schema#comment> "local or web path (URL) of a media file"@en .
+<https://w3id.org/bcore#MediaFilePath> <http://www.w3.org/2000/01/rdf-schema#comment> "lokaler Dateipfad oder Webadresse (URL) einer Mediendatei"@de .
+<https://w3id.org/bcore#MediaFilePath> <http://www.w3.org/2000/01/rdf-schema#label> "Pfad der Mediendatei"@de .
+<https://w3id.org/bcore#MediaFilePath> <http://www.w3.org/2000/01/rdf-schema#label> "media file path"@en .
+# 
+# https://w3id.org/bcore#PointName
+<https://w3id.org/bcore#PointName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/bcore#PointName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://w3id.org/bcore#PointName> <http://www.w3.org/2000/01/rdf-schema#domain> <https://dtc-ontology.cms.ed.tum.de/infraspatialot#Point> .
+<https://w3id.org/bcore#PointName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/bcore#PointName> <http://www.w3.org/2000/01/rdf-schema#comment> "Name des geografischen Punktes"@de .
+<https://w3id.org/bcore#PointName> <http://www.w3.org/2000/01/rdf-schema#comment> "name of the geographic point"@en .
+<https://w3id.org/bcore#PointName> <http://www.w3.org/2000/01/rdf-schema#label> "Punkt Name"@de .
+<https://w3id.org/bcore#PointName> <http://www.w3.org/2000/01/rdf-schema#label> "point name"@en .
 # 
 # https://w3id.org/bcore#RegionISOCode
 <https://w3id.org/bcore#RegionISOCode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
@@ -655,6 +686,17 @@ _:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 <https://w3id.org/bcore#Volume> <http://www.w3.org/2000/01/rdf-schema#label> "Volumen"@de .
 <https://w3id.org/bcore#Volume> <http://www.w3.org/2000/01/rdf-schema#label> "volume"@en .
 <https://w3id.org/bcore#Volume> <https://schema.org/unitText> "m³" .
+# 
+# https://w3id.org/bcore#WayPointStation
+<https://w3id.org/bcore#WayPointStation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/bcore#WayPointStation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://w3id.org/bcore#WayPointStation> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/bcore#WayPoint> .
+<https://w3id.org/bcore#WayPointStation> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#decimal> .
+<https://w3id.org/bcore#WayPointStation> <http://www.w3.org/2000/01/rdf-schema#comment> "Kilometrierung des Trassenpunktes"@de .
+<https://w3id.org/bcore#WayPointStation> <http://www.w3.org/2000/01/rdf-schema#comment> "kilometer marking of point on the infrastructure route"@en .
+<https://w3id.org/bcore#WayPointStation> <http://www.w3.org/2000/01/rdf-schema#label> "Trassenpunkt Stationierung"@de .
+<https://w3id.org/bcore#WayPointStation> <http://www.w3.org/2000/01/rdf-schema#label> "waypoint station"@en .
+<https://w3id.org/bcore#WayPointStation> <https://schema.org/unitText> "m" .
 # 
 # https://w3id.org/bcore#ZoneName
 <https://w3id.org/bcore#ZoneName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
@@ -790,20 +832,20 @@ _:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 <https://w3id.org/bcore#Region> <http://www.w3.org/2000/01/rdf-schema#label> "Region"@de .
 <https://w3id.org/bcore#Region> <http://www.w3.org/2000/01/rdf-schema#label> "region"@en .
 # 
+# https://w3id.org/bcore#WayPoint
+<https://w3id.org/bcore#WayPoint> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/bcore#WayPoint> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://dtc-ontology.cms.ed.tum.de/infraspatialot#Point> .
+<https://w3id.org/bcore#WayPoint> <http://www.w3.org/2000/01/rdf-schema#comment> "Punkt auf einer linearen Infrastrukturtrasse"@de .
+<https://w3id.org/bcore#WayPoint> <http://www.w3.org/2000/01/rdf-schema#comment> "point on a linear infrastructure route"@en .
+<https://w3id.org/bcore#WayPoint> <http://www.w3.org/2000/01/rdf-schema#label> "Wegpunkt"@de .
+<https://w3id.org/bcore#WayPoint> <http://www.w3.org/2000/01/rdf-schema#label> "waypoint"@en .
+# 
 # https://w3id.org/bmat#BuildingMaterial
 <https://w3id.org/bmat#BuildingMaterial> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/bmat#BuildingMaterial> <http://www.w3.org/2000/01/rdf-schema#comment> "Material, aus dem Brücken(-bauteile) bestehen"@de .
 <https://w3id.org/bmat#BuildingMaterial> <http://www.w3.org/2000/01/rdf-schema#comment> "materials used to build bridges"@en .
 <https://w3id.org/bmat#BuildingMaterial> <http://www.w3.org/2000/01/rdf-schema#label> "Baumaterial"@de .
 <https://w3id.org/bmat#BuildingMaterial> <http://www.w3.org/2000/01/rdf-schema#label> "building material"@en .
-# 
-# https://w3id.org/bot#Building
-<https://w3id.org/bot#Building> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/bot#Building> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/bot#Zone> .
-<https://w3id.org/bot#Building> <http://www.w3.org/2000/01/rdf-schema#comment> "Bauwerk, das Räume einschließt, betreten werden kann und dem Aufenthalt von Menschen, Tieren oder der Lagerung von Sachen dient (de.wikipedia.org/wiki/Gebäude)."@de .
-<https://w3id.org/bot#Building> <http://www.w3.org/2000/01/rdf-schema#comment> "Enclosed structure with a roof, walls and often windows, usually standing permanently in one place (en.wikipedia.org/wiki/Building)."@en .
-<https://w3id.org/bot#Building> <http://www.w3.org/2000/01/rdf-schema#label> "Gebäude"@de .
-<https://w3id.org/bot#Building> <http://www.w3.org/2000/01/rdf-schema#label> "building"@en .
 # 
 # https://w3id.org/bot#Site
 <https://w3id.org/bot#Site> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
