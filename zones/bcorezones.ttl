@@ -1,6 +1,5 @@
-@prefix bcorezones: <https://w3id.org/bcore/zones#> .
 @prefix bcore: <https://w3id.org/bcore#> .
-@prefix brot: <https://w3id.org/brot#> .
+@prefix bcorezones: <https://w3id.org/bcore/zones#> .
 @prefix bot: <https://w3id.org/bot#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -20,11 +19,11 @@
                                                                    "Xiaoli Song" ;
                                 <http://purl.org/dc/terms/description> "Extension ontology for the representation of bridge-related zones. Designed to work in conjunction with the BCore ontology but to also allow for external use."@en ;
                                 <http://purl.org/dc/terms/license> "https://creativecommons.org/licenses/by/4.0/deed.en" ;
-                                <http://purl.org/dc/terms/modified> "2026-08-04" ;
+                                <http://purl.org/dc/terms/modified> "2026-01-01"^^xsd:date ;
                                 <http://purl.org/ontology/bibo/status> "Ontology Specification Draft" ;
                                 <http://purl.org/vocab/vann/preferredNamespacePrefix> "bcorezones" ;
                                 rdfs:label "Bridge Core Ontology – Zones Extension"@en ;
-                                owl:versionInfo "0.1.1" ;
+                                owl:versionInfo "0.1.2" ;
                                 <http://xmlns.com/foaf/0.1/logo> "https://raw.githubusercontent.com/TUD-IMB/BCore/main/BCore.svg" ;
                                 <https://schema.org/codeRepository> "https://github.com/TUD-IMB/BCore" .
 
@@ -150,6 +149,15 @@ xsd:date rdf:type rdfs:Datatype .
                    "meadow"@en .
 
 
+###  https://w3id.org/bcore/zones#Valley
+:Valley rdf:type owl:Class ;
+        rdfs:subClassOf <https://w3id.org/bot#Zone> ;
+        rdfs:comment "Area where the elevation profile acends at multiple sides"@en ,
+                     "Gebiet, in dem das Höhenprofil zu mehreren Seiten ansteigt"@de ;
+        rdfs:label "Tal"@de ,
+                   "valley"@en .
+
+
 ###  https://w3id.org/bcore/zones#VegetationArea
 :VegetationArea rdf:type owl:Class ;
                 rdfs:subClassOf <https://w3id.org/bot#Zone> ;
@@ -166,6 +174,15 @@ xsd:date rdf:type rdfs:Datatype .
                         "area that is permanently covered by water"@en ;
            rdfs:label "Gewässer"@de ,
                       "water body"@en .
+
+
+###  https://w3id.org/bot#Building
+<https://w3id.org/bot#Building> rdf:type owl:Class ;
+                                rdfs:subClassOf <https://w3id.org/bot#Zone> ;
+                                rdfs:comment "Bauwerk, das Räume einschließt, betreten werden kann und dem Aufenthalt von Menschen, Tieren oder der Lagerung von Sachen dient (de.wikipedia.org/wiki/Gebäude)."@de ,
+                                             "Enclosed structure with a roof, walls and often windows, usually standing permanently in one place (en.wikipedia.org/wiki/Building)."@de ;
+                                rdfs:label "Gebäude"@de ,
+                                           "building"@en .
 
 
 ###  https://w3id.org/bot#Zone

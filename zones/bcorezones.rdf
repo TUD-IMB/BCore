@@ -27,11 +27,11 @@
         <terms:creator>Xiaoli Song</terms:creator>
         <terms:description xml:lang="en">Extension ontology for the representation of bridge-related zones. Designed to work in conjunction with the BCore ontology but to also allow for external use.</terms:description>
         <terms:license>https://creativecommons.org/licenses/by/4.0/deed.en</terms:license>
-        <terms:modified>2026-08-04</terms:modified>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-01-01</terms:modified>
         <bibo:status>Ontology Specification Draft</bibo:status>
         <vann:preferredNamespacePrefix>bcorezones</vann:preferredNamespacePrefix>
         <rdfs:label xml:lang="en">Bridge Core Ontology – Zones Extension</rdfs:label>
-        <owl:versionInfo>0.1.1</owl:versionInfo>
+        <owl:versionInfo>0.1.2</owl:versionInfo>
         <foaf:logo>https://raw.githubusercontent.com/TUD-IMB/BCore/main/BCore.svg</foaf:logo>
         <schema:codeRepository>https://github.com/TUD-IMB/BCore</schema:codeRepository>
     </owl:Ontology>
@@ -227,6 +227,18 @@
     
 
 
+    <!-- https://w3id.org/bcore/zones#Valley -->
+
+    <owl:Class rdf:about="https://w3id.org/bcore/zones#Valley">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bot#Zone"/>
+        <rdfs:comment xml:lang="en">Area where the elevation profile acends at multiple sides</rdfs:comment>
+        <rdfs:comment xml:lang="de">Gebiet, in dem das Höhenprofil zu mehreren Seiten ansteigt</rdfs:comment>
+        <rdfs:label xml:lang="de">Tal</rdfs:label>
+        <rdfs:label xml:lang="en">valley</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- https://w3id.org/bcore/zones#VegetationArea -->
 
     <owl:Class rdf:about="https://w3id.org/bcore/zones#VegetationArea">
@@ -247,6 +259,18 @@
         <rdfs:comment xml:lang="en">area that is permanently covered by water</rdfs:comment>
         <rdfs:label xml:lang="de">Gewässer</rdfs:label>
         <rdfs:label xml:lang="en">water body</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/bot#Building -->
+
+    <owl:Class rdf:about="https://w3id.org/bot#Building">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bot#Zone"/>
+        <rdfs:comment xml:lang="de">Bauwerk, das Räume einschließt, betreten werden kann und dem Aufenthalt von Menschen, Tieren oder der Lagerung von Sachen dient (de.wikipedia.org/wiki/Gebäude).</rdfs:comment>
+        <rdfs:comment xml:lang="de">Enclosed structure with a roof, walls and often windows, usually standing permanently in one place (en.wikipedia.org/wiki/Building).</rdfs:comment>
+        <rdfs:label xml:lang="de">Gebäude</rdfs:label>
+        <rdfs:label xml:lang="en">building</rdfs:label>
     </owl:Class>
     
 

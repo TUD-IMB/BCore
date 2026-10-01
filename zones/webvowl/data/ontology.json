@@ -7,7 +7,7 @@
       "en" : "Bridge Core Ontology for Institute of Concrete Structures, Dresden University of Technology – Zones Extension"
     },
     "iri" : "https://w3id.org/bcore/zones",
-    "version" : "0.1.1",
+    "version" : "0.1.2",
     "author" : [ "Tim Noack", "Morris Florek", "Johannes Reimer", "Xiaoli Song" ],
     "description" : {
       "en" : "Extension ontology for the representation of bridge-related zones. Designed to work in conjunction with the BCore ontology but to also allow for external use."
@@ -25,22 +25,22 @@
       "creator" : [ {
         "identifier" : "creator",
         "language" : "undefined",
-        "value" : "Xiaoli Song",
-        "type" : "label"
-      }, {
-        "identifier" : "creator",
-        "language" : "undefined",
         "value" : "Tim Noack",
         "type" : "label"
       }, {
         "identifier" : "creator",
         "language" : "undefined",
-        "value" : "Morris Florek",
+        "value" : "Johannes Reimer",
         "type" : "label"
       }, {
         "identifier" : "creator",
         "language" : "undefined",
-        "value" : "Johannes Reimer",
+        "value" : "Xiaoli Song",
+        "type" : "label"
+      }, {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "Morris Florek",
         "type" : "label"
       } ],
       "contributor" : [ {
@@ -64,7 +64,7 @@
       "modified" : [ {
         "identifier" : "modified",
         "language" : "undefined",
-        "value" : "2026-08-04",
+        "value" : "2026-01-01",
         "type" : "label"
       } ],
       "logo" : [ {
@@ -73,10 +73,10 @@
         "value" : "https://raw.githubusercontent.com/TUD-IMB/BCore/main/BCore.svg",
         "type" : "label"
       } ],
-      "versionInfo" : [ {
-        "identifier" : "versionInfo",
+      "codeRepository" : [ {
+        "identifier" : "codeRepository",
         "language" : "undefined",
-        "value" : "0.1.1",
+        "value" : "https://github.com/TUD-IMB/BCore",
         "type" : "label"
       } ],
       "abstract" : [ {
@@ -85,10 +85,10 @@
         "value" : "The Bridge Core Ontology (BCore) enables the representation of a bridge structure, its components and material, as well as the infrastructure and media files connected to it and the environment and location of the bridge. BCore is created by the Institute of Concrete Structures (IMB) at the Dresden University of Technology (TUD). This ontology contains the corresponding zones extension.",
         "type" : "label"
       } ],
-      "codeRepository" : [ {
-        "identifier" : "codeRepository",
+      "versionInfo" : [ {
+        "identifier" : "versionInfo",
         "language" : "undefined",
-        "value" : "https://github.com/TUD-IMB/BCore",
+        "value" : "0.1.2",
         "type" : "label"
       } ],
       "title" : [ {
@@ -122,10 +122,16 @@
     "id" : "17",
     "type" : "owl:Class"
   }, {
+    "id" : "18",
+    "type" : "owl:Class"
+  }, {
     "id" : "1",
     "type" : "owl:Class"
   }, {
-    "id" : "18",
+    "id" : "19",
+    "type" : "owl:Class"
+  }, {
+    "id" : "21",
     "type" : "owl:Class"
   }, {
     "id" : "3",
@@ -195,6 +201,21 @@
     "id" : "9",
     "superClasses" : [ "3" ]
   }, {
+    "iri" : "https://w3id.org/bcore/zones#Valley",
+    "baseIri" : "https://w3id.org/bcore/zones",
+    "instances" : 0,
+    "label" : {
+      "de" : "Tal",
+      "IRI-based" : "Valley",
+      "en" : "valley"
+    },
+    "comment" : {
+      "de" : "Gebiet, in dem das Höhenprofil zu mehreren Seiten ansteigt",
+      "en" : "Area where the elevation profile acends at multiple sides"
+    },
+    "id" : "17",
+    "superClasses" : [ "3" ]
+  }, {
     "iri" : "https://w3id.org/bcore/zones#Meadow",
     "baseIri" : "https://w3id.org/bcore/zones",
     "instances" : 0,
@@ -207,7 +228,7 @@
       "de" : "Wiese/Aue",
       "en" : "meadow/ lawn"
     },
-    "id" : "17",
+    "id" : "18",
     "superClasses" : [ "1" ]
   }, {
     "iri" : "https://w3id.org/bcore/zones#VegetationArea",
@@ -218,7 +239,7 @@
       "IRI-based" : "VegetationArea",
       "en" : "vegetation area"
     },
-    "subClasses" : [ "0", "18", "17" ],
+    "subClasses" : [ "0", "19", "18" ],
     "comment" : {
       "de" : "bewachsene Fläche",
       "en" : "planted area"
@@ -238,8 +259,23 @@
       "de" : "bewaldetes Gebiet",
       "en" : "forrest/wood"
     },
-    "id" : "18",
+    "id" : "19",
     "superClasses" : [ "1" ]
+  }, {
+    "iri" : "https://w3id.org/bot#Building",
+    "baseIri" : "https://w3id.org/bot",
+    "instances" : 0,
+    "label" : {
+      "de" : "Gebäude",
+      "IRI-based" : "Building",
+      "en" : "building"
+    },
+    "comment" : {
+      "de" : "Enclosed structure with a roof, walls and often windows, usually standing permanently in one place (en.wikipedia.org/wiki/Building)."
+    },
+    "attributes" : [ "external" ],
+    "id" : "21",
+    "superClasses" : [ "3" ]
   }, {
     "iri" : "https://w3id.org/bot#Zone",
     "baseIri" : "https://w3id.org/bot",
@@ -247,7 +283,7 @@
     "label" : {
       "IRI-based" : "Zone"
     },
-    "subClasses" : [ "9", "2", "5", "8", "1" ],
+    "subClasses" : [ "21", "9", "2", "5", "17", "8", "1" ],
     "attributes" : [ "external" ],
     "id" : "3"
   }, {
@@ -297,13 +333,7 @@
     "id" : "16",
     "type" : "owl:disjointWith"
   }, {
-    "id" : "19",
-    "type" : "rdfs:SubClassOf"
-  }, {
     "id" : "20",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "21",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "22",
@@ -319,6 +349,18 @@
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "26",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "27",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "28",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "29",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "30",
     "type" : "rdfs:SubClassOf"
   } ],
   "propertyAttribute" : [ {
@@ -373,43 +415,53 @@
     "id" : "16"
   }, {
     "range" : "3",
-    "domain" : "1",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "19"
-  }, {
-    "range" : "3",
-    "domain" : "2",
+    "domain" : "8",
     "attributes" : [ "object", "anonymous" ],
     "id" : "20"
   }, {
     "range" : "3",
-    "domain" : "9",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "21"
-  }, {
-    "range" : "3",
-    "domain" : "8",
+    "domain" : "17",
     "attributes" : [ "object", "anonymous" ],
     "id" : "22"
   }, {
     "range" : "3",
-    "domain" : "5",
+    "domain" : "1",
     "attributes" : [ "object", "anonymous" ],
     "id" : "23"
+  }, {
+    "range" : "3",
+    "domain" : "9",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "24"
+  }, {
+    "range" : "3",
+    "domain" : "21",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "25"
+  }, {
+    "range" : "3",
+    "domain" : "5",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "26"
+  }, {
+    "range" : "3",
+    "domain" : "2",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "27"
   }, {
     "range" : "1",
     "domain" : "0",
     "attributes" : [ "object", "anonymous" ],
-    "id" : "24"
-  }, {
-    "range" : "1",
-    "domain" : "17",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "25"
+    "id" : "28"
   }, {
     "range" : "1",
     "domain" : "18",
     "attributes" : [ "object", "anonymous" ],
-    "id" : "26"
+    "id" : "29"
+  }, {
+    "range" : "1",
+    "domain" : "19",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "30"
   } ]
 }

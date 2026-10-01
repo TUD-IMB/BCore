@@ -9,11 +9,11 @@
 <https://w3id.org/bcore/zones> <http://purl.org/dc/terms/creator> "Xiaoli Song" .
 <https://w3id.org/bcore/zones> <http://purl.org/dc/terms/description> "Extension ontology for the representation of bridge-related zones. Designed to work in conjunction with the BCore ontology but to also allow for external use."@en .
 <https://w3id.org/bcore/zones> <http://purl.org/dc/terms/license> "https://creativecommons.org/licenses/by/4.0/deed.en" .
-<https://w3id.org/bcore/zones> <http://purl.org/dc/terms/modified> "2026-08-04" .
+<https://w3id.org/bcore/zones> <http://purl.org/dc/terms/modified> "2026-01-01"^^<http://www.w3.org/2001/XMLSchema#date> .
 <https://w3id.org/bcore/zones> <http://purl.org/ontology/bibo/status> "Ontology Specification Draft" .
 <https://w3id.org/bcore/zones> <http://purl.org/vocab/vann/preferredNamespacePrefix> "bcorezones" .
 <https://w3id.org/bcore/zones> <http://www.w3.org/2000/01/rdf-schema#label> "Bridge Core Ontology – Zones Extension"@en .
-<https://w3id.org/bcore/zones> <http://www.w3.org/2002/07/owl#versionInfo> "0.1.1" .
+<https://w3id.org/bcore/zones> <http://www.w3.org/2002/07/owl#versionInfo> "0.1.2" .
 <https://w3id.org/bcore/zones> <http://xmlns.com/foaf/0.1/logo> "https://raw.githubusercontent.com/TUD-IMB/BCore/main/BCore.svg" .
 <https://w3id.org/bcore/zones> <https://schema.org/codeRepository> "https://github.com/TUD-IMB/BCore" .
 # 
@@ -133,6 +133,14 @@
 <https://w3id.org/bcore/zones#Meadow> <http://www.w3.org/2000/01/rdf-schema#label> "Wiese"@de .
 <https://w3id.org/bcore/zones#Meadow> <http://www.w3.org/2000/01/rdf-schema#label> "meadow"@en .
 # 
+# https://w3id.org/bcore/zones#Valley
+<https://w3id.org/bcore/zones#Valley> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/bcore/zones#Valley> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/bot#Zone> .
+<https://w3id.org/bcore/zones#Valley> <http://www.w3.org/2000/01/rdf-schema#comment> "Area where the elevation profile acends at multiple sides"@en .
+<https://w3id.org/bcore/zones#Valley> <http://www.w3.org/2000/01/rdf-schema#comment> "Gebiet, in dem das Höhenprofil zu mehreren Seiten ansteigt"@de .
+<https://w3id.org/bcore/zones#Valley> <http://www.w3.org/2000/01/rdf-schema#label> "Tal"@de .
+<https://w3id.org/bcore/zones#Valley> <http://www.w3.org/2000/01/rdf-schema#label> "valley"@en .
+# 
 # https://w3id.org/bcore/zones#VegetationArea
 <https://w3id.org/bcore/zones#VegetationArea> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/bcore/zones#VegetationArea> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/bot#Zone> .
@@ -148,6 +156,14 @@
 <https://w3id.org/bcore/zones#WaterBody> <http://www.w3.org/2000/01/rdf-schema#comment> "area that is permanently covered by water"@en .
 <https://w3id.org/bcore/zones#WaterBody> <http://www.w3.org/2000/01/rdf-schema#label> "Gewässer"@de .
 <https://w3id.org/bcore/zones#WaterBody> <http://www.w3.org/2000/01/rdf-schema#label> "water body"@en .
+# 
+# https://w3id.org/bot#Building
+<https://w3id.org/bot#Building> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/bot#Building> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/bot#Zone> .
+<https://w3id.org/bot#Building> <http://www.w3.org/2000/01/rdf-schema#comment> "Bauwerk, das Räume einschließt, betreten werden kann und dem Aufenthalt von Menschen, Tieren oder der Lagerung von Sachen dient (de.wikipedia.org/wiki/Gebäude)."@de .
+<https://w3id.org/bot#Building> <http://www.w3.org/2000/01/rdf-schema#comment> "Enclosed structure with a roof, walls and often windows, usually standing permanently in one place (en.wikipedia.org/wiki/Building)."@de .
+<https://w3id.org/bot#Building> <http://www.w3.org/2000/01/rdf-schema#label> "Gebäude"@de .
+<https://w3id.org/bot#Building> <http://www.w3.org/2000/01/rdf-schema#label> "building"@en .
 # 
 # https://w3id.org/bot#Zone
 <https://w3id.org/bot#Zone> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .

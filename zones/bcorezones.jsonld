@@ -91,7 +91,8 @@
     "@value" : "https://creativecommons.org/licenses/by/4.0/deed.en"
   } ],
   "http://purl.org/dc/terms/modified" : [ {
-    "@value" : "2026-08-04"
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2026-01-01"
   } ],
   "http://purl.org/ontology/bibo/status" : [ {
     "@value" : "Ontology Specification Draft"
@@ -104,7 +105,7 @@
     "@value" : "Bridge Core Ontology – Zones Extension"
   } ],
   "http://www.w3.org/2002/07/owl#versionInfo" : [ {
-    "@value" : "0.1.1"
+    "@value" : "0.1.2"
   } ],
   "http://xmlns.com/foaf/0.1/logo" : [ {
     "@value" : "https://raw.githubusercontent.com/TUD-IMB/BCore/main/BCore.svg"
@@ -233,6 +234,26 @@
     "@id" : "https://w3id.org/bcore/zones#VegetationArea"
   } ]
 }, {
+  "@id" : "https://w3id.org/bcore/zones#Valley",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Area where the elevation profile acends at multiple sides"
+  }, {
+    "@language" : "de",
+    "@value" : "Gebiet, in dem das Höhenprofil zu mehreren Seiten ansteigt"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "de",
+    "@value" : "Tal"
+  }, {
+    "@language" : "en",
+    "@value" : "valley"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/bot#Zone"
+  } ]
+}, {
   "@id" : "https://w3id.org/bcore/zones#VegetationArea",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -268,6 +289,26 @@
   }, {
     "@language" : "en",
     "@value" : "water body"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/bot#Zone"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bot#Building",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "de",
+    "@value" : "Bauwerk, das Räume einschließt, betreten werden kann und dem Aufenthalt von Menschen, Tieren oder der Lagerung von Sachen dient (de.wikipedia.org/wiki/Gebäude)."
+  }, {
+    "@language" : "de",
+    "@value" : "Enclosed structure with a roof, walls and often windows, usually standing permanently in one place (en.wikipedia.org/wiki/Building)."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "de",
+    "@value" : "Gebäude"
+  }, {
+    "@language" : "en",
+    "@value" : "building"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/bot#Zone"
