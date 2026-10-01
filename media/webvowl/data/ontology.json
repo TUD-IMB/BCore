@@ -7,7 +7,7 @@
       "en" : "Bridge Core Ontology for Institute of Concrete Structures, Dresden University of Technology – Media Extension"
     },
     "iri" : "https://w3id.org/bcore/media",
-    "version" : "0.1.1",
+    "version" : "0.1.2",
     "author" : [ "Tim Noack", "Morris Florek", "Johannes Reimer", "Xiaoli Song" ],
     "description" : {
       "en" : "Extension ontology for the representation of bridge-related media. Designed to work in conjunction with the BCore ontology but to also allow for external use."
@@ -30,7 +30,7 @@
       }, {
         "identifier" : "creator",
         "language" : "undefined",
-        "value" : "Johannes Reimer",
+        "value" : "Tim Noack",
         "type" : "label"
       }, {
         "identifier" : "creator",
@@ -40,7 +40,7 @@
       }, {
         "identifier" : "creator",
         "language" : "undefined",
-        "value" : "Tim Noack",
+        "value" : "Johannes Reimer",
         "type" : "label"
       } ],
       "contributor" : [ {
@@ -61,22 +61,22 @@
         "value" : "bcoremedia",
         "type" : "label"
       } ],
-      "modified" : [ {
-        "identifier" : "modified",
-        "language" : "undefined",
-        "value" : "2026-08-04",
-        "type" : "label"
-      } ],
       "logo" : [ {
         "identifier" : "logo",
         "language" : "undefined",
         "value" : "https://raw.githubusercontent.com/TUD-IMB/BCore/main/BCore.svg",
         "type" : "label"
       } ],
-      "versionInfo" : [ {
-        "identifier" : "versionInfo",
+      "modified" : [ {
+        "identifier" : "modified",
         "language" : "undefined",
-        "value" : "0.1.1",
+        "value" : "2026-09-30",
+        "type" : "label"
+      } ],
+      "codeRepository" : [ {
+        "identifier" : "codeRepository",
+        "language" : "undefined",
+        "value" : "https://github.com/TUD-IMB/BCore",
         "type" : "label"
       } ],
       "abstract" : [ {
@@ -85,10 +85,10 @@
         "value" : "The Bridge Core Ontology (BCore) enables the representation of a bridge structure, its components and material, as well as the infrastructure and media files connected to it and the environment and location of the bridge. BCore is created by the Institute of Concrete Structures (IMB) at the Dresden University of Technology (TUD). This ontology contains the corresponding media extension.",
         "type" : "label"
       } ],
-      "codeRepository" : [ {
-        "identifier" : "codeRepository",
+      "versionInfo" : [ {
+        "identifier" : "versionInfo",
         "language" : "undefined",
-        "value" : "https://github.com/TUD-IMB/BCore",
+        "value" : "0.1.2",
         "type" : "label"
       } ],
       "title" : [ {
@@ -107,37 +107,48 @@
   },
   "namespace" : [ ],
   "class" : [ {
-    "id" : "0",
-    "type" : "rdfs:Datatype"
+    "id" : "3",
+    "type" : "owl:unionOf"
   }, {
     "id" : "6",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "4",
     "type" : "owl:Class"
   }, {
-    "id" : "12",
-    "type" : "owl:Class"
+    "id" : "7",
+    "type" : "rdfs:Datatype"
   }, {
-    "id" : "8",
-    "type" : "owl:Class"
-  }, {
-    "id" : "3",
+    "id" : "5",
     "type" : "owl:Class"
   }, {
     "id" : "14",
-    "type" : "owl:unionOf"
+    "type" : "owl:Class"
   }, {
-    "id" : "10",
-    "type" : "rdfs:Datatype"
+    "id" : "20",
+    "type" : "owl:Class"
+  }, {
+    "id" : "9",
+    "type" : "owl:Class"
   }, {
     "id" : "2",
     "type" : "owl:Class"
   }, {
-    "id" : "5",
+    "id" : "1",
+    "type" : "owl:Class"
+  }, {
+    "id" : "12",
     "type" : "owl:Class"
   } ],
   "classAttribute" : [ {
+    "instances" : 0,
+    "union" : [ "4", "5" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "3"
+  }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#integer",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "0",
+    "id" : "6",
     "label" : {
       "IRI-based" : "integer"
     }
@@ -149,7 +160,14 @@
       "IRI-based" : "Component"
     },
     "attributes" : [ "external" ],
-    "id" : "6"
+    "id" : "4"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#integer",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "7",
+    "label" : {
+      "IRI-based" : "integer"
+    }
   }, {
     "iri" : "https://w3id.org/brot#Bridge",
     "baseIri" : "https://w3id.org/brot",
@@ -158,7 +176,22 @@
       "IRI-based" : "Bridge"
     },
     "attributes" : [ "external" ],
-    "id" : "12"
+    "id" : "5"
+  }, {
+    "iri" : "https://w3id.org/bcore/media#IFCFile",
+    "baseIri" : "https://w3id.org/bcore/media",
+    "instances" : 0,
+    "label" : {
+      "de" : "IFC-Datei",
+      "IRI-based" : "IFCFile",
+      "en" : "IFC file"
+    },
+    "comment" : {
+      "de" : "Industry Foundation Class-Datei einer Struktur",
+      "en" : "Industry Foundation Class file of a structure"
+    },
+    "id" : "14",
+    "superClasses" : [ "2" ]
   }, {
     "iri" : "https://w3id.org/bcore/media#Photo",
     "baseIri" : "https://w3id.org/bcore/media",
@@ -180,8 +213,8 @@
       "de" : "Foto (entstanden durch auf eine lichtempfindliche Oberfläche fallendes Licht)",
       "en" : "photograph (created by light falling on light-sensitive surface)"
     },
-    "id" : "8",
-    "superClasses" : [ "2" ]
+    "id" : "20",
+    "superClasses" : [ "1" ]
   }, {
     "iri" : "https://w3id.org/bcore#MediaFile",
     "baseIri" : "https://w3id.org/bcore",
@@ -189,21 +222,25 @@
     "label" : {
       "IRI-based" : "MediaFile"
     },
-    "subClasses" : [ "2", "5" ],
+    "subClasses" : [ "2", "1", "12" ],
     "attributes" : [ "external" ],
-    "id" : "3"
+    "id" : "9"
   }, {
+    "iri" : "https://w3id.org/bcore/media#Model",
+    "baseIri" : "https://w3id.org/bcore/media",
     "instances" : 0,
-    "union" : [ "6", "12" ],
-    "attributes" : [ "anonymous", "union" ],
-    "id" : "14"
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#integer",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "10",
     "label" : {
-      "IRI-based" : "integer"
-    }
+      "de" : "Modell",
+      "IRI-based" : "Model",
+      "en" : "model"
+    },
+    "subClasses" : [ "14" ],
+    "comment" : {
+      "de" : "digitale dreidimensionale geometrische Abbildung einer Struktur",
+      "en" : "digital three-dimensional geometric representation of a structure"
+    },
+    "id" : "2",
+    "superClasses" : [ "9" ]
   }, {
     "iri" : "https://w3id.org/bcore/media#Image",
     "baseIri" : "https://w3id.org/bcore/media",
@@ -221,13 +258,13 @@
       "IRI-based" : "Image",
       "en" : "image"
     },
-    "subClasses" : [ "8" ],
+    "subClasses" : [ "20" ],
     "comment" : {
       "de" : "Bilddatei",
       "en" : "image file"
     },
-    "id" : "2",
-    "superClasses" : [ "3" ]
+    "id" : "1",
+    "superClasses" : [ "9" ]
   }, {
     "iri" : "https://w3id.org/bcore/media#Document",
     "baseIri" : "https://w3id.org/bcore/media",
@@ -249,50 +286,85 @@
       "de" : "Physische oder digitale Darstellung einer Informationseinheit, die zur Kommunikation verwendet werden kann",
       "en" : "physical or digital representation of a body of information designed with the capacity to communicate"
     },
-    "id" : "5",
-    "superClasses" : [ "3" ]
+    "id" : "12",
+    "superClasses" : [ "9" ]
   } ],
   "property" : [ {
-    "id" : "1",
+    "id" : "0",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "8",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "4",
+    "id" : "10",
     "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "7",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "9",
-    "type" : "owl:datatypeProperty"
   }, {
     "id" : "11",
-    "type" : "owl:objectProperty"
+    "type" : "rdfs:SubClassOf"
   }, {
     "id" : "13",
-    "type" : "owl:datatypeProperty"
+    "type" : "rdfs:SubClassOf"
   }, {
     "id" : "15",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "16",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "17",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "18",
     "type" : "owl:objectProperty"
+  }, {
+    "id" : "19",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "21",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "22",
+    "type" : "rdfs:SubClassOf"
   } ],
   "propertyAttribute" : [ {
-    "range" : "3",
+    "range" : "2",
+    "domain" : "1",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "0"
+  }, {
+    "range" : "9",
     "domain" : "2",
     "attributes" : [ "object", "anonymous" ],
-    "id" : "1"
+    "id" : "8"
   }, {
-    "range" : "3",
-    "domain" : "5",
+    "range" : "9",
+    "domain" : "1",
     "attributes" : [ "object", "anonymous" ],
-    "id" : "4"
+    "id" : "10"
+  }, {
+    "range" : "9",
+    "domain" : "12",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "11"
   }, {
     "range" : "2",
-    "domain" : "8",
+    "domain" : "14",
     "attributes" : [ "object", "anonymous" ],
-    "id" : "7"
+    "id" : "13"
+  }, {
+    "range" : "1",
+    "domain" : "12",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "15"
+  }, {
+    "range" : "2",
+    "domain" : "12",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "16"
   }, {
     "iri" : "https://w3id.org/bcore/media#ImageResolutionX",
     "baseIri" : "https://w3id.org/bcore/media",
-    "range" : "10",
+    "range" : "6",
     "annotations" : {
       "unitText" : [ {
         "identifier" : "unitText",
@@ -306,33 +378,33 @@
       "IRI-based" : "ImageResolutionX",
       "en" : "image resolution X"
     },
-    "domain" : "2",
+    "domain" : "1",
     "comment" : {
       "de" : "Bildauflösung in X-Richtung",
       "en" : "image resolution in X-direction"
     },
-    "attributes" : [ "functional", "datatype" ],
-    "id" : "9"
+    "attributes" : [ "datatype", "functional" ],
+    "id" : "17"
   }, {
     "iri" : "https://w3id.org/bcore/media#containsMedia",
     "baseIri" : "https://w3id.org/bcore/media",
-    "range" : "3",
+    "range" : "9",
     "label" : {
       "de" : "enthält Mediendatei",
       "IRI-based" : "containsMedia",
       "en" : "contains media"
     },
-    "domain" : "3",
+    "domain" : "9",
     "comment" : {
       "de" : "Mediendatei enthält eine andere Mediendatei",
       "en" : "media file contains another media file"
     },
-    "attributes" : [ "asymmetric", "object", "transitive" ],
-    "id" : "11"
+    "attributes" : [ "object", "transitive", "asymmetric" ],
+    "id" : "18"
   }, {
     "iri" : "https://w3id.org/bcore/media#ImageResolutionY",
     "baseIri" : "https://w3id.org/bcore/media",
-    "range" : "0",
+    "range" : "7",
     "annotations" : {
       "unitText" : [ {
         "identifier" : "unitText",
@@ -346,28 +418,33 @@
       "IRI-based" : "ImageResolutionY",
       "en" : "image resolution Y"
     },
-    "domain" : "2",
+    "domain" : "1",
     "comment" : {
       "de" : "Bildauflösung in Y-Richtung",
       "en" : "image resolution in Y-direction"
     },
-    "attributes" : [ "functional", "datatype" ],
-    "id" : "13"
+    "attributes" : [ "datatype", "functional" ],
+    "id" : "19"
   }, {
     "iri" : "https://w3id.org/bcore#describes",
     "baseIri" : "https://w3id.org/bcore",
-    "range" : "14",
+    "range" : "3",
     "label" : {
       "de" : "beschreibt",
       "IRI-based" : "describes",
       "en" : "describes"
     },
-    "domain" : "3",
+    "domain" : "9",
     "comment" : {
       "de" : "Mediendatei beschreibt (stellt dar, zeigt, veranschaulicht) eine Brücke oder ein Bauteil",
       "en" : "media file describes (represents, depicts, illustrates) a bridge or a bridge component"
     },
     "attributes" : [ "external", "object" ],
-    "id" : "15"
+    "id" : "21"
+  }, {
+    "range" : "1",
+    "domain" : "20",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "22"
   } ]
 }

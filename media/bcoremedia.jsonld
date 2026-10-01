@@ -9,6 +9,18 @@
     } ]
   } ]
 }, {
+  "@id" : "_:genid4",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
+  "http://www.w3.org/2002/07/owl#members" : [ {
+    "@list" : [ {
+      "@id" : "https://w3id.org/bcore/media#Document"
+    }, {
+      "@id" : "https://w3id.org/bcore/media#Image"
+    }, {
+      "@id" : "https://w3id.org/bcore/media#Model"
+    } ]
+  } ]
+}, {
   "@id" : "http://purl.org/dc/elements/1.1/abstract",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
@@ -115,7 +127,7 @@
   } ],
   "http://purl.org/dc/terms/modified" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#date",
-    "@value" : "2026-08-04"
+    "@value" : "2026-09-30"
   } ],
   "http://purl.org/ontology/bibo/status" : [ {
     "@value" : "Ontology Specification Draft"
@@ -128,7 +140,7 @@
     "@value" : "Bridge Core Ontology – Media Extension"
   } ],
   "http://www.w3.org/2002/07/owl#versionInfo" : [ {
-    "@value" : "0.1.1"
+    "@value" : "0.1.2"
   } ],
   "http://xmlns.com/foaf/0.1/logo" : [ {
     "@value" : "https://raw.githubusercontent.com/TUD-IMB/BCore/main/BCore.svg"
@@ -158,6 +170,26 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/bcore#MediaFile"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bcore/media#IFCFile",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Industry Foundation Class file of a structure"
+  }, {
+    "@language" : "de",
+    "@value" : "Industry Foundation Class-Datei einer Struktur"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "IFC file"
+  }, {
+    "@language" : "de",
+    "@value" : "IFC-Datei"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/bcore/media#Model"
   } ]
 }, {
   "@id" : "https://w3id.org/bcore/media#Image",
@@ -233,6 +265,26 @@
   } ],
   "https://schema.org/unitText" : [ {
     "@value" : "pixel"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bcore/media#Model",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "digital three-dimensional geometric representation of a structure"
+  }, {
+    "@language" : "de",
+    "@value" : "digitale dreidimensionale geometrische Abbildung einer Struktur"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "de",
+    "@value" : "Modell"
+  }, {
+    "@language" : "en",
+    "@value" : "model"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/bcore#MediaFile"
   } ]
 }, {
   "@id" : "https://w3id.org/bcore/media#Photo",

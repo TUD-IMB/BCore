@@ -4,7 +4,9 @@ This section provides details for each class and property defined by Bridge Core
  <h3 id="classes-headline" class="list">Classes</h3>
  <ul class="hlist">
   <li><a href="#Document" title="https://w3id.org/bcore/media#Document">document</a></li>
+  <li><a href="#IFCFile" title="https://w3id.org/bcore/media#IFCFile">IFC file</a></li>
   <li><a href="#Image" title="https://w3id.org/bcore/media#Image">image</a></li>
+  <li><a href="#Model" title="https://w3id.org/bcore/media#Model">model</a></li>
   <li><a href="#Photo" title="https://w3id.org/bcore/media#Photo">photo</a></li>
  </ul>
  <div class="entity" id="Document">
@@ -19,6 +21,27 @@ This section provides details for each class and property defined by Bridge Core
    </dt>
    <dd>
     <a href="https://w3id.org/bcore#MediaFile" target="_blank" title="https://w3id.org/bcore#MediaFile">Media File</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is disjoint with
+   </dt>
+   <dd>
+    <a href="#Image" title="https://w3id.org/bcore/media#Image">image</a> <sup class="type-c" title="class">c</sup>, <a href="#Model" title="https://w3id.org/bcore/media#Model">model</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="IFCFile">
+  <h3>IFC file<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/bcore/media#IFCFile</p>
+  <div class="comment">
+   <span class="markdown">Industry Foundation Class file of a structure</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#Model" title="https://w3id.org/bcore/media#Model">model</a> <sup class="type-c" title="class">c</sup>
    </dd>
   </dl>
  </div>
@@ -46,6 +69,39 @@ This section provides details for each class and property defined by Bridge Core
    </dt>
    <dd>
     <a href="#ImageResolutionX" title="https://w3id.org/bcore/media#ImageResolutionX">image resolution X</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#ImageResolutionY" title="https://w3id.org/bcore/media#ImageResolutionY">image resolution Y</a> <sup class="type-dp" title="data property">dp</sup>
+   </dd>
+   <dt>
+    is disjoint with
+   </dt>
+   <dd>
+    <a href="#Document" title="https://w3id.org/bcore/media#Document">document</a> <sup class="type-c" title="class">c</sup>, <a href="#Model" title="https://w3id.org/bcore/media#Model">model</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="Model">
+  <h3>model<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/bcore/media#Model</p>
+  <div class="comment">
+   <span class="markdown">digital three-dimensional geometric representation of a structure</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="https://w3id.org/bcore#MediaFile" target="_blank" title="https://w3id.org/bcore#MediaFile">Media File</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has sub-classes
+   </dt>
+   <dd>
+    <a href="#IFCFile" title="https://w3id.org/bcore/media#IFCFile">IFC file</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is disjoint with
+   </dt>
+   <dd>
+    <a href="#Document" title="https://w3id.org/bcore/media#Document">document</a> <sup class="type-c" title="class">c</sup>, <a href="#Image" title="https://w3id.org/bcore/media#Image">image</a> <sup class="type-c" title="class">c</sup>
    </dd>
   </dl>
  </div>

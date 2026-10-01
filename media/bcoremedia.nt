@@ -9,11 +9,11 @@
 <https://w3id.org/bcore/media> <http://purl.org/dc/terms/creator> "Xiaoli Song" .
 <https://w3id.org/bcore/media> <http://purl.org/dc/terms/description> "Extension ontology for the representation of bridge-related media. Designed to work in conjunction with the BCore ontology but to also allow for external use."@en .
 <https://w3id.org/bcore/media> <http://purl.org/dc/terms/license> "https://creativecommons.org/licenses/by/4.0/deed.en" .
-<https://w3id.org/bcore/media> <http://purl.org/dc/terms/modified> "2026-08-04"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://w3id.org/bcore/media> <http://purl.org/dc/terms/modified> "2026-09-30"^^<http://www.w3.org/2001/XMLSchema#date> .
 <https://w3id.org/bcore/media> <http://purl.org/ontology/bibo/status> "Ontology Specification Draft" .
 <https://w3id.org/bcore/media> <http://purl.org/vocab/vann/preferredNamespacePrefix> "bcoremedia" .
 <https://w3id.org/bcore/media> <http://www.w3.org/2000/01/rdf-schema#label> "Bridge Core Ontology – Media Extension"@en .
-<https://w3id.org/bcore/media> <http://www.w3.org/2002/07/owl#versionInfo> "0.1.1" .
+<https://w3id.org/bcore/media> <http://www.w3.org/2002/07/owl#versionInfo> "0.1.2" .
 <https://w3id.org/bcore/media> <http://xmlns.com/foaf/0.1/logo> "https://raw.githubusercontent.com/TUD-IMB/BCore/main/BCore.svg" .
 <https://w3id.org/bcore/media> <https://schema.org/codeRepository> "https://github.com/TUD-IMB/BCore" .
 # 
@@ -168,6 +168,14 @@ _:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 <https://w3id.org/bcore/media#Document> <http://www.w3.org/2000/01/rdf-schema#label> "document"@en .
 <https://w3id.org/bcore/media#Document> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "http://semanticscience.org/resource/SIO_000148" .
 # 
+# https://w3id.org/bcore/media#IFCFile
+<https://w3id.org/bcore/media#IFCFile> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/bcore/media#IFCFile> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/bcore/media#Model> .
+<https://w3id.org/bcore/media#IFCFile> <http://www.w3.org/2000/01/rdf-schema#comment> "Industry Foundation Class file of a structure"@en .
+<https://w3id.org/bcore/media#IFCFile> <http://www.w3.org/2000/01/rdf-schema#comment> "Industry Foundation Class-Datei einer Struktur"@de .
+<https://w3id.org/bcore/media#IFCFile> <http://www.w3.org/2000/01/rdf-schema#label> "IFC file"@en .
+<https://w3id.org/bcore/media#IFCFile> <http://www.w3.org/2000/01/rdf-schema#label> "IFC-Datei"@de .
+# 
 # https://w3id.org/bcore/media#Image
 <https://w3id.org/bcore/media#Image> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/bcore/media#Image> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/bcore#MediaFile> .
@@ -176,6 +184,14 @@ _:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 <https://w3id.org/bcore/media#Image> <http://www.w3.org/2000/01/rdf-schema#label> "Bild"@de .
 <https://w3id.org/bcore/media#Image> <http://www.w3.org/2000/01/rdf-schema#label> "image"@en .
 <https://w3id.org/bcore/media#Image> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "http://semanticscience.org/resource/SIO_000081" .
+# 
+# https://w3id.org/bcore/media#Model
+<https://w3id.org/bcore/media#Model> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/bcore/media#Model> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/bcore#MediaFile> .
+<https://w3id.org/bcore/media#Model> <http://www.w3.org/2000/01/rdf-schema#comment> "digital three-dimensional geometric representation of a structure"@en .
+<https://w3id.org/bcore/media#Model> <http://www.w3.org/2000/01/rdf-schema#comment> "digitale dreidimensionale geometrische Abbildung einer Struktur"@de .
+<https://w3id.org/bcore/media#Model> <http://www.w3.org/2000/01/rdf-schema#label> "Modell"@de .
+<https://w3id.org/bcore/media#Model> <http://www.w3.org/2000/01/rdf-schema#label> "model"@en .
 # 
 # https://w3id.org/bcore/media#Photo
 <https://w3id.org/bcore/media#Photo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -191,5 +207,26 @@ _:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 # 
 # https://w3id.org/brot#Component
 <https://w3id.org/brot#Component> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    General axioms
+# #
+# #################################################################
+# 
+# 
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid4 <http://www.w3.org/2002/07/owl#members> _:genid7 .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid6 .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid5 .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/bcore/media#Model> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/bcore/media#Image> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/bcore/media#Document> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
 # 
 # Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

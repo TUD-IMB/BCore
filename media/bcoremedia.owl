@@ -26,11 +26,11 @@
         <terms:creator>Xiaoli Song</terms:creator>
         <terms:description xml:lang="en">Extension ontology for the representation of bridge-related media. Designed to work in conjunction with the BCore ontology but to also allow for external use.</terms:description>
         <terms:license>https://creativecommons.org/licenses/by/4.0/deed.en</terms:license>
-        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-08-04</terms:modified>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-09-30</terms:modified>
         <bibo:status>Ontology Specification Draft</bibo:status>
         <vann:preferredNamespacePrefix>bcoremedia</vann:preferredNamespacePrefix>
         <rdfs:label xml:lang="en">Bridge Core Ontology – Media Extension</rdfs:label>
-        <owl:versionInfo>0.1.1</owl:versionInfo>
+        <owl:versionInfo>0.1.2</owl:versionInfo>
         <foaf:logo>https://raw.githubusercontent.com/TUD-IMB/BCore/main/BCore.svg</foaf:logo>
         <schema:codeRepository>https://github.com/TUD-IMB/BCore</schema:codeRepository>
     </owl:Ontology>
@@ -266,6 +266,18 @@
     
 
 
+    <!-- https://w3id.org/bcore/media#IFCFile -->
+
+    <owl:Class rdf:about="https://w3id.org/bcore/media#IFCFile">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bcore/media#Model"/>
+        <rdfs:comment xml:lang="en">Industry Foundation Class file of a structure</rdfs:comment>
+        <rdfs:comment xml:lang="de">Industry Foundation Class-Datei einer Struktur</rdfs:comment>
+        <rdfs:label xml:lang="en">IFC file</rdfs:label>
+        <rdfs:label xml:lang="de">IFC-Datei</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- https://w3id.org/bcore/media#Image -->
 
     <owl:Class rdf:about="https://w3id.org/bcore/media#Image">
@@ -275,6 +287,18 @@
         <rdfs:label xml:lang="de">Bild</rdfs:label>
         <rdfs:label xml:lang="en">image</rdfs:label>
         <rdfs:seeAlso>http://semanticscience.org/resource/SIO_000081</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/bcore/media#Model -->
+
+    <owl:Class rdf:about="https://w3id.org/bcore/media#Model">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bcore#MediaFile"/>
+        <rdfs:comment xml:lang="en">digital three-dimensional geometric representation of a structure</rdfs:comment>
+        <rdfs:comment xml:lang="de">digitale dreidimensionale geometrische Abbildung einer Struktur</rdfs:comment>
+        <rdfs:label xml:lang="de">Modell</rdfs:label>
+        <rdfs:label xml:lang="en">model</rdfs:label>
     </owl:Class>
     
 
@@ -301,6 +325,25 @@
     <!-- https://w3id.org/brot#Component -->
 
     <owl:Class rdf:about="https://w3id.org/brot#Component"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://w3id.org/bcore/media#Document"/>
+            <rdf:Description rdf:about="https://w3id.org/bcore/media#Image"/>
+            <rdf:Description rdf:about="https://w3id.org/bcore/media#Model"/>
+        </owl:members>
+    </rdf:Description>
 </rdf:RDF>
 
 
