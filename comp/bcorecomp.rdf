@@ -827,7 +827,6 @@
             <rdf:Description rdf:about="https://w3id.org/bcore/comp#BoxGirder"/>
             <rdf:Description rdf:about="https://w3id.org/bcore/comp#IBeam"/>
             <rdf:Description rdf:about="https://w3id.org/bcore/comp#Slab"/>
-            <rdf:Description rdf:about="https://w3id.org/bcore/comp#SteelIBeam"/>
             <rdf:Description rdf:about="https://w3id.org/bcore/comp#TBeam"/>
             <rdf:Description rdf:about="https://w3id.org/bcore/comp#TrussGirder"/>
         </owl:members>

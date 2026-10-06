@@ -19,15 +19,13 @@
     }, {
       "@id" : "https://w3id.org/bcore/comp#Slab"
     }, {
-      "@id" : "https://w3id.org/bcore/comp#SteelIBeam"
-    }, {
       "@id" : "https://w3id.org/bcore/comp#TBeam"
     }, {
       "@id" : "https://w3id.org/bcore/comp#TrussGirder"
     } ]
   } ]
 }, {
-  "@id" : "_:genid18",
+  "@id" : "_:genid17",
   "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
   "http://www.w3.org/2002/07/owl#members" : [ {
     "@list" : [ {
@@ -41,7 +39,7 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid23",
+  "@id" : "_:genid22",
   "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
   "http://www.w3.org/2002/07/owl#members" : [ {
     "@list" : [ {

@@ -1,8 +1,8 @@
+@prefix bcorecomp: <https://w3id.org/bcore/comp#> .
 @prefix bcore: <https://w3id.org/bcore#> .
 @prefix brot: <https://w3id.org/brot#> .
 @prefix brcomp: <https://w3id.org/brcomp#> .
 @prefix infraspatialot: <https://dtc-ontology.cms.ed.tum.de/infraspatialot#> .
-
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
@@ -594,7 +594,6 @@ xsd:date rdf:type rdfs:Datatype .
   owl:members ( :BoxGirder
                 :IBeam
                 :Slab
-                :SteelIBeam
                 :TBeam
                 :TrussGirder
               )
