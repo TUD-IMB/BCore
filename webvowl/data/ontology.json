@@ -25,11 +25,6 @@
       "creator" : [ {
         "identifier" : "creator",
         "language" : "undefined",
-        "value" : "Xiaoli Song",
-        "type" : "label"
-      }, {
-        "identifier" : "creator",
-        "language" : "undefined",
         "value" : "Johannes Reimer",
         "type" : "label"
       }, {
@@ -41,6 +36,11 @@
         "identifier" : "creator",
         "language" : "undefined",
         "value" : "Morris Florek",
+        "type" : "label"
+      }, {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "Xiaoli Song",
         "type" : "label"
       } ],
       "contributor" : [ {
@@ -70,13 +70,7 @@
       "modified" : [ {
         "identifier" : "modified",
         "language" : "undefined",
-        "value" : "2026-09-30",
-        "type" : "label"
-      } ],
-      "codeRepository" : [ {
-        "identifier" : "codeRepository",
-        "language" : "undefined",
-        "value" : "https://github.com/TUD-IMB/BCore",
+        "value" : "2026-10-07",
         "type" : "label"
       } ],
       "abstract" : [ {
@@ -89,6 +83,12 @@
         "identifier" : "versionInfo",
         "language" : "undefined",
         "value" : "0.1.2",
+        "type" : "label"
+      } ],
+      "codeRepository" : [ {
+        "identifier" : "codeRepository",
+        "language" : "undefined",
+        "value" : "https://github.com/TUD-IMB/BCore",
         "type" : "label"
       } ],
       "title" : [ {
@@ -125,7 +125,7 @@
     "id" : "14",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "23",
+    "id" : "19",
     "type" : "owl:Class"
   }, {
     "id" : "24",
@@ -197,7 +197,7 @@
     "id" : "54",
     "type" : "owl:Class"
   }, {
-    "id" : "66",
+    "id" : "64",
     "type" : "owl:Class"
   }, {
     "id" : "10",
@@ -218,7 +218,7 @@
     "id" : "33",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "21",
+    "id" : "22",
     "type" : "owl:Class"
   }, {
     "id" : "1",
@@ -242,7 +242,7 @@
     "id" : "58",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "20",
+    "id" : "21",
     "type" : "owl:Class"
   }, {
     "id" : "99",
@@ -257,7 +257,7 @@
     "id" : "116",
     "type" : "owl:unionOf"
   }, {
-    "id" : "64",
+    "id" : "66",
     "type" : "rdfs:Datatype"
   }, {
     "id" : "78",
@@ -347,7 +347,7 @@
       "en" : "line localisation (describes a line object which is defined by a start point and an end point and is used for linear referencing according to the principles defined in ISO 19148)"
     },
     "attributes" : [ "external" ],
-    "id" : "23",
+    "id" : "19",
     "superClasses" : [ "10" ]
   }, {
     "iri" : "https://w3id.org/bcore#Country",
@@ -566,7 +566,7 @@
       "de" : "Region/Bundesland",
       "en" : "region/federal state"
     },
-    "id" : "66",
+    "id" : "64",
     "superClasses" : [ "7" ]
   }, {
     "iri" : "https://dtc-ontology.cms.ed.tum.de/infraspatialot#Localisation",
@@ -577,7 +577,7 @@
       "IRI-based" : "Localisation",
       "en" : "localisation"
     },
-    "subClasses" : [ "23" ],
+    "subClasses" : [ "19" ],
     "comment" : {
       "de" : "Lokalisierung (Standort; beschreibt einen geografischen Ort in Bezug auf ein lineares Referenzelement gemäß den in ISO 19148 festgelegten Grundsätzen)",
       "en" : "localisation (location; describes a geographic place in relation to a linear reference element according to the principles defined in ISO 19148)"
@@ -632,7 +632,7 @@
       "de" : "Trasse/ Linienführung einer linearen Infrastruktur",
       "en" : "route or alignment of a linear infrastructure"
     },
-    "id" : "21"
+    "id" : "22"
   }, {
     "iri" : "https://w3id.org/brot#SpatialZone",
     "equivalent" : [ "7" ],
@@ -643,12 +643,12 @@
       "IRI-based" : "SpatialZone",
       "en" : "spatial zone"
     },
-    "subClasses" : [ "0", "38", "20" ],
+    "subClasses" : [ "0", "38", "21" ],
     "comment" : {
       "de" : "Volumen, das ein materielles oder ideelles Objekt umschließt",
       "en" : "volume that encloses a physical or abstract object"
     },
-    "attributes" : [ "equivalent", "external" ],
+    "attributes" : [ "external", "equivalent" ],
     "id" : "1"
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#date",
@@ -714,7 +714,7 @@
       "en" : "Structure designed to span an obstacle, allowing vehicles, pedestrians, and other loads to pass across (en.wikipedia.org/wiki/Bridge)."
     },
     "attributes" : [ "external" ],
-    "id" : "20",
+    "id" : "21",
     "superClasses" : [ "1" ]
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
@@ -739,13 +739,13 @@
     }
   }, {
     "instances" : 0,
-    "union" : [ "5", "20" ],
-    "attributes" : [ "union", "anonymous" ],
+    "union" : [ "5", "21" ],
+    "attributes" : [ "anonymous", "union" ],
     "id" : "116"
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#decimal",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "64",
+    "id" : "66",
     "label" : {
       "IRI-based" : "decimal"
     }
@@ -781,12 +781,12 @@
       "IRI-based" : "Zone",
       "en" : "zone"
     },
-    "subClasses" : [ "54", "24", "66", "34" ],
+    "subClasses" : [ "54", "24", "64", "34" ],
     "comment" : {
       "de" : "Räumliche Zone (Volumen, das ein materielles oder ideelles Objekt umschließt)",
       "en" : "spatial zone (volume that encloses a physical or abstract object)"
     },
-    "attributes" : [ "equivalent", "external" ],
+    "attributes" : [ "external", "equivalent" ],
     "id" : "7"
   } ],
   "property" : [ {
@@ -805,7 +805,7 @@
     "id" : "15",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "19",
+    "id" : "20",
     "type" : "owl:objectProperty"
   }, {
     "id" : "29",
@@ -925,7 +925,7 @@
     "id" : "91",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "22",
+    "id" : "23",
     "type" : "owl:objectProperty"
   }, {
     "id" : "94",
@@ -1032,7 +1032,7 @@
       "de" : "ein Teil der Zone liegt in einer anderen Zone",
       "en" : "part of the zone lies within another zone"
     },
-    "attributes" : [ "object", "symmetric", "external" ],
+    "attributes" : [ "object", "external", "symmetric" ],
     "id" : "6"
   }, {
     "iri" : "https://w3id.org/brot#aggregates",
@@ -1096,21 +1096,21 @@
     "id" : "15"
   }, {
     "iri" : "https://w3id.org/bcore#carriesRoute",
-    "inverse" : "22",
+    "inverse" : "23",
     "baseIri" : "https://w3id.org/bcore",
-    "range" : "21",
+    "range" : "22",
     "label" : {
       "de" : "überführt Trasse",
       "IRI-based" : "carriesRoute",
       "en" : "carries route"
     },
-    "domain" : "20",
+    "domain" : "21",
     "comment" : {
       "de" : "Brücke überführt Trasse",
       "en" : "bridge carries route"
     },
     "attributes" : [ "object" ],
-    "id" : "19"
+    "id" : "20"
   }, {
     "iri" : "https://w3id.org/bcore#Volume",
     "baseIri" : "https://w3id.org/bcore",
@@ -1133,7 +1133,7 @@
       "de" : "metrisches Volumen des Bauteils",
       "en" : "volume of the component"
     },
-    "attributes" : [ "functional", "datatype" ],
+    "attributes" : [ "datatype", "functional" ],
     "id" : "29"
   }, {
     "iri" : "https://w3id.org/brcomp#width",
@@ -1157,7 +1157,7 @@
       "de" : "transversaler Abstand der Enden eines Bauteils/ Bauteilquerschnitts",
       "en" : "width/ broadth: transversal distance of the ends of the component/ component's cross section"
     },
-    "attributes" : [ "functional", "datatype", "external" ],
+    "attributes" : [ "datatype", "functional", "external" ],
     "id" : "32"
   }, {
     "iri" : "https://w3id.org/bcore#bridgesZone",
@@ -1168,7 +1168,7 @@
       "IRI-based" : "bridgesZone",
       "en" : "bridges zone"
     },
-    "domain" : "20",
+    "domain" : "21",
     "comment" : {
       "de" : "Brücke überquert Zone",
       "en" : "bridge bridges zone"
@@ -1178,7 +1178,7 @@
   }, {
     "iri" : "https://w3id.org/bcore#isWayPointOf",
     "baseIri" : "https://w3id.org/bcore",
-    "range" : "23",
+    "range" : "19",
     "label" : {
       "de" : "ist Wegpunkt von",
       "IRI-based" : "isWayPointOf",
@@ -1220,7 +1220,7 @@
       "en" : "has waypoint at"
     },
     "superproperty" : [ "15" ],
-    "domain" : "23",
+    "domain" : "19",
     "comment" : {
       "de" : "Punkt auf der Linienlokalisierung",
       "en" : "point of the line localisation"
@@ -1258,7 +1258,7 @@
       "de" : "Name des geografischen Punktes",
       "en" : "name of the geographic point"
     },
-    "attributes" : [ "functional", "datatype" ],
+    "attributes" : [ "datatype", "functional" ],
     "id" : "53"
   }, {
     "iri" : "https://w3id.org/bcore#isLocatedInZone",
@@ -1279,13 +1279,13 @@
   }, {
     "iri" : "https://w3id.org/bcore#crossesRoute",
     "baseIri" : "https://w3id.org/bcore",
-    "range" : "21",
+    "range" : "22",
     "label" : {
       "de" : "kreuzt Trasse",
       "IRI-based" : "crossesRoute",
       "en" : "crosses route"
     },
-    "domain" : "21",
+    "domain" : "22",
     "comment" : {
       "de" : "Trasse kreuzt Trasse im Lageplan (ohne Beachtung der Altitude)",
       "en" : "route crosses route on the site plan (without regard of the altitude)"
@@ -1301,7 +1301,7 @@
       "IRI-based" : "BridgeLoadCase",
       "en" : "bridge load case"
     },
-    "domain" : "20",
+    "domain" : "21",
     "comment" : {
       "de" : "maximaler Lastfall, für den die Brücke bemessen wurde (z.B. \"LM1\" oder \"BK30/60\" in Deutschland)",
       "en" : "maximum load case the bridge is designed for (e.g., \"LM1\" or \"BK30/60\" in Germany)"
@@ -1333,7 +1333,7 @@
       "IRI-based" : "crossesZone",
       "en" : "crosses zone"
     },
-    "domain" : "21",
+    "domain" : "22",
     "comment" : {
       "de" : "Trasse durchquert Zone",
       "en" : "route crosses zone"
@@ -1365,9 +1365,25 @@
     "attributes" : [ "object" ],
     "id" : "62"
   }, {
+    "iri" : "https://w3id.org/bcore#RegionISOCode",
+    "baseIri" : "https://w3id.org/bcore",
+    "range" : "25",
+    "label" : {
+      "de" : "Regionalcode ISO",
+      "IRI-based" : "RegionISOCode",
+      "en" : "region ISO code"
+    },
+    "domain" : "64",
+    "comment" : {
+      "de" : "Regionalcode nach ISO-3166-2",
+      "en" : "regional code according to ISO 3166-2"
+    },
+    "attributes" : [ "datatype", "functional" ],
+    "id" : "63"
+  }, {
     "iri" : "https://w3id.org/bcore#Altitude",
     "baseIri" : "https://w3id.org/bcore",
-    "range" : "64",
+    "range" : "66",
     "annotations" : {
       "unitText" : [ {
         "identifier" : "unitText",
@@ -1386,23 +1402,7 @@
       "de" : "Höhe ü. NN (bezogen auf das lokal gültige amtliche Höhensystem)",
       "en" : "elevation above sea level (according to the locally applicable official elevation system)"
     },
-    "attributes" : [ "functional", "datatype" ],
-    "id" : "63"
-  }, {
-    "iri" : "https://w3id.org/bcore#RegionISOCode",
-    "baseIri" : "https://w3id.org/bcore",
-    "range" : "25",
-    "label" : {
-      "de" : "Regionalcode ISO",
-      "IRI-based" : "RegionISOCode",
-      "en" : "region ISO code"
-    },
-    "domain" : "66",
-    "comment" : {
-      "de" : "Regionalcode nach ISO-3166-2",
-      "en" : "regional code according to ISO 3166-2"
-    },
-    "attributes" : [ "functional", "datatype" ],
+    "attributes" : [ "datatype", "functional" ],
     "id" : "65"
   }, {
     "iri" : "https://w3id.org/brot#containsComponent",
@@ -1434,11 +1434,11 @@
       "de" : "Ländercode nach ISO-3166-1 (ALPHA-2)",
       "en" : "country code according to ISO 3166-1 (ALPHA-2)"
     },
-    "attributes" : [ "functional", "datatype" ],
+    "attributes" : [ "datatype", "functional" ],
     "id" : "68"
   }, {
     "range" : "7",
-    "domain" : "66",
+    "domain" : "64",
     "attributes" : [ "object", "anonymous" ],
     "id" : "69"
   }, {
@@ -1458,13 +1458,13 @@
     "id" : "72"
   }, {
     "range" : "1",
-    "domain" : "20",
+    "domain" : "21",
     "attributes" : [ "object", "anonymous" ],
     "id" : "73"
   }, {
     "iri" : "https://w3id.org/bcore#isPartOfRoute",
     "baseIri" : "https://w3id.org/bcore",
-    "range" : "21",
+    "range" : "22",
     "label" : {
       "de" : "ist Teil von Trasse",
       "IRI-based" : "isPartOfRoute",
@@ -1499,7 +1499,7 @@
       "de" : "Kilometrierung des Trassenpunktes",
       "en" : "kilometer marking of point on the infrastructure route"
     },
-    "attributes" : [ "functional", "datatype" ],
+    "attributes" : [ "datatype", "functional" ],
     "id" : "75"
   }, {
     "iri" : "https://w3id.org/bcore#ZoneName",
@@ -1515,7 +1515,7 @@
       "de" : "Name der Zone",
       "en" : "name of the zone"
     },
-    "attributes" : [ "functional", "datatype" ],
+    "attributes" : [ "datatype", "functional" ],
     "id" : "76"
   }, {
     "iri" : "https://w3id.org/bcore/media#MediaFileSize",
@@ -1539,7 +1539,7 @@
       "de" : "Dateigröße einer digitalen Mediendatei",
       "en" : "file size of a digital media file"
     },
-    "attributes" : [ "functional", "datatype", "external" ],
+    "attributes" : [ "datatype", "functional", "external" ],
     "id" : "77"
   }, {
     "iri" : "https://w3id.org/bcore#BridgeID",
@@ -1550,12 +1550,12 @@
       "IRI-based" : "BridgeID",
       "en" : "bridge ID"
     },
-    "domain" : "20",
+    "domain" : "21",
     "comment" : {
       "de" : "Identifikationsnummer der Brücke",
       "en" : "bridge identification number"
     },
-    "attributes" : [ "functional", "datatype" ],
+    "attributes" : [ "datatype", "functional" ],
     "id" : "79"
   }, {
     "iri" : "https://w3id.org/reloc#meetRear",
@@ -1590,12 +1590,12 @@
       "IRI-based" : "InfrastructureRouteWidth",
       "en" : "infrastructure route width"
     },
-    "domain" : "21",
+    "domain" : "22",
     "comment" : {
       "de" : "Querschnittsbreite der Infrastrukturtrasse",
       "en" : "cross-sectional width of the infrastructure route"
     },
-    "attributes" : [ "functional", "datatype" ],
+    "attributes" : [ "datatype", "functional" ],
     "id" : "81"
   }, {
     "range" : "1",
@@ -1621,7 +1621,7 @@
       "IRI-based" : "startsAt",
       "en" : "starts at"
     },
-    "domain" : "23",
+    "domain" : "19",
     "comment" : {
       "de" : "Startpunkt der Linienlokalisierung",
       "en" : "starting point of the line localisation"
@@ -1647,7 +1647,7 @@
       "de" : "Boolean: wahr, wenn die Mediendatei digital ist",
       "en" : "boolean: true, if media file is digital"
     },
-    "attributes" : [ "functional", "datatype", "external" ],
+    "attributes" : [ "datatype", "functional", "external" ],
     "id" : "87"
   }, {
     "iri" : "https://w3id.org/bcore#endsAt",
@@ -1658,7 +1658,7 @@
       "IRI-based" : "endsAt",
       "en" : "ends at"
     },
-    "domain" : "23",
+    "domain" : "19",
     "comment" : {
       "de" : "Endpunkt der Linienlokalisierung",
       "en" : "end point of the line localisation"
@@ -1672,7 +1672,7 @@
     "id" : "89"
   }, {
     "range" : "10",
-    "domain" : "23",
+    "domain" : "19",
     "attributes" : [ "object", "anonymous" ],
     "id" : "90"
   }, {
@@ -1697,35 +1697,35 @@
       "de" : "vertikaler Abstand der Enden des Bauteils/Bauteilquerschnitts",
       "en" : "vertical distance of the ends of the component/ component's cross section"
     },
-    "attributes" : [ "functional", "datatype", "external" ],
+    "attributes" : [ "datatype", "functional", "external" ],
     "id" : "91"
   }, {
     "iri" : "https://w3id.org/bcore#traversesBridge",
     "baseIri" : "https://w3id.org/bcore",
-    "range" : "20",
+    "range" : "21",
     "label" : {
       "de" : "überquert Brücke",
       "IRI-based" : "traversesBridge",
       "en" : "traverses bridge"
     },
-    "domain" : "21",
+    "domain" : "22",
     "comment" : {
       "de" : "Trasse überquert/führt über Brücke",
       "en" : "route crosses/goes over bridge"
     },
     "attributes" : [ "object" ],
-    "id" : "22"
+    "id" : "23"
   }, {
     "iri" : "https://w3id.org/bcore#hasPartialStructure",
     "inverse" : "95",
     "baseIri" : "https://w3id.org/bcore",
-    "range" : "20",
+    "range" : "21",
     "label" : {
       "de" : "enthält Brückenzug",
       "IRI-based" : "hasPartialStructure",
       "en" : "contains partial structure"
     },
-    "domain" : "20",
+    "domain" : "21",
     "comment" : {
       "de" : "Brücke besitzt Brückenzug",
       "en" : "bridge contains partial structure (bridge section)"
@@ -1766,12 +1766,12 @@
       "IRI-based" : "InfrastructureRouteClearanceHeight",
       "en" : "infrastructure route clearance height"
     },
-    "domain" : "21",
+    "domain" : "22",
     "comment" : {
       "de" : "Höhe des Lichtraumprofils der Trasse",
       "en" : "height of the route's clearance profile"
     },
-    "attributes" : [ "functional", "datatype" ],
+    "attributes" : [ "datatype", "functional" ],
     "id" : "97"
   }, {
     "iri" : "https://w3id.org/bcore#BridgeName",
@@ -1782,12 +1782,12 @@
       "IRI-based" : "BridgeName",
       "en" : "bridge name"
     },
-    "domain" : "20",
+    "domain" : "21",
     "comment" : {
       "de" : "Name der Brücke",
       "en" : "name of the bridge"
     },
-    "attributes" : [ "functional", "datatype" ],
+    "attributes" : [ "datatype", "functional" ],
     "id" : "98"
   }, {
     "iri" : "https://w3id.org/bcore#BridgePlanningStartDate",
@@ -1806,12 +1806,12 @@
       "IRI-based" : "BridgePlanningStartDate",
       "en" : "bridge planning start date"
     },
-    "domain" : "20",
+    "domain" : "21",
     "comment" : {
       "de" : "Startdatum der Planungsphase der Brücke",
       "en" : "start date of the bridge's planning phase"
     },
-    "attributes" : [ "functional", "datatype" ],
+    "attributes" : [ "datatype", "functional" ],
     "id" : "100"
   }, {
     "iri" : "https://w3id.org/bcore#MediaFilePath",
@@ -1827,7 +1827,7 @@
       "de" : "lokaler Dateipfad oder Webadresse (URL) einer Mediendatei",
       "en" : "local or web path (URL) of a media file"
     },
-    "attributes" : [ "functional", "datatype" ],
+    "attributes" : [ "datatype", "functional" ],
     "id" : "102"
   }, {
     "iri" : "https://w3id.org/bcore#Latitude",
@@ -1843,7 +1843,7 @@
       "de" : "geografische Breite",
       "en" : "geographic latitude"
     },
-    "attributes" : [ "functional", "datatype" ],
+    "attributes" : [ "datatype", "functional" ],
     "id" : "103"
   }, {
     "iri" : "https://w3id.org/bcore#BridgeStatus",
@@ -1854,7 +1854,7 @@
       "IRI-based" : "BridgeStatus",
       "en" : "bridge status"
     },
-    "domain" : "20",
+    "domain" : "21",
     "comment" : {
       "de" : "Status der Brücke",
       "en" : "status of the bridge"
@@ -1891,7 +1891,7 @@
       "de" : "Name der Lokalisierung (Standort)",
       "en" : "name of the localisation (location)"
     },
-    "attributes" : [ "functional", "datatype" ],
+    "attributes" : [ "datatype", "functional" ],
     "id" : "106"
   }, {
     "iri" : "https://w3id.org/bcore#Longitude",
@@ -1907,7 +1907,7 @@
       "de" : "geografische Länge",
       "en" : "geographic longitude"
     },
-    "attributes" : [ "functional", "datatype" ],
+    "attributes" : [ "datatype", "functional" ],
     "id" : "107"
   }, {
     "iri" : "https://w3id.org/bcore#InfrastructureRouteName",
@@ -1918,7 +1918,7 @@
       "IRI-based" : "InfrastructureRouteName",
       "en" : "infrastructure route name"
     },
-    "domain" : "21",
+    "domain" : "22",
     "comment" : {
       "de" : "Name oder Bezeichnung der Infrastrukturtrasse",
       "en" : "name or designation of the infrastructure route"
@@ -1928,13 +1928,13 @@
   }, {
     "iri" : "https://w3id.org/bcore#isPartialStructureOf",
     "baseIri" : "https://w3id.org/bcore",
-    "range" : "20",
+    "range" : "21",
     "label" : {
       "de" : "ist Brückenzug von",
       "IRI-based" : "isPartialStructureOf",
       "en" : "is partial structure of"
     },
-    "domain" : "20",
+    "domain" : "21",
     "comment" : {
       "de" : "Brückenzug ist Teil genau einer Brücke",
       "en" : "bridge section is part of exactly one bridge"
@@ -1958,12 +1958,12 @@
       "IRI-based" : "BridgeConstructionEndDate",
       "en" : "bridge construction end date"
     },
-    "domain" : "20",
+    "domain" : "21",
     "comment" : {
       "de" : "Enddatum des Baus der Brücke (Fertigstellung)",
       "en" : "end date of the bridge's construction (completion)"
     },
-    "attributes" : [ "functional", "datatype" ],
+    "attributes" : [ "datatype", "functional" ],
     "id" : "113"
   }, {
     "iri" : "https://w3id.org/bcore#Density",
@@ -1987,7 +1987,7 @@
       "de" : "durchschnittliche Massendichte des Materials",
       "en" : "average mass density of material"
     },
-    "attributes" : [ "functional", "datatype" ],
+    "attributes" : [ "datatype", "functional" ],
     "id" : "114"
   }, {
     "iri" : "https://w3id.org/bcore#BridgePlanningEndDate",
@@ -2006,12 +2006,12 @@
       "IRI-based" : "BridgePlanningEndDate",
       "en" : "bridge planning end date"
     },
-    "domain" : "20",
+    "domain" : "21",
     "comment" : {
       "de" : "Enddatum der Planungsphase der Brücke",
       "en" : "end date of the bridge's planning phase"
     },
-    "attributes" : [ "functional", "datatype" ],
+    "attributes" : [ "datatype", "functional" ],
     "id" : "115"
   }, {
     "iri" : "https://w3id.org/bot#containsZone",
@@ -2055,7 +2055,7 @@
       "IRI-based" : "includesLocalisation",
       "en" : "includes localisation"
     },
-    "domain" : "21",
+    "domain" : "22",
     "comment" : {
       "de" : "Trasse enthält Lokalisation (Trassenpunkt)",
       "en" : "route contains localisation (route point)"
@@ -2079,12 +2079,12 @@
       "IRI-based" : "BridgeLength",
       "en" : "bridge length"
     },
-    "domain" : "20",
+    "domain" : "21",
     "comment" : {
       "de" : "Länge der Brücke",
       "en" : "length of the bridge"
     },
-    "attributes" : [ "functional", "datatype" ],
+    "attributes" : [ "datatype", "functional" ],
     "id" : "118"
   }, {
     "iri" : "https://w3id.org/reloc#meetTop",
@@ -2124,18 +2124,18 @@
       "de" : "longitudinaler Abstand der Enden eines Bauteils",
       "en" : "longitudinal distance of the ends of a component"
     },
-    "attributes" : [ "functional", "datatype", "external" ],
+    "attributes" : [ "datatype", "functional", "external" ],
     "id" : "120"
   }, {
     "iri" : "https://w3id.org/bcore#bridgesRoute",
     "baseIri" : "https://w3id.org/bcore",
-    "range" : "21",
+    "range" : "22",
     "label" : {
       "de" : "überquert Trasse",
       "IRI-based" : "bridgesRoute",
       "en" : "bridges route"
     },
-    "domain" : "20",
+    "domain" : "21",
     "comment" : {
       "de" : "Brücke überquert Trasse",
       "en" : "bridge bridges route"
@@ -2197,7 +2197,7 @@
       "de" : "lokale Z-Koordinate",
       "en" : "local Z-coordinate"
     },
-    "attributes" : [ "functional", "datatype" ],
+    "attributes" : [ "datatype", "functional" ],
     "id" : "124"
   }, {
     "iri" : "https://w3id.org/bcore#isPartOfZone",
@@ -2214,7 +2214,7 @@
       "de" : "Bauteil ist Teil genau einer Zone (z.B. Brücke)",
       "en" : "component is part of exactly one zone (e.g., bridge)"
     },
-    "attributes" : [ "object", "functional" ],
+    "attributes" : [ "object" ],
     "id" : "125"
   }, {
     "iri" : "https://w3id.org/bcore#LocalY",
@@ -2238,7 +2238,7 @@
       "de" : "lokale Y-Koordinate",
       "en" : "local Y-coordinate"
     },
-    "attributes" : [ "functional", "datatype" ],
+    "attributes" : [ "datatype", "functional" ],
     "id" : "126"
   }, {
     "iri" : "https://w3id.org/bcore#LocalX",
@@ -2262,7 +2262,7 @@
       "de" : "lokale X-Koordinate",
       "en" : "local X-coordinate"
     },
-    "attributes" : [ "functional", "datatype" ],
+    "attributes" : [ "datatype", "functional" ],
     "id" : "127"
   }, {
     "iri" : "https://w3id.org/bcore#BridgeConstructionStartDate",
@@ -2281,12 +2281,12 @@
       "IRI-based" : "BridgeConstructionStartDate",
       "en" : "bridge construction start date"
     },
-    "domain" : "20",
+    "domain" : "21",
     "comment" : {
       "de" : "Startdatum des Baus der Brücke",
       "en" : "start date of the bridge's construction"
     },
-    "attributes" : [ "functional", "datatype" ],
+    "attributes" : [ "datatype", "functional" ],
     "id" : "128"
   } ]
 }

@@ -142,8 +142,7 @@
     "@value" : "https://creativecommons.org/licenses/by/4.0/deed.en"
   } ],
   "http://purl.org/dc/terms/modified" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#date",
-    "@value" : "2026-09-30"
+    "@value" : "2026-10-07"
   } ],
   "http://purl.org/ontology/bibo/status" : [ {
     "@value" : "Ontology Specification Draft"
@@ -1364,7 +1363,7 @@
   } ]
 }, {
   "@id" : "https://w3id.org/bcore#isPartOfZone",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "de",
     "@value" : "Bauteil ist Teil genau einer Zone (z.B. Brücke)"

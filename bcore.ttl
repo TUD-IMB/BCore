@@ -22,7 +22,7 @@
                                                              "Xiaoli Song" ;
                           <http://purl.org/dc/terms/description> "Core ontology for the representation of bridges."@en ;
                           <http://purl.org/dc/terms/license> "https://creativecommons.org/licenses/by/4.0/deed.en" ;
-                          <http://purl.org/dc/terms/modified> "2026-09-30"^^xsd:date ;
+                          <http://purl.org/dc/terms/modified> "2026-10-07" ;
                           <http://purl.org/ontology/bibo/status> "Ontology Specification Draft" ;
                           <http://purl.org/vocab/vann/preferredNamespacePrefix> "bcore" ;
                           rdfs:label "Bridge Core Ontology"@en ;
@@ -281,7 +281,6 @@ xsd:date rdf:type rdfs:Datatype .
 ###  https://w3id.org/bcore#isPartOfZone
 :isPartOfZone rdf:type owl:ObjectProperty ;
               owl:inverseOf <https://w3id.org/brot#containsComponent> ;
-              rdf:type owl:FunctionalProperty ;
               rdfs:domain <https://w3id.org/brot#Component> ;
               rdfs:range <https://w3id.org/brot#SpatialZone> ;
               rdfs:comment "Bauteil ist Teil genau einer Zone (z.B. Brücke)"@de ,

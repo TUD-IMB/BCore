@@ -27,7 +27,7 @@
         <terms:creator>Xiaoli Song</terms:creator>
         <terms:description xml:lang="en">Core ontology for the representation of bridges.</terms:description>
         <terms:license>https://creativecommons.org/licenses/by/4.0/deed.en</terms:license>
-        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-09-30</terms:modified>
+        <terms:modified>2026-10-07</terms:modified>
         <bibo:status>Ontology Specification Draft</bibo:status>
         <vann:preferredNamespacePrefix>bcore</vann:preferredNamespacePrefix>
         <rdfs:label xml:lang="en">Bridge Core Ontology</rdfs:label>
@@ -392,7 +392,6 @@
 
     <owl:ObjectProperty rdf:about="https://w3id.org/bcore#isPartOfZone">
         <owl:inverseOf rdf:resource="https://w3id.org/brot#containsComponent"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="https://w3id.org/brot#Component"/>
         <rdfs:range rdf:resource="https://w3id.org/brot#SpatialZone"/>
         <rdfs:comment xml:lang="de">Bauteil ist Teil genau einer Zone (z.B. Brücke)</rdfs:comment>

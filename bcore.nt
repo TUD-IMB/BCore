@@ -9,7 +9,7 @@
 <https://w3id.org/bcore> <http://purl.org/dc/terms/creator> "Xiaoli Song" .
 <https://w3id.org/bcore> <http://purl.org/dc/terms/description> "Core ontology for the representation of bridges."@en .
 <https://w3id.org/bcore> <http://purl.org/dc/terms/license> "https://creativecommons.org/licenses/by/4.0/deed.en" .
-<https://w3id.org/bcore> <http://purl.org/dc/terms/modified> "2026-09-30"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://w3id.org/bcore> <http://purl.org/dc/terms/modified> "2026-10-07" .
 <https://w3id.org/bcore> <http://purl.org/ontology/bibo/status> "Ontology Specification Draft" .
 <https://w3id.org/bcore> <http://purl.org/vocab/vann/preferredNamespacePrefix> "bcore" .
 <https://w3id.org/bcore> <http://www.w3.org/2000/01/rdf-schema#label> "Bridge Core Ontology"@en .
@@ -255,7 +255,6 @@ _:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 # https://w3id.org/bcore#isPartOfZone
 <https://w3id.org/bcore#isPartOfZone> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://w3id.org/bcore#isPartOfZone> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/brot#containsComponent> .
-<https://w3id.org/bcore#isPartOfZone> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
 <https://w3id.org/bcore#isPartOfZone> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/brot#Component> .
 <https://w3id.org/bcore#isPartOfZone> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/brot#SpatialZone> .
 <https://w3id.org/bcore#isPartOfZone> <http://www.w3.org/2000/01/rdf-schema#comment> "Bauteil ist Teil genau einer Zone (z.B. Brücke)"@de .
