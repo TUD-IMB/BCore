@@ -111,12 +111,14 @@
   "@id" : "https://w3id.org/bcore",
   "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
   "http://purl.org/dc/elements/1.1/abstract" : [ {
+    "@language" : "de",
+    "@value" : "Die „Bridge Core Ontology“ (BCore) ermöglicht die Darstellung einer Brücke, ihrer Bauteile und ihrer Materialien sowie der damit verbundenen Infrastruktur und Mediendateien und der Umgebung und Lage der Brücke. BCore wurde vom Institut für Massivbau (IMB) an der Technischen Universität Dresden (TUD) entwickelt."
+  }, {
     "@language" : "en",
     "@value" : "The Bridge Core Ontology (BCore) enables the representation of a bridge structure, its components and material, as well as the infrastructure and media files connected to it and the environment and location of the bridge. BCore is created by the Institute of Concrete Structures (IMB) at the Dresden University of Technology (TUD)."
   } ],
   "http://purl.org/dc/elements/1.1/title" : [ {
-    "@language" : "en",
-    "@value" : "Bridge Core Ontology for Institute of Concrete Structures, Dresden University of Technology"
+    "@value" : "Bridge Core Ontology (BCore)"
   } ],
   "http://purl.org/dc/terms/contributor" : [ {
     "@value" : "Jakob Vogt"
@@ -137,12 +139,16 @@
   "http://purl.org/dc/terms/description" : [ {
     "@language" : "en",
     "@value" : "Core ontology for the representation of bridges."
+  }, {
+    "@language" : "de",
+    "@value" : "Kern-Ontologie für die Repräsentation von Brücken"
   } ],
   "http://purl.org/dc/terms/license" : [ {
     "@value" : "https://creativecommons.org/licenses/by/4.0/deed.en"
   } ],
   "http://purl.org/dc/terms/modified" : [ {
-    "@value" : "2026-10-07"
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2026-10-26"
   } ],
   "http://purl.org/ontology/bibo/status" : [ {
     "@value" : "Ontology Specification Draft"
@@ -151,7 +157,6 @@
     "@value" : "bcore"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
     "@value" : "Bridge Core Ontology"
   } ],
   "http://www.w3.org/2002/07/owl#versionInfo" : [ {

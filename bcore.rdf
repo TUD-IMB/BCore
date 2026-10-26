@@ -17,8 +17,9 @@
      xmlns:schema="https://schema.org/"
      xmlns:infraspatialot="https://dtc-ontology.cms.ed.tum.de/infraspatialot#">
     <owl:Ontology rdf:about="https://w3id.org/bcore">
+        <dc:abstract xml:lang="de">Die „Bridge Core Ontology“ (BCore) ermöglicht die Darstellung einer Brücke, ihrer Bauteile und ihrer Materialien sowie der damit verbundenen Infrastruktur und Mediendateien und der Umgebung und Lage der Brücke. BCore wurde vom Institut für Massivbau (IMB) an der Technischen Universität Dresden (TUD) entwickelt.</dc:abstract>
         <dc:abstract xml:lang="en">The Bridge Core Ontology (BCore) enables the representation of a bridge structure, its components and material, as well as the infrastructure and media files connected to it and the environment and location of the bridge. BCore is created by the Institute of Concrete Structures (IMB) at the Dresden University of Technology (TUD).</dc:abstract>
-        <dc:title xml:lang="en">Bridge Core Ontology for Institute of Concrete Structures, Dresden University of Technology</dc:title>
+        <dc:title>Bridge Core Ontology (BCore)</dc:title>
         <terms:contributor>Jakob Vogt</terms:contributor>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-11-06</terms:created>
         <terms:creator>Johannes Reimer</terms:creator>
@@ -26,11 +27,12 @@
         <terms:creator>Tim Noack</terms:creator>
         <terms:creator>Xiaoli Song</terms:creator>
         <terms:description xml:lang="en">Core ontology for the representation of bridges.</terms:description>
+        <terms:description xml:lang="de">Kern-Ontologie für die Repräsentation von Brücken</terms:description>
         <terms:license>https://creativecommons.org/licenses/by/4.0/deed.en</terms:license>
-        <terms:modified>2026-10-07</terms:modified>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-10-26</terms:modified>
         <bibo:status>Ontology Specification Draft</bibo:status>
         <vann:preferredNamespacePrefix>bcore</vann:preferredNamespacePrefix>
-        <rdfs:label xml:lang="en">Bridge Core Ontology</rdfs:label>
+        <rdfs:label>Bridge Core Ontology</rdfs:label>
         <owl:versionInfo>0.1.2</owl:versionInfo>
         <foaf:logo>https://raw.githubusercontent.com/TUD-IMB/BCore/main/BCore.svg</foaf:logo>
         <schema:codeRepository>https://github.com/TUD-IMB/BCore</schema:codeRepository>

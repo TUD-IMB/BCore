@@ -12,20 +12,22 @@
 @base <https://w3id.org/bcore#> .
 
 <https://w3id.org/bcore> rdf:type owl:Ontology ;
-                          <http://purl.org/dc/elements/1.1/abstract> "The Bridge Core Ontology (BCore) enables the representation of a bridge structure, its components and material, as well as the infrastructure and media files connected to it and the environment and location of the bridge. BCore is created by the Institute of Concrete Structures (IMB) at the Dresden University of Technology (TUD)."@en ;
-                          <http://purl.org/dc/elements/1.1/title> "Bridge Core Ontology for Institute of Concrete Structures, Dresden University of Technology"@en ;
+                          <http://purl.org/dc/elements/1.1/abstract> "Die „Bridge Core Ontology“ (BCore) ermöglicht die Darstellung einer Brücke, ihrer Bauteile und ihrer Materialien sowie der damit verbundenen Infrastruktur und Mediendateien und der Umgebung und Lage der Brücke. BCore wurde vom Institut für Massivbau (IMB) an der Technischen Universität Dresden (TUD) entwickelt."@de ,
+                                                                     "The Bridge Core Ontology (BCore) enables the representation of a bridge structure, its components and material, as well as the infrastructure and media files connected to it and the environment and location of the bridge. BCore is created by the Institute of Concrete Structures (IMB) at the Dresden University of Technology (TUD)."@en ;
+                          <http://purl.org/dc/elements/1.1/title> "Bridge Core Ontology (BCore)" ;
                           <http://purl.org/dc/terms/contributor> "Jakob Vogt" ;
                           <http://purl.org/dc/terms/created> "2025-11-06"^^xsd:date ;
                           <http://purl.org/dc/terms/creator> "Johannes Reimer" ,
                                                              "Morris Florek" ,
                                                              "Tim Noack" ,
                                                              "Xiaoli Song" ;
-                          <http://purl.org/dc/terms/description> "Core ontology for the representation of bridges."@en ;
+                          <http://purl.org/dc/terms/description> "Core ontology for the representation of bridges."@en ,
+                                                                 "Kern-Ontologie für die Repräsentation von Brücken"@de ;
                           <http://purl.org/dc/terms/license> "https://creativecommons.org/licenses/by/4.0/deed.en" ;
-                          <http://purl.org/dc/terms/modified> "2026-10-07" ;
+                          <http://purl.org/dc/terms/modified> "2026-10-26"^^xsd:date ;
                           <http://purl.org/ontology/bibo/status> "Ontology Specification Draft" ;
                           <http://purl.org/vocab/vann/preferredNamespacePrefix> "bcore" ;
-                          rdfs:label "Bridge Core Ontology"@en ;
+                          rdfs:label "Bridge Core Ontology" ;
                           owl:versionInfo "0.1.2" ;
                           <http://xmlns.com/foaf/0.1/logo> "https://raw.githubusercontent.com/TUD-IMB/BCore/main/BCore.svg" ;
                           <https://schema.org/codeRepository> "https://github.com/TUD-IMB/BCore" .
