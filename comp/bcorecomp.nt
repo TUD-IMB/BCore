@@ -1,19 +1,23 @@
 <https://w3id.org/bcore/comp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<https://w3id.org/bcore/comp> <http://purl.org/dc/elements/1.1/abstract> "Die „Bridge Core Ontology“ (BCore) ermöglicht die Darstellung einer Brücke, ihrer Bauteile und ihrer Materialien sowie der damit verbundenen Infrastruktur und Mediendateien und der Umgebung und Lage der Brücke. BCore wurde vom Institut für Massivbau (IMB) an der Technischen Universität Dresden (TUD) entwickelt. Diese Ontologie enthält die entsprechende Erweiterung für Brückenbauteile."@de .
 <https://w3id.org/bcore/comp> <http://purl.org/dc/elements/1.1/abstract> "The Bridge Core Ontology (BCore) enables the representation of a bridge structure, its components and material, as well as the infrastructure and media files connected to it and the environment and location of the bridge. BCore is created by the Institute of Concrete Structures (IMB) at the Dresden University of Technology (TUD). This ontology contains the corresponding components extension."@en .
-<https://w3id.org/bcore/comp> <http://purl.org/dc/elements/1.1/title> "Bridge Core Ontology for Institute of Concrete Structures, Dresden University of Technology – Components Extension"@en .
+<https://w3id.org/bcore/comp> <http://purl.org/dc/elements/1.1/title> "Bridge Core Ontology (BCore) - Bauteil-Erweiterung"@de .
+<https://w3id.org/bcore/comp> <http://purl.org/dc/elements/1.1/title> "Bridge Core Ontology (BCore) – Components Extension"@en .
 <https://w3id.org/bcore/comp> <http://purl.org/dc/terms/contributor> "Jakob Vogt" .
 <https://w3id.org/bcore/comp> <http://purl.org/dc/terms/created> "2025-11-06"^^<http://www.w3.org/2001/XMLSchema#date> .
 <https://w3id.org/bcore/comp> <http://purl.org/dc/terms/creator> "Johannes Reimer" .
 <https://w3id.org/bcore/comp> <http://purl.org/dc/terms/creator> "Morris Florek" .
 <https://w3id.org/bcore/comp> <http://purl.org/dc/terms/creator> "Tim Noack" .
 <https://w3id.org/bcore/comp> <http://purl.org/dc/terms/creator> "Xiaoli Song" .
+<https://w3id.org/bcore/comp> <http://purl.org/dc/terms/description> "Erweiterungsontologie zur Darstellung von Brückenbauteilen. Konzipiert für den Einsatz in Verbindung mit der BCore-Ontologie, ermöglicht jedoch auch die eigenständige Nutzung."@de .
 <https://w3id.org/bcore/comp> <http://purl.org/dc/terms/description> "Extension ontology for the representation of bridge components. Designed to work in conjunction with the BCore ontology but to also allow for external use."@en .
 <https://w3id.org/bcore/comp> <http://purl.org/dc/terms/license> "https://creativecommons.org/licenses/by/4.0/deed.en" .
-<https://w3id.org/bcore/comp> <http://purl.org/dc/terms/modified> "2026-09-30"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://w3id.org/bcore/comp> <http://purl.org/dc/terms/modified> "2026-10-26"^^<http://www.w3.org/2001/XMLSchema#date> .
 <https://w3id.org/bcore/comp> <http://purl.org/ontology/bibo/status> "Ontology Specification Draft" .
 <https://w3id.org/bcore/comp> <http://purl.org/vocab/vann/preferredNamespacePrefix> "bcorecomp" .
+<https://w3id.org/bcore/comp> <http://www.w3.org/2000/01/rdf-schema#label> "Bridge Core Ontology - Bauteil-Erweiterung"@de .
 <https://w3id.org/bcore/comp> <http://www.w3.org/2000/01/rdf-schema#label> "Bridge Core Ontology – Components Extension"@en .
-<https://w3id.org/bcore/comp> <http://www.w3.org/2002/07/owl#versionInfo> "0.1.2" .
+<https://w3id.org/bcore/comp> <http://www.w3.org/2002/07/owl#versionInfo> "0.1.3" .
 <https://w3id.org/bcore/comp> <http://xmlns.com/foaf/0.1/logo> "https://raw.githubusercontent.com/TUD-IMB/BCore/main/BCore.svg" .
 <https://w3id.org/bcore/comp> <https://schema.org/codeRepository> "https://github.com/TUD-IMB/BCore" .
 # 
@@ -95,10 +99,18 @@
 <https://w3id.org/bcore/comp#beginsAtSupport> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://w3id.org/bcore/comp#beginsAtSupport> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
 <https://w3id.org/bcore/comp#beginsAtSupport> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/bcore/comp#Span> .
-<https://w3id.org/bcore/comp#beginsAtSupport> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/brcomp#SubStructureComponent> .
+<https://w3id.org/bcore/comp#beginsAtSupport> <http://www.w3.org/2000/01/rdf-schema#range> _:genid1 .
+_:genid1 <http://www.w3.org/2002/07/owl#unionOf> _:genid3 .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid2 .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/brcomp#SubStructureComponent> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/bcore/comp#Pylon> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/bcore/comp#beginsAtSupport> <http://www.w3.org/2002/07/owl#propertyDisjointWith> <https://w3id.org/bcore/comp#endsAtSupport> .
-<https://w3id.org/bcore/comp#beginsAtSupport> <http://www.w3.org/2000/01/rdf-schema#comment> "Spannweite beginnt an einem Bauteil des Brückenunterbaus"@de .
-<https://w3id.org/bcore/comp#beginsAtSupport> <http://www.w3.org/2000/01/rdf-schema#comment> "span begins at a component of the bridge substructure"@en .
+<https://w3id.org/bcore/comp#beginsAtSupport> <http://www.w3.org/2000/01/rdf-schema#comment> "Spannweite beginnt an einem Bauteil des Brückenunterbaus oder an einem Pylonen"@de .
+<https://w3id.org/bcore/comp#beginsAtSupport> <http://www.w3.org/2000/01/rdf-schema#comment> "span begins at a component of the bridge substructure or at a pylon"@en .
 <https://w3id.org/bcore/comp#beginsAtSupport> <http://www.w3.org/2000/01/rdf-schema#label> "beginnt an Stützung"@de .
 <https://w3id.org/bcore/comp#beginsAtSupport> <http://www.w3.org/2000/01/rdf-schema#label> "begins at support"@en .
 # 
@@ -106,9 +118,17 @@
 <https://w3id.org/bcore/comp#endsAtSupport> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://w3id.org/bcore/comp#endsAtSupport> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
 <https://w3id.org/bcore/comp#endsAtSupport> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/bcore/comp#Span> .
-<https://w3id.org/bcore/comp#endsAtSupport> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/brcomp#SubStructureComponent> .
-<https://w3id.org/bcore/comp#endsAtSupport> <http://www.w3.org/2000/01/rdf-schema#comment> "Spannweite endet an einem Bauteil des Brückenunterbaus"@de .
-<https://w3id.org/bcore/comp#endsAtSupport> <http://www.w3.org/2000/01/rdf-schema#comment> "span ends at a component of the bridge substructure"@en .
+<https://w3id.org/bcore/comp#endsAtSupport> <http://www.w3.org/2000/01/rdf-schema#range> _:genid4 .
+_:genid4 <http://www.w3.org/2002/07/owl#unionOf> _:genid6 .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid5 .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/brcomp#SubStructureComponent> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/bcore/comp#Pylon> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/bcore/comp#endsAtSupport> <http://www.w3.org/2000/01/rdf-schema#comment> "Spannweite endet an einem Bauteil des Brückenunterbaus oder an einem Pylonen"@de .
+<https://w3id.org/bcore/comp#endsAtSupport> <http://www.w3.org/2000/01/rdf-schema#comment> "span ends at a component of the bridge substructure or at a pylon"@en .
 <https://w3id.org/bcore/comp#endsAtSupport> <http://www.w3.org/2000/01/rdf-schema#label> "endet an Stützung"@de .
 <https://w3id.org/bcore/comp#endsAtSupport> <http://www.w3.org/2000/01/rdf-schema#label> "ends at support"@en .
 # 
@@ -137,17 +157,21 @@
 # https://w3id.org/bcore/comp#hasSpan
 <https://w3id.org/bcore/comp#hasSpan> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://w3id.org/bcore/comp#hasSpan> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
-<https://w3id.org/bcore/comp#hasSpan> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid1 .
-_:genid1 <http://www.w3.org/2002/07/owl#unionOf> _:genid3 .
-_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid2 .
-_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/brcomp#SuperStructureComponent> .
-_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/bcore/comp#Arch> .
-_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/bcore/comp#hasSpan> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/bcore/comp#isSpanOf> .
+<https://w3id.org/bcore/comp#hasSpan> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid7 .
+_:genid7 <http://www.w3.org/2002/07/owl#unionOf> _:genid10 .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid9 .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid8 .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/brcomp#SuperStructureComponent> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/bcore/comp#Cable> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/bcore/comp#Arch> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/bcore/comp#hasSpan> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/bcore/comp#Span> .
-<https://w3id.org/bcore/comp#hasSpan> <http://www.w3.org/2000/01/rdf-schema#comment> "Bauteil hat eine Spannweite"@de .
+<https://w3id.org/bcore/comp#hasSpan> <http://www.w3.org/2000/01/rdf-schema#comment> "Bauteil hat eine Spannweite bzw. überspannt ein Brückenfeld"@de .
 <https://w3id.org/bcore/comp#hasSpan> <http://www.w3.org/2000/01/rdf-schema#comment> "component has span"@en .
 <https://w3id.org/bcore/comp#hasSpan> <http://www.w3.org/2000/01/rdf-schema#label> "has span"@en .
 <https://w3id.org/bcore/comp#hasSpan> <http://www.w3.org/2000/01/rdf-schema#label> "hat Brückenfeld"@de .
@@ -155,11 +179,21 @@ _:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 # https://w3id.org/bcore/comp#isSpanOf
 <https://w3id.org/bcore/comp#isSpanOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://w3id.org/bcore/comp#isSpanOf> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
-<https://w3id.org/bcore/comp#isSpanOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
 <https://w3id.org/bcore/comp#isSpanOf> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/bcore/comp#Span> .
-<https://w3id.org/bcore/comp#isSpanOf> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/brot#Bridge> .
-<https://w3id.org/bcore/comp#isSpanOf> <http://www.w3.org/2000/01/rdf-schema#comment> "ist Feld von genau einer Brücke"@de .
-<https://w3id.org/bcore/comp#isSpanOf> <http://www.w3.org/2000/01/rdf-schema#comment> "the span belongs to just one bridge"@en .
+<https://w3id.org/bcore/comp#isSpanOf> <http://www.w3.org/2000/01/rdf-schema#range> _:genid11 .
+_:genid11 <http://www.w3.org/2002/07/owl#unionOf> _:genid14 .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid13 .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid12 .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/brcomp#SuperStructureComponent> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/bcore/comp#Cable> .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/bcore/comp#Arch> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/bcore/comp#isSpanOf> <http://www.w3.org/2000/01/rdf-schema#comment> "ist Feld von einem Bauteil"@de .
+<https://w3id.org/bcore/comp#isSpanOf> <http://www.w3.org/2000/01/rdf-schema#comment> "the span belongs to a component"@en .
 <https://w3id.org/bcore/comp#isSpanOf> <http://www.w3.org/2000/01/rdf-schema#label> "is span of"@en .
 <https://w3id.org/bcore/comp#isSpanOf> <http://www.w3.org/2000/01/rdf-schema#label> "ist Feld von"@de .
 # 
@@ -280,14 +314,6 @@ _:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 <https://w3id.org/bcore/comp#Cable> <http://www.w3.org/2000/01/rdf-schema#label> "cable"@en .
 <https://w3id.org/bcore/comp#Cable> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "https://w3id.org/brcomp#Cable" .
 # 
-# https://w3id.org/bcore/comp#ConcreteTBeam
-<https://w3id.org/bcore/comp#ConcreteTBeam> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/bcore/comp#ConcreteTBeam> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/bcore/comp#TBeam> .
-<https://w3id.org/bcore/comp#ConcreteTBeam> <http://www.w3.org/2000/01/rdf-schema#comment> "Längsträger in mit T-förmigem Querschnitt aus Beton"@de .
-<https://w3id.org/bcore/comp#ConcreteTBeam> <http://www.w3.org/2000/01/rdf-schema#comment> "T-shaped concrete girder, slab beam"@en .
-<https://w3id.org/bcore/comp#ConcreteTBeam> <http://www.w3.org/2000/01/rdf-schema#label> "Plattenbalken"@de .
-<https://w3id.org/bcore/comp#ConcreteTBeam> <http://www.w3.org/2000/01/rdf-schema#label> "concrete T-beam"@en .
-# 
 # https://w3id.org/bcore/comp#CrossGirder
 <https://w3id.org/bcore/comp#CrossGirder> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/bcore/comp#CrossGirder> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/brcomp#SuperStructureComponent> .
@@ -369,22 +395,6 @@ _:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 <https://w3id.org/bcore/comp#Span> <http://www.w3.org/2000/01/rdf-schema#comment> "bridge span"@en .
 <https://w3id.org/bcore/comp#Span> <http://www.w3.org/2000/01/rdf-schema#label> "span"@en .
 <https://w3id.org/bcore/comp#Span> <https://schema.org/image> "https://raw.githubusercontent.com/TUD-IMB/BCore/refs/heads/main/comp/BCore_Spans.svg" .
-# 
-# https://w3id.org/bcore/comp#SteelBoxGirder
-<https://w3id.org/bcore/comp#SteelBoxGirder> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/bcore/comp#SteelBoxGirder> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/bcore/comp#BoxGirder> .
-<https://w3id.org/bcore/comp#SteelBoxGirder> <http://www.w3.org/2000/01/rdf-schema#comment> "Längsträger aus Stahl mit hohlem Querschnitt"@de .
-<https://w3id.org/bcore/comp#SteelBoxGirder> <http://www.w3.org/2000/01/rdf-schema#comment> "steel box girder/ steel hollow beam"@en .
-<https://w3id.org/bcore/comp#SteelBoxGirder> <http://www.w3.org/2000/01/rdf-schema#label> "Stahlhohlkastenträger"@de .
-<https://w3id.org/bcore/comp#SteelBoxGirder> <http://www.w3.org/2000/01/rdf-schema#label> "steel box girder"@en .
-# 
-# https://w3id.org/bcore/comp#SteelIBeam
-<https://w3id.org/bcore/comp#SteelIBeam> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/bcore/comp#SteelIBeam> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/bcore/comp#IBeam> .
-<https://w3id.org/bcore/comp#SteelIBeam> <http://www.w3.org/2000/01/rdf-schema#comment> "Vollwandträger (z. B. aus Stahl)"@de .
-<https://w3id.org/bcore/comp#SteelIBeam> <http://www.w3.org/2000/01/rdf-schema#comment> "plate girder (solid-web; e.g., made of steel)"@en .
-<https://w3id.org/bcore/comp#SteelIBeam> <http://www.w3.org/2000/01/rdf-schema#label> "Stahl-I-Träger"@de .
-<https://w3id.org/bcore/comp#SteelIBeam> <http://www.w3.org/2000/01/rdf-schema#label> "steel I-beam"@en .
 # 
 # https://w3id.org/bcore/comp#TBeam
 <https://w3id.org/bcore/comp#TBeam> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -534,73 +544,73 @@ _:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 # #################################################################
 # 
 # 
-_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
-_:genid4 <http://www.w3.org/2002/07/owl#members> _:genid10 .
-_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid9 .
-_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid8 .
-_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid7 .
-_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid6 .
-_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid5 .
-_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/brcomp#SuperStructureComponent> .
-_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/brcomp#SubStructureComponent> .
-_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/bcore/comp#TensionComponent> .
-_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/bcore/comp#Pylon> .
-_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/bcore/comp#EquipmentComponent> .
-_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/bcore/comp#Arch> .
-_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-# 
-_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
-_:genid11 <http://www.w3.org/2002/07/owl#members> _:genid16 .
-_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid15 .
-_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid14 .
-_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid13 .
-_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid12 .
-_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/bcore/comp#TrussGirder> .
-_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/bcore/comp#TBeam> .
-_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/bcore/comp#Slab> .
-_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/bcore/comp#IBeam> .
-_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/bcore/comp#BoxGirder> .
-_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-# 
-_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
-_:genid17 <http://www.w3.org/2002/07/owl#members> _:genid21 .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid15 <http://www.w3.org/2002/07/owl#members> _:genid21 .
 _:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid20 .
 _:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid19 .
 _:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid18 .
-_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/bcore/comp#Wire> .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid17 .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid16 .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/brcomp#SuperStructureComponent> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/brcomp#SubStructureComponent> .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/bcore/comp#TensionComponent> .
 _:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/bcore/comp#Tendon> .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/bcore/comp#Pylon> .
 _:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/bcore/comp#Rope> .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/bcore/comp#EquipmentComponent> .
 _:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/bcore/comp#Cable> .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/bcore/comp#Arch> .
 _:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
 # 
 _:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
-_:genid22 <http://www.w3.org/2002/07/owl#members> _:genid26 .
+_:genid22 <http://www.w3.org/2002/07/owl#members> _:genid27 .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid26 .
 _:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid25 .
 _:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid24 .
 _:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid23 .
 _:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/brcomp#AbutmentWingWall> .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/bcore/comp#TrussGirder> .
 _:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/brcomp#AbutmentFooting> .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/bcore/comp#TBeam> .
 _:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/brcomp#AbutmentChamberWall> .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/bcore/comp#Slab> .
 _:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/brcomp#AbutmentBenching> .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/bcore/comp#IBeam> .
 _:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/bcore/comp#BoxGirder> .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+# 
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid28 <http://www.w3.org/2002/07/owl#members> _:genid32 .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid31 .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid30 .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid29 .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/bcore/comp#Wire> .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/bcore/comp#Tendon> .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/bcore/comp#Rope> .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/bcore/comp#Cable> .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+# 
+_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid33 <http://www.w3.org/2002/07/owl#members> _:genid37 .
+_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid36 .
+_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid35 .
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid34 .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/brcomp#AbutmentWingWall> .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/brcomp#AbutmentFooting> .
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/brcomp#AbutmentChamberWall> .
+_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/brcomp#AbutmentBenching> .
+_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
 # 
 # Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

@@ -3,13 +3,43 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
+      "@id" : "https://w3id.org/bcore/comp#Pylon"
+    }, {
+      "@id" : "https://w3id.org/brcomp#SubStructureComponent"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid11",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
       "@id" : "https://w3id.org/bcore/comp#Arch"
+    }, {
+      "@id" : "https://w3id.org/bcore/comp#Cable"
     }, {
       "@id" : "https://w3id.org/brcomp#SuperStructureComponent"
     } ]
   } ]
 }, {
-  "@id" : "_:genid11",
+  "@id" : "_:genid15",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
+  "http://www.w3.org/2002/07/owl#members" : [ {
+    "@list" : [ {
+      "@id" : "https://w3id.org/bcore/comp#Arch"
+    }, {
+      "@id" : "https://w3id.org/bcore/comp#EquipmentComponent"
+    }, {
+      "@id" : "https://w3id.org/bcore/comp#Pylon"
+    }, {
+      "@id" : "https://w3id.org/bcore/comp#TensionComponent"
+    }, {
+      "@id" : "https://w3id.org/brcomp#SubStructureComponent"
+    }, {
+      "@id" : "https://w3id.org/brcomp#SuperStructureComponent"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid22",
   "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
   "http://www.w3.org/2002/07/owl#members" : [ {
     "@list" : [ {
@@ -25,7 +55,7 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid17",
+  "@id" : "_:genid28",
   "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
   "http://www.w3.org/2002/07/owl#members" : [ {
     "@list" : [ {
@@ -39,7 +69,7 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid22",
+  "@id" : "_:genid33",
   "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
   "http://www.w3.org/2002/07/owl#members" : [ {
     "@list" : [ {
@@ -54,18 +84,22 @@
   } ]
 }, {
   "@id" : "_:genid4",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
-  "http://www.w3.org/2002/07/owl#members" : [ {
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://w3id.org/bcore/comp#Pylon"
+    }, {
+      "@id" : "https://w3id.org/brcomp#SubStructureComponent"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid7",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
       "@id" : "https://w3id.org/bcore/comp#Arch"
     }, {
-      "@id" : "https://w3id.org/bcore/comp#EquipmentComponent"
-    }, {
-      "@id" : "https://w3id.org/bcore/comp#Pylon"
-    }, {
-      "@id" : "https://w3id.org/bcore/comp#TensionComponent"
-    }, {
-      "@id" : "https://w3id.org/brcomp#SubStructureComponent"
+      "@id" : "https://w3id.org/bcore/comp#Cable"
     }, {
       "@id" : "https://w3id.org/brcomp#SuperStructureComponent"
     } ]
@@ -125,12 +159,18 @@
   "@id" : "https://w3id.org/bcore/comp",
   "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
   "http://purl.org/dc/elements/1.1/abstract" : [ {
+    "@language" : "de",
+    "@value" : "Die „Bridge Core Ontology“ (BCore) ermöglicht die Darstellung einer Brücke, ihrer Bauteile und ihrer Materialien sowie der damit verbundenen Infrastruktur und Mediendateien und der Umgebung und Lage der Brücke. BCore wurde vom Institut für Massivbau (IMB) an der Technischen Universität Dresden (TUD) entwickelt. Diese Ontologie enthält die entsprechende Erweiterung für Brückenbauteile."
+  }, {
     "@language" : "en",
     "@value" : "The Bridge Core Ontology (BCore) enables the representation of a bridge structure, its components and material, as well as the infrastructure and media files connected to it and the environment and location of the bridge. BCore is created by the Institute of Concrete Structures (IMB) at the Dresden University of Technology (TUD). This ontology contains the corresponding components extension."
   } ],
   "http://purl.org/dc/elements/1.1/title" : [ {
+    "@language" : "de",
+    "@value" : "Bridge Core Ontology (BCore) - Bauteil-Erweiterung"
+  }, {
     "@language" : "en",
-    "@value" : "Bridge Core Ontology for Institute of Concrete Structures, Dresden University of Technology – Components Extension"
+    "@value" : "Bridge Core Ontology (BCore) – Components Extension"
   } ],
   "http://purl.org/dc/terms/contributor" : [ {
     "@value" : "Jakob Vogt"
@@ -149,6 +189,9 @@
     "@value" : "Xiaoli Song"
   } ],
   "http://purl.org/dc/terms/description" : [ {
+    "@language" : "de",
+    "@value" : "Erweiterungsontologie zur Darstellung von Brückenbauteilen. Konzipiert für den Einsatz in Verbindung mit der BCore-Ontologie, ermöglicht jedoch auch die eigenständige Nutzung."
+  }, {
     "@language" : "en",
     "@value" : "Extension ontology for the representation of bridge components. Designed to work in conjunction with the BCore ontology but to also allow for external use."
   } ],
@@ -157,7 +200,7 @@
   } ],
   "http://purl.org/dc/terms/modified" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#date",
-    "@value" : "2026-09-30"
+    "@value" : "2026-10-26"
   } ],
   "http://purl.org/ontology/bibo/status" : [ {
     "@value" : "Ontology Specification Draft"
@@ -166,11 +209,14 @@
     "@value" : "bcorecomp"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "de",
+    "@value" : "Bridge Core Ontology - Bauteil-Erweiterung"
+  }, {
     "@language" : "en",
     "@value" : "Bridge Core Ontology – Components Extension"
   } ],
   "http://www.w3.org/2002/07/owl#versionInfo" : [ {
-    "@value" : "0.1.2"
+    "@value" : "0.1.3"
   } ],
   "http://xmlns.com/foaf/0.1/logo" : [ {
     "@value" : "https://raw.githubusercontent.com/TUD-IMB/BCore/main/BCore.svg"
@@ -286,26 +332,6 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/bcore/comp#TensionComponent"
-  } ]
-}, {
-  "@id" : "https://w3id.org/bcore/comp#ConcreteTBeam",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "de",
-    "@value" : "Längsträger in mit T-förmigem Querschnitt aus Beton"
-  }, {
-    "@language" : "en",
-    "@value" : "T-shaped concrete girder, slab beam"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "de",
-    "@value" : "Plattenbalken"
-  }, {
-    "@language" : "en",
-    "@value" : "concrete T-beam"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/bcore/comp#TBeam"
   } ]
 }, {
   "@id" : "https://w3id.org/bcore/comp#CrossGirder",
@@ -621,46 +647,6 @@
     "@value" : "m"
   } ]
 }, {
-  "@id" : "https://w3id.org/bcore/comp#SteelBoxGirder",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "de",
-    "@value" : "Längsträger aus Stahl mit hohlem Querschnitt"
-  }, {
-    "@language" : "en",
-    "@value" : "steel box girder/ steel hollow beam"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "de",
-    "@value" : "Stahlhohlkastenträger"
-  }, {
-    "@language" : "en",
-    "@value" : "steel box girder"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/bcore/comp#BoxGirder"
-  } ]
-}, {
-  "@id" : "https://w3id.org/bcore/comp#SteelIBeam",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "de",
-    "@value" : "Vollwandträger (z. B. aus Stahl)"
-  }, {
-    "@language" : "en",
-    "@value" : "plate girder (solid-web; e.g., made of steel)"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "de",
-    "@value" : "Stahl-I-Träger"
-  }, {
-    "@language" : "en",
-    "@value" : "steel I-beam"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/bcore/comp#IBeam"
-  } ]
-}, {
   "@id" : "https://w3id.org/bcore/comp#TBeam",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -768,10 +754,10 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "de",
-    "@value" : "Spannweite beginnt an einem Bauteil des Brückenunterbaus"
+    "@value" : "Spannweite beginnt an einem Bauteil des Brückenunterbaus oder an einem Pylonen"
   }, {
     "@language" : "en",
-    "@value" : "span begins at a component of the bridge substructure"
+    "@value" : "span begins at a component of the bridge substructure or at a pylon"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/bcore/comp#Span"
@@ -784,7 +770,7 @@
     "@value" : "begins at support"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://w3id.org/brcomp#SubStructureComponent"
+    "@id" : "_:genid1"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
@@ -797,10 +783,10 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "de",
-    "@value" : "Spannweite endet an einem Bauteil des Brückenunterbaus"
+    "@value" : "Spannweite endet an einem Bauteil des Brückenunterbaus oder an einem Pylonen"
   }, {
     "@language" : "en",
-    "@value" : "span ends at a component of the bridge substructure"
+    "@value" : "span ends at a component of the bridge substructure or at a pylon"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/bcore/comp#Span"
@@ -813,7 +799,7 @@
     "@value" : "ends at support"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://w3id.org/brcomp#SubStructureComponent"
+    "@id" : "_:genid4"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
@@ -875,13 +861,13 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "de",
-    "@value" : "Bauteil hat eine Spannweite"
+    "@value" : "Bauteil hat eine Spannweite bzw. überspannt ein Brückenfeld"
   }, {
     "@language" : "en",
     "@value" : "component has span"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "_:genid1"
+    "@id" : "_:genid7"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -895,16 +881,19 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://w3id.org/bcore/comp#isSpanOf"
   } ]
 }, {
   "@id" : "https://w3id.org/bcore/comp#isSpanOf",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "de",
-    "@value" : "ist Feld von genau einer Brücke"
+    "@value" : "ist Feld von einem Bauteil"
   }, {
     "@language" : "en",
-    "@value" : "the span belongs to just one bridge"
+    "@value" : "the span belongs to a component"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/bcore/comp#Span"
@@ -917,7 +906,7 @@
     "@value" : "ist Feld von"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://w3id.org/brot#Bridge"
+    "@id" : "_:genid11"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"

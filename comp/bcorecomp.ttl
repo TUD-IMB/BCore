@@ -11,21 +11,25 @@
 @base <https://w3id.org/bcore/comp#> .
 
 <https://w3id.org/bcore/comp> rdf:type owl:Ontology ;
-                               <http://purl.org/dc/elements/1.1/abstract> "The Bridge Core Ontology (BCore) enables the representation of a bridge structure, its components and material, as well as the infrastructure and media files connected to it and the environment and location of the bridge. BCore is created by the Institute of Concrete Structures (IMB) at the Dresden University of Technology (TUD). This ontology contains the corresponding components extension."@en ;
-                               <http://purl.org/dc/elements/1.1/title> "Bridge Core Ontology for Institute of Concrete Structures, Dresden University of Technology – Components Extension"@en ;
+                               <http://purl.org/dc/elements/1.1/abstract> "Die „Bridge Core Ontology“ (BCore) ermöglicht die Darstellung einer Brücke, ihrer Bauteile und ihrer Materialien sowie der damit verbundenen Infrastruktur und Mediendateien und der Umgebung und Lage der Brücke. BCore wurde vom Institut für Massivbau (IMB) an der Technischen Universität Dresden (TUD) entwickelt. Diese Ontologie enthält die entsprechende Erweiterung für Brückenbauteile."@de ,
+                                                                          "The Bridge Core Ontology (BCore) enables the representation of a bridge structure, its components and material, as well as the infrastructure and media files connected to it and the environment and location of the bridge. BCore is created by the Institute of Concrete Structures (IMB) at the Dresden University of Technology (TUD). This ontology contains the corresponding components extension."@en ;
+                               <http://purl.org/dc/elements/1.1/title> "Bridge Core Ontology (BCore) - Bauteil-Erweiterung"@de ,
+                                                                       "Bridge Core Ontology (BCore) – Components Extension"@en ;
                                <http://purl.org/dc/terms/contributor> "Jakob Vogt" ;
                                <http://purl.org/dc/terms/created> "2025-11-06"^^xsd:date ;
                                <http://purl.org/dc/terms/creator> "Johannes Reimer" ,
                                                                   "Morris Florek" ,
                                                                   "Tim Noack" ,
                                                                   "Xiaoli Song" ;
-                               <http://purl.org/dc/terms/description> "Extension ontology for the representation of bridge components. Designed to work in conjunction with the BCore ontology but to also allow for external use."@en ;
+                               <http://purl.org/dc/terms/description> "Erweiterungsontologie zur Darstellung von Brückenbauteilen. Konzipiert für den Einsatz in Verbindung mit der BCore-Ontologie, ermöglicht jedoch auch die eigenständige Nutzung."@de ,
+                                                                      "Extension ontology for the representation of bridge components. Designed to work in conjunction with the BCore ontology but to also allow for external use."@en ;
                                <http://purl.org/dc/terms/license> "https://creativecommons.org/licenses/by/4.0/deed.en" ;
-                               <http://purl.org/dc/terms/modified> "2026-09-30"^^xsd:date ;
+                               <http://purl.org/dc/terms/modified> "2026-10-26"^^xsd:date ;
                                <http://purl.org/ontology/bibo/status> "Ontology Specification Draft" ;
                                <http://purl.org/vocab/vann/preferredNamespacePrefix> "bcorecomp" ;
-                               rdfs:label "Bridge Core Ontology – Components Extension"@en ;
-                               owl:versionInfo "0.1.2" ;
+                               rdfs:label "Bridge Core Ontology - Bauteil-Erweiterung"@de ,
+                                          "Bridge Core Ontology – Components Extension"@en ;
+                               owl:versionInfo "0.1.3" ;
                                <http://xmlns.com/foaf/0.1/logo> "https://raw.githubusercontent.com/TUD-IMB/BCore/main/BCore.svg" ;
                                <https://schema.org/codeRepository> "https://github.com/TUD-IMB/BCore" .
 
@@ -109,10 +113,14 @@ xsd:date rdf:type rdfs:Datatype .
 :beginsAtSupport rdf:type owl:ObjectProperty ;
                  rdfs:subPropertyOf owl:topObjectProperty ;
                  rdfs:domain :Span ;
-                 rdfs:range <https://w3id.org/brcomp#SubStructureComponent> ;
+                 rdfs:range [ rdf:type owl:Class ;
+                              owl:unionOf ( :Pylon
+                                            <https://w3id.org/brcomp#SubStructureComponent>
+                                          )
+                            ] ;
                  owl:propertyDisjointWith :endsAtSupport ;
-                 rdfs:comment "Spannweite beginnt an einem Bauteil des Brückenunterbaus"@de ,
-                              "span begins at a component of the bridge substructure"@en ;
+                 rdfs:comment "Spannweite beginnt an einem Bauteil des Brückenunterbaus oder an einem Pylonen"@de ,
+                              "span begins at a component of the bridge substructure or at a pylon"@en ;
                  rdfs:label "beginnt an Stützung"@de ,
                             "begins at support"@en .
 
@@ -121,9 +129,13 @@ xsd:date rdf:type rdfs:Datatype .
 :endsAtSupport rdf:type owl:ObjectProperty ;
                rdfs:subPropertyOf owl:topObjectProperty ;
                rdfs:domain :Span ;
-               rdfs:range <https://w3id.org/brcomp#SubStructureComponent> ;
-               rdfs:comment "Spannweite endet an einem Bauteil des Brückenunterbaus"@de ,
-                            "span ends at a component of the bridge substructure"@en ;
+               rdfs:range [ rdf:type owl:Class ;
+                            owl:unionOf ( :Pylon
+                                          <https://w3id.org/brcomp#SubStructureComponent>
+                                        )
+                          ] ;
+               rdfs:comment "Spannweite endet an einem Bauteil des Brückenunterbaus oder an einem Pylonen"@de ,
+                            "span ends at a component of the bridge substructure or at a pylon"@en ;
                rdfs:label "endet an Stützung"@de ,
                           "ends at support"@en .
 
@@ -155,13 +167,15 @@ xsd:date rdf:type rdfs:Datatype .
 ###  https://w3id.org/bcore/comp#hasSpan
 :hasSpan rdf:type owl:ObjectProperty ;
          rdfs:subPropertyOf owl:topObjectProperty ;
+         owl:inverseOf :isSpanOf ;
          rdfs:domain [ rdf:type owl:Class ;
                        owl:unionOf ( :Arch
+                                     :Cable
                                      <https://w3id.org/brcomp#SuperStructureComponent>
                                    )
                      ] ;
          rdfs:range :Span ;
-         rdfs:comment "Bauteil hat eine Spannweite"@de ,
+         rdfs:comment "Bauteil hat eine Spannweite bzw. überspannt ein Brückenfeld"@de ,
                       "component has span"@en ;
          rdfs:label "has span"@en ,
                     "hat Brückenfeld"@de .
@@ -170,11 +184,15 @@ xsd:date rdf:type rdfs:Datatype .
 ###  https://w3id.org/bcore/comp#isSpanOf
 :isSpanOf rdf:type owl:ObjectProperty ;
           rdfs:subPropertyOf owl:topObjectProperty ;
-          rdf:type owl:FunctionalProperty ;
           rdfs:domain :Span ;
-          rdfs:range <https://w3id.org/brot#Bridge> ;
-          rdfs:comment "ist Feld von genau einer Brücke"@de ,
-                       "the span belongs to just one bridge"@en ;
+          rdfs:range [ rdf:type owl:Class ;
+                       owl:unionOf ( :Arch
+                                     :Cable
+                                     <https://w3id.org/brcomp#SuperStructureComponent>
+                                   )
+                     ] ;
+          rdfs:comment "ist Feld von einem Bauteil"@de ,
+                       "the span belongs to a component"@en ;
           rdfs:label "is span of"@en ,
                      "ist Feld von"@de .
 
@@ -297,15 +315,6 @@ xsd:date rdf:type rdfs:Datatype .
        rdfs:seeAlso "https://w3id.org/brcomp#Cable" .
 
 
-###  https://w3id.org/bcore/comp#ConcreteTBeam
-:ConcreteTBeam rdf:type owl:Class ;
-               rdfs:subClassOf :TBeam ;
-               rdfs:comment "Längsträger in mit T-förmigem Querschnitt aus Beton"@de ,
-                            "T-shaped concrete girder, slab beam"@en ;
-               rdfs:label "Plattenbalken"@de ,
-                          "concrete T-beam"@en .
-
-
 ###  https://w3id.org/bcore/comp#CrossGirder
 :CrossGirder rdf:type owl:Class ;
              rdfs:subClassOf <https://w3id.org/brcomp#SuperStructureComponent> ;
@@ -396,24 +405,6 @@ xsd:date rdf:type rdfs:Datatype .
                    "bridge span"@en ;
       rdfs:label "span"@en ;
       <https://schema.org/image> "https://raw.githubusercontent.com/TUD-IMB/BCore/refs/heads/main/comp/BCore_Spans.svg" .
-
-
-###  https://w3id.org/bcore/comp#SteelBoxGirder
-:SteelBoxGirder rdf:type owl:Class ;
-                rdfs:subClassOf :BoxGirder ;
-                rdfs:comment "Längsträger aus Stahl mit hohlem Querschnitt"@de ,
-                             "steel box girder/ steel hollow beam"@en ;
-                rdfs:label "Stahlhohlkastenträger"@de ,
-                           "steel box girder"@en .
-
-
-###  https://w3id.org/bcore/comp#SteelIBeam
-:SteelIBeam rdf:type owl:Class ;
-            rdfs:subClassOf :IBeam ;
-            rdfs:comment "Vollwandträger (z. B. aus Stahl)"@de ,
-                         "plate girder (solid-web; e.g., made of steel)"@en ;
-            rdfs:label "Stahl-I-Träger"@de ,
-                       "steel I-beam"@en .
 
 
 ###  https://w3id.org/bcore/comp#TBeam

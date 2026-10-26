@@ -18,21 +18,25 @@
      xmlns:bcorecomp="https://w3id.org/bcore/comp#"
      xmlns:infraspatialot="https://dtc-ontology.cms.ed.tum.de/infraspatialot#">
     <owl:Ontology rdf:about="https://w3id.org/bcore/comp">
+        <dc:abstract xml:lang="de">Die „Bridge Core Ontology“ (BCore) ermöglicht die Darstellung einer Brücke, ihrer Bauteile und ihrer Materialien sowie der damit verbundenen Infrastruktur und Mediendateien und der Umgebung und Lage der Brücke. BCore wurde vom Institut für Massivbau (IMB) an der Technischen Universität Dresden (TUD) entwickelt. Diese Ontologie enthält die entsprechende Erweiterung für Brückenbauteile.</dc:abstract>
         <dc:abstract xml:lang="en">The Bridge Core Ontology (BCore) enables the representation of a bridge structure, its components and material, as well as the infrastructure and media files connected to it and the environment and location of the bridge. BCore is created by the Institute of Concrete Structures (IMB) at the Dresden University of Technology (TUD). This ontology contains the corresponding components extension.</dc:abstract>
-        <dc:title xml:lang="en">Bridge Core Ontology for Institute of Concrete Structures, Dresden University of Technology – Components Extension</dc:title>
+        <dc:title xml:lang="de">Bridge Core Ontology (BCore) - Bauteil-Erweiterung</dc:title>
+        <dc:title xml:lang="en">Bridge Core Ontology (BCore) – Components Extension</dc:title>
         <terms:contributor>Jakob Vogt</terms:contributor>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-11-06</terms:created>
         <terms:creator>Johannes Reimer</terms:creator>
         <terms:creator>Morris Florek</terms:creator>
         <terms:creator>Tim Noack</terms:creator>
         <terms:creator>Xiaoli Song</terms:creator>
+        <terms:description xml:lang="de">Erweiterungsontologie zur Darstellung von Brückenbauteilen. Konzipiert für den Einsatz in Verbindung mit der BCore-Ontologie, ermöglicht jedoch auch die eigenständige Nutzung.</terms:description>
         <terms:description xml:lang="en">Extension ontology for the representation of bridge components. Designed to work in conjunction with the BCore ontology but to also allow for external use.</terms:description>
         <terms:license>https://creativecommons.org/licenses/by/4.0/deed.en</terms:license>
-        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-09-30</terms:modified>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-10-26</terms:modified>
         <bibo:status>Ontology Specification Draft</bibo:status>
         <vann:preferredNamespacePrefix>bcorecomp</vann:preferredNamespacePrefix>
+        <rdfs:label xml:lang="de">Bridge Core Ontology - Bauteil-Erweiterung</rdfs:label>
         <rdfs:label xml:lang="en">Bridge Core Ontology – Components Extension</rdfs:label>
-        <owl:versionInfo>0.1.2</owl:versionInfo>
+        <owl:versionInfo>0.1.3</owl:versionInfo>
         <foaf:logo>https://raw.githubusercontent.com/TUD-IMB/BCore/main/BCore.svg</foaf:logo>
         <schema:codeRepository>https://github.com/TUD-IMB/BCore</schema:codeRepository>
     </owl:Ontology>
@@ -173,10 +177,17 @@
     <owl:ObjectProperty rdf:about="https://w3id.org/bcore/comp#beginsAtSupport">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <rdfs:domain rdf:resource="https://w3id.org/bcore/comp#Span"/>
-        <rdfs:range rdf:resource="https://w3id.org/brcomp#SubStructureComponent"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/bcore/comp#Pylon"/>
+                    <rdf:Description rdf:about="https://w3id.org/brcomp#SubStructureComponent"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
         <owl:propertyDisjointWith rdf:resource="https://w3id.org/bcore/comp#endsAtSupport"/>
-        <rdfs:comment xml:lang="de">Spannweite beginnt an einem Bauteil des Brückenunterbaus</rdfs:comment>
-        <rdfs:comment xml:lang="en">span begins at a component of the bridge substructure</rdfs:comment>
+        <rdfs:comment xml:lang="de">Spannweite beginnt an einem Bauteil des Brückenunterbaus oder an einem Pylonen</rdfs:comment>
+        <rdfs:comment xml:lang="en">span begins at a component of the bridge substructure or at a pylon</rdfs:comment>
         <rdfs:label xml:lang="de">beginnt an Stützung</rdfs:label>
         <rdfs:label xml:lang="en">begins at support</rdfs:label>
     </owl:ObjectProperty>
@@ -188,9 +199,16 @@
     <owl:ObjectProperty rdf:about="https://w3id.org/bcore/comp#endsAtSupport">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <rdfs:domain rdf:resource="https://w3id.org/bcore/comp#Span"/>
-        <rdfs:range rdf:resource="https://w3id.org/brcomp#SubStructureComponent"/>
-        <rdfs:comment xml:lang="de">Spannweite endet an einem Bauteil des Brückenunterbaus</rdfs:comment>
-        <rdfs:comment xml:lang="en">span ends at a component of the bridge substructure</rdfs:comment>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/bcore/comp#Pylon"/>
+                    <rdf:Description rdf:about="https://w3id.org/brcomp#SubStructureComponent"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+        <rdfs:comment xml:lang="de">Spannweite endet an einem Bauteil des Brückenunterbaus oder an einem Pylonen</rdfs:comment>
+        <rdfs:comment xml:lang="en">span ends at a component of the bridge substructure or at a pylon</rdfs:comment>
         <rdfs:label xml:lang="de">endet an Stützung</rdfs:label>
         <rdfs:label xml:lang="en">ends at support</rdfs:label>
     </owl:ObjectProperty>
@@ -231,16 +249,18 @@
 
     <owl:ObjectProperty rdf:about="https://w3id.org/bcore/comp#hasSpan">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="https://w3id.org/bcore/comp#isSpanOf"/>
         <rdfs:domain>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="https://w3id.org/bcore/comp#Arch"/>
+                    <rdf:Description rdf:about="https://w3id.org/bcore/comp#Cable"/>
                     <rdf:Description rdf:about="https://w3id.org/brcomp#SuperStructureComponent"/>
                 </owl:unionOf>
             </owl:Class>
         </rdfs:domain>
         <rdfs:range rdf:resource="https://w3id.org/bcore/comp#Span"/>
-        <rdfs:comment xml:lang="de">Bauteil hat eine Spannweite</rdfs:comment>
+        <rdfs:comment xml:lang="de">Bauteil hat eine Spannweite bzw. überspannt ein Brückenfeld</rdfs:comment>
         <rdfs:comment xml:lang="en">component has span</rdfs:comment>
         <rdfs:label xml:lang="en">has span</rdfs:label>
         <rdfs:label xml:lang="de">hat Brückenfeld</rdfs:label>
@@ -252,11 +272,18 @@
 
     <owl:ObjectProperty rdf:about="https://w3id.org/bcore/comp#isSpanOf">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="https://w3id.org/bcore/comp#Span"/>
-        <rdfs:range rdf:resource="https://w3id.org/brot#Bridge"/>
-        <rdfs:comment xml:lang="de">ist Feld von genau einer Brücke</rdfs:comment>
-        <rdfs:comment xml:lang="en">the span belongs to just one bridge</rdfs:comment>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/bcore/comp#Arch"/>
+                    <rdf:Description rdf:about="https://w3id.org/bcore/comp#Cable"/>
+                    <rdf:Description rdf:about="https://w3id.org/brcomp#SuperStructureComponent"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+        <rdfs:comment xml:lang="de">ist Feld von einem Bauteil</rdfs:comment>
+        <rdfs:comment xml:lang="en">the span belongs to a component</rdfs:comment>
         <rdfs:label xml:lang="en">is span of</rdfs:label>
         <rdfs:label xml:lang="de">ist Feld von</rdfs:label>
     </owl:ObjectProperty>
@@ -427,18 +454,6 @@
     
 
 
-    <!-- https://w3id.org/bcore/comp#ConcreteTBeam -->
-
-    <owl:Class rdf:about="https://w3id.org/bcore/comp#ConcreteTBeam">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/bcore/comp#TBeam"/>
-        <rdfs:comment xml:lang="de">Längsträger in mit T-förmigem Querschnitt aus Beton</rdfs:comment>
-        <rdfs:comment xml:lang="en">T-shaped concrete girder, slab beam</rdfs:comment>
-        <rdfs:label xml:lang="de">Plattenbalken</rdfs:label>
-        <rdfs:label xml:lang="en">concrete T-beam</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- https://w3id.org/bcore/comp#CrossGirder -->
 
     <owl:Class rdf:about="https://w3id.org/bcore/comp#CrossGirder">
@@ -557,30 +572,6 @@
         <rdfs:comment xml:lang="en">bridge span</rdfs:comment>
         <rdfs:label xml:lang="en">span</rdfs:label>
         <schema:image>https://raw.githubusercontent.com/TUD-IMB/BCore/refs/heads/main/comp/BCore_Spans.svg</schema:image>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/bcore/comp#SteelBoxGirder -->
-
-    <owl:Class rdf:about="https://w3id.org/bcore/comp#SteelBoxGirder">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/bcore/comp#BoxGirder"/>
-        <rdfs:comment xml:lang="de">Längsträger aus Stahl mit hohlem Querschnitt</rdfs:comment>
-        <rdfs:comment xml:lang="en">steel box girder/ steel hollow beam</rdfs:comment>
-        <rdfs:label xml:lang="de">Stahlhohlkastenträger</rdfs:label>
-        <rdfs:label xml:lang="en">steel box girder</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/bcore/comp#SteelIBeam -->
-
-    <owl:Class rdf:about="https://w3id.org/bcore/comp#SteelIBeam">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/bcore/comp#IBeam"/>
-        <rdfs:comment xml:lang="de">Vollwandträger (z. B. aus Stahl)</rdfs:comment>
-        <rdfs:comment xml:lang="en">plate girder (solid-web; e.g., made of steel)</rdfs:comment>
-        <rdfs:label xml:lang="de">Stahl-I-Träger</rdfs:label>
-        <rdfs:label xml:lang="en">steel I-beam</rdfs:label>
     </owl:Class>
     
 
