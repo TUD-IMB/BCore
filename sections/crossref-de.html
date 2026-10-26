@@ -1,0 +1,2224 @@
+<h2 id="crossreference" class="list">Querverweis f&uuml;r... Bridge Core Ontology Klassen, Object Properties und Data Properties<span class="backlink"> zur&uuml;ck zum <a href="#toc">Inhaltsverzeichnis</a></span></h2>
+Dieser Abschnitt enth&auml;lt Details f&uuml;r jede Klasse und jedes definierte Property, die definiert wurden durch Bridge Core Ontology.
+<div xmlns:widoco="https://w3id.org/widoco/vocab#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="classes">
+ <h3 id="classes-headline" class="list">Klassen</h3>
+ <ul class="hlist">
+  <li><a href="#https://w3id.org/bmat#BuildingMaterial" title="https://w3id.org/bmat#BuildingMaterial">Baumaterial</a></li>
+  <li><a href="#https://w3id.org/bot#Site" title="https://w3id.org/bot#Site">Baustelle</a></li>
+  <li><a href="#https://w3id.org/brot#Component" title="https://w3id.org/brot#Component">Bauteil</a></li>
+  <li><a href="#https://w3id.org/brot#Bridge" title="https://w3id.org/brot#Bridge">Brücke</a></li>
+  <li><a href="#InfrastructureRoute" title="https://w3id.org/bcore#InfrastructureRoute">Infrastrukturtrasse</a></li>
+  <li><a href="#Country" title="https://w3id.org/bcore#Country">Land</a></li>
+  <li><a href="#https://dtc-ontology.cms.ed.tum.de/infraspatialot#LineLocalisation" title="https://dtc-ontology.cms.ed.tum.de/infraspatialot#LineLocalisation">Linienlokalisierung</a></li>
+  <li><a href="#https://dtc-ontology.cms.ed.tum.de/infraspatialot#Localisation" title="https://dtc-ontology.cms.ed.tum.de/infraspatialot#Localisation">Lokalisierung</a></li>
+  <li><a href="#MediaFile" title="https://w3id.org/bcore#MediaFile">Mediendatei</a></li>
+  <li><a href="#https://dtc-ontology.cms.ed.tum.de/infraspatialot#Point" title="https://dtc-ontology.cms.ed.tum.de/infraspatialot#Point">Punkt</a></li>
+  <li><a href="#Region" title="https://w3id.org/bcore#Region">Region</a></li>
+  <li><a href="#https://w3id.org/brot#SpatialZone" title="https://w3id.org/brot#SpatialZone">räumliche Zone</a></li>
+  <li><a href="#City" title="https://w3id.org/bcore#City">Stadt</a></li>
+  <li><a href="#https://w3id.org/brot#SubStructure" title="https://w3id.org/brot#SubStructure">Unterbau</a></li>
+  <li><a href="#WayPoint" title="https://w3id.org/bcore#WayPoint">Wegpunkt</a></li>
+  <li><a href="#https://w3id.org/bot#Zone" title="https://w3id.org/bot#Zone">Zone</a></li>
+  <li><a href="#https://w3id.org/brot#SuperStructure" title="https://w3id.org/brot#SuperStructure">Überbau</a></li>
+ </ul>
+ <div class="entity" id="https://w3id.org/bmat#BuildingMaterial">
+  <h3>Baumaterial<sup class="type-c" title="Klasse">c</sup> <span class="backlink"> zurück zur <a href="#toc">Übersicht</a> oder <a href="#classes">Klassenübersicht</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/bmat#BuildingMaterial</p>
+  <div class="comment">
+   <span class="markdown">Material, aus dem Brücken(-bauteile) bestehen</span>
+  </div>
+  <dl class="description">
+   <dt>
+    ist in der Domäne von
+   </dt>
+   <dd>
+    <a href="#Density" title="https://w3id.org/bcore#Density">Dichte</a> <sup class="type-dp" title="Daten Eigenschaft">dp</sup>, <a href="#MaterialName" title="https://w3id.org/bcore#MaterialName">Materialname</a> <sup class="type-dp" title="Daten Eigenschaft">dp</sup>
+   </dd>
+   <dt>
+    ist in Range von
+   </dt>
+   <dd>
+    <a href="#isMadeOfMaterial" title="https://w3id.org/bcore#isMadeOfMaterial">besteht aus Material</a> <sup class="type-op" title="Objekt Eigenschaft">op</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="https://w3id.org/bot#Site">
+  <h3>Baustelle<sup class="type-c" title="Klasse">c</sup> <span class="backlink"> zurück zur <a href="#toc">Übersicht</a> oder <a href="#classes">Klassenübersicht</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/bot#Site</p>
+  <div class="comment">
+   <span class="markdown">Areal, auf dem eine Bautätigkeit ausgeübt wird.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    hat Super-Klassen
+   </dt>
+   <dd>
+    <a href="#https://w3id.org/bot#Zone" title="https://w3id.org/bot#Zone">Zone</a> <sup class="type-c" title="Klasse">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="https://w3id.org/brot#Component">
+  <h3>Bauteil<sup class="type-c" title="Klasse">c</sup> <span class="backlink"> zurück zur <a href="#toc">Übersicht</a> oder <a href="#classes">Klassenübersicht</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/brot#Component</p>
+  <div class="comment">
+   <span class="markdown">Bauteil, aus dem Brücken bestehen</span>
+  </div>
+  <dl class="description">
+   <dt>
+    ist in der Domäne von
+   </dt>
+   <dd>
+    <a href="#https://w3id.org/brcomp#width" title="https://w3id.org/brcomp#width">Breite</a> <sup class="type-dp" title="Daten Eigenschaft">dp</sup>, <a href="#https://w3id.org/brcomp#height" title="https://w3id.org/brcomp#height">Höhe</a> <sup class="type-dp" title="Daten Eigenschaft">dp</sup>, <a href="#https://w3id.org/brcomp#length" title="https://w3id.org/brcomp#length">Länge</a> <sup class="type-dp" title="Daten Eigenschaft">dp</sup>, <a href="#Volume" title="https://w3id.org/bcore#Volume">Volumen</a> <sup class="type-dp" title="Daten Eigenschaft">dp</sup>, <a href="#https://w3id.org/brot#aggregates" title="https://w3id.org/brot#aggregates">besteht aus</a> <sup class="type-op" title="Objekt Eigenschaft">op</sup>, <a href="#isMadeOfMaterial" title="https://w3id.org/bcore#isMadeOfMaterial">besteht aus Material</a> <sup class="type-op" title="Objekt Eigenschaft">op</sup>, <a href="#isPartOfZone" title="https://w3id.org/bcore#isPartOfZone">ist Teil einer Zone</a> <sup class="type-op" title="Objekt Eigenschaft">op</sup>, <a href="#isPartOfComponent" title="https://w3id.org/bcore#isPartOfComponent">ist Teil von Bauteil</a> <sup class="type-op" title="Objekt Eigenschaft">op</sup>, <a href="#https://w3id.org/reloc#meetRear" title="https://w3id.org/reloc#meetRear">liegt hinter</a> <sup class="type-op" title="Objekt Eigenschaft">op</sup>, <a href="#https://w3id.org/reloc#meetLeft" title="https://w3id.org/reloc#meetLeft">liegt links von</a> <sup class="type-op" title="Objekt Eigenschaft">op</sup>, <a href="#https://w3id.org/reloc#meetRight" title="https://w3id.org/reloc#meetRight">liegt rechts von</a> <sup class="type-op" title="Objekt Eigenschaft">op</sup>, <a href="#https://w3id.org/reloc#meetBottom" title="https://w3id.org/reloc#meetBottom">liegt unter</a> <sup class="type-op" title="Objekt Eigenschaft">op</sup>, <a href="#https://w3id.org/reloc#meetFront" title="https://w3id.org/reloc#meetFront">liegt vor</a> <sup class="type-op" title="Objekt Eigenschaft">op</sup>, <a href="#https://w3id.org/reloc#meetTop" title="https://w3id.org/reloc#meetTop">liegt über</a> <sup class="type-op" title="Objekt Eigenschaft">op</sup>
+   </dd>
+   <dt>
+    ist in Range von
+   </dt>
+   <dd>
+    <a href="#https://w3id.org/brot#containsComponent" title="https://w3id.org/brot#containsComponent">beinhaltet Bauteil</a> <sup class="type-op" title="Objekt Eigenschaft">op</sup>, <a href="#describes" title="https://w3id.org/bcore#describes">beschreibt</a> <sup class="type-op" title="Objekt Eigenschaft">op</sup>, <a href="#https://w3id.org/brot#aggregates" title="https://w3id.org/brot#aggregates">besteht aus</a> <sup class="type-op" title="Objekt Eigenschaft">op</sup>, <a href="#isPartOfComponent" title="https://w3id.org/bcore#isPartOfComponent">ist Teil von Bauteil</a> <sup class="type-op" title="Objekt Eigenschaft">op</sup>, <a href="#https://w3id.org/reloc#meetRear" title="https://w3id.org/reloc#meetRear">liegt hinter</a> <sup class="type-op" title="Objekt Eigenschaft">op</sup>, <a href="#https://w3id.org/reloc#meetLeft" title="https://w3id.org/reloc#meetLeft">liegt links von</a> <sup class="type-op" title="Objekt Eigenschaft">op</sup>, <a href="#https://w3id.org/reloc#meetRight" title="https://w3id.org/reloc#meetRight">liegt rechts von</a> <sup class="type-op" title="Objekt Eigenschaft">op</sup>, <a href="#https://w3id.org/reloc#meetBottom" title="https://w3id.org/reloc#meetBottom">liegt unter</a> <sup class="type-op" title="Objekt Eigenschaft">op</sup>, <a href="#https://w3id.org/reloc#meetFront" title="https://w3id.org/reloc#meetFront">liegt vor</a> <sup class="type-op" title="Objekt Eigenschaft">op</sup>, <a href="#https://w3id.org/reloc#meetTop" title="https://w3id.org/reloc#meetTop">liegt über</a> <sup class="type-op" title="Objekt Eigenschaft">op</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="https://w3id.org/brot#Bridge">
+  <h3>Brücke<sup class="type-c" title="Klasse">c</sup> <span class="backlink"> zurück zur <a href="#toc">Übersicht</a> oder <a href="#classes">Klassenübersicht</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/brot#Bridge</p>
+  <div class="comment">
+   <span class="markdown">Bauwerk, das Verkehrswege oder Versorgungseinrichtungen über natürliche Hindernisse oder andere Verkehrswege hinwegführt (de.wikipedia.org/wiki/Brücke).</span>
+  </div>
+  <dl class="description">
+   <dt>
+    hat Super-Klassen
+   </dt>
+   <dd>
+    <a href="#https://w3id.org/brot#SpatialZone" title="https://w3id.org/brot#SpatialZone">räumliche Zone</a> <sup class="type-c" title="Klasse">c</sup>
+   </dd>
+   <dt>
+    ist in der Domäne von
+   </dt>
+   <dd>
+    <a href="#BridgeConstructionStartDate" title="https://w3id.org/bcore#BridgeConstructionStartDate">Brücke Baubeginn</a> <sup class="type-dp" title="Daten Eigenschaft">dp</sup>, <a href="#BridgeConstructionEndDate" title="https://w3id.org/bcore#BridgeConstructionEndDate">Brücke Fertigstellung</a> <sup class="type-dp" title="Daten Eigenschaft">dp</sup>, <a href="#BridgeID" title="https://w3id.org/bcore#BridgeID">Brücke ID</a> <sup class="type-dp" title="Daten Eigenschaft">dp</sup>, <a href="#BridgeLoadCase" title="https://w3id.org/bcore#BridgeLoadCase">Brücke Lastfall</a> <sup class="type-dp" title="Daten Eigenschaft">dp</sup>, <a href="#BridgePlanningEndDate" title="https://w3id.org/bcore#BridgePlanningEndDate">Brücke Planungsbeginn</a> <sup class="type-dp" title="Daten Eigenschaft">dp</sup>, <a href="#BridgePlanningStartDate" title="https://w3id.org/bcore#BridgePlanningStartDate">Brücke Planungsbeginn</a> <sup class="type-dp" title="Daten Eigenschaft">dp</sup>, <a href="#BridgeLength" title="https://w3id.org/bcore#BridgeLength">Brückenlänge</a> <sup class="type-dp" title="Daten Eigenschaft">dp</sup>, <a href="#BridgeName" title="https://w3id.org/bcore#BridgeName">Brückenname</a> <sup class="type-dp" title="Daten Eigenschaft">dp</sup>, <a href="#BridgeStatus" title="https://w3id.org/bcore#BridgeStatus">Brückenstatus</a> <sup class="type-dp" title="Daten Eigenschaft">dp</sup>, <a href="#hasPartialStructure" title="https://w3id.org/bcore#hasPartialStructure">enthält Brückenzug</a> <sup class="type-op" title="Objekt Eigenschaft">op</sup>, <a href="#isPartialStructureOf" title="https://w3id.org/bcore#isPartialStructureOf">ist Brückenzug von</a> <sup class="type-op" title="Objekt Eigenschaft">op</sup>, <a href="#carriesRoute" title="https://w3id.org/bcore#carriesRoute">überführt Trasse</a> <sup class="type-op" title="Objekt Eigenschaft">op</sup>, <a href="#bridgesRoute" title="https://w3id.org/bcore#bridgesRoute">überquert Trasse</a> <sup class="type-op" title="Objekt Eigenschaft">op</sup>, <a href="#bridgesZone" title="https://w3id.org/bcore#bridgesZone">überquert Zone</a> <sup class="type-op" title="Objekt Eigenschaft">op</sup>
+   </dd>
+   <dt>
+    ist in Range von
+   </dt>
+   <dd>
+    <a href="#describes" title="https://w3id.org/bcore#describes">beschreibt</a> <sup class="type-op" title="Objekt Eigenschaft">op</sup>, <a href="#hasPartialStructure" title="https://w3id.org/bcore#hasPartialStructure">enthält Brückenzug</a> <sup class="type-op" title="Objekt Eigenschaft">op</sup>, <a href="#isPartialStructureOf" title="https://w3id.org/bcore#isPartialStructureOf">ist Brückenzug von</a> <sup class="type-op" title="Objekt Eigenschaft">op</sup>, <a href="#traversesBridge" title="https://w3id.org/bcore#traversesBridge">überquert Brücke</a> <sup class="type-op" title="Objekt Eigenschaft">op</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="InfrastructureRoute">
+  <h3>Infrastrukturtrasse<sup class="type-c" title="Klasse">c</sup> <span class="backlink"> zurück zur <a href="#toc">Übersicht</a> oder <a href="#classes">Klassenübersicht</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/bcore#InfrastructureRoute</p>
+  <div class="comment">
+   <span class="markdown">Trasse/ Linienführung einer linearen Infrastruktur</span>
+  </div>
+  <dl class="description">
+   <dt>
+    ist in der Domäne von
+   </dt>
+   <dd>
+    <a href="#InfrastructureRouteWidth" title="https://w3id.org/bcore#InfrastructureRouteWidth">Infrastrukturtrasse Breite</a> <sup class="type-dp" title="Daten Eigenschaft">dp</sup>, <a href="#InfrastructureRouteName" title="https://w3id.org/bcore#InfrastructureRouteName">Infrastrukturtrasse Name</a> <sup class="type-dp" title="Daten Eigenschaft">dp</sup>, <a href="#InfrastructureRouteClearanceHeight" title="https://w3id.org/bcore#InfrastructureRouteClearanceHeight">Infrastrukturtrasse lichte Höhe</a> <sup class="type-dp" title="Daten Eigenschaft">dp</sup>, <a href="#crossesZone" title="https://w3id.org/bcore#crossesZone">durchquert Zone</a> <sup class="type-op" title="Objekt Eigenschaft">op</sup>, <a href="#includesLocalisation" title="https://w3id.org/bcore#includesLocalisation">enthält Lokalisation</a> <sup class="type-op" title="Objekt Eigenschaft">op</sup>, <a href="#crossesRoute" title="https://w3id.org/bcore#crossesRoute">kreuzt Trasse</a> <sup class="type-op" title="Objekt Eigenschaft">op</sup>, <a href="#traversesBridge" title="https://w3id.org/bcore#traversesBridge">überquert Brücke</a> <sup class="type-op" title="Objekt Eigenschaft">op</sup>
+   </dd>
+   <dt>
+    ist in Range von
+   </dt>
+   <dd>
+    <a href="#isPartOfRoute" title="https://w3id.org/bcore#isPartOfRoute">ist Teil von Trasse</a> <sup class="type-op" title="Objekt Eigenschaft">op</sup>, <a href="#crossesRoute" title="https://w3id.org/bcore#crossesRoute">kreuzt Trasse</a> <sup class="type-op" title="Objekt Eigenschaft">op</sup>, <a href="#carriesRoute" title="https://w3id.org/bcore#carriesRoute">überführt Trasse</a> <sup class="type-op" title="Objekt Eigenschaft">op</sup>, <a href="#bridgesRoute" title="https://w3id.org/bcore#bridgesRoute">überquert Trasse</a> <sup class="type-op" title="Objekt Eigenschaft">op</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="Country">
+  <h3>Land<sup class="type-c" title="Klasse">c</sup> <span class="backlink"> zurück zur <a href="#toc">Übersicht</a> oder <a href="#classes">Klassenübersicht</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/bcore#Country</p>
+  <div class="comment">
+   <span class="markdown">Land (Nationalstaat)</span>
+  </div>
+  <dl class="description">
+   <dt>
+    hat Super-Klassen
+   </dt>
+   <dd>
+    <a href="#https://w3id.org/bot#Zone" title="https://w3id.org/bot#Zone">Zone</a> <sup class="type-c" title="Klasse">c</sup>
+   </dd>
+   <dt>
+    ist in der Domäne von
+   </dt>
+   <dd>
+    <a href="#CountryISOCode" title="https://w3id.org/bcore#CountryISOCode">Ländercode ISO</a> <sup class="type-dp" title="Daten Eigenschaft">dp</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="https://dtc-ontology.cms.ed.tum.de/infraspatialot#LineLocalisation">
+  <h3>Linienlokalisierung<sup class="type-c" title="Klasse">c</sup> <span class="backlink"> zurück zur <a href="#toc">Übersicht</a> oder <a href="#classes">Klassenübersicht</a> </span></h3>
+  <p><strong>IRI:</strong> https://dtc-ontology.cms.ed.tum.de/infraspatialot#LineLocalisation</p>
+  <div class="comment">
+   <span class="markdown">Linienlokalisierung (bezeichnet ein Linienobjekt, das durch einen Start- und einen Endpunkt definiert ist und für die lineare Referenzierung gemäß den in ISO 19148 festgelegten Grundsätzen verwendet wird)</span>
+  </div>
+  <dl class="description">
+   <dt>
+    hat Super-Klassen
+   </dt>
+   <dd>
+    <a href="#https://dtc-ontology.cms.ed.tum.de/infraspatialot#Localisation" title="https://dtc-ontology.cms.ed.tum.de/infraspatialot#Localisation">Lokalisierung</a> <sup class="type-c" title="Klasse">c</sup>
+   </dd>
+   <dt>
+    ist in der Domäne von
+   </dt>
+   <dd>
+    <a href="#startsAt" title="https://w3id.org/bcore#startsAt">beginnt an</a> <sup class="type-op" title="Objekt Eigenschaft">op</sup>, <a href="#endsAt" title="https://w3id.org/bcore#endsAt">endet an</a> <sup class="type-op" title="Objekt Eigenschaft">op</sup>, <a href="#hasWayPointAt" title="https://w3id.org/bcore#hasWayPointAt">hat Trassenpunkt auf</a> <sup class="type-op" title="Objekt Eigenschaft">op</sup>
+   </dd>
+   <dt>
+    ist in Range von
+   </dt>
+   <dd>
+    <a href="#isWayPointOf" title="https://w3id.org/bcore#isWayPointOf">ist Wegpunkt von</a> <sup class="type-op" title="Objekt Eigenschaft">op</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="https://dtc-ontology.cms.ed.tum.de/infraspatialot#Localisation">
+  <h3>Lokalisierung<sup class="type-c" title="Klasse">c</sup> <span class="backlink"> zurück zur <a href="#toc">Übersicht</a> oder <a href="#classes">Klassenübersicht</a> </span></h3>
+  <p><strong>IRI:</strong> https://dtc-ontology.cms.ed.tum.de/infraspatialot#Localisation</p>
+  <div class="comment">
+   <span class="markdown">Lokalisierung (Standort; beschreibt einen geografischen Ort in Bezug auf ein lineares Referenzelement gemäß den in ISO 19148 festgelegten Grundsätzen)</span>
+  </div>
+  <dl class="description">
+   <dt>
+    hat Sub-Klassen
+   </dt>
+   <dd>
+    <a href="#https://dtc-ontology.cms.ed.tum.de/infraspatialot#LineLocalisation" title="https://dtc-ontology.cms.ed.tum.de/infraspatialot#LineLocalisation">Linienlokalisierung</a> <sup class="type-c" title="Klasse">c</sup>
+   </dd>
+   <dt>
+    ist in der Domäne von
+   </dt>
+   <dd>
+    <a href="#LocalisationName" title="https://w3id.org/bcore#LocalisationName">Lokalisierung Name</a> <sup class="type-dp" title="Daten Eigenschaft">dp</sup>, <a href="#isPartOfRoute" title="https://w3id.org/bcore#isPartOfRoute">ist Teil von Trasse</a> <sup class="type-op" title="Objekt Eigenschaft">op</sup>, <a href="#hasLocationAt" title="https://w3id.org/bcore#hasLocationAt">ist lokalisiert an</a> <sup class="type-op" title="Objekt Eigenschaft">op</sup>
+   </dd>
+   <dt>
+    ist in Range von
+   </dt>
+   <dd>
+    <a href="#isLocatedAt" title="https://w3id.org/bcore#isLocatedAt">befindet sich an</a> <sup class="type-op" title="Objekt Eigenschaft">op</sup>, <a href="#includesLocalisation" title="https://w3id.org/bcore#includesLocalisation">enthält Lokalisation</a> <sup class="type-op" title="Objekt Eigenschaft">op</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="MediaFile">
+  <h3>Mediendatei<sup class="type-c" title="Klasse">c</sup> <span class="backlink"> zurück zur <a href="#toc">Übersicht</a> oder <a href="#classes">Klassenübersicht</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/bcore#MediaFile</p>
+  <div class="comment">
+   <span class="markdown">digitale Datei oder reales Objekt, das Informationen trägt</span>
+  </div>
+  <dl class="description">
+   <dt>
+    ist in der Domäne von
+   </dt>
+   <dd>
+    <a href="#/media#MediaFileSize" title="https://w3id.org/bcore/media#MediaFileSize">Mediendatei Größe</a> <sup class="type-dp" title="Daten Eigenschaft">dp</sup>, <a href="#/media#MediaIsDigital" title="https://w3id.org/bcore/media#MediaIsDigital">Mediendatei ist digital</a> <sup class="type-dp" title="Daten Eigenschaft">dp</sup>, <a href="#MediaFilePath" title="https://w3id.org/bcore#MediaFilePath">Pfad der Mediendatei</a> <sup class="type-dp" title="Daten Eigenschaft">dp</sup>, <a href="#describes" title="https://w3id.org/bcore#describes">beschreibt</a> <sup class="type-op" title="Objekt Eigenschaft">op</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="https://dtc-ontology.cms.ed.tum.de/infraspatialot#Point">
+  <h3>Punkt<sup class="type-c" title="Klasse">c</sup> <span class="backlink"> zurück zur <a href="#toc">Übersicht</a> oder <a href="#classes">Klassenübersicht</a> </span></h3>
+  <p><strong>IRI:</strong> https://dtc-ontology.cms.ed.tum.de/infraspatialot#Point</p>
+  <div class="comment">
+   <span class="markdown">Punkt im dreidimensionalen Raum</span>
+  </div>
+  <dl class="description">
+   <dt>
+    hat Sub-Klassen
+   </dt>
+   <dd>
+    <a href="#WayPoint" title="https://w3id.org/bcore#WayPoint">Wegpunkt</a> <sup class="type-c" title="Klasse">c</sup>
+   </dd>
+   <dt>
+    ist in der Domäne von
+   </dt>
+   <dd>
+    <a href="#Altitude" title="https://w3id.org/bcore#Altitude">Altitude</a> <sup class="type-dp" title="Daten Eigenschaft">dp</sup>, <a href="#Latitude" title="https://w3id.org/bcore#Latitude">Breitengrad</a> <sup class="type-dp" title="Daten Eigenschaft">dp</sup>, <a href="#Longitude" title="https://w3id.org/bcore#Longitude">Längengrad</a> <sup class="type-dp" title="Daten Eigenschaft">dp</sup>, <a href="#PointName" title="https://w3id.org/bcore#PointName">Punkt Name</a> <sup class="type-dp" title="Daten Eigenschaft">dp</sup>, <a href="#isLocatedInZone" title="https://w3id.org/bcore#isLocatedInZone">befindet sich in Zone</a> <sup class="type-op" title="Objekt Eigenschaft">op</sup>, <a href="#LocalX" title="https://w3id.org/bcore#LocalX">lokales X</a> <sup class="type-dp" title="Daten Eigenschaft">dp</sup>, <a href="#LocalY" title="https://w3id.org/bcore#LocalY">lokales Y</a> <sup class="type-dp" title="Daten Eigenschaft">dp</sup>, <a href="#LocalZ" title="https://w3id.org/bcore#LocalZ">lokales Z</a> <sup class="type-dp" title="Daten Eigenschaft">dp</sup>
+   </dd>
+   <dt>
+    ist in Range von
+   </dt>
+   <dd>
+    <a href="#startsAt" title="https://w3id.org/bcore#startsAt">beginnt an</a> <sup class="type-op" title="Objekt Eigenschaft">op</sup>, <a href="#endsAt" title="https://w3id.org/bcore#endsAt">endet an</a> <sup class="type-op" title="Objekt Eigenschaft">op</sup>, <a href="#hasLocationAt" title="https://w3id.org/bcore#hasLocationAt">ist lokalisiert an</a> <sup class="type-op" title="Objekt Eigenschaft">op</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="Region">
+  <h3>Region<sup class="type-c" title="Klasse">c</sup> <span class="backlink"> zurück zur <a href="#toc">Übersicht</a> oder <a href="#classes">Klassenübersicht</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/bcore#Region</p>
+  <div class="comment">
+   <span class="markdown">Region/Bundesland</span>
+  </div>
+  <dl class="description">
+   <dt>
+    hat Super-Klassen
+   </dt>
+   <dd>
+    <a href="#https://w3id.org/bot#Zone" title="https://w3id.org/bot#Zone">Zone</a> <sup class="type-c" title="Klasse">c</sup>
+   </dd>
+   <dt>
+    ist in der Domäne von
+   </dt>
+   <dd>
+    <a href="#RegionISOCode" title="https://w3id.org/bcore#RegionISOCode">Regionalcode ISO</a> <sup class="type-dp" title="Daten Eigenschaft">dp</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="https://w3id.org/brot#SpatialZone">
+  <h3>räumliche Zone<sup class="type-c" title="Klasse">c</sup> <span class="backlink"> zurück zur <a href="#toc">Übersicht</a> oder <a href="#classes">Klassenübersicht</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/brot#SpatialZone</p>
+  <div class="comment">
+   <span class="markdown">Volumen, das ein materielles oder ideelles Objekt umschließt</span>
+  </div>
+  <dl class="description">
+   <dt>
+    hat Sub-Klassen
+   </dt>
+   <dd>
+    <a href="#https://w3id.org/brot#Bridge" title="https://w3id.org/brot#Bridge">Brücke</a> <sup class="type-c" title="Klasse">c</sup>, <a href="#https://w3id.org/brot#SubStructure" title="https://w3id.org/brot#SubStructure">Unterbau</a> <sup class="type-c" title="Klasse">c</sup>, <a href="#https://w3id.org/brot#SuperStructure" title="https://w3id.org/brot#SuperStructure">Überbau</a> <sup class="type-c" title="Klasse">c</sup>
+   </dd>
+   <dt>
+    ist in der Domäne von
+   </dt>
+   <dd>
+    <a href="#https://w3id.org/brot#containsComponent" title="https://w3id.org/brot#containsComponent">beinhaltet Bauteil</a> <sup class="type-op" title="Objekt Eigenschaft">op</sup>
+   </dd>
+   <dt>
+    ist in Range von
+   </dt>
+   <dd>
+    <a href="#isPartOfZone" title="https://w3id.org/bcore#isPartOfZone">ist Teil einer Zone</a> <sup class="type-op" title="Objekt Eigenschaft">op</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="City">
+  <h3>Stadt<sup class="type-c" title="Klasse">c</sup> <span class="backlink"> zurück zur <a href="#toc">Übersicht</a> oder <a href="#classes">Klassenübersicht</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/bcore#City</p>
+  <div class="comment">
+   <span class="markdown">Stadt (kann auch für andere Ortschaften verwendet werden)</span>
+  </div>
+  <dl class="description">
+   <dt>
+    hat Super-Klassen
+   </dt>
+   <dd>
+    <a href="#https://w3id.org/bot#Zone" title="https://w3id.org/bot#Zone">Zone</a> <sup class="type-c" title="Klasse">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="https://w3id.org/brot#SubStructure">
+  <h3>Unterbau<sup class="type-c" title="Klasse">c</sup> <span class="backlink"> zurück zur <a href="#toc">Übersicht</a> oder <a href="#classes">Klassenübersicht</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/brot#SubStructure</p>
+  <div class="comment">
+   <span class="markdown">Unterbau der Brücke</span>
+  </div>
+  <dl class="description">
+   <dt>
+    hat Super-Klassen
+   </dt>
+   <dd>
+    <a href="#https://w3id.org/brot#SpatialZone" title="https://w3id.org/brot#SpatialZone">räumliche Zone</a> <sup class="type-c" title="Klasse">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="WayPoint">
+  <h3>Wegpunkt<sup class="type-c" title="Klasse">c</sup> <span class="backlink"> zurück zur <a href="#toc">Übersicht</a> oder <a href="#classes">Klassenübersicht</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/bcore#WayPoint</p>
+  <div class="comment">
+   <span class="markdown">Punkt auf einer linearen Infrastrukturtrasse</span>
+  </div>
+  <dl class="description">
+   <dt>
+    hat Super-Klassen
+   </dt>
+   <dd>
+    <a href="#https://dtc-ontology.cms.ed.tum.de/infraspatialot#Point" title="https://dtc-ontology.cms.ed.tum.de/infraspatialot#Point">Punkt</a> <sup class="type-c" title="Klasse">c</sup>
+   </dd>
+   <dt>
+    ist in der Domäne von
+   </dt>
+   <dd>
+    <a href="#WayPointStation" title="https://w3id.org/bcore#WayPointStation">Trassenpunkt Stationierung</a> <sup class="type-dp" title="Daten Eigenschaft">dp</sup>, <a href="#isWayPointOf" title="https://w3id.org/bcore#isWayPointOf">ist Wegpunkt von</a> <sup class="type-op" title="Objekt Eigenschaft">op</sup>
+   </dd>
+   <dt>
+    ist in Range von
+   </dt>
+   <dd>
+    <a href="#hasWayPointAt" title="https://w3id.org/bcore#hasWayPointAt">hat Trassenpunkt auf</a> <sup class="type-op" title="Objekt Eigenschaft">op</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="https://w3id.org/bot#Zone">
+  <h3>Zone<sup class="type-c" title="Klasse">c</sup> <span class="backlink"> zurück zur <a href="#toc">Übersicht</a> oder <a href="#classes">Klassenübersicht</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/bot#Zone</p>
+  <div class="comment">
+   <span class="markdown">Räumliche Zone (Volumen, das ein materielles oder ideelles Objekt umschließt)</span>
+  </div>
+  <dl class="description">
+   <dt>
+    ist äquvivalent zu
+   </dt>
+   <dd>
+    <a href="#https://w3id.org/brot#SpatialZone" title="https://w3id.org/brot#SpatialZone">räumliche Zone</a> <sup class="type-c" title="Klasse">c</sup>
+   </dd>
+   <dt>
+    hat Sub-Klassen
+   </dt>
+   <dd>
+    <a href="#https://w3id.org/bot#Site" title="https://w3id.org/bot#Site">Baustelle</a> <sup class="type-c" title="Klasse">c</sup>, <a href="#Country" title="https://w3id.org/bcore#Country">Land</a> <sup class="type-c" title="Klasse">c</sup>, <a href="#Region" title="https://w3id.org/bcore#Region">Region</a> <sup class="type-c" title="Klasse">c</sup>, <a href="#City" title="https://w3id.org/bcore#City">Stadt</a> <sup class="type-c" title="Klasse">c</sup>
+   </dd>
+   <dt>
+    ist in der Domäne von
+   </dt>
+   <dd>
+    <a href="#ZoneName" title="https://w3id.org/bcore#ZoneName">Zonenname</a> <sup class="type-dp" title="Daten Eigenschaft">dp</sup>, <a href="#isLocatedAt" title="https://w3id.org/bcore#isLocatedAt">befindet sich an</a> <sup class="type-op" title="Objekt Eigenschaft">op</sup>, <a href="#https://w3id.org/bot#containsZone" title="https://w3id.org/bot#containsZone">enthält Zone</a> <sup class="type-op" title="Objekt Eigenschaft">op</sup>, <a href="#liesWithin" title="https://w3id.org/bcore#liesWithin">liegt in</a> <sup class="type-op" title="Objekt Eigenschaft">op</sup>, <a href="#https://w3id.org/bot#intersectsZone" title="https://w3id.org/bot#intersectsZone">schneidet Zone</a> <sup class="type-op" title="Objekt Eigenschaft">op</sup>
+   </dd>
+   <dt>
+    ist in Range von
+   </dt>
+   <dd>
+    <a href="#isLocatedInZone" title="https://w3id.org/bcore#isLocatedInZone">befindet sich in Zone</a> <sup class="type-op" title="Objekt Eigenschaft">op</sup>, <a href="#crossesZone" title="https://w3id.org/bcore#crossesZone">durchquert Zone</a> <sup class="type-op" title="Objekt Eigenschaft">op</sup>, <a href="#https://w3id.org/bot#containsZone" title="https://w3id.org/bot#containsZone">enthält Zone</a> <sup class="type-op" title="Objekt Eigenschaft">op</sup>, <a href="#liesWithin" title="https://w3id.org/bcore#liesWithin">liegt in</a> <sup class="type-op" title="Objekt Eigenschaft">op</sup>, <a href="#https://w3id.org/bot#intersectsZone" title="https://w3id.org/bot#intersectsZone">schneidet Zone</a> <sup class="type-op" title="Objekt Eigenschaft">op</sup>, <a href="#bridgesZone" title="https://w3id.org/bcore#bridgesZone">überquert Zone</a> <sup class="type-op" title="Objekt Eigenschaft">op</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="https://w3id.org/brot#SuperStructure">
+  <h3>Überbau<sup class="type-c" title="Klasse">c</sup> <span class="backlink"> zurück zur <a href="#toc">Übersicht</a> oder <a href="#classes">Klassenübersicht</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/brot#SuperStructure</p>
+  <div class="comment">
+   <span class="markdown">Überbau der Brücke, Längstragglieder der Brücke</span>
+  </div>
+  <dl class="description">
+   <dt>
+    hat Super-Klassen
+   </dt>
+   <dd>
+    <a href="#https://w3id.org/brot#SpatialZone" title="https://w3id.org/brot#SpatialZone">räumliche Zone</a> <sup class="type-c" title="Klasse">c</sup>
+   </dd>
+  </dl>
+ </div>
+</div><div xmlns:widoco="https://w3id.org/widoco/vocab#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="objectproperties">
+ <h2>Objekt Eigenschaften</h2>
+ <ul class="hlist">
+  <li><a href="#isLocatedAt" title="https://w3id.org/bcore#isLocatedAt">befindet sich an</a></li>
+  <li><a href="#isLocatedInZone" title="https://w3id.org/bcore#isLocatedInZone">befindet sich in Zone</a></li>
+  <li><a href="#startsAt" title="https://w3id.org/bcore#startsAt">beginnt an</a></li>
+  <li><a href="#https://w3id.org/brot#containsComponent" title="https://w3id.org/brot#containsComponent">beinhaltet Bauteil</a></li>
+  <li><a href="#describes" title="https://w3id.org/bcore#describes">beschreibt</a></li>
+  <li><a href="#https://w3id.org/brot#aggregates" title="https://w3id.org/brot#aggregates">besteht aus</a></li>
+  <li><a href="#isMadeOfMaterial" title="https://w3id.org/bcore#isMadeOfMaterial">besteht aus Material</a></li>
+  <li><a href="#crossesZone" title="https://w3id.org/bcore#crossesZone">durchquert Zone</a></li>
+  <li><a href="#endsAt" title="https://w3id.org/bcore#endsAt">endet an</a></li>
+  <li><a href="#hasPartialStructure" title="https://w3id.org/bcore#hasPartialStructure">enthält Brückenzug</a></li>
+  <li><a href="#includesLocalisation" title="https://w3id.org/bcore#includesLocalisation">enthält Lokalisation</a></li>
+  <li><a href="#https://w3id.org/bot#containsZone" title="https://w3id.org/bot#containsZone">enthält Zone</a></li>
+  <li><a href="#hasWayPointAt" title="https://w3id.org/bcore#hasWayPointAt">hat Trassenpunkt auf</a></li>
+  <li><a href="#isPartialStructureOf" title="https://w3id.org/bcore#isPartialStructureOf">ist Brückenzug von</a></li>
+  <li><a href="#hasLocationAt" title="https://w3id.org/bcore#hasLocationAt">ist lokalisiert an</a></li>
+  <li><a href="#isPartOfZone" title="https://w3id.org/bcore#isPartOfZone">ist Teil einer Zone</a></li>
+  <li><a href="#isPartOfComponent" title="https://w3id.org/bcore#isPartOfComponent">ist Teil von Bauteil</a></li>
+  <li><a href="#isPartOfRoute" title="https://w3id.org/bcore#isPartOfRoute">ist Teil von Trasse</a></li>
+  <li><a href="#isWayPointOf" title="https://w3id.org/bcore#isWayPointOf">ist Wegpunkt von</a></li>
+  <li><a href="#crossesRoute" title="https://w3id.org/bcore#crossesRoute">kreuzt Trasse</a></li>
+  <li><a href="#https://w3id.org/reloc#meetRear" title="https://w3id.org/reloc#meetRear">liegt hinter</a></li>
+  <li><a href="#liesWithin" title="https://w3id.org/bcore#liesWithin">liegt in</a></li>
+  <li><a href="#https://w3id.org/reloc#meetLeft" title="https://w3id.org/reloc#meetLeft">liegt links von</a></li>
+  <li><a href="#https://w3id.org/reloc#meetRight" title="https://w3id.org/reloc#meetRight">liegt rechts von</a></li>
+  <li><a href="#https://w3id.org/reloc#meetBottom" title="https://w3id.org/reloc#meetBottom">liegt unter</a></li>
+  <li><a href="#https://w3id.org/reloc#meetFront" title="https://w3id.org/reloc#meetFront">liegt vor</a></li>
+  <li><a href="#https://w3id.org/reloc#meetTop" title="https://w3id.org/reloc#meetTop">liegt über</a></li>
+  <li><a href="#https://w3id.org/bot#intersectsZone" title="https://w3id.org/bot#intersectsZone">schneidet Zone</a></li>
+  <li><a href="#carriesRoute" title="https://w3id.org/bcore#carriesRoute">überführt Trasse</a></li>
+  <li><a href="#traversesBridge" title="https://w3id.org/bcore#traversesBridge">überquert Brücke</a></li>
+  <li><a href="#bridgesRoute" title="https://w3id.org/bcore#bridgesRoute">überquert Trasse</a></li>
+  <li><a href="#bridgesZone" title="https://w3id.org/bcore#bridgesZone">überquert Zone</a></li>
+ </ul>
+ <div class="entity" id="isLocatedAt">
+  <h3>befindet sich an<sup class="type-op" title="Objekt Eigenschaft">op</sup> <span class="backlink"> zurück zur <a href="#toc">Übersicht</a> oder <a href="#objectproperties">Übersicht der Objekteigenschaften</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/bcore#isLocatedAt</p>
+  <div class="comment">
+   <span class="markdown">Zone befindet sich an Lokalisierung (Ort)</span>
+  </div>
+  <div class="description">
+   <p><strong>hat Charakteristika: </strong> funktional</p>
+   <dl>
+    <dt>
+     hat Domäne
+    </dt>
+    <dd>
+     <a href="#https://w3id.org/bot#Zone" title="https://w3id.org/bot#Zone">Zone</a> <sup class="type-c" title="Klasse">c</sup>
+    </dd>
+    <dt>
+     hat Range
+    </dt>
+    <dd>
+     <a href="#https://dtc-ontology.cms.ed.tum.de/infraspatialot#Localisation" title="https://dtc-ontology.cms.ed.tum.de/infraspatialot#Localisation">Lokalisierung</a> <sup class="type-c" title="Klasse">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="isLocatedInZone">
+  <h3>befindet sich in Zone<sup class="type-op" title="Objekt Eigenschaft">op</sup> <span class="backlink"> zurück zur <a href="#toc">Übersicht</a> oder <a href="#objectproperties">Übersicht der Objekteigenschaften</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/bcore#isLocatedInZone</p>
+  <div class="comment">
+   <span class="markdown">Lokalisierung (Ort) befindet sich in Zone</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     hat Domäne
+    </dt>
+    <dd>
+     <a href="#https://dtc-ontology.cms.ed.tum.de/infraspatialot#Point" title="https://dtc-ontology.cms.ed.tum.de/infraspatialot#Point">Punkt</a> <sup class="type-c" title="Klasse">c</sup>
+    </dd>
+    <dt>
+     hat Range
+    </dt>
+    <dd>
+     <a href="#https://w3id.org/bot#Zone" title="https://w3id.org/bot#Zone">Zone</a> <sup class="type-c" title="Klasse">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="startsAt">
+  <h3>beginnt an<sup class="type-op" title="Objekt Eigenschaft">op</sup> <span class="backlink"> zurück zur <a href="#toc">Übersicht</a> oder <a href="#objectproperties">Übersicht der Objekteigenschaften</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/bcore#startsAt</p>
+  <div class="comment">
+   <span class="markdown">Startpunkt der Linienlokalisierung</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     hat Domäne
+    </dt>
+    <dd>
+     <a href="#https://dtc-ontology.cms.ed.tum.de/infraspatialot#LineLocalisation" title="https://dtc-ontology.cms.ed.tum.de/infraspatialot#LineLocalisation">Linienlokalisierung</a> <sup class="type-c" title="Klasse">c</sup>
+    </dd>
+    <dt>
+     hat Range
+    </dt>
+    <dd>
+     <a href="#https://dtc-ontology.cms.ed.tum.de/infraspatialot#Point" title="https://dtc-ontology.cms.ed.tum.de/infraspatialot#Point">Punkt</a> <sup class="type-c" title="Klasse">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="https://w3id.org/brot#containsComponent">
+  <h3>beinhaltet Bauteil<sup class="type-op" title="Objekt Eigenschaft">op</sup> <span class="backlink"> zurück zur <a href="#toc">Übersicht</a> oder <a href="#objectproperties">Übersicht der Objekteigenschaften</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/brot#containsComponent</p>
+  <div class="comment">
+   <span class="markdown">Brücke besteht aus Bauteil</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     hat Domäne
+    </dt>
+    <dd>
+     <a href="#https://w3id.org/brot#SpatialZone" title="https://w3id.org/brot#SpatialZone">räumliche Zone</a> <sup class="type-c" title="Klasse">c</sup>
+    </dd>
+    <dt>
+     hat Range
+    </dt>
+    <dd>
+     <a href="#https://w3id.org/brot#Component" title="https://w3id.org/brot#Component">Bauteil</a> <sup class="type-c" title="Klasse">c</sup>
+    </dd>
+    <dt>
+     ist inverse zu
+    </dt>
+    <dd>
+     <a href="#isPartOfZone" title="https://w3id.org/bcore#isPartOfZone">ist Teil einer Zone</a> <sup class="type-op" title="Objekt Eigenschaft">op</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="describes">
+  <h3>beschreibt<sup class="type-op" title="Objekt Eigenschaft">op</sup> <span class="backlink"> zurück zur <a href="#toc">Übersicht</a> oder <a href="#objectproperties">Übersicht der Objekteigenschaften</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/bcore#describes</p>
+  <div class="comment">
+   <span class="markdown">Mediendatei beschreibt (stellt dar, zeigt, veranschaulicht) eine Brücke</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     hat Domäne
+    </dt>
+    <dd>
+     <a href="#MediaFile" title="https://w3id.org/bcore#MediaFile">Mediendatei</a> <sup class="type-c" title="Klasse">c</sup>
+    </dd>
+    <dt>
+     hat Range
+    </dt>
+    <dd>
+     <a href="#https://w3id.org/brot#Bridge" title="https://w3id.org/brot#Bridge">Brücke</a> <sup class="type-c" title="Klasse">c</sup> <span class="logic">or</span> <a href="#https://w3id.org/brot#Component" title="https://w3id.org/brot#Component">Bauteil</a> <sup class="type-c" title="Klasse">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="https://w3id.org/brot#aggregates">
+  <h3>besteht aus<sup class="type-op" title="Objekt Eigenschaft">op</sup> <span class="backlink"> zurück zur <a href="#toc">Übersicht</a> oder <a href="#objectproperties">Übersicht der Objekteigenschaften</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/brot#aggregates</p>
+  <div class="comment">
+   <span class="markdown">Bauteil besteht aus Bauteil</span>
+  </div>
+  <div class="description">
+   <p><strong>hat Charakteristika: </strong> transitiv</p>
+   <dl>
+    <dt>
+     hat Domäne
+    </dt>
+    <dd>
+     <a href="#https://w3id.org/brot#Component" title="https://w3id.org/brot#Component">Bauteil</a> <sup class="type-c" title="Klasse">c</sup>
+    </dd>
+    <dt>
+     hat Range
+    </dt>
+    <dd>
+     <a href="#https://w3id.org/brot#Component" title="https://w3id.org/brot#Component">Bauteil</a> <sup class="type-c" title="Klasse">c</sup>
+    </dd>
+    <dt>
+     ist inverse zu
+    </dt>
+    <dd>
+     <a href="#isPartOfComponent" title="https://w3id.org/bcore#isPartOfComponent">ist Teil von Bauteil</a> <sup class="type-op" title="Objekt Eigenschaft">op</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="isMadeOfMaterial">
+  <h3>besteht aus Material<sup class="type-op" title="Objekt Eigenschaft">op</sup> <span class="backlink"> zurück zur <a href="#toc">Übersicht</a> oder <a href="#objectproperties">Übersicht der Objekteigenschaften</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/bcore#isMadeOfMaterial</p>
+  <div class="comment">
+   <span class="markdown">Bauteil besteht aus Material</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     hat Domäne
+    </dt>
+    <dd>
+     <a href="#https://w3id.org/brot#Component" title="https://w3id.org/brot#Component">Bauteil</a> <sup class="type-c" title="Klasse">c</sup>
+    </dd>
+    <dt>
+     hat Range
+    </dt>
+    <dd>
+     <a href="#https://w3id.org/bmat#BuildingMaterial" title="https://w3id.org/bmat#BuildingMaterial">Baumaterial</a> <sup class="type-c" title="Klasse">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="crossesZone">
+  <h3>durchquert Zone<sup class="type-op" title="Objekt Eigenschaft">op</sup> <span class="backlink"> zurück zur <a href="#toc">Übersicht</a> oder <a href="#objectproperties">Übersicht der Objekteigenschaften</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/bcore#crossesZone</p>
+  <div class="comment">
+   <span class="markdown">Trasse durchquert Zone</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     hat Domäne
+    </dt>
+    <dd>
+     <a href="#InfrastructureRoute" title="https://w3id.org/bcore#InfrastructureRoute">Infrastrukturtrasse</a> <sup class="type-c" title="Klasse">c</sup>
+    </dd>
+    <dt>
+     hat Range
+    </dt>
+    <dd>
+     <a href="#https://w3id.org/bot#Zone" title="https://w3id.org/bot#Zone">Zone</a> <sup class="type-c" title="Klasse">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="endsAt">
+  <h3>endet an<sup class="type-op" title="Objekt Eigenschaft">op</sup> <span class="backlink"> zurück zur <a href="#toc">Übersicht</a> oder <a href="#objectproperties">Übersicht der Objekteigenschaften</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/bcore#endsAt</p>
+  <div class="comment">
+   <span class="markdown">Endpunkt der Linienlokalisierung</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     hat Domäne
+    </dt>
+    <dd>
+     <a href="#https://dtc-ontology.cms.ed.tum.de/infraspatialot#LineLocalisation" title="https://dtc-ontology.cms.ed.tum.de/infraspatialot#LineLocalisation">Linienlokalisierung</a> <sup class="type-c" title="Klasse">c</sup>
+    </dd>
+    <dt>
+     hat Range
+    </dt>
+    <dd>
+     <a href="#https://dtc-ontology.cms.ed.tum.de/infraspatialot#Point" title="https://dtc-ontology.cms.ed.tum.de/infraspatialot#Point">Punkt</a> <sup class="type-c" title="Klasse">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="hasPartialStructure">
+  <h3>enthält Brückenzug<sup class="type-op" title="Objekt Eigenschaft">op</sup> <span class="backlink"> zurück zur <a href="#toc">Übersicht</a> oder <a href="#objectproperties">Übersicht der Objekteigenschaften</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/bcore#hasPartialStructure</p>
+  <div class="comment">
+   <span class="markdown">Brücke besitzt Brückenzug</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     hat Domäne
+    </dt>
+    <dd>
+     <a href="#https://w3id.org/brot#Bridge" title="https://w3id.org/brot#Bridge">Brücke</a> <sup class="type-c" title="Klasse">c</sup>
+    </dd>
+    <dt>
+     hat Range
+    </dt>
+    <dd>
+     <a href="#https://w3id.org/brot#Bridge" title="https://w3id.org/brot#Bridge">Brücke</a> <sup class="type-c" title="Klasse">c</sup>
+    </dd>
+    <dt>
+     ist inverse zu
+    </dt>
+    <dd>
+     <a href="#isPartialStructureOf" title="https://w3id.org/bcore#isPartialStructureOf">ist Brückenzug von</a> <sup class="type-op" title="Objekt Eigenschaft">op</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="includesLocalisation">
+  <h3>enthält Lokalisation<sup class="type-op" title="Objekt Eigenschaft">op</sup> <span class="backlink"> zurück zur <a href="#toc">Übersicht</a> oder <a href="#objectproperties">Übersicht der Objekteigenschaften</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/bcore#includesLocalisation</p>
+  <div class="comment">
+   <span class="markdown">Trasse enthält Lokalisation (Trassenpunkt)</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     hat Domäne
+    </dt>
+    <dd>
+     <a href="#InfrastructureRoute" title="https://w3id.org/bcore#InfrastructureRoute">Infrastrukturtrasse</a> <sup class="type-c" title="Klasse">c</sup>
+    </dd>
+    <dt>
+     hat Range
+    </dt>
+    <dd>
+     <a href="#https://dtc-ontology.cms.ed.tum.de/infraspatialot#Localisation" title="https://dtc-ontology.cms.ed.tum.de/infraspatialot#Localisation">Lokalisierung</a> <sup class="type-c" title="Klasse">c</sup>
+    </dd>
+    <dt>
+     ist inverse zu
+    </dt>
+    <dd>
+     <a href="#isPartOfRoute" title="https://w3id.org/bcore#isPartOfRoute">ist Teil von Trasse</a> <sup class="type-op" title="Objekt Eigenschaft">op</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="https://w3id.org/bot#containsZone">
+  <h3>enthält Zone<sup class="type-op" title="Objekt Eigenschaft">op</sup> <span class="backlink"> zurück zur <a href="#toc">Übersicht</a> oder <a href="#objectproperties">Übersicht der Objekteigenschaften</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/bot#containsZone</p>
+  <div class="comment">
+   <span class="markdown">Zone enthält Zone</span>
+  </div>
+  <div class="description">
+   <p><strong>hat Charakteristika: </strong> transitiv</p>
+   <dl>
+    <dt>
+     hat Domäne
+    </dt>
+    <dd>
+     <a href="#https://w3id.org/bot#Zone" title="https://w3id.org/bot#Zone">Zone</a> <sup class="type-c" title="Klasse">c</sup>
+    </dd>
+    <dt>
+     hat Range
+    </dt>
+    <dd>
+     <a href="#https://w3id.org/bot#Zone" title="https://w3id.org/bot#Zone">Zone</a> <sup class="type-c" title="Klasse">c</sup>
+    </dd>
+    <dt>
+     ist inverse zu
+    </dt>
+    <dd>
+     <a href="#liesWithin" title="https://w3id.org/bcore#liesWithin">liegt in</a> <sup class="type-op" title="Objekt Eigenschaft">op</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="hasWayPointAt">
+  <h3>hat Trassenpunkt auf<sup class="type-op" title="Objekt Eigenschaft">op</sup> <span class="backlink"> zurück zur <a href="#toc">Übersicht</a> oder <a href="#objectproperties">Übersicht der Objekteigenschaften</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/bcore#hasWayPointAt</p>
+  <div class="comment">
+   <span class="markdown">Punkt auf der Linienlokalisierung</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     hat Super-Eigenschaften
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2002/07/owl#topObjectProperty" target="_blank" title="http://www.w3.org/2002/07/owl#topObjectProperty">top Object Property</a> <sup class="type-op" title="Objekt Eigenschaft">op</sup>
+    </dd>
+    <dt>
+     hat Domäne
+    </dt>
+    <dd>
+     <a href="#https://dtc-ontology.cms.ed.tum.de/infraspatialot#LineLocalisation" title="https://dtc-ontology.cms.ed.tum.de/infraspatialot#LineLocalisation">Linienlokalisierung</a> <sup class="type-c" title="Klasse">c</sup>
+    </dd>
+    <dt>
+     hat Range
+    </dt>
+    <dd>
+     <a href="#WayPoint" title="https://w3id.org/bcore#WayPoint">Wegpunkt</a> <sup class="type-c" title="Klasse">c</sup>
+    </dd>
+    <dt>
+     ist inverse zu
+    </dt>
+    <dd>
+     <a href="#isWayPointOf" title="https://w3id.org/bcore#isWayPointOf">ist Wegpunkt von</a> <sup class="type-op" title="Objekt Eigenschaft">op</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="isPartialStructureOf">
+  <h3>ist Brückenzug von<sup class="type-op" title="Objekt Eigenschaft">op</sup> <span class="backlink"> zurück zur <a href="#toc">Übersicht</a> oder <a href="#objectproperties">Übersicht der Objekteigenschaften</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/bcore#isPartialStructureOf</p>
+  <div class="comment">
+   <span class="markdown">Brückenzug ist Teil genau einer Brücke</span>
+  </div>
+  <div class="description">
+   <p><strong>hat Charakteristika: </strong> funktional</p>
+   <dl>
+    <dt>
+     hat Domäne
+    </dt>
+    <dd>
+     <a href="#https://w3id.org/brot#Bridge" title="https://w3id.org/brot#Bridge">Brücke</a> <sup class="type-c" title="Klasse">c</sup>
+    </dd>
+    <dt>
+     hat Range
+    </dt>
+    <dd>
+     <a href="#https://w3id.org/brot#Bridge" title="https://w3id.org/brot#Bridge">Brücke</a> <sup class="type-c" title="Klasse">c</sup>
+    </dd>
+    <dt>
+     ist inverse zu
+    </dt>
+    <dd>
+     <a href="#hasPartialStructure" title="https://w3id.org/bcore#hasPartialStructure">enthält Brückenzug</a> <sup class="type-op" title="Objekt Eigenschaft">op</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="hasLocationAt">
+  <h3>ist lokalisiert an<sup class="type-op" title="Objekt Eigenschaft">op</sup> <span class="backlink"> zurück zur <a href="#toc">Übersicht</a> oder <a href="#objectproperties">Übersicht der Objekteigenschaften</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/bcore#hasLocationAt</p>
+  <div class="comment">
+   <span class="markdown">Punkt der Lokalisierung (Ort)</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     hat Domäne
+    </dt>
+    <dd>
+     <a href="#https://dtc-ontology.cms.ed.tum.de/infraspatialot#Localisation" title="https://dtc-ontology.cms.ed.tum.de/infraspatialot#Localisation">Lokalisierung</a> <sup class="type-c" title="Klasse">c</sup>
+    </dd>
+    <dt>
+     hat Range
+    </dt>
+    <dd>
+     <a href="#https://dtc-ontology.cms.ed.tum.de/infraspatialot#Point" title="https://dtc-ontology.cms.ed.tum.de/infraspatialot#Point">Punkt</a> <sup class="type-c" title="Klasse">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="isPartOfZone">
+  <h3>ist Teil einer Zone<sup class="type-op" title="Objekt Eigenschaft">op</sup> <span class="backlink"> zurück zur <a href="#toc">Übersicht</a> oder <a href="#objectproperties">Übersicht der Objekteigenschaften</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/bcore#isPartOfZone</p>
+  <div class="comment">
+   <span class="markdown">Bauteil ist Teil genau einer Zone (z.B. Brücke)</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     hat Domäne
+    </dt>
+    <dd>
+     <a href="#https://w3id.org/brot#Component" title="https://w3id.org/brot#Component">Bauteil</a> <sup class="type-c" title="Klasse">c</sup>
+    </dd>
+    <dt>
+     hat Range
+    </dt>
+    <dd>
+     <a href="#https://w3id.org/brot#SpatialZone" title="https://w3id.org/brot#SpatialZone">räumliche Zone</a> <sup class="type-c" title="Klasse">c</sup>
+    </dd>
+    <dt>
+     ist inverse zu
+    </dt>
+    <dd>
+     <a href="#https://w3id.org/brot#containsComponent" title="https://w3id.org/brot#containsComponent">beinhaltet Bauteil</a> <sup class="type-op" title="Objekt Eigenschaft">op</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="isPartOfComponent">
+  <h3>ist Teil von Bauteil<sup class="type-op" title="Objekt Eigenschaft">op</sup> <span class="backlink"> zurück zur <a href="#toc">Übersicht</a> oder <a href="#objectproperties">Übersicht der Objekteigenschaften</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/bcore#isPartOfComponent</p>
+  <div class="comment">
+   <span class="markdown">Brückenauteil ist Teil eines anderen Bauteils</span>
+  </div>
+  <div class="description">
+   <p><strong>hat Charakteristika: </strong> transitiv</p>
+   <dl>
+    <dt>
+     hat Domäne
+    </dt>
+    <dd>
+     <a href="#https://w3id.org/brot#Component" title="https://w3id.org/brot#Component">Bauteil</a> <sup class="type-c" title="Klasse">c</sup>
+    </dd>
+    <dt>
+     hat Range
+    </dt>
+    <dd>
+     <a href="#https://w3id.org/brot#Component" title="https://w3id.org/brot#Component">Bauteil</a> <sup class="type-c" title="Klasse">c</sup>
+    </dd>
+    <dt>
+     ist inverse zu
+    </dt>
+    <dd>
+     <a href="#https://w3id.org/brot#aggregates" title="https://w3id.org/brot#aggregates">besteht aus</a> <sup class="type-op" title="Objekt Eigenschaft">op</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="isPartOfRoute">
+  <h3>ist Teil von Trasse<sup class="type-op" title="Objekt Eigenschaft">op</sup> <span class="backlink"> zurück zur <a href="#toc">Übersicht</a> oder <a href="#objectproperties">Übersicht der Objekteigenschaften</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/bcore#isPartOfRoute</p>
+  <div class="comment">
+   <span class="markdown">Trassenpunkt ist Teil einer Trasse</span>
+  </div>
+  <div class="description">
+   <p><strong>hat Charakteristika: </strong> funktional</p>
+   <dl>
+    <dt>
+     hat Domäne
+    </dt>
+    <dd>
+     <a href="#https://dtc-ontology.cms.ed.tum.de/infraspatialot#Localisation" title="https://dtc-ontology.cms.ed.tum.de/infraspatialot#Localisation">Lokalisierung</a> <sup class="type-c" title="Klasse">c</sup>
+    </dd>
+    <dt>
+     hat Range
+    </dt>
+    <dd>
+     <a href="#InfrastructureRoute" title="https://w3id.org/bcore#InfrastructureRoute">Infrastrukturtrasse</a> <sup class="type-c" title="Klasse">c</sup>
+    </dd>
+    <dt>
+     ist inverse zu
+    </dt>
+    <dd>
+     <a href="#includesLocalisation" title="https://w3id.org/bcore#includesLocalisation">enthält Lokalisation</a> <sup class="type-op" title="Objekt Eigenschaft">op</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="isWayPointOf">
+  <h3>ist Wegpunkt von<sup class="type-op" title="Objekt Eigenschaft">op</sup> <span class="backlink"> zurück zur <a href="#toc">Übersicht</a> oder <a href="#objectproperties">Übersicht der Objekteigenschaften</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/bcore#isWayPointOf</p>
+  <div class="comment">
+   <span class="markdown">Ist Punkt auf der Linienlokalisierung</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     hat Super-Eigenschaften
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2002/07/owl#topObjectProperty" target="_blank" title="http://www.w3.org/2002/07/owl#topObjectProperty">top Object Property</a> <sup class="type-op" title="Objekt Eigenschaft">op</sup>
+    </dd>
+    <dt>
+     hat Domäne
+    </dt>
+    <dd>
+     <a href="#WayPoint" title="https://w3id.org/bcore#WayPoint">Wegpunkt</a> <sup class="type-c" title="Klasse">c</sup>
+    </dd>
+    <dt>
+     hat Range
+    </dt>
+    <dd>
+     <a href="#https://dtc-ontology.cms.ed.tum.de/infraspatialot#LineLocalisation" title="https://dtc-ontology.cms.ed.tum.de/infraspatialot#LineLocalisation">Linienlokalisierung</a> <sup class="type-c" title="Klasse">c</sup>
+    </dd>
+    <dt>
+     ist inverse zu
+    </dt>
+    <dd>
+     <a href="#hasWayPointAt" title="https://w3id.org/bcore#hasWayPointAt">hat Trassenpunkt auf</a> <sup class="type-op" title="Objekt Eigenschaft">op</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="crossesRoute">
+  <h3>kreuzt Trasse<sup class="type-op" title="Objekt Eigenschaft">op</sup> <span class="backlink"> zurück zur <a href="#toc">Übersicht</a> oder <a href="#objectproperties">Übersicht der Objekteigenschaften</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/bcore#crossesRoute</p>
+  <div class="comment">
+   <span class="markdown">Trasse kreuzt Trasse im Lageplan (ohne Beachtung der Altitude)</span>
+  </div>
+  <div class="description">
+   <p><strong>hat Charakteristika: </strong> symmetrisch</p>
+   <dl>
+    <dt>
+     hat Domäne
+    </dt>
+    <dd>
+     <a href="#InfrastructureRoute" title="https://w3id.org/bcore#InfrastructureRoute">Infrastrukturtrasse</a> <sup class="type-c" title="Klasse">c</sup>
+    </dd>
+    <dt>
+     hat Range
+    </dt>
+    <dd>
+     <a href="#InfrastructureRoute" title="https://w3id.org/bcore#InfrastructureRoute">Infrastrukturtrasse</a> <sup class="type-c" title="Klasse">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="https://w3id.org/reloc#meetRear">
+  <h3>liegt hinter<sup class="type-op" title="Objekt Eigenschaft">op</sup> <span class="backlink"> zurück zur <a href="#toc">Übersicht</a> oder <a href="#objectproperties">Übersicht der Objekteigenschaften</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/reloc#meetRear</p>
+  <div class="comment">
+   <span class="markdown">Bauteil liegt direkt hinter anderem Bauteil</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     hat Domäne
+    </dt>
+    <dd>
+     <a href="#https://w3id.org/brot#Component" title="https://w3id.org/brot#Component">Bauteil</a> <sup class="type-c" title="Klasse">c</sup>
+    </dd>
+    <dt>
+     hat Range
+    </dt>
+    <dd>
+     <a href="#https://w3id.org/brot#Component" title="https://w3id.org/brot#Component">Bauteil</a> <sup class="type-c" title="Klasse">c</sup>
+    </dd>
+    <dt>
+     ist inverse zu
+    </dt>
+    <dd>
+     <a href="#https://w3id.org/reloc#meetFront" title="https://w3id.org/reloc#meetFront">liegt vor</a> <sup class="type-op" title="Objekt Eigenschaft">op</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="liesWithin">
+  <h3>liegt in<sup class="type-op" title="Objekt Eigenschaft">op</sup> <span class="backlink"> zurück zur <a href="#toc">Übersicht</a> oder <a href="#objectproperties">Übersicht der Objekteigenschaften</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/bcore#liesWithin</p>
+  <div class="comment">
+   <span class="markdown">Zone wird vollständig von anderer Zone umschlossen</span>
+  </div>
+  <div class="description">
+   <p><strong>hat Charakteristika: </strong> transitiv</p>
+   <dl>
+    <dt>
+     hat Domäne
+    </dt>
+    <dd>
+     <a href="#https://w3id.org/bot#Zone" title="https://w3id.org/bot#Zone">Zone</a> <sup class="type-c" title="Klasse">c</sup>
+    </dd>
+    <dt>
+     hat Range
+    </dt>
+    <dd>
+     <a href="#https://w3id.org/bot#Zone" title="https://w3id.org/bot#Zone">Zone</a> <sup class="type-c" title="Klasse">c</sup>
+    </dd>
+    <dt>
+     ist inverse zu
+    </dt>
+    <dd>
+     <a href="#https://w3id.org/bot#containsZone" title="https://w3id.org/bot#containsZone">enthält Zone</a> <sup class="type-op" title="Objekt Eigenschaft">op</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="https://w3id.org/reloc#meetLeft">
+  <h3>liegt links von<sup class="type-op" title="Objekt Eigenschaft">op</sup> <span class="backlink"> zurück zur <a href="#toc">Übersicht</a> oder <a href="#objectproperties">Übersicht der Objekteigenschaften</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/reloc#meetLeft</p>
+  <div class="comment">
+   <span class="markdown">Bauteil liegt links angrenzend zu anderem Bauteil</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     hat Domäne
+    </dt>
+    <dd>
+     <a href="#https://w3id.org/brot#Component" title="https://w3id.org/brot#Component">Bauteil</a> <sup class="type-c" title="Klasse">c</sup>
+    </dd>
+    <dt>
+     hat Range
+    </dt>
+    <dd>
+     <a href="#https://w3id.org/brot#Component" title="https://w3id.org/brot#Component">Bauteil</a> <sup class="type-c" title="Klasse">c</sup>
+    </dd>
+    <dt>
+     ist inverse zu
+    </dt>
+    <dd>
+     <a href="#https://w3id.org/reloc#meetRight" title="https://w3id.org/reloc#meetRight">liegt rechts von</a> <sup class="type-op" title="Objekt Eigenschaft">op</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="https://w3id.org/reloc#meetRight">
+  <h3>liegt rechts von<sup class="type-op" title="Objekt Eigenschaft">op</sup> <span class="backlink"> zurück zur <a href="#toc">Übersicht</a> oder <a href="#objectproperties">Übersicht der Objekteigenschaften</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/reloc#meetRight</p>
+  <div class="comment">
+   <span class="markdown">Bauteil liegt rechts angrenzend zu anderem Bauteil</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     hat Domäne
+    </dt>
+    <dd>
+     <a href="#https://w3id.org/brot#Component" title="https://w3id.org/brot#Component">Bauteil</a> <sup class="type-c" title="Klasse">c</sup>
+    </dd>
+    <dt>
+     hat Range
+    </dt>
+    <dd>
+     <a href="#https://w3id.org/brot#Component" title="https://w3id.org/brot#Component">Bauteil</a> <sup class="type-c" title="Klasse">c</sup>
+    </dd>
+    <dt>
+     ist inverse zu
+    </dt>
+    <dd>
+     <a href="#https://w3id.org/reloc#meetLeft" title="https://w3id.org/reloc#meetLeft">liegt links von</a> <sup class="type-op" title="Objekt Eigenschaft">op</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="https://w3id.org/reloc#meetBottom">
+  <h3>liegt unter<sup class="type-op" title="Objekt Eigenschaft">op</sup> <span class="backlink"> zurück zur <a href="#toc">Übersicht</a> oder <a href="#objectproperties">Übersicht der Objekteigenschaften</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/reloc#meetBottom</p>
+  <div class="comment">
+   <span class="markdown">Bauteil liegt direkt unter anderem Bauteil</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     hat Domäne
+    </dt>
+    <dd>
+     <a href="#https://w3id.org/brot#Component" title="https://w3id.org/brot#Component">Bauteil</a> <sup class="type-c" title="Klasse">c</sup>
+    </dd>
+    <dt>
+     hat Range
+    </dt>
+    <dd>
+     <a href="#https://w3id.org/brot#Component" title="https://w3id.org/brot#Component">Bauteil</a> <sup class="type-c" title="Klasse">c</sup>
+    </dd>
+    <dt>
+     ist inverse zu
+    </dt>
+    <dd>
+     <a href="#https://w3id.org/reloc#meetTop" title="https://w3id.org/reloc#meetTop">liegt über</a> <sup class="type-op" title="Objekt Eigenschaft">op</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="https://w3id.org/reloc#meetFront">
+  <h3>liegt vor<sup class="type-op" title="Objekt Eigenschaft">op</sup> <span class="backlink"> zurück zur <a href="#toc">Übersicht</a> oder <a href="#objectproperties">Übersicht der Objekteigenschaften</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/reloc#meetFront</p>
+  <div class="comment">
+   <span class="markdown">Bauteil liegt direkt vor anderem Bauteil</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     hat Domäne
+    </dt>
+    <dd>
+     <a href="#https://w3id.org/brot#Component" title="https://w3id.org/brot#Component">Bauteil</a> <sup class="type-c" title="Klasse">c</sup>
+    </dd>
+    <dt>
+     hat Range
+    </dt>
+    <dd>
+     <a href="#https://w3id.org/brot#Component" title="https://w3id.org/brot#Component">Bauteil</a> <sup class="type-c" title="Klasse">c</sup>
+    </dd>
+    <dt>
+     ist inverse zu
+    </dt>
+    <dd>
+     <a href="#https://w3id.org/reloc#meetRear" title="https://w3id.org/reloc#meetRear">liegt hinter</a> <sup class="type-op" title="Objekt Eigenschaft">op</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="https://w3id.org/reloc#meetTop">
+  <h3>liegt über<sup class="type-op" title="Objekt Eigenschaft">op</sup> <span class="backlink"> zurück zur <a href="#toc">Übersicht</a> oder <a href="#objectproperties">Übersicht der Objekteigenschaften</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/reloc#meetTop</p>
+  <div class="comment">
+   <span class="markdown">Bauteil liegt direkt über anderem Bauteil</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     hat Domäne
+    </dt>
+    <dd>
+     <a href="#https://w3id.org/brot#Component" title="https://w3id.org/brot#Component">Bauteil</a> <sup class="type-c" title="Klasse">c</sup>
+    </dd>
+    <dt>
+     hat Range
+    </dt>
+    <dd>
+     <a href="#https://w3id.org/brot#Component" title="https://w3id.org/brot#Component">Bauteil</a> <sup class="type-c" title="Klasse">c</sup>
+    </dd>
+    <dt>
+     ist inverse zu
+    </dt>
+    <dd>
+     <a href="#https://w3id.org/reloc#meetBottom" title="https://w3id.org/reloc#meetBottom">liegt unter</a> <sup class="type-op" title="Objekt Eigenschaft">op</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="https://w3id.org/bot#intersectsZone">
+  <h3>schneidet Zone<sup class="type-op" title="Objekt Eigenschaft">op</sup> <span class="backlink"> zurück zur <a href="#toc">Übersicht</a> oder <a href="#objectproperties">Übersicht der Objekteigenschaften</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/bot#intersectsZone</p>
+  <div class="comment">
+   <span class="markdown">ein Teil der Zone liegt in einer anderen Zone</span>
+  </div>
+  <div class="description">
+   <p><strong>hat Charakteristika: </strong> symmetrisch</p>
+   <dl>
+    <dt>
+     hat Domäne
+    </dt>
+    <dd>
+     <a href="#https://w3id.org/bot#Zone" title="https://w3id.org/bot#Zone">Zone</a> <sup class="type-c" title="Klasse">c</sup>
+    </dd>
+    <dt>
+     hat Range
+    </dt>
+    <dd>
+     <a href="#https://w3id.org/bot#Zone" title="https://w3id.org/bot#Zone">Zone</a> <sup class="type-c" title="Klasse">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="carriesRoute">
+  <h3>überführt Trasse<sup class="type-op" title="Objekt Eigenschaft">op</sup> <span class="backlink"> zurück zur <a href="#toc">Übersicht</a> oder <a href="#objectproperties">Übersicht der Objekteigenschaften</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/bcore#carriesRoute</p>
+  <div class="comment">
+   <span class="markdown">Brücke überführt Trasse</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     hat Domäne
+    </dt>
+    <dd>
+     <a href="#https://w3id.org/brot#Bridge" title="https://w3id.org/brot#Bridge">Brücke</a> <sup class="type-c" title="Klasse">c</sup>
+    </dd>
+    <dt>
+     hat Range
+    </dt>
+    <dd>
+     <a href="#InfrastructureRoute" title="https://w3id.org/bcore#InfrastructureRoute">Infrastrukturtrasse</a> <sup class="type-c" title="Klasse">c</sup>
+    </dd>
+    <dt>
+     ist inverse zu
+    </dt>
+    <dd>
+     <a href="#traversesBridge" title="https://w3id.org/bcore#traversesBridge">überquert Brücke</a> <sup class="type-op" title="Objekt Eigenschaft">op</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="traversesBridge">
+  <h3>überquert Brücke<sup class="type-op" title="Objekt Eigenschaft">op</sup> <span class="backlink"> zurück zur <a href="#toc">Übersicht</a> oder <a href="#objectproperties">Übersicht der Objekteigenschaften</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/bcore#traversesBridge</p>
+  <div class="comment">
+   <span class="markdown">Trasse überquert/führt über Brücke</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     hat Domäne
+    </dt>
+    <dd>
+     <a href="#InfrastructureRoute" title="https://w3id.org/bcore#InfrastructureRoute">Infrastrukturtrasse</a> <sup class="type-c" title="Klasse">c</sup>
+    </dd>
+    <dt>
+     hat Range
+    </dt>
+    <dd>
+     <a href="#https://w3id.org/brot#Bridge" title="https://w3id.org/brot#Bridge">Brücke</a> <sup class="type-c" title="Klasse">c</sup>
+    </dd>
+    <dt>
+     ist inverse zu
+    </dt>
+    <dd>
+     <a href="#carriesRoute" title="https://w3id.org/bcore#carriesRoute">überführt Trasse</a> <sup class="type-op" title="Objekt Eigenschaft">op</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="bridgesRoute">
+  <h3>überquert Trasse<sup class="type-op" title="Objekt Eigenschaft">op</sup> <span class="backlink"> zurück zur <a href="#toc">Übersicht</a> oder <a href="#objectproperties">Übersicht der Objekteigenschaften</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/bcore#bridgesRoute</p>
+  <div class="comment">
+   <span class="markdown">Brücke überquert Trasse</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     hat Domäne
+    </dt>
+    <dd>
+     <a href="#https://w3id.org/brot#Bridge" title="https://w3id.org/brot#Bridge">Brücke</a> <sup class="type-c" title="Klasse">c</sup>
+    </dd>
+    <dt>
+     hat Range
+    </dt>
+    <dd>
+     <a href="#InfrastructureRoute" title="https://w3id.org/bcore#InfrastructureRoute">Infrastrukturtrasse</a> <sup class="type-c" title="Klasse">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="bridgesZone">
+  <h3>überquert Zone<sup class="type-op" title="Objekt Eigenschaft">op</sup> <span class="backlink"> zurück zur <a href="#toc">Übersicht</a> oder <a href="#objectproperties">Übersicht der Objekteigenschaften</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/bcore#bridgesZone</p>
+  <div class="comment">
+   <span class="markdown">Brücke überquert Zone</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     hat Domäne
+    </dt>
+    <dd>
+     <a href="#https://w3id.org/brot#Bridge" title="https://w3id.org/brot#Bridge">Brücke</a> <sup class="type-c" title="Klasse">c</sup>
+    </dd>
+    <dt>
+     hat Range
+    </dt>
+    <dd>
+     <a href="#https://w3id.org/bot#Zone" title="https://w3id.org/bot#Zone">Zone</a> <sup class="type-c" title="Klasse">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+</div><div xmlns:widoco="https://w3id.org/widoco/vocab#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="dataproperties">
+ <h2>Daten Eigenschaften</h2>
+ <ul class="hlist">
+  <li><a href="#Altitude" title="https://w3id.org/bcore#Altitude">Altitude</a></li>
+  <li><a href="#https://w3id.org/brcomp#width" title="https://w3id.org/brcomp#width">Breite</a></li>
+  <li><a href="#Latitude" title="https://w3id.org/bcore#Latitude">Breitengrad</a></li>
+  <li><a href="#BridgeConstructionStartDate" title="https://w3id.org/bcore#BridgeConstructionStartDate">Brücke Baubeginn</a></li>
+  <li><a href="#BridgeConstructionEndDate" title="https://w3id.org/bcore#BridgeConstructionEndDate">Brücke Fertigstellung</a></li>
+  <li><a href="#BridgeID" title="https://w3id.org/bcore#BridgeID">Brücke ID</a></li>
+  <li><a href="#BridgeLoadCase" title="https://w3id.org/bcore#BridgeLoadCase">Brücke Lastfall</a></li>
+  <li><a href="#BridgePlanningEndDate" title="https://w3id.org/bcore#BridgePlanningEndDate">Brücke Planungsbeginn</a></li>
+  <li><a href="#BridgePlanningStartDate" title="https://w3id.org/bcore#BridgePlanningStartDate">Brücke Planungsbeginn</a></li>
+  <li><a href="#BridgeLength" title="https://w3id.org/bcore#BridgeLength">Brückenlänge</a></li>
+  <li><a href="#BridgeName" title="https://w3id.org/bcore#BridgeName">Brückenname</a></li>
+  <li><a href="#BridgeStatus" title="https://w3id.org/bcore#BridgeStatus">Brückenstatus</a></li>
+  <li><a href="#Density" title="https://w3id.org/bcore#Density">Dichte</a></li>
+  <li><a href="#https://w3id.org/brcomp#height" title="https://w3id.org/brcomp#height">Höhe</a></li>
+  <li><a href="#InfrastructureRouteWidth" title="https://w3id.org/bcore#InfrastructureRouteWidth">Infrastrukturtrasse Breite</a></li>
+  <li><a href="#InfrastructureRouteClearanceHeight" title="https://w3id.org/bcore#InfrastructureRouteClearanceHeight">Infrastrukturtrasse lichte Höhe</a></li>
+  <li><a href="#InfrastructureRouteName" title="https://w3id.org/bcore#InfrastructureRouteName">Infrastrukturtrasse Name</a></li>
+  <li><a href="#LocalX" title="https://w3id.org/bcore#LocalX">lokales X</a></li>
+  <li><a href="#LocalY" title="https://w3id.org/bcore#LocalY">lokales Y</a></li>
+  <li><a href="#LocalZ" title="https://w3id.org/bcore#LocalZ">lokales Z</a></li>
+  <li><a href="#LocalisationName" title="https://w3id.org/bcore#LocalisationName">Lokalisierung Name</a></li>
+  <li><a href="#CountryISOCode" title="https://w3id.org/bcore#CountryISOCode">Ländercode ISO</a></li>
+  <li><a href="#https://w3id.org/brcomp#length" title="https://w3id.org/brcomp#length">Länge</a></li>
+  <li><a href="#Longitude" title="https://w3id.org/bcore#Longitude">Längengrad</a></li>
+  <li><a href="#MaterialName" title="https://w3id.org/bcore#MaterialName">Materialname</a></li>
+  <li><a href="#/media#MediaFileSize" title="https://w3id.org/bcore/media#MediaFileSize">Mediendatei Größe</a></li>
+  <li><a href="#/media#MediaIsDigital" title="https://w3id.org/bcore/media#MediaIsDigital">Mediendatei ist digital</a></li>
+  <li><a href="#MediaFilePath" title="https://w3id.org/bcore#MediaFilePath">Pfad der Mediendatei</a></li>
+  <li><a href="#PointName" title="https://w3id.org/bcore#PointName">Punkt Name</a></li>
+  <li><a href="#RegionISOCode" title="https://w3id.org/bcore#RegionISOCode">Regionalcode ISO</a></li>
+  <li><a href="#WayPointStation" title="https://w3id.org/bcore#WayPointStation">Trassenpunkt Stationierung</a></li>
+  <li><a href="#Volume" title="https://w3id.org/bcore#Volume">Volumen</a></li>
+  <li><a href="#ZoneName" title="https://w3id.org/bcore#ZoneName">Zonenname</a></li>
+ </ul>
+ <div class="entity" id="Altitude">
+  <h3>Altitude<sup class="type-dp" title="Daten Eigenschaft">dp</sup> <span class="backlink"> zurück zur <a href="#toc">Übersicht</a> oder <a href="#dataproperties">Übersicht der Dateneigenschaften</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/bcore#Altitude</p>
+  <div class="comment">
+   <span class="markdown">Höhe ü. NN (bezogen auf das lokal gültige amtliche Höhensystem)</span>
+  </div>
+  <div class="description">
+   <p><strong>hat Charakteristika: </strong> funktional</p>
+   <dl>
+    <dt>
+     hat Domäne
+    </dt>
+    <dd>
+     <a href="#https://dtc-ontology.cms.ed.tum.de/infraspatialot#Point" title="https://dtc-ontology.cms.ed.tum.de/infraspatialot#Point">Punkt</a> <sup class="type-c" title="Klasse">c</sup>
+    </dd>
+    <dt>
+     hat Range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#decimal" target="_blank" title="http://www.w3.org/2001/XMLSchema#decimal">decimal</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="https://w3id.org/brcomp#width">
+  <h3>Breite<sup class="type-dp" title="Daten Eigenschaft">dp</sup> <span class="backlink"> zurück zur <a href="#toc">Übersicht</a> oder <a href="#dataproperties">Übersicht der Dateneigenschaften</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/brcomp#width</p>
+  <div class="comment">
+   <span class="markdown">transversaler Abstand der Enden eines Bauteils/ Bauteilquerschnitts</span>
+  </div>
+  <div class="description">
+   <p><strong>hat Charakteristika: </strong> funktional</p>
+   <dl>
+    <dt>
+     hat Domäne
+    </dt>
+    <dd>
+     <a href="#https://w3id.org/brot#Component" title="https://w3id.org/brot#Component">Bauteil</a> <sup class="type-c" title="Klasse">c</sup>
+    </dd>
+    <dt>
+     hat Range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#decimal" target="_blank" title="http://www.w3.org/2001/XMLSchema#decimal">decimal</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="Latitude">
+  <h3>Breitengrad<sup class="type-dp" title="Daten Eigenschaft">dp</sup> <span class="backlink"> zurück zur <a href="#toc">Übersicht</a> oder <a href="#dataproperties">Übersicht der Dateneigenschaften</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/bcore#Latitude</p>
+  <div class="comment">
+   <span class="markdown">geografische Breite</span>
+  </div>
+  <div class="description">
+   <p><strong>hat Charakteristika: </strong> funktional</p>
+   <dl>
+    <dt>
+     hat Domäne
+    </dt>
+    <dd>
+     <a href="#https://dtc-ontology.cms.ed.tum.de/infraspatialot#Point" title="https://dtc-ontology.cms.ed.tum.de/infraspatialot#Point">Punkt</a> <sup class="type-c" title="Klasse">c</sup>
+    </dd>
+    <dt>
+     hat Range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#decimal" target="_blank" title="http://www.w3.org/2001/XMLSchema#decimal">decimal</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="BridgeConstructionStartDate">
+  <h3>Brücke Baubeginn<sup class="type-dp" title="Daten Eigenschaft">dp</sup> <span class="backlink"> zurück zur <a href="#toc">Übersicht</a> oder <a href="#dataproperties">Übersicht der Dateneigenschaften</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/bcore#BridgeConstructionStartDate</p>
+  <div class="comment">
+   <span class="markdown">Startdatum des Baus der Brücke</span>
+  </div>
+  <div class="description">
+   <p><strong>hat Charakteristika: </strong> funktional</p>
+   <dl>
+    <dt>
+     hat Domäne
+    </dt>
+    <dd>
+     <a href="#https://w3id.org/brot#Bridge" title="https://w3id.org/brot#Bridge">Brücke</a> <sup class="type-c" title="Klasse">c</sup>
+    </dd>
+    <dt>
+     hat Range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#date" target="_blank" title="http://www.w3.org/2001/XMLSchema#date">date</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="BridgeConstructionEndDate">
+  <h3>Brücke Fertigstellung<sup class="type-dp" title="Daten Eigenschaft">dp</sup> <span class="backlink"> zurück zur <a href="#toc">Übersicht</a> oder <a href="#dataproperties">Übersicht der Dateneigenschaften</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/bcore#BridgeConstructionEndDate</p>
+  <div class="comment">
+   <span class="markdown">Enddatum des Baus der Brücke (Fertigstellung)</span>
+  </div>
+  <div class="description">
+   <p><strong>hat Charakteristika: </strong> funktional</p>
+   <dl>
+    <dt>
+     hat Domäne
+    </dt>
+    <dd>
+     <a href="#https://w3id.org/brot#Bridge" title="https://w3id.org/brot#Bridge">Brücke</a> <sup class="type-c" title="Klasse">c</sup>
+    </dd>
+    <dt>
+     hat Range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#date" target="_blank" title="http://www.w3.org/2001/XMLSchema#date">date</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="BridgeID">
+  <h3>Brücke ID<sup class="type-dp" title="Daten Eigenschaft">dp</sup> <span class="backlink"> zurück zur <a href="#toc">Übersicht</a> oder <a href="#dataproperties">Übersicht der Dateneigenschaften</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/bcore#BridgeID</p>
+  <div class="comment">
+   <span class="markdown">Identifikationsnummer der Brücke</span>
+  </div>
+  <div class="description">
+   <p><strong>hat Charakteristika: </strong> funktional</p>
+   <dl>
+    <dt>
+     hat Domäne
+    </dt>
+    <dd>
+     <a href="#https://w3id.org/brot#Bridge" title="https://w3id.org/brot#Bridge">Brücke</a> <sup class="type-c" title="Klasse">c</sup>
+    </dd>
+    <dt>
+     hat Range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#int" target="_blank" title="http://www.w3.org/2001/XMLSchema#int">int</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="BridgeLoadCase">
+  <h3>Brücke Lastfall<sup class="type-dp" title="Daten Eigenschaft">dp</sup> <span class="backlink"> zurück zur <a href="#toc">Übersicht</a> oder <a href="#dataproperties">Übersicht der Dateneigenschaften</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/bcore#BridgeLoadCase</p>
+  <div class="comment">
+   <span class="markdown">maximaler Lastfall, für den die Brücke bemessen wurde (z.B. "LM1" oder "BK30/60" in Deutschland)</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     hat Domäne
+    </dt>
+    <dd>
+     <a href="#https://w3id.org/brot#Bridge" title="https://w3id.org/brot#Bridge">Brücke</a> <sup class="type-c" title="Klasse">c</sup>
+    </dd>
+    <dt>
+     hat Range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#string" target="_blank" title="http://www.w3.org/2001/XMLSchema#string">string</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="BridgePlanningEndDate">
+  <h3>Brücke Planungsbeginn<sup class="type-dp" title="Daten Eigenschaft">dp</sup> <span class="backlink"> zurück zur <a href="#toc">Übersicht</a> oder <a href="#dataproperties">Übersicht der Dateneigenschaften</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/bcore#BridgePlanningEndDate</p>
+  <div class="comment">
+   <span class="markdown">Enddatum der Planungsphase der Brücke</span>
+  </div>
+  <div class="description">
+   <p><strong>hat Charakteristika: </strong> funktional</p>
+   <dl>
+    <dt>
+     hat Domäne
+    </dt>
+    <dd>
+     <a href="#https://w3id.org/brot#Bridge" title="https://w3id.org/brot#Bridge">Brücke</a> <sup class="type-c" title="Klasse">c</sup>
+    </dd>
+    <dt>
+     hat Range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#date" target="_blank" title="http://www.w3.org/2001/XMLSchema#date">date</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="BridgePlanningStartDate">
+  <h3>Brücke Planungsbeginn<sup class="type-dp" title="Daten Eigenschaft">dp</sup> <span class="backlink"> zurück zur <a href="#toc">Übersicht</a> oder <a href="#dataproperties">Übersicht der Dateneigenschaften</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/bcore#BridgePlanningStartDate</p>
+  <div class="comment">
+   <span class="markdown">Startdatum der Planungsphase der Brücke</span>
+  </div>
+  <div class="description">
+   <p><strong>hat Charakteristika: </strong> funktional</p>
+   <dl>
+    <dt>
+     hat Domäne
+    </dt>
+    <dd>
+     <a href="#https://w3id.org/brot#Bridge" title="https://w3id.org/brot#Bridge">Brücke</a> <sup class="type-c" title="Klasse">c</sup>
+    </dd>
+    <dt>
+     hat Range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#date" target="_blank" title="http://www.w3.org/2001/XMLSchema#date">date</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="BridgeLength">
+  <h3>Brückenlänge<sup class="type-dp" title="Daten Eigenschaft">dp</sup> <span class="backlink"> zurück zur <a href="#toc">Übersicht</a> oder <a href="#dataproperties">Übersicht der Dateneigenschaften</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/bcore#BridgeLength</p>
+  <div class="comment">
+   <span class="markdown">Länge der Brücke</span>
+  </div>
+  <div class="description">
+   <p><strong>hat Charakteristika: </strong> funktional</p>
+   <dl>
+    <dt>
+     hat Domäne
+    </dt>
+    <dd>
+     <a href="#https://w3id.org/brot#Bridge" title="https://w3id.org/brot#Bridge">Brücke</a> <sup class="type-c" title="Klasse">c</sup>
+    </dd>
+    <dt>
+     hat Range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#decimal" target="_blank" title="http://www.w3.org/2001/XMLSchema#decimal">decimal</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="BridgeName">
+  <h3>Brückenname<sup class="type-dp" title="Daten Eigenschaft">dp</sup> <span class="backlink"> zurück zur <a href="#toc">Übersicht</a> oder <a href="#dataproperties">Übersicht der Dateneigenschaften</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/bcore#BridgeName</p>
+  <div class="comment">
+   <span class="markdown">Name der Brücke</span>
+  </div>
+  <div class="description">
+   <p><strong>hat Charakteristika: </strong> funktional</p>
+   <dl>
+    <dt>
+     hat Domäne
+    </dt>
+    <dd>
+     <a href="#https://w3id.org/brot#Bridge" title="https://w3id.org/brot#Bridge">Brücke</a> <sup class="type-c" title="Klasse">c</sup>
+    </dd>
+    <dt>
+     hat Range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#string" target="_blank" title="http://www.w3.org/2001/XMLSchema#string">string</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="BridgeStatus">
+  <h3>Brückenstatus<sup class="type-dp" title="Daten Eigenschaft">dp</sup> <span class="backlink"> zurück zur <a href="#toc">Übersicht</a> oder <a href="#dataproperties">Übersicht der Dateneigenschaften</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/bcore#BridgeStatus</p>
+  <div class="comment">
+   <span class="markdown">Status der Brücke</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     hat Domäne
+    </dt>
+    <dd>
+     <a href="#https://w3id.org/brot#Bridge" title="https://w3id.org/brot#Bridge">Brücke</a> <sup class="type-c" title="Klasse">c</sup>
+    </dd>
+    <dt>
+     hat Range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#string" target="_blank" title="http://www.w3.org/2001/XMLSchema#string">string</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="Density">
+  <h3>Dichte<sup class="type-dp" title="Daten Eigenschaft">dp</sup> <span class="backlink"> zurück zur <a href="#toc">Übersicht</a> oder <a href="#dataproperties">Übersicht der Dateneigenschaften</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/bcore#Density</p>
+  <div class="comment">
+   <span class="markdown">durchschnittliche Massendichte des Materials</span>
+  </div>
+  <div class="description">
+   <p><strong>hat Charakteristika: </strong> funktional</p>
+   <dl>
+    <dt>
+     hat Domäne
+    </dt>
+    <dd>
+     <a href="#https://w3id.org/bmat#BuildingMaterial" title="https://w3id.org/bmat#BuildingMaterial">Baumaterial</a> <sup class="type-c" title="Klasse">c</sup>
+    </dd>
+    <dt>
+     hat Range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#decimal" target="_blank" title="http://www.w3.org/2001/XMLSchema#decimal">decimal</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="https://w3id.org/brcomp#height">
+  <h3>Höhe<sup class="type-dp" title="Daten Eigenschaft">dp</sup> <span class="backlink"> zurück zur <a href="#toc">Übersicht</a> oder <a href="#dataproperties">Übersicht der Dateneigenschaften</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/brcomp#height</p>
+  <div class="comment">
+   <span class="markdown">vertikaler Abstand der Enden des Bauteils/Bauteilquerschnitts</span>
+  </div>
+  <div class="description">
+   <p><strong>hat Charakteristika: </strong> funktional</p>
+   <dl>
+    <dt>
+     hat Domäne
+    </dt>
+    <dd>
+     <a href="#https://w3id.org/brot#Component" title="https://w3id.org/brot#Component">Bauteil</a> <sup class="type-c" title="Klasse">c</sup>
+    </dd>
+    <dt>
+     hat Range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#decimal" target="_blank" title="http://www.w3.org/2001/XMLSchema#decimal">decimal</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="InfrastructureRouteWidth">
+  <h3>Infrastrukturtrasse Breite<sup class="type-dp" title="Daten Eigenschaft">dp</sup> <span class="backlink"> zurück zur <a href="#toc">Übersicht</a> oder <a href="#dataproperties">Übersicht der Dateneigenschaften</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/bcore#InfrastructureRouteWidth</p>
+  <div class="comment">
+   <span class="markdown">Querschnittsbreite der Infrastrukturtrasse</span>
+  </div>
+  <div class="description">
+   <p><strong>hat Charakteristika: </strong> funktional</p>
+   <dl>
+    <dt>
+     hat Domäne
+    </dt>
+    <dd>
+     <a href="#InfrastructureRoute" title="https://w3id.org/bcore#InfrastructureRoute">Infrastrukturtrasse</a> <sup class="type-c" title="Klasse">c</sup>
+    </dd>
+    <dt>
+     hat Range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#decimal" target="_blank" title="http://www.w3.org/2001/XMLSchema#decimal">decimal</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="InfrastructureRouteClearanceHeight">
+  <h3>Infrastrukturtrasse lichte Höhe<sup class="type-dp" title="Daten Eigenschaft">dp</sup> <span class="backlink"> zurück zur <a href="#toc">Übersicht</a> oder <a href="#dataproperties">Übersicht der Dateneigenschaften</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/bcore#InfrastructureRouteClearanceHeight</p>
+  <div class="comment">
+   <span class="markdown">Höhe des Lichtraumprofils der Trasse</span>
+  </div>
+  <div class="description">
+   <p><strong>hat Charakteristika: </strong> funktional</p>
+   <dl>
+    <dt>
+     hat Domäne
+    </dt>
+    <dd>
+     <a href="#InfrastructureRoute" title="https://w3id.org/bcore#InfrastructureRoute">Infrastrukturtrasse</a> <sup class="type-c" title="Klasse">c</sup>
+    </dd>
+    <dt>
+     hat Range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#decimal" target="_blank" title="http://www.w3.org/2001/XMLSchema#decimal">decimal</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="InfrastructureRouteName">
+  <h3>Infrastrukturtrasse Name<sup class="type-dp" title="Daten Eigenschaft">dp</sup> <span class="backlink"> zurück zur <a href="#toc">Übersicht</a> oder <a href="#dataproperties">Übersicht der Dateneigenschaften</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/bcore#InfrastructureRouteName</p>
+  <div class="comment">
+   <span class="markdown">Name oder Bezeichnung der Infrastrukturtrasse</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     hat Domäne
+    </dt>
+    <dd>
+     <a href="#InfrastructureRoute" title="https://w3id.org/bcore#InfrastructureRoute">Infrastrukturtrasse</a> <sup class="type-c" title="Klasse">c</sup>
+    </dd>
+    <dt>
+     hat Range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#string" target="_blank" title="http://www.w3.org/2001/XMLSchema#string">string</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="LocalX">
+  <h3>lokales X<sup class="type-dp" title="Daten Eigenschaft">dp</sup> <span class="backlink"> zurück zur <a href="#toc">Übersicht</a> oder <a href="#dataproperties">Übersicht der Dateneigenschaften</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/bcore#LocalX</p>
+  <div class="comment">
+   <span class="markdown">lokale X-Koordinate</span>
+  </div>
+  <div class="description">
+   <p><strong>hat Charakteristika: </strong> funktional</p>
+   <dl>
+    <dt>
+     hat Domäne
+    </dt>
+    <dd>
+     <a href="#https://dtc-ontology.cms.ed.tum.de/infraspatialot#Point" title="https://dtc-ontology.cms.ed.tum.de/infraspatialot#Point">Punkt</a> <sup class="type-c" title="Klasse">c</sup>
+    </dd>
+    <dt>
+     hat Range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#decimal" target="_blank" title="http://www.w3.org/2001/XMLSchema#decimal">decimal</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="LocalY">
+  <h3>lokales Y<sup class="type-dp" title="Daten Eigenschaft">dp</sup> <span class="backlink"> zurück zur <a href="#toc">Übersicht</a> oder <a href="#dataproperties">Übersicht der Dateneigenschaften</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/bcore#LocalY</p>
+  <div class="comment">
+   <span class="markdown">lokale Y-Koordinate</span>
+  </div>
+  <div class="description">
+   <p><strong>hat Charakteristika: </strong> funktional</p>
+   <dl>
+    <dt>
+     hat Domäne
+    </dt>
+    <dd>
+     <a href="#https://dtc-ontology.cms.ed.tum.de/infraspatialot#Point" title="https://dtc-ontology.cms.ed.tum.de/infraspatialot#Point">Punkt</a> <sup class="type-c" title="Klasse">c</sup>
+    </dd>
+    <dt>
+     hat Range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#decimal" target="_blank" title="http://www.w3.org/2001/XMLSchema#decimal">decimal</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="LocalZ">
+  <h3>lokales Z<sup class="type-dp" title="Daten Eigenschaft">dp</sup> <span class="backlink"> zurück zur <a href="#toc">Übersicht</a> oder <a href="#dataproperties">Übersicht der Dateneigenschaften</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/bcore#LocalZ</p>
+  <div class="comment">
+   <span class="markdown">lokale Z-Koordinate</span>
+  </div>
+  <div class="description">
+   <p><strong>hat Charakteristika: </strong> funktional</p>
+   <dl>
+    <dt>
+     hat Domäne
+    </dt>
+    <dd>
+     <a href="#https://dtc-ontology.cms.ed.tum.de/infraspatialot#Point" title="https://dtc-ontology.cms.ed.tum.de/infraspatialot#Point">Punkt</a> <sup class="type-c" title="Klasse">c</sup>
+    </dd>
+    <dt>
+     hat Range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#decimal" target="_blank" title="http://www.w3.org/2001/XMLSchema#decimal">decimal</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="LocalisationName">
+  <h3>Lokalisierung Name<sup class="type-dp" title="Daten Eigenschaft">dp</sup> <span class="backlink"> zurück zur <a href="#toc">Übersicht</a> oder <a href="#dataproperties">Übersicht der Dateneigenschaften</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/bcore#LocalisationName</p>
+  <div class="comment">
+   <span class="markdown">Name der Lokalisierung (Standort)</span>
+  </div>
+  <div class="description">
+   <p><strong>hat Charakteristika: </strong> funktional</p>
+   <dl>
+    <dt>
+     hat Domäne
+    </dt>
+    <dd>
+     <a href="#https://dtc-ontology.cms.ed.tum.de/infraspatialot#Localisation" title="https://dtc-ontology.cms.ed.tum.de/infraspatialot#Localisation">Lokalisierung</a> <sup class="type-c" title="Klasse">c</sup>
+    </dd>
+    <dt>
+     hat Range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#string" target="_blank" title="http://www.w3.org/2001/XMLSchema#string">string</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="CountryISOCode">
+  <h3>Ländercode ISO<sup class="type-dp" title="Daten Eigenschaft">dp</sup> <span class="backlink"> zurück zur <a href="#toc">Übersicht</a> oder <a href="#dataproperties">Übersicht der Dateneigenschaften</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/bcore#CountryISOCode</p>
+  <div class="comment">
+   <span class="markdown">Ländercode nach ISO-3166-1 (ALPHA-2)</span>
+  </div>
+  <div class="description">
+   <p><strong>hat Charakteristika: </strong> funktional</p>
+   <dl>
+    <dt>
+     hat Domäne
+    </dt>
+    <dd>
+     <a href="#Country" title="https://w3id.org/bcore#Country">Land</a> <sup class="type-c" title="Klasse">c</sup>
+    </dd>
+    <dt>
+     hat Range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#string" target="_blank" title="http://www.w3.org/2001/XMLSchema#string">string</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="https://w3id.org/brcomp#length">
+  <h3>Länge<sup class="type-dp" title="Daten Eigenschaft">dp</sup> <span class="backlink"> zurück zur <a href="#toc">Übersicht</a> oder <a href="#dataproperties">Übersicht der Dateneigenschaften</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/brcomp#length</p>
+  <div class="comment">
+   <span class="markdown">longitudinaler Abstand der Enden eines Bauteils</span>
+  </div>
+  <div class="description">
+   <p><strong>hat Charakteristika: </strong> funktional</p>
+   <dl>
+    <dt>
+     hat Domäne
+    </dt>
+    <dd>
+     <a href="#https://w3id.org/brot#Component" title="https://w3id.org/brot#Component">Bauteil</a> <sup class="type-c" title="Klasse">c</sup>
+    </dd>
+    <dt>
+     hat Range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#decimal" target="_blank" title="http://www.w3.org/2001/XMLSchema#decimal">decimal</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="Longitude">
+  <h3>Längengrad<sup class="type-dp" title="Daten Eigenschaft">dp</sup> <span class="backlink"> zurück zur <a href="#toc">Übersicht</a> oder <a href="#dataproperties">Übersicht der Dateneigenschaften</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/bcore#Longitude</p>
+  <div class="comment">
+   <span class="markdown">geografische Länge</span>
+  </div>
+  <div class="description">
+   <p><strong>hat Charakteristika: </strong> funktional</p>
+   <dl>
+    <dt>
+     hat Domäne
+    </dt>
+    <dd>
+     <a href="#https://dtc-ontology.cms.ed.tum.de/infraspatialot#Point" title="https://dtc-ontology.cms.ed.tum.de/infraspatialot#Point">Punkt</a> <sup class="type-c" title="Klasse">c</sup>
+    </dd>
+    <dt>
+     hat Range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#decimal" target="_blank" title="http://www.w3.org/2001/XMLSchema#decimal">decimal</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="MaterialName">
+  <h3>Materialname<sup class="type-dp" title="Daten Eigenschaft">dp</sup> <span class="backlink"> zurück zur <a href="#toc">Übersicht</a> oder <a href="#dataproperties">Übersicht der Dateneigenschaften</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/bcore#MaterialName</p>
+  <div class="comment">
+   <span class="markdown">Name des Materials</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     hat Domäne
+    </dt>
+    <dd>
+     <a href="#https://w3id.org/bmat#BuildingMaterial" title="https://w3id.org/bmat#BuildingMaterial">Baumaterial</a> <sup class="type-c" title="Klasse">c</sup>
+    </dd>
+    <dt>
+     hat Range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#string" target="_blank" title="http://www.w3.org/2001/XMLSchema#string">string</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="/media#MediaFileSize">
+  <h3>Mediendatei Größe<sup class="type-dp" title="Daten Eigenschaft">dp</sup> <span class="backlink"> zurück zur <a href="#toc">Übersicht</a> oder <a href="#dataproperties">Übersicht der Dateneigenschaften</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/bcore/media#MediaFileSize</p>
+  <div class="comment">
+   <span class="markdown">Dateigröße einer digitalen Mediendatei</span>
+  </div>
+  <div class="description">
+   <p><strong>hat Charakteristika: </strong> funktional</p>
+   <dl>
+    <dt>
+     hat Domäne
+    </dt>
+    <dd>
+     <a href="#MediaFile" title="https://w3id.org/bcore#MediaFile">Mediendatei</a> <sup class="type-c" title="Klasse">c</sup>
+    </dd>
+    <dt>
+     hat Range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#decimal" target="_blank" title="http://www.w3.org/2001/XMLSchema#decimal">decimal</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="/media#MediaIsDigital">
+  <h3>Mediendatei ist digital<sup class="type-dp" title="Daten Eigenschaft">dp</sup> <span class="backlink"> zurück zur <a href="#toc">Übersicht</a> oder <a href="#dataproperties">Übersicht der Dateneigenschaften</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/bcore/media#MediaIsDigital</p>
+  <div class="comment">
+   <span class="markdown">Boolean: wahr, wenn die Mediendatei digital ist</span>
+  </div>
+  <div class="description">
+   <p><strong>hat Charakteristika: </strong> funktional</p>
+   <dl>
+    <dt>
+     hat Domäne
+    </dt>
+    <dd>
+     <a href="#MediaFile" title="https://w3id.org/bcore#MediaFile">Mediendatei</a> <sup class="type-c" title="Klasse">c</sup>
+    </dd>
+    <dt>
+     hat Range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#boolean" target="_blank" title="http://www.w3.org/2001/XMLSchema#boolean">boolean</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="MediaFilePath">
+  <h3>Pfad der Mediendatei<sup class="type-dp" title="Daten Eigenschaft">dp</sup> <span class="backlink"> zurück zur <a href="#toc">Übersicht</a> oder <a href="#dataproperties">Übersicht der Dateneigenschaften</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/bcore#MediaFilePath</p>
+  <div class="comment">
+   <span class="markdown">lokaler Dateipfad oder Webadresse (URL) einer Mediendatei</span>
+  </div>
+  <div class="description">
+   <p><strong>hat Charakteristika: </strong> funktional</p>
+   <dl>
+    <dt>
+     hat Super-Eigenschaften
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2002/07/owl#topDataProperty" target="_blank" title="http://www.w3.org/2002/07/owl#topDataProperty">top Data Property</a> <sup class="type-dp" title="Daten Eigenschaft">dp</sup>
+    </dd>
+    <dt>
+     hat Domäne
+    </dt>
+    <dd>
+     <a href="#MediaFile" title="https://w3id.org/bcore#MediaFile">Mediendatei</a> <sup class="type-c" title="Klasse">c</sup>
+    </dd>
+    <dt>
+     hat Range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#string" target="_blank" title="http://www.w3.org/2001/XMLSchema#string">string</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="PointName">
+  <h3>Punkt Name<sup class="type-dp" title="Daten Eigenschaft">dp</sup> <span class="backlink"> zurück zur <a href="#toc">Übersicht</a> oder <a href="#dataproperties">Übersicht der Dateneigenschaften</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/bcore#PointName</p>
+  <div class="comment">
+   <span class="markdown">Name des geografischen Punktes</span>
+  </div>
+  <div class="description">
+   <p><strong>hat Charakteristika: </strong> funktional</p>
+   <dl>
+    <dt>
+     hat Domäne
+    </dt>
+    <dd>
+     <a href="#https://dtc-ontology.cms.ed.tum.de/infraspatialot#Point" title="https://dtc-ontology.cms.ed.tum.de/infraspatialot#Point">Punkt</a> <sup class="type-c" title="Klasse">c</sup>
+    </dd>
+    <dt>
+     hat Range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#string" target="_blank" title="http://www.w3.org/2001/XMLSchema#string">string</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="RegionISOCode">
+  <h3>Regionalcode ISO<sup class="type-dp" title="Daten Eigenschaft">dp</sup> <span class="backlink"> zurück zur <a href="#toc">Übersicht</a> oder <a href="#dataproperties">Übersicht der Dateneigenschaften</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/bcore#RegionISOCode</p>
+  <div class="comment">
+   <span class="markdown">Regionalcode nach ISO-3166-2</span>
+  </div>
+  <div class="description">
+   <p><strong>hat Charakteristika: </strong> funktional</p>
+   <dl>
+    <dt>
+     hat Domäne
+    </dt>
+    <dd>
+     <a href="#Region" title="https://w3id.org/bcore#Region">Region</a> <sup class="type-c" title="Klasse">c</sup>
+    </dd>
+    <dt>
+     hat Range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#string" target="_blank" title="http://www.w3.org/2001/XMLSchema#string">string</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="WayPointStation">
+  <h3>Trassenpunkt Stationierung<sup class="type-dp" title="Daten Eigenschaft">dp</sup> <span class="backlink"> zurück zur <a href="#toc">Übersicht</a> oder <a href="#dataproperties">Übersicht der Dateneigenschaften</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/bcore#WayPointStation</p>
+  <div class="comment">
+   <span class="markdown">Kilometrierung des Trassenpunktes</span>
+  </div>
+  <div class="description">
+   <p><strong>hat Charakteristika: </strong> funktional</p>
+   <dl>
+    <dt>
+     hat Domäne
+    </dt>
+    <dd>
+     <a href="#WayPoint" title="https://w3id.org/bcore#WayPoint">Wegpunkt</a> <sup class="type-c" title="Klasse">c</sup>
+    </dd>
+    <dt>
+     hat Range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#decimal" target="_blank" title="http://www.w3.org/2001/XMLSchema#decimal">decimal</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="Volume">
+  <h3>Volumen<sup class="type-dp" title="Daten Eigenschaft">dp</sup> <span class="backlink"> zurück zur <a href="#toc">Übersicht</a> oder <a href="#dataproperties">Übersicht der Dateneigenschaften</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/bcore#Volume</p>
+  <div class="comment">
+   <span class="markdown">metrisches Volumen des Bauteils</span>
+  </div>
+  <div class="description">
+   <p><strong>hat Charakteristika: </strong> funktional</p>
+   <dl>
+    <dt>
+     hat Domäne
+    </dt>
+    <dd>
+     <a href="#https://w3id.org/brot#Component" title="https://w3id.org/brot#Component">Bauteil</a> <sup class="type-c" title="Klasse">c</sup>
+    </dd>
+    <dt>
+     hat Range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#decimal" target="_blank" title="http://www.w3.org/2001/XMLSchema#decimal">decimal</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="ZoneName">
+  <h3>Zonenname<sup class="type-dp" title="Daten Eigenschaft">dp</sup> <span class="backlink"> zurück zur <a href="#toc">Übersicht</a> oder <a href="#dataproperties">Übersicht der Dateneigenschaften</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/bcore#ZoneName</p>
+  <div class="comment">
+   <span class="markdown">Name der Zone</span>
+  </div>
+  <div class="description">
+   <p><strong>hat Charakteristika: </strong> funktional</p>
+   <dl>
+    <dt>
+     hat Domäne
+    </dt>
+    <dd>
+     <a href="#https://w3id.org/bot#Zone" title="https://w3id.org/bot#Zone">Zone</a> <sup class="type-c" title="Klasse">c</sup>
+    </dd>
+    <dt>
+     hat Range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#string" target="_blank" title="http://www.w3.org/2001/XMLSchema#string">string</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+</div><div xmlns:widoco="https://w3id.org/widoco/vocab#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="annotationproperties">
+ <h2>Anmerkungseigenschaften</h2>
+ <ul class="hlist">
+  <li><a href="#http://purl.org/dc/elements/1.1/abstract" title="http://purl.org/dc/elements/1.1/abstract"> <span>abstract</span> </a></li>
+  <li><a href="#https://schema.org/codeRepository" title="https://schema.org/codeRepository"> <span>code Repository</span> </a></li>
+  <li><a href="#http://purl.org/dc/terms/contributor" title="http://purl.org/dc/terms/contributor"> <span>contributor</span> </a></li>
+  <li><a href="#http://purl.org/dc/terms/created" title="http://purl.org/dc/terms/created"> <span>created</span> </a></li>
+  <li><a href="#http://purl.org/dc/terms/creator" title="http://purl.org/dc/terms/creator"> <span>creator</span> </a></li>
+  <li><a href="#http://purl.org/dc/terms/description" title="http://purl.org/dc/terms/description"> <span>description</span> </a></li>
+  <li><a href="#http://purl.org/dc/terms/license" title="http://purl.org/dc/terms/license"> <span>license</span> </a></li>
+  <li><a href="#http://xmlns.com/foaf/0.1/logo" title="http://xmlns.com/foaf/0.1/logo"> <span>logo</span> </a></li>
+  <li><a href="#http://purl.org/dc/terms/modified" title="http://purl.org/dc/terms/modified"> <span>modified</span> </a></li>
+  <li><a href="#http://purl.org/vocab/vann/preferredNamespacePrefix" title="http://purl.org/vocab/vann/preferredNamespacePrefix"> <span>preferred Namespace Prefix</span> </a></li>
+  <li><a href="#http://purl.org/ontology/bibo/status" title="http://purl.org/ontology/bibo/status"> <span>status</span> </a></li>
+  <li><a href="#http://purl.org/dc/elements/1.1/title" title="http://purl.org/dc/elements/1.1/title"> <span>title</span> </a></li>
+  <li><a href="#https://schema.org/unitText" title="https://schema.org/unitText"> <span>unit Text</span> </a></li>
+  <li><a href="#http://www.w3.org/2002/07/owl#versionIRI" title="http://www.w3.org/2002/07/owl#versionIRI"> <span>version I R I</span> </a></li>
+ </ul>
+ <div class="entity" id="http://purl.org/dc/elements/1.1/abstract">
+  <h3>abstract<sup class="type-ap" title="Anmerkungseigenschaft">ap</sup> <span class="backlink"> zurück zur <a href="#toc">Übersicht</a> oder <a href="#annotationproperties">Übersicht der Anmerkungseigenschaften</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.org/dc/elements/1.1/abstract</p>
+ </div>
+ <div class="entity" id="https://schema.org/codeRepository">
+  <h3>code Repository<sup class="type-ap" title="Anmerkungseigenschaft">ap</sup> <span class="backlink"> zurück zur <a href="#toc">Übersicht</a> oder <a href="#annotationproperties">Übersicht der Anmerkungseigenschaften</a> </span></h3>
+  <p><strong>IRI:</strong> https://schema.org/codeRepository</p>
+ </div>
+ <div class="entity" id="http://purl.org/dc/terms/contributor">
+  <h3>contributor<sup class="type-ap" title="Anmerkungseigenschaft">ap</sup> <span class="backlink"> zurück zur <a href="#toc">Übersicht</a> oder <a href="#annotationproperties">Übersicht der Anmerkungseigenschaften</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.org/dc/terms/contributor</p>
+ </div>
+ <div class="entity" id="http://purl.org/dc/terms/created">
+  <h3>created<sup class="type-ap" title="Anmerkungseigenschaft">ap</sup> <span class="backlink"> zurück zur <a href="#toc">Übersicht</a> oder <a href="#annotationproperties">Übersicht der Anmerkungseigenschaften</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.org/dc/terms/created</p>
+ </div>
+ <div class="entity" id="http://purl.org/dc/terms/creator">
+  <h3>creator<sup class="type-ap" title="Anmerkungseigenschaft">ap</sup> <span class="backlink"> zurück zur <a href="#toc">Übersicht</a> oder <a href="#annotationproperties">Übersicht der Anmerkungseigenschaften</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.org/dc/terms/creator</p>
+ </div>
+ <div class="entity" id="http://purl.org/dc/terms/description">
+  <h3>description<sup class="type-ap" title="Anmerkungseigenschaft">ap</sup> <span class="backlink"> zurück zur <a href="#toc">Übersicht</a> oder <a href="#annotationproperties">Übersicht der Anmerkungseigenschaften</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.org/dc/terms/description</p>
+ </div>
+ <div class="entity" id="http://purl.org/dc/terms/license">
+  <h3>license<sup class="type-ap" title="Anmerkungseigenschaft">ap</sup> <span class="backlink"> zurück zur <a href="#toc">Übersicht</a> oder <a href="#annotationproperties">Übersicht der Anmerkungseigenschaften</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.org/dc/terms/license</p>
+ </div>
+ <div class="entity" id="http://xmlns.com/foaf/0.1/logo">
+  <h3>logo<sup class="type-ap" title="Anmerkungseigenschaft">ap</sup> <span class="backlink"> zurück zur <a href="#toc">Übersicht</a> oder <a href="#annotationproperties">Übersicht der Anmerkungseigenschaften</a> </span></h3>
+  <p><strong>IRI:</strong> http://xmlns.com/foaf/0.1/logo</p>
+ </div>
+ <div class="entity" id="http://purl.org/dc/terms/modified">
+  <h3>modified<sup class="type-ap" title="Anmerkungseigenschaft">ap</sup> <span class="backlink"> zurück zur <a href="#toc">Übersicht</a> oder <a href="#annotationproperties">Übersicht der Anmerkungseigenschaften</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.org/dc/terms/modified</p>
+ </div>
+ <div class="entity" id="http://purl.org/vocab/vann/preferredNamespacePrefix">
+  <h3>preferred Namespace Prefix<sup class="type-ap" title="Anmerkungseigenschaft">ap</sup> <span class="backlink"> zurück zur <a href="#toc">Übersicht</a> oder <a href="#annotationproperties">Übersicht der Anmerkungseigenschaften</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.org/vocab/vann/preferredNamespacePrefix</p>
+ </div>
+ <div class="entity" id="http://purl.org/ontology/bibo/status">
+  <h3>status<sup class="type-ap" title="Anmerkungseigenschaft">ap</sup> <span class="backlink"> zurück zur <a href="#toc">Übersicht</a> oder <a href="#annotationproperties">Übersicht der Anmerkungseigenschaften</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.org/ontology/bibo/status</p>
+ </div>
+ <div class="entity" id="http://purl.org/dc/elements/1.1/title">
+  <h3>title<sup class="type-ap" title="Anmerkungseigenschaft">ap</sup> <span class="backlink"> zurück zur <a href="#toc">Übersicht</a> oder <a href="#annotationproperties">Übersicht der Anmerkungseigenschaften</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.org/dc/elements/1.1/title</p>
+ </div>
+ <div class="entity" id="https://schema.org/unitText">
+  <h3>unit Text<sup class="type-ap" title="Anmerkungseigenschaft">ap</sup> <span class="backlink"> zurück zur <a href="#toc">Übersicht</a> oder <a href="#annotationproperties">Übersicht der Anmerkungseigenschaften</a> </span></h3>
+  <p><strong>IRI:</strong> https://schema.org/unitText</p>
+ </div>
+ <div class="entity" id="http://www.w3.org/2002/07/owl#versionIRI">
+  <h3>version I R I<sup class="type-ap" title="Anmerkungseigenschaft">ap</sup> <span class="backlink"> zurück zur <a href="#toc">Übersicht</a> oder <a href="#annotationproperties">Übersicht der Anmerkungseigenschaften</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.w3.org/2002/07/owl#versionIRI</p>
+ </div>
+</div><div id="legend">
+<h2>Legende <span class="backlink"> zur&uuml;ck zu <a href="#toc">ToC</a></span></h2>
+<div   class="entity">
+<sup class="type-c" title="Klassen">c</sup>: Klassen <br/>
+<sup class="type-op" title="Object Properties">op</sup>: Object Properties <br/>
+<sup class="type-dp" title="Data Properties">dp</sup>: Data Properties <br/>
+</div>
+</div>

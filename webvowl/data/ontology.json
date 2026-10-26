@@ -26,7 +26,12 @@
       "creator" : [ {
         "identifier" : "creator",
         "language" : "undefined",
-        "value" : "Tim Noack",
+        "value" : "Xiaoli Song",
+        "type" : "label"
+      }, {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "Johannes Reimer",
         "type" : "label"
       }, {
         "identifier" : "creator",
@@ -36,12 +41,7 @@
       }, {
         "identifier" : "creator",
         "language" : "undefined",
-        "value" : "Xiaoli Song",
-        "type" : "label"
-      }, {
-        "identifier" : "creator",
-        "language" : "undefined",
-        "value" : "Johannes Reimer",
+        "value" : "Tim Noack",
         "type" : "label"
       } ],
       "contributor" : [ {
@@ -62,16 +62,22 @@
         "value" : "bcore",
         "type" : "label"
       } ],
+      "logo" : [ {
+        "identifier" : "logo",
+        "language" : "undefined",
+        "value" : "https://raw.githubusercontent.com/TUD-IMB/BCore/main/BCore.svg",
+        "type" : "label"
+      } ],
       "modified" : [ {
         "identifier" : "modified",
         "language" : "undefined",
         "value" : "2026-10-26",
         "type" : "label"
       } ],
-      "logo" : [ {
-        "identifier" : "logo",
+      "codeRepository" : [ {
+        "identifier" : "codeRepository",
         "language" : "undefined",
-        "value" : "https://raw.githubusercontent.com/TUD-IMB/BCore/main/BCore.svg",
+        "value" : "https://github.com/TUD-IMB/BCore",
         "type" : "label"
       } ],
       "abstract" : [ {
@@ -89,12 +95,6 @@
         "identifier" : "versionInfo",
         "language" : "undefined",
         "value" : "0.1.2",
-        "type" : "label"
-      } ],
-      "codeRepository" : [ {
-        "identifier" : "codeRepository",
-        "language" : "undefined",
-        "value" : "https://github.com/TUD-IMB/BCore",
         "type" : "label"
       } ],
       "title" : [ {
@@ -203,7 +203,7 @@
     "id" : "54",
     "type" : "owl:Class"
   }, {
-    "id" : "64",
+    "id" : "67",
     "type" : "owl:Class"
   }, {
     "id" : "10",
@@ -263,7 +263,7 @@
     "id" : "116",
     "type" : "owl:unionOf"
   }, {
-    "id" : "66",
+    "id" : "65",
     "type" : "rdfs:Datatype"
   }, {
     "id" : "78",
@@ -572,7 +572,7 @@
       "de" : "Region/Bundesland",
       "en" : "region/federal state"
     },
-    "id" : "64",
+    "id" : "67",
     "superClasses" : [ "7" ]
   }, {
     "iri" : "https://dtc-ontology.cms.ed.tum.de/infraspatialot#Localisation",
@@ -751,7 +751,7 @@
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#decimal",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "66",
+    "id" : "65",
     "label" : {
       "IRI-based" : "decimal"
     }
@@ -787,7 +787,7 @@
       "IRI-based" : "Zone",
       "en" : "zone"
     },
-    "subClasses" : [ "54", "24", "64", "34" ],
+    "subClasses" : [ "54", "24", "67", "34" ],
     "comment" : {
       "de" : "Räumliche Zone (Volumen, das ein materielles oder ideelles Objekt umschließt)",
       "en" : "spatial zone (volume that encloses a physical or abstract object)"
@@ -857,13 +857,13 @@
     "type" : "owl:objectProperty"
   }, {
     "id" : "63",
-    "type" : "owl:datatypeProperty"
-  }, {
-    "id" : "65",
-    "type" : "owl:datatypeProperty"
-  }, {
-    "id" : "67",
     "type" : "owl:objectProperty"
+  }, {
+    "id" : "64",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "66",
+    "type" : "owl:datatypeProperty"
   }, {
     "id" : "68",
     "type" : "owl:datatypeProperty"
@@ -928,11 +928,11 @@
     "id" : "90",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "91",
-    "type" : "owl:datatypeProperty"
-  }, {
     "id" : "22",
     "type" : "owl:objectProperty"
+  }, {
+    "id" : "91",
+    "type" : "owl:datatypeProperty"
   }, {
     "id" : "94",
     "type" : "owl:objectProperty"
@@ -1010,10 +1010,10 @@
     "type" : "owl:objectProperty"
   }, {
     "id" : "124",
-    "type" : "owl:datatypeProperty"
+    "type" : "owl:objectProperty"
   }, {
     "id" : "125",
-    "type" : "owl:objectProperty"
+    "type" : "owl:datatypeProperty"
   }, {
     "id" : "126",
     "type" : "owl:datatypeProperty"
@@ -1038,7 +1038,7 @@
       "de" : "ein Teil der Zone liegt in einer anderen Zone",
       "en" : "part of the zone lies within another zone"
     },
-    "attributes" : [ "external", "object", "symmetric" ],
+    "attributes" : [ "symmetric", "external", "object" ],
     "id" : "6"
   }, {
     "iri" : "https://w3id.org/brot#aggregates",
@@ -1054,7 +1054,7 @@
       "de" : "Bauteil besteht aus Bauteil",
       "en" : "component consists of component"
     },
-    "attributes" : [ "external", "transitive", "object" ],
+    "attributes" : [ "transitive", "external", "object" ],
     "id" : "8"
   }, {
     "iri" : "https://w3id.org/bcore#isLocatedAt",
@@ -1070,7 +1070,7 @@
       "de" : "Zone befindet sich an Lokalisierung (Ort)",
       "en" : "zone is located at localisation (location)"
     },
-    "attributes" : [ "object", "functional" ],
+    "attributes" : [ "functional", "object" ],
     "id" : "9"
   }, {
     "iri" : "https://w3id.org/reloc#meetLeft",
@@ -1163,7 +1163,7 @@
       "de" : "transversaler Abstand der Enden eines Bauteils/ Bauteilquerschnitts",
       "en" : "width/ broadth: transversal distance of the ends of the component/ component's cross section"
     },
-    "attributes" : [ "external", "functional", "datatype" ],
+    "attributes" : [ "functional", "datatype", "external" ],
     "id" : "32"
   }, {
     "iri" : "https://w3id.org/bcore#bridgesZone",
@@ -1267,22 +1267,6 @@
     "attributes" : [ "functional", "datatype" ],
     "id" : "53"
   }, {
-    "iri" : "https://w3id.org/bcore#crossesRoute",
-    "baseIri" : "https://w3id.org/bcore",
-    "range" : "21",
-    "label" : {
-      "de" : "kreuzt Trasse",
-      "IRI-based" : "crossesRoute",
-      "en" : "crosses route"
-    },
-    "domain" : "21",
-    "comment" : {
-      "de" : "Trasse kreuzt Trasse im Lageplan (ohne Beachtung der Altitude)",
-      "en" : "route crosses route on the site plan (without regard of the altitude)"
-    },
-    "attributes" : [ "object", "symmetric" ],
-    "id" : "55"
-  }, {
     "iri" : "https://w3id.org/bcore#isLocatedInZone",
     "baseIri" : "https://w3id.org/bcore",
     "range" : "7",
@@ -1297,6 +1281,22 @@
       "en" : "localisation (location) is located in zone"
     },
     "attributes" : [ "object" ],
+    "id" : "55"
+  }, {
+    "iri" : "https://w3id.org/bcore#crossesRoute",
+    "baseIri" : "https://w3id.org/bcore",
+    "range" : "21",
+    "label" : {
+      "de" : "kreuzt Trasse",
+      "IRI-based" : "crossesRoute",
+      "en" : "crosses route"
+    },
+    "domain" : "21",
+    "comment" : {
+      "de" : "Trasse kreuzt Trasse im Lageplan (ohne Beachtung der Altitude)",
+      "en" : "route crosses route on the site plan (without regard of the altitude)"
+    },
+    "attributes" : [ "symmetric", "object" ],
     "id" : "56"
   }, {
     "iri" : "https://w3id.org/bcore#BridgeLoadCase",
@@ -1371,25 +1371,25 @@
     "attributes" : [ "object" ],
     "id" : "62"
   }, {
-    "iri" : "https://w3id.org/bcore#RegionISOCode",
-    "baseIri" : "https://w3id.org/bcore",
-    "range" : "25",
+    "iri" : "https://w3id.org/brot#containsComponent",
+    "baseIri" : "https://w3id.org/brot",
+    "range" : "5",
     "label" : {
-      "de" : "Regionalcode ISO",
-      "IRI-based" : "RegionISOCode",
-      "en" : "region ISO code"
+      "de" : "beinhaltet Bauteil",
+      "IRI-based" : "containsComponent",
+      "en" : "contains component"
     },
-    "domain" : "64",
+    "domain" : "1",
     "comment" : {
-      "de" : "Regionalcode nach ISO-3166-2",
-      "en" : "regional code according to ISO 3166-2"
+      "de" : "Brücke besteht aus Bauteil",
+      "en" : "bridge consists of component"
     },
-    "attributes" : [ "functional", "datatype" ],
+    "attributes" : [ "external", "object" ],
     "id" : "63"
   }, {
     "iri" : "https://w3id.org/bcore#Altitude",
     "baseIri" : "https://w3id.org/bcore",
-    "range" : "66",
+    "range" : "65",
     "annotations" : {
       "unitText" : [ {
         "identifier" : "unitText",
@@ -1409,23 +1409,23 @@
       "en" : "elevation above sea level (according to the locally applicable official elevation system)"
     },
     "attributes" : [ "functional", "datatype" ],
-    "id" : "65"
+    "id" : "64"
   }, {
-    "iri" : "https://w3id.org/brot#containsComponent",
-    "baseIri" : "https://w3id.org/brot",
-    "range" : "5",
+    "iri" : "https://w3id.org/bcore#RegionISOCode",
+    "baseIri" : "https://w3id.org/bcore",
+    "range" : "25",
     "label" : {
-      "de" : "beinhaltet Bauteil",
-      "IRI-based" : "containsComponent",
-      "en" : "contains component"
+      "de" : "Regionalcode ISO",
+      "IRI-based" : "RegionISOCode",
+      "en" : "region ISO code"
     },
-    "domain" : "1",
+    "domain" : "67",
     "comment" : {
-      "de" : "Brücke besteht aus Bauteil",
-      "en" : "bridge consists of component"
+      "de" : "Regionalcode nach ISO-3166-2",
+      "en" : "regional code according to ISO 3166-2"
     },
-    "attributes" : [ "external", "object" ],
-    "id" : "67"
+    "attributes" : [ "functional", "datatype" ],
+    "id" : "66"
   }, {
     "iri" : "https://w3id.org/bcore#CountryISOCode",
     "baseIri" : "https://w3id.org/bcore",
@@ -1444,7 +1444,7 @@
     "id" : "68"
   }, {
     "range" : "7",
-    "domain" : "64",
+    "domain" : "67",
     "attributes" : [ "object", "anonymous" ],
     "id" : "69"
   }, {
@@ -1481,7 +1481,7 @@
       "de" : "Trassenpunkt ist Teil einer Trasse",
       "en" : "localisation (route point) is part of a route"
     },
-    "attributes" : [ "object", "functional" ],
+    "attributes" : [ "functional", "object" ],
     "id" : "74"
   }, {
     "iri" : "https://w3id.org/bcore#WayPointStation",
@@ -1545,7 +1545,7 @@
       "de" : "Dateigröße einer digitalen Mediendatei",
       "en" : "file size of a digital media file"
     },
-    "attributes" : [ "external", "functional", "datatype" ],
+    "attributes" : [ "functional", "datatype", "external" ],
     "id" : "77"
   }, {
     "iri" : "https://w3id.org/bcore#BridgeID",
@@ -1616,7 +1616,7 @@
       "IRI-based" : "topDataProperty"
     },
     "domain" : "16",
-    "attributes" : [ "external", "datatype" ],
+    "attributes" : [ "datatype", "external" ],
     "id" : "83"
   }, {
     "iri" : "https://w3id.org/bcore#startsAt",
@@ -1653,7 +1653,7 @@
       "de" : "Boolean: wahr, wenn die Mediendatei digital ist",
       "en" : "boolean: true, if media file is digital"
     },
-    "attributes" : [ "external", "functional", "datatype" ],
+    "attributes" : [ "functional", "datatype", "external" ],
     "id" : "87"
   }, {
     "iri" : "https://w3id.org/bcore#endsAt",
@@ -1682,6 +1682,22 @@
     "attributes" : [ "object", "anonymous" ],
     "id" : "90"
   }, {
+    "iri" : "https://w3id.org/bcore#traversesBridge",
+    "baseIri" : "https://w3id.org/bcore",
+    "range" : "20",
+    "label" : {
+      "de" : "überquert Brücke",
+      "IRI-based" : "traversesBridge",
+      "en" : "traverses bridge"
+    },
+    "domain" : "21",
+    "comment" : {
+      "de" : "Trasse überquert/führt über Brücke",
+      "en" : "route crosses/goes over bridge"
+    },
+    "attributes" : [ "object" ],
+    "id" : "22"
+  }, {
     "iri" : "https://w3id.org/brcomp#height",
     "baseIri" : "https://w3id.org/brcomp",
     "range" : "92",
@@ -1703,24 +1719,8 @@
       "de" : "vertikaler Abstand der Enden des Bauteils/Bauteilquerschnitts",
       "en" : "vertical distance of the ends of the component/ component's cross section"
     },
-    "attributes" : [ "external", "functional", "datatype" ],
+    "attributes" : [ "functional", "datatype", "external" ],
     "id" : "91"
-  }, {
-    "iri" : "https://w3id.org/bcore#traversesBridge",
-    "baseIri" : "https://w3id.org/bcore",
-    "range" : "20",
-    "label" : {
-      "de" : "überquert Brücke",
-      "IRI-based" : "traversesBridge",
-      "en" : "traverses bridge"
-    },
-    "domain" : "21",
-    "comment" : {
-      "de" : "Trasse überquert/führt über Brücke",
-      "en" : "route crosses/goes over bridge"
-    },
-    "attributes" : [ "object" ],
-    "id" : "22"
   }, {
     "iri" : "https://w3id.org/bcore#hasPartialStructure",
     "inverse" : "95",
@@ -1945,7 +1945,7 @@
       "de" : "Brückenzug ist Teil genau einer Brücke",
       "en" : "bridge section is part of exactly one bridge"
     },
-    "attributes" : [ "object", "functional" ],
+    "attributes" : [ "functional", "object" ],
     "id" : "95"
   }, {
     "iri" : "https://w3id.org/bcore#BridgeConstructionEndDate",
@@ -2033,7 +2033,7 @@
       "de" : "Zone enthält Zone",
       "en" : "zone contains zone"
     },
-    "attributes" : [ "external", "transitive", "object" ],
+    "attributes" : [ "transitive", "external", "object" ],
     "id" : "52"
   }, {
     "iri" : "https://w3id.org/reloc#meetRight",
@@ -2130,7 +2130,7 @@
       "de" : "longitudinaler Abstand der Enden eines Bauteils",
       "en" : "longitudinal distance of the ends of a component"
     },
-    "attributes" : [ "external", "functional", "datatype" ],
+    "attributes" : [ "functional", "datatype", "external" ],
     "id" : "120"
   }, {
     "iri" : "https://w3id.org/bcore#bridgesRoute",
@@ -2182,6 +2182,23 @@
     "attributes" : [ "object" ],
     "id" : "123"
   }, {
+    "iri" : "https://w3id.org/bcore#isPartOfZone",
+    "inverse" : "63",
+    "baseIri" : "https://w3id.org/bcore",
+    "range" : "1",
+    "label" : {
+      "de" : "ist Teil einer Zone",
+      "IRI-based" : "isPartOfZone",
+      "en" : "is part of zone"
+    },
+    "domain" : "5",
+    "comment" : {
+      "de" : "Bauteil ist Teil genau einer Zone (z.B. Brücke)",
+      "en" : "component is part of exactly one zone (e.g., bridge)"
+    },
+    "attributes" : [ "object" ],
+    "id" : "124"
+  }, {
     "iri" : "https://w3id.org/bcore#LocalZ",
     "baseIri" : "https://w3id.org/bcore",
     "range" : "43",
@@ -2204,23 +2221,6 @@
       "en" : "local Z-coordinate"
     },
     "attributes" : [ "functional", "datatype" ],
-    "id" : "124"
-  }, {
-    "iri" : "https://w3id.org/bcore#isPartOfZone",
-    "inverse" : "67",
-    "baseIri" : "https://w3id.org/bcore",
-    "range" : "1",
-    "label" : {
-      "de" : "ist Teil einer Zone",
-      "IRI-based" : "isPartOfZone",
-      "en" : "is part of zone"
-    },
-    "domain" : "5",
-    "comment" : {
-      "de" : "Bauteil ist Teil genau einer Zone (z.B. Brücke)",
-      "en" : "component is part of exactly one zone (e.g., bridge)"
-    },
-    "attributes" : [ "object" ],
     "id" : "125"
   }, {
     "iri" : "https://w3id.org/bcore#LocalY",
