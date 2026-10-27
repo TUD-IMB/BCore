@@ -4,15 +4,18 @@
     "languages" : [ "de", "en", "undefined" ],
     "baseIris" : [ "https://w3id.org/bmat", "http://www.w3.org/1999/02/22-rdf-syntax-ns", "https://w3id.org/bcore/mat", "http://www.w3.org/2000/01/rdf-schema", "http://www.w3.org/2001/XMLSchema" ],
     "title" : {
-      "en" : "Bridge Core Ontology for Institute of Concrete Structures, Dresden University of Technology – Material Extension"
+      "de" : "Bridge Core Ontology (BCore) – Material-Erweiterung",
+      "en" : "Bridge Core Ontology (BCore) – Material Extension"
     },
     "iri" : "https://w3id.org/bcore/mat",
     "version" : "0.1.1",
     "author" : [ "Tim Noack", "Morris Florek", "Johannes Reimer", "Xiaoli Song" ],
     "description" : {
+      "de" : "Erweiterungsontologie zur Darstellung von Materialien. Konzipiert für den Einsatz in Verbindung mit der BCore-Ontologie, ermöglicht jedoch auch die eigenständige Nutzung.",
       "en" : "Extension ontology for the representation of bridge building materials. Designed to work in conjunction with the BCore ontology but to also allow for external use."
     },
     "labels" : {
+      "de" : "Bridge Core Ontology – Material Extension",
       "en" : "Bridge Core Ontology – Material Extension"
     },
     "other" : {
@@ -30,12 +33,12 @@
       }, {
         "identifier" : "creator",
         "language" : "undefined",
-        "value" : "Johannes Reimer",
+        "value" : "Tim Noack",
         "type" : "label"
       }, {
         "identifier" : "creator",
         "language" : "undefined",
-        "value" : "Tim Noack",
+        "value" : "Johannes Reimer",
         "type" : "label"
       }, {
         "identifier" : "creator",
@@ -70,19 +73,24 @@
       "modified" : [ {
         "identifier" : "modified",
         "language" : "undefined",
-        "value" : "2026-08-04",
+        "value" : "2026-10-26",
+        "type" : "label"
+      } ],
+      "abstract" : [ {
+        "identifier" : "abstract",
+        "language" : "de",
+        "value" : "Die „Bridge Core Ontology“ (BCore) ermöglicht die Darstellung einer Brücke, ihrer Bauteile und ihrer Materialien sowie der damit verbundenen Infrastruktur und Mediendateien und der Umgebung und Lage der Brücke. BCore wurde vom Institut für Massivbau (IMB) an der Technischen Universität Dresden (TUD) entwickelt. Diese Ontologie enthält die entsprechende Erweiterung für Materialien.",
+        "type" : "label"
+      }, {
+        "identifier" : "abstract",
+        "language" : "en",
+        "value" : "The Bridge Core Ontology (BCore) enables the representation of a bridge structure, its components and material, as well as the infrastructure and media files connected to it and the environment and location of the bridge. BCore is created by the Institute of Concrete Structures (IMB) at the Dresden University of Technology (TUD). This ontology contains the corresponding material extension.",
         "type" : "label"
       } ],
       "versionInfo" : [ {
         "identifier" : "versionInfo",
         "language" : "undefined",
         "value" : "0.1.1",
-        "type" : "label"
-      } ],
-      "abstract" : [ {
-        "identifier" : "abstract",
-        "language" : "en",
-        "value" : "The Bridge Core Ontology (BCore) enables the representation of a bridge structure, its components and material, as well as the infrastructure and media files connected to it and the environment and location of the bridge. BCore is created by the Institute of Concrete Structures (IMB) at the Dresden University of Technology (TUD). This ontology contains the corresponding material extension.",
         "type" : "label"
       } ],
       "codeRepository" : [ {
@@ -94,7 +102,12 @@
       "title" : [ {
         "identifier" : "title",
         "language" : "en",
-        "value" : "Bridge Core Ontology for Institute of Concrete Structures, Dresden University of Technology – Material Extension",
+        "value" : "Bridge Core Ontology (BCore) – Material Extension",
+        "type" : "label"
+      }, {
+        "identifier" : "title",
+        "language" : "de",
+        "value" : "Bridge Core Ontology (BCore) – Material-Erweiterung",
         "type" : "label"
       } ],
       "status" : [ {
@@ -220,7 +233,7 @@
   }, {
     "instances" : 0,
     "union" : [ "15", "4" ],
-    "attributes" : [ "anonymous", "union" ],
+    "attributes" : [ "union", "anonymous" ],
     "id" : "22"
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#decimal",
@@ -254,7 +267,7 @@
   }, {
     "instances" : 0,
     "union" : [ "15", "4" ],
-    "attributes" : [ "anonymous", "union" ],
+    "attributes" : [ "union", "anonymous" ],
     "id" : "26"
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#decimal",
@@ -481,12 +494,12 @@
   "propertyAttribute" : [ {
     "range" : "1",
     "domain" : "0",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "2"
   }, {
     "range" : "1",
     "domain" : "4",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "3"
   }, {
     "iri" : "https://w3id.org/bcore/mat#Ductility",
@@ -507,42 +520,42 @@
   }, {
     "range" : "11",
     "domain" : "10",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "9"
   }, {
     "range" : "11",
     "domain" : "13",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "12"
   }, {
     "range" : "1",
     "domain" : "15",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "14"
   }, {
     "range" : "11",
     "domain" : "17",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "16"
   }, {
     "range" : "8",
     "domain" : "7",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "18"
   }, {
     "range" : "8",
     "domain" : "20",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "19"
   }, {
     "range" : "7",
     "domain" : "1",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "21"
   }, {
     "range" : "8",
     "domain" : "11",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "24"
   }, {
     "iri" : "https://w3id.org/bcore/mat#ExpositionClass",
@@ -635,22 +648,22 @@
   }, {
     "range" : "20",
     "domain" : "7",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "36"
   }, {
     "range" : "17",
     "domain" : "10",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "37"
   }, {
     "range" : "13",
     "domain" : "10",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "38"
   }, {
     "range" : "13",
     "domain" : "17",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "39"
   }, {
     "iri" : "https://w3id.org/bcore/mat#Ey",
@@ -679,12 +692,12 @@
   }, {
     "range" : "7",
     "domain" : "11",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "41"
   }, {
     "range" : "20",
     "domain" : "11",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "42"
   }, {
     "iri" : "https://w3id.org/bcore/mat#fck",
