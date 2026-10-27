@@ -28,17 +28,17 @@
       "creator" : [ {
         "identifier" : "creator",
         "language" : "undefined",
-        "value" : "Johannes Reimer",
-        "type" : "label"
-      }, {
-        "identifier" : "creator",
-        "language" : "undefined",
         "value" : "Tim Noack",
         "type" : "label"
       }, {
         "identifier" : "creator",
         "language" : "undefined",
         "value" : "Morris Florek",
+        "type" : "label"
+      }, {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "Johannes Reimer",
         "type" : "label"
       }, {
         "identifier" : "creator",
@@ -64,22 +64,16 @@
         "value" : "bcorecomp",
         "type" : "label"
       } ],
-      "logo" : [ {
-        "identifier" : "logo",
-        "language" : "undefined",
-        "value" : "https://raw.githubusercontent.com/TUD-IMB/BCore/main/BCore.svg",
-        "type" : "label"
-      } ],
       "modified" : [ {
         "identifier" : "modified",
         "language" : "undefined",
         "value" : "2026-10-26",
         "type" : "label"
       } ],
-      "codeRepository" : [ {
-        "identifier" : "codeRepository",
+      "logo" : [ {
+        "identifier" : "logo",
         "language" : "undefined",
-        "value" : "https://github.com/TUD-IMB/BCore",
+        "value" : "https://raw.githubusercontent.com/TUD-IMB/BCore/main/BCore.svg",
         "type" : "label"
       } ],
       "abstract" : [ {
@@ -91,6 +85,12 @@
         "identifier" : "abstract",
         "language" : "en",
         "value" : "The Bridge Core Ontology (BCore) enables the representation of a bridge structure, its components and material, as well as the infrastructure and media files connected to it and the environment and location of the bridge. BCore is created by the Institute of Concrete Structures (IMB) at the Dresden University of Technology (TUD). This ontology contains the corresponding components extension.",
+        "type" : "label"
+      } ],
+      "codeRepository" : [ {
+        "identifier" : "codeRepository",
+        "language" : "undefined",
+        "value" : "https://github.com/TUD-IMB/BCore",
         "type" : "label"
       } ],
       "versionInfo" : [ {
