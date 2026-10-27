@@ -1,3 +1,33 @@
 <h2 id="intro" class="list">Einf&uuml;hrung <span class="backlink"> zur&uuml;ck zum <a href="#toc">Inhaltsverzeichnis</a></span></h2>
 <span class="markdown">
-Dies ist ein Platzhalter f&uuml;r die Einf&uuml;hrung. Die Einf&uuml;hrung sollte in kurzer Form die Ontologie und ihren Anwendungszweck beschreiben, sowie Informationen &uuml;ber ihren Entwicklungsstand und Kontext enthalten.</span>
+Die **Bridge Core Ontology (BCore)** bildet das zentrale Fundament der BCore-Ontologie-Hierarchie. Sie definiert die wesentlichen, übergeordneten Konzepte, die zur Beschreibung einer Brücke erforderlich sind, und stellt die gemeinsame semantische Struktur bereit, auf der alle anderen Module aufbauen.
+
+BCore ist bewusst schlank gehalten: Sie legt die Identität, die grundlegende strukturelle Hierarchie und die modulübergreifenden Verknüpfungen fest, während domänenspezifische Details speziellen Erweiterungsontologien überlassen bleiben.
+
+#### BCore-Ontologie-Hierarchie:
+
+| Modul | Zweck |
+|--------|---------|
+| **BCore**                | Kernidentität, übergeordnete Brückenkonzepte und gemeinsame Verknüpfungsstruktur. |
+| **[BCoreComp](/BCore/comp)**   | Strukturelle und funktionale Brückenkomponenten.                            |
+| **[BCoreMat](/BCore/mat)**     | Im Brückenbau verwendete Materialien.                                  |
+| **[BCoreInfra](/BCore/infra)** | Brückenbezogene Verkehrs- und Versorgungsinfrastruktur.                    |
+| **[BCoreZones](/BCore/zones)** | Räumliche Zonen, geometrischer Kontext und Umweltregionen.            |
+| **[BCoreMedia](/BCore/media)** | Mediendateien, Dokumentation und digitale Assets.                         |
+
+#### Über die BCore-Hauptontologie:
+
+Die **BCore-Hauptontologie** liefert das minimale konzeptionelle Modell, das zur Beschreibung einer Brücke erforderlich ist: ihre Identität, ihre oberste Struktur und die Beziehungen, die sie mit detaillierteren Domänen-Ontologien verbinden.
+
+Sie stellt sicher, dass sich alle Module (Bauteile, Materialien, Infrastruktur, Medien und räumliche Zonen) nahtlos in eine einheitliche Darstellung einfügen.
+
+Schwerpunkte:
+
+- **Identität und Klassifizierung von Brücken**
+- **Eine einfache strukturelle Hierarchie** (Brücke → Teile → verknüpfte Module)
+- **Gemeinsame Verknüpfungseigenschaften** über alle Module hinweg
+- **Interoperabilität** für eine modulare und erweiterbare Datenmodellierung von Brücken
+
+
+&rarr; Somit ist sie ein übersichtlicher, minimalistischer und interoperabler Ausgangspunkt für alle, die ein umfassendes, modulares semantisches Modell von Brücken erstellen möchten.
+</span>
