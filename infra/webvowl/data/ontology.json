@@ -4,15 +4,18 @@
     "languages" : [ "de", "en", "undefined" ],
     "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "https://w3id.org/bcore/infra", "https://w3id.org/bcore", "http://www.w3.org/2000/01/rdf-schema", "http://www.w3.org/2001/XMLSchema" ],
     "title" : {
-      "en" : "Bridge Core Ontology for Institute of Concrete Structures, Dresden University of Technology – Infrastructure Extension"
+      "de" : "Bridge Core Ontology (BCore) – Infrastruktur-Erweiterung",
+      "en" : "Bridge Core Ontology (BCore) – Infrastructure Extension"
     },
     "iri" : "https://w3id.org/bcore/infra",
-    "version" : "0.1.1",
+    "version" : "0.1.2",
     "author" : [ "Tim Noack", "Morris Florek", "Johannes Reimer", "Xiaoli Song" ],
     "description" : {
+      "de" : "Erweiterungsontologie zur Darstellung von Infrastrukturtrassen. Konzipiert für den Einsatz in Verbindung mit der BCore-Ontologie, ermöglicht jedoch auch die eigenständige Nutzung.",
       "en" : "Extension ontology for the representation of bridge-related infrastructure. Designed to work in conjunction with the BCore ontology but to also allow for external use."
     },
     "labels" : {
+      "de" : "Bridge Core Ontology – Infrastruktur-Erweiterung",
       "en" : "Bridge Core Ontology – Infrastructure Extension"
     },
     "other" : {
@@ -61,19 +64,24 @@
         "value" : "bcoreinfra",
         "type" : "label"
       } ],
+      "modified" : [ {
+        "identifier" : "modified",
+        "language" : "undefined",
+        "value" : "2026-10-26",
+        "type" : "label"
+      } ],
       "logo" : [ {
         "identifier" : "logo",
         "language" : "undefined",
         "value" : "https://raw.githubusercontent.com/TUD-IMB/BCore/main/BCore.svg",
         "type" : "label"
       } ],
-      "modified" : [ {
-        "identifier" : "modified",
-        "language" : "undefined",
-        "value" : "2026-08-03",
-        "type" : "label"
-      } ],
       "abstract" : [ {
+        "identifier" : "abstract",
+        "language" : "de",
+        "value" : "Die „Bridge Core Ontology“ (BCore) ermöglicht die Darstellung einer Brücke, ihrer Bauteile und ihrer Materialien sowie der damit verbundenen Infrastruktur und Mediendateien und der Umgebung und Lage der Brücke. BCore wurde vom Institut für Massivbau (IMB) an der Technischen Universität Dresden (TUD) entwickelt. Diese Ontologie enthält die entsprechende Erweiterung für Infrastrukturtrassen.",
+        "type" : "label"
+      }, {
         "identifier" : "abstract",
         "language" : "en",
         "value" : "The Bridge Core Ontology (BCore) enables the representation of a bridge structure, its components and material, as well as the infrastructure and media files connected to it and the environment and location of the bridge. BCore is created by the Institute of Concrete Structures (IMB) at the Dresden University of Technology (TUD). This ontology contains the corresponding infrastructure extension.",
@@ -82,7 +90,7 @@
       "versionInfo" : [ {
         "identifier" : "versionInfo",
         "language" : "undefined",
-        "value" : "0.1.1",
+        "value" : "0.1.2",
         "type" : "label"
       } ],
       "codeRepository" : [ {
@@ -93,8 +101,13 @@
       } ],
       "title" : [ {
         "identifier" : "title",
+        "language" : "de",
+        "value" : "Bridge Core Ontology (BCore) – Infrastruktur-Erweiterung",
+        "type" : "label"
+      }, {
+        "identifier" : "title",
         "language" : "en",
-        "value" : "Bridge Core Ontology for Institute of Concrete Structures, Dresden University of Technology – Infrastructure Extension",
+        "value" : "Bridge Core Ontology (BCore) – Infrastructure Extension",
         "type" : "label"
       } ],
       "status" : [ {
@@ -308,32 +321,32 @@
   }, {
     "range" : "2",
     "domain" : "3",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "7"
   }, {
     "range" : "1",
     "domain" : "4",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "8"
   }, {
     "range" : "2",
     "domain" : "4",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "9"
   }, {
     "range" : "2",
     "domain" : "1",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "10"
   }, {
     "range" : "4",
     "domain" : "3",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "15"
   }, {
     "range" : "1",
     "domain" : "3",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "16"
   }, {
     "iri" : "https://w3id.org/bcore/infra#RoadRouteNumberOfLanes",
@@ -426,22 +439,22 @@
   }, {
     "range" : "0",
     "domain" : "4",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "21"
   }, {
     "range" : "0",
     "domain" : "3",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "22"
   }, {
     "range" : "0",
     "domain" : "2",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "23"
   }, {
     "range" : "0",
     "domain" : "1",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "24"
   } ]
 }

@@ -98,12 +98,18 @@
   "@id" : "https://w3id.org/bcore/infra",
   "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
   "http://purl.org/dc/elements/1.1/abstract" : [ {
+    "@language" : "de",
+    "@value" : "Die „Bridge Core Ontology“ (BCore) ermöglicht die Darstellung einer Brücke, ihrer Bauteile und ihrer Materialien sowie der damit verbundenen Infrastruktur und Mediendateien und der Umgebung und Lage der Brücke. BCore wurde vom Institut für Massivbau (IMB) an der Technischen Universität Dresden (TUD) entwickelt. Diese Ontologie enthält die entsprechende Erweiterung für Infrastrukturtrassen."
+  }, {
     "@language" : "en",
     "@value" : "The Bridge Core Ontology (BCore) enables the representation of a bridge structure, its components and material, as well as the infrastructure and media files connected to it and the environment and location of the bridge. BCore is created by the Institute of Concrete Structures (IMB) at the Dresden University of Technology (TUD). This ontology contains the corresponding infrastructure extension."
   } ],
   "http://purl.org/dc/elements/1.1/title" : [ {
     "@language" : "en",
-    "@value" : "Bridge Core Ontology for Institute of Concrete Structures, Dresden University of Technology – Infrastructure Extension"
+    "@value" : "Bridge Core Ontology (BCore) – Infrastructure Extension"
+  }, {
+    "@language" : "de",
+    "@value" : "Bridge Core Ontology (BCore) – Infrastruktur-Erweiterung"
   } ],
   "http://purl.org/dc/terms/contributor" : [ {
     "@value" : "Jakob Vogt"
@@ -122,6 +128,9 @@
     "@value" : "Xiaoli Song"
   } ],
   "http://purl.org/dc/terms/description" : [ {
+    "@language" : "de",
+    "@value" : "Erweiterungsontologie zur Darstellung von Infrastrukturtrassen. Konzipiert für den Einsatz in Verbindung mit der BCore-Ontologie, ermöglicht jedoch auch die eigenständige Nutzung."
+  }, {
     "@language" : "en",
     "@value" : "Extension ontology for the representation of bridge-related infrastructure. Designed to work in conjunction with the BCore ontology but to also allow for external use."
   } ],
@@ -129,7 +138,8 @@
     "@value" : "https://creativecommons.org/licenses/by/4.0/deed.en"
   } ],
   "http://purl.org/dc/terms/modified" : [ {
-    "@value" : "2026-08-03"
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2026-10-26"
   } ],
   "http://purl.org/ontology/bibo/status" : [ {
     "@value" : "Ontology Specification Draft"
@@ -140,9 +150,12 @@
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "Bridge Core Ontology – Infrastructure Extension"
+  }, {
+    "@language" : "de",
+    "@value" : "Bridge Core Ontology – Infrastruktur-Erweiterung"
   } ],
   "http://www.w3.org/2002/07/owl#versionInfo" : [ {
-    "@value" : "0.1.1"
+    "@value" : "0.1.2"
   } ],
   "http://xmlns.com/foaf/0.1/logo" : [ {
     "@value" : "https://raw.githubusercontent.com/TUD-IMB/BCore/main/BCore.svg"
