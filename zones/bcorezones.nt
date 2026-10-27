@@ -1,18 +1,22 @@
 <https://w3id.org/bcore/zones> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<https://w3id.org/bcore/zones> <http://purl.org/dc/elements/1.1/abstract> "Die „Bridge Core Ontology“ (BCore) ermöglicht die Darstellung einer Brücke, ihrer Bauteile und ihrer Materialien sowie der damit verbundenen Infrastruktur und Mediendateien und der Umgebung und Lage der Brücke. BCore wurde vom Institut für Massivbau (IMB) an der Technischen Universität Dresden (TUD) entwickelt. Diese Ontologie enthält die entsprechende Erweiterung für räumliche Zonen."@de .
 <https://w3id.org/bcore/zones> <http://purl.org/dc/elements/1.1/abstract> "The Bridge Core Ontology (BCore) enables the representation of a bridge structure, its components and material, as well as the infrastructure and media files connected to it and the environment and location of the bridge. BCore is created by the Institute of Concrete Structures (IMB) at the Dresden University of Technology (TUD). This ontology contains the corresponding zones extension."@en .
-<https://w3id.org/bcore/zones> <http://purl.org/dc/elements/1.1/title> "Bridge Core Ontology for Institute of Concrete Structures, Dresden University of Technology – Zones Extension"@en .
+<https://w3id.org/bcore/zones> <http://purl.org/dc/elements/1.1/title> "Bridge Core Ontology (BCore) – Zonen-Erweiterung"@de .
+<https://w3id.org/bcore/zones> <http://purl.org/dc/elements/1.1/title> "Bridge Core Ontology (BCore) – Zones Extension"@en .
 <https://w3id.org/bcore/zones> <http://purl.org/dc/terms/contributor> "Jakob Vogt" .
 <https://w3id.org/bcore/zones> <http://purl.org/dc/terms/created> "2025-11-06"^^<http://www.w3.org/2001/XMLSchema#date> .
 <https://w3id.org/bcore/zones> <http://purl.org/dc/terms/creator> "Johannes Reimer" .
 <https://w3id.org/bcore/zones> <http://purl.org/dc/terms/creator> "Morris Florek" .
 <https://w3id.org/bcore/zones> <http://purl.org/dc/terms/creator> "Tim Noack" .
 <https://w3id.org/bcore/zones> <http://purl.org/dc/terms/creator> "Xiaoli Song" .
+<https://w3id.org/bcore/zones> <http://purl.org/dc/terms/description> "Erweiterungsontologie zur Darstellung von räumlichen Zonen. Konzipiert für den Einsatz in Verbindung mit der BCore-Ontologie, ermöglicht jedoch auch die eigenständige Nutzung."@de .
 <https://w3id.org/bcore/zones> <http://purl.org/dc/terms/description> "Extension ontology for the representation of bridge-related zones. Designed to work in conjunction with the BCore ontology but to also allow for external use."@en .
 <https://w3id.org/bcore/zones> <http://purl.org/dc/terms/license> "https://creativecommons.org/licenses/by/4.0/deed.en" .
-<https://w3id.org/bcore/zones> <http://purl.org/dc/terms/modified> "2026-01-01"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://w3id.org/bcore/zones> <http://purl.org/dc/terms/modified> "2026-10-26"^^<http://www.w3.org/2001/XMLSchema#date> .
 <https://w3id.org/bcore/zones> <http://purl.org/ontology/bibo/status> "Ontology Specification Draft" .
 <https://w3id.org/bcore/zones> <http://purl.org/vocab/vann/preferredNamespacePrefix> "bcorezones" .
 <https://w3id.org/bcore/zones> <http://www.w3.org/2000/01/rdf-schema#label> "Bridge Core Ontology – Zones Extension"@en .
+<https://w3id.org/bcore/zones> <http://www.w3.org/2000/01/rdf-schema#label> "Bridge Core Ontology – Zonen-Erweiterung" .
 <https://w3id.org/bcore/zones> <http://www.w3.org/2002/07/owl#versionInfo> "0.1.2" .
 <https://w3id.org/bcore/zones> <http://xmlns.com/foaf/0.1/logo> "https://raw.githubusercontent.com/TUD-IMB/BCore/main/BCore.svg" .
 <https://w3id.org/bcore/zones> <https://schema.org/codeRepository> "https://github.com/TUD-IMB/BCore" .

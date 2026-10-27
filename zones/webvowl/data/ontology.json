@@ -4,16 +4,19 @@
     "languages" : [ "de", "en", "undefined" ],
     "baseIris" : [ "https://w3id.org/bot", "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://www.w3.org/2000/01/rdf-schema", "http://www.w3.org/2001/XMLSchema", "https://w3id.org/bcore/zones" ],
     "title" : {
-      "en" : "Bridge Core Ontology for Institute of Concrete Structures, Dresden University of Technology – Zones Extension"
+      "de" : "Bridge Core Ontology (BCore) – Zonen-Erweiterung",
+      "en" : "Bridge Core Ontology (BCore) – Zones Extension"
     },
     "iri" : "https://w3id.org/bcore/zones",
     "version" : "0.1.2",
     "author" : [ "Tim Noack", "Morris Florek", "Johannes Reimer", "Xiaoli Song" ],
     "description" : {
+      "de" : "Erweiterungsontologie zur Darstellung von räumlichen Zonen. Konzipiert für den Einsatz in Verbindung mit der BCore-Ontologie, ermöglicht jedoch auch die eigenständige Nutzung.",
       "en" : "Extension ontology for the representation of bridge-related zones. Designed to work in conjunction with the BCore ontology but to also allow for external use."
     },
     "labels" : {
-      "en" : "Bridge Core Ontology – Zones Extension"
+      "en" : "Bridge Core Ontology – Zones Extension",
+      "undefined" : "Bridge Core Ontology – Zonen-Erweiterung"
     },
     "other" : {
       "license" : [ {
@@ -35,12 +38,12 @@
       }, {
         "identifier" : "creator",
         "language" : "undefined",
-        "value" : "Xiaoli Song",
+        "value" : "Morris Florek",
         "type" : "label"
       }, {
         "identifier" : "creator",
         "language" : "undefined",
-        "value" : "Morris Florek",
+        "value" : "Xiaoli Song",
         "type" : "label"
       } ],
       "contributor" : [ {
@@ -64,13 +67,19 @@
       "modified" : [ {
         "identifier" : "modified",
         "language" : "undefined",
-        "value" : "2026-01-01",
+        "value" : "2026-10-26",
         "type" : "label"
       } ],
       "logo" : [ {
         "identifier" : "logo",
         "language" : "undefined",
         "value" : "https://raw.githubusercontent.com/TUD-IMB/BCore/main/BCore.svg",
+        "type" : "label"
+      } ],
+      "versionInfo" : [ {
+        "identifier" : "versionInfo",
+        "language" : "undefined",
+        "value" : "0.1.2",
         "type" : "label"
       } ],
       "codeRepository" : [ {
@@ -84,17 +93,21 @@
         "language" : "en",
         "value" : "The Bridge Core Ontology (BCore) enables the representation of a bridge structure, its components and material, as well as the infrastructure and media files connected to it and the environment and location of the bridge. BCore is created by the Institute of Concrete Structures (IMB) at the Dresden University of Technology (TUD). This ontology contains the corresponding zones extension.",
         "type" : "label"
-      } ],
-      "versionInfo" : [ {
-        "identifier" : "versionInfo",
-        "language" : "undefined",
-        "value" : "0.1.2",
+      }, {
+        "identifier" : "abstract",
+        "language" : "de",
+        "value" : "Die „Bridge Core Ontology“ (BCore) ermöglicht die Darstellung einer Brücke, ihrer Bauteile und ihrer Materialien sowie der damit verbundenen Infrastruktur und Mediendateien und der Umgebung und Lage der Brücke. BCore wurde vom Institut für Massivbau (IMB) an der Technischen Universität Dresden (TUD) entwickelt. Diese Ontologie enthält die entsprechende Erweiterung für räumliche Zonen.",
         "type" : "label"
       } ],
       "title" : [ {
         "identifier" : "title",
         "language" : "en",
-        "value" : "Bridge Core Ontology for Institute of Concrete Structures, Dresden University of Technology – Zones Extension",
+        "value" : "Bridge Core Ontology (BCore) – Zones Extension",
+        "type" : "label"
+      }, {
+        "identifier" : "title",
+        "language" : "de",
+        "value" : "Bridge Core Ontology (BCore) – Zonen-Erweiterung",
         "type" : "label"
       } ],
       "status" : [ {
@@ -128,10 +141,10 @@
     "id" : "1",
     "type" : "owl:Class"
   }, {
-    "id" : "19",
+    "id" : "21",
     "type" : "owl:Class"
   }, {
-    "id" : "21",
+    "id" : "19",
     "type" : "owl:Class"
   }, {
     "id" : "3",
@@ -247,21 +260,6 @@
     "id" : "1",
     "superClasses" : [ "3" ]
   }, {
-    "iri" : "https://w3id.org/bcore/zones#Forest",
-    "baseIri" : "https://w3id.org/bcore/zones",
-    "instances" : 0,
-    "label" : {
-      "de" : "Wald",
-      "IRI-based" : "Forest",
-      "en" : "forest"
-    },
-    "comment" : {
-      "de" : "bewaldetes Gebiet",
-      "en" : "forrest/wood"
-    },
-    "id" : "19",
-    "superClasses" : [ "1" ]
-  }, {
     "iri" : "https://w3id.org/bot#Building",
     "baseIri" : "https://w3id.org/bot",
     "instances" : 0,
@@ -276,6 +274,21 @@
     "attributes" : [ "external" ],
     "id" : "21",
     "superClasses" : [ "3" ]
+  }, {
+    "iri" : "https://w3id.org/bcore/zones#Forest",
+    "baseIri" : "https://w3id.org/bcore/zones",
+    "instances" : 0,
+    "label" : {
+      "de" : "Wald",
+      "IRI-based" : "Forest",
+      "en" : "forest"
+    },
+    "comment" : {
+      "de" : "bewaldetes Gebiet",
+      "en" : "forrest/wood"
+    },
+    "id" : "19",
+    "superClasses" : [ "1" ]
   }, {
     "iri" : "https://w3id.org/bot#Zone",
     "baseIri" : "https://w3id.org/bot",
@@ -366,102 +379,102 @@
   "propertyAttribute" : [ {
     "range" : "1",
     "domain" : "5",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "4"
   }, {
     "range" : "2",
     "domain" : "5",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "6"
   }, {
     "range" : "9",
     "domain" : "8",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "7"
   }, {
     "range" : "1",
     "domain" : "8",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "10"
   }, {
     "range" : "2",
     "domain" : "8",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "11"
   }, {
     "range" : "1",
     "domain" : "9",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "12"
   }, {
     "range" : "2",
     "domain" : "9",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "13"
   }, {
     "range" : "2",
     "domain" : "1",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "14"
   }, {
     "range" : "8",
     "domain" : "5",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "15"
   }, {
     "range" : "9",
     "domain" : "5",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "16"
   }, {
     "range" : "3",
     "domain" : "8",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "20"
   }, {
     "range" : "3",
     "domain" : "17",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "22"
   }, {
     "range" : "3",
     "domain" : "1",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "23"
   }, {
     "range" : "3",
     "domain" : "9",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "24"
   }, {
     "range" : "3",
     "domain" : "21",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "25"
   }, {
     "range" : "3",
     "domain" : "5",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "26"
   }, {
     "range" : "3",
     "domain" : "2",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "27"
   }, {
     "range" : "1",
     "domain" : "0",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "28"
   }, {
     "range" : "1",
     "domain" : "18",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "29"
   }, {
     "range" : "1",
     "domain" : "19",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "30"
   } ]
 }
