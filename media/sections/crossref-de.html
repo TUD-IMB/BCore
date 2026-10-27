@@ -1,0 +1,311 @@
+<h2 id="crossreference" class="list">Querverweis f&uuml;r... Bridge Core Ontology – Medien-Erweiterung Klassen, Object Properties und Data Properties<span class="backlink"> zur&uuml;ck zum <a href="#toc">Inhaltsverzeichnis</a></span></h2>
+Dieser Abschnitt enth&auml;lt Details f&uuml;r jede Klasse und jedes definierte Property, die definiert wurden durch Bridge Core Ontology – Medien-Erweiterung.
+<div xmlns:widoco="https://w3id.org/widoco/vocab#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="classes">
+ <h3 id="classes-headline" class="list">Klassen</h3>
+ <ul class="hlist">
+  <li><a href="#Image" title="https://w3id.org/bcore/media#Image">Bild</a></li>
+  <li><a href="#Document" title="https://w3id.org/bcore/media#Document">Dokument</a></li>
+  <li><a href="#Photo" title="https://w3id.org/bcore/media#Photo">Foto</a></li>
+  <li><a href="#IFCFile" title="https://w3id.org/bcore/media#IFCFile">IFC-Datei</a></li>
+  <li><a href="#Model" title="https://w3id.org/bcore/media#Model">Modell</a></li>
+ </ul>
+ <div class="entity" id="Image">
+  <h3>Bild<sup class="type-c" title="Klasse">c</sup> <span class="backlink"> zurück zur <a href="#toc">Übersicht</a> oder <a href="#classes">Klassenübersicht</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/bcore/media#Image</p>
+  <div class="comment">
+   <span class="markdown">Bilddatei</span>
+  </div>
+  <dl class="description">
+   <dt>
+    hat Super-Klassen
+   </dt>
+   <dd>
+    <a href="https://w3id.org/bcore#MediaFile" target="_blank" title="https://w3id.org/bcore#MediaFile">Media File</a> <sup class="type-c" title="Klasse">c</sup>
+   </dd>
+   <dt>
+    hat Sub-Klassen
+   </dt>
+   <dd>
+    <a href="#Photo" title="https://w3id.org/bcore/media#Photo">Foto</a> <sup class="type-c" title="Klasse">c</sup>
+   </dd>
+   <dt>
+    ist in der Domäne von
+   </dt>
+   <dd>
+    <a href="#ImageResolutionX" title="https://w3id.org/bcore/media#ImageResolutionX">Bildauflösung X</a> <sup class="type-dp" title="Daten Eigenschaft">dp</sup>, <a href="#ImageResolutionY" title="https://w3id.org/bcore/media#ImageResolutionY">Bildauflösung Y</a> <sup class="type-dp" title="Daten Eigenschaft">dp</sup>
+   </dd>
+   <dt>
+    ist disjunkt zu
+   </dt>
+   <dd>
+    <a href="#Document" title="https://w3id.org/bcore/media#Document">Dokument</a> <sup class="type-c" title="Klasse">c</sup>, <a href="#Model" title="https://w3id.org/bcore/media#Model">Modell</a> <sup class="type-c" title="Klasse">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="Document">
+  <h3>Dokument<sup class="type-c" title="Klasse">c</sup> <span class="backlink"> zurück zur <a href="#toc">Übersicht</a> oder <a href="#classes">Klassenübersicht</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/bcore/media#Document</p>
+  <div class="comment">
+   <span class="markdown">Physische oder digitale Darstellung einer Informationseinheit, die zur Kommunikation verwendet werden kann</span>
+  </div>
+  <dl class="description">
+   <dt>
+    hat Super-Klassen
+   </dt>
+   <dd>
+    <a href="https://w3id.org/bcore#MediaFile" target="_blank" title="https://w3id.org/bcore#MediaFile">Media File</a> <sup class="type-c" title="Klasse">c</sup>
+   </dd>
+   <dt>
+    ist disjunkt zu
+   </dt>
+   <dd>
+    <a href="#Image" title="https://w3id.org/bcore/media#Image">Bild</a> <sup class="type-c" title="Klasse">c</sup>, <a href="#Model" title="https://w3id.org/bcore/media#Model">Modell</a> <sup class="type-c" title="Klasse">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="Photo">
+  <h3>Foto<sup class="type-c" title="Klasse">c</sup> <span class="backlink"> zurück zur <a href="#toc">Übersicht</a> oder <a href="#classes">Klassenübersicht</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/bcore/media#Photo</p>
+  <div class="comment">
+   <span class="markdown">Foto (entstanden durch auf eine lichtempfindliche Oberfläche fallendes Licht)</span>
+  </div>
+  <dl class="description">
+   <dt>
+    hat Super-Klassen
+   </dt>
+   <dd>
+    <a href="#Image" title="https://w3id.org/bcore/media#Image">Bild</a> <sup class="type-c" title="Klasse">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="IFCFile">
+  <h3>IFC-Datei<sup class="type-c" title="Klasse">c</sup> <span class="backlink"> zurück zur <a href="#toc">Übersicht</a> oder <a href="#classes">Klassenübersicht</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/bcore/media#IFCFile</p>
+  <div class="comment">
+   <span class="markdown">Industry Foundation Class-Datei einer Struktur</span>
+  </div>
+  <dl class="description">
+   <dt>
+    hat Super-Klassen
+   </dt>
+   <dd>
+    <a href="#Model" title="https://w3id.org/bcore/media#Model">Modell</a> <sup class="type-c" title="Klasse">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="Model">
+  <h3>Modell<sup class="type-c" title="Klasse">c</sup> <span class="backlink"> zurück zur <a href="#toc">Übersicht</a> oder <a href="#classes">Klassenübersicht</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/bcore/media#Model</p>
+  <div class="comment">
+   <span class="markdown">digitale dreidimensionale geometrische Abbildung einer Struktur</span>
+  </div>
+  <dl class="description">
+   <dt>
+    hat Super-Klassen
+   </dt>
+   <dd>
+    <a href="https://w3id.org/bcore#MediaFile" target="_blank" title="https://w3id.org/bcore#MediaFile">Media File</a> <sup class="type-c" title="Klasse">c</sup>
+   </dd>
+   <dt>
+    hat Sub-Klassen
+   </dt>
+   <dd>
+    <a href="#IFCFile" title="https://w3id.org/bcore/media#IFCFile">IFC-Datei</a> <sup class="type-c" title="Klasse">c</sup>
+   </dd>
+   <dt>
+    ist disjunkt zu
+   </dt>
+   <dd>
+    <a href="#Document" title="https://w3id.org/bcore/media#Document">Dokument</a> <sup class="type-c" title="Klasse">c</sup>, <a href="#Image" title="https://w3id.org/bcore/media#Image">Bild</a> <sup class="type-c" title="Klasse">c</sup>
+   </dd>
+  </dl>
+ </div>
+</div><div xmlns:widoco="https://w3id.org/widoco/vocab#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="objectproperties">
+ <h2>Objekt Eigenschaften</h2>
+ <ul class="hlist">
+  <li><a href="#https://w3id.org/bcore#describes" title="https://w3id.org/bcore#describes">beschreibt</a></li>
+  <li><a href="#containsMedia" title="https://w3id.org/bcore/media#containsMedia">enthält Mediendatei</a></li>
+ </ul>
+ <div class="entity" id="https://w3id.org/bcore#describes">
+  <h3>beschreibt<sup class="type-op" title="Objekt Eigenschaft">op</sup> <span class="backlink"> zurück zur <a href="#toc">Übersicht</a> oder <a href="#objectproperties">Übersicht der Objekteigenschaften</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/bcore#describes</p>
+  <div class="comment">
+   <span class="markdown">Mediendatei beschreibt (stellt dar, zeigt, veranschaulicht) eine Brücke oder ein Bauteil</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     hat Domäne
+    </dt>
+    <dd>
+     <a href="https://w3id.org/bcore#MediaFile" target="_blank" title="https://w3id.org/bcore#MediaFile">Media File</a> <sup class="type-c" title="Klasse">c</sup>
+    </dd>
+    <dt>
+     hat Range
+    </dt>
+    <dd>
+     <a href="https://w3id.org/brot#Bridge" target="_blank" title="https://w3id.org/brot#Bridge">Bridge</a> <sup class="type-c" title="Klasse">c</sup> <span class="logic">or</span> <a href="https://w3id.org/brot#Component" target="_blank" title="https://w3id.org/brot#Component">Component</a> <sup class="type-c" title="Klasse">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="containsMedia">
+  <h3>enthält Mediendatei<sup class="type-op" title="Objekt Eigenschaft">op</sup> <span class="backlink"> zurück zur <a href="#toc">Übersicht</a> oder <a href="#objectproperties">Übersicht der Objekteigenschaften</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/bcore/media#containsMedia</p>
+  <div class="comment">
+   <span class="markdown">Mediendatei enthält eine andere Mediendatei</span>
+  </div>
+  <div class="description">
+   <p><strong>hat Charakteristika: </strong> asymmetrisch, transitiv</p>
+   <dl>
+    <dt>
+     hat Domäne
+    </dt>
+    <dd>
+     <a href="https://w3id.org/bcore#MediaFile" target="_blank" title="https://w3id.org/bcore#MediaFile">Media File</a> <sup class="type-c" title="Klasse">c</sup>
+    </dd>
+    <dt>
+     hat Range
+    </dt>
+    <dd>
+     <a href="https://w3id.org/bcore#MediaFile" target="_blank" title="https://w3id.org/bcore#MediaFile">Media File</a> <sup class="type-c" title="Klasse">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+</div><div xmlns:widoco="https://w3id.org/widoco/vocab#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="dataproperties">
+ <h2>Daten Eigenschaften</h2>
+ <ul class="hlist">
+  <li><a href="#ImageResolutionX" title="https://w3id.org/bcore/media#ImageResolutionX">Bildauflösung X</a></li>
+  <li><a href="#ImageResolutionY" title="https://w3id.org/bcore/media#ImageResolutionY">Bildauflösung Y</a></li>
+ </ul>
+ <div class="entity" id="ImageResolutionX">
+  <h3>Bildauflösung X<sup class="type-dp" title="Daten Eigenschaft">dp</sup> <span class="backlink"> zurück zur <a href="#toc">Übersicht</a> oder <a href="#dataproperties">Übersicht der Dateneigenschaften</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/bcore/media#ImageResolutionX</p>
+  <div class="comment">
+   <span class="markdown">Bildauflösung in X-Richtung</span>
+  </div>
+  <div class="description">
+   <p><strong>hat Charakteristika: </strong> funktional</p>
+   <dl>
+    <dt>
+     hat Domäne
+    </dt>
+    <dd>
+     <a href="#Image" title="https://w3id.org/bcore/media#Image">Bild</a> <sup class="type-c" title="Klasse">c</sup>
+    </dd>
+    <dt>
+     hat Range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#integer" target="_blank" title="http://www.w3.org/2001/XMLSchema#integer">integer</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="ImageResolutionY">
+  <h3>Bildauflösung Y<sup class="type-dp" title="Daten Eigenschaft">dp</sup> <span class="backlink"> zurück zur <a href="#toc">Übersicht</a> oder <a href="#dataproperties">Übersicht der Dateneigenschaften</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/bcore/media#ImageResolutionY</p>
+  <div class="comment">
+   <span class="markdown">Bildauflösung in Y-Richtung</span>
+  </div>
+  <div class="description">
+   <p><strong>hat Charakteristika: </strong> funktional</p>
+   <dl>
+    <dt>
+     hat Domäne
+    </dt>
+    <dd>
+     <a href="#Image" title="https://w3id.org/bcore/media#Image">Bild</a> <sup class="type-c" title="Klasse">c</sup>
+    </dd>
+    <dt>
+     hat Range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#integer" target="_blank" title="http://www.w3.org/2001/XMLSchema#integer">integer</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+</div><div xmlns:widoco="https://w3id.org/widoco/vocab#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="annotationproperties">
+ <h2>Anmerkungseigenschaften</h2>
+ <ul class="hlist">
+  <li><a href="#http://purl.org/dc/elements/1.1/abstract" title="http://purl.org/dc/elements/1.1/abstract"> <span>abstract</span> </a></li>
+  <li><a href="#https://schema.org/codeRepository" title="https://schema.org/codeRepository"> <span>code Repository</span> </a></li>
+  <li><a href="#http://purl.org/dc/terms/contributor" title="http://purl.org/dc/terms/contributor"> <span>contributor</span> </a></li>
+  <li><a href="#http://purl.org/dc/terms/created" title="http://purl.org/dc/terms/created"> <span>created</span> </a></li>
+  <li><a href="#http://purl.org/dc/terms/creator" title="http://purl.org/dc/terms/creator"> <span>creator</span> </a></li>
+  <li><a href="#http://purl.org/dc/terms/description" title="http://purl.org/dc/terms/description"> <span>description</span> </a></li>
+  <li><a href="#http://purl.org/dc/terms/license" title="http://purl.org/dc/terms/license"> <span>license</span> </a></li>
+  <li><a href="#http://xmlns.com/foaf/0.1/logo" title="http://xmlns.com/foaf/0.1/logo"> <span>logo</span> </a></li>
+  <li><a href="#http://purl.org/dc/terms/modified" title="http://purl.org/dc/terms/modified"> <span>modified</span> </a></li>
+  <li><a href="#http://purl.org/vocab/vann/preferredNamespacePrefix" title="http://purl.org/vocab/vann/preferredNamespacePrefix"> <span>preferred Namespace Prefix</span> </a></li>
+  <li><a href="#http://purl.org/ontology/bibo/status" title="http://purl.org/ontology/bibo/status"> <span>status</span> </a></li>
+  <li><a href="#http://purl.org/dc/elements/1.1/title" title="http://purl.org/dc/elements/1.1/title"> <span>title</span> </a></li>
+  <li><a href="#https://schema.org/unitText" title="https://schema.org/unitText"> <span>unit Text</span> </a></li>
+  <li><a href="#http://www.w3.org/2002/07/owl#versionIRI" title="http://www.w3.org/2002/07/owl#versionIRI"> <span>version I R I</span> </a></li>
+ </ul>
+ <div class="entity" id="http://purl.org/dc/elements/1.1/abstract">
+  <h3>abstract<sup class="type-ap" title="Anmerkungseigenschaft">ap</sup> <span class="backlink"> zurück zur <a href="#toc">Übersicht</a> oder <a href="#annotationproperties">Übersicht der Anmerkungseigenschaften</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.org/dc/elements/1.1/abstract</p>
+ </div>
+ <div class="entity" id="https://schema.org/codeRepository">
+  <h3>code Repository<sup class="type-ap" title="Anmerkungseigenschaft">ap</sup> <span class="backlink"> zurück zur <a href="#toc">Übersicht</a> oder <a href="#annotationproperties">Übersicht der Anmerkungseigenschaften</a> </span></h3>
+  <p><strong>IRI:</strong> https://schema.org/codeRepository</p>
+ </div>
+ <div class="entity" id="http://purl.org/dc/terms/contributor">
+  <h3>contributor<sup class="type-ap" title="Anmerkungseigenschaft">ap</sup> <span class="backlink"> zurück zur <a href="#toc">Übersicht</a> oder <a href="#annotationproperties">Übersicht der Anmerkungseigenschaften</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.org/dc/terms/contributor</p>
+ </div>
+ <div class="entity" id="http://purl.org/dc/terms/created">
+  <h3>created<sup class="type-ap" title="Anmerkungseigenschaft">ap</sup> <span class="backlink"> zurück zur <a href="#toc">Übersicht</a> oder <a href="#annotationproperties">Übersicht der Anmerkungseigenschaften</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.org/dc/terms/created</p>
+ </div>
+ <div class="entity" id="http://purl.org/dc/terms/creator">
+  <h3>creator<sup class="type-ap" title="Anmerkungseigenschaft">ap</sup> <span class="backlink"> zurück zur <a href="#toc">Übersicht</a> oder <a href="#annotationproperties">Übersicht der Anmerkungseigenschaften</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.org/dc/terms/creator</p>
+ </div>
+ <div class="entity" id="http://purl.org/dc/terms/description">
+  <h3>description<sup class="type-ap" title="Anmerkungseigenschaft">ap</sup> <span class="backlink"> zurück zur <a href="#toc">Übersicht</a> oder <a href="#annotationproperties">Übersicht der Anmerkungseigenschaften</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.org/dc/terms/description</p>
+ </div>
+ <div class="entity" id="http://purl.org/dc/terms/license">
+  <h3>license<sup class="type-ap" title="Anmerkungseigenschaft">ap</sup> <span class="backlink"> zurück zur <a href="#toc">Übersicht</a> oder <a href="#annotationproperties">Übersicht der Anmerkungseigenschaften</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.org/dc/terms/license</p>
+ </div>
+ <div class="entity" id="http://xmlns.com/foaf/0.1/logo">
+  <h3>logo<sup class="type-ap" title="Anmerkungseigenschaft">ap</sup> <span class="backlink"> zurück zur <a href="#toc">Übersicht</a> oder <a href="#annotationproperties">Übersicht der Anmerkungseigenschaften</a> </span></h3>
+  <p><strong>IRI:</strong> http://xmlns.com/foaf/0.1/logo</p>
+ </div>
+ <div class="entity" id="http://purl.org/dc/terms/modified">
+  <h3>modified<sup class="type-ap" title="Anmerkungseigenschaft">ap</sup> <span class="backlink"> zurück zur <a href="#toc">Übersicht</a> oder <a href="#annotationproperties">Übersicht der Anmerkungseigenschaften</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.org/dc/terms/modified</p>
+ </div>
+ <div class="entity" id="http://purl.org/vocab/vann/preferredNamespacePrefix">
+  <h3>preferred Namespace Prefix<sup class="type-ap" title="Anmerkungseigenschaft">ap</sup> <span class="backlink"> zurück zur <a href="#toc">Übersicht</a> oder <a href="#annotationproperties">Übersicht der Anmerkungseigenschaften</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.org/vocab/vann/preferredNamespacePrefix</p>
+ </div>
+ <div class="entity" id="http://purl.org/ontology/bibo/status">
+  <h3>status<sup class="type-ap" title="Anmerkungseigenschaft">ap</sup> <span class="backlink"> zurück zur <a href="#toc">Übersicht</a> oder <a href="#annotationproperties">Übersicht der Anmerkungseigenschaften</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.org/ontology/bibo/status</p>
+ </div>
+ <div class="entity" id="http://purl.org/dc/elements/1.1/title">
+  <h3>title<sup class="type-ap" title="Anmerkungseigenschaft">ap</sup> <span class="backlink"> zurück zur <a href="#toc">Übersicht</a> oder <a href="#annotationproperties">Übersicht der Anmerkungseigenschaften</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.org/dc/elements/1.1/title</p>
+ </div>
+ <div class="entity" id="https://schema.org/unitText">
+  <h3>unit Text<sup class="type-ap" title="Anmerkungseigenschaft">ap</sup> <span class="backlink"> zurück zur <a href="#toc">Übersicht</a> oder <a href="#annotationproperties">Übersicht der Anmerkungseigenschaften</a> </span></h3>
+  <p><strong>IRI:</strong> https://schema.org/unitText</p>
+ </div>
+ <div class="entity" id="http://www.w3.org/2002/07/owl#versionIRI">
+  <h3>version I R I<sup class="type-ap" title="Anmerkungseigenschaft">ap</sup> <span class="backlink"> zurück zur <a href="#toc">Übersicht</a> oder <a href="#annotationproperties">Übersicht der Anmerkungseigenschaften</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.w3.org/2002/07/owl#versionIRI</p>
+ </div>
+</div><div id="legend">
+<h2>Legende <span class="backlink"> zur&uuml;ck zu <a href="#toc">ToC</a></span></h2>
+<div   class="entity">
+<sup class="type-c" title="Klassen">c</sup>: Klassen <br/>
+<sup class="type-op" title="Object Properties">op</sup>: Object Properties <br/>
+<sup class="type-dp" title="Data Properties">dp</sup>: Data Properties <br/>
+</div>
+</div>

@@ -4,15 +4,18 @@
     "languages" : [ "de", "en", "undefined" ],
     "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "https://w3id.org/bcore/media", "https://w3id.org/bcore", "http://www.w3.org/2000/01/rdf-schema", "https://w3id.org/brot", "http://www.w3.org/2001/XMLSchema" ],
     "title" : {
-      "en" : "Bridge Core Ontology for Institute of Concrete Structures, Dresden University of Technology – Media Extension"
+      "de" : "Bridge Core Ontology (BCore) – Medien-Erweiterung",
+      "en" : "Bridge Core Ontology (BCore) – Media Extension"
     },
     "iri" : "https://w3id.org/bcore/media",
     "version" : "0.1.2",
     "author" : [ "Tim Noack", "Morris Florek", "Johannes Reimer", "Xiaoli Song" ],
     "description" : {
+      "de" : "Erweiterungsontologie zur Darstellung von Medien. Konzipiert für den Einsatz in Verbindung mit der BCore-Ontologie, ermöglicht jedoch auch die eigenständige Nutzung.",
       "en" : "Extension ontology for the representation of bridge-related media. Designed to work in conjunction with the BCore ontology but to also allow for external use."
     },
     "labels" : {
+      "de" : "Bridge Core Ontology – Medien-Erweiterung",
       "en" : "Bridge Core Ontology – Media Extension"
     },
     "other" : {
@@ -25,22 +28,22 @@
       "creator" : [ {
         "identifier" : "creator",
         "language" : "undefined",
-        "value" : "Xiaoli Song",
-        "type" : "label"
-      }, {
-        "identifier" : "creator",
-        "language" : "undefined",
-        "value" : "Tim Noack",
-        "type" : "label"
-      }, {
-        "identifier" : "creator",
-        "language" : "undefined",
         "value" : "Morris Florek",
         "type" : "label"
       }, {
         "identifier" : "creator",
         "language" : "undefined",
+        "value" : "Xiaoli Song",
+        "type" : "label"
+      }, {
+        "identifier" : "creator",
+        "language" : "undefined",
         "value" : "Johannes Reimer",
+        "type" : "label"
+      }, {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "Tim Noack",
         "type" : "label"
       } ],
       "contributor" : [ {
@@ -70,7 +73,13 @@
       "modified" : [ {
         "identifier" : "modified",
         "language" : "undefined",
-        "value" : "2026-09-30",
+        "value" : "2026-10-26",
+        "type" : "label"
+      } ],
+      "versionInfo" : [ {
+        "identifier" : "versionInfo",
+        "language" : "undefined",
+        "value" : "0.1.2",
         "type" : "label"
       } ],
       "codeRepository" : [ {
@@ -81,20 +90,24 @@
       } ],
       "abstract" : [ {
         "identifier" : "abstract",
+        "language" : "de",
+        "value" : "Die „Bridge Core Ontology“ (BCore) ermöglicht die Darstellung einer Brücke, ihrer Bauteile und ihrer Materialien sowie der damit verbundenen Infrastruktur und Mediendateien und der Umgebung und Lage der Brücke. BCore wurde vom Institut für Massivbau (IMB) an der Technischen Universität Dresden (TUD) entwickelt. Diese Ontologie enthält die entsprechende Erweiterung für Medien.",
+        "type" : "label"
+      }, {
+        "identifier" : "abstract",
         "language" : "en",
         "value" : "The Bridge Core Ontology (BCore) enables the representation of a bridge structure, its components and material, as well as the infrastructure and media files connected to it and the environment and location of the bridge. BCore is created by the Institute of Concrete Structures (IMB) at the Dresden University of Technology (TUD). This ontology contains the corresponding media extension.",
         "type" : "label"
       } ],
-      "versionInfo" : [ {
-        "identifier" : "versionInfo",
-        "language" : "undefined",
-        "value" : "0.1.2",
-        "type" : "label"
-      } ],
       "title" : [ {
         "identifier" : "title",
+        "language" : "de",
+        "value" : "Bridge Core Ontology (BCore) – Medien-Erweiterung",
+        "type" : "label"
+      }, {
+        "identifier" : "title",
         "language" : "en",
-        "value" : "Bridge Core Ontology for Institute of Concrete Structures, Dresden University of Technology – Media Extension",
+        "value" : "Bridge Core Ontology (BCore) – Media Extension",
         "type" : "label"
       } ],
       "status" : [ {
@@ -329,37 +342,37 @@
   "propertyAttribute" : [ {
     "range" : "2",
     "domain" : "1",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "0"
   }, {
     "range" : "9",
     "domain" : "2",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "8"
   }, {
     "range" : "9",
     "domain" : "1",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "10"
   }, {
     "range" : "9",
     "domain" : "12",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "11"
   }, {
     "range" : "2",
     "domain" : "14",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "13"
   }, {
     "range" : "1",
     "domain" : "12",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "15"
   }, {
     "range" : "2",
     "domain" : "12",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "16"
   }, {
     "iri" : "https://w3id.org/bcore/media#ImageResolutionX",
@@ -383,7 +396,7 @@
       "de" : "Bildauflösung in X-Richtung",
       "en" : "image resolution in X-direction"
     },
-    "attributes" : [ "datatype", "functional" ],
+    "attributes" : [ "functional", "datatype" ],
     "id" : "17"
   }, {
     "iri" : "https://w3id.org/bcore/media#containsMedia",
@@ -399,7 +412,7 @@
       "de" : "Mediendatei enthält eine andere Mediendatei",
       "en" : "media file contains another media file"
     },
-    "attributes" : [ "object", "transitive", "asymmetric" ],
+    "attributes" : [ "object", "asymmetric", "transitive" ],
     "id" : "18"
   }, {
     "iri" : "https://w3id.org/bcore/media#ImageResolutionY",
@@ -423,7 +436,7 @@
       "de" : "Bildauflösung in Y-Richtung",
       "en" : "image resolution in Y-direction"
     },
-    "attributes" : [ "datatype", "functional" ],
+    "attributes" : [ "functional", "datatype" ],
     "id" : "19"
   }, {
     "iri" : "https://w3id.org/bcore#describes",
@@ -444,7 +457,7 @@
   }, {
     "range" : "1",
     "domain" : "20",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "22"
   } ]
 }
